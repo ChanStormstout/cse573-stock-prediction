@@ -208,5 +208,50 @@
     "path": "outputs/stock_llm_annotation/CONTEXT_VERIFICATION.json",
     "bytes": 404,
     "sha256": "3cfa76d1d8a0f0022a001a95e311c5c7ffe446223fde1b2ac299d33f88c8529b"
+  },
+  {
+    "path": "outputs/stock_llm_model_compare/METRICS.csv",
+    "bytes": 19061,
+    "sha256": "58f0c940190bcb737db2f5d74cb446881d94355361f5326b898a4535ba27a13d"
+  },
+  {
+    "path": "outputs/stock_llm_model_compare/QUALITY.json",
+    "bytes": 1448,
+    "sha256": "91deecd8d4cb6eabe73b6af395ef1b18b31427955a6041c6009ec144dca9b423"
+  },
+  {
+    "path": "outputs/stock_llm_model_compare/VERIFICATION.json",
+    "bytes": 480,
+    "sha256": "809060915f06fff03d1badeeb6c0f0de93634dcd6fd8912481f620dfe4fda383"
+  },
+  {
+    "path": "outputs/stock_llm_model_compare/CASE_SELECTION.json",
+    "bytes": 3578,
+    "sha256": "d99c85c838b3a693e6ff1248e998beb233172d1775bf02caa94e7708aedc1fca"
+  },
+  {
+    "path": "outputs/stock_llm_model_compare/EVENTWISE_DIAGNOSTIC.json",
+    "bytes": 1902,
+    "sha256": "01c23d165d565d79d7fec96508ba261cf2e0c4d78fbdbb396d6d3d47205edae9"
+  },
+  {
+    "path": "outputs/stock_llm_model_compare/RULE_REPAIR.json",
+    "bytes": 400,
+    "sha256": "5187a7f38c4ed3f7e39e165b6dec5a67141267c9a4c09d0d19e0f9fb18d2ccfe"
+  },
+  {
+    "path": "outputs/stock_llm_model_compare/EXECUTION.json",
+    "bytes": 2906,
+    "sha256": "8eb40703fc4ec36ed32f3d63474c46b336837292b9359ef012e0f4d8dd13c867"
+  },
+  {
+    "path": "outputs/stock_llm_model_compare/ENVIRONMENT.json",
+    "bytes": 404,
+    "sha256": "d6dd1b506e15e59335c1f1422fa9c4334d146f54ed8c589bc69a5d421f504525"
+  },
+  {
+    "path": "outputs/stock_llm_model_compare/SAFETY_REPAIR.json",
+    "bytes": 2227,
+    "sha256": "b257f3aaaaf27949e801c9140a30553c2797f9b003bc5fc4b4ebc5aa97224ee2"
   }
 ]

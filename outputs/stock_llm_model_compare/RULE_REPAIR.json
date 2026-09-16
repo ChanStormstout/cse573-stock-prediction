@@ -1,0 +1,11 @@
+{
+  "source_predictions_sha256": "45221d6d08a5b0c8bb618cb5dc63ef97dc13113629127996158e6fbe856913f3",
+  "code_sha256": "89b571b6b40fb4a0b070a99a5aea06797f8a84896f0b2d84efedde7f291aa9dd",
+  "amendment_sha256": "e0aba766721e5cba324c8227a97aaf2c8a6bc76908ede777e759871a7a7b0150",
+  "additional_model_calls": 0,
+  "repaired_articles": 1,
+  "training": false,
+  "repaired_by_phase": {
+    "valid": 1
+  }
+}

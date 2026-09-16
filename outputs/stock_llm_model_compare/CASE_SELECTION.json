@@ -1,0 +1,192 @@
+[
+  {
+    "comparison": "old_frozen__original",
+    "symbol": "AAPL",
+    "state": "fixed",
+    "count": 40,
+    "selected": "N0364"
+  },
+  {
+    "comparison": "old_frozen__original",
+    "symbol": "AAPL",
+    "state": "regressed",
+    "count": 0,
+    "selected": null
+  },
+  {
+    "comparison": "old_frozen__original",
+    "symbol": "AAPL",
+    "state": "both_wrong",
+    "count": 33,
+    "selected": "N0445"
+  },
+  {
+    "comparison": "old_frozen__original",
+    "symbol": "AAPL",
+    "state": "both_correct",
+    "count": 0,
+    "selected": null
+  },
+  {
+    "comparison": "old_frozen__original",
+    "symbol": "AMZN",
+    "state": "fixed",
+    "count": 38,
+    "selected": "N0441"
+  },
+  {
+    "comparison": "old_frozen__original",
+    "symbol": "AMZN",
+    "state": "regressed",
+    "count": 0,
+    "selected": null
+  },
+  {
+    "comparison": "old_frozen__original",
+    "symbol": "AMZN",
+    "state": "both_wrong",
+    "count": 11,
+    "selected": "N0440"
+  },
+  {
+    "comparison": "old_frozen__original",
+    "symbol": "AMZN",
+    "state": "both_correct",
+    "count": 0,
+    "selected": null
+  },
+  {
+    "comparison": "original__prompt",
+    "symbol": "AAPL",
+    "state": "fixed",
+    "count": 10,
+    "selected": "N0425"
+  },
+  {
+    "comparison": "original__prompt",
+    "symbol": "AAPL",
+    "state": "regressed",
+    "count": 2,
+    "selected": "N0393"
+  },
+  {
+    "comparison": "original__prompt",
+    "symbol": "AAPL",
+    "state": "both_wrong",
+    "count": 23,
+    "selected": "Q0006"
+  },
+  {
+    "comparison": "original__prompt",
+    "symbol": "AAPL",
+    "state": "both_correct",
+    "count": 38,
+    "selected": "N0420"
+  },
+  {
+    "comparison": "original__prompt",
+    "symbol": "AMZN",
+    "state": "fixed",
+    "count": 4,
+    "selected": "N0453"
+  },
+  {
+    "comparison": "original__prompt",
+    "symbol": "AMZN",
+    "state": "regressed",
+    "count": 0,
+    "selected": null
+  },
+  {
+    "comparison": "original__prompt",
+    "symbol": "AMZN",
+    "state": "both_wrong",
+    "count": 7,
+    "selected": "N0440"
+  },
+  {
+    "comparison": "original__prompt",
+    "symbol": "AMZN",
+    "state": "both_correct",
+    "count": 38,
+    "selected": "N0398"
+  },
+  {
+    "comparison": "prompt__staged",
+    "symbol": "AAPL",
+    "state": "fixed",
+    "count": 6,
+    "selected": "N0393"
+  },
+  {
+    "comparison": "prompt__staged",
+    "symbol": "AAPL",
+    "state": "regressed",
+    "count": 0,
+    "selected": null
+  },
+  {
+    "comparison": "prompt__staged",
+    "symbol": "AAPL",
+    "state": "both_wrong",
+    "count": 19,
+    "selected": "Q0032"
+  },
+  {
+    "comparison": "prompt__staged",
+    "symbol": "AAPL",
+    "state": "both_correct",
+    "count": 48,
+    "selected": "N0361"
+  },
+  {
+    "comparison": "prompt__staged",
+    "symbol": "AMZN",
+    "state": "fixed",
+    "count": 4,
+    "selected": "N0449"
+  },
+  {
+    "comparison": "prompt__staged",
+    "symbol": "AMZN",
+    "state": "regressed",
+    "count": 1,
+    "selected": "N0366"
+  },
+  {
+    "comparison": "prompt__staged",
+    "symbol": "AMZN",
+    "state": "both_wrong",
+    "count": 3,
+    "selected": "N0457"
+  },
+  {
+    "comparison": "prompt__staged",
+    "symbol": "AMZN",
+    "state": "both_correct",
+    "count": 41,
+    "selected": "N0368"
+  },
+  {
+    "category": "rule_rejection",
+    "count": 13,
+    "selected": [
+      "Q0032",
+      "Q0009",
+      "Q0014",
+      "Q0020",
+      "N0456"
+    ]
+  },
+  {
+    "category": "gate_lost_positive",
+    "count": 0,
+    "selected": []
+  },
+  {
+    "category": "all_rule_v2_repairs",
+    "selected": [
+      "D0014"
+    ]
+  }
+]

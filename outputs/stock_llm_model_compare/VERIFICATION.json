@@ -1,0 +1,13 @@
+{
+  "all_expected_inputs": 209,
+  "same_original_message_content": true,
+  "cached_reference_fingerprints_and_decoding_match": true,
+  "analysis_sha256": "738014db1c97f536122054df16072b7e25d7d6dc732d9d055316ac77ee4be2b3",
+  "case_protocol_sha256": "a509c7a06ed784ce41fdb2ea006962524f636411f05faaf39c536a6d1237edb0",
+  "no_truncation": true,
+  "snapshots_match": true,
+  "new_training": false,
+  "independent_human_review": false,
+  "fresh_holdout": false,
+  "case_articles": 21
+}

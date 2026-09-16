@@ -76,3 +76,12 @@ venv/
 !/outputs/stock_llm_annotation/STATUS.json
 !/outputs/stock_llm_annotation/VERIFICATION.json
 !/outputs/stock_llm_annotation/CONTEXT_VERIFICATION.json
+!/outputs/stock_llm_model_compare/METRICS.csv
+!/outputs/stock_llm_model_compare/QUALITY.json
+!/outputs/stock_llm_model_compare/VERIFICATION.json
+!/outputs/stock_llm_model_compare/CASE_SELECTION.json
+!/outputs/stock_llm_model_compare/EVENTWISE_DIAGNOSTIC.json
+!/outputs/stock_llm_model_compare/RULE_REPAIR.json
+!/outputs/stock_llm_model_compare/EXECUTION.json
+!/outputs/stock_llm_model_compare/ENVIRONMENT.json
+!/outputs/stock_llm_model_compare/SAFETY_REPAIR.json

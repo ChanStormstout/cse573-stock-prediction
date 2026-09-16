@@ -1,0 +1,64 @@
+{
+  "manifest": {
+    "status": "POST_CHECK_SAFETY_FIX_NOT_INDEPENDENT_IMPROVEMENT",
+    "source_sha256": "f24b5487f5dee5c73a867926229148b3d8f9e538058f86fef61687aa4e7e3df3",
+    "code_sha256": "d7f969e92aea067c11c459f851fb9b3a938d39937d8b4fc4edea0a91654e4c14",
+    "parser_sha256": "f3acb89fa2c1afb4aa17f004ccd31b2883a3c688aad8b575bd8936346d98a8de",
+    "changes": [
+      {
+        "id": "Q0024",
+        "count": 1
+      },
+      {
+        "id": "Q0032",
+        "count": 1
+      }
+    ],
+    "additional_model_calls": 0,
+    "rule": "Refuse an unresolved from/to rating pair instead of treating its sole recognized word as the new rating."
+  },
+  "metrics": {
+    "check": {
+      "n": 122,
+      "schema_and_literal_evidence_valid": 118,
+      "exact_fact_set": 100,
+      "fact_tp": 9,
+      "fact_fp": 13,
+      "fact_fn": 14,
+      "precision": 0.4090909090909091,
+      "recall": 0.391304347826087,
+      "no_event_n": 100,
+      "no_event_false_positive": 2,
+      "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+      "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+    },
+    "train": {
+      "n": 0,
+      "schema_and_literal_evidence_valid": 0,
+      "exact_fact_set": 0,
+      "fact_tp": 0,
+      "fact_fp": 0,
+      "fact_fn": 0,
+      "precision": null,
+      "recall": null,
+      "no_event_n": 0,
+      "no_event_false_positive": 0,
+      "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+      "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+    },
+    "valid": {
+      "n": 87,
+      "schema_and_literal_evidence_valid": 78,
+      "exact_fact_set": 67,
+      "fact_tp": 5,
+      "fact_fp": 4,
+      "fact_fn": 15,
+      "precision": 0.5555555555555556,
+      "recall": 0.25,
+      "no_event_n": 68,
+      "no_event_false_positive": 0,
+      "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+      "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+    }
+  }
+}

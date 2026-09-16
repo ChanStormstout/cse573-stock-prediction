@@ -1,0 +1,60 @@
+{
+  "original": {
+    "raw_json_parse_failures": 34,
+    "max_prompt_tokens": 943,
+    "all_original_inputs_fit_old_2048_budget": true,
+    "final_invalid": 58,
+    "component_errors": {},
+    "rule_rejections": {},
+    "gate_states": {},
+    "n": 209,
+    "seconds": 660.7656819820404,
+    "peak_mlx_gb": 6.077699716,
+    "calls": 209,
+    "output_tokens": 12245,
+    "length_stops": 3
+  },
+  "prompt": {
+    "raw_json_parse_failures": 0,
+    "max_prompt_tokens": 1301,
+    "all_original_inputs_fit_old_2048_budget": null,
+    "final_invalid": 39,
+    "component_errors": {},
+    "rule_rejections": {},
+    "gate_states": {},
+    "n": 209,
+    "seconds": 799.7933120727539,
+    "peak_mlx_gb": 6.242107036,
+    "calls": 209,
+    "output_tokens": 10616,
+    "length_stops": 0
+  },
+  "staged": {
+    "raw_json_parse_failures": 5,
+    "max_prompt_tokens": 867,
+    "all_original_inputs_fit_old_2048_budget": null,
+    "final_invalid": 13,
+    "component_errors": {
+      "too_many_items": 8,
+      "action_schema": 5
+    },
+    "rule_rejections": {
+      "no_target_anchor": 5,
+      "ambiguous_target_values": 1,
+      "ambiguous_rating_values": 11,
+      "nonliteral_quote": 14,
+      "no_explicit_usd": 2,
+      "enum": 1
+    },
+    "gate_states": {
+      "none": 131,
+      "events": 78
+    },
+    "n": 209,
+    "seconds": 664.0032079219818,
+    "peak_mlx_gb": 6.242107036,
+    "calls": 287,
+    "output_tokens": 9220,
+    "length_stops": 0
+  }
+}

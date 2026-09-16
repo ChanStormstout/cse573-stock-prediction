@@ -27,3 +27,12 @@ GitHub 访问不足时，请明确报告哪些文件没读到，不猜测附件�
 优先读取 [stock_llm_annotation 报告](../outputs/stock_llm_annotation/REPORT.md)、[标注清单](../outputs/stock_llm_annotation/INVENTORY.json)、[损失对照协议](../outputs/stock_llm_annotation/GATE_LOSS_PROTOCOL.md)与[案例笔记](../outputs/stock_llm_annotation/CASE_NOTES.md)，再核对相同目录的代码和结果表。
 
 > 请重点检查：双轮GPT标注是否被误当独立金标准；正文候选为何选中大量历史持仓；补充开发/检查面板与原面板是否分开报告；长短答案的平均token损失如何影响事件存在判断；第二版辅助损失是否只改登记变量；checkpoint是否只依赖开发标签。先判断抽取组件是否学会了任务，再讨论四小时预测接入。不要把格式通过率、空输出比例或抽取精确率当作股票BA，也不要把未运行的下游分支写成完成。原文和adapter没有公开上传，明确你的核验边界。
+
+## 9B与任务拆分对照
+
+继续读取 [新实验入口](../outputs/stock_llm_model_compare/README.md) 和该目录的报告/协议。
+区分只换模型、改提示方案、两阶段加规则三个变化；不要将家族与规模同时变化归因于参数量一个因素。
+核对全体209篇分母、格式失败与FP的区别、gate丢失正例、规则拒绝、两阶段额外调用成本，
+以及四月面板已暴露的限制。模型运行是冻结推理，不是新的训练或四小时预测成绩。
+
+特别阅读CASE_NOTES与SAFETY_FIX：严格整篇拒绝可隐藏部分正确事实，但放宽后错抽很多；程序本身也有评级配对与语法缺口。安全修复受检查启发，不能冒充新保留集提升。分股票比较显示AAPL没有胜过旧微调，AMZN正例少且含重复事件。

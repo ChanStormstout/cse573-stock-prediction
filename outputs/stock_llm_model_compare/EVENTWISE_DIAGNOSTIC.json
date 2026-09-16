@@ -1,0 +1,110 @@
+{
+  "status": "POST_HOC_DIAGNOSTIC_NOT_REGISTERED_PRIMARY_METRIC",
+  "meaning": "Well-parsed JSON only; validate each event separately, bypass whole-article rejection and max-six limit. No raw JSON repair. Does not alter inference or promote a new method.",
+  "results": [
+    {
+      "model": "old_frozen",
+      "phase": "check",
+      "n": 122,
+      "tp": 0,
+      "fp": 25,
+      "fn": 23
+    },
+    {
+      "model": "old_frozen",
+      "phase": "valid",
+      "n": 87,
+      "tp": 0,
+      "fp": 18,
+      "fn": 20
+    },
+    {
+      "model": "old_tuned",
+      "phase": "check",
+      "n": 122,
+      "tp": 6,
+      "fp": 8,
+      "fn": 17
+    },
+    {
+      "model": "rules",
+      "phase": "check",
+      "n": 122,
+      "tp": 8,
+      "fp": 29,
+      "fn": 15
+    },
+    {
+      "model": "rules",
+      "phase": "valid",
+      "n": 87,
+      "tp": 6,
+      "fp": 31,
+      "fn": 14
+    },
+    {
+      "model": "original",
+      "phase": "check",
+      "n": 122,
+      "tp": 5,
+      "fp": 67,
+      "fn": 18
+    },
+    {
+      "model": "original",
+      "phase": "valid",
+      "n": 87,
+      "tp": 2,
+      "fp": 64,
+      "fn": 18
+    },
+    {
+      "model": "prompt",
+      "phase": "check",
+      "n": 122,
+      "tp": 6,
+      "fp": 126,
+      "fn": 17
+    },
+    {
+      "model": "prompt",
+      "phase": "valid",
+      "n": 87,
+      "tp": 3,
+      "fp": 107,
+      "fn": 17
+    },
+    {
+      "model": "staged",
+      "phase": "check",
+      "n": 122,
+      "tp": 9,
+      "fp": 15,
+      "fn": 14
+    },
+    {
+      "model": "staged",
+      "phase": "valid",
+      "n": 87,
+      "tp": 4,
+      "fp": 4,
+      "fn": 16
+    },
+    {
+      "model": "staged_v2",
+      "phase": "check",
+      "n": 122,
+      "tp": 9,
+      "fp": 15,
+      "fn": 14
+    },
+    {
+      "model": "staged_v2",
+      "phase": "valid",
+      "n": 87,
+      "tp": 5,
+      "fp": 4,
+      "fn": 15
+    }
+  ]
+}

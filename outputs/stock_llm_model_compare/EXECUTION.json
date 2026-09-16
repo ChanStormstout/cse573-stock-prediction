@@ -1,0 +1,70 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "revision": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "variants": [
+    "original",
+    "prompt",
+    "staged"
+  ],
+  "seed": 573,
+  "temperature": 0,
+  "thinking": false,
+  "max_output_per_call": 512,
+  "max_total_per_call": 4096,
+  "training": false,
+  "input_sha256": "c46702c14c13855b615c5507bba623c6f242a68a18e9e863b8b54d9aac8a3477",
+  "labels_sha256": "4520c4e885dccec428a3153f844421f1bf342d4212b2f6b3b2cde5fec54a3135",
+  "code": {
+    "run.py": "da94f76330bce7310031911927223987ef60e1c80bc20222f1cbc7ad4d390cc3",
+    "contracts.py": "f3acb89fa2c1afb4aa17f004ccd31b2883a3c688aad8b575bd8936346d98a8de",
+    "PROTOCOL.md": "d5b98fae62f71b34e9e9d8073203944ebf6aadbcc7b93b875928b1ada80e1af2",
+    "SMOKE_AMENDMENT.md": "832f4fba31531ed2ab1d09dda79e6e1affe9d77500b832bd1657f603ea25604e"
+  },
+  "model_files": {
+    ".gitattributes": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930",
+    "README.md": "1407e3e3337063c280b2fe1a63724908a5051cfbf26cd8b98f247432b0382537",
+    "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "config.json": "a96942cb6a8a1d3f1d17514d81a1925d04362a6a3233b389d13012211baaa9f8",
+    "model-00001-of-00002.safetensors": "a68b87558c6ef43f74c2bd63ce7e9092ceddc3101f3def0030774bae5f42aadd",
+    "model-00002-of-00002.safetensors": "b0a770bf8469c7f3f18756a0e0283f1c1174344a83e059a4e483f6af4907352d",
+    "model.safetensors.index.json": "dd023913fb87cfdae27fb11dcf695117c925833796ccac3c64117d6652d8ff1e",
+    "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "processor_config.json": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b",
+    "tokenizer.json": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+    "tokenizer_config.json": "e98f1901ac6f0adff67b1d540bfa0c36ac1a0cf59eb72ed78146ef89aafa1182",
+    "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+  },
+  "evaluation_status": "EXPOSED_REGRESSION_MODEL_PROVISIONAL",
+  "summary": {
+    "completed": true,
+    "variants": {
+      "original": {
+        "n": 209,
+        "seconds": 660.7656819820404,
+        "peak_mlx_gb": 6.077699716,
+        "calls": 209,
+        "output_tokens": 12245,
+        "length_stops": 3
+      },
+      "prompt": {
+        "n": 209,
+        "seconds": 799.7933120727539,
+        "peak_mlx_gb": 6.242107036,
+        "calls": 209,
+        "output_tokens": 10616,
+        "length_stops": 0
+      },
+      "staged": {
+        "n": 209,
+        "seconds": 664.0032079219818,
+        "peak_mlx_gb": 6.242107036,
+        "calls": 287,
+        "output_tokens": 9220,
+        "length_stops": 0
+      }
+    },
+    "training": false,
+    "seconds": 2125.484659910202
+  }
+}
