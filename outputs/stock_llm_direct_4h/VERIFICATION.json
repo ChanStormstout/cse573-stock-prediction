@@ -1,0 +1,17 @@
+{
+  "completed": true,
+  "windows": 609,
+  "all_original_windows": 1607,
+  "input_seal": "45eaf6bbf58025d9890918b9db295dfe20dd7d2e30a3c886f6596f7f77614f7f",
+  "forecast_hashes": {
+    "price": "c1aebe03b7350cd5555eee515fe446afbb3fba91740fdec01365dcb68f77cb2e",
+    "news": "6af4bafdb67460db07940e510dd44919fb736daeea0f8437f1eb9634b0722bde",
+    "joint": "c45795a350d87825ccf23f572cc0fbcdea04f860d5bdfbbfa0374c6dd9c0f25f"
+  },
+  "baseline_summary_sha": "6a4c1d3bc01fbfa6603f9ad6fe54a69b8b05c15863b4b22159321236a0ac1fae",
+  "legacy_predictions_sha": "3011492b17ce93013994f317ebe02f0fd228eaace49e0c9fc0605db2d02ed693",
+  "interface": "binary_choice_logprobs",
+  "new_training": "60 LR fits, no LLM weight training",
+  "independent_holdout": false,
+  "analysis_sha": "e1faa077cf28dc22c8f585904354e2e4fc6848e5cdada767406895e056447ff7"
+}

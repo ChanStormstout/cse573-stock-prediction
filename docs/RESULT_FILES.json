@@ -253,5 +253,100 @@
     "path": "outputs/stock_llm_model_compare/SAFETY_REPAIR.json",
     "bytes": 2227,
     "sha256": "b257f3aaaaf27949e801c9140a30553c2797f9b003bc5fc4b4ebc5aa97224ee2"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/BASELINE_CV.csv",
+    "bytes": 6170,
+    "sha256": "583d8dcd780cb0945791e8b6df8649e154b5db7863ebfd30036f28568ed2b560"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/BASELINE_TRAINING.json",
+    "bytes": 1927,
+    "sha256": "6a4c1d3bc01fbfa6603f9ad6fe54a69b8b05c15863b4b22159321236a0ac1fae"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/CASE_SELECTION.json",
+    "bytes": 4119,
+    "sha256": "5f7e12afd0088aea207cb96c417a04f1758ac1de64468d98189a0307a77a0128"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/COVERAGE.json",
+    "bytes": 1712,
+    "sha256": "44c0058310076f5b4102f57009631d33c9eba0aee20ecee6b5c559bcd81718c4"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/ENGINE_HISTORY.json",
+    "bytes": 5685,
+    "sha256": "08396a518306c82d18de7c17cb8cf35886018233cfcbffdb214bdede03143388"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/ENVIRONMENT.json",
+    "bytes": 521,
+    "sha256": "825ca0b83972a0e1080883119a124a7915a0fa78d5d80a1d8b9a19fa113c1459"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/EXECUTION.json",
+    "bytes": 27663,
+    "sha256": "7300316f6bf04901f57ea010be89733a12d6c11118270dc4dabb5cef79b0717b"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/INPUT_VERIFICATION.json",
+    "bytes": 572,
+    "sha256": "cc2246cb5c842f660b4e06e24158525e2b55fbaa559483974afa572c5e3170b8"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/INTEGRITY.json",
+    "bytes": 425,
+    "sha256": "604877d72e9eae904589da9a647545dbd2b4d1586a77e50948ad7756158134fb"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/JSON_INTERFACE_DIAGNOSTIC.json",
+    "bytes": 689,
+    "sha256": "acd5ead1edced4329c116e1adc33844e5b5e86ca7a1e7655b5803d71352cb193"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/JSON_PRICE_RESULTS.json",
+    "bytes": 1169,
+    "sha256": "504533104cf35de63d3840a79fed660033b6a7a2ac9fa28ec7212b7f326d7d7b"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/METRICS.csv",
+    "bytes": 25484,
+    "sha256": "c738bea5351d5e5c38301ea5a75bc94e8ccb975ecabe7878245170b7054a955c"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/NEWS_ABSENCE.json",
+    "bytes": 961,
+    "sha256": "fc4df9525f5f150fb1483ae10f570f47886abe5379adfd3892684d7e6f50ab6a"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/PAIRED_INTERVALS.csv",
+    "bytes": 3372,
+    "sha256": "64468570a0e0cce98bc7591e7915f95e7ea9fdef93a31f9876412ed33b068cf0"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/PREDICTIONS.csv",
+    "bytes": 771663,
+    "sha256": "75472905d5857a6ba3cd004e11f82dcf555abb05ce3966ff77bd1cf2814ec79d"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/PRICE_BEHAVIOR.json",
+    "bytes": 1546,
+    "sha256": "7cf3c8631d7146098d999bdaaf910436a7eb0febfc2be16cc58812fa5499dac9"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/QUALITY.json",
+    "bytes": 1803,
+    "sha256": "0ca886d7cd76a07b8e3377728eb96620f8d636f955e8b693899f4f5a2578400c"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/TRANSITIONS.csv",
+    "bytes": 2722,
+    "sha256": "9c157f6e724e1b9814a9b2f6cae06c0d761904f5687a926c90fb01e635cdef3f"
+  },
+  {
+    "path": "outputs/stock_llm_direct_4h/VERIFICATION.json",
+    "bytes": 832,
+    "sha256": "88f92d4ec17c82c129d8619dd4341a42f941358cde46334d61654689781f3c13"
   }
 ]

@@ -1,0 +1,74 @@
+[
+  {
+    "symbol": "AAPL",
+    "split": "test",
+    "n": 178,
+    "news_windows": 178,
+    "capped_windows": 151,
+    "article_occurrences": 2465,
+    "included_occurrences": 1031,
+    "omitted_occurrences": 1434,
+    "body_chars_included": 604627,
+    "body_chars_omitted": 3456841
+  },
+  {
+    "symbol": "AAPL",
+    "split": "train",
+    "n": 499,
+    "news_windows": 495,
+    "capped_windows": 365,
+    "article_occurrences": 6120,
+    "included_occurrences": 2719,
+    "omitted_occurrences": 3401,
+    "body_chars_included": 1598412,
+    "body_chars_omitted": 10720509
+  },
+  {
+    "symbol": "AAPL",
+    "split": "validation",
+    "n": 126,
+    "news_windows": 124,
+    "capped_windows": 64,
+    "article_occurrences": 1006,
+    "included_occurrences": 618,
+    "omitted_occurrences": 388,
+    "body_chars_included": 364335,
+    "body_chars_omitted": 1826301
+  },
+  {
+    "symbol": "AMZN",
+    "split": "test",
+    "n": 179,
+    "news_windows": 84,
+    "capped_windows": 0,
+    "article_occurrences": 143,
+    "included_occurrences": 143,
+    "omitted_occurrences": 0,
+    "body_chars_included": 84604,
+    "body_chars_omitted": 537771
+  },
+  {
+    "symbol": "AMZN",
+    "split": "train",
+    "n": 499,
+    "news_windows": 258,
+    "capped_windows": 4,
+    "article_occurrences": 457,
+    "included_occurrences": 447,
+    "omitted_occurrences": 10,
+    "body_chars_included": 263313,
+    "body_chars_omitted": 1898552
+  },
+  {
+    "symbol": "AMZN",
+    "split": "validation",
+    "n": 126,
+    "news_windows": 73,
+    "capped_windows": 0,
+    "article_occurrences": 131,
+    "included_occurrences": 131,
+    "omitted_occurrences": 0,
+    "body_chars_included": 77507,
+    "body_chars_omitted": 400113
+  }
+]

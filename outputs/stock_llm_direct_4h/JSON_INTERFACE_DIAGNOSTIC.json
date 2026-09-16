@@ -1,0 +1,40 @@
+{
+  "price": {
+    "n": 609,
+    "complete": true,
+    "raw_probability_counts": {
+      "0.5": 582,
+      "None": 27
+    },
+    "raw_direction_counts": {
+      "UP": 332,
+      "None": 27,
+      "DOWN": 250
+    },
+    "valid_forecasts": 332,
+    "seconds": 1805.7035501003265
+  },
+  "news": {
+    "n": 96,
+    "complete": false,
+    "raw_probability_counts": {
+      "0.6": 3,
+      "0.5": 72,
+      "None": 2,
+      "0.65": 3,
+      "0.52": 2,
+      "0.55": 8,
+      "0.4": 1,
+      "0.48": 2,
+      "0.45": 2,
+      "0.85": 1
+    },
+    "raw_direction_counts": {
+      "UP": 56,
+      "DOWN": 38,
+      "None": 2
+    },
+    "valid_forecasts": 61,
+    "seconds": 328.8618767261505
+  }
+}

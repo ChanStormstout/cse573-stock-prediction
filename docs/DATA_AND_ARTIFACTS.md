@@ -25,3 +25,10 @@
 9B模型文件、HF下载缓存、逐调用输入/输出、失败smoke和案例面板保存于
 `work/stock-data/model_compare/`，同样不进入Git。公开的EXECUTION.json记录模型revision、
 文件哈希与成本；模型对照仍使用上面的暂定标签，没有新增独立人工金标准。
+
+## 直接LLM四小时预测
+
+`work/stock-data/direct_4h/` 保存输入包、完整prompt、逐次输出、部分JSON失败试验、
+固定案例原文与匹配LR权重。公开的 `outputs/stock_llm_direct_4h/` 只包含实现、协议、
+报告、数字预测/指标、哈希及概述；不包含新闻原文或9B权重。
+需要本地原课程资产与固定模型，才能重新运行；克隆仓库本身不提供这些输入。

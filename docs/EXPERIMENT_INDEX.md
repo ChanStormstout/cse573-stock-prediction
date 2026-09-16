@@ -26,6 +26,7 @@
 - **stock_integrated_4h**: [PROTOCOL.md](../outputs/stock_integrated_4h/PROTOCOL.md) · [REPORT.md](../outputs/stock_integrated_4h/REPORT.md)
 - **stock_llm_4h**: [PROTOCOL.md](../outputs/stock_llm_4h/PROTOCOL.md) · [README.md](../outputs/stock_llm_4h/README.md) · [REPORT.md](../outputs/stock_llm_4h/REPORT.md)
 - **stock_llm_annotation**: [PROTOCOL.md](../outputs/stock_llm_annotation/PROTOCOL.md) · [README.md](../outputs/stock_llm_annotation/README.md) · [REPORT.md](../outputs/stock_llm_annotation/REPORT.md)
+- **stock_llm_direct_4h**: [PROTOCOL.md](../outputs/stock_llm_direct_4h/PROTOCOL.md) · [README.md](../outputs/stock_llm_direct_4h/README.md) · [REPORT.md](../outputs/stock_llm_direct_4h/REPORT.md)
 - **stock_llm_model_compare**: [PROTOCOL.md](../outputs/stock_llm_model_compare/PROTOCOL.md) · [README.md](../outputs/stock_llm_model_compare/README.md) · [REPORT.md](../outputs/stock_llm_model_compare/REPORT.md)
 - **stock_review_fixes**: [README.md](../outputs/stock_review_fixes/README.md)
 - **stock_robust**: [README.md](../outputs/stock_robust/README.md) · [REPORT.md](../outputs/stock_robust/REPORT.md)

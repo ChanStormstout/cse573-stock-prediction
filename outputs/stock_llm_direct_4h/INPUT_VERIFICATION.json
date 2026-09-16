@@ -1,0 +1,16 @@
+{
+  "n": 1607,
+  "split_counts": {
+    "AAPL|test": 178,
+    "AAPL|train": 499,
+    "AAPL|validation": 126,
+    "AMZN|test": 179,
+    "AMZN|train": 499,
+    "AMZN|validation": 126
+  },
+  "input_sha": "45eaf6bbf58025d9890918b9db295dfe20dd7d2e30a3c886f6596f7f77614f7f",
+  "features_sha": "beef77ca6be92c2956f90966c27593015971e38826662e901897bb2003d3a46b",
+  "coverage_sha": "e6cf412e5c5d8930e8e735718fc12ce37900d5feabd9a2d9c57872bdc30a14b7",
+  "historical_price_and_label_parity": true,
+  "protocol_sha": "8cebc27467bd86aecc4ac37fe77bbe9be7051511909722adf5a28bfe5d0665f9"
+}

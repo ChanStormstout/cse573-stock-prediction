@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "input_windows": 1607,
+  "forecast_windows": 609,
+  "forecasts_verified": 1827,
+  "lr_fits_verified": 60,
+  "sources_unchanged": true,
+  "prompt_whitelist_reproduced": true,
+  "output_validation_reproduced": true,
+  "future_time_checks": true,
+  "model_reload_verified": true,
+  "code_snapshots_verified": true,
+  "llm_model_hashes_verified": true,
+  "no_claim_of_pretraining_decontamination": true
+}

@@ -1,0 +1,49 @@
+{
+  "status": "POST_HOC_DESCRIPTIVE_NOT_CAUSAL",
+  "rows": [
+    {
+      "symbol": "AAPL",
+      "split": "test",
+      "n": 178,
+      "spearman_p_mean_return": 0.8684286786504545,
+      "direction_agreement_mean_return": 0.9157303370786517,
+      "mean_return_direction_BA": 0.46488568902362004,
+      "spearman_p_latest_return": 0.37766419622907094,
+      "p_min": 0.11920292515117029,
+      "p_max": 0.8354835309589073
+    },
+    {
+      "symbol": "AAPL",
+      "split": "validation",
+      "n": 126,
+      "spearman_p_mean_return": 0.8716538365538493,
+      "direction_agreement_mean_return": 0.8571428571428571,
+      "mean_return_direction_BA": 0.4890973630831643,
+      "spearman_p_latest_return": 0.373749628666704,
+      "p_min": 0.16451645675203383,
+      "p_max": 0.8354835391516132
+    },
+    {
+      "symbol": "AMZN",
+      "split": "test",
+      "n": 179,
+      "spearman_p_mean_return": 0.823700019618787,
+      "direction_agreement_mean_return": 0.9553072625698324,
+      "mean_return_direction_BA": 0.5118898623279099,
+      "spearman_p_latest_return": 0.3804192306429689,
+      "p_min": 0.11920291263495986,
+      "p_max": 0.8670357477770336
+    },
+    {
+      "symbol": "AMZN",
+      "split": "validation",
+      "n": 126,
+      "spearman_p_mean_return": 0.8027051675041234,
+      "direction_agreement_mean_return": 0.9444444444444444,
+      "mean_return_direction_BA": 0.5565862708719851,
+      "spearman_p_latest_return": 0.44225564237061876,
+      "p_min": 0.1480471961522176,
+      "p_max": 0.8354835350552604
+    }
+  ]
+}

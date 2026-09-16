@@ -1,0 +1,62 @@
+{
+  "completed": true,
+  "actual_fits": 60,
+  "seconds": 3.612755060195923,
+  "selected": [
+    {
+      "symbol": "AAPL",
+      "variant": "price",
+      "C": 0.1,
+      "cv_BA": 0.5220797720797721,
+      "model_sha": "e8d5f7c66936662dbfaae0b64cc2769cb1b7857e09389d6839444c0e52c81b6f",
+      "reload_max_error": 0.0
+    },
+    {
+      "symbol": "AAPL",
+      "variant": "news",
+      "C": 1.0,
+      "cv_BA": 0.45002872944049416,
+      "model_sha": "5f3fc1ae787e82ac6422f28ac3c28c55888379666a2d6cf5b2b4d66bb00b6e2d",
+      "reload_max_error": 0.0
+    },
+    {
+      "symbol": "AAPL",
+      "variant": "joint",
+      "C": 0.01,
+      "cv_BA": 0.48852817480268457,
+      "model_sha": "27fa12d647061ab97891dad300f30c046fb49f4d946de0a8c41b10b5d6c19caf",
+      "reload_max_error": 0.0
+    },
+    {
+      "symbol": "AMZN",
+      "variant": "price",
+      "C": 0.1,
+      "cv_BA": 0.598575712143928,
+      "model_sha": "9e6d2860146a76b379fd77dc3d2c073390817f35fe19a33df7e1a1604f6b1f40",
+      "reload_max_error": 0.0
+    },
+    {
+      "symbol": "AMZN",
+      "variant": "news",
+      "C": 1.0,
+      "cv_BA": 0.5996418457437948,
+      "model_sha": "4cf96652d78d7e689f8d7593b2347691e825dd158532532933370ec64ae614cc",
+      "reload_max_error": 0.0
+    },
+    {
+      "symbol": "AMZN",
+      "variant": "joint",
+      "C": 1.0,
+      "cv_BA": 0.6107446276861569,
+      "model_sha": "18f614b3a289957b441428e7a6b32285a99f9c95e8836f917a83bdfbe6e43d63",
+      "reload_max_error": 0.0
+    }
+  ],
+  "input_sha": "beef77ca6be92c2956f90966c27593015971e38826662e901897bb2003d3a46b",
+  "code": {
+    "baseline.py": "905af8fa891725cde7a1b6f2eb385e8084768243de41478d7b4ee2d8362dea62",
+    "prepare.py": "e539513883b18de06d0d8151dcb538a9cfe2eb3ec6bc9dbb38517146a255194b",
+    "common.py": "c100f9408ea5ec85b0fc33d62be4b99ef34a84e0ff64ca15a37c7acbb98e263e",
+    "PROTOCOL.md": "8cebc27467bd86aecc4ac37fe77bbe9be7051511909722adf5a28bfe5d0665f9"
+  }
+}

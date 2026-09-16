@@ -1,0 +1,202 @@
+{
+  "smoke_v1": {
+    "branches": {
+      "joint": {
+        "n": 1,
+        "seconds": 3.481374979019165,
+        "forecast_file_sha": "4ed682083b45c96105d98618442f5d2a0b3f766eef9c2f7e99720c8643d96930",
+        "valid": 1
+      },
+      "price": {
+        "n": 1,
+        "seconds": 3.542124032974243,
+        "forecast_file_sha": "5813aef87abe9f2b82c7fd6e956c1fc756a88222b02b3b16c554b061d40d580e",
+        "valid": 1
+      },
+      "news": {
+        "n": 1,
+        "seconds": 2.394843101501465,
+        "forecast_file_sha": "a92f0e0f351d1af21175815ad1deea0b9859ff53e82917f857b180b1bda73427",
+        "valid": 1
+      }
+    },
+    "complete": true,
+    "interruption": null
+  },
+  "run_v1": {
+    "branches": {
+      "price": {
+        "n": 160,
+        "seconds": 552.9393503665924,
+        "forecast_file_sha": "8f16f75d20842f6597128f783d9be13b1fa9852d96331b216846c8da9fae5ec9",
+        "valid": 85
+      }
+    },
+    "complete": false,
+    "interruption": {
+      "status": "INTENTIONALLY_INTERRUPTED_FOR_BATCHED_ENGINE_BEFORE_OUTCOME_SCORING",
+      "n_saved": 160,
+      "seconds": 552.9393503665924,
+      "completed": false,
+      "original_code_snapshot": "run_v1/code",
+      "batch_benchmark": "batch_benchmark_v1/parity.json",
+      "note": "No predictions spliced into final batched run; 8 checked probabilities/directions match, only2 exact raw strings match. Benchmark had simultaneous serial GPU load, not valid isolated timing."
+    }
+  },
+  "batch_benchmark_v1": {
+    "branches": {
+      "price": {
+        "n": 8,
+        "seconds": 33.87088894844055,
+        "forecast_file_sha": "b465968b7468bc3919d89826878049dba31e42bc0051dfdddbf64c92b661bcb1",
+        "valid": 8
+      }
+    },
+    "complete": true,
+    "interruption": null
+  },
+  "batch_v1": {
+    "branches": {
+      "price": {
+        "n": 609,
+        "seconds": 1805.7035501003265,
+        "forecast_file_sha": "552d86c24c5716ab99470cb0888b1e0e73fcbf771080e5677e31c22c4320a351",
+        "valid": 332
+      },
+      "news": {
+        "n": 96,
+        "seconds": 328.8618767261505,
+        "forecast_file_sha": "9a2e2d3eecf08345cf3485b62fc633c49a09421b853019484ef0d5fdfd3866dc",
+        "valid": 61
+      }
+    },
+    "complete": false,
+    "interruption": {
+      "status": "STOPPED_AFTER_UNLABELED_OUTPUT_INTERFACE_DIAGNOSTIC",
+      "completed": false,
+      "counts": {
+        "price": {
+          "n": 609,
+          "seconds": 1805.7035501003265
+        },
+        "news": {
+          "n": 96,
+          "seconds": 328.8618767261505
+        }
+      },
+      "new_run": "choice_v1",
+      "protocol": "CHOICE_PROTOCOL.md"
+    }
+  },
+  "choice_smoke_v1": {
+    "branches": {
+      "joint": {
+        "n": 1,
+        "seconds": 4.435207843780518,
+        "forecast_file_sha": "972d46b0604ca569ca0daa42be4af437e2572d005f5786d59019d3afc41f1452",
+        "valid": 1
+      },
+      "price": {
+        "n": 1,
+        "seconds": 4.231663227081299,
+        "forecast_file_sha": "d28d35eb6dbf04d68c5b177e7b005d566eb870b74fcab729c9fe6fda2d1651bf",
+        "valid": 1
+      },
+      "news": {
+        "n": 1,
+        "seconds": 2.238452911376953,
+        "forecast_file_sha": "583daf95d1c383c1fb0dadf55d08ec738d1064bf384746335080bb873ab7e8ce",
+        "valid": 1
+      }
+    },
+    "complete": true,
+    "interruption": null
+  },
+  "choice_smoke_v2": {
+    "branches": {
+      "joint": {
+        "n": 1,
+        "seconds": 3.863144874572754,
+        "forecast_file_sha": "c54a40669642b1977942ec79e05c6db3544de29fc181899da6097bf8539e8d9c",
+        "valid": 1
+      },
+      "price": {
+        "n": 1,
+        "seconds": 3.398650884628296,
+        "forecast_file_sha": "1839b3404a2ca15e22448c63206e9a265feb19ccb3363632c0eb66444a27de59",
+        "valid": 1
+      },
+      "news": {
+        "n": 1,
+        "seconds": 1.763706922531128,
+        "forecast_file_sha": "bac797b7b517548b7ac96b05986a418f756271dcc6ef20a49e881a21a5167b28",
+        "valid": 1
+      }
+    },
+    "complete": true,
+    "interruption": null
+  },
+  "batch_parity": {
+    "checks": [
+      {
+        "key": "AAPL|2018-09-04 13:30:00+00:00",
+        "raw_equal": false,
+        "probability_equal": true,
+        "validity_equal": true,
+        "direction_equal": true
+      },
+      {
+        "key": "AMZN|2018-09-04 13:30:00+00:00",
+        "raw_equal": false,
+        "probability_equal": true,
+        "validity_equal": true,
+        "direction_equal": true
+      },
+      {
+        "key": "AAPL|2018-09-04 14:30:00+00:00",
+        "raw_equal": false,
+        "probability_equal": true,
+        "validity_equal": true,
+        "direction_equal": true
+      },
+      {
+        "key": "AMZN|2018-09-04 14:30:00+00:00",
+        "raw_equal": true,
+        "probability_equal": true,
+        "validity_equal": true,
+        "direction_equal": true
+      },
+      {
+        "key": "AAPL|2018-09-04 15:30:00+00:00",
+        "raw_equal": true,
+        "probability_equal": true,
+        "validity_equal": true,
+        "direction_equal": true
+      },
+      {
+        "key": "AMZN|2018-09-04 15:30:00+00:00",
+        "raw_equal": false,
+        "probability_equal": true,
+        "validity_equal": true,
+        "direction_equal": true
+      },
+      {
+        "key": "AAPL|2018-09-05 13:30:00+00:00",
+        "raw_equal": false,
+        "probability_equal": true,
+        "validity_equal": true,
+        "direction_equal": true
+      },
+      {
+        "key": "AMZN|2018-09-05 13:30:00+00:00",
+        "raw_equal": false,
+        "probability_equal": true,
+        "validity_equal": true,
+        "direction_equal": true
+      }
+    ],
+    "passed": true,
+    "sequential_seconds": 25.53242826461792,
+    "batch_seconds": 33.87088894844055
+  }
+}

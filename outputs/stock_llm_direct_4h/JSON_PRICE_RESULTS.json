@@ -1,0 +1,58 @@
+[
+  {
+    "symbol": "AAPL",
+    "split": "test",
+    "primary_probability": {
+      "n": 178,
+      "BA": 0.5,
+      "MCC": 0.0,
+      "Brier": 0.25,
+      "pred_up": 1.0,
+      "constant": true,
+      "up_rate": 0.4887640449438202
+    },
+    "native_direction_BA": 0.48692686623721104
+  },
+  {
+    "symbol": "AAPL",
+    "split": "validation",
+    "primary_probability": {
+      "n": 126,
+      "BA": 0.5,
+      "MCC": 0.0,
+      "Brier": 0.25,
+      "pred_up": 1.0,
+      "constant": true,
+      "up_rate": 0.4603174603174603
+    },
+    "native_direction_BA": 0.4822515212981744
+  },
+  {
+    "symbol": "AMZN",
+    "split": "test",
+    "primary_probability": {
+      "n": 179,
+      "BA": 0.5,
+      "MCC": 0.0,
+      "Brier": 0.25,
+      "pred_up": 1.0,
+      "constant": true,
+      "up_rate": 0.5251396648044693
+    },
+    "native_direction_BA": 0.49874843554443055
+  },
+  {
+    "symbol": "AMZN",
+    "split": "validation",
+    "primary_probability": {
+      "n": 126,
+      "BA": 0.5,
+      "MCC": 0.0,
+      "Brier": 0.25,
+      "pred_up": 1.0,
+      "constant": true,
+      "up_rate": 0.3888888888888889
+    },
+    "native_direction_BA": 0.5575139146567718
+  }
+]

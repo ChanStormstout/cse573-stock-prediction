@@ -1,0 +1,44 @@
+{
+  "status": "DESCRIPTIVE_NOT_MEMORY_PROOF",
+  "rows": [
+    {
+      "symbol": "AAPL",
+      "split": "validation",
+      "n": 2,
+      "BA": null,
+      "MCC": 0.0,
+      "Brier": 0.6684280277573563,
+      "pred_up": 0.0,
+      "constant": true,
+      "up_rate": 1.0,
+      "p_min": 0.18242551936144571,
+      "p_max": 0.18242552380635635
+    },
+    {
+      "symbol": "AMZN",
+      "split": "test",
+      "n": 95,
+      "BA": 0.5,
+      "MCC": 0.0,
+      "Brier": 0.32855727284068126,
+      "pred_up": 0.0,
+      "constant": true,
+      "up_rate": 0.49473684210526314,
+      "p_min": 0.16451647108926923,
+      "p_max": 0.24508501864634827
+    },
+    {
+      "symbol": "AMZN",
+      "split": "validation",
+      "n": 53,
+      "BA": 0.5,
+      "MCC": 0.0,
+      "Brier": 0.28670490081921024,
+      "pred_up": 0.0,
+      "constant": true,
+      "up_rate": 0.41509433962264153,
+      "p_min": 0.18242551936144571,
+      "p_max": 0.24508501864634827
+    }
+  ]
+}

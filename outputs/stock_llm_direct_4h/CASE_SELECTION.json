@@ -1,0 +1,166 @@
+{
+  "cases": [
+    {
+      "id": "C01",
+      "key": "AAPL|2018-11-26 15:30:00+00:00",
+      "symbol": "AAPL",
+      "split": "test",
+      "outcome": "both_correct",
+      "label": 0,
+      "llm_p": 0.004070138089639247,
+      "lr_p": 0.4757163856822747
+    },
+    {
+      "id": "C02",
+      "key": "AAPL|2018-12-26 16:30:00+00:00",
+      "symbol": "AAPL",
+      "split": "test",
+      "outcome": "both_wrong",
+      "label": 1,
+      "llm_p": 0.3775406617944891,
+      "lr_p": 0.4802871057661354
+    },
+    {
+      "id": "C03",
+      "key": "AAPL|2018-11-16 15:30:00+00:00",
+      "symbol": "AAPL",
+      "split": "test",
+      "outcome": "llm_only_correct",
+      "label": 0,
+      "llm_p": 0.3775406758018018,
+      "lr_p": 0.5858798060027206
+    },
+    {
+      "id": "C04",
+      "key": "AAPL|2018-11-15 14:30:00+00:00",
+      "symbol": "AAPL",
+      "split": "test",
+      "outcome": "lr_only_correct",
+      "label": 1,
+      "llm_p": 0.010986940262521616,
+      "lr_p": 0.611487752744612
+    },
+    {
+      "id": "C05",
+      "key": "AAPL|2018-09-04 14:30:00+00:00",
+      "symbol": "AAPL",
+      "split": "validation",
+      "outcome": "both_correct",
+      "label": 1,
+      "llm_p": 0.9914225159168286,
+      "lr_p": 0.5128863167015882
+    },
+    {
+      "id": "C06",
+      "key": "AAPL|2018-10-04 14:30:00+00:00",
+      "symbol": "AAPL",
+      "split": "validation",
+      "outcome": "both_wrong",
+      "label": 0,
+      "llm_p": 0.9046505325302034,
+      "lr_p": 0.5785769096472451
+    },
+    {
+      "id": "C07",
+      "key": "AAPL|2018-10-10 13:30:00+00:00",
+      "symbol": "AAPL",
+      "split": "validation",
+      "outcome": "llm_only_correct",
+      "label": 0,
+      "llm_p": 0.3775406687981454,
+      "lr_p": 0.6742006973895202
+    },
+    {
+      "id": "C08",
+      "key": "AAPL|2018-10-12 15:30:00+00:00",
+      "symbol": "AAPL",
+      "split": "validation",
+      "outcome": "lr_only_correct",
+      "label": 1,
+      "llm_p": 0.03308598112977216,
+      "lr_p": 0.5333595983706118
+    },
+    {
+      "id": "C09",
+      "key": "AMZN|2019-01-14 14:30:00+00:00",
+      "symbol": "AMZN",
+      "split": "test",
+      "outcome": "both_correct",
+      "label": 1,
+      "llm_p": 0.6513548511303338,
+      "lr_p": 0.6904841072111305
+    },
+    {
+      "id": "C10",
+      "key": "AMZN|2018-11-12 15:30:00+00:00",
+      "symbol": "AMZN",
+      "split": "test",
+      "outcome": "both_wrong",
+      "label": 0,
+      "llm_p": 0.8175744739711883,
+      "lr_p": 0.6825930638087396
+    },
+    {
+      "id": "C11",
+      "key": "AMZN|2019-01-28 16:30:00+00:00",
+      "symbol": "AMZN",
+      "split": "test",
+      "outcome": "llm_only_correct",
+      "label": 1,
+      "llm_p": 0.7310585786300049,
+      "lr_p": 0.3399062022565899
+    },
+    {
+      "id": "C12",
+      "key": "AMZN|2018-11-09 16:30:00+00:00",
+      "symbol": "AMZN",
+      "split": "test",
+      "outcome": "lr_only_correct",
+      "label": 1,
+      "llm_p": 0.29421496597446145,
+      "lr_p": 0.5657529844598028
+    },
+    {
+      "id": "C13",
+      "key": "AMZN|2018-10-10 14:30:00+00:00",
+      "symbol": "AMZN",
+      "split": "validation",
+      "outcome": "both_correct",
+      "label": 0,
+      "llm_p": 0.4687906266262437,
+      "lr_p": 0.4735778538570127
+    },
+    {
+      "id": "C14",
+      "key": "AMZN|2018-09-11 14:30:00+00:00",
+      "symbol": "AMZN",
+      "split": "validation",
+      "outcome": "both_wrong",
+      "label": 1,
+      "llm_p": 0.18242553047372242,
+      "lr_p": 0.3089898560115347
+    },
+    {
+      "id": "C15",
+      "key": "AMZN|2018-09-13 14:30:00+00:00",
+      "symbol": "AMZN",
+      "split": "validation",
+      "outcome": "llm_only_correct",
+      "label": 0,
+      "llm_p": 0.4378234991142019,
+      "lr_p": 0.562646723143309
+    },
+    {
+      "id": "C16",
+      "key": "AMZN|2018-10-02 13:30:00+00:00",
+      "symbol": "AMZN",
+      "split": "validation",
+      "outcome": "lr_only_correct",
+      "label": 0,
+      "llm_p": 0.754914997895581,
+      "lr_p": 0.2569725721366415
+    }
+  ],
+  "empty_cells": [],
+  "protocol_sha": "8cebc27467bd86aecc4ac37fe77bbe9be7051511909722adf5a28bfe5d0665f9"
+}
