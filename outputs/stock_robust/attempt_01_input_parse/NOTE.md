@@ -1,0 +1,1 @@
+Preparation stopped before any training: mixed subsecond timestamp strings required explicit pandas mixed-format parsing. Failed preparation and its script are preserved; the new attempt uses a fresh results directory.

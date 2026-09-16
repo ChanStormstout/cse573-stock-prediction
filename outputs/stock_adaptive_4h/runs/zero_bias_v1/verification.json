@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "fits_checked": 231,
+  "raw_4h_labels_checked": 1607,
+  "frozen_predictions_checked": 609,
+  "maximum_reload_error": 0,
+  "future_label_mutation_unchanged": true,
+  "exact_no_news_and_calibrated_fallback": true,
+  "C_static_and_router_choices_recomputed": true,
+  "code_snapshots_and_data_hashes_verified": true,
+  "inference_sources": {
+    "outputs/stock_adaptive_4h/runs/zero_bias_v1/inputs.pkl": "d39ea375cc13164b23b58ac103f0667ec21587141132e6b1ee967564b1d48531",
+    "outputs/stock_adaptive_4h/runs/zero_bias_v1/AAPL_system.joblib": "46d5b33ab1b76f3282902538bc3a9cbf2e26dc92cf97ce02a4600486ff7a577b",
+    "outputs/stock_adaptive_4h/runs/zero_bias_v1/AMZN_system.joblib": "7e4daaf3afe435857eed248b48f9ff59509f40c0f446a1e4c319b0f5a173b34a",
+    "/Users/victor/Documents/Codex/2026-09-14/wox/outputs/stock_integrated_4h/prepared/articles.npz": "f0f56bda8ee8476fa79523a0855e1e2b556c54e53508123e39de9e88e537c74b",
+    "/Users/victor/Documents/Codex/2026-09-14/wox/outputs/stock_adaptive_4h/core.py": "42f8876061ba5dad493c8bb74b1d99a926996c7357cb5e0d9fa17bf0d1370f72",
+    "/Users/victor/Documents/Codex/2026-09-14/wox/outputs/stock_integrated_4h/run.py": "bbf8e7c4e2844b1be8c11605531ae455007da4766b0baca6771f02cbb52259a5",
+    "/Users/victor/Documents/Codex/2026-09-14/wox/outputs/stock_four_hour_v2/text_vectorizer.py": "6595304984c72ff06d34f0dd35d3c46bcdb248d8d4082d24e5faa0720dc03871"
+  },
+  "methodology_note": "Programmatic checks do not certify external timestamp accuracy or forecasting efficacy."
+}

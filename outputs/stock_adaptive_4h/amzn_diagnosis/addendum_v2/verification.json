@@ -1,0 +1,17 @@
+{
+  "new_training": false,
+  "training_only_choice": {
+    "AAPL": "body",
+    "AMZN": "price"
+  },
+  "probability_reload_max_error": 1.6653345369377348e-16,
+  "no_news_text_zero": true,
+  "hashes": {
+    "outputs/stock_adaptive_4h/amzn_diagnosis/ADDENDUM.md": "980a8a3299725c7bb6b135d7b3cbcfc5933880b2edf124a377b7814e08896ee5",
+    "outputs/stock_adaptive_4h/amzn_diagnosis/addendum.py": "e7f221d3bc37091c45de196780ec5dd76c94f0f7da46396eb29321c13ac9a913",
+    "outputs/stock_integrated_4h/runs/v1/oof.csv": "2d9845388104ecfc064e04a76cc9b1174398e8862b0b448036ba4d5a2c373351",
+    "outputs/stock_integrated_4h/runs/v1/predictions.csv": "3011492b17ce93013994f317ebe02f0fd228eaace49e0c9fc0605db2d02ed693",
+    "outputs/stock_integrated_4h/runs/v1/models/AMZN_final_body.joblib": "a9d3adce68917ccd6ec704fddeaebedd0df26c694e418b8b1d1827c3ffb63a29",
+    "outputs/stock_adaptive_4h/amzn_diagnosis/analysis_v1/case_panel_with_outcomes.csv": "899a4350ef0c025c80415f431894860882195844e08bcd14e17c731804d36606"
+  }
+}

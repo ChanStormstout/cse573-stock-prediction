@@ -1,0 +1,1 @@
+Stopped before model training: repeated compressed NPZ decompression for each article caused excessive preparation time. Fixed by loading embedding array once; repeated preparation in a fresh directory. Also corrected tuple-key manifest serialization before successful run. No model scores were produced in this attempt.

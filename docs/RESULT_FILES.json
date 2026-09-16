@@ -1,0 +1,87 @@
+[
+  {
+    "path": "outputs/stock_adaptive_4h/COMPARISON.csv",
+    "bytes": 2052,
+    "sha256": "938a2eff46438169e03c8d958d4720367f261dc4b375905fb98c09b2f416f042"
+  },
+  {
+    "path": "outputs/stock_integrated_4h/runs/v1/metrics.csv",
+    "bytes": 40915,
+    "sha256": "74a8f0c37af4647ed84a5204e8aa94863e6c4271d73a92a2d5424d90d99d5c4d"
+  },
+  {
+    "path": "outputs/stock_integrated_4h/runs/v1/predictions.csv",
+    "bytes": 261379,
+    "sha256": "3011492b17ce93013994f317ebe02f0fd228eaace49e0c9fc0605db2d02ed693"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/runs/v3/predictions.csv",
+    "bytes": 2061148,
+    "sha256": "0dad67e84e0eddd5b6ea28831886603ec5733a62349f1f32b9937db2537eceee"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/runs/v3/verification.json",
+    "bytes": 1501,
+    "sha256": "84ed712010e4fe9b27ed958c542b94e3daed465d4feaf69b7999f5a5d1b976e2"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/runs/zero_bias_v1/predictions.csv",
+    "bytes": 2027586,
+    "sha256": "45fd6155e697ccdcfa41fe510da2d7e0206db6919c3a6c35bf76e3c58d5c9e05"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/runs/zero_bias_v1/verification.json",
+    "bytes": 1531,
+    "sha256": "acd47cb54c427101cef735434e0d19a338c6375f32101b1d77139a2c10bfe29a"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/results/v1/metrics.csv",
+    "bytes": 106266,
+    "sha256": "96577cfae6ba5918cabdd358cbae712a1b88ca314cecee5b5bd88d81fd997746"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/results/zero_bias_v2/metrics.csv",
+    "bytes": 106892,
+    "sha256": "833e6a3f20a748f58148be9b7adde2e99410e20f5c37d35d3709260645607a24"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/online/v1/predictions.csv",
+    "bytes": 931745,
+    "sha256": "631db19164009b4ae908cf3b06878f1ac699378aea9c86ce7a1f5dce7329e491"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/online/zero_bias_v1/predictions.csv",
+    "bytes": 903463,
+    "sha256": "9b5e9b083ed1269761eca88ac0b97790e245d16ea46ce98c14cf24855990dd10"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/amzn_diagnosis/analysis_v1/metrics.csv",
+    "bytes": 24969,
+    "sha256": "bcb17de42fc709ceeb8aaf4b38ba5146457f6a3c1d6e21b4f474a9c9d8ff6cec"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/amzn_diagnosis/analysis_v1/paired_decomposition.csv",
+    "bytes": 1810,
+    "sha256": "c8165a735f3c4dbfdb9dbb7d4c15f95acdf66c95c2e878a5e650168523c7fa74"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/amzn_diagnosis/analysis_v1/training_selection_audit.csv",
+    "bytes": 2610,
+    "sha256": "1bbafd8d82bc2c55289965e8cad89fc13ac516188383cb4c854d190dd0be6fb8"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/amzn_diagnosis/addendum_v2/verification.json",
+    "bytes": 1006,
+    "sha256": "684abc0108ea8d16e0fe7e9fae10282ca77e42424f4a94b9e17ebf1c3b89c88c"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/amzn_diagnosis/addendum_v2/single_branch_candidates.csv",
+    "bytes": 470,
+    "sha256": "38e5130b97f89c6ca00a4b68cef0ed221cca98f612428c320aa218c3852ff8a8"
+  },
+  {
+    "path": "outputs/stock_adaptive_4h/amzn_diagnosis/addendum_v2/single_branch_metrics.csv",
+    "bytes": 737,
+    "sha256": "2f9d5e94a75a253ebfb4b00a9ea1af8a57503849463fe631044d94d9b8592e49"
+  }
+]

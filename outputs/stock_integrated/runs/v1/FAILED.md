@@ -1,0 +1,1 @@
+Attempt stopped by bitwise reload verification of float32 FinBERT/PCA computation: maximum probability difference 1.91e-8. No completed ensemble result. Preserve all partial artifacts. Successor v2 casts frozen cached embeddings to float64 and requires reload probability absolute error <=1e-12 plus identical predicted directions. No score-driven changes. See execution log.
