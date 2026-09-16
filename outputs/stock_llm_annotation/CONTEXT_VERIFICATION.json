@@ -1,0 +1,12 @@
+{
+  "n": 537,
+  "max_prompt_tokens": 939,
+  "over_budget": 0,
+  "input_sha256": "5b3d80ff826ae337662cf24efaa77658ebe86a95fac4c8b3a54a778578d1f120",
+  "student_contract_sha256": "f488b825433428e195d36669610d44cdeb37f305a7ada88524658f535791cd81",
+  "training_run": false,
+  "context_tokens": 2048,
+  "reserved_output": 512,
+  "truncation": false,
+  "all_training_inference_prefix_tokens_identical": true
+}

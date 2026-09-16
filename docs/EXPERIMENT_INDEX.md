@@ -25,6 +25,7 @@
 - **stock_integrated**: [PROTOCOL.md](../outputs/stock_integrated/PROTOCOL.md) · [REPORT.md](../outputs/stock_integrated/REPORT.md)
 - **stock_integrated_4h**: [PROTOCOL.md](../outputs/stock_integrated_4h/PROTOCOL.md) · [REPORT.md](../outputs/stock_integrated_4h/REPORT.md)
 - **stock_llm_4h**: [PROTOCOL.md](../outputs/stock_llm_4h/PROTOCOL.md) · [README.md](../outputs/stock_llm_4h/README.md) · [REPORT.md](../outputs/stock_llm_4h/REPORT.md)
+- **stock_llm_annotation**: [PROTOCOL.md](../outputs/stock_llm_annotation/PROTOCOL.md) · [README.md](../outputs/stock_llm_annotation/README.md) · [REPORT.md](../outputs/stock_llm_annotation/REPORT.md)
 - **stock_review_fixes**: [README.md](../outputs/stock_review_fixes/README.md)
 - **stock_robust**: [README.md](../outputs/stock_robust/README.md) · [REPORT.md](../outputs/stock_robust/REPORT.md)
 - **stock_signal_audit**: [README.md](../outputs/stock_signal_audit/README.md)

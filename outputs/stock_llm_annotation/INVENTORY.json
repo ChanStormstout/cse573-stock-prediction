@@ -1,0 +1,39 @@
+{
+  "candidate_pairs": 537,
+  "candidate_split_counts": {
+    "train": 300,
+    "valid": 98,
+    "check": 139
+  },
+  "teacher_output_rows": 1074,
+  "teacher": "GPT 6 High via ChatGPT UI, two blind conversations per cohort, not independent humans",
+  "field_agreement": 517,
+  "evidence_agreement": 416,
+  "assistant_reviewed_pairs": 183,
+  "accepted_pairs": 458,
+  "accepted_counts": {
+    "check|AAPL|none": 56,
+    "check|AMZN|none": 44,
+    "check|AMZN|events": 5,
+    "check|AAPL|events": 17,
+    "valid|AAPL|events": 19,
+    "valid|AAPL|none": 38,
+    "train|AMZN|none": 115,
+    "train|AAPL|none": 74,
+    "train|AAPL|events": 47,
+    "train|AMZN|events": 13,
+    "valid|AMZN|none": 30
+  },
+  "excluded_by_reason": {
+    "uncertain": 25,
+    "conflict": 4,
+    "post_annotation_event_duplicate": 50
+  },
+  "independent_human_review_passed": false,
+  "input_sha256": "5b3d80ff826ae337662cf24efaa77658ebe86a95fac4c8b3a54a778578d1f120",
+  "labels_sha256": "4520c4e885dccec428a3153f844421f1bf342d4212b2f6b3b2cde5fec54a3135",
+  "raw_news_in_git": false,
+  "model_provisional_labels_in_git": false,
+  "adapters_in_git": false,
+  "earliest_extractor_freeze": "2018-05-01T00:00:00+00:00"
+}

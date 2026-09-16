@@ -21,3 +21,9 @@ GitHub 访问不足时，请明确报告哪些文件没读到，不猜测附件�
 ## 待审阅的新机制方案
 
 [小型LLM→四小时事实修正](SMALL_LLM_4H_PLAN.md)已执行有限pilot，详见[实际报告](../outputs/stock_llm_4h/REPORT.md)与[指标](../outputs/stock_llm_4h/METRICS.csv)。完整四小时LLM分支仍未训练。请重点审查抽取适配的时间边界、模板一致性、有限事实质量验收与原价格＋文本精确回退，勿将小样本工程试验当作独立预测提升。
+
+## 扩大标注后的新审阅重点
+
+优先读取 [stock_llm_annotation 报告](../outputs/stock_llm_annotation/REPORT.md)、[标注清单](../outputs/stock_llm_annotation/INVENTORY.json)、[损失对照协议](../outputs/stock_llm_annotation/GATE_LOSS_PROTOCOL.md)与[案例笔记](../outputs/stock_llm_annotation/CASE_NOTES.md)，再核对相同目录的代码和结果表。
+
+> 请重点检查：双轮GPT标注是否被误当独立金标准；正文候选为何选中大量历史持仓；补充开发/检查面板与原面板是否分开报告；长短答案的平均token损失如何影响事件存在判断；第二版辅助损失是否只改登记变量；checkpoint是否只依赖开发标签。先判断抽取组件是否学会了任务，再讨论四小时预测接入。不要把格式通过率、空输出比例或抽取精确率当作股票BA，也不要把未运行的下游分支写成完成。原文和adapter没有公开上传，明确你的核验边界。

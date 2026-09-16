@@ -163,5 +163,50 @@
     "path": "outputs/stock_llm_4h/runs/integration_v2/status.json",
     "bytes": 1371,
     "sha256": "cf217a231a05a8c005a781c293c6e28cc8561d6ca94bafd4457c2de7f4749185"
+  },
+  {
+    "path": "outputs/stock_llm_annotation/INVENTORY.json",
+    "bytes": 1188,
+    "sha256": "a5e99263af076d789fbc8b65a0b3fb98980e842c0410a32d6b2972134b4f7139"
+  },
+  {
+    "path": "outputs/stock_llm_annotation/ENVIRONMENT.json",
+    "bytes": 462,
+    "sha256": "9f55732c13c03289976f536fb1be4c4177224282380bdbbea13f4b32ff9f73e5"
+  },
+  {
+    "path": "outputs/stock_llm_annotation/TRAINING_EVIDENCE.json",
+    "bytes": 5318,
+    "sha256": "b90a963f1b67e0ee7ad824157bc2ea89b0d09c2bbb62bea513931be29ef4f60a"
+  },
+  {
+    "path": "outputs/stock_llm_annotation/TRAINING_CURVES.csv",
+    "bytes": 116781,
+    "sha256": "16d0b45a4e361ff25ccbe42961f5059ba337de65ee67f63f757af68e06427709"
+  },
+  {
+    "path": "outputs/stock_llm_annotation/METRICS.csv",
+    "bytes": 12591,
+    "sha256": "09a3ced855c438ad5e79eaa2667ce1bb870dc1408b770979331288ee0035ae24"
+  },
+  {
+    "path": "outputs/stock_llm_annotation/LOSS_DIAGNOSTIC.json",
+    "bytes": 477,
+    "sha256": "a0376c44a167f4dc4f7e775a987aca9407edc6155eada2530a07428ce0014fdb"
+  },
+  {
+    "path": "outputs/stock_llm_annotation/STATUS.json",
+    "bytes": 481,
+    "sha256": "18899802461032db8b5a67eb297bff36babd89a06b9d83b31e00837c9034460c"
+  },
+  {
+    "path": "outputs/stock_llm_annotation/VERIFICATION.json",
+    "bytes": 831,
+    "sha256": "efb53fd21bf18e40abc1f4a35c4dc117e530d934fe546cf062428d49dd1d5615"
+  },
+  {
+    "path": "outputs/stock_llm_annotation/CONTEXT_VERIFICATION.json",
+    "bytes": 404,
+    "sha256": "3cfa76d1d8a0f0022a001a95e311c5c7ffe446223fde1b2ac299d33f88c8529b"
   }
 ]

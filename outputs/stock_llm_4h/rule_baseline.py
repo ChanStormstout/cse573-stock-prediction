@@ -1,11 +1,11 @@
 """Pre-existing evidence rules on the SAME selected input, no new tuned rules."""
-import sys,re
+import sys,re,argparse
 from common import *
 sys.path.insert(0,str(ROOT/'outputs/stock_adaptive_4h'))
 from evidence import extract
 
 def main():
- out=new_run(B/'runs/rule_v1');rs=rows(B/'data/pilot_v3/inputs.jsonl');labels=rows(B/'data/pilot_v3/labels.jsonl');preds=[]
+ p=argparse.ArgumentParser();p.add_argument('--out',type=Path,default=B/'runs/rule_v1');p.add_argument('--data',type=Path,default=B/'data/pilot_v3');a=p.parse_args();out=new_run(a.out);check_panel(a.data);rs=rows(a.data/'inputs.jsonl');labels=rows(a.data/'labels.jsonl');preds=[]
  for r in rs:
   pieces=[];spans=[];cursor=0
   for key,text in r['sentences'].items():
@@ -26,5 +26,5 @@ def main():
    if sig in seen:continue
    seen.add(sig);events.append(ev)
   obj={'events':events};valid,errors=validate(obj,r);preds.append({'id':r['id'],'parsed':obj,'valid':valid,'errors':errors})
- write_rows(out/'predictions.jsonl',preds);dump(out/'metrics.json',evaluate(preds,labels));dump(out/'manifest.json',{'extractor_sha256':file_sha(ROOT/'outputs/stock_adaptive_4h/evidence.py'),'inputs_sha256':file_sha(B/'data/pilot_v3/inputs.jsonl'),'no_new_rule_fitting':True})
+ write_rows(out/'predictions.jsonl',preds);dump(out/'metrics.json',evaluate(preds,labels));dump(out/'manifest.json',{'extractor_sha256':file_sha(ROOT/'outputs/stock_adaptive_4h/evidence.py'),'inputs_sha256':file_sha(a.data/'inputs.jsonl'),'no_new_rule_fitting':True})
 if __name__=='__main__':main()

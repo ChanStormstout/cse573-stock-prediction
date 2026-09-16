@@ -1,0 +1,9 @@
+{
+  "interpretation": "Per-article mean token CE gives each one-token branching decision inverse-completion-length weight. This is objective accounting, not proof of the only cause of failed generation.",
+  "positive_articles": 60,
+  "negative_articles": 189,
+  "positive_gate_weight_per_epoch": 4.148207816081474,
+  "negative_gate_weight_per_epoch": 16.600000000000083,
+  "negative_to_positive_gate_weight_ratio": 4.001728152491878,
+  "does_not_use_check_predictions": true
+}

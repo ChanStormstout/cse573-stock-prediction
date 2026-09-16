@@ -31,3 +31,12 @@ outputs/stock_llm_4h/runs/input_probe_v1/metrics.json
 outputs/stock_llm_4h/runs/syntax_audit_v1/summary.json
 outputs/stock_llm_4h/runs/prompt_context_v1/metrics.json
 outputs/stock_llm_4h/runs/integration_v2/status.json
+outputs/stock_llm_annotation/INVENTORY.json
+outputs/stock_llm_annotation/ENVIRONMENT.json
+outputs/stock_llm_annotation/TRAINING_EVIDENCE.json
+outputs/stock_llm_annotation/TRAINING_CURVES.csv
+outputs/stock_llm_annotation/METRICS.csv
+outputs/stock_llm_annotation/LOSS_DIAGNOSTIC.json
+outputs/stock_llm_annotation/STATUS.json
+outputs/stock_llm_annotation/VERIFICATION.json
+outputs/stock_llm_annotation/CONTEXT_VERIFICATION.json

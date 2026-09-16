@@ -1,0 +1,24 @@
+{
+  "matched_training_information": true,
+  "matched_order_and_budget": true,
+  "only_registered_loss_variant_changed": true,
+  "no_check_ids_in_training_or_model_selection": true,
+  "selected_checkpoint_rule_recomputed": true,
+  "same_inference_inputs_prompt_decoding": true,
+  "both_weight_reload_checks_passed": true,
+  "check_supplement_did_not_change_train_or_dev": true,
+  "selected_weights": [
+    {
+      "run": "qlora_v2",
+      "selected_epoch": 2,
+      "selected_adapter_sha256": "11c3532757318cdedd5afe98e74263f36afb6ec517c378ec8aa4b769994fc755"
+    },
+    {
+      "run": "qlora_gate_v1",
+      "selected_epoch": 3,
+      "selected_adapter_sha256": "0e6610dcee41a33f28c2df708fa2e8043da82485632eef0c38db33ebc5a74e23"
+    }
+  ],
+  "independent_human_semantic_acceptance": false,
+  "new_four_hour_model_trained": false
+}

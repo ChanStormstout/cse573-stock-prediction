@@ -1,0 +1,10 @@
+{
+  "annotation_completed": true,
+  "actual_training_completed": true,
+  "training_variants": 2,
+  "check_inference_completed": true,
+  "independent_human_review_passed": false,
+  "new_four_hour_forecast_run": false,
+  "existing_four_hour_results_unchanged": true,
+  "reason_downstream_not_promoted": "Selected development checkpoints still miss most facts; independent semantic review and type-count requirements unmet. Extraction metrics are not four-hour prediction metrics."
+}

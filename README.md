@@ -8,6 +8,7 @@
 - [给 ChatGPT Pro 的审阅入口与提示词](docs/CHATGPT_REVIEW.md)
 - [实验索引](docs/EXPERIMENT_INDEX.md)
 - [完整项目日志](outputs/PROJECT_LOG.md)
+- [扩展 GPT 标注与 Qwen 微调](outputs/stock_llm_annotation/README.md)
 - [数据与未上传文件说明](docs/DATA_AND_ARTIFACTS.md)
 - [复现说明](docs/REPRODUCING.md) · [更新流程](docs/WORKFLOW.md)
 
