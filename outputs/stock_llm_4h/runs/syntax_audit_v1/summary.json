@@ -1,0 +1,73 @@
+{
+  "punctuation_only_recovered_ids": [
+    "L00",
+    "L03",
+    "L06",
+    "L11",
+    "L26",
+    "L27",
+    "L40",
+    "L42"
+  ],
+  "n_recovered_json": 8,
+  "unchanged_primary_results": true,
+  "metrics": {
+    "check": {
+      "n": 11,
+      "schema_and_literal_evidence_valid": 6,
+      "exact_fact_set": 6,
+      "fact_tp": 0,
+      "fact_fp": 0,
+      "fact_fn": 3,
+      "precision": null,
+      "recall": 0.0,
+      "no_event_n": 8,
+      "no_event_false_positive": 0,
+      "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+      "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+    },
+    "train": {
+      "n": 22,
+      "schema_and_literal_evidence_valid": 15,
+      "exact_fact_set": 12,
+      "fact_tp": 0,
+      "fact_fp": 3,
+      "fact_fn": 8,
+      "precision": 0.0,
+      "recall": 0.0,
+      "no_event_n": 15,
+      "no_event_false_positive": 1,
+      "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+      "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+    },
+    "train_duplicate_diagnostic": {
+      "n": 2,
+      "schema_and_literal_evidence_valid": 2,
+      "exact_fact_set": 0,
+      "fact_tp": 1,
+      "fact_fp": 1,
+      "fact_fn": 1,
+      "precision": 0.5,
+      "recall": 0.5,
+      "no_event_n": 0,
+      "no_event_false_positive": 0,
+      "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+      "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+    },
+    "valid": {
+      "n": 8,
+      "schema_and_literal_evidence_valid": 3,
+      "exact_fact_set": 2,
+      "fact_tp": 0,
+      "fact_fp": 0,
+      "fact_fn": 9,
+      "precision": null,
+      "recall": 0.0,
+      "no_event_n": 2,
+      "no_event_false_positive": 0,
+      "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+      "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+    }
+  },
+  "conclusion_boundary": "Post-hoc format diagnostic; no invented or corrected financial facts. Not a new forecasting result."
+}

@@ -1,0 +1,58 @@
+{
+  "selected_context|original": {
+    "n": 8,
+    "schema_and_literal_evidence_valid": 3,
+    "exact_fact_set": 2,
+    "fact_tp": 0,
+    "fact_fp": 0,
+    "fact_fn": 9,
+    "precision": null,
+    "recall": 0.0,
+    "no_event_n": 2,
+    "no_event_false_positive": 0,
+    "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+    "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+  },
+  "selected_context|short": {
+    "n": 8,
+    "schema_and_literal_evidence_valid": 2,
+    "exact_fact_set": 1,
+    "fact_tp": 0,
+    "fact_fp": 1,
+    "fact_fn": 9,
+    "precision": 0.0,
+    "recall": 0.0,
+    "no_event_n": 2,
+    "no_event_false_positive": 0,
+    "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+    "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+  },
+  "current_context|original": {
+    "n": 8,
+    "schema_and_literal_evidence_valid": 5,
+    "exact_fact_set": 2,
+    "fact_tp": 1,
+    "fact_fp": 0,
+    "fact_fn": 8,
+    "precision": 1.0,
+    "recall": 0.1111111111111111,
+    "no_event_n": 2,
+    "no_event_false_positive": 0,
+    "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+    "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+  },
+  "current_context|short": {
+    "n": 8,
+    "schema_and_literal_evidence_valid": 3,
+    "exact_fact_set": 1,
+    "fact_tp": 0,
+    "fact_fp": 2,
+    "fact_fn": 9,
+    "precision": 0.0,
+    "recall": 0.0,
+    "no_event_n": 2,
+    "no_event_false_positive": 0,
+    "annotation_status": "ASSISTANT_PROVISIONAL_NOT_INDEPENDENT",
+    "note": "Literal evidence checks do not establish semantic support. Exact metric ignores evidence-id identity to allow alternate supporting sentences."
+  }
+}

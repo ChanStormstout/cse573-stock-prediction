@@ -1,0 +1,40 @@
+{
+  "n_articles": 12,
+  "n_generations": 36,
+  "by_shift": {
+    "0": {
+      "letters": {
+        "A": 12
+      },
+      "events": {
+        "earnings": 12
+      }
+    },
+    "3": {
+      "letters": {
+        "A": 11,
+        "D": 1
+      },
+      "events": {
+        "product_business": 11,
+        "market_recap": 1
+      }
+    },
+    "6": {
+      "letters": {
+        "G": 2,
+        "D": 1,
+        "A": 8,
+        "E": 1
+      },
+      "events": {
+        "product_business": 2,
+        "earnings": 1,
+        "market_recap": 8,
+        "guidance": 1
+      }
+    }
+  },
+  "changed_category_count": 12,
+  "interpretation": "Option-order sensitivity diagnostic; not an independent semantic benchmark."
+}

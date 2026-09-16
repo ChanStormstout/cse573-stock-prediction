@@ -1,0 +1,25 @@
+{
+  "source_sha256": "089b883f26b6b91f7d76ad5e785feb53313bf394ffce5e9bd6c416d661b950da",
+  "early_eligible_records": 8517,
+  "period": [
+    "2018-01-01",
+    "2018-03-01"
+  ],
+  "filters": "English, nonnegative lag, Jan-Feb; title contains target and rating/target keywords, excluding common holdings/market keywords; normalized-content dedup",
+  "candidate_counts": {
+    "AAPL": {
+      "candidate_records": 121,
+      "months": {
+        "2018-01": 64,
+        "2018-02": 57
+      }
+    },
+    "AMZN": {
+      "candidate_records": 1,
+      "months": {
+        "2018-01": 1
+      }
+    }
+  },
+  "warning": "Title candidates only, NOT confirmed events or a complete body audit. AMZN article may concern another company."
+}

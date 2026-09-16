@@ -1,0 +1,14 @@
+{
+  "n_articles": 43,
+  "exact_input_spans_verified": 296,
+  "labels_hash_verified": true,
+  "assistant_only": true,
+  "chronological_splits": {
+    "train": 22,
+    "valid": 8,
+    "check": 11
+  },
+  "no_group_overlap_for_registered_groups": true,
+  "grouping_caveat": "Heuristic plus assistant merge of the Longbow duplicates, not a proof that every semantic duplicate is found.",
+  "stock_outcomes_in_annotation_inputs": false
+}

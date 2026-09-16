@@ -1,0 +1,48 @@
+{
+  "status": "PILOT_EXECUTED_QUALITY_NOT_ACCEPTED",
+  "new_four_hour_training": false,
+  "actual_qlora_training": true,
+  "training_runs": 3,
+  "micro_steps": 164,
+  "optimizer_updates": 22,
+  "independent_review_passed": false,
+  "published_raw_data": false,
+  "position_probe_articles": 12,
+  "pilot_articles": 43,
+  "training_unique": 22,
+  "tests": 17,
+  "integration": {
+    "quality": {
+      "accepted_types": [],
+      "by_type": {
+        "rating": {
+          "independent_groups": 0,
+          "positive_groups": 0,
+          "correct_groups": 0,
+          "critical_accuracy": null,
+          "missed": 0
+        },
+        "target_price": {
+          "independent_groups": 0,
+          "positive_groups": 0,
+          "correct_groups": 0,
+          "critical_accuracy": null,
+          "missed": 0
+        }
+      },
+      "status": "WAITING_OR_FAILED",
+      "identity_note": "Reviewer identity is declared, not externally authenticated."
+    },
+    "original_task_windows": 1607,
+    "saved_prediction_rows_checked": 1488,
+    "development_and_later_rows_checked": 609,
+    "candidate_predictions_sha256": "42cee36793a4134a98091ef3d7e0c28db796a3bd64ca49328e7b0b5178493176",
+    "price_plus_title_probability_exactly_preserved": true,
+    "original_predictions_sha256": "45fd6155e697ccdcfa41fe510da2d7e0206db6919c3a6c35bf76e3c58d5c9e05",
+    "original_inputs_sha256": "51b2c8bc3314fc754fb299e28b7685f2b3e335d01e4bc8ead92dc14c2953d562",
+    "new_four_hour_event_training_executed": false,
+    "reason": "No independent type acceptance; only22 unique training annotations, all AMZN provisional samples no-event. Full corpus extraction and B1–B3 forecast fitting intentionally not started.",
+    "status": "INTERFACE_IMPLEMENTED_QUALITY_STOP_ENFORCED",
+    "not_a_performance_experiment": true
+  }
+}

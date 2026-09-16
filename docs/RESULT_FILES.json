@@ -83,5 +83,85 @@
     "path": "outputs/stock_adaptive_4h/amzn_diagnosis/addendum_v2/single_branch_metrics.csv",
     "bytes": 737,
     "sha256": "2f9d5e94a75a253ebfb4b00a9ea1af8a57503849463fe631044d94d9b8592e49"
+  },
+  {
+    "path": "outputs/stock_llm_4h/METRICS.csv",
+    "bytes": 1584,
+    "sha256": "2ffe8149aabe6f80df0a9b12555a48652e15261c455f700b450588f080388abf"
+  },
+  {
+    "path": "outputs/stock_llm_4h/TRAINING_CURVES.csv",
+    "bytes": 13321,
+    "sha256": "9d34152a23be94cc90247c5978e0c072e3dd847ef1459f61aa5a3ebce0da4148"
+  },
+  {
+    "path": "outputs/stock_llm_4h/TRAINING_EVIDENCE.json",
+    "bytes": 6298,
+    "sha256": "b21ce127b63e4d5b5736ae04eab79c0b4687076b46dc8e9bbcd8067b664dd06d"
+  },
+  {
+    "path": "outputs/stock_llm_4h/STATUS.json",
+    "bytes": 1814,
+    "sha256": "8618d273f2369b6fbca0bc53543c33fd4f67b878c1b269c3ef3ae6a6a18d5c2f"
+  },
+  {
+    "path": "outputs/stock_llm_4h/verification.json",
+    "bytes": 432,
+    "sha256": "738981958cdbfea2f54a452d6889207a2e847b7e5b6e207325f7ee1aec387182"
+  },
+  {
+    "path": "outputs/stock_llm_4h/data_inventory.json",
+    "bytes": 725,
+    "sha256": "bae10f3872600f2d6c446c9dc3c0a0e2b46d8aa31fc6f0659ffa086f0c6a34e8"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/position_v1/summary.json",
+    "bytes": 708,
+    "sha256": "d58404427aa96edfdbfa680975c5bf9023569fabfafa5509b76b5bfeb2cf3498"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/frozen_v1/metrics.json",
+    "bytes": 1917,
+    "sha256": "55e28bfd1cadfd48750fd3e99ee9e724c8d81cde2d996caffdd0bd68ee18f4dc"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/rule_v1/metrics.json",
+    "bytes": 1932,
+    "sha256": "051ce1aeb532053c01eefb79aad812c1f9d2f03984bfacc2026603feeb22a10e"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/tuned_v1/metrics.json",
+    "bytes": 1918,
+    "sha256": "c977a7f2f64a46106751f4a42cb6d3c84d67ebf4e0d2ad97f514df337c1eace8"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/tuned_balanced_v1/metrics.json",
+    "bytes": 1929,
+    "sha256": "5fb0d5c6c819e73e5994d1ff593acc42108147d74a2f8e34a9bb1e46c69a815f"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/frozen_current_v1/metrics.json",
+    "bytes": 1931,
+    "sha256": "5455dc34c912c434de31f9d377c21249231177ca35331914fbcf4bf81b825c38"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/input_probe_v1/metrics.json",
+    "bytes": 475,
+    "sha256": "f4fecf6939dfbe8898f628c4043c6416340fb41d1bd416e429f8bde3f6f0bfc4"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/syntax_audit_v1/summary.json",
+    "bytes": 2366,
+    "sha256": "29623461105b85553f7889a6738a388f51c03ed2f145747386c2d946485d0aa1"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/prompt_context_v1/metrics.json",
+    "bytes": 1975,
+    "sha256": "28c2198b3414415906e180ab237b900d4d89635d2f1012942fa419885e3d3c39"
+  },
+  {
+    "path": "outputs/stock_llm_4h/runs/integration_v2/status.json",
+    "bytes": 1371,
+    "sha256": "cf217a231a05a8c005a781c293c6e28cc8561d6ca94bafd4457c2de7f4749185"
   }
 ]
