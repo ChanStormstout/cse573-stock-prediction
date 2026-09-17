@@ -1,5 +1,16 @@
 # 当前状态（2026-09-17）
 
+## 最新完成：校准、近期价格联合与完整新闻聚合
+
+[本轮报告](../outputs/stock_paper_methods_4h/v1/REPORT.md)：完成266次LR拟合、F1/F2独立校准与全文章集合的近似转载组聚合。J0/J2重现旧F1/F2至浮点误差。保留1,607窗口，其中233用于初始训练，765训练OOF、252开发、357后续；September之后冻结August末模型。
+
+- F2正温度保持方向，四格Brier都降低；后续AAPL 0.2856→0.2503、AMZN 0.2617→0.2462。但训练期规则选中Platt，AAPL后续BA反而降至49.32%，不能事后改选温度赢家。
+- J3 R1＋FinBERT训练月均BA提高1.59个百分点，但两股Brier分别恶化0.0119/0.0240，超过0.002护栏。J1 R1＋全文在AMZN训练BA下降2.16个百分点。
+- N1M事件聚合＋元信息的AMZN后续BA57.32%、Brier0.2483，但相对匹配文章＋元信息的训练宏平均BA下降0.26个百分点，不能据此晋级。
+- 四个机制均未通过预注册晋级线，FinModernBERT、Chronos-2、注意力、TabPFN和Graph本轮未运行，不代表这些模型被证明无效。
+
+F0继续作为主baseline，F1作为稳妥统一全文方法，F2作为现代语义对照。新增温度作为概率质量消融。完整指标、逐月/覆盖、转移、配对区间、校准参数和模型证据已保存。独立事件质量验收仍未完成。
+
 ## 最新完成：FinBERT事件适配与严格门控四小时修正
 
 [完整报告](../outputs/stock_finbert_event_adapter_4h/v1/REPORT.md)已实际完成预注册的数据审计、36次FinBERT训练、April暂定检查集评价、6次全四小时语料推理、D2/D3/D4残差对照和固定案例。训练期January–February前向OOF从A0／A1／A2中选择**A1顶部两层解冻**；没有使用April check、September–October development或later选择模型。M5 MPS上36次正式拟合累计5,700秒，checkpoint重载最大概率差为0。

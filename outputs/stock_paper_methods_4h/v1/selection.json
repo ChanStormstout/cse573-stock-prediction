@@ -1,0 +1,1272 @@
+{
+  "joint": [
+    {
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "J0",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "J1",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "J2",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "J3",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "N0M",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "N1",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "N1M",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "J1",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "J2",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "J3",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "N0M",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "N1M",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "J1",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "J2",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "J3",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "N0M",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "N1M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "J1",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "J2",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "J3",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "N0M",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "N1M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "J1",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "J2",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "J3",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "N0M",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "N1M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "J0",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "J1",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "J2",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "J3",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "N0M",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "N1M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "J1",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "J2",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "J3",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "N0M",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "N1M",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "J0",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "J1",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "J2",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "J3",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "N0M",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "N1",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "N1M",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "J1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "J2",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "J3",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "N0M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "N1M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "J1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "J2",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "J3",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "N0M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "N1M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "J0",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "J1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "J2",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "J3",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "N0M",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "N1M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "J1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "J2",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "J3",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "N0M",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "N1",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "N1M",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "J1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "J2",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "J3",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "N0M",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "N1M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "J0",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "J1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "J2",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "J3",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "N0M",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "N1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "N1M",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    }
+  ],
+  "calibration": [
+    {
+      "branch": "F1",
+      "month": "2018-03",
+      "kind": "identity",
+      "selection_months": []
+    },
+    {
+      "branch": "F1",
+      "month": "2018-04",
+      "kind": "identity",
+      "selection_months": []
+    },
+    {
+      "branch": "F1",
+      "month": "2018-05",
+      "kind": "temperature",
+      "selection_months": [
+        "2018-04"
+      ]
+    },
+    {
+      "branch": "F1",
+      "month": "2018-06",
+      "kind": "temperature",
+      "selection_months": [
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "branch": "F1",
+      "month": "2018-07",
+      "kind": "temperature",
+      "selection_months": [
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "branch": "F1",
+      "month": "2018-08",
+      "kind": "temperature",
+      "selection_months": [
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "branch": "F1",
+      "month": "final",
+      "kind": "platt_shrunk",
+      "selection_months": [
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "branch": "F2",
+      "month": "2018-03",
+      "kind": "identity",
+      "selection_months": []
+    },
+    {
+      "branch": "F2",
+      "month": "2018-04",
+      "kind": "identity",
+      "selection_months": []
+    },
+    {
+      "branch": "F2",
+      "month": "2018-05",
+      "kind": "identity",
+      "selection_months": [
+        "2018-04"
+      ]
+    },
+    {
+      "branch": "F2",
+      "month": "2018-06",
+      "kind": "identity",
+      "selection_months": [
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "branch": "F2",
+      "month": "2018-07",
+      "kind": "temperature",
+      "selection_months": [
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "branch": "F2",
+      "month": "2018-08",
+      "kind": "temperature",
+      "selection_months": [
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "branch": "F2",
+      "month": "final",
+      "kind": "platt_shrunk",
+      "selection_months": [
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    }
+  ],
+  "advancement": [
+    {
+      "method": "J1",
+      "baseline": "J0",
+      "months": 6,
+      "positive_months": 3,
+      "delta_BA": 0.0076213128430156025,
+      "delta_Brier": 0.008587760165751884,
+      "stock_deltas": {
+        "AAPL": {
+          "BA": 0.03684749785312227,
+          "Brier": 0.01801246191778559
+        },
+        "AMZN": {
+          "BA": -0.02160487216709106,
+          "Brier": -0.0008369415862818225
+        }
+      },
+      "passes": false
+    },
+    {
+      "method": "J3",
+      "baseline": "J2",
+      "months": 6,
+      "positive_months": 4,
+      "delta_BA": 0.015896157815975587,
+      "delta_Brier": 0.01797010737007731,
+      "stock_deltas": {
+        "AAPL": {
+          "BA": 0.028492213037745646,
+          "Brier": 0.011934005172750789
+        },
+        "AMZN": {
+          "BA": 0.0033001025942055264,
+          "Brier": 0.024006209567403836
+        }
+      },
+      "passes": false
+    },
+    {
+      "method": "N1",
+      "baseline": "N0",
+      "months": 6,
+      "positive_months": 3,
+      "delta_BA": -0.00014111044893962607,
+      "delta_Brier": -0.001077808655460713,
+      "stock_deltas": {
+        "AAPL": {
+          "BA": -0.0026516302129933242,
+          "Brier": 0.0015657809721176068
+        },
+        "AMZN": {
+          "BA": 0.002369409315114072,
+          "Brier": -0.0037213982830390326
+        }
+      },
+      "passes": false
+    },
+    {
+      "method": "N1M",
+      "baseline": "N0M",
+      "months": 6,
+      "positive_months": 2,
+      "delta_BA": -0.002576796062406859,
+      "delta_Brier": -0.012201318983142015,
+      "stock_deltas": {
+        "AAPL": {
+          "BA": -0.006386725732056305,
+          "Brier": -0.021584843133406736
+        },
+        "AMZN": {
+          "BA": 0.001233133607242587,
+          "Brier": -0.0028177948328772934
+        }
+      },
+      "passes": false
+    }
+  ]
+}

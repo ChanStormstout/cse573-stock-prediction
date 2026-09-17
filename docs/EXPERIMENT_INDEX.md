@@ -1,6 +1,6 @@
 # 实验索引
 
-当前入口是 **stock_finbert_event_adapter_4h/v1**；历史目录保留原名称，不能将一小时结果与四小时结果直接比较。
+当前入口是 **stock_paper_methods_4h/v1**；历史目录保留原名称，不能将一小时结果与四小时结果直接比较。
 
 - **stock_adaptive**: [REPORT.md](../outputs/stock_adaptive/REPORT.md)
 - **stock_adaptive_4h**: [PROTOCOL.md](../outputs/stock_adaptive_4h/PROTOCOL.md) · [README.md](../outputs/stock_adaptive_4h/README.md) · [REPORT.md](../outputs/stock_adaptive_4h/REPORT.md)
@@ -30,6 +30,7 @@
 - **stock_llm_direct_4h**: [PROTOCOL.md](../outputs/stock_llm_direct_4h/PROTOCOL.md) · [README.md](../outputs/stock_llm_direct_4h/README.md) · [REPORT.md](../outputs/stock_llm_direct_4h/REPORT.md)
 - **stock_llm_model_compare**: [PROTOCOL.md](../outputs/stock_llm_model_compare/PROTOCOL.md) · [README.md](../outputs/stock_llm_model_compare/README.md) · [REPORT.md](../outputs/stock_llm_model_compare/REPORT.md)
 - **stock_nextgen_4h**: [FINAL_STATUS.md](../outputs/stock_nextgen_4h/FINAL_STATUS.md) · [PROTOCOL.md](../outputs/stock_nextgen_4h/PROTOCOL.md) · [README.md](../outputs/stock_nextgen_4h/README.md) · [REPORT.md](../outputs/stock_nextgen_4h/REPORT.md)
+- **stock_paper_methods_4h**: [README.md](../outputs/stock_paper_methods_4h/README.md)
 - **stock_review_fixes**: [README.md](../outputs/stock_review_fixes/README.md)
 - **stock_robust**: [README.md](../outputs/stock_robust/README.md) · [REPORT.md](../outputs/stock_robust/REPORT.md)
 - **stock_signal_audit**: [README.md](../outputs/stock_signal_audit/README.md)

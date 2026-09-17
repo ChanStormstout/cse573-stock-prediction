@@ -583,5 +583,50 @@
     "path": "outputs/stock_finbert_event_adapter_4h/v1/verification.json",
     "bytes": 246,
     "sha256": "a411254c9d375ee3c49a983f7138bf94ca74f8439322d60f3dd28d63e70c73f8"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v1/calibration.csv",
+    "bytes": 5935,
+    "sha256": "4eaa48795e71d4f4ddbf030e3128393a53621593c3fb6ec96bd87eced063efd6"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v1/metrics.csv",
+    "bytes": 19181,
+    "sha256": "1937b7f1d5f615ad8bb9108505474df9d015ed7f8f4af925ce58c1198a150c5f"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v1/model_manifest.json",
+    "bytes": 95444,
+    "sha256": "b3d2ea415e7bab4f3638f911aa994c5cdfe9eb59625b2ab25d06278a3a0e9cd9"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v1/monthly_metrics.csv",
+    "bytes": 73630,
+    "sha256": "5af0ca361bd74c373ab51f26303a647e39e37be3c6ee269a084625b34f7d75e1"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v1/paired_intervals.csv",
+    "bytes": 10103,
+    "sha256": "6406a3d7fa80d042842b2a38e5cdd6896e03c56a4d570e9e58499780ebab6776"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v1/predictions.csv",
+    "bytes": 694793,
+    "sha256": "35c3a1664bb4480fc043f26a8be58b6316e00581916573825db6ed45ba3564ac"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v1/selection.json",
+    "bytes": 23067,
+    "sha256": "34d00db85a3d6bb64388e13ae8837078814d577884ab75403447bd7c01aa6e78"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v1/subgroup_metrics.csv",
+    "bytes": 108943,
+    "sha256": "e308d9aa6629ee879c14d240320483ce7f044cc622977bc46b4117e9ced166a6"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v1/transitions.csv",
+    "bytes": 1201,
+    "sha256": "80be460e83bc69b7483f0333eb09cf3167ff2260b62c85c888cecb964fc7a1a5"
   }
 ]
