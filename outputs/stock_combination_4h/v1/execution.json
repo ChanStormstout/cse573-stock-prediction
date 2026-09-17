@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE",
+  "calibration_records": 28,
+  "optimized_calibrators": 22,
+  "new_classifier_fits": 0,
+  "frozen_intervention_passes": 8,
+  "rows": 1607,
+  "source_sha256": "35c3a1664bb4480fc043f26a8be58b6316e00581916573825db6ed45ba3564ac",
+  "protocol_sha256": "087acf0a574c534018293245fd32412a6c1294aa6777af5e813fdb450b15fc5d",
+  "code_sha256": "f86319c59b36fbbd67225dfbc4c7dcafa3b2b16a9b063499bd5786bd43309e7f",
+  "seconds": 1.299251791991992,
+  "gate": {
+    "primary": "B3 vs B1",
+    "months": 6,
+    "positive_months": 4,
+    "BA_delta": 0.015896157815975587,
+    "Brier_delta": 0.010484183675449078,
+    "stocks": {
+      "AAPL": {
+        "BA": 0.028492213037745646,
+        "Brier": -0.0010287996589176303
+      },
+      "AMZN": {
+        "BA": 0.0033001025942055264,
+        "Brier": 0.021997167009815785
+      }
+    },
+    "passed": false
+  },
+  "checks": [
+    "F2-temperature replay",
+    "strict no-news fallback",
+    "positive-temperature direction preservation",
+    "saved calibrator reload",
+    "intervention endpoints reproduce N0M/N1M"
+  ],
+  "all_periods_exposed": true
+}

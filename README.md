@@ -5,6 +5,9 @@
 ## 从这里开始
 
 - [当前结论与结果](docs/CURRENT_STATUS.md)
+- [最新有限组合与AMZN归因](outputs/stock_combination_4h/v1/REPORT.md)
+- [课程报告主稿](docs/COURSE_REPORT_4H.md)
+- [离线历史回放](outputs/stock_combination_4h/v1/demo.html)
 - [最新校准、近期价格联合与全文章聚合](outputs/stock_paper_methods_4h/v1/REPORT.md)
 - [FinBERT事件适配与严格门控四小时实验](outputs/stock_finbert_event_adapter_4h/v1/REPORT.md)
 - [最新完整段落／近期价格／共享模型实验](outputs/stock_nextgen_4h/REPORT.md)

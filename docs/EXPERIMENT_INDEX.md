@@ -1,11 +1,12 @@
 # 实验索引
 
-当前入口是 **stock_paper_methods_4h/v1**；历史目录保留原名称，不能将一小时结果与四小时结果直接比较。
+当前入口是 **stock_combination_4h/v1**；历史目录保留原名称，不能将一小时结果与四小时结果直接比较。
 
 - **stock_adaptive**: [REPORT.md](../outputs/stock_adaptive/REPORT.md)
 - **stock_adaptive_4h**: [PROTOCOL.md](../outputs/stock_adaptive_4h/PROTOCOL.md) · [README.md](../outputs/stock_adaptive_4h/README.md) · [REPORT.md](../outputs/stock_adaptive_4h/REPORT.md)
 - **stock_baseline**: [README.md](../outputs/stock_baseline/README.md)
 - **stock_calibration**: [README.md](../outputs/stock_calibration/README.md)
+- **stock_combination_4h**: [README.md](../outputs/stock_combination_4h/README.md)
 - **stock_comprehensive**: [README.md](../outputs/stock_comprehensive/README.md)
 - **stock_content**: Python source archive
 - **stock_dedup**: Python source archive

@@ -124,3 +124,16 @@ outputs/stock_paper_methods_4h/v1/predictions.csv
 outputs/stock_paper_methods_4h/v1/selection.json
 outputs/stock_paper_methods_4h/v1/subgroup_metrics.csv
 outputs/stock_paper_methods_4h/v1/transitions.csv
+outputs/stock_combination_4h/v1/aggregation_interventions.csv
+outputs/stock_combination_4h/v1/amzn_day_contributions.csv
+outputs/stock_combination_4h/v1/amzn_subgroups.csv
+outputs/stock_combination_4h/v1/calibrators.csv
+outputs/stock_combination_4h/v1/cases.json
+outputs/stock_combination_4h/v1/demo.html
+outputs/stock_combination_4h/v1/execution.json
+outputs/stock_combination_4h/v1/intervention_metrics.csv
+outputs/stock_combination_4h/v1/metrics.csv
+outputs/stock_combination_4h/v1/monthly_metrics.csv
+outputs/stock_combination_4h/v1/paired_intervals.csv
+outputs/stock_combination_4h/v1/predictions.csv
+outputs/stock_combination_4h/v1/verification.json

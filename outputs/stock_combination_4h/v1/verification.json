@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "recomputed_metric_rows": 54,
+  "rows": 1607,
+  "intervention_rows": 609,
+  "checks": [
+    "unique keys",
+    "BA MCC Brier recomputed",
+    "directions preserved",
+    "strict fallback",
+    "past-only calibration",
+    "intervention endpoint parity",
+    "day contributions sum",
+    "code protocol source hashes"
+  ],
+  "browser_checks": [
+    "stock selection",
+    "no-news exact fallback display",
+    "reveal actual label",
+    "period change resets reveal",
+    "visual card layout"
+  ]
+}

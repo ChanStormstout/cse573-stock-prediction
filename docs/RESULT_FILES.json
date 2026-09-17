@@ -628,5 +628,70 @@
     "path": "outputs/stock_paper_methods_4h/v1/transitions.csv",
     "bytes": 1201,
     "sha256": "80be460e83bc69b7483f0333eb09cf3167ff2260b62c85c888cecb964fc7a1a5"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/aggregation_interventions.csv",
+    "bytes": 84336,
+    "sha256": "46d4169e27012716bd45e628e6ecb2cb896b039b5442da2b86e0131c7c5169af"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/amzn_day_contributions.csv",
+    "bytes": 11453,
+    "sha256": "8066489510a6d63d07ea319cefccea8a646f14d2ad26c85c09ec62b85728be20"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/amzn_subgroups.csv",
+    "bytes": 5028,
+    "sha256": "7f8bac5c550476a0035732da73f7be58f5fe91597acdb6eafd576157b7bdae0d"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/calibrators.csv",
+    "bytes": 4140,
+    "sha256": "736447b1b43fc314a9a384b431647841d66c16b977749aa6ac6e162381379fa4"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/cases.json",
+    "bytes": 1925,
+    "sha256": "b90941c1576c1cb567bfd48ea952f63ad5ba34b8ef9a88a3a24762745d2b37a3"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/demo.html",
+    "bytes": 313718,
+    "sha256": "2a49bc36426a896830fff4e2aa623ac293638d3f7730c1eb043f06c96502c3d0"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/execution.json",
+    "bytes": 1107,
+    "sha256": "4c233eedecc5e28b26ba8e126f92894b052fad6aeedcf9cf17159c85dea5e3c7"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/intervention_metrics.csv",
+    "bytes": 2801,
+    "sha256": "6f446cceb345f35e7a5bc89e51b363fad9009a00ac692325050b98d97ec50926"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/metrics.csv",
+    "bytes": 8995,
+    "sha256": "ef6de4e949408c2748912ca8f3624573e42fe0dcc658b55efe6369c13b1ce8f3"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/monthly_metrics.csv",
+    "bytes": 34504,
+    "sha256": "528adb7ba8c41b62b573b43bf20a6ae2934256af57b2d60cf3fdb5a8ac0a57ed"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/paired_intervals.csv",
+    "bytes": 4963,
+    "sha256": "dfb795b3236225fbc28a4221b5c583662279297ae66961fc0170f7351eb3742c"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/predictions.csv",
+    "bytes": 379090,
+    "sha256": "911a015833530884ad51e16debad458225f3c5d97cf21aa9cf7f7280f52f3ef7"
+  },
+  {
+    "path": "outputs/stock_combination_4h/v1/verification.json",
+    "bytes": 522,
+    "sha256": "4789890d2ddcec2680da7beeed53d16ec93184864a00ffa7575ae426dab762cf"
   }
 ]
