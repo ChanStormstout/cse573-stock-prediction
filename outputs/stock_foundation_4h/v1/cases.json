@@ -1,0 +1,178 @@
+[
+  {
+    "symbol": "AAPL",
+    "method": "MODERN",
+    "baseline": "F2",
+    "category": "changed_right",
+    "key": "AAPL|2018-12-26 16:30:00+00:00",
+    "label": 1,
+    "probability": 0.527568863684478,
+    "base_probability": 0.3797175826739427,
+    "has_news": 1
+  },
+  {
+    "symbol": "AAPL",
+    "method": "MODERN",
+    "baseline": "F2",
+    "category": "changed_wrong",
+    "key": "AAPL|2019-01-14 15:30:00+00:00",
+    "label": 0,
+    "probability": 0.5483578065774611,
+    "base_probability": 0.4778283629023113,
+    "has_news": 1
+  },
+  {
+    "symbol": "AAPL",
+    "method": "MODERN",
+    "baseline": "F2",
+    "category": "common_right",
+    "key": "AAPL|2018-11-15 14:30:00+00:00",
+    "label": 1,
+    "probability": 0.728616313051972,
+    "base_probability": 0.861538991892323,
+    "has_news": 1
+  },
+  {
+    "symbol": "AAPL",
+    "method": "MODERN",
+    "baseline": "F2",
+    "category": "common_wrong",
+    "key": "AAPL|2018-11-16 15:30:00+00:00",
+    "label": 0,
+    "probability": 0.8001810735646523,
+    "base_probability": 0.6148641961870114,
+    "has_news": 1
+  },
+  {
+    "symbol": "AAPL",
+    "method": "CHRONOS_LR",
+    "baseline": "HISTORY_LR",
+    "category": "changed_right",
+    "key": "AAPL|2018-12-26 16:30:00+00:00",
+    "label": 1,
+    "probability": 0.5627585399994162,
+    "base_probability": 0.4906188353374235,
+    "has_news": 1
+  },
+  {
+    "symbol": "AAPL",
+    "method": "CHRONOS_LR",
+    "baseline": "HISTORY_LR",
+    "category": "changed_wrong",
+    "key": "AAPL|2018-11-16 15:30:00+00:00",
+    "label": 0,
+    "probability": 0.5019740327886892,
+    "base_probability": 0.4082469540482017,
+    "has_news": 1
+  },
+  {
+    "symbol": "AAPL",
+    "method": "CHRONOS_LR",
+    "baseline": "HISTORY_LR",
+    "category": "common_right",
+    "key": "AAPL|2018-11-15 14:30:00+00:00",
+    "label": 1,
+    "probability": 0.5658799887575303,
+    "base_probability": 0.6090565846737797,
+    "has_news": 1
+  },
+  {
+    "symbol": "AAPL",
+    "method": "CHRONOS_LR",
+    "baseline": "HISTORY_LR",
+    "category": "common_wrong",
+    "key": "AAPL|2018-11-26 15:30:00+00:00",
+    "label": 0,
+    "probability": 0.5615662144530589,
+    "base_probability": 0.9980160440277208,
+    "has_news": 1
+  },
+  {
+    "symbol": "AMZN",
+    "method": "MODERN",
+    "baseline": "F2",
+    "category": "changed_right",
+    "key": "AMZN|2019-01-08 14:30:00+00:00",
+    "label": 0,
+    "probability": 0.4505696859105814,
+    "base_probability": 0.5055766104770989,
+    "has_news": 1
+  },
+  {
+    "symbol": "AMZN",
+    "method": "MODERN",
+    "baseline": "F2",
+    "category": "changed_wrong",
+    "key": "AMZN|2019-01-03 14:30:00+00:00",
+    "label": 0,
+    "probability": 0.5502554823222744,
+    "base_probability": 0.1814144221022227,
+    "has_news": 1
+  },
+  {
+    "symbol": "AMZN",
+    "method": "MODERN",
+    "baseline": "F2",
+    "category": "common_right",
+    "key": "AMZN|2019-01-14 14:30:00+00:00",
+    "label": 1,
+    "probability": 0.6447042086205366,
+    "base_probability": 0.6447042086205366,
+    "has_news": 0
+  },
+  {
+    "symbol": "AMZN",
+    "method": "MODERN",
+    "baseline": "F2",
+    "category": "common_wrong",
+    "key": "AMZN|2018-11-12 15:30:00+00:00",
+    "label": 0,
+    "probability": 0.6483754849461364,
+    "base_probability": 0.8737067611777288,
+    "has_news": 1
+  },
+  {
+    "symbol": "AMZN",
+    "method": "CHRONOS_LR",
+    "baseline": "HISTORY_LR",
+    "category": "changed_right",
+    "key": "AMZN|2018-11-30 14:30:00+00:00",
+    "label": 1,
+    "probability": 0.5122379584573427,
+    "base_probability": 0.465918052468625,
+    "has_news": 1
+  },
+  {
+    "symbol": "AMZN",
+    "method": "CHRONOS_LR",
+    "baseline": "HISTORY_LR",
+    "category": "changed_wrong",
+    "key": "AMZN|2018-11-09 16:30:00+00:00",
+    "label": 1,
+    "probability": 0.3485635539586709,
+    "base_probability": 0.6634690335343134,
+    "has_news": 0
+  },
+  {
+    "symbol": "AMZN",
+    "method": "CHRONOS_LR",
+    "baseline": "HISTORY_LR",
+    "category": "common_right",
+    "key": "AMZN|2019-01-14 14:30:00+00:00",
+    "label": 1,
+    "probability": 0.5263661353897259,
+    "base_probability": 0.5975143853765235,
+    "has_news": 0
+  },
+  {
+    "symbol": "AMZN",
+    "method": "CHRONOS_LR",
+    "baseline": "HISTORY_LR",
+    "category": "common_wrong",
+    "key": "AMZN|2018-11-12 15:30:00+00:00",
+    "label": 0,
+    "probability": 0.5756308795807267,
+    "base_probability": 0.5469386623234264,
+    "has_news": 1
+  }
+]

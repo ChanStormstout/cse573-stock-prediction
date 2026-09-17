@@ -1,0 +1,38 @@
+{
+  "model": "amazon/chronos-2",
+  "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "device": "cpu",
+  "encoder_training": false,
+  "parameters": 119477664,
+  "trainable_parameters": 0,
+  "gradients_present": false,
+  "windows": 1607,
+  "eligible": 1607,
+  "new_batches": 51,
+  "seconds": 34.70554991698009,
+  "reload_single_task_error": 0.0,
+  "fingerprint": {
+    "sources": {
+      "work/stock-data/audit/xnys_schedule.csv": "b668d40b4a6a9324108e32b6dcfa9c6e60c7a90da93e6884a00854691298e4d0",
+      "work/stock-data/raw/CHARTS/APPLE5.csv": "059a29b0b24f438bd2d6f1be4102974f9b10631fd69b6c75ac2076930b0381cf",
+      "work/stock-data/raw/CHARTS/AMAZON5.csv": "ea5ec298fe39364fa3cb3d9dfdd46393c5490f46c9e2da7984f839953e380282"
+    },
+    "input": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b",
+    "protocol": "e955cab2ba4c7ff07de5a9be62b68e311537bf469ce717b6b566ca5365491cf3",
+    "code": "ccb9138af66c742379ef37103abab6a23e9823fc982a788f4a6576bf84172bab",
+    "weights": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+    "config": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+    "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "context": 512,
+    "prediction_length": 49,
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "cross_learning": false,
+    "dtype": "float32"
+  },
+  "torch": "2.14.0",
+  "package": "chronos-forecasting==2.2.2"
+}

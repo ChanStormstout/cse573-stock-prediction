@@ -1,0 +1,48 @@
+{
+  "gates": [
+    {
+      "method": "MODERN",
+      "baseline": "F2",
+      "months": 6,
+      "positive_months": 4,
+      "BA_delta": -0.0006145943246001715,
+      "Brier_delta": 0.00897465686919525,
+      "stocks": {
+        "AAPL": {
+          "BA": -0.03564010471024529,
+          "Brier": 0.026975377312075444
+        },
+        "AMZN": {
+          "BA": 0.034410916061044954,
+          "Brier": -0.009026063573684942
+        }
+      },
+      "passed": false
+    },
+    {
+      "method": "CHRONOS_LR",
+      "baseline": "HISTORY_LR",
+      "months": 6,
+      "positive_months": 2,
+      "BA_delta": -0.006374404123042988,
+      "Brier_delta": -0.036124848755533574,
+      "stocks": {
+        "AAPL": {
+          "BA": -0.03169988165118238,
+          "Brier": -0.05138344217966373
+        },
+        "AMZN": {
+          "BA": 0.018951073405096403,
+          "Brier": -0.020866255331403436
+        }
+      },
+      "passed": false
+    }
+  ],
+  "source_hashes": {
+    "aggregation_predictions.csv": "864c201dc6c0f47f32e2a7e04ab397da3cbc11d50f73f614c6426db761fcb227",
+    "modern_predictions.csv": "cd1855ae354b5e27f477294e717efb42ea2cfb862eaf5e63d93c2641386c89d9",
+    "chronos_predictions.csv": "f5d4b405fcfffb19fa415083de6b6c052fcf824b80c8783b7a41ea12fa535727"
+  },
+  "all_evaluation_periods_exposed": true
+}

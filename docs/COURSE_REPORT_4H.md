@@ -46,7 +46,7 @@ On 122 provisional April check articles (23 positive facts), exact fact F1 was 1
 
 ## 6. Case study and ablation insight
 
-AMZN event aggregation reaches 57.32% later BA versus the matched article+metadata 54.74%. However, swapping only current aggregation vectors under fixed models does not change a single AMZN direction. Event-trained versus article-trained models also selected different regularization strengths, C=0.01 versus C=1. Thus training and selection changes, rather than direct deletion of duplicate current news, explain the computational path to the changed decisions. Their separate contributions remain unresolved.
+AMZN event aggregation reaches 57.32% later BA versus the matched article+metadata 54.74%. However, swapping only current aggregation vectors under fixed models does not change a single AMZN direction. Event-trained versus article-trained models also selected different regularization strengths, C=0.01 versus C=1. Thus training and selection changes, rather than direct deletion of duplicate current news, explain the computational path to the changed decisions. A subsequent fixed-C experiment resolved the later AMZN direction contrast: article and event models at C=0.01 make exactly the same decisions (57.32% BA), whereas article C=1 reaches54.74%. The observed direction gain therefore does not require event aggregation; stronger regularization alone reproduces it in this period. This does not establish a stable cross-period accuracy gain.
 
 Long-term opinion and competition news can become a corrected bearish call even when two distinct articles remain two groups. Conversely earnings-preview and partnership articles can be changed from a correct bullish call to an incorrect bearish one. Evidence content, model contribution and realized market direction must be discussed separately.
 
@@ -65,3 +65,12 @@ Our contribution is a reproducible, controlled pipeline and component analysis: 
 - Raw data and weights remain local; public source and model manifests alone do not permit full retraining without the course data.
 
 This is the report main draft. Group names/contributions and the instructor's final page/template/submission requirements must be filled from the authoritative course instructions; no submission has been made.
+
+
+## Additional finite foundation-model experiments
+
+A separately authorized preregistered round ran 208 new LR fits and frozen inference with Fin-ModernBERT and Chronos-2. Modern used exactly the same titles, mean pooling and training-only PCA16 as F2. It reached AAPL development/later BA45.51%/54.52% and AMZN54.82%/56.03%; its train-month mean BA change was−0.06pp, with AAPL−3.56pp and AMZN+3.44pp. It did not pass the joint gate.
+
+Chronos-2 forecast open/close from512 completed scheduled five-minute trading bars, with target indices aligned to the unchanged four-hour label. Median differences are not probabilities; a past-only LR maps three forecast features to probabilities. Its AAPL development/later BA was50.00%/50.55%, AMZN51.67%/47.01%. The raw median direction later was48.12%/49.31%. A same-history-length LR was evaluated separately. Chronos did not pass the gate, and neither branch received additional fusion or fine-tuning.
+
+These are retrospective component comparisons: Modern's listed financial pretraining includes FNSPID, and historical pretraining overlap cannot be excluded for either foundation model. They do not justify selecting different models for different stocks based on exposed outcomes. See the [complete new report](../outputs/stock_foundation_4h/v1/REPORT.md), [case analysis](../outputs/stock_foundation_4h/v1/CASE_NOTES.md) and [new replay](../outputs/stock_foundation_4h/v1/demo.html).

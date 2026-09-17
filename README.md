@@ -5,6 +5,8 @@
 ## 从这里开始
 
 - [当前结论与结果](docs/CURRENT_STATUS.md)
+- [最新Fin-ModernBERT、Chronos-2与固定正则对照](outputs/stock_foundation_4h/v1/REPORT.md)
+- [新模型离线回放](outputs/stock_foundation_4h/v1/demo.html)
 - [最新有限组合与AMZN归因](outputs/stock_combination_4h/v1/REPORT.md)
 - [课程报告主稿](docs/COURSE_REPORT_4H.md)
 - [离线历史回放](outputs/stock_combination_4h/v1/demo.html)

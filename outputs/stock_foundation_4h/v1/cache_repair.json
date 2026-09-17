@@ -1,0 +1,268 @@
+{
+  "reason": "Generated Pandas string keys had object dtype, preventing default NumPy safe reload; convert to Unicode, predictions unchanged.",
+  "original_code_sha256": "ccb9138af66c742379ef37103abab6a23e9823fc982a788f4a6576bf84172bab",
+  "current_code_sha256": "88b2f3d6117dbb5e60800cd8c6063217964ed397e3ff4095f030d15bf21a9238",
+  "archived_originals": "object_key_originals",
+  "caches": [
+    {
+      "file": "chronos_forecasts.npz",
+      "before_sha256": "f2d105a2965b74712f9fb8f64c7e9aacecb09d1e9b46956549099ee4ac586eee",
+      "after_sha256": "deeb8aa66e7d5d96376873b68751a33dca7b81b82564ae0a91db5cdde7450fc8"
+    },
+    {
+      "file": "chronos_chunks/00000.npz",
+      "before_sha256": "694924974ebf4ef4953cee44902b44c9dc529b4c979e8f7d7f3c9599a3378f58",
+      "after_sha256": "058588516a912d8a724d035dfc2b61d226308bd94bd815ced5f16d7a38763230"
+    },
+    {
+      "file": "chronos_chunks/00032.npz",
+      "before_sha256": "9ebdc3c2a92e88a44e881157ffb7acda23780d3226a4005e39b1036196e0bbce",
+      "after_sha256": "f0f278e171041b986702a2e97e2e2575e1339c51c575b3f5719e5fb71efc5d4b"
+    },
+    {
+      "file": "chronos_chunks/00064.npz",
+      "before_sha256": "193e3511327b0e308ae75558401b04b4c5c180b3c1ff796d532393368c7b4f55",
+      "after_sha256": "ca7fda6298b58323f860fdd802568a0ef78ba1fdbc20b6818f1b6506485a82d6"
+    },
+    {
+      "file": "chronos_chunks/00096.npz",
+      "before_sha256": "a2348320e9daa861a01889cf053428c01a918410479df2cc78076886e3bcd01f",
+      "after_sha256": "53531b8c28732caedf906cfb7082684c538b44143a4da0cc0af07bebea24d556"
+    },
+    {
+      "file": "chronos_chunks/00128.npz",
+      "before_sha256": "d8a0bc64b2045f393f37db205691bac9874199868979d212994400918da7fdf1",
+      "after_sha256": "48dd33f6505df7c371452e21d0ae602d4e4a04468b3d73a28ae6ea3b4b2d2dc4"
+    },
+    {
+      "file": "chronos_chunks/00160.npz",
+      "before_sha256": "16d84cf41d26a0d5b6cb710638d06cf109c574a3e2b64f81852d7b30eef5e2de",
+      "after_sha256": "a7d020a1f712f10d1e413be63cffd6832dbbd244628aae40c859f16ca19f3d4b"
+    },
+    {
+      "file": "chronos_chunks/00192.npz",
+      "before_sha256": "bef761fe3c4195f1ed33f81048df88d26f0c7619f4cdee6f3b4dad5e034cc388",
+      "after_sha256": "12234599917cd651e3fffbbc193ee8b598e9d18e19e9f7ca814b6742370386b4"
+    },
+    {
+      "file": "chronos_chunks/00224.npz",
+      "before_sha256": "b48a5a6310ab5cceeb14b5dca9342cf3e5b7ad0ecad09543cfbb4d921241f36f",
+      "after_sha256": "02faed480f299d8442339b72aec54017bccac2ab8ea2d4f7d73774b871c96a20"
+    },
+    {
+      "file": "chronos_chunks/00256.npz",
+      "before_sha256": "44bce4d55e26406f0be8cc93dfd3b609569eb38cded88a35e244d2e3d3d1c7ac",
+      "after_sha256": "7a5ef47ec0fc83745edefba9b4888a9b598e5e23ec472c94a76b4f9ef11ddc2c"
+    },
+    {
+      "file": "chronos_chunks/00288.npz",
+      "before_sha256": "51d2ae81e4f745bcf6703a003524c303a09e5f6a8f664612b1fe8b49201bed95",
+      "after_sha256": "7774bb9a06a1bdaa63e16d9c1fedfcd5d9bb25b1fbba7d77b9dfc470571f7172"
+    },
+    {
+      "file": "chronos_chunks/00320.npz",
+      "before_sha256": "723078607ceaae141a2ce141d61770e525ad7bd8975dccb9c9c85ee6afad0a75",
+      "after_sha256": "52d97325f733f5b86b70acbcaf81860d88ef1158a46a7346b0f97456e020def5"
+    },
+    {
+      "file": "chronos_chunks/00352.npz",
+      "before_sha256": "e0cc57be3208b1b134db8dec452da7ab1a59f4fcfe3e78e5fd99a75d9fafe139",
+      "after_sha256": "ac8deb1fc86c712a383220a329d57c08f4bc787813e33a4cd5759f281012c0b8"
+    },
+    {
+      "file": "chronos_chunks/00384.npz",
+      "before_sha256": "3a8cc9f89ce88eb64587170f24f8363da1a81b237f8043d64c8fc140e77029e7",
+      "after_sha256": "3247efb4ec3db6e41be84ec6b96b5e6817b5f76c4b1528d96821e94f40e115bc"
+    },
+    {
+      "file": "chronos_chunks/00416.npz",
+      "before_sha256": "d646f1012333b8c2d78d645963e15089f5cac4bba1e03c98df7e7960c215a87d",
+      "after_sha256": "2c614e373b86c304b45b7cc069c5874216d0d8cdf56622adaa3b7ea03d8bf8e4"
+    },
+    {
+      "file": "chronos_chunks/00448.npz",
+      "before_sha256": "6de0f19e9fc09d177c17bf859db333800021cab9dddf2ade65a55d57d170ad5a",
+      "after_sha256": "1f1853ba6a520e8101e5c0177bae5990e25caee193d8265b0a92167995a9f151"
+    },
+    {
+      "file": "chronos_chunks/00480.npz",
+      "before_sha256": "2bdea60799f9e8a2db1401d20f5ede472d6227f89dfcd56bbfe42a78d8af0a16",
+      "after_sha256": "0f308f14542274ac5ac0cbf443678a92d9d343c119671adab40d8cc5e23f71af"
+    },
+    {
+      "file": "chronos_chunks/00512.npz",
+      "before_sha256": "ef06291fa0236578492f3016c25e5dbf9f6171f2b17e9053c7a75b2772758294",
+      "after_sha256": "5f4c0958a5aee3a7eca928ed31a02bf0d7765387c79a4e8bd4fb16b960cf3e9c"
+    },
+    {
+      "file": "chronos_chunks/00544.npz",
+      "before_sha256": "d97b4ba382a9af9304e947edb20bbefdce26b39b265f8501ac4653124800b411",
+      "after_sha256": "8e27747dc974f663c188fd6440a051a6b80c2d55d3e7f0a18a71db3f435a5038"
+    },
+    {
+      "file": "chronos_chunks/00576.npz",
+      "before_sha256": "fdbbe0176954709ef3fcae3343c7f4d8cf2b3743ca48661ce0cb54df62442d45",
+      "after_sha256": "374d33cfe023de16874e06f8225d1c50e84147253259d966569281b30ff6ca6b"
+    },
+    {
+      "file": "chronos_chunks/00608.npz",
+      "before_sha256": "1b491a017fe7779cfac482654a67d0365f4577fae073be2b8b6fb5e6cf05f8be",
+      "after_sha256": "86a6292d91280203572103c7a8b5ba96d5cdaf4ffbd19c8f8be9a2552cb1ed1d"
+    },
+    {
+      "file": "chronos_chunks/00640.npz",
+      "before_sha256": "edb036606c1cac30db03f816e6f08bb4a01dded206799ffdb5e415a0ec8f227c",
+      "after_sha256": "dac200df625afdbeb19d7a51d053e2bbba841683d2fe7ebf2a7cf27339818f42"
+    },
+    {
+      "file": "chronos_chunks/00672.npz",
+      "before_sha256": "47e90b8fc989e78750966e4c4ef701928a343f78633e93f0ad18e95aaf714d4d",
+      "after_sha256": "8b824014f1b841cc9a824d6ef40def4b4ff0edc7e2a5fa835a896087be4b16cd"
+    },
+    {
+      "file": "chronos_chunks/00704.npz",
+      "before_sha256": "392d237387474b56901048752970970e1a66c7ac1ecdd0c1d8947417d6e8c682",
+      "after_sha256": "689f38af06f2029ab8adf4cd7067b342ed3eee021f9167221a83c8062dfaceeb"
+    },
+    {
+      "file": "chronos_chunks/00736.npz",
+      "before_sha256": "2794b901392ec8b719cd2f388517477a66fc821fcbd570ba46c5bf50698f41ad",
+      "after_sha256": "4ea02add300ec15e5587c0bad1adcc816f62beb82922becadbaa3449c6de7cfb"
+    },
+    {
+      "file": "chronos_chunks/00768.npz",
+      "before_sha256": "dc0af781ddd72bbb783d88af0ce6dcb9b2aa610ffde6daabd3a094855283418a",
+      "after_sha256": "db5a177068f25f219603b13d6bb4e98481cd41088ee7b2197f3c8f85c05e4ab3"
+    },
+    {
+      "file": "chronos_chunks/00800.npz",
+      "before_sha256": "5c03e93422b7bd726092dc8da910d26b871ad61a496b8eb982b468c0a1f33e8b",
+      "after_sha256": "bdbfd2b3c4d869aca1e38147e07727f15efdb60be4d32dc20a9383c8dbbd5bd9"
+    },
+    {
+      "file": "chronos_chunks/00832.npz",
+      "before_sha256": "7e3262b9be42a5ff27baea5ac7a9dcc38e4ba16940d8f205d99493dd762372c9",
+      "after_sha256": "5227fe386dd0c96f61d50b904d7c0f9b777b8678dfefe4a9a56ce757d0c31d6a"
+    },
+    {
+      "file": "chronos_chunks/00864.npz",
+      "before_sha256": "f2ecb9adf65f6aceeabe9971b0e61d9e36057c085c656612773d4b161f0c9c59",
+      "after_sha256": "243c1312e063c3b82d47b59d9fad24d470a31232226965b7b581ba0e0c4a670b"
+    },
+    {
+      "file": "chronos_chunks/00896.npz",
+      "before_sha256": "02faa5614027b365951335a66fe2d72cf16c5bf3bbd0862a7624758e0b0aeb4e",
+      "after_sha256": "45e31dd6b45ebc88cb3909af055c7de20bf8f17396873aec69720091ac3709ea"
+    },
+    {
+      "file": "chronos_chunks/00928.npz",
+      "before_sha256": "ec9c2681eb5eda333ed9896f95cf7f183e416f1083306ffcb714537e3eaa9b02",
+      "after_sha256": "d4ca5d9a9afa71ad20a5fac872ddc9488e15db295e0e96d2658abd5ebf9732b8"
+    },
+    {
+      "file": "chronos_chunks/00960.npz",
+      "before_sha256": "89e594c8cb71130b9ade6efe450ded876443b532c2e7f4d20c13aa0f64266873",
+      "after_sha256": "679b745e9e51aa4bcc759425cba6634535bc152d824df301586aa718b58d9950"
+    },
+    {
+      "file": "chronos_chunks/00992.npz",
+      "before_sha256": "d2576b86bf6d0d00ad7876d3dc38fa1e2a8c7c52aa181b6f92546b665ab34372",
+      "after_sha256": "fa365b63c8f6dd88f822540fd810a65252d2709463fcec6226c3ce2f3ef9fa6f"
+    },
+    {
+      "file": "chronos_chunks/01024.npz",
+      "before_sha256": "b570966dbc8c5b61d7f0f4c5d1a394dde76fb452b83db27e146a0038ec0a699c",
+      "after_sha256": "900487ef193c4c8342afd9d0ee7d8f05bb726261c569584b39831fac6265cd6b"
+    },
+    {
+      "file": "chronos_chunks/01056.npz",
+      "before_sha256": "d5c5337e22a7f92a5a96bd13b78befae8da1f04fdb7441fe7012617f8ab9386f",
+      "after_sha256": "b4b447d81d30a6d193acdd11181fca712e7ed1c82a1c3ebcc7bd3b3a83074ffb"
+    },
+    {
+      "file": "chronos_chunks/01088.npz",
+      "before_sha256": "00a68a9313300836e5e94c150731bf78c4ef584c7fe18f89ea313c14528712ff",
+      "after_sha256": "79ec5fc808e89d00b3228ee7a295957be7498ce754014d6c231b9229c8d924b0"
+    },
+    {
+      "file": "chronos_chunks/01120.npz",
+      "before_sha256": "0b9c119926770e8241f8bef557824247ddbd3b62f5d46a336a1c67d72acfcf4d",
+      "after_sha256": "60577310ef2cc2ab3cf5e0cefaf0da1f6c0dc4b01f687cd0cf6fc2a05b7041d5"
+    },
+    {
+      "file": "chronos_chunks/01152.npz",
+      "before_sha256": "95c1a59f1f16e645070fdbfaac84d408e35b2e7e1fd0b1c88b49bf1067f646b8",
+      "after_sha256": "d601d288ed57bc72c923056dc465af8a6f359e2a056f9913683c5c09e46acea5"
+    },
+    {
+      "file": "chronos_chunks/01184.npz",
+      "before_sha256": "abe6996afa3d60801763ca8cbad7e45691ded4f9db85cc95d880d6c74eecdbf5",
+      "after_sha256": "c898fb613ce676f2bfab58e771a08ca874c5fa6fe443eec01a12d3771599da96"
+    },
+    {
+      "file": "chronos_chunks/01216.npz",
+      "before_sha256": "1aed6cc8f673e2ee890e9f7a95c675e3d06492cd4cd40e85f7c3af2e4fb5dbe9",
+      "after_sha256": "f8fcfff5114454906cd4023c71d4421bfe6cdf633167a9725ad2ce798aab1d90"
+    },
+    {
+      "file": "chronos_chunks/01248.npz",
+      "before_sha256": "66ce88d7cce57f07c62b4d0ab21081cf775738e10487763f2e558735e6d2c30f",
+      "after_sha256": "a787db5d6f73e8a5d86766085ba4ffdd45e894347c78abb5d68c1a677a522e1e"
+    },
+    {
+      "file": "chronos_chunks/01280.npz",
+      "before_sha256": "992804113db8a6b0ad8a11f9601f8e4d035104ea52e749045f1e489e619a4ba0",
+      "after_sha256": "ea06c2c3183659100fc3d0b53ae5a2739b49cbd6ec74dc3279b612cc6fade02d"
+    },
+    {
+      "file": "chronos_chunks/01312.npz",
+      "before_sha256": "83c2da3c9ae7f7bb14517f061352b8d9deb2451ecb3fb85118097b09ed7c9723",
+      "after_sha256": "c70612b54eea93c7064cfe51059fcf7898d1c0fadb9ca33dd54a7c473b95344c"
+    },
+    {
+      "file": "chronos_chunks/01344.npz",
+      "before_sha256": "2a59f04989a301bbf3760c2c24a938c43834e4140227c3fe7aea889bc3ff8b17",
+      "after_sha256": "4dd4fa8cf9e93496f04017528439a7559faa94e76e937ab780d8baba75c39c94"
+    },
+    {
+      "file": "chronos_chunks/01376.npz",
+      "before_sha256": "3f63ba875778b9060663ad0310f997d831c02c16b7adfd020c3a26ce9b39871f",
+      "after_sha256": "fc6a3b4b0680ddcaf4ce3264e77cfa64d59ce7ff142a4919d83dcbfbf3394885"
+    },
+    {
+      "file": "chronos_chunks/01408.npz",
+      "before_sha256": "1469e89423a1a53fdb97e7cbd44a4620cec5a62515201c8695e06870d2bd603d",
+      "after_sha256": "4aa3232c8318eb0dfa0bce777f3dd5ef96242b4a2a5ea59355eab80552bb81a5"
+    },
+    {
+      "file": "chronos_chunks/01440.npz",
+      "before_sha256": "43693e709f2f5346353525303d29c62688663e09be70e149ce3bb207172ff98d",
+      "after_sha256": "b10bbb91799e1168abad7d4848de71906071b6970578bcd2eeeb907e8bd42a65"
+    },
+    {
+      "file": "chronos_chunks/01472.npz",
+      "before_sha256": "352301ef3fdcb3b6cec4678e0527eba5f63ad8ab1dc7ede1afb69049d9945b1a",
+      "after_sha256": "987a73a16cf898381bb7b69703769804c5d73b13b597221de95af4bb7c1cc981"
+    },
+    {
+      "file": "chronos_chunks/01504.npz",
+      "before_sha256": "48ee4391ae82f912eb4e440236bb7564a37c6337ee5d746c6fdea973796d4df7",
+      "after_sha256": "5f37f04ac871c18d5953bc87dec43af55cd5b3cf8de623c6d829c54a765fee23"
+    },
+    {
+      "file": "chronos_chunks/01536.npz",
+      "before_sha256": "cebc8c8c0441580b472a5d1fbcac38764834b22f34f90e1e575015e59dd33b33",
+      "after_sha256": "e92bbdd8d9e103c2aba0d1c5e31bf6acdcaeb177b51550754c89e8bfc9cdf880"
+    },
+    {
+      "file": "chronos_chunks/01568.npz",
+      "before_sha256": "790c0cfe505ee2b587fefc770076024ab11bc365c3a104a05572a29a878bcb33",
+      "after_sha256": "e1e29bd389942f7a039c1ed2fc9e0e91804d728a20f3c63506c3c6742d531ec9"
+    },
+    {
+      "file": "chronos_chunks/01600.npz",
+      "before_sha256": "c22e47564955db04ce9b84e75fa36676d585cc477ce4c96ad5e3da38b684b79a",
+      "after_sha256": "f5eb4dac65f665503ec209500707b1495940d59e999bbfe79c1c08f433c047fc"
+    }
+  ]
+}

@@ -1,5 +1,16 @@
 # 当前状态（2026-09-17）
 
+## 最新完成：固定正则归因、Fin-ModernBERT与Chronos-2
+
+[本轮报告](../outputs/stock_foundation_4h/v1/REPORT.md)、[案例](../outputs/stock_foundation_4h/v1/CASE_NOTES.md)、[新demo](../outputs/stock_foundation_4h/v1/demo.html)。按用户新增授权实际执行208次LR拟合；冻结Fin-ModernBERT在M5 MPS编码5,078标题（30.82秒），冻结Chronos-2在CPU处理1,607窗口（34.71秒），并非微调基础模型。
+
+- **归因已补齐：** AMZN后续文章等权C=0.01与事件等权C=0.01均为57.32%，逐窗口方向完全相同。文章C=1为54.74%，事件C=1为54.21%；原局部增益不需要去重就能重现。但强正则训练期方向没有一致增量，不能作为稳定新赢家。
+- **Modern：** AAPL开发/后续BA45.51%/54.52%；AMZN54.82%/56.03%。相对F2训练月均AAPL−3.56pp、AMZN+3.44pp，宏平均−0.06pp且Brier恶化，未通过统一门槛。
+- **Chronos＋LR：** AAPL开发/后续50.00%/50.55%；AMZN51.67%/47.01%。原始中位差后续48.12%/49.31%；未显示稳定方向优势。相同512历史LR也单独报告，未用更长输入冒充模型优势。
+- 两个新模型均未通过门槛，本轮没有融合、进一步微调或扩大搜索。这里F2及Modern均读取标题，不是全文编码器实验。
+- 72行指标独立复算、208权重哈希/重载、过去选参、时间间隔、禁止gap bar扰动、cache失配检查通过。修复本地object-key缓存安全重载，原件已保留且预测不变。
+- F0/F1/F2仍为课堂主线；两新模型为有限探索。全部现有时期暴露，预训练历史重叠无法排除；不宣布新泛化或独立人工验收。
+
 ## 最新完成：有限组合验证、AMZN归因与课程交付
 
 [新报告](../outputs/stock_combination_4h/v1/REPORT.md)、[课程报告主稿](COURSE_REPORT_4H.md)和[离线回放](../outputs/stock_combination_4h/v1/demo.html)已完成。实际优化22个过去OOF温度参数（28个记录含identity），复用既有分类器，完成8次冻结模型输入替换推理；本轮没有重训FinBERT。

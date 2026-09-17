@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "rows": 1607,
+  "metric_rows": 72,
+  "classifier_fits": 208,
+  "finbert_reproduction_error": 1.7208456881689926e-15,
+  "modern_weight_replay_error": 0.0,
+  "checks": [
+    "original labels and unique keys",
+    "BA/MCC/Brier independent recomputation",
+    "all model weight hashes",
+    "all training boundaries",
+    "C selected from earlier folds only",
+    "no-news exact fallback",
+    "Chronos target steps 48/49",
+    "forbidden gap-bar mutation leaves inputs unchanged",
+    "cache mismatch rejected",
+    "safe Unicode cache resume",
+    "frozen ModernBERT weight replay"
+  ],
+  "implementation_repairs": "Chronos local object-key cache migrated to Unicode with original artifacts preserved; numerical forecasts unchanged"
+}

@@ -1,0 +1,27 @@
+{
+  "model": "clapAI/Fin-ModernBERT",
+  "revision": "31d3d96d5839a03dccd030bea40b77c2649a9a01",
+  "device": "mps",
+  "dtype": "float32",
+  "parameters": 149014272,
+  "trainable_parameters": 0,
+  "gradients_present": false,
+  "encoder_training": false,
+  "articles": 5078,
+  "new_batches": 159,
+  "truncated_articles": 0,
+  "seconds": 30.821031583996955,
+  "embeddings_sha256": "fb117cad24a95cf7b8b3f137f553beb5331f450820e1c4ce8dba4aa2eda348b6",
+  "fingerprint": {
+    "manifest": "d010876750a8fe47d5c7c69bdbf0c2f123e91465ec0f38677103ccfa1387aa79",
+    "weights": "8c715fd0b59dda90762df8187a3266d4f02fc05d1c02cce18e296c86da912b65",
+    "config": "ff7d067de8cce5e583ca904b45e7b86ab1c184988c973b6a4670f3c7412fb3e0",
+    "tokenizer": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30",
+    "revision": "31d3d96d5839a03dccd030bea40b77c2649a9a01",
+    "max_length": 256,
+    "pooling": "attention_mask_mean",
+    "dtype": "float32",
+    "code": "c15927c3866e34e20f0770d0482e128008191087b58c31c28c87b16674f5e26f"
+  },
+  "torch": "2.14.0"
+}

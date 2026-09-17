@@ -693,5 +693,185 @@
     "path": "outputs/stock_combination_4h/v1/verification.json",
     "bytes": 522,
     "sha256": "4789890d2ddcec2680da7beeed53d16ec93184864a00ffa7575ae426dab762cf"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/aggregation_cv.csv",
+    "bytes": 7618,
+    "sha256": "250fd46905d63f51f8adbe1309096dc2cadeb11bc990177b8e74a59613693544"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/aggregation_metrics.csv",
+    "bytes": 8998,
+    "sha256": "33cd63ef812e06404117a257112c441713cd9164334f1e80951ba4591e8ab617"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/aggregation_monthly.csv",
+    "bytes": 34409,
+    "sha256": "31b653cae4a74e3febbcfce55c78437e953f0097320810b80903440849e78d47"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/aggregation_predictions.csv",
+    "bytes": 358192,
+    "sha256": "864c201dc6c0f47f32e2a7e04ab397da3cbc11d50f73f614c6426db761fcb227"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/aggregation_training.json",
+    "bytes": 31647,
+    "sha256": "f2d1614a85efb5c268b366fb344dff5d1f77322a50b0de13db388e20e1bdbe54"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/all_metrics.csv",
+    "bytes": 12007,
+    "sha256": "e4a0584110a9c9c3d7b4e641f15c482530e51c2fcafe0e5bcd96d1699135c7b0"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/all_monthly.csv",
+    "bytes": 45803,
+    "sha256": "0b2f7f700f3099ee13169ec6c32da084bffa622399eef3c2c49ecd28439debe8"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/all_predictions.csv",
+    "bytes": 438474,
+    "sha256": "1bebf89274d329dd91939dfad5cce3d8138826dcf2f32e458a57a3cb4586a210"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/cache_repair.json",
+    "bytes": 12616,
+    "sha256": "06f517348ee2958e0074bb17b43c7fb293eb9aa2c50d1ed1d0a0cfd49ee7f02c"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/cases.json",
+    "bytes": 4439,
+    "sha256": "b8f7c8b7616f114661d9578b261f2e81cb5a0e8fc326047357e3266e81c53f57"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/chronos_cv.csv",
+    "bytes": 11225,
+    "sha256": "f0f3b7bc0c8f117db17ec991e9832fe83423ca07a70fb504af64c9f1a91ed160"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/chronos_inference.json",
+    "bytes": 1441,
+    "sha256": "18aae7a39bfad4616a784ea5cbb1f18a34f857fb94b202e1f9342dee957e16ab"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/chronos_metrics.csv",
+    "bytes": 7003,
+    "sha256": "15293449ff550fd40b4b0557b5551ed98f62879ef823a97dd4be13ba819235a0"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/chronos_monthly.csv",
+    "bytes": 26650,
+    "sha256": "4ae16cc81dc6cf97cb84b3b9b26f3331a2bf373737e2698d1f4ca386c7c93ffd"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/chronos_predictions.csv",
+    "bytes": 305395,
+    "sha256": "f5d4b405fcfffb19fa415083de6b6c052fcf824b80c8783b7a41ea12fa535727"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/chronos_raw_direction.csv",
+    "bytes": 2459,
+    "sha256": "48cebaf14b2d428bcb7c102b0d34f5067a8e026acddcb9763fb6d335d866ac59"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/chronos_time_audit.csv",
+    "bytes": 159239,
+    "sha256": "e96fd542536ff61de749eca9853b6e82b38101363d935a3719c6443ae64111a1"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/chronos_training.json",
+    "bytes": 32563,
+    "sha256": "0deae1ef544d460b85c774054e17a246fed8fc892659fdf41fbd0ddaf4073860"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/demo.html",
+    "bytes": 346133,
+    "sha256": "445553a0adbaae5eae55565883f88db6b42e7126ac5a7d44a89b4bb84200e9a5"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/finbert_match_cv.csv",
+    "bytes": 5793,
+    "sha256": "23c8c485b82ffee601b88010257a82d9805c6a3e164fa28afc844e4841d449ea"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/finbert_match_metrics.csv",
+    "bytes": 6020,
+    "sha256": "82a9962ffe79baeb6fd326acda6029ca749650b67468466d5ed35e48252eba9c"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/finbert_match_monthly.csv",
+    "bytes": 23036,
+    "sha256": "b689b54abc5de0cac506ff878d11c5b42e59aa8ed9ab0803158d7585ba28b07a"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/finbert_match_predictions.csv",
+    "bytes": 278922,
+    "sha256": "8181458fa66f5e10c7097839b5b4e372cc0a7c800c8b8210f56861be043f78ea"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/finbert_match_training.json",
+    "bytes": 17033,
+    "sha256": "dd2f83d10d8fd288a8e2d45a6a8a53bff5bc8959c00fb78abaf1cf5cf57cdcc4"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/fusion_selection.json",
+    "bytes": 95,
+    "sha256": "de832bb29fe8beffc4efae013b437479c44c6a91812e6555500fb0b68594e131"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/modern_cv.csv",
+    "bytes": 5861,
+    "sha256": "b3385f636e92fc06f0455a483d14e139b85173d0baf54a1c340d5d54bb4d674c"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/modern_inference.json",
+    "bytes": 1049,
+    "sha256": "8bd5e35e688f6a6a2c517f60fc771c0fdab640c89024a65d73c1bc667c376be3"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/modern_metrics.csv",
+    "bytes": 6029,
+    "sha256": "37a6fd70162720433577f06e32d1ca655665ab6b92913da889dc037973ad92ab"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/modern_monthly.csv",
+    "bytes": 23033,
+    "sha256": "c0a2e4235f3eb955fdf9d364a96a7a4bbe9ed33511435c1e869ed3a0297a9d01"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/modern_predictions.csv",
+    "bytes": 278897,
+    "sha256": "cd1855ae354b5e27f477294e717efb42ea2cfb862eaf5e63d93c2641386c89d9"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/modern_training.json",
+    "bytes": 16912,
+    "sha256": "e2b5234878779051174faec830ccf61c9b2d6be88547fdb26c4debff25ee9b79"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/paired_intervals.csv",
+    "bytes": 9490,
+    "sha256": "130d9fae9b896c15c25b3592b679f9d77b52123bf712f37d2d54058ba5dcc513"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/selection.json",
+    "bytes": 1314,
+    "sha256": "8b627ea240320e82cafc5f0e5d4f514a1d3f43370951c4b5db626a42317aa642"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/subgroups.csv",
+    "bytes": 21031,
+    "sha256": "d0b8087129437da35aa0e2d98c85450a8b902ee3562108a3a6f55156d0a39eeb"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/transitions.csv",
+    "bytes": 1735,
+    "sha256": "6038c2eb4bd868cb66c6f06f1d7ab86186b3636fcc787fc3ad1c0b2b1d2a1af4"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v1/verification.json",
+    "bytes": 758,
+    "sha256": "5b13407f30ae2eb1b69f3d700814e5254ce618ebfbfd343d8b2fdae9bd838a49"
   }
 ]
