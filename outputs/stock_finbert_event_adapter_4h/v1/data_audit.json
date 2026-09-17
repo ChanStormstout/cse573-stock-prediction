@@ -1,0 +1,77 @@
+{
+  "status": "PASS_PROVISIONAL_DATA_AUDIT",
+  "labels_status": "MODEL_PROVISIONAL_NOT_INDEPENDENT",
+  "independent_human_review_passed": false,
+  "rows": 458,
+  "split_counts": {
+    "check": 122,
+    "valid": 87,
+    "train": 249
+  },
+  "positive_article_counts": {
+    "check|AAPL": 17,
+    "check|AMZN": 5,
+    "train|AAPL": 47,
+    "train|AMZN": 13,
+    "valid|AAPL": 19
+  },
+  "event_counts": {
+    "check|AAPL": 17,
+    "check|AMZN": 6,
+    "train|AAPL": 57,
+    "train|AMZN": 18,
+    "valid|AAPL": 20
+  },
+  "total_positive_articles": 101,
+  "total_events": 118,
+  "event_fields": [
+    "action",
+    "evidence_ids",
+    "kind",
+    "new",
+    "old",
+    "unit"
+  ],
+  "kind_action_counts": {
+    "rating|initiate": 2,
+    "rating|lower": 18,
+    "rating|maintain": 31,
+    "rating|raise": 9,
+    "target_price|lower": 11,
+    "target_price|maintain": 3,
+    "target_price|raise": 21,
+    "target_price|unknown": 23
+  },
+  "mapping": {
+    "source_rows_available": 537,
+    "accepted_rows_verified": 458,
+    "failures": 0,
+    "article_target_pairs_seen_in_fixed_windows": 57,
+    "article_target_pairs_not_seen_in_fixed_windows": 401
+  },
+  "grouping": {
+    "accepted_exact_groups": 458,
+    "sealed_duplicate_links_total": 93,
+    "sealed_links_with_both_accepted_endpoints": 0,
+    "accepted_articles_referenced_by_sealed_links": 29,
+    "conservative_near_duplicate_pairs": 1,
+    "near_duplicate_pairs_crossing_train_forward_segments": 0,
+    "near_duplicate_scan": {
+      "same_symbol": true,
+      "maximum_day_distance": 14,
+      "title_or_context_char_ngram_cosine_minimum": 0.9
+    },
+    "connected_components": 457,
+    "non_singleton_components": 1,
+    "cross_split_components": 0,
+    "cross_split_exact_groups": 0,
+    "warning": "Conservative known links cannot prove that every semantic duplicate was found."
+  },
+  "hashes": {
+    "inputs": "c46702c14c13855b615c5507bba623c6f242a68a18e9e863b8b54d9aac8a3477",
+    "labels": "4520c4e885dccec428a3153f844421f1bf342d4212b2f6b3b2cde5fec54a3135",
+    "duplicate_links": "f7f65f77acd51279e734b92ec92b0e30697dda9ddb8e3695d2adedf339dd975b",
+    "paragraph_manifest": "b1a6ea09320d53c9dfb11de6c724873fd8f921bfdfa721ac84c014ddc4a41b6f",
+    "protocol": "2fbcc96c747ba57ba1b2b2c74c6ef7ae59b8f685bd338f32d22dddf29e83c4cb"
+  }
+}

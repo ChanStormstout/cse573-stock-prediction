@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "candidate_protected": true,
+  "only_context_may_be_token_truncated": true,
+  "maximum_tokens": 512,
+  "sets": [
+    {
+      "name": "sealed_annotation",
+      "articles": 458,
+      "candidate_sentences": 3893,
+      "model_units": 3893,
+      "chunked_candidate_sentences": 0,
+      "maximum_encoded_tokens": 512,
+      "units_over_512": 0
+    },
+    {
+      "name": "fixed_window_corpus_candidates",
+      "articles": 1641,
+      "candidate_sentences": 6691,
+      "model_units": 6692,
+      "chunked_candidate_sentences": 1,
+      "maximum_encoded_tokens": 512,
+      "units_over_512": 0
+    }
+  ],
+  "corpus_inventory": {
+    "unique_article_target_pairs": 3577,
+    "retrieved_article_target_pairs": 1641,
+    "retrieved_candidate_sentences": 6691,
+    "window_occurrences": 5089
+  },
+  "source_hashes": {
+    "annotation_inputs": "c46702c14c13855b615c5507bba623c6f242a68a18e9e863b8b54d9aac8a3477",
+    "P2": "e61958a670f918408357f23dd43a7fed247b134efe84300af13e684c142917b0"
+  }
+}

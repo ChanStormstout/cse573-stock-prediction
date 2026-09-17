@@ -1,0 +1,29 @@
+{
+  "status": "PUBLISHED",
+  "selected_adapter": "A1",
+  "later_best": {
+    "AAPL": {
+      "method": "F2",
+      "BA": 0.5671340154098775,
+      "Brier": 0.2855781078563171
+    },
+    "AMZN": {
+      "method": "F1",
+      "BA": 0.5435544430538173,
+      "Brier": 0.2583062367774877
+    }
+  },
+  "later_two_stock_descriptive": {
+    "method": "F2",
+    "BA": 0.5549061816723981,
+    "Brier": 0.2736343413310633
+  },
+  "cross_period_stability": {
+    "method": "F1",
+    "worst_BA": 0.5174308450170519,
+    "mean_BA": 0.5492331534273971,
+    "mean_Brier": 0.2537852791272965
+  },
+  "exact_fallback_verified": true,
+  "independent_human_review_passed": false
+}

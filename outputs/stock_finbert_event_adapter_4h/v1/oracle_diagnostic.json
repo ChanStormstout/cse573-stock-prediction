@@ -1,0 +1,102 @@
+{
+  "status": "COMPLETE_STOP_FOR_SPARSE_FORWARD_EVIDENCE",
+  "scope": "coverage_limited_oracle_diagnostic_not_deployable",
+  "unknown_policy": "unlabelled articles never become negative; their gate is zero and base probability is unchanged",
+  "counts": {
+    "oof_windows": 765,
+    "event_windows": 15,
+    "window_event_group_occurrences": 15,
+    "nonduplicate_report_groups": 12,
+    "nonduplicate_event_facts": 14,
+    "by_month_symbol": {
+      "2018-03|AAPL": 5,
+      "2018-04|AAPL": 6,
+      "2018-04|AMZN": 4
+    }
+  },
+  "feature_count": 16,
+  "C_selection": {
+    "source": "March 1-15 fit, March 16-31 validation",
+    "candidates": [
+      {
+        "C": 0.01,
+        "fit_ok": true,
+        "n": 60,
+        "BA": 0.32285714285714284,
+        "MCC": -0.35247760980938353,
+        "Brier": 0.3294109069833813,
+        "pred_up": 0.5666666666666667,
+        "up_rate": 0.4166666666666667,
+        "constant": false
+      },
+      {
+        "C": 0.1,
+        "fit_ok": true,
+        "n": 60,
+        "BA": 0.32285714285714284,
+        "MCC": -0.35247760980938353,
+        "Brier": 0.33006597305154756,
+        "pred_up": 0.5666666666666667,
+        "up_rate": 0.4166666666666667,
+        "constant": false
+      },
+      {
+        "C": 1.0,
+        "fit_ok": true,
+        "n": 60,
+        "BA": 0.32285714285714284,
+        "MCC": -0.35247760980938353,
+        "Brier": 0.3320582445385982,
+        "pred_up": 0.5666666666666667,
+        "up_rate": 0.4166666666666667,
+        "constant": false
+      }
+    ],
+    "selected": {
+      "C": 0.01,
+      "fit_ok": true,
+      "n": 60,
+      "BA": 0.32285714285714284,
+      "MCC": -0.35247760980938353,
+      "Brier": 0.3294109069833813,
+      "pred_up": 0.5666666666666667,
+      "up_rate": 0.4166666666666667,
+      "constant": false
+    }
+  },
+  "forward_evaluation": {
+    "period": "2018-04",
+    "fit_ok": true,
+    "base": {
+      "n": 126,
+      "BA": 0.4736908676954212,
+      "MCC": -0.05333132774846248,
+      "Brier": 0.2688202085653964,
+      "pred_up": 0.5873015873015873,
+      "up_rate": 0.46825396825396826,
+      "constant": false
+    },
+    "oracle": {
+      "n": 126,
+      "BA": 0.4736908676954212,
+      "MCC": -0.05333132774846248,
+      "Brier": 0.26910219713567335,
+      "pred_up": 0.5873015873015873,
+      "up_rate": 0.46825396825396826,
+      "constant": false
+    },
+    "transitions": {
+      "changed": 0,
+      "right": 0,
+      "wrong": 0
+    }
+  },
+  "repeatable_train_oof_increment": false,
+  "stop_reason": "Only March and April provisional labels overlap stock-train OOF windows, leaving one forward evaluation month; this cannot demonstrate repeatable increment in at least two months.",
+  "independent_human_review_passed": false,
+  "source_hashes": {
+    "labels": "4520c4e885dccec428a3153f844421f1bf342d4212b2f6b3b2cde5fec54a3135",
+    "oof": "d3a80e724ccd27f16e87f27a46d3b6433f34a3991a752c5fa14131a4ac3b5212",
+    "paragraphs": "e61958a670f918408357f23dd43a7fed247b134efe84300af13e684c142917b0"
+  }
+}

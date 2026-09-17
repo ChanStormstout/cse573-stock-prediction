@@ -1,0 +1,330 @@
+{
+  "adapter_selected_config": "A1",
+  "residual_selections": {
+    "D2": {
+      "event_source": "rules",
+      "selected": {
+        "parameterization": "BASE",
+        "C": null,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      "counts": {
+        "unique_event_groups": {
+          "AAPL": 1718,
+          "AMZN": 72
+        },
+        "event_windows": {
+          "AAPL": 340,
+          "AMZN": 83
+        },
+        "independent_eligible": {
+          "AAPL": true,
+          "AMZN": true
+        }
+      }
+    },
+    "D3": {
+      "event_source": "A0_ensemble",
+      "selected": {
+        "parameterization": "BASE",
+        "C": null,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      "counts": {
+        "unique_event_groups": {
+          "AAPL": 3,
+          "AMZN": 0
+        },
+        "event_windows": {
+          "AAPL": 4,
+          "AMZN": 0
+        },
+        "independent_eligible": {
+          "AAPL": false,
+          "AMZN": false
+        }
+      }
+    },
+    "D4": {
+      "event_source": "A1_ensemble",
+      "selected": {
+        "parameterization": "BASE",
+        "C": null,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      "counts": {
+        "unique_event_groups": {
+          "AAPL": 334,
+          "AMZN": 5
+        },
+        "event_windows": {
+          "AAPL": 160,
+          "AMZN": 10
+        },
+        "independent_eligible": {
+          "AAPL": true,
+          "AMZN": false
+        }
+      }
+    }
+  },
+  "candidate_grids": {
+    "D2": [
+      {
+        "parameterization": "BASE",
+        "C": null,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C0_shared",
+        "C": 0.01,
+        "mean_monthly_BA": 0.5099515697121546,
+        "mean_monthly_Brier": 0.2637855919888001,
+        "delta_Brier": 0.003678629794748256,
+        "eligible": false
+      },
+      {
+        "parameterization": "C0_shared",
+        "C": 0.1,
+        "mean_monthly_BA": 0.5060590428981729,
+        "mean_monthly_Brier": 0.2758758074996368,
+        "delta_Brier": 0.015768845305584978,
+        "eligible": false
+      },
+      {
+        "parameterization": "C0_shared",
+        "C": 1.0,
+        "mean_monthly_BA": 0.5096589373055618,
+        "mean_monthly_Brier": 0.28428012796930635,
+        "delta_Brier": 0.024173165775254524,
+        "eligible": false
+      },
+      {
+        "parameterization": "C1_independent",
+        "C": 0.01,
+        "mean_monthly_BA": 0.5109894638562299,
+        "mean_monthly_Brier": 0.2626250230772966,
+        "delta_Brier": 0.0025180608832447993,
+        "eligible": false
+      },
+      {
+        "parameterization": "C1_independent",
+        "C": 0.1,
+        "mean_monthly_BA": 0.5063473715915886,
+        "mean_monthly_Brier": 0.27241105036984414,
+        "delta_Brier": 0.012304088175792316,
+        "eligible": false
+      },
+      {
+        "parameterization": "C1_independent",
+        "C": 1.0,
+        "mean_monthly_BA": 0.5129642511969741,
+        "mean_monthly_Brier": 0.27844774754927176,
+        "delta_Brier": 0.018340785355219935,
+        "eligible": false
+      },
+      {
+        "parameterization": "C2_partial_shared",
+        "C": 0.01,
+        "mean_monthly_BA": 0.5099515697121546,
+        "mean_monthly_Brier": 0.2638000587510726,
+        "delta_Brier": 0.0036930965570207697,
+        "eligible": false
+      },
+      {
+        "parameterization": "C2_partial_shared",
+        "C": 0.1,
+        "mean_monthly_BA": 0.5060590428981729,
+        "mean_monthly_Brier": 0.27594352362568264,
+        "delta_Brier": 0.015836561431630813,
+        "eligible": false
+      },
+      {
+        "parameterization": "C2_partial_shared",
+        "C": 1.0,
+        "mean_monthly_BA": 0.5082641583845384,
+        "mean_monthly_Brier": 0.2846634129455793,
+        "delta_Brier": 0.02455645075152746,
+        "eligible": false
+      }
+    ],
+    "D3": [
+      {
+        "parameterization": "BASE",
+        "C": null,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C0_shared",
+        "C": 0.01,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C0_shared",
+        "C": 0.1,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C0_shared",
+        "C": 1.0,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C1_independent",
+        "C": 0.01,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C1_independent",
+        "C": 0.1,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C1_independent",
+        "C": 1.0,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C2_partial_shared",
+        "C": 0.01,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C2_partial_shared",
+        "C": 0.1,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C2_partial_shared",
+        "C": 1.0,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      }
+    ],
+    "D4": [
+      {
+        "parameterization": "BASE",
+        "C": null,
+        "mean_monthly_BA": 0.5213989765181091,
+        "mean_monthly_Brier": 0.2601069621940518,
+        "delta_Brier": 0.0,
+        "eligible": true
+      },
+      {
+        "parameterization": "C0_shared",
+        "C": 0.01,
+        "mean_monthly_BA": 0.5114285870427141,
+        "mean_monthly_Brier": 0.26206577996635166,
+        "delta_Brier": 0.0019588177722998368,
+        "eligible": true
+      },
+      {
+        "parameterization": "C0_shared",
+        "C": 0.1,
+        "mean_monthly_BA": 0.5037889460358774,
+        "mean_monthly_Brier": 0.27149146814902475,
+        "delta_Brier": 0.011384505954972923,
+        "eligible": false
+      },
+      {
+        "parameterization": "C0_shared",
+        "C": 1.0,
+        "mean_monthly_BA": 0.49940154729364,
+        "mean_monthly_Brier": 0.281889623684616,
+        "delta_Brier": 0.02178266149056418,
+        "eligible": false
+      },
+      {
+        "parameterization": "C1_independent",
+        "C": 0.01,
+        "mean_monthly_BA": 0.5127247803439129,
+        "mean_monthly_Brier": 0.26087985512237816,
+        "delta_Brier": 0.0007728929283263297,
+        "eligible": true
+      },
+      {
+        "parameterization": "C1_independent",
+        "C": 0.1,
+        "mean_monthly_BA": 0.5109920359641097,
+        "mean_monthly_Brier": 0.2650919558005467,
+        "delta_Brier": 0.0049849936064948475,
+        "eligible": false
+      },
+      {
+        "parameterization": "C1_independent",
+        "C": 1.0,
+        "mean_monthly_BA": 0.5126454751175489,
+        "mean_monthly_Brier": 0.26904404974000656,
+        "delta_Brier": 0.008937087545954736,
+        "eligible": false
+      },
+      {
+        "parameterization": "C2_partial_shared",
+        "C": 0.01,
+        "mean_monthly_BA": 0.5114285870427141,
+        "mean_monthly_Brier": 0.2620655889688391,
+        "delta_Brier": 0.0019586267747872532,
+        "eligible": true
+      },
+      {
+        "parameterization": "C2_partial_shared",
+        "C": 0.1,
+        "mean_monthly_BA": 0.5053321559124206,
+        "mean_monthly_Brier": 0.2714876383769132,
+        "delta_Brier": 0.011380676182861371,
+        "eligible": false
+      },
+      {
+        "parameterization": "C2_partial_shared",
+        "C": 1.0,
+        "mean_monthly_BA": 0.49940154729364,
+        "mean_monthly_Brier": 0.2818831440087041,
+        "delta_Brier": 0.021776181814652296,
+        "eligible": false
+      }
+    ]
+  },
+  "selection_period": "March-August train-forward OOF only",
+  "development_and_later_used": false
+}

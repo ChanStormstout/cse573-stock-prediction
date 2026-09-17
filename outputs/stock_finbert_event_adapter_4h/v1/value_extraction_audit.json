@@ -1,0 +1,51 @@
+{
+  "status": "PASS_COMPONENT_DIAGNOSTIC_WITH_RECORDED_FAILURES",
+  "scope": "deterministic_value_copy_on_model_provisional_evidence_not_independent_gold",
+  "summary": {
+    "rating": {
+      "explicit_target_facts": 60,
+      "exact_old_new": 60,
+      "failed_ids": []
+    },
+    "target_price": {
+      "explicit_target_facts": 53,
+      "exact_old_new": 52,
+      "failed_ids": [
+        "N0198"
+      ]
+    }
+  },
+  "by_split_kind": {
+    "train|rating": {
+      "explicit_target_facts": 41,
+      "exact_old_new": 41
+    },
+    "train|target_price": {
+      "explicit_target_facts": 29,
+      "exact_old_new": 28
+    },
+    "valid|rating": {
+      "explicit_target_facts": 8,
+      "exact_old_new": 8
+    },
+    "valid|target_price": {
+      "explicit_target_facts": 12,
+      "exact_old_new": 12
+    },
+    "check|rating": {
+      "explicit_target_facts": 11,
+      "exact_old_new": 11
+    },
+    "check|target_price": {
+      "explicit_target_facts": 12,
+      "exact_old_new": 12
+    }
+  },
+  "development_status": "The deterministic parser was developed against known provisional examples across this exposed panel; these counts are regression diagnostics, not held-out generalization estimates.",
+  "all_facts": 118,
+  "facts_without_explicit_target_in_combined_evidence": 5,
+  "source_hashes": {
+    "inputs": "c46702c14c13855b615c5507bba623c6f242a68a18e9e863b8b54d9aac8a3477",
+    "labels": "4520c4e885dccec428a3153f844421f1bf342d4212b2f6b3b2cde5fec54a3135"
+  }
+}

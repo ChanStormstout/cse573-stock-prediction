@@ -1,0 +1,56 @@
+{
+  "saved_before_new_results": true,
+  "target": "AAPL_AMZN_four_hour_direction",
+  "window_count": 1607,
+  "exposed_periods": {
+    "development": "2018-09 through 2018-10",
+    "later": "2018-11 onward"
+  },
+  "annotation_status": "DUAL_GPT_PROVISIONAL_NOT_HUMAN_GOLD",
+  "article_counts": {"train": 249, "development": 87, "check": 122},
+  "forward_folds": [
+    {"train_end": "2018-01-15", "eval_start": "2018-01-16", "eval_end": "2018-01-31"},
+    {"train_end": "2018-01-31", "eval_start": "2018-02-01", "eval_end": "2018-02-14"},
+    {"train_end": "2018-02-14", "eval_start": "2018-02-15", "eval_end": "2018-02-28"}
+  ],
+  "seeds": [573, 574, 575],
+  "threshold_grid": [0.35, 0.5, 0.65],
+  "max_tokens": 512,
+  "input_design": "TARGET and title plus a protected complete candidate sentence; the second sequence contains every other numbered complete sentence from the extracted target-company passages and only that context may be token-truncated at 512",
+  "amendments": [
+    {
+      "date": "2026-09-17",
+      "stage": "before_official_full_context_restart_and_before_any_extraction_or_downstream_metric",
+      "reason": "The first implementation used only adjacent context sentences and did not fully implement the requested target-company paragraph context.",
+      "results_used": false,
+      "disposition": "Adjacent-context partial training was preserved privately as aborted and all official A0/A1/A2 fits restart with identical full-context inputs."
+    }
+  ],
+  "batch_size": 16,
+  "max_epochs": 12,
+  "early_stopping_patience": 2,
+  "gradient_clip": 1.0,
+  "adapter_selection_score": {
+    "event_f1": 0.4,
+    "type_macro_f1": 0.2,
+    "action_macro_f1": 0.2,
+    "evidence_micro_f1": 0.2
+  },
+  "configs": {
+    "A0": {"encoder": "frozen", "head_lr": 0.0005, "weight_decay": 0.0001},
+    "A1": {"encoder": "top_two_layers_unfrozen", "encoder_lr": 0.00001, "head_lr": 0.0005, "weight_decay": 0.0001},
+    "A2": {"encoder": "top_two_attention_query_value_lora", "rank": 4, "alpha": 8, "adapter_lr": 0.0001, "head_lr": 0.0005, "weight_decay": 0.0001}
+  },
+  "residual": {
+    "max_event_features": 20,
+    "C_grid": [0.01, 0.1, 1.0],
+    "brier_guardrail": 0.002,
+    "minimum_unique_events_per_stock": 30,
+    "minimum_event_windows_per_stock": 60,
+    "parameterizations": ["C0_shared", "C1_independent", "C2_partial_shared"]
+  },
+  "selection_data": "training_chronological_forward_OOF_only",
+  "development_and_later_pooled_for_selection": false,
+  "per_stock_later_winner_selection": false,
+  "independent_human_review_passed": false
+}

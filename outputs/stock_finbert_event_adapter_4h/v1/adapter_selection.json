@@ -1,0 +1,35 @@
+{
+  "selected_config": "A1",
+  "selected_thresholds": {
+    "A0": 0.35,
+    "A1": 0.35,
+    "A2": 0.35
+  },
+  "config_forward_scores": [
+    {
+      "config": "A0",
+      "threshold": 0.35,
+      "mean_score": 0.007483870967741935,
+      "std_score": 0.012962444753418694
+    },
+    {
+      "config": "A1",
+      "threshold": 0.35,
+      "mean_score": 0.5201927238452408,
+      "std_score": 0.032199745145865245
+    },
+    {
+      "config": "A2",
+      "threshold": 0.35,
+      "mean_score": 0.39588949234922094,
+      "std_score": 0.050912098332917176
+    }
+  ],
+  "full_epochs": {
+    "A0": 4,
+    "A1": 7,
+    "A2": 7
+  },
+  "selection_source": "January-February chronological forward folds only",
+  "development_or_check_used_for_selection": false
+}

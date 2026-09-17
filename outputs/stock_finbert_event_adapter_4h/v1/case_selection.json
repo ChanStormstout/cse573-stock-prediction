@@ -1,0 +1,42 @@
+{
+  "saved_before_adapter_or_downstream_results": true,
+  "semantic_cases": [
+    {
+      "cohort": "qwen_historical_current_confusion",
+      "article_id": "N0400",
+      "selection_reason": "Frozen Qwen treated a historical analyst list as current Amazon actions while the provisional label is no-event."
+    },
+    {
+      "cohort": "maintain_rating_and_raise_target",
+      "article_id": "N0415",
+      "selection_reason": "One sentence contains a maintained rating and a separately raised target; ordinary QLoRA retained only the target fact."
+    },
+    {
+      "cohort": "multi_company_target_object",
+      "article_id": "N0417",
+      "selection_reason": "A multi-company price-target list requires selecting the Amazon sentence while ignoring other companies."
+    },
+    {
+      "cohort": "duplicate_reports",
+      "window_key": "AMZN|2018-04-27 15:30:00+00:00",
+      "selection_reason": "The previously fixed quality panel identifies this as the AMZN duplicate-report window."
+    },
+    {
+      "cohort": "no_event_exact_fallback",
+      "window_key": "AAPL|2018-04-24 13:30:00+00:00",
+      "selection_reason": "The previously fixed quality panel identifies this as a no-news AAPL window."
+    }
+  ],
+  "outcome_cases": [
+    {
+      "cohort": "extraction_correct_prediction_wrong",
+      "selection_rule": "earliest chronological event window where the selected adapter matches every complete provisional fact signature (kind, action, old, new, unit), changes the base direction, and changes a correct base decision to an error"
+    },
+    {
+      "cohort": "extraction_error_prediction_wrong",
+      "selection_rule": "earliest chronological labeled event window where the selected adapter has a complete provisional fact-signature mismatch and its residual changes a correct base decision to an error"
+    }
+  ],
+  "tie_break": "available timestamp, then stock symbol, then fixed window key",
+  "warning": "Outcome-case rules are fixed before predictions are read; a cohort is reported unavailable if no matching row exists."
+}

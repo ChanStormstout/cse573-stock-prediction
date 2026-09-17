@@ -458,5 +458,130 @@
     "path": "outputs/stock_nextgen_4h/runs/v1/SOURCE_HASHES.json",
     "bytes": 3298,
     "sha256": "bc813b546d249bb8ed09a5f9a410fc39b5d684c9ecf4f55f372af7dfad58a44a"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/protocol.json",
+    "bytes": 2562,
+    "sha256": "2fbcc96c747ba57ba1b2b2c74c6ef7ae59b8f685bd338f32d22dddf29e83c4cb"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/data_audit.json",
+    "bytes": 2296,
+    "sha256": "35b53564dac53f1fc71639ce31ab0e85e13188b05bc6023ff10641601a8e1346"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/oracle_diagnostic.json",
+    "bytes": 3005,
+    "sha256": "23c8d40e6bc5e0852ed1726d06244a91597bf339f2586d6e2ca0daa9d4d12428"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/case_selection.json",
+    "bytes": 2047,
+    "sha256": "5449da3dac1a12a02092362b1f9547d8b1c7d5a86718bdb0375e52cd3f9ec4b9"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/input_length_audit.json",
+    "bytes": 1012,
+    "sha256": "0c1704121064d25c66f8787655c11a09c810f2c1342f479899747a1ebde0b835"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/cache_equivalence.json",
+    "bytes": 801,
+    "sha256": "92ea4a7ec116538a67ba2f24c0d68dacefd02d54eb273bf0dd9870d4c01f8726"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/value_extraction_audit.json",
+    "bytes": 1478,
+    "sha256": "9f9afd555127f52070226cd0102f1271fda6cf798322c76b8935aabc0a7ba5eb"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/metrics.csv",
+    "bytes": 7671,
+    "sha256": "af2b5c96f8eb164c396daadba0f2114bdc3c605c7d5827ff786e7227a8c0c48c"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/predictions.csv",
+    "bytes": 367758,
+    "sha256": "3f98f6b4ce1d66c610a922661f7fc4c09496d30b8c6daeb33de11a9750c23b2a"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/training_evidence.json",
+    "bytes": 3431,
+    "sha256": "73db3f7e7c7148e9a1319197d9e0c5f3a05941c72c5c28871dcf802271df969e"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/training_summary.csv",
+    "bytes": 10860,
+    "sha256": "e9e998c01692dde50d84b0a2537196e31c4763868561f3855992d4a2dec37bc5"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/adapter_selection.json",
+    "bytes": 754,
+    "sha256": "18705fb954205f7a9eb7a3b8203f67647ff3e2282885f1c2c006c148486411dd"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/residual_selection.json",
+    "bytes": 9194,
+    "sha256": "0115f2f9e8a5ceb8aade246538c115a85b5b7e7315ec79dab3845046578f133c"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/adapter_extraction_metrics.csv",
+    "bytes": 10801,
+    "sha256": "dfef455e326172983b3acfed287f402fed29778db51dd2b9ca824acf5d862107"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/adapter_exact_metrics.csv",
+    "bytes": 7384,
+    "sha256": "095e5a77ff8757bd4837462e0ea19d6cdb930e87ab2a7d09b1e7e922fbd99ada"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/adapter_threshold_metrics.csv",
+    "bytes": 4690,
+    "sha256": "86ead9a8e89a9895178e81c72baa12ca0f37ba869a3d5b6fe7487dffd946f483"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/extraction_comparison.csv",
+    "bytes": 2307,
+    "sha256": "fb6c6fd28182eabcde6f899fc51816f100ce875004ee5b7f1ee2505457b45cfd"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/monthly_metrics.csv",
+    "bytes": 30357,
+    "sha256": "4ce024009d8769fcd6f1be5866fdd8d1a99dbe9da4cdbf7d9e57cdf7191cd38a"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/subgroup_metrics.csv",
+    "bytes": 3862,
+    "sha256": "f4b3016545890b48de66016719c7fc515ea77bdb78efb3bd0e4b976ee4ca8233"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/transitions.csv",
+    "bytes": 524,
+    "sha256": "5a5d497c7af50fcd1aa646df1fbed0cebf6f88f21f7b527fc0c47c42a54192d7"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/paired_intervals.csv",
+    "bytes": 1623,
+    "sha256": "db583a32a50a8306a10a04852945a3c81f6cb46b26882bf43cabb675f58bea01"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/seed_metrics.csv",
+    "bytes": 4878,
+    "sha256": "8d65d16e62eb8deab3cdd94434136a4104b5d7947643c15c0888a6baf4aca1e9"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/seed_variation.csv",
+    "bytes": 1306,
+    "sha256": "0ae51a191f55cb5c27ffed7491a30acd3eb2c7526483efd2a54746d93eb72031"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/summary.json",
+    "bytes": 660,
+    "sha256": "3a8cd1db2fe1e05c2c1e2b4abef6250dbb22dbccc75cb0a2565fbb1a4b6b89f9"
+  },
+  {
+    "path": "outputs/stock_finbert_event_adapter_4h/v1/verification.json",
+    "bytes": 246,
+    "sha256": "a411254c9d375ee3c49a983f7138bf94ca74f8439322d60f3dd28d63e70c73f8"
   }
 ]

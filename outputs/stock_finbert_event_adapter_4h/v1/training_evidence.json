@@ -1,0 +1,98 @@
+{
+  "status": "COMPLETE",
+  "model": "ProsusAI/finbert",
+  "revision": "4556d13015211d73dccd3fdd39d39232506f3e43",
+  "retrospective_2018_experiment": true,
+  "device": "mps",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "torch": "2.14.0",
+  "trainable_parameters": {
+    "A0": 9228,
+    "A1": 14184972,
+    "A2": 33804
+  },
+  "runtime_seconds": 5700.389799118042,
+  "driver_wall_seconds_current_resume": 6076.450684785843,
+  "runs": 36,
+  "checkpoint_reload_tolerance": 1e-06,
+  "maximum_reload_difference": 0.0,
+  "source_hashes": {
+    "inputs": "c46702c14c13855b615c5507bba623c6f242a68a18e9e863b8b54d9aac8a3477",
+    "labels": "4520c4e885dccec428a3153f844421f1bf342d4212b2f6b3b2cde5fec54a3135",
+    "protocol": "2fbcc96c747ba57ba1b2b2c74c6ef7ae59b8f685bd338f32d22dddf29e83c4cb"
+  },
+  "selection": {
+    "selected_config": "A1",
+    "selected_thresholds": {
+      "A0": 0.35,
+      "A1": 0.35,
+      "A2": 0.35
+    },
+    "config_forward_scores": [
+      {
+        "config": "A0",
+        "threshold": 0.35,
+        "mean_score": 0.007483870967741935,
+        "std_score": 0.012962444753418694
+      },
+      {
+        "config": "A1",
+        "threshold": 0.35,
+        "mean_score": 0.5201927238452408,
+        "std_score": 0.032199745145865245
+      },
+      {
+        "config": "A2",
+        "threshold": 0.35,
+        "mean_score": 0.39588949234922094,
+        "std_score": 0.050912098332917176
+      }
+    ],
+    "full_epochs": {
+      "A0": 4,
+      "A1": 7,
+      "A2": 7
+    },
+    "selection_source": "January-February chronological forward folds only",
+    "development_or_check_used_for_selection": false
+  },
+  "per_config_training": {
+    "A0": {
+      "runs": 12,
+      "epochs": 63,
+      "summed_run_seconds": 1072.2337589263916,
+      "gradient_norm_preclip_last_batch_median": 0.4342845678329468,
+      "gradient_norm_preclip_last_batch_maximum": 30.85175895690918,
+      "last_batches_above_clip_threshold": 11,
+      "nonfinite_gradient_norms": 0
+    },
+    "A1": {
+      "runs": 12,
+      "epochs": 99,
+      "summed_run_seconds": 2522.689586877823,
+      "gradient_norm_preclip_last_batch_median": 0.9544770121574402,
+      "gradient_norm_preclip_last_batch_maximum": 59.78640365600586,
+      "last_batches_above_clip_threshold": 48,
+      "nonfinite_gradient_norms": 0
+    },
+    "A2": {
+      "runs": 12,
+      "epochs": 97,
+      "summed_run_seconds": 2105.4664533138275,
+      "gradient_norm_preclip_last_batch_median": 0.7251961827278137,
+      "gradient_norm_preclip_last_batch_maximum": 24.017120361328125,
+      "last_batches_above_clip_threshold": 46,
+      "nonfinite_gradient_norms": 0
+    }
+  },
+  "official_input": "protected candidate sentence plus all numbered target-company passage sentences; context-only truncation at 512 tokens",
+  "protocol_amendment_sha256": "a90f0c4141d877586286edd4e30ba8b2726b08a60310efc061b83d50c0dfe86f",
+  "cache_equivalence_sha256": "92ea4a7ec116538a67ba2f24c0d68dacefd02d54eb273bf0dd9870d4c01f8726",
+  "resume_provenance_sha256": "4e0fc4b27556b0f40d7c337104f4b893ee994c171cd0edbc9fb27abab12f5c9b",
+  "aborted_adjacent_context_run_used_for_selection": false,
+  "code_hashes": {
+    "adapter.py": "f696d66fa5fd33e7b18f2146b96a8666c6ff19fde848c895c94b9e061474c003",
+    "train_adapter.py": "17837eded1b58edd91ecea0c4ec45d75bc7b07600d444feaceb7af16d12fe18a",
+    "finalize_training.py": "c620e99f51b1d551d298106a4300c18f92834954ae714878f990a05f60b0ac20"
+  }
+}

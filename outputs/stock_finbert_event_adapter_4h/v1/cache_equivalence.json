@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "saved_before_official_A1_A2_results": true,
+  "model": "ProsusAI/finbert",
+  "revision": "4556d13015211d73dccd3fdd39d39232506f3e43",
+  "probe_units": 255,
+  "probe_selection": "128 evenly spaced sealed annotation model units plus the 128 longest units, deduplicated",
+  "token_length_minimum": 134,
+  "token_length_maximum": 512,
+  "cache_storage_dtype": "float16",
+  "trainable_layer_input_dtype": "float32",
+  "maximum_absolute_probability_difference": {
+    "A1": 0.00004807114601135254,
+    "A2": 0.00003349781036376953
+  },
+  "registered_cache_tolerance": 0.00005,
+  "checkpoint_reload_tolerance": 0.000001,
+  "note": "This measures only frozen-layer cache quantization at initialization. Official checkpoint reload is separately verified with full float32 inference."
+}
