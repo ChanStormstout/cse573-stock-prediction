@@ -1,0 +1,673 @@
+{
+  "price": [
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "R0",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "R1",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "R2",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "R0",
+      "C": 1.0,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "R1",
+      "C": 0.01,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "R2",
+      "C": 0.01,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "R0",
+      "C": 1.0,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "R1",
+      "C": 0.01,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "R2",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "R0",
+      "C": 1.0,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "R1",
+      "C": 0.01,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "R2",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "R0",
+      "C": 1.0,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "R1",
+      "C": 0.01,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "R2",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "R0",
+      "C": 1.0,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "R1",
+      "C": 0.01,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "R2",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "frozen",
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "R0",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "phase": "frozen",
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "R1",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "phase": "frozen",
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "R2",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "R0",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "R1",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "R2",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "R0",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "R1",
+      "C": 0.01,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "R2",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "R0",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "R1",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "R2",
+      "C": 1.0,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "R0",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "R1",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "R2",
+      "C": 1.0,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "R0",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "R1",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "R2",
+      "C": 1.0,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "R0",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "R1",
+      "C": 0.1,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "R2",
+      "C": 1.0,
+      "selection_rule": "past forward months; current month excluded"
+    },
+    {
+      "phase": "frozen",
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "R0",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "phase": "frozen",
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "R1",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "phase": "frozen",
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "R2",
+      "C": 1.0,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-03",
+      "method": "S2",
+      "C": 0.1,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-04",
+      "method": "S2",
+      "C": 1.0,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-05",
+      "method": "S2",
+      "C": 1.0,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-06",
+      "method": "S2",
+      "C": 0.01,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-07",
+      "method": "S2",
+      "C": 0.1,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-08",
+      "method": "S2",
+      "C": 0.1,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "frozen",
+      "symbol": "POOLED",
+      "month": "final",
+      "method": "S2",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-03",
+      "method": "S3",
+      "C": 0.1,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-04",
+      "method": "S3",
+      "C": 1.0,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-05",
+      "method": "S3",
+      "C": 0.01,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-06",
+      "method": "S3",
+      "C": 0.01,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-07",
+      "method": "S3",
+      "C": 0.01,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "outer",
+      "symbol": "POOLED",
+      "month": "2018-08",
+      "method": "S3",
+      "C": 0.01,
+      "selection_rule": "past pooled forward months; current month excluded"
+    },
+    {
+      "phase": "frozen",
+      "symbol": "POOLED",
+      "month": "final",
+      "method": "S3",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    }
+  ],
+  "calibration": {
+    "P0": {
+      "method": "platt",
+      "cells": 12,
+      "mean_BA": 0.5230095118495012,
+      "mean_Brier": 0.24795017714548354,
+      "mean_ECE10": 0.10039674436439473
+    },
+    "P1": {
+      "method": "platt",
+      "cells": 12,
+      "mean_BA": 0.49924732953796,
+      "mean_Brier": 0.24878418216198472,
+      "mean_ECE10": 0.09547530788533799
+    },
+    "P2": {
+      "method": "temperature",
+      "cells": 12,
+      "mean_BA": 0.5034982374233212,
+      "mean_Brier": 0.24895388374915187,
+      "mean_ECE10": 0.11228918685163164
+    },
+    "P3": {
+      "method": "temperature",
+      "cells": 12,
+      "mean_BA": 0.498081783147785,
+      "mean_Brier": 0.24889230362160952,
+      "mean_ECE10": 0.10348640572964818
+    },
+    "paragraph": {
+      "baseline": {
+        "cells": 12,
+        "mean_BA": 0.5353432034388569,
+        "mean_Brier": 0.24610165370898077,
+        "mean_ECE10": 0.10340993483528987
+      },
+      "candidates": [
+        {
+          "variant": "P0",
+          "cells": 12,
+          "mean_BA": 0.5353432034388569,
+          "mean_Brier": 0.24610165370898077,
+          "mean_ECE10": 0.10340993483528987,
+          "eligible": true
+        },
+        {
+          "variant": "P1",
+          "cells": 12,
+          "mean_BA": 0.5115810211273157,
+          "mean_Brier": 0.2475671367098097,
+          "mean_ECE10": 0.10836579982431115,
+          "eligible": true
+        },
+        {
+          "variant": "P2",
+          "cells": 12,
+          "mean_BA": 0.5079001810936264,
+          "mean_Brier": 0.24824347191190935,
+          "mean_ECE10": 0.12176223462182073,
+          "eligible": false
+        },
+        {
+          "variant": "P3",
+          "cells": 12,
+          "mean_BA": 0.5024837268180903,
+          "mean_Brier": 0.24818968657495658,
+          "mean_ECE10": 0.11464494998098113,
+          "eligible": false
+        }
+      ],
+      "chosen": {
+        "variant": "P0",
+        "cells": 12,
+        "mean_BA": 0.5353432034388569,
+        "mean_Brier": 0.24610165370898077,
+        "mean_ECE10": 0.10340993483528987,
+        "eligible": true
+      }
+    }
+  },
+  "fusion": {
+    "F0_training_baseline": {
+      "cells": 12,
+      "mean_BA": 0.5123610055241237,
+      "mean_Brier": 0.26193597308353145,
+      "mean_ECE10": 0.1591530214447521
+    },
+    "methods": {
+      "F3": {
+        "action": "selected",
+        "components": [
+          "body",
+          "semantic"
+        ],
+        "weights": [
+          1.0,
+          0.0
+        ],
+        "cells": 12,
+        "mean_BA": 0.5213989765181091,
+        "mean_Brier": 0.2601069621940519,
+        "mean_ECE10": 0.13371879116154708,
+        "eligible": true
+      },
+      "F4": {
+        "action": "selected",
+        "components": [
+          "body",
+          "llm"
+        ],
+        "weights": [
+          0.75,
+          0.25
+        ],
+        "cells": 12,
+        "mean_BA": 0.5445682158034149,
+        "mean_Brier": 0.25420950121050506,
+        "mean_ECE10": 0.11814804839156574,
+        "eligible": true
+      },
+      "F5": {
+        "action": "selected",
+        "components": [
+          "body",
+          "semantic",
+          "llm"
+        ],
+        "weights": [
+          0.75,
+          0.0,
+          0.25
+        ],
+        "cells": 12,
+        "mean_BA": 0.5445682158034149,
+        "mean_Brier": 0.25420950121050506,
+        "mean_ECE10": 0.11814804839156574,
+        "eligible": true
+      },
+      "F6": {
+        "action": "selected",
+        "components": [
+          "body",
+          "semantic",
+          "llm",
+          "R1"
+        ],
+        "weights": [
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "cells": 12,
+        "mean_BA": 0.5456383127804678,
+        "mean_Brier": 0.2489648626438654,
+        "mean_ECE10": 0.11525242317796287,
+        "eligible": true
+      },
+      "F7": {
+        "action": "NOT_RUN",
+        "reason": "No qualified cutoff-aligned market minute data"
+      }
+    },
+    "selection_scope": "combined stocks, March-August forward OOF cells"
+  }
+}

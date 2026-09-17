@@ -4,13 +4,20 @@
 
 ## 可复制提示词
 
-> 请审阅这个仓库当前 main 分支，先报告你实际读取的 commit SHA 和文件清单。先读 README.md、docs/CURRENT_STATUS.md、outputs/PROJECT_LOG.md、outputs/stock_adaptive_4h/amzn_diagnosis/REPORT.md、MECHANISM_STATUS.md、CASE_INTERPRETATIONS.md 和 RECENT_PAPERS.md；再检查 stock_adaptive_4h 的 core.py、run.py、online.py、report.py 及 tests。请读取 docs/RESULT_FILES.json 中对应指标/逐窗口预测，不要只复述报告。当前主任务是 AAPL/AMZN 未来四小时涨跌，早期一小时实验不能当作当前已实现机制。所有现有历史评价已经影响设计。区分代码事实、保存结果、作者解释和你提出的新假设。分析为什么最新组合没有稳定超越价格＋标题 baseline，特别检查 AMZN 新闻分支关闭、价格回退丢失联合训练系数、校准与排序质量、覆盖和样本依赖。提出最多三个按成本/证据排序的机制，每项列数学或算法定义、匹配对照、只在过去数据上选参的方法、停止条件与预期失败方式。不要根据后续时期结果为两只股票分别挑赢家；不要承诺大幅涨分。对缺少原始新闻或模型权重而无法核验的结论明确列出，不能声称已读取未提供文件。近期论文只作为机制依据，核对任务/数据/指标是否匹配。
+> 请审阅这个仓库当前 main 分支，先报告你实际读取的 commit SHA 和文件清单。先读 README.md、docs/CURRENT_STATUS.md、outputs/PROJECT_LOG.md，以及 outputs/stock_nextgen_4h/ 下的 PROTOCOL.md、IMPLEMENTATION_NOTES.md、REPORT.md、INPUT_QUALITY.md、CALIBRATION.md、CASE_NOTES.md；再检查该目录的 Python 源码和 runs/v1 数值结果。请读取 docs/RESULT_FILES.json 中对应指标、逐窗口预测、训练期OOF、段落变化和配对区间，不要只复述报告。当前主任务是 AAPL/AMZN 未来四小时涨跌，早期一小时实验不能当作当前已实现机制。所有现有开发和后续时期都已经影响设计，只能视为探索性历史回放。区分代码事实、保存结果、作者解释和你提出的新假设。重点审查：P0--P3是否只改变登记变量；相同prompt的batch数值归一化是否合理；R0/R1/R2和S1/S2/S3是否时间安全且搜索预算匹配；无新闻回退、校准与融合是否只用过去OOF；AMZN目标段落覆盖是否限制了结论；市场数据分支的停止是否有证据。提出最多三个按成本/证据排序的后续机制，每项列数学或算法定义、匹配对照、只在过去数据上选参的方法、停止条件与预期失败方式。不要根据后续时期结果为两只股票分别挑赢家；不要承诺大幅涨分。对缺少原始新闻、模型权重或独立复核而无法核验的结论明确列出，不能声称已读取未提供文件。
 
 ## 证据索引
 
-- [当前四小时实现与运行命令](../outputs/stock_adaptive_4h/README.md)
-- [最新总报告](../outputs/stock_adaptive_4h/REPORT.md)
-- [AMZN 诊断](../outputs/stock_adaptive_4h/amzn_diagnosis/REPORT.md)
+- [当前四小时实现与运行命令](../outputs/stock_nextgen_4h/README.md)
+- [最新总报告](../outputs/stock_nextgen_4h/REPORT.md)
+- [最新协议](../outputs/stock_nextgen_4h/PROTOCOL.md)
+- [实现说明与已登记更正](../outputs/stock_nextgen_4h/IMPLEMENTATION_NOTES.md)
+- [输入质量](../outputs/stock_nextgen_4h/INPUT_QUALITY.md)
+- [LLM校准](../outputs/stock_nextgen_4h/CALIBRATION.md)
+- [固定案例](../outputs/stock_nextgen_4h/CASE_NOTES.md)
+- [固定案例的人工解释](../outputs/stock_nextgen_4h/CASE_INTERPRETATIONS.md)
+- [本轮最终状态](../outputs/stock_nextgen_4h/FINAL_STATUS.md)
+- [此前AMZN诊断](../outputs/stock_adaptive_4h/amzn_diagnosis/REPORT.md)
 - [案例解释](../outputs/stock_adaptive_4h/amzn_diagnosis/CASE_INTERPRETATIONS.md)
 - [近期论文与迁移限制](../outputs/stock_adaptive_4h/amzn_diagnosis/RECENT_PAPERS.md)
 - [可读取结果文件](RESULT_FILES.json)

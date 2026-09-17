@@ -1,0 +1,10 @@
+# Python 3.12.14; selected packages used by this experiment
+joblib==1.6.0
+mlx-lm==0.31.3
+mlx==0.32.2
+numpy==2.3.5
+pandas==2.2.3
+scikit-learn==1.9.1
+scipy==1.18.1
+tokenizers==0.23.2
+transformers==5.17.0

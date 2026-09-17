@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": {
+    "prompt_rows_and_cutoffs": 6428,
+    "future_input_refusal": true,
+    "cache_mismatch_refusal": "verified by unequal synthetic fingerprint and production hash checks",
+    "quality_resume_stop": true,
+    "known_extraction_regressions": [
+      "source-truncated tail excluded",
+      "promotional-link patterns excluded"
+    ],
+    "LLM_scores": {
+      "rows_each": 1607,
+      "P0_reused_exact": 609
+    },
+    "price_models": {
+      "fits": 200,
+      "all_weights_reloaded_during_training": true,
+      "target_label_parity": 1607
+    },
+    "calibration_time_checks": 112,
+    "same_prompt_score_normalization": {
+      "P0->P1": 395,
+      "P1->P2": 493,
+      "P2->P3": 1391
+    },
+    "strict_no_news_fallback": 338,
+    "finite_fusion_weights": true,
+    "public_metrics_recomputed": 28
+  },
+  "public_files": [
+    "REPORT.md",
+    "DATA_INVENTORY.md",
+    "INPUT_QUALITY.md",
+    "INPUT_QUALITY.csv",
+    "CALIBRATION.md",
+    "CALIBRATION.csv",
+    "CALIBRATION_OOF.csv",
+    "CALIBRATION_FITS.json",
+    "CASE_NOTES.md",
+    "METRICS.csv",
+    "MONTHLY.csv",
+    "PREDICTIONS.csv",
+    "OOF_PREDICTIONS.csv",
+    "LLM_SCORES.csv",
+    "PRICE_CV.csv",
+    "PRICE_TRAINING.json",
+    "WEIGHT_GRID.csv",
+    "SUBGROUP_METRICS.csv",
+    "PARAGRAPH_TRANSITIONS.csv",
+    "DEDUP_AUDIT.csv",
+    "PAIRED_INTERVALS.csv",
+    "TRANSITIONS.csv",
+    "SELECTION.json",
+    "EXECUTION.json",
+    "ENVIRONMENT.json",
+    "COMMANDS.md"
+  ],
+  "all_later_periods_exposed": true,
+  "independent_extraction_review": false
+}

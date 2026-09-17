@@ -348,5 +348,115 @@
     "path": "outputs/stock_llm_direct_4h/VERIFICATION.json",
     "bytes": 832,
     "sha256": "88f92d4ec17c82c129d8619dd4341a42f941358cde46334d61654689781f3c13"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/METRICS.csv",
+    "bytes": 153137,
+    "sha256": "5dd44571777dd6a5499cba21f8a279d4f23bb9aba939897aecece35dbba585b8"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/MONTHLY.csv",
+    "bytes": 108202,
+    "sha256": "34101081dbeb3fa0f886c3e00707038053c1b0d58147d9521f7eeffb471ca9c8"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/PREDICTIONS.csv",
+    "bytes": 190034,
+    "sha256": "20b4d3d2979ba50d6df1dbb2667a18c6754f742c913dcb715a27f9b88b106403"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/OOF_PREDICTIONS.csv",
+    "bytes": 237550,
+    "sha256": "d3a80e724ccd27f16e87f27a46d3b6433f34a3991a752c5fa14131a4ac3b5212"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/LLM_SCORES.csv",
+    "bytes": 1251537,
+    "sha256": "41e15b05e735d581e51c1a9e11b2ea8e47c44eb418804da62d68ab4bceab94d4"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/SUBGROUP_METRICS.csv",
+    "bytes": 16876,
+    "sha256": "2263c5cf3288ed49675f188b76c740dbe8af4d7b01f097f0a4a660cb5ebc6665"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/PARAGRAPH_TRANSITIONS.csv",
+    "bytes": 7988,
+    "sha256": "0d63c3e91ef0b8613e0a98a6f43a15a1c066a222a55e3970fec9c814931ad494"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/DEDUP_AUDIT.csv",
+    "bytes": 314,
+    "sha256": "a903b8eb3df37d1a923ecd8e8292470b3bc5fe294fee6c2ff1048d214959cfdb"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/PAIRED_INTERVALS.csv",
+    "bytes": 10278,
+    "sha256": "dcee7d7633f1457408427e9a8c11d5e3afc67fce26a2229181878186b2c71d41"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/TRANSITIONS.csv",
+    "bytes": 776,
+    "sha256": "3a7a531f7e29160a314aa5198149999aa67d0e099dfe07d794a98920fc6dc567"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/INPUT_QUALITY.csv",
+    "bytes": 431,
+    "sha256": "a25204837bdd2ae33805f8e9c3b0c2f17d302222409e8f94e8122238dfcb6051"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/CALIBRATION.csv",
+    "bytes": 344,
+    "sha256": "3d0c490f45fb7a016e267257356b70fdc625fbe32b7860250c40c331909bcde9"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/CALIBRATION_OOF.csv",
+    "bytes": 2194,
+    "sha256": "bea3753b9ccec5d9e29202c7c11b93970afbf43ac81867d3b743715f636eede8"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/CALIBRATION_FITS.json",
+    "bytes": 51216,
+    "sha256": "e8d9717d7f49731b35fb9c4a3751f2ad36e615dd605ace44ffd3c04edf055a39"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/PRICE_CV.csv",
+    "bytes": 21650,
+    "sha256": "c4c301cd7dc1888aa71cdcb484c64580c1d893935f7aaf0f0f362ee846cb0f90"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/PRICE_TRAINING.json",
+    "bytes": 123867,
+    "sha256": "1b4d72ac77fe3df35e824f29cf04fccf8b93825fedf3b8df749ed55b313281fb"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/WEIGHT_GRID.csv",
+    "bytes": 7434,
+    "sha256": "1281ac598ff9f11b87f503552376492dd6cdc834703b657161fccfbde8cba78e"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/SELECTION.json",
+    "bytes": 15750,
+    "sha256": "56aaad605b4bf3e8dea9d2e536dca0b462131b52d938492b28570d35bc5407f8"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/EXECUTION.json",
+    "bytes": 6505,
+    "sha256": "05f4a9783140c688331ca9e1ee0f47d9884a54ce6fea08cb67e8f35523393435"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/ENVIRONMENT.json",
+    "bytes": 524,
+    "sha256": "7772536910e83a024a93fc02d6a94f499bed354417e1dfcba47bd4c947814b3b"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/VERIFICATION.json",
+    "bytes": 1563,
+    "sha256": "202a4f427c7455e86a7a123c1540411df93f1305569e4a9fdfc619f5606f20a3"
+  },
+  {
+    "path": "outputs/stock_nextgen_4h/runs/v1/SOURCE_HASHES.json",
+    "bytes": 3298,
+    "sha256": "bc813b546d249bb8ed09a5f9a410fc39b5d684c9ecf4f55f372af7dfad58a44a"
   }
 ]

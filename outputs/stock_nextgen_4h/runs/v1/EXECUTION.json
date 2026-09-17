@@ -1,0 +1,148 @@
+{
+  "status": "COMPLETE",
+  "task": "AAPL/AMZN four-hour direction",
+  "rows": 1607,
+  "LLM": {
+    "status": "COMPLETE",
+    "variants": {
+      "P0": {
+        "rows": 1607,
+        "generated": 998,
+        "reused": 609,
+        "seconds_generated": 3173.759870290756,
+        "peak_mlx_gb": 7.789565708,
+        "max_prompt_tokens": 3337,
+        "output_sha256": "30f90825175cddd72795ba487a6810afb07fd37ad279c37fbaaacffcbc70e902"
+      },
+      "P1": {
+        "rows": 1607,
+        "generated": 1607,
+        "reused": 0,
+        "seconds_generated": 6112.2915415763855,
+        "peak_mlx_gb": 7.789566532,
+        "max_prompt_tokens": 3314,
+        "output_sha256": "6d146ddb129f0b001407ec54f4631f7859b8d2bdd0a1b633599240e2ddae3d1d"
+      },
+      "P2": {
+        "rows": 1607,
+        "generated": 1607,
+        "reused": 0,
+        "seconds_generated": 8220.875733613968,
+        "peak_mlx_gb": 8.6619814,
+        "max_prompt_tokens": 6000,
+        "output_sha256": "8048a02282ea40024204c187245a6ff90f4b3d5ec7b3ccb51cf0f7878dbd8115"
+      },
+      "P3": {
+        "rows": 1607,
+        "generated": 1607,
+        "reused": 0,
+        "seconds_generated": 10921.980300664902,
+        "peak_mlx_gb": 8.6619814,
+        "max_prompt_tokens": 6000,
+        "output_sha256": "838146926d4415e772634813947b0076023fe988d4e454a6976b0bf55bcee7e2"
+      }
+    },
+    "process_seconds": 28478.845076084137,
+    "training": false,
+    "labels_loaded": false,
+    "source_hashes_unchanged": true
+  },
+  "price": {
+    "status": "COMPLETE",
+    "rows": 1607,
+    "fits": 200,
+    "seconds": 6.130274874987663,
+    "source_hashes_unchanged": true,
+    "market_branch": "STOPPED_MISSING_QUALIFIED_DATA",
+    "interpretation": "exploratory historical replay"
+  },
+  "calibration": {
+    "status": "COMPLETE",
+    "rows": 1607,
+    "calibration_selection_period": "2018-03 through 2018-08 forward predictions",
+    "paragraph_choice": {
+      "variant": "P0",
+      "cells": 12,
+      "mean_BA": 0.5353432034388569,
+      "mean_Brier": 0.24610165370898077,
+      "mean_ECE10": 0.10340993483528987,
+      "eligible": true
+    },
+    "same_prompt_score_normalization": {
+      "P0": {
+        "reference": null,
+        "rows": 1607,
+        "changed_observed_scores": 0,
+        "max_absolute_observed_difference": 0.0
+      },
+      "P1": {
+        "reference": "P0",
+        "rows": 395,
+        "changed_observed_scores": 153,
+        "max_absolute_observed_difference": 0.1224593312018546
+      },
+      "P2": {
+        "reference": "P1",
+        "rows": 493,
+        "changed_observed_scores": 70,
+        "max_absolute_observed_difference": 0.10356012771555048
+      },
+      "P3": {
+        "reference": "P2",
+        "rows": 1391,
+        "changed_observed_scores": 489,
+        "max_absolute_observed_difference": 0.0912499578280983
+      }
+    },
+    "same_window_transition_rows": 48,
+    "all_later_periods_exposed": true,
+    "source_hashes": {
+      "work/stock-data/nextgen_4h/paragraphs_v4/manifest.json": "b1a6ea09320d53c9dfb11de6c724873fd8f921bfdfa721ac84c014ddc4a41b6f",
+      "work/stock-data/nextgen_4h/llm_v1/summary.json": "50210040df0e80c34aed70c2267bbac761dcd79881ba8b80c844669afa632876",
+      "work/stock-data/nextgen_4h/price_v1/status.json": "994f69dfa26de5e2c255a5eac2e26f7b1d9fa9b84ef334402b27beab22d29edb"
+    }
+  },
+  "fusion": {
+    "status": "COMPLETE",
+    "training_rows": 765,
+    "evaluation_rows": 609,
+    "all_evaluation_periods_exposed": true,
+    "market_F7": "NOT_RUN",
+    "strict_no_news_fallback": true,
+    "source_hashes": {
+      "outputs/stock_integrated_4h/runs/v1/oof.csv": "2d9845388104ecfc064e04a76cc9b1174398e8862b0b448036ba4d5a2c373351",
+      "outputs/stock_integrated_4h/runs/v1/predictions.csv": "3011492b17ce93013994f317ebe02f0fd228eaace49e0c9fc0605db2d02ed693",
+      "work/stock-data/nextgen_4h/price_v1/predictions.csv": "1ebe2dd87ef82a266ba3a6984bd3706725ed9f58fb993deee2661be7a30a0cd9",
+      "work/stock-data/nextgen_4h/calibration_v1/predictions.csv": "f9d62bc2c3a18c89b794252567002f06572b34492b29790a212ae50e9f147634"
+    }
+  },
+  "cases": {
+    "status": "COMPLETE",
+    "unique_cases": 37,
+    "private_raw_text_in_git": false,
+    "sources": {
+      "work/stock-data/nextgen_4h/fusion_v1/predictions.csv": "3d3ac4782b13f76254b5c1e12aed72822dd188a4d71586419049cd2f9bf2d9eb",
+      "work/stock-data/nextgen_4h/calibration_v1/predictions.csv": "f9d62bc2c3a18c89b794252567002f06572b34492b29790a212ae50e9f147634",
+      "work/stock-data/nextgen_4h/paragraphs_v4/manifest.json": "b1a6ea09320d53c9dfb11de6c724873fd8f921bfdfa721ac84c014ddc4a41b6f"
+    }
+  },
+  "implementation_sha256": {
+    "outputs/stock_nextgen_4h/PROTOCOL.md": "3708491146288c386d34514c4f283afe879fef314a7592eae385b7e2f7408f2f",
+    "outputs/stock_nextgen_4h/config.json": "45afb1a09e9536993b2028696a64569516d962d449d1d711bd224ec31f21dcd1",
+    "outputs/stock_nextgen_4h/common.py": "6a32846796a72977bc422908c09d29dd810044d5ac166f7d76fcdae114fe6286",
+    "outputs/stock_nextgen_4h/inventory.py": "07934eb97c1cffeaebf20603c1285d8a88a4a9c4f557427071af0589cd9fe00b",
+    "outputs/stock_nextgen_4h/paragraph_inputs.py": "c64344474ae95fc3038fadcb9930eaac1ec75a98cbf3ce67c1735b44ba74944a",
+    "outputs/stock_nextgen_4h/input_quality.py": "c83b1ddd32480351dfa34f115a4697859ba99c8b675a4e206b57c777e73ab55b",
+    "outputs/stock_nextgen_4h/recent_price.py": "b88ab1e59dd5ce604ed3f1b17d9bec98aeb702c5e57b2699911c7846021596c1",
+    "outputs/stock_nextgen_4h/llm_choice.py": "a1f98e9817284ae2775e033fc1014b05cd276220748261da24d82252a98d82ab",
+    "outputs/stock_nextgen_4h/calibrate.py": "b5e2b0d1ef6efbd02201e7c2605c4345d47ba4c33b910bc66b2300b0e88d7fa0",
+    "outputs/stock_nextgen_4h/fusion.py": "cdd47fd09860a6a33080cde0ca5aab036f6c2f9530ea5d4b5cf27d2e653d56e5",
+    "outputs/stock_nextgen_4h/cases.py": "115dfc161850fe6d81a5e079848110f11ea7338346506b0a0039b876106620b3",
+    "outputs/stock_nextgen_4h/publish.py": "5c882d1629fe94f0a465bbe3f06b7b3f340ba4c08099f274a3aadae3a4cab5c7",
+    "outputs/stock_nextgen_4h/verify.py": "2e359bebf2451ff5406777ebfb4510582e767cbc9c432e9e1d1d95c987191043",
+    "outputs/stock_nextgen_4h/run_all.py": "c6091a4c009d572e9e5fe10ba7dfdcb2a1da80ec55c9e5cedb84403edb2820f8",
+    "outputs/stock_nextgen_4h/test_contract.py": "5306e797be3db572d168beafdd15659a2bc3c4e0086b840ca1514816d7f53d65"
+  },
+  "market_branch": "Run M0 (R1) only; stop M1-M3 and downstream PCA/HMM/GNN.",
+  "interpretation": "all later periods are exposed exploratory historical replays"
+}

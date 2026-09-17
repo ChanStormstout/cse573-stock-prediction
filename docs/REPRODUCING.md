@@ -10,14 +10,14 @@ python3 scripts/check_repository.py
 
 ## 2. 有原项目资产的实验与 demo
 
-使用[四小时 README](../outputs/stock_adaptive_4h/README.md)的命令和[环境版本](../outputs/stock_adaptive_4h/environment.lock.txt)。运行前先恢复 `docs/LOCAL_ARTIFACTS.json` 对应资产并核验来源。不要覆盖历史目录，使用新的 run 目录。
+使用[当前四小时 README](../outputs/stock_nextgen_4h/README.md)的统一入口和[环境版本](../outputs/stock_nextgen_4h/environment.lock.txt)。运行前先合法恢复 `docs/LOCAL_ARTIFACTS.json` 所列本地资产并核验来源。编辑 `config.json` 使用全新的版本目录；所有生产阶段默认拒绝覆盖。
 
 原代码和文档保留原本绝对路径/历史指纹。这是实验档案，还不是安装即用的通用 Python 包；克隆到其他路径时必须处理合同迁移。旧报告指向未上传资产的链接属于本地证据引用，不能当作 GitHub 可访问链接。
 
 实际回归测试命令（需要已有依赖）：
 
 ```sh
-work/stock-data/finbert-env/bin/python -m unittest discover -s outputs/stock_adaptive_4h -p 'test_*.py' -v
+${PYTHON} outputs/stock_nextgen_4h/test_contract.py -v
 ```
 
-验证保存权重与全量原始标签还需要本地资产；不能只凭语法检查宣称完成这些核验。
+随后按 README 运行 `run_all.py`。验证保存权重、全量原始标签与本地Qwen推理仍需要私有资产；不能只凭语法检查宣称完成这些核验。早期 `stock_adaptive_4h` 的环境与命令仍保留在其原目录，仅用于复现对应历史实验。

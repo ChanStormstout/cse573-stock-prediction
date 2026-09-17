@@ -1,0 +1,3 @@
+symbol,window_cluster_occurrences,multi_report_occurrences,reports_collapsed,mean_reports_per_cluster,max_reports_in_cluster,mean_independent_sources_per_cluster,max_independent_sources_in_cluster
+AAPL,4206,157,162,1.0385164051355207,3,1.0230622919638612,2
+AMZN,648,66,73,1.1126543209876543,4,1.0570987654320987,2

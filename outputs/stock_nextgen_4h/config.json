@@ -1,0 +1,11 @@
+{
+  "inventory": "work/stock-data/nextgen_4h/inventory_v2",
+  "paragraphs": "work/stock-data/nextgen_4h/paragraphs_v4",
+  "price": "work/stock-data/nextgen_4h/price_v1",
+  "llm": "work/stock-data/nextgen_4h/llm_v1",
+  "calibration": "work/stock-data/nextgen_4h/calibration_v1",
+  "fusion": "work/stock-data/nextgen_4h/fusion_v1",
+  "cases": "work/stock-data/nextgen_4h/cases_v1",
+  "public": "outputs/stock_nextgen_4h/runs/v1",
+  "llm_batch_size": 4
+}
