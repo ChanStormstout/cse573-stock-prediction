@@ -1,0 +1,13 @@
+{
+  "windows": 1607,
+  "labels_match_original": true,
+  "eligible_windows": 1374,
+  "unique_groups": 950,
+  "inference_counts": {
+    "P0": 999,
+    "P2": 197,
+    "P3": 197
+  },
+  "source_text_public": false,
+  "case_selection_sha256": "992950cee6c2f1e6d45ba2ffecff8f2d8409270c8891b5614f41d8602ba2c7d7"
+}

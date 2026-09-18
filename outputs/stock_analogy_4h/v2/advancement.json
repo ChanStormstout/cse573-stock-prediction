@@ -1,0 +1,38 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "base": "P0",
+      "symbol": "AAPL",
+      "monthly_BA_gain": -0.00026634585458112925,
+      "Brier_change": 0.005325233605108189,
+      "positive_months": 1,
+      "passed": false
+    },
+    {
+      "base": "P0",
+      "symbol": "AMZN",
+      "monthly_BA_gain": -0.0019927536231884035,
+      "Brier_change": -0.010084849508547739,
+      "positive_months": 0,
+      "passed": false
+    },
+    {
+      "base": "R1",
+      "symbol": "AAPL",
+      "monthly_BA_gain": -0.03617814647226406,
+      "Brier_change": 0.10247827800227194,
+      "positive_months": 0,
+      "passed": false
+    },
+    {
+      "base": "R1",
+      "symbol": "AMZN",
+      "monthly_BA_gain": 0.004368649008828866,
+      "Brier_change": 0.021405639679071515,
+      "positive_months": 2,
+      "passed": false
+    }
+  ],
+  "selected_fusion": false
+}

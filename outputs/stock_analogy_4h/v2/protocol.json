@@ -1,0 +1,8 @@
+{
+  "registration_sha256": "f3e4e737eef8e0b04e7df0282681d6c944547b5d284d6ae3ff20acdf79131ae4",
+  "amendment_sha256": "0df916c09d6bafc1ff2f70cdadf1fdee1ea34b03c674614deaa415252924db4e",
+  "inference": "frozen Qwen3.5-9B",
+  "selection": "fixed; no label-tuned hyperparameters",
+  "evaluation": "exposed exploratory history",
+  "seed": 573
+}

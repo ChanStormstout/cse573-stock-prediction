@@ -1,0 +1,15 @@
+{
+  "prepared_fingerprints": true,
+  "temporal_cases_checked": 512,
+  "identical_P2_P3_except_outcomes": true,
+  "label_flip_retrieval_checks": 12,
+  "future_similarity_perturbation_checks": 12,
+  "original_labels_keys_horizons": true,
+  "price_bars_before_cutoff": true,
+  "cache_mismatch_rejected": true,
+  "inference_calls": 1393,
+  "exact_fallback": true,
+  "probability_max_error": 1.1102230246251565e-16,
+  "independently_recomputed_metric_rows": 54,
+  "metric_max_error": 9.71445146547012e-17
+}

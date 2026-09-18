@@ -5,6 +5,7 @@
 ## 从这里开始
 
 - [当前结论与结果](docs/CURRENT_STATUS.md)
+- [历史相似新闻＋已实现收益的LLM对照](outputs/stock_analogy_4h/README.md)
 - [最新小型价格自监督对照](outputs/stock_ssl_4h/v1/REPORT.md)
 - [最新跨股价格、A1稠密与历史新闻实验](outputs/stock_goal60_4h/v1/REPORT.md)
 - [最新离线回放](outputs/stock_goal60_4h/v1/demo.html)
@@ -27,6 +28,11 @@
 - [复现说明](docs/REPRODUCING.md) · [更新流程](docs/WORKFLOW.md)
 
 ## 目前的结论
+
+最新历史案例实验完成1,393次冻结9B推理：P3加入历史收益后没有通过训练期晋级线。
+AMZN后续P2/P3同为56.68%，方向完全相同，不能把这一分数归因于历史收益；
+AAPL P3后续50.66%。该版AMZN后续仅2个窗口触发案例，匹配与覆盖仍限制结论。
+详见[结果解释](outputs/stock_analogy_4h/v2/CONCLUSIONS.md)。
 
 完整四小时流水线已训练并保存结果，但尚未证明新组合对两只股票均有稳定提升。最新跨股价格、TabPFN、A1稠密迁移、rank2交互和三交易日新闻状态均已实际运行，未通过预注册晋级线；因此没有强行融合，也没有找到两股稳定60%的方案。最新事件实验实际训练A0／A1／A2三种FinBERT适配器；A1在暂定April检查集的完整事实F1达到79.17%，明显高于已有规则和Qwen对照，但训练期OOF仍选择不对F1基础概率作事件修正。因此新闻理解改善没有转化成可验证的四小时方向增量。价格＋全文F1在四个股票×时期单元的BA都高于50%，仍是当前跨时期最稳定的统一方法；价格＋标题F0继续作为主baseline，不能依据后续时期的最高分事后挑股票专属模型。
 

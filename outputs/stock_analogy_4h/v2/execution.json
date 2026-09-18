@@ -1,0 +1,22 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "revision": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "calls": 1393,
+  "gradient_training": false,
+  "device": "local MLX Metal",
+  "seconds": 2571.4042635718943,
+  "peak_mlx_gb": 7.693081034,
+  "seed": 573,
+  "output_sha256": "43d92b34aa8d88f990f253d38e1b4a39c0d0d8fc8d1a2fc90c327876809a137d",
+  "manifest_sha256": "3d471397564f87afb8d98f9796b62c6810147bf9d7b028dfab8edfcdc38d682c",
+  "per_variant": {
+    "P0": 999,
+    "P2": 197,
+    "P3": 197
+  },
+  "aborted_v1_calls": 44,
+  "aborted_v1_seconds": 96.4485523729818,
+  "trained_parameters": 0,
+  "learned_retriever": false,
+  "label_fits": 0
+}

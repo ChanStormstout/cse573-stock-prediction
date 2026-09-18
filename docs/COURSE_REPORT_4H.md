@@ -86,3 +86,26 @@ AMZN historical coverage filled all 95 later windows with no current four-hour n
 ### Price self-supervision follow-up
 
 A finite 1,988-parameter masked-reconstruction encoder was pretrained using only past five-minute sequences and frozen for four-hour LR classification. Its matched random-encoder comparison improved training-period weakest-stock BA, but it did not beat the existing price baseline. Later AAPL/AMZN BA was49.24%/50.66% versus53.19%/50.26% for price-only B. Reconstructing historical price structure did not establish useful future-direction information. This is not a complete TS2Vec reproduction. See [the report](../outputs/stock_ssl_4h/v1/REPORT.md).
+
+
+## 补充探索：历史案例收益增强预测
+
+[报告](../outputs/stock_analogy_4h/v2/REPORT.md)、[案例](../outputs/stock_analogy_4h/v2/CASE_NOTES.md)。实际完成1393次冻结Qwen3.5-9B本地推理，约42.9分钟；没有新LLM微调。P0当前新闻＋价格；P1相似案例投票；P2历史案例无结果；P3同样案例加已实现四小时收益。
+
+| 方法 | AAPL开发 | AMZN开发 | AAPL后续 | AMZN后续 |
+|---|---:|---:|---:|---:|
+| F0 | 50.46% | 48.33% | 51.89% | 49.79% |
+| R1 | 56.21% | 51.11% | 53.87% | 50.85% |
+| F1 | 57.94% | 55.66% | 51.74% | 54.36% |
+| F2 | 54.13% | 46.29% | 56.71% | 54.27% |
+| P0 | 54.28% | 56.40% | 51.21% | 56.15% |
+| P1 | 57.68% | 51.11% | 51.57% | 51.38% |
+| P2 | 55.02% | 56.40% | 50.63% | 56.68% |
+| P3 | 54.28% | 57.42% | 50.66% | 56.68% |
+
+- AAPL后续：加入历史收益比相同案例不带收益改对2、改错2；AMZN后续：加入历史收益比相同案例不带收益改对0、改错0。
+- 未通过预注册探索线，不新增融合或按后续成绩挑股票赢家。
+- 检索严格限于更早训练月份，September之后冻结August案例库。所有1,607窗口保留，1,374个OOF/开发/后续窗口评价。
+- V1因输入卡显示工资/市值、产品/减持错配中止，保留44次调用及源码；未计算V1 BA。V2收紧标题事件动作和未知拒绝，仍有主体/竞争对手、模板背景混淆。
+- AMZN开发/后续各仅2个窗口触发案例；95个原无新闻后续窗口精确使用R1。因此结果不证明已解决新闻缺失，也不能排除更好的语义检索。
+- 时间、未来相似度干预、标签翻转检索不变、缓存拒绝、精确回退、指标独立复算和模型重载通过。原文/prompt/权重留本地，独立抽取验收未完成；所有时期仍是暴露回测。

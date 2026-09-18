@@ -1,5 +1,9 @@
 # LLM news-increment component — design, not executed
 
+Separate direction: [historical news plus realized four-hour outcomes](../outputs/stock_analogy_4h/README.md)
+implements analogy-based prediction. It does not complete this page's same-event
+fact-change extraction, annotation, or independent quality-review steps.
+
 Purpose: identify what a target-company report adds relative to already available reports. An LLM cannot establish that information has or has not been priced in. Market novelty and dataset-first-seen are distinct.
 
 Pipeline: cutoff-safe articles → programmatically retrieve at most three past same-target/event candidate reports → numbered current and past evidence passages → LLM emits supported relations → program verifies cited spans, object/actor/period/units/numbers → compact event-state features → matched downstream four-hour comparison. Unknown preserves the existing baseline. Dates, prior prices and availability limits are enforced by code, not trusted to a prompt.

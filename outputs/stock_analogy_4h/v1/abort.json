@@ -1,0 +1,9 @@
+{
+  "status": "ABORTED_INPUT_QUALITY",
+  "calls": 44,
+  "seconds": 96.4485523729818,
+  "metrics_computed": false,
+  "reason": "Fixed label-free input cards showed topic and entity-role mismatch; see V2_REGISTRATION.md",
+  "source_snapshot": "private retained",
+  "evaluated_current_labels": false
+}
