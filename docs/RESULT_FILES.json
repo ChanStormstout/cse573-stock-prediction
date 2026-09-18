@@ -1576,13 +1576,23 @@
   },
   {
     "path": "outputs/stock_recency_dense_4h/v4/verification.json",
-    "bytes": 1768,
-    "sha256": "5b333c718eb34c28a8876fc021834344a90bda2151234a2313e22cdd3188b0c2"
+    "bytes": 1971,
+    "sha256": "129e2df4fa0d0ab0d72d6358cd68efa2e8c83b3b4bce8311192feed4a87a43c7"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/recency_weight_audit.json",
+    "bytes": 471,
+    "sha256": "f942f6c21f7bd9aaf7525ce5901f93fbfad75aadd8a36668aa4b49ba0d5aa55a"
   },
   {
     "path": "outputs/stock_recency_dense_4h/verify_v4.py",
-    "bytes": 1993,
-    "sha256": "fdb6a650244e118d0d2941c2d9ea2bb171bb42006edad03c1bf5d96faa709ccf"
+    "bytes": 2930,
+    "sha256": "9e8d5be094f171ac4b00c03cf6308df6d2a531870b3241f643b5feb96ac7b551"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/verify_weight_audit_v4.py",
+    "bytes": 4000,
+    "sha256": "cb47386c3f8568e718973f12c1f19a543476eb3b7f5a382f3402c7aa02dbee9f"
   },
   {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION.md",

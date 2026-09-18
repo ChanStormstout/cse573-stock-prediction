@@ -96,3 +96,20 @@ The Stage 0 documentation commit is `5eec28e` (`Document method audit and
 repair plan`). A push was attempted after this commit and was blocked by the
 same unresolved GitHub DNS error; `origin/main` remains the prior tracking
 commit. The next stage proceeds locally without rewriting the existing v4 run.
+
+## Stage 1–2 completion (local)
+
+Stage 1 repaired the executable recency weighting guard and audited every
+saved v4 fold boundary. `recency_weight_audit.json` reports 17,140 private
+rows, zero formula error, zero monotonic violations, and zero infinity unit
+weight violations. The existing v4 true-infinity refit parity remains
+`1.665e-15`, so the recency numeric results remain valid as a matched probe;
+their cross-stock advancement gate still fails.
+
+Stage 2 strengthened the dense verifier. It now checks exactly six
+June–August stock-month cells and requires the matched reconstructed feature
+mode when canonical dense feature parity fails. The public v4 verification
+status is PASS; D1 remains a small diagnostic and D2 remains stopped by gate.
+
+No private weight audit rows or model binaries were added to Git. A push was
+attempted after this local stage and again requires GitHub DNS/network access.

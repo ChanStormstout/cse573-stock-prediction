@@ -75,8 +75,8 @@ historical backtests because September onward has already been exposed.
 
 - [x] Stage 0 — record starting state and create persistent working spec,
   validity ledger, correction log, and ChatGPT handoff.
-- [ ] Stage 1 — canonical parity and recency repairs (ISSUE-001/002/003/007).
-- [ ] Stage 2 — dense gate and feature parity repair (ISSUE-004/005/006).
+- [x] Stage 1 — canonical parity and recency repairs (ISSUE-001/002/003/007).
+- [x] Stage 2 — dense gate and feature parity repair (ISSUE-004/005/006).
 - [ ] Stage 3 — matched FinBERT/Fin-ModernBERT pooling probe (ISSUE-008/009).
 - [ ] Stage 4 — TabPFN checkpoint/configuration audit and conditional corrected
   probe (ISSUE-010/011).
@@ -107,9 +107,10 @@ periods.
 
 ## Current stage
 
-Stage 0 documentation bootstrap completed. Stage 1 is next. The local v4
-recency/reaction implementation from commit e32785d is preserved; this audit
-will not overwrite it. Remote push is pending network/DNS recovery.
+Stages 0–2 are complete locally. The local v4 recency/reaction implementation
+from commit e32785d is preserved; the audit added formula/gate assertions and
+public verification only, without overwriting historical runs. Remote push is
+pending network/DNS recovery.
 
 ## Deviations / new problems discovered while executing
 
@@ -120,6 +121,10 @@ will not overwrite it. Remote push is pending network/DNS recovery.
   project environment. This makes the TabPFN audit conditional.
 - The public v4 outputs already passed their own parity/gate checks; this task
   audits additional historical method claims without rewriting v3/v4 files.
+- The v4 recency weight audit covered 17,140 private fold rows: formula error
+  was zero and there were no monotonic or infinity-unit-weight violations.
+- The dense verifier now confirms exactly six June–August stock-month cells
+  and requires the matched reconstructed feature mode after parity failed.
 
 ## Exact commands executed
 

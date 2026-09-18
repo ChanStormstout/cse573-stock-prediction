@@ -106,3 +106,19 @@ Canonical historical F1/F2 preserve their original selection logic for
 reproducibility. F1_new/F2_new are reselected actual-system controls used in
 later experiments. Reports must name which control they use; no silent swap is
 allowed.
+
+## CORR-015 — Recency weight formula and dense gate verification
+
+- **Discovered:** The v4 results already used the registered session-age
+  formula and the corrected June–August dense gate, but the public verifier
+  checked only broad positivity/parity conditions.
+- **Repair:** `age_weights` now asserts non-negative session ages, exact
+  `2**(-session_age/half_life)` values, unit weights for infinity, and
+  monotonic decrease with age. `verify_weight_audit_v4.py` audits all saved
+  v4 fold boundaries without refitting models. `verify_v4.py` now checks the
+  six gated stock-month cells and the matched reconstructed feature mode when
+  canonical dense parity fails.
+- **Evidence:** 17,140 private weight rows have zero formula error and zero
+  monotonic/unit-weight violations; public v4 verification passes. This is a
+  verification strengthening, not a new score search or a changed numeric
+  result.

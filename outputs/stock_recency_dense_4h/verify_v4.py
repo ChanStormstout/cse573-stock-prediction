@@ -14,6 +14,12 @@ def main() -> None:
     recency = json.loads((ROOT / "recency_selection.json").read_text())
     parity = pd.read_csv(ROOT / "recency_refit_parity.csv")
     dense = json.loads((ROOT / "dense_gate_corrected.json").read_text())
+    dense_outer = pd.read_csv(ROOT / "dense_outer_scores.csv")
+    parity_features = pd.read_csv(ROOT / "dense_feature_parity.csv")
+    gate_months = ["2018-06", "2018-07", "2018-08"]
+    outer_d1 = dense_outer[(dense_outer["method"] == "D1") & dense_outer["month"].isin(gate_months)]
+    outer_cells = set(zip(outer_d1["symbol"], outer_d1["month"]))
+    expected_cells = {(s, m) for s in ("AAPL", "AMZN") for m in gate_months}
     checks = {
         "recency_status_complete": recency.get("status") == "COMPLETE",
         "recency_parity_pass": bool(recency.get("parity_pass")),
@@ -24,6 +30,14 @@ def main() -> None:
         "dense_gate_months_are_jun_to_aug": dense.get("dense_gate_corrected", {}).get("months") == ["2018-06", "2018-07", "2018-08"],
         "dense_gate_stops_d2": dense.get("D2_status") == "STOPPED_BY_GATE",
         "official_rows_1607": dense.get("official_rows") == 1607,
+        "dense_outer_has_exact_six_stock_month_cells": outer_cells == expected_cells,
+        "dense_outer_each_cell_one_row": len(outer_d1) == 6,
+        "dense_feature_parity_recorded": len(parity_features) > 0,
+        "dense_parity_failure_uses_matched_feature_mode": (
+            bool((parity_features["max_abs_diff"] <= 1e-12).all()
+                 and (parity_features["unequal_at_1e-12"] == 0).all())
+            or dense.get("feature_mode") == "reconstructed_all_official_and_augmented"
+        ),
     }
     result = {
         "status": "PASS" if all(checks.values()) else "FAIL",

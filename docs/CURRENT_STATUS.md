@@ -1,5 +1,20 @@
 # 当前状态（2026-09-17）
 
+## 当前审计进度：Stage 1–2 recency/dense 验证已完成
+
+本轮 repair-first 审计没有重新追逐 exposed period 分数。v4 recency 的
+session-age 权重已通过 17,140 个私有 fold 行的公式、单调性和 infinity
+等权检查（公式最大误差 0，违规数 0）；公开 parity 仍为
+`1.67e-15`。dense verifier 现在确认 gate 只含 June–August 的六个
+stock-month cells，并确认 canonical parity 失败时训练与评价都使用同一
+`reconstructed_all_official_and_augmented` 特征模式。数值结果未改写；公开
+核验结果为 PASS，详见 [recency weight audit](../outputs/stock_recency_dense_4h/v4/recency_weight_audit.json)
+和 [v4 verification](../outputs/stock_recency_dense_4h/v4/verification.json)。
+
+Stage 3 的 FinBERT/Fin-ModernBERT 公平 pooling 对照、Stage 4 的 TabPFN
+来源审计及 Stage 5 的 claim-only 审计仍未完成；旧 Modern、TabPFN、SSL、
+analogy、Event Adapter、Chronos 和校准结果继续按方法真值表的窄声明解释。
+
 ## 最新完成：v4 recency/dense 修正与全语料新闻 reaction probe（2026-09-17）
 
 [v4 recency/dense 报告](../outputs/stock_recency_dense_4h/v4/REPORT.md)、[v4 数据审计](../outputs/stock_recency_dense_4h/v4/DATA_AUDIT.md)、[reaction 报告](../outputs/stock_reaction_features_4h/v1/REPORT.md)已经实际运行完成。该轮保留 AAPL/AMZN 四小时任务、原始窗口和 cutoff，v3 未改写。

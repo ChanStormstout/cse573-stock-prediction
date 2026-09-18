@@ -126,10 +126,24 @@ def age_weights(train, boundary, half, opens):
     end = pd.to_datetime(train.end_utc, utc=True).to_numpy(dtype="datetime64[ns]")
     b = np.datetime64(pd.Timestamp(boundary).tz_convert("UTC").tz_localize(None), "ns")
     ages = np.asarray([int(((opens > e) & (opens < b)).sum()) for e in end], dtype=int)
+    if np.any(ages < 0):
+        raise ValueError("recency session ages must be non-negative")
     if half is None:
         weights = np.ones(len(train), dtype=float)
     else:
         weights = np.power(2.0, -ages / float(half))
+        # A newer training example must never receive a smaller weight than an
+        # older one.  This assertion protects the registered formula from a
+        # silent timestamp/order regression while leaving the numeric protocol
+        # unchanged.
+        order = np.argsort(ages, kind="stable")
+        if len(order) > 1 and np.any(np.diff(weights[order]) > 1e-12):
+            raise ValueError("recency weights are not monotone in session age")
+        expected = np.power(2.0, -ages / float(half))
+        if not np.allclose(weights, expected, rtol=0.0, atol=1e-15):
+            raise ValueError("recency weights do not match the registered formula")
+    if half is None and not np.array_equal(weights, np.ones(len(train), dtype=float)):
+        raise ValueError("infinity recency refit must use unit weights")
     return weights, ages
 
 

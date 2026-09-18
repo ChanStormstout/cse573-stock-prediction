@@ -1,8 +1,12 @@
 {
   "checks": {
+    "dense_feature_parity_recorded": true,
     "dense_gate_has_six_month_rows": true,
     "dense_gate_months_are_jun_to_aug": true,
     "dense_gate_stops_d2": true,
+    "dense_outer_each_cell_one_row": true,
+    "dense_outer_has_exact_six_stock_month_cells": true,
+    "dense_parity_failure_uses_matched_feature_mode": true,
     "dense_status_complete": true,
     "official_rows_1607": true,
     "recency_max_probability_error_le_1e-10": true,

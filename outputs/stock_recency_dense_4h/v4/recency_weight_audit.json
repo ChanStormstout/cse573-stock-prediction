@@ -1,0 +1,11 @@
+{
+  "detail_path_private": "/Users/victor/Documents/Codex/2026-09-14/wox/work/stock-data/recency_dense_4h/v4/weight_audit.csv",
+  "fold_count": 14,
+  "formula": "2**(-session_age/half_life); infinity=1",
+  "infinity_unit_weight_violations": 0,
+  "max_formula_abs_error": 0.0,
+  "monotonic_violations": 0,
+  "note": "This verifies the v4 registered weighting function and saved-input fold boundaries; it does not refit models.",
+  "row_count": 17140,
+  "status": "PASS"
+}
