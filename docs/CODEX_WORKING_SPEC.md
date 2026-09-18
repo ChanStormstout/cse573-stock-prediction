@@ -106,6 +106,7 @@ historical backtests because September onward has already been exposed.
 | ISSUE-053 | MEDIUM | The preflight has no direct regression example proving BA headroom requires direction disagreement rather than any probability difference | A later edit could silently regress the registered advancement diagnostic | RESOLVED_CODE_ONLY_REGRESSION_TEST |
 | ISSUE-054 | HIGH | Reaction v4 perturbation replay changes bars by start time and does not explicitly mutate a still-forming bar whose end is after availability | The replay does not directly attack the historical unfinished-bar failure mode | RESOLVED_V4_STRONGER_VERIFIER_PASS |
 | ISSUE-055 | LOW | The stock-specific implementation plan still says no command has executed after real-input preflight completed | Documentation understates executed verification and can blur the predictive boundary | RESOLVED_DOCUMENTATION |
+| ISSUE-056 | BLOCKING | The approved run's post-run verifier raises `NameError: clean is not defined` before writing `v1/verification.json` | The sole G0--G3 run is not independently verified and must not be interpreted or used for tuning | STOPPED_UNVERIFIED_RUN_PRESERVED |
 
 ### Addendum correction for ISSUE-041
 
@@ -140,6 +141,10 @@ earlier v2 downstream protocol remains a historical mismatch.
 - [x] Stage 8C — final code-only verification repairs (ISSUE-051 through
   ISSUE-055); preflight and strengthened reaction v4 verifier passed without
   a predictive controller replay.
+- [x] Stage 9 — execute the single approved Phase B run and invoke its
+  independent verifier. ISSUE-056 stopped interpretation because the verifier
+  failed before writing `v1/verification.json`; no repair, report or tuning is
+  authorized in this stage.
 
 ## Stop conditions
 

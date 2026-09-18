@@ -1,0 +1,18 @@
+{
+  "status": "FAIL",
+  "mode": "postrun_independent_verification",
+  "run_status": "UNVERIFIED_STOPPED",
+  "failure": {
+    "exception": "NameError",
+    "message": "name 'clean' is not defined",
+    "location": "outputs/stock_specific_gate_4h/verify.py:main post-run result serialization"
+  },
+  "required_verification_artifact_not_written": "outputs/stock_specific_gate_4h/v1/verification.json",
+  "scientific_use": "PROHIBITED: do not interpret, select, tune, or report the saved G0-G3 scores.",
+  "actions_not_taken": [
+    "report.py was not run",
+    "no verifier repair or rerun was performed",
+    "no v2 was created",
+    "no activity-column experiment was started"
+  ]
+}

@@ -300,3 +300,18 @@ generated during this correction.
 - **Boundary:** these are code-only repairs. Phase B remains
   `PREREGISTERED_NOT_RUN`; no G0--G3 prediction, metric, oracle, advancement,
   development or later artifact was generated.
+
+## CORR-026 — approved Phase B run stopped at independent-verifier runtime failure
+
+- **What happened:** after the owner approved one execution, the frozen
+  `run_gate.py` command completed and preserved its `v1` artifact. The required
+  immediate `verify.py` command then raised `NameError: clean is not defined`
+  in its post-run branch before writing `v1/verification.json`.
+- **Interpretation boundary:** this is an implementation failure, not evidence
+  for or against G0--G3. The run is retained as `UNVERIFIED_STOPPED`; its
+  metrics, oracle and advancement files must not be used to choose a mechanism
+  conclusion or a new experiment.
+- **Actions not taken:** no repair-and-rerun, report generation, post-result
+  tuning, v2 creation or activity-column experiment was performed in this
+  stage. A separate future authorization is required before repairing the
+  verifier or using the preserved run further.

@@ -16,6 +16,14 @@
 > 只有 preflight，且通过；没有 `v1` 预测、G0--G3 metrics、oracle 或 advancement
 > artifact。
 
+> **Phase B execution boundary (2026-09-18):** the owner approved exactly one
+> frozen run, which completed at `outputs/stock_specific_gate_4h/v1/`. Its
+> immediate independent verifier then stopped with `NameError: clean is not
+> defined` before producing `v1/verification.json`. The saved run is preserved
+> as `UNVERIFIED_STOPPED`; its scores are not a scientific result, no report was
+> generated, and no post-result repair or tuning has been performed. See
+> `v1/verification_failure.json` for the exact failure record.
+
 本次从 `dd836d80c709cd98065249ab5cdde233bd7abdc1` 继续，历史运行和原始
 数据均保留。外部审查提出的 ISSUE-022—ISSUE-040 已在新的 v5/v2 目录中
 修复并核验：

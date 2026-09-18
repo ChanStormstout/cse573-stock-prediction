@@ -1314,3 +1314,21 @@ replay mutates every bar whose end time exceeds availability and includes a
 preflight both PASS. This did not retrain AR0/AR1 and did not execute the
 controller. `outputs/stock_specific_gate_4h/v1/` remains absent: no G0--G3
 predictions, metrics, oracle ceiling or advancement results exist.
+
+## 2026-09-18：批准后的 Phase B 单次运行在 verifier 失败处停止
+
+**Authorization and command:** the owner explicitly supplied
+`APPROVE_GATE_RUN`. The one allowed command was executed exactly as registered:
+`work/stock-data/finbert-env/bin/python3 outputs/stock_specific_gate_4h/run_gate.py --approve-gate-run --output outputs/stock_specific_gate_4h/v1`.
+
+**Failure:** the immediately required independent command,
+`work/stock-data/finbert-env/bin/python3 outputs/stock_specific_gate_4h/verify.py`,
+raised `NameError: clean is not defined` in the post-run branch before creating
+`v1/verification.json`. The run directory is preserved, but its output is
+`UNVERIFIED_STOPPED`.
+
+**Decision:** no scientific interpretation, report, post-result protocol
+repair, score search, v2 run, or activity-column experiment was performed.
+The precise failure record is public; raw predictions and model artifacts stay
+local under the repository artifact rules. A future instruction must explicitly
+authorize any verifier repair or additional action.

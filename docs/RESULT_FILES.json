@@ -2185,6 +2185,11 @@
     "sha256": "47bb65b85097b7a4d95027a5c135eed57fbc8a77020fda403a4f2959d581c646"
   },
   {
+    "path": "outputs/stock_specific_gate_4h/v1/verification_failure.json",
+    "bytes": 682,
+    "sha256": "8acfe953459e97fc8fc80927f3834a13ad4145ebc8a27642e628f9d272d80d96"
+  },
+  {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md",
     "bytes": 2808,
     "sha256": "97518996e5100e8077b5c227788700896af0125bd5d82d23c192b250e27d9fc1"

@@ -435,6 +435,7 @@ outputs/stock_reaction_features_4h/v3/verification_v3.json
 outputs/stock_specific_gate_4h/PRE_REGISTRATION.md
 outputs/stock_specific_gate_4h/IMPLEMENTATION_PLAN.md
 outputs/stock_specific_gate_4h/preflight_verification.json
+outputs/stock_specific_gate_4h/v1/verification_failure.json
 outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md
 outputs/stock_reaction_features_4h/v4/REPORT.md
 outputs/stock_reaction_features_4h/v4/DATA_AUDIT.md
