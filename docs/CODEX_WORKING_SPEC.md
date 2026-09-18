@@ -60,6 +60,7 @@ preflight pass; A1 execution requires a separate exact `APPROVE_ACTIVITY_RUN`.
 | ISSUE-059 | BLOCKING | Activity verifier only performed preflight and did not independently reconstruct raw feature values | Added verifier-local raw-bar reconstruction of all eight fields and a post-run entrypoint | RESOLVED_CODE_ONLY_NOT_RUN |
 | ISSUE-060 | HIGH | Activity report was a stub | Implemented PASS-gated report renderer; not executed | RESOLVED_CODE_ONLY_NOT_RUN |
 | ISSUE-061 | HIGH | Feature preflight allowed extra `activity_*` columns and did not fingerprint all build sources | Exact column and frozen-hash checks now required | RESOLVED_PREFLIGHT_PASS |
+| ISSUE-062 | BLOCKING | A future Activity result could have been trusted without independent reconstruction of selection, metrics, chronology, or advancement | Verifier-local post-run reconstruction now checks the complete output contract, C choices, selected-fit evidence, metrics and the two June--August contrasts; code-only and unexercised | RESOLVED_CODE_ONLY_NOT_RUN |
 
 ## Known issues that must be repaired
 

@@ -1401,3 +1401,8 @@ v1 的 predictions、metrics、monthly metrics 和 advancement 均不存在；�
 bars 和 schedule 重构；每个字段 NaN mismatch 为 0、最大有限误差为 0。它还验证
 全部 frozen source hashes、严格 20-session membership、按月 coverage 和合成边界
 cases。Activity v1 仍为 `PREREGISTERED_NOT_RUN`；没有执行 A1。
+
+补充 ISSUE-062：future post-run verifier 现从 `predictions.csv` 本地重算
+monthly/phase metrics、C selection、训练时序、A1/A1_matchedC 六格 June--August
+contrasts，并与 runner 输出逐项核对。它尚未在 A1 结果上执行；该条是代码合同，
+不是预测证据。

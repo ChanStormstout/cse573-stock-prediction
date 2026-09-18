@@ -443,3 +443,24 @@ and model artifacts remain local.
   10:02 unfinished-bar exclusion. A1/A1_matchedC result artifacts do not exist.
 - **Exact later command — not run:**
   `work/stock-data/finbert-env/bin/python3 outputs/stock_activity_4h/run_activity.py --approve-activity-run --output outputs/stock_activity_4h/v1`
+
+## Activity v1 final code-only repair handoff — 2026-09-18
+
+- **Starting remote SHA:** `c63a9397d7af9e64d577883f2dc872e669487a6b`.
+- **Payload SHA before this handoff:** `e190386d41c570b9f8fb0dcbf8082c45655e0215`.
+- **Issues:** ISSUE-058 through ISSUE-061 are resolved code-only/preflight; ISSUE-062
+  adds a verifier-local post-run reconstruction of selection, selected-fit chronology,
+  metrics, advancement and attribution control. None has generated an A1 score.
+- **Independent raw reconstruction:** all eight prepared fields across 1,607 canonical
+  keys have zero NaN-pattern mismatches and max finite absolute error `0.0`.
+- **Sources and coverage:** every frozen source fingerprint matches `sources.json`;
+  stock-by-month 15m/60m current/relative coverage is saved in
+  `outputs/stock_activity_4h/activity_feature_coverage_by_month.csv`.
+- **Cross-granularity audit:** records complete aligned windows, exact-sum count/fraction,
+  and maximum/mean discrepancies; its status remains
+  `DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF`.
+- **A0 parity and preflight:** both canonical R1 sources have max probability error
+  `1.1102230246251565e-16`; all preflight checks pass.
+- **Boundary:** runner, post-run verifier and PASS-gated report are implemented. The
+  post-run verifier and report have not been exercised on A1; no A1/A1_matchedC output
+  artifact exists. Status is `PREREGISTERED_NOT_RUN` pending an explicit approval.

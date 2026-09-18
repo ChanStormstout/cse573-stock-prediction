@@ -23,7 +23,7 @@ def fit_probability(train, evaluate, columns, C, name, model_dir):
     if model.n_iter_.max()>=3000: raise RuntimeError("no convergence")
     path=model_dir/f"{name}.joblib"; joblib.dump({"columns":columns,"scaler":scaler,"model":model},path); loaded=joblib.load(path); p=model.predict_proba(z)[:,1]; q=loaded["model"].predict_proba(loaded["scaler"].transform(evaluate,columns))[:,1]
     np.testing.assert_allclose(p,q,atol=1e-12,rtol=0)
-    return p,{"C":C,"train_end_max":train.end_utc.max().isoformat(),"eval_cutoff_min":evaluate.cutoff_utc.min().isoformat(),"model_sha256":sha(path),"reload_max_abs_error":float(np.abs(p-q).max()),"iterations":int(model.n_iter_.max())}
+    return p,{"C":C,"train_n":int(len(train)),"eval_n":int(len(evaluate)),"train_target_end_max":train.end_utc.max().isoformat(),"eval_cutoff_min":evaluate.cutoff_utc.min().isoformat(),"time_safe":bool(train.end_utc.max()<evaluate.cutoff_utc.min()),"feature_columns":list(columns),"model_path":str(path),"model_sha256":sha(path),"reload_max_abs_error":float(np.abs(p-q).max()),"iterations":int(model.n_iter_.max())}
 
 def choose(records):
     return sorted([(-np.mean([x["BA"] for x in records if x["C"]==c]),np.mean([x["Brier"] for x in records if x["C"]==c]),c) for c in CS])[0][2]
@@ -32,14 +32,14 @@ def reproduce_a0(data=None):
     """Allowed canonical R1 reproduction; returns only A0 evidence/predictions."""
     data=ensure() if data is None else data; models=PRIVATE/"a0_models"; models.mkdir(parents=True,exist_ok=True); records=[]; out=[]; evidence=[]
     for symbol, group in data.groupby("symbol"):
-        cv=[]
+        cv=[]; selected_candidates={}
         for month in [f"2018-{m:02d}" for m in range(3,9)]:
             train=group[(group.month<month)&(group.end_utc < group.loc[group.month.eq(month),"cutoff_utc"].min())]; test=group[group.month.eq(month)]; chosen=.1 if not cv else choose(cv)
             allp={}
             for c in CS:
-                p,e=fit_probability(train,test,R1,c,f"a0_{symbol}_{month}_{c}",models); allp[c]=p; r={"symbol":symbol,"month":month,"method":"A0","C":c,**metric(test.label,p)}; cv.append(r); records.append(r); evidence.append({"phase":"forward",**r,"feature_columns":R1,**e})
-            out.append(test[["key","symbol","month","label"]].assign(phase="train_forward_oof",A0=allp[chosen])); evidence.append({"phase":"selected", "symbol":symbol,"month":month,"A0_C":chosen})
-        train=group[group.month<"2018-09"]; test=group[group.month>="2018-09"]; chosen=choose(cv); p,e=fit_probability(train,test,R1,chosen,f"a0_{symbol}_frozen",models); phase=np.where(test.month.isin(["2018-09","2018-10"]),"development","later"); out.append(test[["key","symbol","month","label"]].assign(phase=phase,A0=p)); evidence.append({"phase":"frozen","symbol":symbol,"method":"A0","A0_C":chosen,"feature_columns":R1,**e})
+                p,e=fit_probability(train,test,R1,c,f"a0_{symbol}_{month}_{c}",models); allp[c]=p; r={"symbol":symbol,"month":month,"method":"A0","C":c,**metric(test.label,p)}; cv.append(r); records.append(r); evidence.append({"phase":"candidate",**r,**e}); selected_candidates[(symbol,month,c)]=e
+            out.append(test[["key","symbol","month","label"]].assign(phase="train_forward_oof",A0=allp[chosen])); evidence.append({"phase":"selected","symbol":symbol,"month":month,"method":"A0",**selected_candidates[(symbol,month,chosen)]})
+        train=group[group.month<"2018-09"]; test=group[group.month>="2018-09"]; chosen=choose(cv); p,e=fit_probability(train,test,R1,chosen,f"a0_{symbol}_frozen",models); phase=np.where(test.month.isin(["2018-09","2018-10"]),"development","later"); out.append(test[["key","symbol","month","label"]].assign(phase=phase,A0=p)); evidence.append({"phase":"frozen","symbol":symbol,"method":"A0",**e})
     prediction=pd.concat(out).sort_values(["key"]); PRIVATE.mkdir(parents=True,exist_ok=True); prediction.to_csv(PRIVATE/"a0_predictions_private.csv",index=False); (PRIVATE/"a0_evidence.json").write_text(json.dumps({"cv":records,"evidence":evidence},indent=2)+"\n")
     return prediction,records,evidence
 
@@ -47,17 +47,18 @@ def run(output):
     if output.exists(): raise FileExistsError(output)
     data=ensure(); model_dir=PRIVATE/"v1_models"; model_dir.mkdir(parents=True,exist_ok=False); a0,cv,evidence=reproduce_a0(data); all_cv=list(cv); chunks=[]; selection=[]
     for symbol, group in data.groupby("symbol"):
-        a1cv=[]
+        a1cv=[]; a1_candidates={}; a0_selected={x["month"]:x for x in evidence if x.get("phase")=="selected" and x.get("symbol")==symbol and x.get("method")=="A0"}
         for month in [f"2018-{m:02d}" for m in range(3,9)]:
-            test=group[group.month.eq(month)]; train=group[(group.month<month)&(group.end_utc<test.cutoff_utc.min())]; c0=[x for x in evidence if x.get("phase")=="selected" and x.get("symbol")==symbol and x.get("month")==month][0]["A0_C"]; c1=.1 if not a1cv else choose(a1cv); row=test[["key","symbol","month","label"]].copy(); selection += [{"symbol":symbol,"month":month,"method":"A0","chosen_C":c0,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"past forward BA, Brier, smaller C"},{"symbol":symbol,"month":month,"method":"A1","chosen_C":c1,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"past forward BA, Brier, smaller C"},{"symbol":symbol,"month":month,"method":"A1_matchedC","source_method":"A0","chosen_C":c0}]
+            test=group[group.month.eq(month)]; train=group[(group.month<month)&(group.end_utc<test.cutoff_utc.min())]; c0=a0_selected[month]["C"]; c1=.1 if not a1cv else choose(a1cv); row=test[["key","symbol","month","label"]].copy(); selection += [{"symbol":symbol,"month":month,"method":"A0","chosen_C":c0,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"past forward BA, Brier, smaller C"},{"symbol":symbol,"month":month,"method":"A1","chosen_C":c1,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"past forward BA, Brier, smaller C"},{"symbol":symbol,"month":month,"method":"A1_matchedC","source_method":"A0","chosen_C":c0,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"same-fold A0 C"}]
             for name,c in (("A1",c1),("A1_matchedC",c0)):
-                p,e=fit_probability(train,test,R1+ACTIVITY_FEATURES,c,f"{name}_{symbol}_{month}",model_dir); row[name]=p; evidence.append({"phase":"forward","method":name,"symbol":symbol,"month":month,"feature_columns":R1+ACTIVITY_FEATURES,**e})
+                p,e=fit_probability(train,test,R1+ACTIVITY_FEATURES,c,f"{name}_{symbol}_{month}",model_dir); row[name]=p; evidence.append({"phase":"selected","method":name,"symbol":symbol,"month":month,**e})
                 if name=="A1":
                     for cc in CS:
-                        pp,_=fit_probability(train,test,R1+ACTIVITY_FEATURES,cc,f"A1_{symbol}_{month}_{cc}",model_dir); record={"symbol":symbol,"month":month,"method":"A1","C":cc,**metric(test.label,pp)}; a1cv.append(record); all_cv.append(record)
+                        pp,ee=fit_probability(train,test,R1+ACTIVITY_FEATURES,cc,f"A1_{symbol}_{month}_{cc}",model_dir); record={"symbol":symbol,"month":month,"method":"A1","C":cc,**metric(test.label,pp)}; a1cv.append(record); all_cv.append(record); a1_candidates[(month,cc)]=ee
             chunks.append(row.assign(phase="train_forward_oof"))
         test=group[group.month>="2018-09"]; train=group[group.month<"2018-09"]; c1=choose(a1cv); c0=[x for x in evidence if x.get("phase")=="frozen" and x.get("symbol")==symbol][0]["A0_C"]; row=test[["key","symbol","month","label"]].copy(); selection += [{"symbol":symbol,"month":"final","method":"A0","chosen_C":c0,"eligible_prior_months":MONTHS},{"symbol":symbol,"month":"final","method":"A1","chosen_C":c1,"eligible_prior_months":MONTHS},{"symbol":symbol,"month":"final","method":"A1_matchedC","source_method":"A0","chosen_C":c0}]
-        for name,c in (("A1",c1),("A1_matchedC",c0)): row[name]=fit_probability(train,test,R1+ACTIVITY_FEATURES,c,f"{name}_{symbol}_frozen",model_dir)[0]
+        for name,c in (("A1",c1),("A1_matchedC",c0)):
+            pp,ee=fit_probability(train,test,R1+ACTIVITY_FEATURES,c,f"{name}_{symbol}_frozen",model_dir); row[name]=pp; evidence.append({"phase":"frozen","method":name,"symbol":symbol,"month":"final",**ee})
         chunks.append(row.assign(phase=np.where(test.month.isin(["2018-09","2018-10"]),"development","later")))
     pred=a0.merge(pd.concat(chunks),on=["key","symbol","month","label","phase"],validate="one_to_one"); output.mkdir(parents=True); pred.to_csv(output/"predictions.csv",index=False)
     def rows(frame,keys):
