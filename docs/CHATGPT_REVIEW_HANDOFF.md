@@ -347,3 +347,24 @@ runner's metric or advancement helper.
 No G0--G3 prediction, metric, oracle ceiling, advancement, development, later,
 or post-run verification artifact exists. The repository remains
 `PREREGISTERED_NOT_RUN` pending an explicit owner approval.
+
+## Approved Phase B execution stopped by verifier runtime error — 2026-09-18
+
+- **Starting SHA:** `2906a1f0791490e04e10588644bc410fb5515467`.
+- **Ending SHA (stop-record payload):** `5c36e38ef5df1c7ce2f4b1fc10d15bcf448bb32f`
+  (`Record unverified Phase B stop`).
+- **Approved run command:**
+  `work/stock-data/finbert-env/bin/python3 outputs/stock_specific_gate_4h/run_gate.py --approve-gate-run --output outputs/stock_specific_gate_4h/v1`.
+
+The one frozen Phase B command completed and its local artifact is preserved.
+The immediate required command,
+`work/stock-data/finbert-env/bin/python3 outputs/stock_specific_gate_4h/verify.py`,
+then failed with `NameError: clean is not defined` in the post-run result
+serialization branch. It did not write `v1/verification.json`.
+
+This is a verifier implementation failure, so the saved G0--G3 scores are
+`UNVERIFIED_STOPPED`, not a valid experiment result. No report was generated;
+no repair-and-rerun, score interpretation, post-result tuning, v2 run, or
+activity-column experiment was performed. The exact public failure record is
+`outputs/stock_specific_gate_4h/v1/verification_failure.json`; raw predictions
+and model artifacts remain local.
