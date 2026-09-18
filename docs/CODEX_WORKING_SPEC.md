@@ -70,6 +70,12 @@ historical backtests because September onward has already been exposed.
 | ISSUE-019 | LOW | Cross-stock past-state experiment needs explicit validity wording | Avoids implying future contemporaneous peer data | CLAIM-ONLY |
 | ISSUE-020 | MEDIUM | Continuous-return auxiliary result cannot show return magnitude has no signal | C2 failure only applies to the tested shared objective | CLAIM-ONLY |
 | ISSUE-021 | HIGH | Historical F1/F2 controls and reselected F1_new/F2_new are not clearly separated | Silent control swapping invalidates comparisons | DOCUMENT |
+| ISSUE-022 | BLOCKING | Dense v4 still computes its executable advancement gate over March–August even though it constructs June–August `gate_rows` | The published dense PASS/stop decision is not the registered June–August gate | PAUSED_PENDING_ADDENDUM |
+| ISSUE-023 | BLOCKING | Reaction article price context can include an unfinished five-minute bar | Reaction features may read price movement after the article availability cutoff | PAUSED_PENDING_ADDENDUM |
+| ISSUE-024 | BLOCKING | Reaction W0–W3 does not match the originally requested downstream protocol | The reported reaction downstream comparison is not the requested matched test | PAUSED_PENDING_ADDENDUM |
+| ISSUE-025 | BLOCKING | Reaction promotion gate is incomplete | A reaction branch may have been promoted or stopped without all registered conditions | PAUSED_PENDING_ADDENDUM |
+| ISSUE-026 | BLOCKING | AR1 numeric/text preprocessing and AR2 representation need correction | Reaction and representation results are not yet valid evidence for their intended mechanisms | PAUSED_PENDING_ADDENDUM |
+| ISSUE-027 | BLOCKING | Reaction verification does not assert the critical time-safety contracts | A PASS status does not currently prove no future price context entered the reaction features | PAUSED_PENDING_ADDENDUM |
 
 ## Planned execution stages
 
@@ -83,6 +89,8 @@ historical backtests because September onward has already been exposed.
 - [x] Stage 5 — claim-only wording and calibration/dedup interpretation audit
   (ISSUE-012 through ISSUE-021).
 - [x] Stage 6 — global verification, final logs, handoff, commit and push.
+- [ ] Stage 7 — incorporate reviewer addendum and repair/re-run blocked dense and
+  reaction artifacts (ISSUE-022 through ISSUE-027); **paused**.
 
 ## Stop conditions
 
@@ -134,6 +142,28 @@ Stage 6 is complete locally. All five public verifiers, `refresh_repository.py`,
 `outputs/stock_method_validity_audit/v1/final_verification.json`. A push is
 still attempted after the final commit; if GitHub DNS remains unavailable,
 the local commit and remote-tracking boundary are reported explicitly.
+
+## External reviewer addendum — execution paused (2026-09-17)
+
+The external reviewer identified new blocking validity issues in the
+implementation that was based on the earlier `e32785d` state. These findings
+supersede the earlier local PASS interpretation for the affected dense and
+reaction artifacts; they do not delete or invalidate the historical files.
+The exact repair instructions/addendum have not yet been incorporated here.
+
+Execution is now **PAUSED_PENDING_REVIEWER_ADDENDUM**. Do not start another
+experimental stage or model execution, including ModernBERT, TabPFN, reaction
+extensions, or any new model. Do not tune, select, publish, or combine scores
+while these blockers are open. The six blocking areas are ISSUE-022 through
+ISSUE-027 above: the executable dense gate month range, unfinished-bar price
+context, requested reaction W0–W3 protocol, complete reaction promotion gate,
+AR1/AR2 preprocessing and representation, and time-safety verification.
+
+No command was running when this pause was received. All previous work,
+historical runs, local commits, and audit artifacts remain preserved; no reset,
+discard, or overwrite was performed. Incorporate the detailed reviewer
+addendum first, then create a new repair protocol and new output directories
+before any rerun.
 
 ## Deviations / new problems discovered while executing
 

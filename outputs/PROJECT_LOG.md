@@ -1188,3 +1188,17 @@ v2、claim audit）均返回 PASS；`refresh_repository.py` 刷新 378 个选定
 corrections`）。commit 后再次运行刷新／检查仍为 PASS；push 因
 `Could not resolve host: github.com` 失败，`origin/main` 仍是
 `e32785d`。因此交付状态是本地完成、远端未验证更新。
+
+## 2026-09-18：外部审查阻塞项与执行暂停
+
+外部审查指出，较早 `e32785d` 实现中的 dense/reaction 路径仍有六类
+阻塞问题：dense v4 的实际 gate 仍可能使用 March–August；reaction article
+price context 可能包含未完成五分钟 bar；W0–W3 与原协议不匹配；reaction
+promotion gate 不完整；AR1 数值／文本预处理和 AR2 表示需要修正；以及
+reaction verifier 没有核验关键时间安全约束。上述内容已作为 ISSUE-022 至
+ISSUE-027 写入 `docs/CODEX_WORKING_SPEC.md`。
+
+按审查要求暂停执行。没有重置、删除或覆盖既有结果，也没有启动新的
+ModernBERT、TabPFN、reaction extension 或其他模型实验。当前等待详细
+reviewer addendum；在其纳入新的 repair protocol 之前，不将此前 affected
+artifact 的 PASS 当作最终有效性结论。

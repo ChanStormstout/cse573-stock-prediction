@@ -44,6 +44,17 @@ F1/F2 历史控制和 F1_new/F2_new 的区别。
 `git push origin main` 因 `Could not resolve host: github.com` 失败，当前
 `origin/main` 仍为 `e32785d`，所以不能把 GitHub 说成已更新。
 
+## 外部审查后的暂停状态（2026-09-18）
+
+外部审查发现 dense v4 的实际月份 gate、reaction 的未完成五分钟 bar、
+W0–W3 协议、promotion gate、AR1/AR2 预处理／表示和 reaction 时间安全
+核验仍有阻塞问题。这些问题已登记为 `ISSUE-022`—`ISSUE-027`；历史结果
+全部保留，但受影响 artifact 的 PASS 只能视为此前本地检查结果。
+
+当前状态为 `PAUSED_PENDING_REVIEWER_ADDENDUM`。没有运行新的模型或实验，
+也没有重置、删除或覆盖已有工作；必须先纳入详细 addendum，再制定新的
+repair protocol 和独立输出目录。
+
 ## 最新完成：v4 recency/dense 修正与全语料新闻 reaction probe（2026-09-17）
 
 [v4 recency/dense 报告](../outputs/stock_recency_dense_4h/v4/REPORT.md)、[v4 数据审计](../outputs/stock_recency_dense_4h/v4/DATA_AUDIT.md)、[reaction 报告](../outputs/stock_reaction_features_4h/v1/REPORT.md)已经实际运行完成。该轮保留 AAPL/AMZN 四小时任务、原始窗口和 cutoff，v3 未改写。

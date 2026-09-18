@@ -183,3 +183,18 @@ audit and claim corrections`). After that commit, `refresh_repository.py` and
 failed with `Could not resolve host: github.com`; `origin/main` remains at
 `e32785d`. The boundary note is recorded in a follow-up documentation commit;
 GitHub has not been claimed as updated.
+
+## Reviewer addendum pause (2026-09-18)
+
+The external reviewer reported six blocking validity issues in the earlier
+`e32785d` dense/reaction implementation. They are recorded as ISSUE-022 through
+ISSUE-027 in `docs/CODEX_WORKING_SPEC.md`: dense executable gate month range,
+unfinished-bar reaction context, the W0–W3 protocol, the complete promotion
+gate, AR1/AR2 preprocessing and representation, and reaction time-safety
+verification.
+
+Execution is paused pending the detailed addendum. No experiment or model
+execution was started after this notice; no historical output was deleted,
+reset, or overwritten. The prior verifier outputs remain preserved as
+historical artifacts and are not treated as final validity evidence for the
+affected paths until the addendum is incorporated and the repairs are rerun.
