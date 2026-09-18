@@ -1118,3 +1118,29 @@ F1是四个单元BA都高于50%的最清楚统一候选，相对F0却分别为+7
 **观察到的结果：**recency 选择为 R1=20、F1=80、F2=20，但 June–August 的 AAPL/AMZN BA 增量分别为 R1 +0.41/−7.40pp、F1 +4.12/−3.21pp、F2 +5.97/−4.31pp，均未通过“弱股至少 +1pp、无股损失超过 1pp、三个月至少两个月为正”的工程线。稠密 D1 相对官方日归一化 D0_day 为 AAPL +0.42pp、AMZN +0.78pp，低于每股 +1pp，文本扩展和 D2 按协议停止。文章审计覆盖 4,930 篇 accepted article、4,930 个 normalized groups 和 39,440 个 article×horizon rows；这证明可做后续 event-study，但不构成因果或预测提升。activity 为非负整数型描述字段，但定义/单位未在仓库元数据中确认，保持 `SEMANTICS_UNRESOLVED_NOT_USED`。
 
 **核验与决定：**通过官方 keys/labels、等权概率精确复现、概率与指标重算、权重有限、dense 唯一性、未来 target-bar 扰动不改变 cutoff 特征、反应计数和 activity 未使用检查。结论是近期加权和稠密窗口没有稳定增量；后续优先级仍是获得可验证的 contemporaneous market-state 数据，不能把本轮局部改进包装成新泛化。
+# 2026-09-17：v4 recency/dense 修正与全语料 reaction probe
+
+## 为什么做
+
+上一轮 v3 同时存在三个需要拆开的风险：F2 recency 的变换与 canonical J2 不完全一致；infinity 结果复用了旧概率而不是真正 refit；稠密窗口 gate 把 March–August 与 June–August 混在一起。新闻反应审计也只看了已接受的 4,930 个文章 ID，不能回答完整语料是否有足够覆盖。因此本轮先做可复现修正，再做全语料可行性审计和冻结 reaction probe，不继续堆叠新模型。
+
+## 实际执行
+
+1. 用 `outputs/stock_recency_dense_4h/run_recency_v4.py` 按预登记的 infinity/80/40/20 session half-life 运行 R1/F1/F2。F2 使用 canonical J2（文章向量 PCA16、窗口均值、`log1p(news_count)`、`has_news`）。infinity 为 all-one sample-weight refit。
+2. 用 `build_dense_windows_v4.py` 和 `run_dense_v4.py` 生成 30 分钟起点的重叠四小时窗口，并先做官方/重建特征 parity。parity 不通过后，官方控制与增广数据统一使用重建发生器；gate 固定 June–August 六个月份行。
+3. 从完整 78,055 条 raw news index 构造 `(article_key,target_symbol)` pairs，按时间、英文、同 session 反应和规范化重复组建 reaction dataset。gate 通过后运行 AR0/AR1，并在有限的既有冻结向量覆盖上运行 AR2；只对通过 horizon 做 W0–W3 下游对照。
+4. 修复下游 predictions 输出在 metrics 循环中重复追加的实现问题；补充 `verify_v4.py`、`verify_v1.py`，检查 parity、6 行 gate、公开文件无正文、下游 key 唯一等条件。
+
+## 结果与 insight
+
+- infinity refit 与历史 reference 的 24 条 fold×stock×method 记录最大概率误差 `1.67e-15`，因此 parity 通过。
+- recency 外层增量（AAPL/AMZN）为 R1 `+2.80/-7.40pp`、F1 `+4.57/-0.38pp`、F2 `-4.34/+1.16pp`，均未通过“每股至少 +1pp、无股损失超过 1pp、三个月至少两个月为正”的 gate。加权近期新闻改变了预测，但没有稳定跨股收益。
+- dense D1 相对 matched D0_day 为 AAPL `+0.42pp`、AMZN `+0.78pp`，低于门槛；D2 停止。这个结果不能与 v3 的错误 March–August gate 直接比较。
+- 完整语料 reaction gate：78,055 raw、89,958 candidate pairs、85,402 canonical groups；AAPL/AMZN 均有足够 60m/240m same-session reaction。AR1 文章级 120m/240m 通过，但接入四小时窗口后 AAPL W1-120 为 51.66% 对 W0 48.70%，AMZN 为 45.51% 对 W0 60.63%，没有两股稳定下游增量。
+- “文章反应可预测”与“四小时方向可改善”是不同问题。当前 evidence level 只支持前者的有限 probe，不支持将 reaction 机制作为主模型。
+
+## 限制与下一步
+
+- 官方/重建 dense parity 的差异仍需在未来获得输入生成器定义后进一步追溯；v4 已用 matched reconstructed control 避免把差异当作收益。
+- AR2 因模型二进制缺失只覆盖约 10.36% reaction rows；没有把它写成完整语义结果。独立组员事件/目标关联复核仍未完成。
+- 按停止规则，本轮不继续扩大 reaction horizon、recency 网格或 D2；保留全部结果供课程报告说明“为什么机制没有稳定提高”。

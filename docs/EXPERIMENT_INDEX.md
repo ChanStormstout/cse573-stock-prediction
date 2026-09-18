@@ -1,6 +1,6 @@
 # 实验索引
 
-当前入口是 **stock_analogy_4h/v2**；历史目录保留原名称，不能将一小时结果与四小时结果直接比较。
+当前入口是 **stock_recency_dense_4h/v4** 与 **stock_reaction_features_4h/v1**；历史目录保留原名称，不能将一小时结果与四小时结果直接比较。
 
 - **stock_adaptive**: [REPORT.md](../outputs/stock_adaptive/REPORT.md)
 - **stock_adaptive_4h**: [PROTOCOL.md](../outputs/stock_adaptive_4h/PROTOCOL.md) · [README.md](../outputs/stock_adaptive_4h/README.md) · [REPORT.md](../outputs/stock_adaptive_4h/REPORT.md)
@@ -36,6 +36,7 @@
 - **stock_market_return_4h**: [README.md](../outputs/stock_market_return_4h/README.md)
 - **stock_nextgen_4h**: [FINAL_STATUS.md](../outputs/stock_nextgen_4h/FINAL_STATUS.md) · [PROTOCOL.md](../outputs/stock_nextgen_4h/PROTOCOL.md) · [README.md](../outputs/stock_nextgen_4h/README.md) · [REPORT.md](../outputs/stock_nextgen_4h/REPORT.md)
 - **stock_paper_methods_4h**: [README.md](../outputs/stock_paper_methods_4h/README.md)
+- **stock_reaction_features_4h**: [PRE_REGISTRATION.md](../outputs/stock_reaction_features_4h/PRE_REGISTRATION.md)
 - **stock_recency_dense_4h**: [PRE_REGISTRATION.md](../outputs/stock_recency_dense_4h/PRE_REGISTRATION.md)
 - **stock_review_fixes**: [README.md](../outputs/stock_review_fixes/README.md)
 - **stock_robust**: [README.md](../outputs/stock_robust/README.md) · [REPORT.md](../outputs/stock_robust/REPORT.md)

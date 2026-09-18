@@ -1483,5 +1483,200 @@
     "path": "outputs/stock_analogy_4h/v1/abort.json",
     "bytes": 299,
     "sha256": "c603576e53d01a00d23ebb0761e73cc3b9fab250b30fbc72b0a3c0921d84d592"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/PRE_REGISTRATION.md",
+    "bytes": 2144,
+    "sha256": "af257daaf5edc9a13a924d7299ffdcf5fdc08f6783df71b11400a12c2f75078a"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/CORRECTIONS.md",
+    "bytes": 1265,
+    "sha256": "a133d975fead4e73475b4f9cedc01be47e13acb947d2982ebb8ad34eaf35951d"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/REPORT.md",
+    "bytes": 4658,
+    "sha256": "fcf52105f938fda97f5e12bf7d7f91ac34c4286588d998da0094a523f8bf1962"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/DATA_AUDIT.md",
+    "bytes": 1286,
+    "sha256": "2cd3baa653204f8e8bb66f812f21642b4b691eabafeff9cdab060279b04af26d"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/CASE_NOTES.md",
+    "bytes": 1123,
+    "sha256": "83e748cf24c97b2d40db6c8107346e87ba5db29bc3c3b3396427f120a1f276c1"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/recency_metrics.csv",
+    "bytes": 5895,
+    "sha256": "d42a612cb2d9e303107c25aaca3badc2cee30da729d2d97f5a1b0615397672c0"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/recency_monthly_metrics.csv",
+    "bytes": 17536,
+    "sha256": "ee1757376d56e1505c540b5fc122249193c6b5e3ca0c849f60d0c24c574a8a8c"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/recency_outer_scores.csv",
+    "bytes": 5848,
+    "sha256": "a524a17579b89321850724d8add17f53d9758543c6efd57e184c5e0528950eb3"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/recency_selection.json",
+    "bytes": 4785,
+    "sha256": "760775cacf20e0752a8af6b12cf5301238857f8b49760720bf296e485e178b7a"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/recency_refit_parity.csv",
+    "bytes": 2408,
+    "sha256": "a5e2645d6df795a506520e6cdb6e026169b6f4960c96d9a54935db3e6ba6d9c6"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/recency_training_evidence.json",
+    "bytes": 76682,
+    "sha256": "7a8c5e685d90d251acd21f021eb5e1ec045c2227865205487508ea8e1b4df427"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/dense_metrics.csv",
+    "bytes": 3107,
+    "sha256": "2879290c8a00bcf49f0953d7183a15cdd122769990bcee271978204cec8c7ed1"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/dense_monthly_metrics.csv",
+    "bytes": 11629,
+    "sha256": "f6b667e6b51a6721ae6d56d78cf1ab3b5dabe396b8099f759930a602ee2debf8"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/dense_outer_scores.csv",
+    "bytes": 5618,
+    "sha256": "31c2c9f5adba598cdbf04bf1b757f65570bd68b4a4f4301675c73cb3d1a137ce"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/dense_feature_parity.csv",
+    "bytes": 1437,
+    "sha256": "7a22df86be4194b0af32b77c676a18a63e71897144932ef590c8ad4c8e68dda7"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/dense_gate_corrected.json",
+    "bytes": 716,
+    "sha256": "174dc0a5b3b5c8b6e673dc792da3d3d7ff47d2e95cc4ee15ab490fb046b9e704"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/dense_training_evidence.json",
+    "bytes": 14338,
+    "sha256": "bff9b23ca901f103d42fa19d10f2203430e05e5d29003b798b10cca906003f96"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/dense_training_summary.json",
+    "bytes": 716,
+    "sha256": "174dc0a5b3b5c8b6e673dc792da3d3d7ff47d2e95cc4ee15ab490fb046b9e704"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v4/verification.json",
+    "bytes": 1768,
+    "sha256": "5b333c718eb34c28a8876fc021834344a90bda2151234a2313e22cdd3188b0c2"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/verify_v4.py",
+    "bytes": 1993,
+    "sha256": "fdb6a650244e118d0d2941c2d9ea2bb171bb42006edad03c1bf5d96faa709ccf"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION.md",
+    "bytes": 2467,
+    "sha256": "5923aa01d991cc8429057e78b0d24072b8f72b8e1cfb771eeb3667bc7b8357f1"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/REPORT.md",
+    "bytes": 5435,
+    "sha256": "eeb78824358f6b6e1b1a5bf6496e45ee07755dcfdc7b1ca4146e09e9ce2ad7d8"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/DATA_SCHEMA_AUDIT.md",
+    "bytes": 3741,
+    "sha256": "7ef960721da2130a33166d95b91eb90fd0ca028af7377fb696968ecb5a67c0bb"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/DATA_AUDIT.md",
+    "bytes": 1166,
+    "sha256": "c8dfa173137aaccb5dbc369b9ca14ea3c3dcf6ca91fcbf95019d276218c40365"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/CASE_NOTES.md",
+    "bytes": 1060,
+    "sha256": "712a62d1a06c770ea63e10da8b51a3e99b71abda9aef33a07c237458871cfdaa"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/build_evidence.json",
+    "bytes": 248,
+    "sha256": "2887c06584724f28beed5ca102a1e9bacee620294a7ccbcc1c9e4d7c8fa25c55"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_dataset_waterfall.csv",
+    "bytes": 174,
+    "sha256": "47030723db5be70526ece241171139276e3ef9f7fdfa8e66e34e9e6fe3b0d055"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_counts_by_month.csv",
+    "bytes": 687,
+    "sha256": "7490a076775c9b67b043919a094ae2532e71a40b1ebea9e7ab65c5a2209a1cfa"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_distribution.csv",
+    "bytes": 994,
+    "sha256": "224c0bc94ca6c9140d85e4fe2d7316bddeeed51e2fc4b443356e266c88eb5e1b"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_gate.json",
+    "bytes": 1052,
+    "sha256": "010473d6247a620dda889da3d9c80e997543e28061fa9b910b73a8d2d4aec054"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_metrics.csv",
+    "bytes": 4035,
+    "sha256": "7bba82785fc27400e47359505c2f14100ab95218a80ce7bed5e88db07d2440ca"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_selection.json",
+    "bytes": 2984,
+    "sha256": "f475b831c97b78baf480df792bc2c2af10e8323d30b3175ecb9e95bff5d4bbc7"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_probe_gate.json",
+    "bytes": 4891,
+    "sha256": "1a0d727cf93441a89b4fa73bbba0fe16b27f03bb1999a8e118163a88c718da12"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_downstream_metrics.csv",
+    "bytes": 960,
+    "sha256": "7fd5248c2ee349a2092bcba5a1013a694ee7b98b773aa7960707a5bf8b489130"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_downstream_predictions.csv",
+    "bytes": 62661,
+    "sha256": "4eaa36d659cce3deb281f6a1fed395498deb34a2220c20b86371cd6ab2541020"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/reaction_training_evidence.json",
+    "bytes": 3962,
+    "sha256": "114744ca797e92e8fd6c24a96494ff5a10ed50f3d89eb933edb11cccb0404663"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/verification.json",
+    "bytes": 1326,
+    "sha256": "225277026bd029f55c6eb3d8bc3b7c33756d2116ca7e32e7bc7ae85b8c1e4648"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/v1/TARGET_ASSOCIATION_AUDIT.csv",
+    "bytes": 520,
+    "sha256": "d54655bf081cf77a7a10df78e031e54d081722f3b6116807ff8be520733911c8"
+  },
+  {
+    "path": "outputs/stock_reaction_features_4h/verify_v1.py",
+    "bytes": 2058,
+    "sha256": "ca04e9f8bfee206d74703f01f0abb94489c72b9ebea6d5ab46834c50af186e9c"
   }
 ]

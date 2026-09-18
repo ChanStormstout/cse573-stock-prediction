@@ -1,0 +1,48 @@
+{
+  "counts": {
+    "associated_AAPL": 70591,
+    "associated_AMZN": 19367,
+    "candidate_pairs": 89958,
+    "canonical_groups_all_time": 85402,
+    "duplicate_suppressed_pairs": 4556,
+    "english": 70732,
+    "jan_aug_canonical_pairs": 51485,
+    "non_english": 7323,
+    "raw_rows_seen": 78055,
+    "short_text": 131,
+    "sufficient_text": 70601,
+    "tier0_AAPL": 70586,
+    "tier0_AMZN": 16558,
+    "tier1_AAPL": 5,
+    "tier1_AMZN": 62,
+    "tier2_AMZN": 2747
+  },
+  "gate": [
+    {
+      "dates": 168,
+      "months_with_at_least_50_groups": 8,
+      "passes": true,
+      "symbol": "AAPL",
+      "unique_target_article_groups": 40764,
+      "valid_240m": 5490,
+      "valid_60m": 11288
+    },
+    {
+      "dates": 168,
+      "months_with_at_least_50_groups": 8,
+      "passes": true,
+      "symbol": "AMZN",
+      "unique_target_article_groups": 10721,
+      "valid_240m": 1410,
+      "valid_60m": 3137
+    }
+  ],
+  "horizons_minutes": [
+    30,
+    60,
+    120,
+    240
+  ],
+  "period": "2018-01-01 through 2018-08-31",
+  "status": "PASS"
+}

@@ -1,0 +1,46 @@
+{
+  "checks": {
+    "AAPL_gate_pass": true,
+    "AMZN_gate_pass": true,
+    "AR2_scope_declared": true,
+    "downstream_complete": true,
+    "downstream_keys_unique": true,
+    "feasibility_pass": true,
+    "probe_complete": true,
+    "raw_rows_78055": true,
+    "raw_text_not_published": true
+  },
+  "downstream_rows": 384,
+  "gate_counts": {
+    "associated_AAPL": 70591,
+    "associated_AMZN": 19367,
+    "candidate_pairs": 89958,
+    "canonical_groups_all_time": 85402,
+    "duplicate_suppressed_pairs": 4556,
+    "english": 70732,
+    "jan_aug_canonical_pairs": 51485,
+    "non_english": 7323,
+    "raw_rows_seen": 78055,
+    "short_text": 131,
+    "sufficient_text": 70601,
+    "tier0_AAPL": 70586,
+    "tier0_AMZN": 16558,
+    "tier1_AAPL": 5,
+    "tier1_AMZN": 62,
+    "tier2_AMZN": 2747
+  },
+  "note": "Article-level reaction probes passed a limited horizon gate; downstream W0-W3 did not yield a stable two-stock improvement.",
+  "probe_embedding": {
+    "device": "precomputed_private_article_vectors",
+    "dim": 768,
+    "keys_sha256": "5ec1c92e233ebf8f6bbc1ff61cc0ee3aeb5cea8c2403b416992b89b95a9112d1",
+    "revision": "4556d13015211d73dccd3fdd39d39232506f3e43",
+    "rows": 1608,
+    "status": "MODEL_BINARY_UNAVAILABLE_COVERAGE_LIMITED"
+  },
+  "promoted_horizons": [
+    120,
+    240
+  ],
+  "status": "PASS"
+}

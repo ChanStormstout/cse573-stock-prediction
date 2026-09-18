@@ -31,7 +31,7 @@ def main():
             assets.append({'path': str(path.relative_to(ROOT)), 'bytes': path.stat().st_size, 'sha256': digest(path), 'in_git': False})
     (ROOT/'docs/LOCAL_ARTIFACTS.json').write_text(json.dumps({'scope':'Experiment model and cache binaries under outputs; raw course data and environments excluded from this inventory.', 'files':assets}, indent=2)+'\n')
     dirs = sorted(x for x in (ROOT/'outputs').iterdir() if x.is_dir() and x.name.startswith('stock_'))
-    lines = ['# 实验索引','', '当前入口是 **stock_analogy_4h/v2**；历史目录保留原名称，不能将一小时结果与四小时结果直接比较。','']
+    lines = ['# 实验索引','', '当前入口是 **stock_recency_dense_4h/v4** 与 **stock_reaction_features_4h/v1**；历史目录保留原名称，不能将一小时结果与四小时结果直接比较。','']
     for directory in dirs:
         docs = [x for x in directory.glob('*.md') if x.name in {'README.md','REPORT.md','PROTOCOL.md','FINAL_STATUS.md'}]
         if not docs:

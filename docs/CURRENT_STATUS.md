@@ -1,5 +1,17 @@
 # 当前状态（2026-09-17）
 
+## 最新完成：v4 recency/dense 修正与全语料新闻 reaction probe（2026-09-17）
+
+[v4 recency/dense 报告](../outputs/stock_recency_dense_4h/v4/REPORT.md)、[v4 数据审计](../outputs/stock_recency_dense_4h/v4/DATA_AUDIT.md)、[reaction 报告](../outputs/stock_reaction_features_4h/v1/REPORT.md)已经实际运行完成。该轮保留 AAPL/AMZN 四小时任务、原始窗口和 cutoff，v3 未改写。
+
+- v4 使用 canonical J0/J2；F2 PCA 在训练文章向量上拟合并保留窗口元信息。infinity 分支是真正全样本等权重重训，与历史 reference 的最大逐概率误差 `1.67e-15`，低于 `1e-10`。
+- recency 只在 2018-03—05 选择全局半衰期，2018-06—08 做 gate；R1/F1/F2 均选 20，但外层增量分别为 AAPL/AMZN `+2.80pp/-7.40pp`、`+4.57pp/-0.38pp`、`-4.34pp/+1.16pp`，均未通过。稠密窗口修正为 6 个月份行，D1 相对重建 D0_day 为 `+0.42pp/+0.78pp`，也未通过，D2 按协议停止。
+- 官方与重建 dense 输入逐列 parity 不一致，所以 v4 的官方控制、训练和增广统一使用 reconstructed generator；没有混合两套特征。原 v3 “non-overlapping”措辞也已在 v4 纠正为 30 分钟起点的重叠四小时窗口。
+- 全部 78,055 条原始新闻索引参与 reaction coverage 审计，得到 89,958 个 article×target 候选、85,402 个 canonical groups；AAPL/AMZN 都通过预登记可行性 gate。冻结 AR1 在 120m/240m 的文章级外层 gate 通过，但下游 W0–W3 没有两股稳定提升：AAPL W0/W1-120 为 48.70%/51.66%，AMZN 为 60.63%/45.51%。
+- 当前没有宣布独立人工事件关联验收通过；FinBERT 二进制不可重新加载，AR2 只是已有私有向量的约 10.36% coverage probe。没有新增微调、GNN、RL、Chronos 或付费数据。
+
+新的公开核验：[recency v4 verification](../outputs/stock_recency_dense_4h/v4/verification.json)、[reaction v1 verification](../outputs/stock_reaction_features_4h/v1/verification.json)。所有 development/later/Jun-Aug 结果仍是已暴露的探索性历史回测。
+
 ## 最新完成：recency、稠密窗口与新闻反应审计（stock_recency_dense_4h/v3）
 
 [运行报告](../outputs/stock_recency_dense_4h/v3/REPORT.md)、[数据审计](../outputs/stock_recency_dense_4h/v3/DATA_AUDIT.md)、[核验](../outputs/stock_recency_dense_4h/v3/verification.json)。本轮固定原始 AAPL/AMZN 四小时任务和 1,607 个官方窗口，等权 R1/F1/F2 逐窗口复现原保存概率（最大误差 0），再只改变训练标签权重。

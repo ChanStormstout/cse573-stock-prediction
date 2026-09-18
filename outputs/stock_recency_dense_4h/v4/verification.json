@@ -1,0 +1,62 @@
+{
+  "checks": {
+    "dense_gate_has_six_month_rows": true,
+    "dense_gate_months_are_jun_to_aug": true,
+    "dense_gate_stops_d2": true,
+    "dense_status_complete": true,
+    "official_rows_1607": true,
+    "recency_max_probability_error_le_1e-10": true,
+    "recency_parity_pass": true,
+    "recency_status_complete": true,
+    "registered_half_lives": true
+  },
+  "dense_gate": {
+    "AAPL_delta_BA": 0.00416821835432384,
+    "AMZN_delta_BA": 0.007752851331226597,
+    "baseline": "D0_day",
+    "candidate": "D1",
+    "macro_delta_BA": 0.0059605348427752185,
+    "months": [
+      "2018-06",
+      "2018-07",
+      "2018-08"
+    ],
+    "n_month_rows": 6,
+    "n_month_stock_rows": 12,
+    "passes": false,
+    "positive_outer_months": 3
+  },
+  "max_abs_probability_error": 1.6653345369377348e-15,
+  "note": "Public artifact verification only; development and later periods remain exposed exploratory backtests.",
+  "parity_rows": 24,
+  "recency_gate": [
+    {
+      "AAPL_delta_BA": 0.027966314731020663,
+      "AMZN_delta_BA": -0.0739942528735632,
+      "macro_delta_BA": -0.023013969071271272,
+      "method": "R1",
+      "passes": false,
+      "positive_outer_months": 1,
+      "selected_half_life": "20"
+    },
+    {
+      "AAPL_delta_BA": 0.045699761386035855,
+      "AMZN_delta_BA": -0.003783524904214519,
+      "macro_delta_BA": 0.020958118240910668,
+      "method": "F1",
+      "passes": false,
+      "positive_outer_months": 2,
+      "selected_half_life": "20"
+    },
+    {
+      "AAPL_delta_BA": -0.04340739144660712,
+      "AMZN_delta_BA": 0.011604614359486917,
+      "macro_delta_BA": -0.015901388543560102,
+      "method": "F2",
+      "passes": false,
+      "positive_outer_months": 1,
+      "selected_half_life": "20"
+    }
+  ],
+  "status": "PASS"
+}

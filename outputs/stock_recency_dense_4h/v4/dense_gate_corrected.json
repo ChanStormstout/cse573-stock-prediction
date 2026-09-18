@@ -1,0 +1,27 @@
+{
+  "D2_reason": "both recency R1 and dense gates required",
+  "D2_status": "STOPPED_BY_GATE",
+  "canonical_parity_pass": false,
+  "dense_gate_corrected": {
+    "AAPL_delta_BA": 0.00416821835432384,
+    "AMZN_delta_BA": 0.007752851331226597,
+    "baseline": "D0_day",
+    "candidate": "D1",
+    "macro_delta_BA": 0.0059605348427752185,
+    "months": [
+      "2018-06",
+      "2018-07",
+      "2018-08"
+    ],
+    "n_month_rows": 6,
+    "n_month_stock_rows": 12,
+    "passes": false,
+    "positive_outer_months": 3
+  },
+  "feature_mode": "reconstructed_all_official_and_augmented",
+  "official_rows": 1607,
+  "recency_R1_gate": false,
+  "rows": 3232,
+  "runtime_seconds": 0.3991800000076182,
+  "status": "COMPLETE"
+}

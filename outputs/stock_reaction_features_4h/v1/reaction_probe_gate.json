@@ -1,0 +1,183 @@
+{
+  "any_horizon_passes": true,
+  "ar2_scope": "coverage_limited_precomputed_frozen_vectors",
+  "downstream": {
+    "metrics": [
+      {
+        "BA": 0.487012987012987,
+        "Brier": 0.2532622416122265,
+        "MCC": -0.02522671612121095,
+        "method": "W0",
+        "n": 192,
+        "pred_up": 0.6041666666666666,
+        "symbol": "AAPL"
+      },
+      {
+        "BA": 0.5165945165945166,
+        "Brier": 0.242191580122903,
+        "MCC": 0.049489838961893046,
+        "method": "W1_120m",
+        "n": 192,
+        "pred_up": 0.8854166666666666,
+        "symbol": "AAPL"
+      },
+      {
+        "BA": 0.5165945165945166,
+        "Brier": 0.24215418992961088,
+        "MCC": 0.049489838961893046,
+        "method": "W1_240m",
+        "n": 192,
+        "pred_up": 0.8854166666666666,
+        "symbol": "AAPL"
+      },
+      {
+        "BA": 0.5126262626262625,
+        "Brier": 0.24165118843145894,
+        "MCC": 0.03693641865641415,
+        "method": "W2_multi",
+        "n": 192,
+        "pred_up": 0.8802083333333334,
+        "symbol": "AAPL"
+      },
+      {
+        "BA": 0.496031746031746,
+        "Brier": 0.2431472469399911,
+        "MCC": -0.009991510822169678,
+        "method": "W3_gated",
+        "n": 192,
+        "pred_up": 0.828125,
+        "symbol": "AAPL"
+      },
+      {
+        "BA": 0.6063192904656319,
+        "Brier": 0.24411943948860357,
+        "MCC": 0.21092677786576006,
+        "method": "W0",
+        "n": 192,
+        "pred_up": 0.5364583333333334,
+        "symbol": "AMZN"
+      },
+      {
+        "BA": 0.45509977827051,
+        "Brier": 0.25908490810195267,
+        "MCC": -0.10057432018903789,
+        "method": "W1_120m",
+        "n": 192,
+        "pred_up": 0.265625,
+        "symbol": "AMZN"
+      },
+      {
+        "BA": 0.45964523281596453,
+        "Brier": 0.25902751059873136,
+        "MCC": -0.08983848527667358,
+        "method": "W1_240m",
+        "n": 192,
+        "pred_up": 0.2708333333333333,
+        "symbol": "AMZN"
+      },
+      {
+        "BA": 0.45964523281596453,
+        "Brier": 0.259012220066459,
+        "MCC": -0.08983848527667358,
+        "method": "W2_multi",
+        "n": 192,
+        "pred_up": 0.2708333333333333,
+        "symbol": "AMZN"
+      },
+      {
+        "BA": 0.5549889135254988,
+        "Brier": 0.2509139891623234,
+        "MCC": 0.11034544198271386,
+        "method": "W3_gated",
+        "n": 192,
+        "pred_up": 0.4166666666666667,
+        "symbol": "AMZN"
+      }
+    ],
+    "promoted_horizons": [
+      120,
+      240
+    ],
+    "rows": 10,
+    "status": "COMPLETE"
+  },
+  "downstream_W0_W3": "COMPLETE",
+  "embedding": {
+    "device": "precomputed_private_article_vectors",
+    "dim": 768,
+    "keys_sha256": "5ec1c92e233ebf8f6bbc1ff61cc0ee3aeb5cea8c2403b416992b89b95a9112d1",
+    "revision": "4556d13015211d73dccd3fdd39d39232506f3e43",
+    "rows": 1608,
+    "status": "MODEL_BINARY_UNAVAILABLE_COVERAGE_LIMITED"
+  },
+  "embedding_coverage_for_ar2": 0.10360824742268042,
+  "promotion": [
+    {
+      "AAPL_delta_BA": 0.013775578185971304,
+      "AMZN_delta_BA": -0.0037544265375442643,
+      "candidate": "AR1",
+      "horizon_minutes": 30,
+      "macro_delta_BA": 0.00501057582421352,
+      "passes": false
+    },
+    {
+      "AAPL_delta_BA": -0.0030205196566177595,
+      "AMZN_delta_BA": null,
+      "candidate": "AR2",
+      "horizon_minutes": 30,
+      "macro_delta_BA": -0.0030205196566177595,
+      "passes": false
+    },
+    {
+      "AAPL_delta_BA": 0.028669154228855742,
+      "AMZN_delta_BA": -0.010110485720241758,
+      "candidate": "AR1",
+      "horizon_minutes": 60,
+      "macro_delta_BA": 0.009279334254306992,
+      "passes": false
+    },
+    {
+      "AAPL_delta_BA": -0.031212039014352266,
+      "AMZN_delta_BA": null,
+      "candidate": "AR2",
+      "horizon_minutes": 60,
+      "macro_delta_BA": -0.031212039014352266,
+      "passes": false
+    },
+    {
+      "AAPL_delta_BA": 0.01645177020253563,
+      "AMZN_delta_BA": 0.01600254100254095,
+      "candidate": "AR1",
+      "horizon_minutes": 120,
+      "macro_delta_BA": 0.01622715560253829,
+      "passes": true
+    },
+    {
+      "AAPL_delta_BA": -0.01651936462947845,
+      "AMZN_delta_BA": null,
+      "candidate": "AR2",
+      "horizon_minutes": 120,
+      "macro_delta_BA": -0.01651936462947845,
+      "passes": false
+    },
+    {
+      "AAPL_delta_BA": 0.026900527065771618,
+      "AMZN_delta_BA": 0.05397991707330835,
+      "candidate": "AR1",
+      "horizon_minutes": 240,
+      "macro_delta_BA": 0.04044022206953998,
+      "passes": true
+    },
+    {
+      "AAPL_delta_BA": 0.03458204956522459,
+      "AMZN_delta_BA": null,
+      "candidate": "AR2",
+      "horizon_minutes": 240,
+      "macro_delta_BA": 0.03458204956522459,
+      "passes": false
+    }
+  ],
+  "protocol_sha256": "5923aa01d991cc8429057e78b0d24072b8f72b8e1cfb771eeb3667bc7b8357f1",
+  "runtime_seconds": 22.9778466669959,
+  "status": "COMPLETE"
+}
