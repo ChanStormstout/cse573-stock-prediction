@@ -18,3 +18,17 @@ Invariant: `thread`, `ord_in_thread`, and highlights have unresolved financial-e
 semantics unless this lane proves otherwise. `SPY` and `QQQ` must be consolidated
 5-minute raw-adjusted data or this market lane remains blocked. Postrun verification
 must not fit, rebuild input, or overwrite a model.
+
+## Final pre-predictive review issues
+
+| ID | Severity | Finding | Required repair/status |
+|---|---|---|---|
+| CONTEXT-001 | BLOCKING | Existing 64-pair selection is AAPL-biased | rebuild 8×2×4 balanced manifest |
+| CONTEXT-002 | HIGH | Numeric difference stratum overstated action semantics | neutral strata only |
+| CONTEXT-003 | BLOCKING | Comparator labeled numeric difference as supported change | remove semantic labels |
+| CONTEXT-004 | HIGH | Legacy title flags drove target association | reaction-v4 target contract required |
+| CONTEXT-005 | BLOCKING | Market runner/verifier/reporter are stubs | implement before real approval |
+| CONTEXT-006 | BLOCKING | R1 audit is probability-only | independent 1,374-row refit required |
+| CONTEXT-007 | HIGH | Synthetic fixture bypasses production paths | full fixture/corruption suite required |
+| CONTEXT-008 | HIGH | Qwen availability was not hash-audited | 13/13 exact files now verified |
+| CONTEXT-009 | MEDIUM | Initial checklist was stale | statuses updated in this section |
