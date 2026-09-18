@@ -1183,3 +1183,8 @@ v2、claim audit）均返回 PASS；`refresh_repository.py` 刷新 378 个选定
 `outputs/stock_method_validity_audit/v1/final_verification.json`。本轮没有
 修改原始数据、模型二进制或历史运行。commit 后按要求尝试 push；remote
 是否更新需由实际网络响应确认。
+
+最终本地 commit 为 `ea621d5`（`Complete method validity audit and claim
+corrections`）。commit 后再次运行刷新／检查仍为 PASS；push 因
+`Could not resolve host: github.com` 失败，`origin/main` 仍是
+`e32785d`。因此交付状态是本地完成、远端未验证更新。

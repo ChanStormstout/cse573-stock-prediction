@@ -174,3 +174,12 @@ The final verification pass completed successfully:
 The task is complete locally pending the final commit and the required push
 attempt. The remote branch will only be described as updated if a subsequent
 network check verifies it.
+
+## Final local commit and remote boundary
+
+The audit payload was committed locally as `ea621d5` (`Complete method validity
+audit and claim corrections`). After that commit, `refresh_repository.py` and
+`check_repository.py` again passed. `git push origin main` was attempted and
+failed with `Could not resolve host: github.com`; `origin/main` remains at
+`e32785d`. The boundary note is recorded in a follow-up documentation commit;
+GitHub has not been claimed as updated.
