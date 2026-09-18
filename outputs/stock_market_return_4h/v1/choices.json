@@ -1,0 +1,12 @@
+{
+  "choices": {
+    "price/C0": 0.1,
+    "price/C1": 1.0,
+    "price/C2": 0.0,
+    "price_F1/C0": 0.1,
+    "price_F1/C1": 0.01,
+    "price_F1/C2": 0.5
+  },
+  "future_periods_not_used": true,
+  "selection_basis": "OOF BA, max-min stock then mean, smaller parameter tie-break"
+}

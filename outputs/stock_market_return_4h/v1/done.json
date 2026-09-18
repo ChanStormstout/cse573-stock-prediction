@@ -1,0 +1,15 @@
+{
+  "choices": {
+    "price/C0": 0.1,
+    "price/C1": 1.0,
+    "price/C2": 0.0,
+    "price_F1/C0": 0.1,
+    "price_F1/C1": 0.01,
+    "price_F1/C2": 0.5
+  },
+  "completed_epoch": 1789699925.8298721,
+  "input_sha256": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b",
+  "n_fits": 360,
+  "n_predictions": 15114,
+  "status": "COMPLETED"
+}

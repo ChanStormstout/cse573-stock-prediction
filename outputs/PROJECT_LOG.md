@@ -1094,3 +1094,18 @@ F1是四个单元BA都高于50%的最清楚统一候选，相对F0却分别为+7
 - 时间、未来相似度干预、标签翻转检索不变、缓存拒绝、精确回退、指标独立复算和模型重载通过。原文/prompt/权重留本地，独立抽取验收未完成；所有时期仍是暴露回测。
 
 **解释边界：**匹配对象/动作和市场状态尚不完善、训练库小且时间跨度有限，是有输入证据的限制；并非已证明所有失败都由它们导致。区分覆盖、匹配质量、预测增量；模型不生成解释，案例解释来自助手。
+## 2026-09-17：市场状态审计与连续四小时收益辅助监督
+
+**为什么做：**前一轮诊断指出，继续堆叠新闻编码器或历史相似新闻，无法改变大量价格与文本模型共同错误；下一条低成本、可解释的路径是检查市场状态数据，并把真实四小时收益作为辅助监督。主任务仍固定为AAPL／AMZN四小时方向、原1,607个窗口；没有改变标签、预测周期或历史结果。
+
+**市场数据审计：**按预注册的四个固定日期（2018-01-10、04-27、09-04、12-03）和SPY／QQQ regular-session一分钟Alpaca请求运行了8个探针。当前环境没有API凭据，全部记录为`AUTH_REQUIRED_NO_CREDENTIALS`，市场分支按规则停止；没有用日频、合成ETF或目标股票代替。结果见`outputs/stock_market_return_4h/v1/alpaca_audit.json`。获得认证数据后才可继续该分支，当前不声称市场因子能提升。
+
+**实际训练：**读取现有真实`target_return`，在每个过去月份内部拟合中位数填充和标准化，完成：C0价格分类LR、C1连续收益Ridge诊断、C2八维共享线性投影＋方向BCE＋收益Huber双头。C2使用lambda `{0,.1,.5,1}`和固定seeds 573／574／575；另做一组追加已冻结F1概率的`price_F1`对照。共360个候选／选定拟合记录，生成15,114个方法—窗口预测行；C2每个种子做了内存checkpoint重载核验，最大概率/收益差低于1e-12。没有把`target_return`或未来时间字段放进输入。
+
+**只用过去选择：**跨月forward OOF（March–August）选择了`price/C0=0.1`、`price/C1=1.0`、`price/C2=0.0`，以及`price_F1/C0=0.1`、`price_F1/C1=0.01`、`price_F1/C2=0.5`。September–October development和November之后later分别报告，未参与选择。
+
+**结果：**raw price分支C2在OOF、development、later的AAPL／AMZN BA分别为52.59／52.62%、52.38／53.06%、51.47／50.26%；同一分支C0分别为53.87／52.49%、55.10／53.15%、52.64／50.21%。`price_F1`分支C2的later BA为52.04／49.73%，C0为51.52／51.38%；连续收益辅助没有带来两股跨时期稳定增量。按协议真正的June–August筛选线（逐股至少+1个百分点、平均Brier不恶化超过0.002），四个候选全部未通过：raw C2的AAPL／AMZN变化+0.76／−0.61pp，平均BA仅+0.07pp，Brier+0.0008；price+F1 C2为+0.83／−1.51pp，平均BA−0.34pp，Brier+0.0020。C1两股方向BA均下降。报告中同时给出MCC、Brier、return MAE/RMSE/correlation、逐阶段和日期块配对区间。
+
+**判断与停止：**这是实际训练和完整对照，不是只写方案。观察上，连续收益能在个别时期提供回报相关性，但当前输入没有把它稳定转化为方向增益；raw分支的OOF选择把辅助权重压到0，是停止扩大双任务网格的直接证据。解释上，仍不能证明收益监督永远无效，主要结论是这份数据和特征不足以支持更复杂组合。下一步优先级保持：若用户配置可验证的SPY／QQQ分钟数据，再做市场状态分支；否则不继续扩大RL、Graph、LLM或高容量搜索。
+
+**交付与核验：**`stock_market_return_4h/v1/REPORT.md`、`METRICS_SUMMARY.md`、`metrics.csv`、`cv_and_metrics.csv`、`predictions.csv`、`training_evidence.json`、`promotion_gate.csv`、`paired_block_intervals.csv`、`choices.json`、`alpaca_audit.json`和`verification.json`已生成；`verification.py`通过键、概率范围、标签符号、窗口计数、特征排除、时间顺序、checkpoint重载和注册参数检查。原始输入、环境和模型文件仍留在`work/`，不进Git。

@@ -1,0 +1,25 @@
+{
+  "checks": [
+    "keys",
+    "probabilities",
+    "label_sign",
+    "counts",
+    "feature_exclusion",
+    "chronology",
+    "checkpoint_reload",
+    "registered_choices"
+  ],
+  "choices": {
+    "price/C0": 0.1,
+    "price/C1": 1.0,
+    "price/C2": 0.0,
+    "price_F1/C0": 0.1,
+    "price_F1/C1": 0.01,
+    "price_F1/C2": 0.5
+  },
+  "failures": [],
+  "input_sha256": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b",
+  "method_count": 11,
+  "prediction_rows": 15114,
+  "status": "PASS"
+}

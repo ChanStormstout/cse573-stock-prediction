@@ -1,5 +1,14 @@
 # 当前状态（2026-09-17）
 
+## 最新完成：市场状态审计与连续四小时收益辅助监督（stock_market_return_4h/v1）
+
+[运行报告](../outputs/stock_market_return_4h/v1/REPORT.md)、[指标表](../outputs/stock_market_return_4h/v1/metrics.csv)、[协议](../outputs/stock_market_return_4h/PRE_REGISTRATION.md)。按GPT Pro诊断先做了两条低成本验证：固定日期的SPY/QQQ一分钟Alpaca可行性审计，以及在原1,607个AAPL/AMZN四小时窗口上加入真实`target_return`的辅助监督。主任务和时间切分没有改变，development/later仍是已暴露历史回测。
+
+- Alpaca审计的8个SPY/QQQ探针全部因当前环境没有凭据记录为`AUTH_REQUIRED_NO_CREDENTIALS`，按协议停止；没有用日频或合成ETF替代。认证数据可验证后再重开市场分支。
+- 实际完成360个候选/选定拟合记录：C0价格分类LR、C1连续收益Ridge、C2八维共享线性投影＋方向BCE＋收益Huber；C2使用3个固定seed，另有追加既有F1概率的对照。生成15,114个预测行，checkpoint重载、特征排除和时间顺序检查通过。
+- 过去OOF选择的C2为raw-price `lambda=0.0`、price+F1 `lambda=0.5`。raw-price C2在later AAPL/AMZN BA为51.47%/50.26%，price+F1为52.04%/49.73%；注册的June–August晋级线四个候选全部未通过，未扩展残差市场、RL或更大网络。
+- 这轮结果说明连续收益监督本身没有提供稳定方向增量；它没有证明市场状态或更好的外部数据一定无效。全部新结果与验证记录见运行目录；原始数据、环境和私有模型仍在`work/`。
+
 ## 最新完成：历史相似新闻与已实现收益的LLM对照
 
 [报告](../outputs/stock_analogy_4h/v2/REPORT.md)、[案例](../outputs/stock_analogy_4h/v2/CASE_NOTES.md)。实际完成1393次冻结Qwen3.5-9B本地推理，约42.9分钟；没有新LLM微调。P0当前新闻＋价格；P1相似案例投票；P2历史案例无结果；P3同样案例加已实现四小时收益。

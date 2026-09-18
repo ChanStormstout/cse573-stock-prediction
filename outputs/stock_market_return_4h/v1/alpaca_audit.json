@@ -1,0 +1,102 @@
+{
+  "dates": [
+    "2018-01-10",
+    "2018-04-27",
+    "2018-09-04",
+    "2018-12-03"
+  ],
+  "symbols": [
+    "SPY",
+    "QQQ"
+  ],
+  "requested_regular_session": "14:30Z-21:00Z",
+  "credentials_present": false,
+  "rows": [
+    {
+      "symbol": "SPY",
+      "date": "2018-01-10",
+      "feed": "iex",
+      "timeframe": "1Min",
+      "url_host": "data.alpaca.markets",
+      "status": "AUTH_REQUIRED_NO_CREDENTIALS",
+      "http_status": null,
+      "bar_count": null
+    },
+    {
+      "symbol": "SPY",
+      "date": "2018-04-27",
+      "feed": "iex",
+      "timeframe": "1Min",
+      "url_host": "data.alpaca.markets",
+      "status": "AUTH_REQUIRED_NO_CREDENTIALS",
+      "http_status": null,
+      "bar_count": null
+    },
+    {
+      "symbol": "SPY",
+      "date": "2018-09-04",
+      "feed": "iex",
+      "timeframe": "1Min",
+      "url_host": "data.alpaca.markets",
+      "status": "AUTH_REQUIRED_NO_CREDENTIALS",
+      "http_status": null,
+      "bar_count": null
+    },
+    {
+      "symbol": "SPY",
+      "date": "2018-12-03",
+      "feed": "iex",
+      "timeframe": "1Min",
+      "url_host": "data.alpaca.markets",
+      "status": "AUTH_REQUIRED_NO_CREDENTIALS",
+      "http_status": null,
+      "bar_count": null
+    },
+    {
+      "symbol": "QQQ",
+      "date": "2018-01-10",
+      "feed": "iex",
+      "timeframe": "1Min",
+      "url_host": "data.alpaca.markets",
+      "status": "AUTH_REQUIRED_NO_CREDENTIALS",
+      "http_status": null,
+      "bar_count": null
+    },
+    {
+      "symbol": "QQQ",
+      "date": "2018-04-27",
+      "feed": "iex",
+      "timeframe": "1Min",
+      "url_host": "data.alpaca.markets",
+      "status": "AUTH_REQUIRED_NO_CREDENTIALS",
+      "http_status": null,
+      "bar_count": null
+    },
+    {
+      "symbol": "QQQ",
+      "date": "2018-09-04",
+      "feed": "iex",
+      "timeframe": "1Min",
+      "url_host": "data.alpaca.markets",
+      "status": "AUTH_REQUIRED_NO_CREDENTIALS",
+      "http_status": null,
+      "bar_count": null
+    },
+    {
+      "symbol": "QQQ",
+      "date": "2018-12-03",
+      "feed": "iex",
+      "timeframe": "1Min",
+      "url_host": "data.alpaca.markets",
+      "status": "AUTH_REQUIRED_NO_CREDENTIALS",
+      "http_status": null,
+      "bar_count": null
+    }
+  ],
+  "status_counts": {
+    "AUTH_REQUIRED_NO_CREDENTIALS": 8
+  },
+  "market_branch_ready": false,
+  "checked_at_epoch": 1789699240.168988,
+  "decision": "STOP_AUTH_OR_DATA_AUDIT"
+}

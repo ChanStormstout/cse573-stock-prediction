@@ -875,6 +875,106 @@
     "sha256": "5b13407f30ae2eb1b69f3d700814e5254ce618ebfbfd343d8b2fdae9bd838a49"
   },
   {
+    "path": "outputs/stock_market_return_4h/PRE_REGISTRATION.md",
+    "bytes": 3244,
+    "sha256": "94e6a8c3f11df001a94513814d8f8d78132879bce1a8bf13f55e46073b803472"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/README.md",
+    "bytes": 1128,
+    "sha256": "20585c78c1114f8de81d07fcc4ccda097b7e814b99dea2a285ca207f54cdb3ea"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/audit_alpaca.py",
+    "bytes": 2745,
+    "sha256": "8ca40a7943d1b59bfa47e8c5a7af3ce38f0400a5049db8039de32d32d09678d6"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/report.py",
+    "bytes": 11374,
+    "sha256": "bbe1198580d2391f6677568de4685768a2a1a7746e12be482cbca03e8032473f"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/run.py",
+    "bytes": 19310,
+    "sha256": "70dcb271f07c20279b892027be8d9dd4ca4a28b6acef2bb12513a850479e3d8e"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/verify.py",
+    "bytes": 4254,
+    "sha256": "ef3d2bb25a55b4c82b7911af6e5ffa929175d6e513ad9c883f8832e55e5e9848"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/METRICS_SUMMARY.md",
+    "bytes": 11048,
+    "sha256": "82a0e5fa1ca87fc35fb879e2f89bf92fff49661aea9cf9767bd866045d487305"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/DATA_AUDIT.md",
+    "bytes": 1658,
+    "sha256": "ba7a0f71382cbac1f0a6658fbc7758ba94245c1cdbb783e850cf095677d84481"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/REPORT.md",
+    "bytes": 12534,
+    "sha256": "d83295717f0ec2decafdd3cc685d96f823d6c299b75ff27743d24fd58808d9dc"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/alpaca_audit.json",
+    "bytes": 2423,
+    "sha256": "230fb75149f5d77f80bca8b6f5966357abc15b7440a5f254ce8fd4574c707c3c"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/choices.json",
+    "bytes": 278,
+    "sha256": "1c2ba3860b821f244ae9efabbf7cc942c64710367279b05e2090f26b63830b05"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/cv_and_metrics.csv",
+    "bytes": 57010,
+    "sha256": "10f59af908ff3abbed935afe8cb943542e0d44d1f716130ef17f2705e182ad4c"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/done.json",
+    "bytes": 353,
+    "sha256": "ba5a497bac0d40309c29412145595789e2696665eead517f9774cba2b88f0977"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/metrics.csv",
+    "bytes": 8822,
+    "sha256": "f0181acc8bf59d9c1abd2801dba894d268bca81b8e80694315da4cd3de6687e2"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/paired_block_intervals.csv",
+    "bytes": 2315,
+    "sha256": "c0eefe18220fdbe96fa8c9aa8f02e8376b19579791ca317008a313b7554e1e2e"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/predictions.csv",
+    "bytes": 1922322,
+    "sha256": "192ff5e9e0f057d48aa8b75b6a447bee48383fd00855a7f27fcc75c9d7d6a5e9"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/promotion_gate.csv",
+    "bytes": 906,
+    "sha256": "db69f8d0dc145a9de4a6eb19383981d95dad5abbd79ecdc590eb2c4a0de90da1"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/run_metadata.json",
+    "bytes": 2418,
+    "sha256": "f4f3dbc07c39d02af2a1f609556bd5f37c115e055ebc86a16d90226607c35088"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/training_evidence.json",
+    "bytes": 230734,
+    "sha256": "ca230c0f2f29df423d4dbfeff35e50d33e386e8b3cb5fa42fb26bb15f1e39cc0"
+  },
+  {
+    "path": "outputs/stock_market_return_4h/v1/verification.json",
+    "bytes": 509,
+    "sha256": "77c98961a886f570962b1cbe5b8e9a50c83d6fade124bf7ac5d66136438ce9f7"
+  },
+  {
     "path": "outputs/stock_goal60_4h/v1/advancement.json",
     "bytes": 3462,
     "sha256": "55cddce643757523e6f4bbf48c99eafb71fb8d0b0280598c0af47e3dbb75c082"
