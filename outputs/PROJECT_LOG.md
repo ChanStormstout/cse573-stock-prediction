@@ -1372,3 +1372,24 @@ records 经与 frozen runner 相同的 pandas JSON 十位小数表示后再比�
 promotion gate；因此不存在可晋级的 stock-specific reliability controller。
 development 和 later 只保留为已暴露的探索性历史回测。没有 post-result tuning、
 v2 或 activity experiment。
+
+## 2026-09-18：Activity Incremental Experiment v1 preregistration and preflight
+
+**Question:** 未定义语义的第七根五分钟字段 `activity` 是否能在 canonical
+R1 之外增加四小时方向信息？本阶段只审计、冻结和验证 A0；没有计算 A1 或
+A1_matchedC 的预测成绩。
+
+**Audit:** AAPL 为 38,634 行、AMZN 为 30,283 行，均为无缺失、无零、无负值
+的整数 activity。未找到权威定义，所以状态为
+`SEMANTICS_UNRESOLVED_OPAQUE_ACTIVITY`。跨时间粒度的可加性现象仅作描述，
+不把字段称为 volume。
+
+**Preflight:** 新分支严格使用 15/60 分钟、八个冻结 feature、最多 20 个且
+至少 10 个历史 session 的同时间点 references。13 项 verifier checks PASS：
+1,607 canonical keys、完成 bar cutoff、历史 session、10:02 synthetic case、
+A0/R1 parity 和 no-A1-result 都通过。A0 与 goal60 及 nextgen 保存 R1 的最大
+误差均为 `1.1102230246251565e-16`，方向完全相同。
+
+**Boundary:** `run_activity.py` 只有带 `--approve-activity-run` 才能执行。
+v1 的 predictions、metrics、monthly metrics 和 advancement 均不存在；等待
+外部审批，不运行任何 candidate 或 Phase B 变体。

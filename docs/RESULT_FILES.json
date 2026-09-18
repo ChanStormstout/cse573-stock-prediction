@@ -2220,6 +2220,31 @@
     "sha256": "81259e2539e27476eed43c63eaf26af530d9c9ee4ac48c38325e9e6674ee5dad"
   },
   {
+    "path": "outputs/stock_activity_4h/ACTIVITY_AUDIT.md",
+    "bytes": 2846,
+    "sha256": "7f44526776ea19903d19ca8c007ec0f9b04dd193842b6c2a09e302b9c50cf2de"
+  },
+  {
+    "path": "outputs/stock_activity_4h/activity_summary.csv",
+    "bytes": 593,
+    "sha256": "961432816b27da2f3b4d72e81e54c5d438b65a54fd9027588ce6c0d44b09a322"
+  },
+  {
+    "path": "outputs/stock_activity_4h/activity_intraday_profile.csv",
+    "bytes": 5212,
+    "sha256": "86e6e056720a361952c9b56e760272875cb1b17414e9a3975307741370e42384"
+  },
+  {
+    "path": "outputs/stock_activity_4h/activity_data_audit.json",
+    "bytes": 3055,
+    "sha256": "97d191e92320d6b4c295296055f005b71ca7b38bc55249c38691b86f25a6895a"
+  },
+  {
+    "path": "outputs/stock_activity_4h/preflight_verification.json",
+    "bytes": 1539,
+    "sha256": "d3a4286243aa8c37f6839a57263b38f46a86dd38d6ba1d0afddaa21522e5ea2a"
+  },
+  {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md",
     "bytes": 2808,
     "sha256": "97518996e5100e8077b5c227788700896af0125bd5d82d23c192b250e27d9fc1"

@@ -479,6 +479,11 @@ venv/
 !/outputs/stock_specific_gate_4h/v1/verification_precision_failure.json
 !/outputs/stock_specific_gate_4h/v1/verifier_precision_repair_hashes.json
 !/outputs/stock_specific_gate_4h/v1/REPORT.md
+!/outputs/stock_activity_4h/ACTIVITY_AUDIT.md
+!/outputs/stock_activity_4h/activity_summary.csv
+!/outputs/stock_activity_4h/activity_intraday_profile.csv
+!/outputs/stock_activity_4h/activity_data_audit.json
+!/outputs/stock_activity_4h/preflight_verification.json
 !/outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md
 !/outputs/stock_reaction_features_4h/v4/REPORT.md
 !/outputs/stock_reaction_features_4h/v4/DATA_AUDIT.md

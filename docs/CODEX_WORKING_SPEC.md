@@ -47,6 +47,15 @@ historical backtests because September onward has already been exposed.
 - raw data, article text, caches, model weights, and private environments stay
   outside Git.
 
+## Activity Incremental Experiment v1 (separate, preregistered)
+
+Starting checkpoint: `11b4f29f806fc486c1519f1cfcdef02c6336924f`.
+This is an isolated A0/R1 versus A1/R1-plus-activity experiment, not a Phase B
+extension. The opaque seventh field remains `activity`. Its exact eight-field
+15/60-minute, prior-20-session feature family and chronological gate are frozen
+in `outputs/stock_activity_4h/PRE_REGISTRATION.md`. A0 parity and feature
+preflight pass; A1 execution requires a separate exact `APPROVE_ACTIVITY_RUN`.
+
 ## Known issues that must be repaired
 
 | ID | Severity | Issue | Why it matters | Initial status |
@@ -151,6 +160,9 @@ earlier v2 downstream protocol remains a historical mismatch.
   authorization normalized the independently reconstructed advancement through
   the same ten-decimal pandas JSON representation, recorded raw precision
   differences, and produced a PASS without runner or result edits.
+- [x] Activity v1 preflight — label-free source audit, private feature builder,
+  exact A0/R1 reproduction, synthetic unfinished-bar check and no-result
+  verifier pass. A1 remains `PREREGISTERED_NOT_RUN`.
 
 ## Stop conditions
 

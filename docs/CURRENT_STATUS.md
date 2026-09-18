@@ -15,6 +15,13 @@
 > 记录，已被上述 verifier-only precision repair 的 PASS 状态取代；历史证据仍
 > 保留在 v1 目录和审查交接中。
 
+> **Activity v1 preflight:** 新的独立 activity branch 是
+> `PREREGISTERED_NOT_RUN`。第七列无权威 vendor 定义，保持
+> `SEMANTICS_UNRESOLVED_OPAQUE_ACTIVITY`；15/60 分钟、20 个历史 session 和
+> 8 个冻结特征均已构建。A0 对两个保存的 canonical R1 来源最大概率误差均为
+> `1.1102230246251565e-16`、方向完全一致；13 项 preflight checks PASS，且
+> 尚不存在 A1/A1_matchedC v1 结果。只有精确 `APPROVE_ACTIVITY_RUN` 可解锁。
+
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
 > 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除

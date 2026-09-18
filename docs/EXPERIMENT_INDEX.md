@@ -2,6 +2,7 @@
 
 当前入口是 **stock_recency_dense_4h/v5** 与 **stock_reaction_features_4h/v4**；历史目录保留原名称，不能将一小时结果与四小时结果直接比较。reaction v4 是当前已核验的文章级 artifact；其四个候选均未通过完整 promotion gate，因此没有 W0--W3 下游结果。
 
+- **stock_activity_4h**: [ACTIVITY_AUDIT.md](../outputs/stock_activity_4h/ACTIVITY_AUDIT.md) · [IMPLEMENTATION_PLAN.md](../outputs/stock_activity_4h/IMPLEMENTATION_PLAN.md) · [PRE_REGISTRATION.md](../outputs/stock_activity_4h/PRE_REGISTRATION.md)
 - **stock_adaptive**: [REPORT.md](../outputs/stock_adaptive/REPORT.md)
 - **stock_adaptive_4h**: [PROTOCOL.md](../outputs/stock_adaptive_4h/PROTOCOL.md) · [README.md](../outputs/stock_adaptive_4h/README.md) · [REPORT.md](../outputs/stock_adaptive_4h/REPORT.md)
 - **stock_analogy_4h**: [README.md](../outputs/stock_analogy_4h/README.md)

@@ -1,0 +1,105 @@
+{
+  "status": "SEMANTICS_UNRESOLVED_OPAQUE_ACTIVITY",
+  "schedule_sha256": "b668d40b4a6a9324108e32b6dcfa9c6e60c7a90da93e6884a00854691298e4d0",
+  "sources": [
+    {
+      "symbol": "AAPL",
+      "raw_rows": 38634,
+      "source_sha256": "059a29b0b24f438bd2d6f1be4102974f9b10631fd69b6c75ac2076930b0381cf",
+      "dtype": "int64",
+      "finite_count": 38634,
+      "missing_count": 0,
+      "negative_count": 0,
+      "zero_count": 0,
+      "min": 1.0,
+      "max": 1663.0,
+      "mean": 607.4720194647202,
+      "median": 702.0,
+      "q01": 2.0,
+      "q05": 8.0,
+      "q25": 471.0,
+      "q75": 850.0,
+      "q95": 1018.0,
+      "q99": 1125.0,
+      "unique_count": 1237,
+      "corr_abs_return": 0.3050822623934671,
+      "corr_high_low_range": 0.4416001472071248
+    },
+    {
+      "symbol": "AMZN",
+      "raw_rows": 30283,
+      "source_sha256": "ea5ec298fe39364fa3cb3d9dfdd46393c5490f46c9e2da7984f839953e380282",
+      "dtype": "int64",
+      "finite_count": 30283,
+      "missing_count": 0,
+      "negative_count": 0,
+      "zero_count": 0,
+      "min": 1.0,
+      "max": 1093.0,
+      "mean": 318.2899316448172,
+      "median": 309.0,
+      "q01": 3.0,
+      "q05": 11.0,
+      "q25": 162.0,
+      "q75": 466.0,
+      "q95": 679.0,
+      "q99": 815.0,
+      "unique_count": 955,
+      "corr_abs_return": 0.45407805008688173,
+      "corr_high_low_range": 0.5852131408554617
+    }
+  ],
+  "intraday_slots": 156,
+  "cross_granularity": [
+    {
+      "symbol": "AAPL",
+      "minutes": 15,
+      "complete_windows": 12793,
+      "mean_abs_error_vs_5m_mean": 1222.6811537559604,
+      "mean_abs_error_vs_5m_sum": 0.0034393809114359416,
+      "status": "DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF"
+    },
+    {
+      "symbol": "AAPL",
+      "minutes": 30,
+      "complete_windows": 6346,
+      "mean_abs_error_vs_5m_mean": 3080.1275081416115,
+      "mean_abs_error_vs_5m_sum": 0.0,
+      "status": "DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF"
+    },
+    {
+      "symbol": "AAPL",
+      "minutes": 60,
+      "complete_windows": 2994,
+      "mean_abs_error_vs_5m_mean": 6993.01210754843,
+      "mean_abs_error_vs_5m_sum": 0.0,
+      "status": "DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF"
+    },
+    {
+      "symbol": "AMZN",
+      "minutes": 15,
+      "complete_windows": 10045,
+      "mean_abs_error_vs_5m_mean": 639.4016260162601,
+      "mean_abs_error_vs_5m_sum": 0.0,
+      "status": "DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF"
+    },
+    {
+      "symbol": "AMZN",
+      "minutes": 30,
+      "complete_windows": 4998,
+      "mean_abs_error_vs_5m_mean": 1606.1037748432707,
+      "mean_abs_error_vs_5m_sum": 0.0,
+      "status": "DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF"
+    },
+    {
+      "symbol": "AMZN",
+      "minutes": 60,
+      "complete_windows": 2359,
+      "mean_abs_error_vs_5m_mean": 3637.9469054684187,
+      "mean_abs_error_vs_5m_sum": 0.0,
+      "status": "DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF"
+    }
+  ],
+  "authoritative_definition_found": false,
+  "definition_search": "Local course metadata names the seventh field activity but does not define vendor semantics."
+}

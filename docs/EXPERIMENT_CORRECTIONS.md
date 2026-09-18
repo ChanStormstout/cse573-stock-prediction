@@ -355,3 +355,11 @@ generated during this correction.
   The registered G1/G0, G2/G1 and G3/G2 contrasts all fail their unchanged
   promotion gate; development/later remain exposed historical backtests and
   were not used to choose a controller.
+
+## CORR-029 — activity is an opaque field, not a retroactively named volume feature
+
+The new Activity v1 branch retains the raw seventh field name `activity`.
+Local metadata provides no authoritative vendor definition. Cross-granularity
+sum consistency is recorded descriptively but is not used to rename the field,
+assert its units, or alter its preregistered eight-feature family. Candidate
+scoring remains paused pending separate authorization.
