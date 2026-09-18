@@ -336,3 +336,22 @@ generated during this correction.
 - **Boundary:** the single frozen controller run remains
   `UNVERIFIED_STOPPED_PENDING_EXTERNAL_REVIEW`. No runner rerun, report,
   tuning, v2 output, activity experiment, or result-artifact rewrite occurred.
+
+## CORR-028 — storage-normalized advancement verifier passes preserved Phase B v1
+
+- **Authorized repair:** only the verifier's advancement-file comparison now
+  serializes its independently reconstructed records through
+  `pandas.DataFrame.to_json(orient="records", double_precision=10)`, matching
+  the frozen runner's storage representation. Prediction mapping, metrics,
+  monthly metrics, expert parity and exact fallback checks retain their existing
+  strict comparisons.
+- **Evidence:** the saved raw/full-precision maximum difference is
+  `4.843306398299996e-11`; storage-normalized records match exactly under the
+  existing strict record comparison. All 18 verifier checks pass.
+- **Artifact protection:** the ten existing predictive/result artifact hashes
+  match before verifier repair, after verification and after report generation.
+  `run_gate.py` was not rerun and `advancement.json` was not rewritten.
+- **Interpretation:** the generated v1 report is valid exploratory evidence.
+  The registered G1/G0, G2/G1 and G3/G2 contrasts all fail their unchanged
+  promotion gate; development/later remain exposed historical backtests and
+  were not used to choose a controller.

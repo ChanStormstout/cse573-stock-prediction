@@ -395,3 +395,26 @@ and model artifacts remain local.
   `UNVERIFIED_STOPPED_PENDING_EXTERNAL_REVIEW`. No report, scientific score
   interpretation, tuning, v2 run, activity-column experiment, or result-file
   rewrite occurred.
+
+## Precision-only verifier repair of preserved Phase B v1 — 2026-09-18
+
+- **Starting SHA:** `d85ee004edd7f0bf5128e8bb591ef656d85966a1`.
+- **Patch:** only `verify.py` now passes independently reconstructed
+  advancement records through `pandas.DataFrame.to_json(orient="records",
+  double_precision=10)` before comparing them to the existing
+  `advancement.json`. It saves every raw numeric full-precision value, saved
+  JSON value and absolute difference. All other strict comparisons remain
+  unchanged.
+- **Preserved prior failure:** `v1/verification_precision_failure.json` records
+  the prior 17-pass/one-fail state. Earlier `verification_failure.json`, recovery
+  metadata and handoff history remain present.
+- **Hash proof:** the ten predictive/result artifacts match before repair,
+  after verification and after report generation. `run_gate.py` was not rerun;
+  neither `advancement.json` nor any prediction/result artifact was rewritten.
+- **Precision evidence:** `raw_max_abs_difference=4.843306398299996e-11` and
+  `storage_normalized_match=true` in `v1/verification.json`.
+- **Final verifier state:** `PASS` with 18/18 checks. The authorized report
+  command consumed only preserved v1 files.
+- **Interpretation boundary:** all three unchanged G1/G0, G2/G1 and G3/G2
+  promotion contrasts fail. No post-result tuning or activity experiment
+  occurred. Development/later remain exposed exploratory historical backtests.

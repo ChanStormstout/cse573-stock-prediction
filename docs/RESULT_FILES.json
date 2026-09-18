@@ -2196,13 +2196,28 @@
   },
   {
     "path": "outputs/stock_specific_gate_4h/v1/verification.json",
-    "bytes": 3209,
-    "sha256": "269cf67d7724ef15e43f677a811e97c50822884c450f7986b298ca2ed57642b7"
+    "bytes": 9901,
+    "sha256": "22d45f85d0f94d1d48b98d5b94b376b20baba4e906c6a1dbb6bcab8c6d5fa0d6"
   },
   {
     "path": "outputs/stock_specific_gate_4h/v1/verifier_recovery_outcome.json",
     "bytes": 1387,
     "sha256": "38d275cc15f3f01fc136eeb48178cb261564c2da612372ade5ae8a1f5413d33b"
+  },
+  {
+    "path": "outputs/stock_specific_gate_4h/v1/verification_precision_failure.json",
+    "bytes": 3029,
+    "sha256": "77c3adffcf73a309c9a4e5c39247729fbe463fab0d9f8ec56251c2e62036e0db"
+  },
+  {
+    "path": "outputs/stock_specific_gate_4h/v1/verifier_precision_repair_hashes.json",
+    "bytes": 3402,
+    "sha256": "1b0be15bf2af854d35ec60206f61283cd3f2f7d184e4139cb5e91a637a3d55b9"
+  },
+  {
+    "path": "outputs/stock_specific_gate_4h/v1/REPORT.md",
+    "bytes": 16693,
+    "sha256": "81259e2539e27476eed43c63eaf26af530d9c9ee4ac48c38325e9e6674ee5dad"
   },
   {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md",

@@ -1354,3 +1354,21 @@ verifier 的 `1e-12` 比较阈值不一致。因此 v1 是
 
 **Actions not taken:** 没有 runner rerun、报告、调参、v2、activity-column
 实验，或为消除此差异改写任何既有结果文件。
+
+## 2026-09-18：Phase B verifier precision-only repair PASS（既有 v1）
+
+**Authorized repair:** 外部审查仅允许 verifier 将独立重算的 advancement
+records 经与 frozen runner 相同的 pandas JSON 十位小数表示后再比较。没有改变
+任何 prediction、metric、fallback 或 expert-parity 的严格核验阈值，也没有运行
+`run_gate.py`。
+
+**Integrity and verification:** 十个既存预测/结果 artifact 在修复前、verifier
+后和 report 后的 SHA-256 一致。保存的 full-precision 与 JSON value 的最大绝对
+差为 `4.843306398299996e-11`；同样 storage normalization 后 records 严格匹配。
+`verify.py` 的 18 项 post-run checks 全部 PASS，`REPORT.md` 只读取既有 v1
+结果生成。
+
+**Result boundary:** G1/G0、G2/G1、G3/G2 三个原注册 contrast 都未通过
+promotion gate；因此不存在可晋级的 stock-specific reliability controller。
+development 和 later 只保留为已暴露的探索性历史回测。没有 post-result tuning、
+v2 或 activity experiment。

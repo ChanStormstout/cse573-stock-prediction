@@ -1,7 +1,7 @@
 {
   "checks": {
     "advancement_has_exact_six_outer_cells_per_contrast": true,
-    "advancement_independently_reconstructed": false,
+    "advancement_independently_reconstructed": true,
     "all_expected_controller_key_rows_present": true,
     "august_freeze_has_no_exposed_label_update": true,
     "coefficient_structure_and_no_extra_features": true,
@@ -85,10 +85,198 @@
         "weaker_stock_mean_delta_BA": 0.0
       }
     ],
+    "advancement_storage_precision": {
+      "double_precision": 10,
+      "numeric_differences": [
+        {
+          "contrast": "G1_vs_G0",
+          "numeric_fields": {
+            "AAPL_mean_delta_BA": {
+              "absolute_difference": 3.1338716344198048e-12,
+              "full_precision": 0.008903133903133872,
+              "saved_json": 0.0089031339
+            },
+            "AMZN_mean_delta_BA": {
+              "absolute_difference": 0.0,
+              "full_precision": 0.0,
+              "saved_json": 0.0
+            },
+            "expert_direction_disagreement_rows.AAPL": {
+              "absolute_difference": 0.0,
+              "full_precision": 65.0,
+              "saved_json": 65.0
+            },
+            "expert_direction_disagreement_rows.AMZN": {
+              "absolute_difference": 0.0,
+              "full_precision": 46.0,
+              "saved_json": 46.0
+            },
+            "expert_probability_difference_rows.AAPL": {
+              "absolute_difference": 0.0,
+              "full_precision": 191.0,
+              "saved_json": 191.0
+            },
+            "expert_probability_difference_rows.AMZN": {
+              "absolute_difference": 0.0,
+              "full_precision": 88.0,
+              "saved_json": 88.0
+            },
+            "macro_delta_BA": {
+              "absolute_difference": 4.843306398299996e-11,
+              "full_precision": 0.004451566951566936,
+              "saved_json": 0.004451567
+            },
+            "max_stock_mean_delta_Brier": {
+              "absolute_difference": 1.584140792447366e-11,
+              "full_precision": 0.00012054458415859208,
+              "saved_json": 0.0001205446
+            },
+            "outer_cells": {
+              "absolute_difference": 0.0,
+              "full_precision": 6.0,
+              "saved_json": 6.0
+            },
+            "positive_outer_months": {
+              "absolute_difference": 0.0,
+              "full_precision": 2.0,
+              "saved_json": 2.0
+            },
+            "weaker_stock_mean_delta_BA": {
+              "absolute_difference": 0.0,
+              "full_precision": 0.0,
+              "saved_json": 0.0
+            }
+          }
+        },
+        {
+          "contrast": "G2_vs_G1",
+          "numeric_fields": {
+            "AAPL_mean_delta_BA": {
+              "absolute_difference": 1.3039977301079753e-11,
+              "full_precision": -0.0007581380130399773,
+              "saved_json": -0.000758138
+            },
+            "AMZN_mean_delta_BA": {
+              "absolute_difference": 4.347825571793251e-11,
+              "full_precision": -0.010326086956521744,
+              "saved_json": -0.010326087
+            },
+            "expert_direction_disagreement_rows.AAPL": {
+              "absolute_difference": 0.0,
+              "full_precision": 65.0,
+              "saved_json": 65.0
+            },
+            "expert_direction_disagreement_rows.AMZN": {
+              "absolute_difference": 0.0,
+              "full_precision": 46.0,
+              "saved_json": 46.0
+            },
+            "expert_probability_difference_rows.AAPL": {
+              "absolute_difference": 0.0,
+              "full_precision": 191.0,
+              "saved_json": 191.0
+            },
+            "expert_probability_difference_rows.AMZN": {
+              "absolute_difference": 0.0,
+              "full_precision": 88.0,
+              "saved_json": 88.0
+            },
+            "macro_delta_BA": {
+              "absolute_difference": 1.5219139316846597e-11,
+              "full_precision": -0.0055421124847808605,
+              "saved_json": -0.0055421125
+            },
+            "max_stock_mean_delta_Brier": {
+              "absolute_difference": 3.866056768068917e-11,
+              "full_precision": 9.504453866056768e-05,
+              "saved_json": 9.50445e-05
+            },
+            "outer_cells": {
+              "absolute_difference": 0.0,
+              "full_precision": 6.0,
+              "saved_json": 6.0
+            },
+            "positive_outer_months": {
+              "absolute_difference": 0.0,
+              "full_precision": 0.0,
+              "saved_json": 0.0
+            },
+            "weaker_stock_mean_delta_BA": {
+              "absolute_difference": 4.347825571793251e-11,
+              "full_precision": -0.010326086956521744,
+              "saved_json": -0.010326087
+            }
+          }
+        },
+        {
+          "contrast": "G3_vs_G2",
+          "numeric_fields": {
+            "AAPL_mean_delta_BA": {
+              "absolute_difference": 2.6579507041504802e-11,
+              "full_precision": 0.001361655773420493,
+              "saved_json": 0.0013616558
+            },
+            "AMZN_mean_delta_BA": {
+              "absolute_difference": 0.0,
+              "full_precision": 0.0,
+              "saved_json": 0.0
+            },
+            "expert_direction_disagreement_rows.AAPL": {
+              "absolute_difference": 0.0,
+              "full_precision": 65.0,
+              "saved_json": 65.0
+            },
+            "expert_direction_disagreement_rows.AMZN": {
+              "absolute_difference": 0.0,
+              "full_precision": 46.0,
+              "saved_json": 46.0
+            },
+            "expert_probability_difference_rows.AAPL": {
+              "absolute_difference": 0.0,
+              "full_precision": 191.0,
+              "saved_json": 191.0
+            },
+            "expert_probability_difference_rows.AMZN": {
+              "absolute_difference": 0.0,
+              "full_precision": 88.0,
+              "saved_json": 88.0
+            },
+            "macro_delta_BA": {
+              "absolute_difference": 1.3289753520752401e-11,
+              "full_precision": 0.0006808278867102465,
+              "saved_json": 0.0006808279
+            },
+            "max_stock_mean_delta_Brier": {
+              "absolute_difference": 8.424552152891049e-12,
+              "full_precision": 0.00015509479157544784,
+              "saved_json": 0.0001550948
+            },
+            "outer_cells": {
+              "absolute_difference": 0.0,
+              "full_precision": 6.0,
+              "saved_json": 6.0
+            },
+            "positive_outer_months": {
+              "absolute_difference": 0.0,
+              "full_precision": 1.0,
+              "saved_json": 1.0
+            },
+            "weaker_stock_mean_delta_BA": {
+              "absolute_difference": 0.0,
+              "full_precision": 0.0,
+              "saved_json": 0.0
+            }
+          }
+        }
+      ],
+      "raw_max_abs_difference": 4.843306398299996e-11,
+      "storage_normalized_match": true,
+      "writer": "pandas.DataFrame.to_json"
+    },
     "controller_fit_records": 28,
     "prediction_rows": 5496
   },
   "mode": "postrun_independent_verification",
   "preflight_status": "PASS",
-  "status": "FAIL"
+  "status": "PASS"
 }

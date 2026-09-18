@@ -1,5 +1,20 @@
 # 当前权威状态（2026-09-18，Phase A 已修复；Phase B 仅预注册）
 
+> **最新权威状态 — Phase B v1 已验证：**外部审查仅授权修复 verifier 对
+> `advancement.json` 的存储精度比较。没有重跑 `run_gate.py`；十个既存预测/
+> 结果 artifact 的 SHA-256 在修复前、verifier 后和报告后完全一致。修复后的
+> verifier 为 `PASS`（18/18 checks），其 raw advancement 最大序列化差异为
+> `4.843306398299996e-11`；同样经 pandas `to_json(double_precision=10)`
+> 归一化后与保存文件严格一致。`G1 vs G0`、`G2 vs G1`、`G3 vs G2` 均未通过
+> 原注册的 promotion gate。详见
+> [验证结果](../outputs/stock_specific_gate_4h/v1/verification.json) 与
+> [报告](../outputs/stock_specific_gate_4h/v1/REPORT.md)。development/later
+> 仅为 `EXPOSED EXPLORATORY HISTORICAL BACKTEST`，没有用于选择方法。
+
+> 下方关于 Phase B “仅预注册／未运行”及 `UNVERIFIED_STOPPED` 的段落是历史
+> 记录，已被上述 verifier-only precision repair 的 PASS 状态取代；历史证据仍
+> 保留在 v1 目录和审查交接中。
+
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
 > 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除

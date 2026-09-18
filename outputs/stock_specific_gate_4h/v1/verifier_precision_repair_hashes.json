@@ -1,0 +1,48 @@
+{
+  "scope": "Existing Phase B predictive/result artifacts required by the precision-only verifier repair.",
+  "before_precision_only_repair": {
+    "predictions.csv": "267d89499fa6865e65bd7519858aa0f2818a94ad1c554e52323a0c762b89d256",
+    "metrics.csv": "8aee8184f7f5731fe1e28f185d07cc812bb9e1fcbde47ec819f011ca5bf3718b",
+    "monthly_metrics.csv": "12b2d25e5bd0b347b3deccc4b09256603673439e2f8fbc2cf409e7675bb063b0",
+    "advancement.json": "cc07408c2c4e36141fa5730e6211727c55e811c17570da1b26bf048018befc11",
+    "oracle_ceiling.csv": "382532e522e4ac134b899f447d19269ec63df6d13e971789b55e7d230c05e478",
+    "disagreement_audit.csv": "2678849fce345a9cdda9f0ed243a6a8094bd9f9c0e6e418749c4689f3e468f08",
+    "controller_training_evidence.json": "c94b9f6a32a74f0c4573ba954b45b2bbac3cc630d84968537c2a19095af22b2d",
+    "controller_coefficients.csv": "543c97be2ea05f33308a21e58d7ad0df3613b79815938c8b988550f9c7eae924",
+    "fallback_audit.csv": "05b72cae2a84f5f4018879ebedf5356f975a75767f34b50d0a5b77d228d6d861",
+    "protocol_fingerprint.json": "231ad35a7c664050e73d794356da3980e322cdfa58be822e0bfb0b338f2f949d"
+  },
+  "after_precision_only_verification": {
+    "predictions.csv": "267d89499fa6865e65bd7519858aa0f2818a94ad1c554e52323a0c762b89d256",
+    "metrics.csv": "8aee8184f7f5731fe1e28f185d07cc812bb9e1fcbde47ec819f011ca5bf3718b",
+    "monthly_metrics.csv": "12b2d25e5bd0b347b3deccc4b09256603673439e2f8fbc2cf409e7675bb063b0",
+    "advancement.json": "cc07408c2c4e36141fa5730e6211727c55e811c17570da1b26bf048018befc11",
+    "oracle_ceiling.csv": "382532e522e4ac134b899f447d19269ec63df6d13e971789b55e7d230c05e478",
+    "disagreement_audit.csv": "2678849fce345a9cdda9f0ed243a6a8094bd9f9c0e6e418749c4689f3e468f08",
+    "controller_training_evidence.json": "c94b9f6a32a74f0c4573ba954b45b2bbac3cc630d84968537c2a19095af22b2d",
+    "controller_coefficients.csv": "543c97be2ea05f33308a21e58d7ad0df3613b79815938c8b988550f9c7eae924",
+    "fallback_audit.csv": "05b72cae2a84f5f4018879ebedf5356f975a75767f34b50d0a5b77d228d6d861",
+    "protocol_fingerprint.json": "231ad35a7c664050e73d794356da3980e322cdfa58be822e0bfb0b338f2f949d"
+  },
+  "after_authorized_report": {
+    "predictions.csv": "267d89499fa6865e65bd7519858aa0f2818a94ad1c554e52323a0c762b89d256",
+    "metrics.csv": "8aee8184f7f5731fe1e28f185d07cc812bb9e1fcbde47ec819f011ca5bf3718b",
+    "monthly_metrics.csv": "12b2d25e5bd0b347b3deccc4b09256603673439e2f8fbc2cf409e7675bb063b0",
+    "advancement.json": "cc07408c2c4e36141fa5730e6211727c55e811c17570da1b26bf048018befc11",
+    "oracle_ceiling.csv": "382532e522e4ac134b899f447d19269ec63df6d13e971789b55e7d230c05e478",
+    "disagreement_audit.csv": "2678849fce345a9cdda9f0ed243a6a8094bd9f9c0e6e418749c4689f3e468f08",
+    "controller_training_evidence.json": "c94b9f6a32a74f0c4573ba954b45b2bbac3cc630d84968537c2a19095af22b2d",
+    "controller_coefficients.csv": "543c97be2ea05f33308a21e58d7ad0df3613b79815938c8b988550f9c7eae924",
+    "fallback_audit.csv": "05b72cae2a84f5f4018879ebedf5356f975a75767f34b50d0a5b77d228d6d861",
+    "protocol_fingerprint.json": "231ad35a7c664050e73d794356da3980e322cdfa58be822e0bfb0b338f2f949d"
+  },
+  "predictive_artifacts_unchanged_after_verification": true,
+  "verification_status": "PASS",
+  "allowed_additions": [
+    "verification_precision_failure.json",
+    "verifier_precision_repair_hashes.json",
+    "verification.json",
+    "REPORT.md"
+  ],
+  "run_gate_rerun": false
+}

@@ -378,6 +378,30 @@ def record_match(expected, observed) -> bool:
     return True
 
 
+def storage_normalize_advancement(records: list[dict]) -> list[dict]:
+    """Match the runner's pandas JSON storage precision, not its calculations."""
+    encoded = pd.DataFrame(records).to_json(orient="records", double_precision=10)
+    return json.loads(encoded)
+
+
+def advancement_precision_differences(raw: dict, saved: dict, prefix: str = "") -> dict:
+    """Expose raw-versus-saved numeric differences without changing a decision."""
+    differences: dict = {}
+    for key, value in raw.items():
+        path = f"{prefix}.{key}" if prefix else key
+        other = saved.get(key) if isinstance(saved, dict) else None
+        if isinstance(value, dict):
+            differences.update(advancement_precision_differences(value, other, path))
+        elif isinstance(value, (float, int, np.floating, np.integer)) and not isinstance(value, bool):
+            saved_value = None if other is None else float(other)
+            differences[path] = {
+                "full_precision": float(value),
+                "saved_json": saved_value,
+                "absolute_difference": None if saved_value is None else abs(float(value) - saved_value),
+            }
+    return differences
+
+
 def verify_saved_run(result_dir: Path) -> tuple[dict[str, bool], dict]:
     required = [
         "predictions.csv", "metrics.csv", "monthly_metrics.csv", "advancement.json",
@@ -453,11 +477,25 @@ def verify_saved_run(result_dir: Path) -> tuple[dict[str, bool], dict]:
     checks["monthly_metrics_independently_reconstructed"] = tables_match(expected_monthly, monthly, ["phase", "symbol", "month", "method"], metric_fields)
     expected_advancement = independent_advancement(expected_monthly, pred)
     saved_by_contrast = {row.get("contrast"): row for row in saved_advancement}
-    checks["advancement_has_exact_six_outer_cells_per_contrast"] = all(int(row["outer_cells"]) == 6 for row in expected_advancement)
-    checks["advancement_independently_reconstructed"] = bool(
+    expected_advancement_stored = storage_normalize_advancement(expected_advancement)
+    stored_by_contrast = {row.get("contrast"): row for row in expected_advancement_stored}
+    precision_rows = []
+    all_differences = []
+    for raw in expected_advancement:
+        contrast = raw["contrast"]
+        differences = advancement_precision_differences(raw, saved_by_contrast.get(contrast, {}))
+        all_differences.extend(
+            item["absolute_difference"]
+            for item in differences.values()
+            if item["absolute_difference"] is not None
+        )
+        precision_rows.append({"contrast": contrast, "numeric_fields": differences})
+    storage_normalized_match = bool(
         len(saved_by_contrast) == 3
-        and all(record_match(row, saved_by_contrast.get(row["contrast"], {})) for row in expected_advancement)
+        and all(record_match(row, saved_by_contrast.get(row["contrast"], {})) for row in expected_advancement_stored)
     )
+    checks["advancement_has_exact_six_outer_cells_per_contrast"] = all(int(row["outer_cells"]) == 6 for row in expected_advancement)
+    checks["advancement_independently_reconstructed"] = storage_normalized_match
     fits = evidence.get("fits", [])
     expected_fit_keys = {(fold, method) for fold in FORWARD_MONTHS + ["august_freeze"] for method in CONTROLLER_NAMES}
     fit_map = {(fit.get("fold"), fit.get("method")): fit for fit in fits}
@@ -504,6 +542,13 @@ def verify_saved_run(result_dir: Path) -> tuple[dict[str, bool], dict]:
         "prediction_rows": int(len(pred)),
         "controller_fit_records": int(len(fits)),
         "advancement_recomputed": expected_advancement,
+        "advancement_storage_precision": {
+            "writer": "pandas.DataFrame.to_json",
+            "double_precision": 10,
+            "raw_max_abs_difference": max(all_differences, default=0.0),
+            "storage_normalized_match": storage_normalized_match,
+            "numeric_differences": precision_rows,
+        },
     }
 
 

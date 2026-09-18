@@ -439,6 +439,9 @@ outputs/stock_specific_gate_4h/v1/verification_failure.json
 outputs/stock_specific_gate_4h/v1/verifier_recovery_input_hashes.json
 outputs/stock_specific_gate_4h/v1/verification.json
 outputs/stock_specific_gate_4h/v1/verifier_recovery_outcome.json
+outputs/stock_specific_gate_4h/v1/verification_precision_failure.json
+outputs/stock_specific_gate_4h/v1/verifier_precision_repair_hashes.json
+outputs/stock_specific_gate_4h/v1/REPORT.md
 outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md
 outputs/stock_reaction_features_4h/v4/REPORT.md
 outputs/stock_reaction_features_4h/v4/DATA_AUDIT.md
