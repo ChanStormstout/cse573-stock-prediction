@@ -10,6 +10,13 @@ from prepare import ensure
 R1 = [*(f"{kind}_{i}" for i in range(1,7) for kind in ("return","range")),"history_age_hours","return_mean","return_std","ny_hour",*(x for m in (5,15,30,60) for x in (f"recent_return_{m}",f"recent_range_{m}",f"recent_rv_{m}",f"recent_missing_{m}")),"overnight_gap","overnight_gap_missing","minutes_from_open","minutes_to_close"]
 MONTHS = [f"2018-{m:02d}" for m in range(3,9)]
 
+def selected_evidence_c(evidence, *, method, symbol, phase, month=None):
+    rows=[r for r in evidence if r.get("method")==method and r.get("symbol")==symbol and r.get("phase")==phase and (month is None or r.get("month")==month)]
+    if len(rows)!=1: raise AssertionError(f"expected one selected evidence row: {method=} {symbol=} {phase=} {month=}")
+    value=rows[0].get("C")
+    if value not in CS: raise AssertionError(f"invalid selected C: {value}")
+    return float(value)
+
 class StandardizeMissing:
     def fit(self, frame, columns):
         values=frame[columns].to_numpy(float); self.mean=np.nanmean(values,axis=0); self.mean=np.where(np.isfinite(self.mean),self.mean,0.0); self.scale=np.nanstd(values,axis=0); self.scale=np.where(np.isfinite(self.scale)&(self.scale>1e-12),self.scale,1.0); return self
@@ -23,7 +30,7 @@ def fit_probability(train, evaluate, columns, C, name, model_dir):
     if model.n_iter_.max()>=3000: raise RuntimeError("no convergence")
     path=model_dir/f"{name}.joblib"; joblib.dump({"columns":columns,"scaler":scaler,"model":model},path); loaded=joblib.load(path); p=model.predict_proba(z)[:,1]; q=loaded["model"].predict_proba(loaded["scaler"].transform(evaluate,columns))[:,1]
     np.testing.assert_allclose(p,q,atol=1e-12,rtol=0)
-    return p,{"C":C,"train_n":int(len(train)),"eval_n":int(len(evaluate)),"train_target_end_max":train.end_utc.max().isoformat(),"eval_cutoff_min":evaluate.cutoff_utc.min().isoformat(),"time_safe":bool(train.end_utc.max()<evaluate.cutoff_utc.min()),"feature_columns":list(columns),"model_path":str(path),"model_sha256":sha(path),"reload_max_abs_error":float(np.abs(p-q).max()),"iterations":int(model.n_iter_.max())}
+    return p,{"C":C,"train_n":int(len(train)),"eval_n":int(len(evaluate)),"training_months":sorted(train.month.unique().tolist()),"train_target_end_max":train.end_utc.max().isoformat(),"eval_cutoff_min":evaluate.cutoff_utc.min().isoformat(),"time_safe":bool(train.end_utc.max()<evaluate.cutoff_utc.min()),"feature_columns":list(columns),"model_path":str(path),"model_sha256":sha(path),"reload_max_abs_error":float(np.abs(p-q).max()),"iterations":int(model.n_iter_.max())}
 
 def choose(records):
     return sorted([(-np.mean([x["BA"] for x in records if x["C"]==c]),np.mean([x["Brier"] for x in records if x["C"]==c]),c) for c in CS])[0][2]
@@ -47,16 +54,16 @@ def run(output):
     if output.exists(): raise FileExistsError(output)
     data=ensure(); model_dir=PRIVATE/"v1_models"; model_dir.mkdir(parents=True,exist_ok=False); a0,cv,evidence=reproduce_a0(data); all_cv=list(cv); chunks=[]; selection=[]
     for symbol, group in data.groupby("symbol"):
-        a1cv=[]; a1_candidates={}; a0_selected={x["month"]:x for x in evidence if x.get("phase")=="selected" and x.get("symbol")==symbol and x.get("method")=="A0"}
+        a1cv=[]; a1_candidates={}
         for month in [f"2018-{m:02d}" for m in range(3,9)]:
-            test=group[group.month.eq(month)]; train=group[(group.month<month)&(group.end_utc<test.cutoff_utc.min())]; c0=a0_selected[month]["C"]; c1=.1 if not a1cv else choose(a1cv); row=test[["key","symbol","month","label"]].copy(); selection += [{"symbol":symbol,"month":month,"method":"A0","chosen_C":c0,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"past forward BA, Brier, smaller C"},{"symbol":symbol,"month":month,"method":"A1","chosen_C":c1,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"past forward BA, Brier, smaller C"},{"symbol":symbol,"month":month,"method":"A1_matchedC","source_method":"A0","chosen_C":c0,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"same-fold A0 C"}]
+            test=group[group.month.eq(month)]; train=group[(group.month<month)&(group.end_utc<test.cutoff_utc.min())]; c0=selected_evidence_c(evidence,method="A0",symbol=symbol,phase="selected",month=month); c1=.1 if not a1cv else choose(a1cv); row=test[["key","symbol","month","label"]].copy(); selection += [{"symbol":symbol,"month":month,"method":"A0","chosen_C":c0,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"past forward BA, Brier, smaller C"},{"symbol":symbol,"month":month,"method":"A1","chosen_C":c1,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"past forward BA, Brier, smaller C"},{"symbol":symbol,"month":month,"method":"A1_matchedC","source_method":"A0","chosen_C":c0,"eligible_prior_months":[m for m in MONTHS if m<month],"selection_rule":"same-fold A0 C"}]
             for name,c in (("A1",c1),("A1_matchedC",c0)):
                 p,e=fit_probability(train,test,R1+ACTIVITY_FEATURES,c,f"{name}_{symbol}_{month}",model_dir); row[name]=p; evidence.append({"phase":"selected","method":name,"symbol":symbol,"month":month,**e})
                 if name=="A1":
                     for cc in CS:
                         pp,ee=fit_probability(train,test,R1+ACTIVITY_FEATURES,cc,f"A1_{symbol}_{month}_{cc}",model_dir); record={"symbol":symbol,"month":month,"method":"A1","C":cc,**metric(test.label,pp)}; a1cv.append(record); all_cv.append(record); a1_candidates[(month,cc)]=ee
             chunks.append(row.assign(phase="train_forward_oof"))
-        test=group[group.month>="2018-09"]; train=group[group.month<"2018-09"]; c1=choose(a1cv); c0=[x for x in evidence if x.get("phase")=="frozen" and x.get("symbol")==symbol][0]["A0_C"]; row=test[["key","symbol","month","label"]].copy(); selection += [{"symbol":symbol,"month":"final","method":"A0","chosen_C":c0,"eligible_prior_months":MONTHS},{"symbol":symbol,"month":"final","method":"A1","chosen_C":c1,"eligible_prior_months":MONTHS},{"symbol":symbol,"month":"final","method":"A1_matchedC","source_method":"A0","chosen_C":c0}]
+        test=group[group.month>="2018-09"]; train=group[group.month<"2018-09"]; c1=choose(a1cv); c0=selected_evidence_c(evidence,method="A0",symbol=symbol,phase="frozen"); row=test[["key","symbol","month","label"]].copy(); selection += [{"symbol":symbol,"month":"final","method":"A0","chosen_C":c0,"eligible_prior_months":MONTHS},{"symbol":symbol,"month":"final","method":"A1","chosen_C":c1,"eligible_prior_months":MONTHS},{"symbol":symbol,"month":"final","method":"A1_matchedC","source_method":"A0","chosen_C":c0,"eligible_prior_months":MONTHS,"selection_rule":"same-fold A0 C"}]
         for name,c in (("A1",c1),("A1_matchedC",c0)):
             pp,ee=fit_probability(train,test,R1+ACTIVITY_FEATURES,c,f"{name}_{symbol}_frozen",model_dir); row[name]=pp; evidence.append({"phase":"frozen","method":name,"symbol":symbol,"month":"final",**ee})
         chunks.append(row.assign(phase=np.where(test.month.isin(["2018-09","2018-10"]),"development","later")))
@@ -72,7 +79,7 @@ def run(output):
     outer=monthly[monthly.month.isin(["2018-06","2018-07","2018-08"])];
     def contrast(method):
         x=outer[outer.method.eq(method)].set_index(["symbol","month"]);b=outer[outer.method.eq("A0")].set_index(["symbol","month"]);d=x.BA-b.BA;db=x.Brier-b.Brier;stock=d.groupby(level=0).mean();month=d.groupby(level=1).mean();brier=db.groupby(level=0).mean();constant=x.groupby(level=0).constant.any();return {"contrast":f"{method}_vs_A0","AAPL_mean_delta_BA":float(stock["AAPL"]),"AMZN_mean_delta_BA":float(stock["AMZN"]),"weaker_stock_mean_delta_BA":float(stock.min()),"macro_delta_BA":float(d.mean()),"positive_macro_months":int((month>0).sum()),"AAPL_mean_delta_Brier":float(brier["AAPL"]),"AMZN_mean_delta_Brier":float(brier["AMZN"]),"max_stock_mean_delta_Brier":float(brier.max()),"constant_any_stock":bool(constant.any()),"outer_cells":int(len(d)),"passes":bool(len(d)==6 and stock["AAPL"]>=.01 and stock["AMZN"]>=.01 and (month>0).sum()>=2 and brier["AAPL"]<=.002 and brier["AMZN"]<=.002 and not constant.any())}
-    advancement=contrast("A1");attribution=contrast("A1_matchedC");(output/"advancement.json").write_text(json.dumps(advancement,indent=2)+"\n");(output/"attribution_control.json").write_text(json.dumps(attribution,indent=2)+"\n");data.groupby("symbol")[ACTIVITY_FEATURES].agg(["count","mean","std"]).to_csv(output/"activity_feature_summary.csv");(output/"protocol_fingerprint.json").write_text(json.dumps({"r1":R1,"activity_features":ACTIVITY_FEATURES,"cs":CS,"months":MONTHS},indent=2)+"\n")
+    advancement=contrast("A1");attribution=contrast("A1_matchedC");(output/"advancement.json").write_text(json.dumps(advancement,indent=2)+"\n");(output/"attribution_control.json").write_text(json.dumps(attribution,indent=2)+"\n");data.groupby("symbol")[ACTIVITY_FEATURES].agg(["count","mean","std"]).to_csv(output/"activity_feature_summary.csv");files=[HERE/"PRE_REGISTRATION.md",HERE/"common.py",HERE/"prepare.py",HERE/"run_activity.py",HERE.parents[1]/"work/stock-data/activity_4h/features.pkl",HERE.parents[1]/"work/stock-data/activity_4h/sources.json",HERE.parent/"stock_goal60_4h/v1/predictions.csv",HERE.parent/"stock_nextgen_4h/runs/v1/PREDICTIONS.csv"];(output/"protocol_fingerprint.json").write_text(json.dumps({"source_hashes":{str(x):sha(x) for x in files},"r1":R1,"activity_features":ACTIVITY_FEATURES,"cs":CS,"registered_forward_months":MONTHS,"history_sessions":20,"min_history_sessions":10},indent=2)+"\n")
 
 if __name__=="__main__":
     p=argparse.ArgumentParser(); p.add_argument("--approve-activity-run",action="store_true"); p.add_argument("--output",type=Path,default=HERE/"v1"); a=p.parse_args()

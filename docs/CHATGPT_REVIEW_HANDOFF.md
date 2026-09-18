@@ -464,3 +464,12 @@ and model artifacts remain local.
 - **Boundary:** runner, post-run verifier and PASS-gated report are implemented. The
   post-run verifier and report have not been exercised on A1; no A1/A1_matchedC output
   artifact exists. Status is `PREREGISTERED_NOT_RUN` pending an explicit approval.
+
+## Activity v1 runtime repair handoff — 2026-09-18
+
+- **Starting SHA:** `5510e9088836a185860c2be8255f38b685ef35dc`.
+- **ISSUE-063--068:** frozen-C schema, verifier-local calendar, Boolean selection
+  logic, period labels, independent selected-model reloads and protocol fingerprinting
+  are repaired in code only.
+- **Preflight:** exercises the actual frozen-A0 selected-C helper and post-run helper
+  paths with synthetic CV/selection/metric/gate data. A1 remains absent and unscored.

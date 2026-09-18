@@ -62,6 +62,10 @@ evidence:
 | stock-specific reliability gate | `outputs/stock_specific_gate_4h/` | `VALID_EXPLORATORY_NO_PROMOTION` | the one approved frozen run passes all 18 post-run verifier checks after only advancement comparison is storage-normalized with the runner's documented ten-decimal pandas JSON representation; raw precision diagnostics and unchanged artifact hashes are saved | this verifies a stable/promoted controller or permits development/later backtests to select a method |
 | activity incremental v1 | `outputs/stock_activity_4h/` | `PREREGISTERED_NOT_RUN` | exact eight-field raw-bar reconstruction, source hashes, A0 parity and synthetic time/reference tests pass; runner/verifier/report are implemented but A1 remains guarded and unscored | opaque-field activity is volume or has incremental four-hour predictive value |
 
+Activity ISSUE-063--068 also repairs the future frozen-C retrieval, verifier-local
+calendar and C logic, selected-model reload verification, fingerprinting and report
+period labels. These are code-only checks; they do not create predictive evidence.
+
 The v5 raw dense feature parity check is false and is explicitly recorded;
 both control and augmented rows use the reconstructed generator. This is a
 matched component comparison, not a claim of canonical feature parity. All

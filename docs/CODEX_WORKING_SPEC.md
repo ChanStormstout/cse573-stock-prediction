@@ -61,6 +61,12 @@ preflight pass; A1 execution requires a separate exact `APPROVE_ACTIVITY_RUN`.
 | ISSUE-060 | HIGH | Activity report was a stub | Implemented PASS-gated report renderer; not executed | RESOLVED_CODE_ONLY_NOT_RUN |
 | ISSUE-061 | HIGH | Feature preflight allowed extra `activity_*` columns and did not fingerprint all build sources | Exact column and frozen-hash checks now required | RESOLVED_PREFLIGHT_PASS |
 | ISSUE-062 | BLOCKING | A future Activity result could have been trusted without independent reconstruction of selection, metrics, chronology, or advancement | Verifier-local post-run reconstruction now checks the complete output contract, C choices, selected-fit evidence, metrics and the two June--August contrasts; code-only and unexercised | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-063 | BLOCKING | Frozen A0 selected evidence used `C`, while the runner read nonexistent `A0_C` | One schema and `selected_evidence_c` helper now serve forward and frozen retrieval; regression-tested without A1 | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-064 | BLOCKING | Post-run verifier referred to runner-only `MONTHS` | Verifier-local `REGISTERED_FORWARD_MONTHS` now defines its independent protocol | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-065 | BLOCKING | Boolean/float `&=` selection logic would raise in post-run verification | Explicit boolean and exact discrete-C comparisons replace it; synthetic self-test exercises the path | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-066 | HIGH | Report mislabeled March--August OOF aggregate as June--August | Separate OOF and registered-gate sections are now rendered | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-067 | HIGH | Post-run verifier trusted runner reload evidence | It now reloads every selected model, recomputes probabilities and checks hashes/columns locally | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-068 | HIGH | Protocol fingerprint only recorded lists | Frozen code, input and parity-source hashes plus constants are now stored and independently checked | RESOLVED_CODE_ONLY_NOT_RUN |
 
 ## Known issues that must be repaired
 

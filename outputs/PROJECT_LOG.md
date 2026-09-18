@@ -1406,3 +1406,11 @@ cases。Activity v1 仍为 `PREREGISTERED_NOT_RUN`；没有执行 A1。
 monthly/phase metrics、C selection、训练时序、A1/A1_matchedC 六格 June--August
 contrasts，并与 runner 输出逐项核对。它尚未在 A1 结果上执行；该条是代码合同，
 不是预测证据。
+
+## 2026-09-18：Activity v1 runtime-only repair
+
+外部审查发现未来 runner 的 frozen A0 `A0_C` 键错误、verifier 的 runner-global
+月份依赖和 bool/float 选择检查，以及报告期标签问题。ISSUE-063--068 已以代码修复：
+统一 selected evidence 的 `C` 字段、使用 verifier-local months、执行真实的 synthetic
+selection/self-test、记录 training months 和协议哈希，并让 future verifier 重载每一个
+selected model 后逐概率核验。未执行 A1，也未生成 candidate 模型或分数。

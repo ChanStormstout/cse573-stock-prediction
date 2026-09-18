@@ -24,6 +24,9 @@
 > Code-only repair 另加入 raw-bar 独立八字段重构（最大误差 0）、feature source
 > hash 校验、按月 coverage、future post-run verifier 和 PASS-gated report；它们
 > 均未运行 A1。
+> ISSUE-063--068 又修复了 future runner 的 frozen-C schema、verifier-local
+> calendar/selection、独立模型重载、协议 fingerprint 和报告期标签；preflight
+> self-tests 通过，状态仍为 `PREREGISTERED_NOT_RUN`。
 
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
