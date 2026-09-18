@@ -44,5 +44,6 @@
 - **stock_small_boost**: [REPORT.md](../outputs/stock_small_boost/REPORT.md)
 - **stock_ssl_4h**: [README.md](../outputs/stock_ssl_4h/README.md)
 - **stock_structured**: Python source archive
+- **stock_tabpfn_4h**: Python source archive
 - **stock_temporal**: [README.md](../outputs/stock_temporal/README.md) · [REPORT.md](../outputs/stock_temporal/REPORT.md)
 - **stock_text_regularization**: [README.md](../outputs/stock_text_regularization/README.md)
