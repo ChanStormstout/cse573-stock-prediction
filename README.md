@@ -5,6 +5,7 @@
 ## 从这里开始
 
 - [当前结论与结果](docs/CURRENT_STATUS.md)
+- [最新小型价格自监督对照](outputs/stock_ssl_4h/v1/REPORT.md)
 - [最新跨股价格、A1稠密与历史新闻实验](outputs/stock_goal60_4h/v1/REPORT.md)
 - [最新离线回放](outputs/stock_goal60_4h/v1/demo.html)
 - [Fin-ModernBERT、Chronos-2与固定正则对照](outputs/stock_foundation_4h/v1/REPORT.md)

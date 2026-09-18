@@ -1,0 +1,464 @@
+[
+  {
+    "key": "AAPL|2018-10-25 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "development",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.4996444327287927,
+      "RAW": 0.5625205984177024,
+      "RANDOM": 0.5056989935418156,
+      "SSL": 0.6015535626974039
+    },
+    "correct": {
+      "B": false,
+      "RAW": true,
+      "RANDOM": true,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AAPL|2018-09-21 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "development",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.731262918023204,
+      "RAW": 0.7434529230975642,
+      "RANDOM": 0.7203645594440596,
+      "SSL": 0.7818141583377539
+    },
+    "correct": {
+      "B": true,
+      "RAW": true,
+      "RANDOM": true,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AAPL|2018-09-04 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "development",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.40965043436262216,
+      "RAW": 0.3988706901110213,
+      "RANDOM": 0.3141560624211418,
+      "SSL": 0.3353993098833319
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": false,
+      "SSL": false
+    }
+  },
+  {
+    "key": "AAPL|2018-10-04 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "development",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.5616566893270203,
+      "RAW": 0.5742536688386107,
+      "RANDOM": 0.4740886801762259,
+      "SSL": 0.6005539712717946
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": true,
+      "SSL": false
+    }
+  },
+  {
+    "key": "AAPL|2018-11-16 15:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "later",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.6506267843670385,
+      "RAW": 0.8156800321351267,
+      "RANDOM": 0.8617307834642265,
+      "SSL": 0.8514231143321288
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": false,
+      "SSL": false
+    }
+  },
+  {
+    "key": "AAPL|2018-12-26 16:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "later",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.5014991386008963,
+      "RAW": 0.5689096546073819,
+      "RANDOM": 0.6363951347366539,
+      "SSL": 0.6545825903130639
+    },
+    "correct": {
+      "B": true,
+      "RAW": true,
+      "RANDOM": true,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AAPL|2018-08-21 13:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "train_forward_oof",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.656919564590907,
+      "RAW": 0.5830056755448474,
+      "RANDOM": 0.6040881639539344,
+      "SSL": 0.6417680879632005
+    },
+    "correct": {
+      "B": true,
+      "RAW": true,
+      "RANDOM": true,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AAPL|2018-04-24 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "train_forward_oof",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.6107271187628927,
+      "RAW": 0.7136994804312096,
+      "RANDOM": 0.44746881982734515,
+      "SSL": 0.5038807534735916
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": true,
+      "SSL": false
+    }
+  },
+  {
+    "key": "AAPL|2018-07-10 13:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "train_forward_oof",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.6484894872635606,
+      "RAW": 0.7208113496969699,
+      "RANDOM": 0.7298005961083373,
+      "SSL": 0.7281571155140635
+    },
+    "correct": {
+      "B": true,
+      "RAW": true,
+      "RANDOM": true,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AAPL|2018-04-06 13:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "train_forward_oof",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.7416256100491012,
+      "RAW": 0.6382970737290989,
+      "RANDOM": 0.7897633383391017,
+      "SSL": 0.7739348933282607
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": false,
+      "SSL": false
+    }
+  },
+  {
+    "key": "AMZN|2018-09-13 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "development",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.5157778223013888,
+      "RAW": 0.5034636550392068,
+      "RANDOM": 0.6502007104695648,
+      "SSL": 0.6731330601159394
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": false,
+      "SSL": false
+    }
+  },
+  {
+    "key": "AMZN|2018-10-01 15:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "development",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.4534270645377287,
+      "RAW": 0.4963653410580658,
+      "RANDOM": 0.5004775178118382,
+      "SSL": 0.3975346701409535
+    },
+    "correct": {
+      "B": true,
+      "RAW": true,
+      "RANDOM": false,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AMZN|2018-10-02 13:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "development",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.5285131960964626,
+      "RAW": 0.5490941160593281,
+      "RANDOM": 0.5568906033892786,
+      "SSL": 0.5643077705062258
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": false,
+      "SSL": false
+    }
+  },
+  {
+    "key": "AMZN|2018-10-10 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "development",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.6335792086125658,
+      "RAW": 0.6274422392120401,
+      "RANDOM": 0.7432677888889812,
+      "SSL": 0.4462733792255233
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": false,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AMZN|2019-01-14 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "later",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.6497906897929375,
+      "RAW": 0.6521680310359053,
+      "RANDOM": 0.661554695773749,
+      "SSL": 0.5035221316973947
+    },
+    "correct": {
+      "B": true,
+      "RAW": true,
+      "RANDOM": true,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AMZN|2018-11-09 16:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "later",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.5039902602254474,
+      "RAW": 0.3534332144460643,
+      "RANDOM": 0.2690982084146452,
+      "SSL": 0.5368024276133773
+    },
+    "correct": {
+      "B": true,
+      "RAW": false,
+      "RANDOM": false,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AMZN|2018-11-12 15:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "later",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.7972519127822411,
+      "RAW": 0.8799862645140133,
+      "RANDOM": 0.7568482080456702,
+      "SSL": 0.8315674252935118
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": false,
+      "SSL": false
+    }
+  },
+  {
+    "key": "AMZN|2018-11-30 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "later",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.5529252760048057,
+      "RAW": 0.610812832432892,
+      "RANDOM": 0.49265198935447496,
+      "SSL": 0.5377679669612426
+    },
+    "correct": {
+      "B": true,
+      "RAW": true,
+      "RANDOM": false,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AMZN|2018-03-09 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "train_forward_oof",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.5403167229872686,
+      "RAW": 0.49715815797542756,
+      "RANDOM": 0.5174589821502772,
+      "SSL": 0.5802237063182222
+    },
+    "correct": {
+      "B": true,
+      "RAW": false,
+      "RANDOM": true,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AMZN|2018-04-05 15:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "train_forward_oof",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.7409172870816677,
+      "RAW": 0.9557787950893251,
+      "RANDOM": 0.9344491589063643,
+      "SSL": 0.896566057132659
+    },
+    "correct": {
+      "B": true,
+      "RAW": true,
+      "RANDOM": true,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AMZN|2018-07-16 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "train_forward_oof",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 1,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.6758678679630187,
+      "RAW": 0.7895578373054659,
+      "RANDOM": 0.808906786711851,
+      "SSL": 0.8170703508908485
+    },
+    "correct": {
+      "B": true,
+      "RAW": true,
+      "RANDOM": true,
+      "SSL": true
+    }
+  },
+  {
+    "key": "AMZN|2018-04-02 15:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "train_forward_oof",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes",
+    "label": 0,
+    "has_sequence": 1,
+    "probabilities": {
+      "B": 0.7304345139058905,
+      "RAW": 0.8583952871129458,
+      "RANDOM": 0.83699014026696,
+      "SSL": 0.8745052561252601
+    },
+    "correct": {
+      "B": false,
+      "RAW": false,
+      "RANDOM": false,
+      "SSL": false
+    }
+  }
+]

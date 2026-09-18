@@ -1003,5 +1003,95 @@
     "path": "outputs/stock_goal60_4h/v1/transitions.csv",
     "bytes": 8951,
     "sha256": "790653b180c3c22e35b9b049b6b8937ada9c346b88965d818f19bb717b806084"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/advancement.json",
+    "bytes": 585,
+    "sha256": "53b23ad189e991bc4a8f8f79ad11bce08b48a71548d82da8a1b1a292374d13c8"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/cases.json",
+    "bytes": 10834,
+    "sha256": "904fd504820c26f06212ba5e718e20a91dfd9ac75b099e076a4dbc6d5a1c6570"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/coverage.csv",
+    "bytes": 213,
+    "sha256": "3e97a88fd36d455ad0ed7865759cd6be61c05e2b8cfa12f3a4792e229890f34a"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/cv.json",
+    "bytes": 27196,
+    "sha256": "71cdb2b992176bc91cd5ebe880768b37a87ea0d9fada2b17833b90186611fb66"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/error_transitions.csv",
+    "bytes": 620,
+    "sha256": "16527400c560fbbcf4920563d31a1a5544c74d662c109f8e7ddf158e072c9906"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/execution_summary.json",
+    "bytes": 310,
+    "sha256": "6ef44121f5a2fc36df5ce1076b3281c2890d55d3d884da264aa7ec533638709b"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/input_audit.json",
+    "bytes": 260249,
+    "sha256": "ab0f0761ec03e061353c21b5aa1f493504017bb556ff674fbfd9ef3262a005d4"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/metrics.csv",
+    "bytes": 2574,
+    "sha256": "53054b9582e0be01635ec34aa15d26fb0d4bce3efe1bbd8331ebb60bc267221f"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/monthly_metrics.csv",
+    "bytes": 9170,
+    "sha256": "95cd7481c5ce4254ed4536c0f95faf0fe7903b49d9c5be0a717364c5b8777f15"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/outer_monthly_BA.csv",
+    "bytes": 186,
+    "sha256": "442e2478cf3a6df0b83a3770c46f8d813f08f4caecc8d3d2ea76df3d078ddc8e"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/paired_intervals.csv",
+    "bytes": 2386,
+    "sha256": "53b6e3d81cec5733ec5cd548f191213fab19160314dcc2c12a0842544afa712b"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/predictions.csv",
+    "bytes": 224644,
+    "sha256": "2cb9f438b6af1ed5b0d49d6b187b349a9934e338ea601e2cf1a23e486278bb4b"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/pretraining_summary.csv",
+    "bytes": 1909,
+    "sha256": "8efd2d06a365996701df84c5877817c7ba444e248ca1538b0f4cdefbacfef425"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/seed_metrics.csv",
+    "bytes": 4023,
+    "sha256": "1cef8ae53278a9d424ea0bff892baba4c2e59f80c59503460ad0ad2dde09ee2f"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/seed_summary.csv",
+    "bytes": 1804,
+    "sha256": "61129af169799d7451abd1a56035075792af9419b0a9364efb2c4a5a630a9bc2"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/strata_metrics.csv",
+    "bytes": 4472,
+    "sha256": "fc6fa155efe45893ff3b91b773a26e8f26a8ab78faf664b0ca221340ca82de1c"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/training_evidence.json",
+    "bytes": 259656,
+    "sha256": "ea697071e41742d6f49c2a28d5f6b303c2fe33eb78f6949e0d6417c2cd056485"
+  },
+  {
+    "path": "outputs/stock_ssl_4h/v1/verification.json",
+    "bytes": 886,
+    "sha256": "a342f9ca0db6c04eb8ec8e190d47fdb0be6b5dd853eb0c83c58081f22471e9d5"
   }
 ]

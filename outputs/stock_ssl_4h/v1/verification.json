@@ -1,0 +1,43 @@
+{
+  "rows_time_label_keys": 1607,
+  "encoder_checkpoint_count": 21,
+  "pretrain_used_no_direction_labels": true,
+  "head_checkpoint_count": 266,
+  "exact_missing_sequence_fallback": true,
+  "metrics_rows": 24,
+  "max_metric_error": 8.673617379884035e-17,
+  "independent_final_replay": [
+    {
+      "symbol": "AAPL",
+      "method": "RAW",
+      "max_error": 0.0
+    },
+    {
+      "symbol": "AAPL",
+      "method": "RANDOM",
+      "max_error": 0.0
+    },
+    {
+      "symbol": "AAPL",
+      "method": "SSL",
+      "max_error": 0.0
+    },
+    {
+      "symbol": "AMZN",
+      "method": "RAW",
+      "max_error": 0.0
+    },
+    {
+      "symbol": "AMZN",
+      "method": "RANDOM",
+      "max_error": 0.0
+    },
+    {
+      "symbol": "AMZN",
+      "method": "SSL",
+      "max_error": 0.0
+    }
+  ],
+  "future_feature_perturbation": true,
+  "cache_mismatch_rejected_before_training": true
+}

@@ -1,0 +1,17 @@
+symbol,subset,method,n,old_common_errors,common_fixed,new_errors_vs_F2,corrected_vs_F2
+AAPL,all,B,178,58,12,32,26
+AAPL,all,RAW,178,58,16,32,29
+AAPL,all,RANDOM,178,58,19,38,30
+AAPL,all,SSL,178,58,13,37,24
+AAPL,original_no_news,B,0,0,0,0,0
+AAPL,original_no_news,RAW,0,0,0,0,0
+AAPL,original_no_news,RANDOM,0,0,0,0,0
+AAPL,original_no_news,SSL,0,0,0,0,0
+AMZN,all,B,179,68,4,20,13
+AMZN,all,RAW,179,68,13,31,23
+AMZN,all,RANDOM,179,68,10,26,19
+AMZN,all,SSL,179,68,12,26,19
+AMZN,original_no_news,B,95,42,1,2,1
+AMZN,original_no_news,RAW,95,42,8,7,8
+AMZN,original_no_news,RANDOM,95,42,6,6,6
+AMZN,original_no_news,SSL,95,42,10,6,10

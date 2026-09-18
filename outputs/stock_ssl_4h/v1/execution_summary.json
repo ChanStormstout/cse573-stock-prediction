@@ -1,0 +1,11 @@
+{
+  "encoder_early_stop_fits": 21,
+  "encoder_final_fits": 21,
+  "lr_fits": 266,
+  "encoder_parameters": 1988,
+  "encoder_training_and_encoding_seconds": 102.85684108306305,
+  "device": "cpu",
+  "labels_used_in_pretraining": false,
+  "independent_human_review": false,
+  "LLM_news_increment_executed": false
+}

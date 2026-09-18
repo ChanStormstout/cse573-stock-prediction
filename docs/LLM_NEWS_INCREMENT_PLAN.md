@@ -1,0 +1,13 @@
+# LLM news-increment component — design, not executed
+
+Purpose: identify what a target-company report adds relative to already available reports. An LLM cannot establish that information has or has not been priced in. Market novelty and dataset-first-seen are distinct.
+
+Pipeline: cutoff-safe articles → programmatically retrieve at most three past same-target/event candidate reports → numbered current and past evidence passages → LLM emits supported relations → program verifies cited spans, object/actor/period/units/numbers → compact event-state features → matched downstream four-hour comparison. Unknown preserves the existing baseline. Dates, prior prices and availability limits are enforced by code, not trusted to a prompt.
+
+Relations: repeated fact / new numerical or action fact / explicit correction or denial / historical background / different actor or reporting period / unknown. Keep relevance to target separate from novelty. Different analyst target prices must not automatically be interpreted as one institution revising its target. Market reaction since availability is calculated separately; do not ask an LLM to output a ground-truth priced-in flag.
+
+A future pilot would use40 training-period article pairs, stratified by duplicates,background,multi-company,maintained rating with target change,conflicting periods and no-event. Same passages for deterministic comparison and frozen local LLM. GPT web can review evidence and proposed pair labels only if separately instructed; it need not compute bar features or train models. GPT provisional labels are not independent human gold. Do not show future prices or direction labels to the annotator. Near-event groups remain separated for fitting/checking. No evaluation-period examples used as few-shot prompts.
+
+Example instruction: "Given TARGET, CURRENT passages and PAST passages known before CURRENT availability, list only directly supported changes. Cite current and past sentence IDs. Distinguish unchanged rating from changed target price; match actor,object,unit,period. Never infer market-first disclosure, information importance, priced-in status or future direction. If the old/new relation is unsupported, return unknown."
+
+Quality and prediction are separate gates. Before expanding annotation or fine-tuning, compare rule-only versus LLM relation accuracy/coverage on the same provisional check cases. Subsequent matched downstream controls should be current text / past similarity metadata / verified fact differences, with the same base,articles,dates and tuning budget. No promise of60% BA. Full independent relation-quality acceptance remains pending human review.

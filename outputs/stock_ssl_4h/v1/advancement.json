@@ -1,0 +1,26 @@
+[
+  {
+    "base": "B",
+    "weaker_gain": -0.0031781943546649316,
+    "AAPL_gain": -0.0031781943546649316,
+    "AMZN_gain": -0.035819590204897445,
+    "positive_months": 1,
+    "passed": false
+  },
+  {
+    "base": "RAW",
+    "weaker_gain": 0.03727304346222837,
+    "AAPL_gain": -0.03597364871874664,
+    "AMZN_gain": 0.06288314176245224,
+    "positive_months": 1,
+    "passed": false
+  },
+  {
+    "base": "RANDOM",
+    "weaker_gain": 0.02212436780005944,
+    "AAPL_gain": -0.0008239763141724143,
+    "AMZN_gain": 0.04773446610028331,
+    "positive_months": 3,
+    "passed": true
+  }
+]

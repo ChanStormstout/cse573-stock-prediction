@@ -60,3 +60,6 @@ INPUT_AUDIT.md、CASE_NOTES.md、METRICS.csv、TRANSITIONS.csv 和 PAIRED_INTERV
 ## Latest finite mechanism round
 
 Read [stock_goal60_4h report](../outputs/stock_goal60_4h/v1/REPORT.md), its PRE_REGISTRATION.md and IMPLEMENTATION_NOTES.md, then advancement.json, metrics.csv, training_evidence.json and CASE_NOTES.md. All16 new branches completed; none passed the declared gate. No final blend is claimed. Distinguish AMZN coverage recovery from predictive gain; independently review the matched price repair and strict float64 fallback. Alpaca remains AUTH_REQUIRED.
+
+
+Latest: [finite masked price self-supervision](../outputs/stock_ssl_4h/v1/REPORT.md). SSL improved against random frozen features in training outer months but not against the existing price baseline; no system promotion. LLM news-increment is a separate unexecuted design, not a new annotation or prediction result.
