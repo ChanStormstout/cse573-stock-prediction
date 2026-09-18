@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "canonical_finbert_reproduction_le_1e-10": true,
+    "canonical_finbert_rows": true,
+    "modern_encoder_frozen": true,
+    "modern_keys_and_rows_match": true,
+    "modern_pooling_excludes_special_tokens": true,
+    "pooling_changes_v1_vectors": true
+  },
+  "finbert_reproduction_max_abs_probability_error": 1.7208456881689926e-15,
+  "modern_rows": 1374,
+  "note": "Development and later are exposed exploratory historical backtests; v2 is a matched frozen-encoder probe, not a full Fin-ModernBERT reproduction.",
+  "old_v1_vs_v2_pooling_max_l2": 8.050939024368637,
+  "old_v1_vs_v2_pooling_mean_l2": 2.0673250291340075,
+  "status": "PASS"
+}

@@ -77,7 +77,7 @@ historical backtests because September onward has already been exposed.
   validity ledger, correction log, and ChatGPT handoff.
 - [x] Stage 1 — canonical parity and recency repairs (ISSUE-001/002/003/007).
 - [x] Stage 2 — dense gate and feature parity repair (ISSUE-004/005/006).
-- [ ] Stage 3 — matched FinBERT/Fin-ModernBERT pooling probe (ISSUE-008/009).
+- [x] Stage 3 — matched FinBERT/Fin-ModernBERT pooling probe (ISSUE-008/009).
 - [ ] Stage 4 — TabPFN checkpoint/configuration audit and conditional corrected
   probe (ISSUE-010/011).
 - [ ] Stage 5 — claim-only wording and calibration/dedup interpretation audit
@@ -112,6 +112,10 @@ from commit e32785d is preserved; the audit added formula/gate assertions and
 public verification only, without overwriting historical runs. Remote push is
 pending network/DNS recovery.
 
+Stage 3 is also complete: canonical FinBERT reproduction passed at
+`1.72e-15`; ModernBERT v2 used special-token-excluded pooling and did not pass
+the promotion line, so no dual-encoder fusion was run.
+
 ## Deviations / new problems discovered while executing
 
 - The requested remote fetch was attempted but GitHub DNS resolution failed;
@@ -125,6 +129,9 @@ pending network/DNS recovery.
   was zero and there were no monotonic or infinity-unit-weight violations.
 - The dense verifier now confirms exactly six June–August stock-month cells
   and requires the matched reconstructed feature mode after parity failed.
+- The v2 ModernBERT run used 5,078 matched titles, 159 MPS batches, and zero
+  trainable encoder parameters. Its old-v1 versus v2 article-vector mean L2
+  difference is 2.0673.
 
 ## Exact commands executed
 

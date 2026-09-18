@@ -122,3 +122,15 @@ allowed.
   monotonic/unit-weight violations; public v4 verification passes. This is a
   verification strengthening, not a new score search or a changed numeric
   result.
+
+## CORR-016 — ModernBERT special-token pooling
+
+- **Discovered:** v1 ModernBERT used attention-mask mean pooling that included
+  special tokens, while the canonical FinBERT embeddings were documented as
+  mean-pooling real non-special tokens.
+- **Repair:** v2 re-encoded the same 5,078 titles with a shared
+  `attention_mask=1` and `special_tokens_mask=0` pooling helper, then reran the
+  same J2/PCA/LR protocol in a new output directory.
+- **Evidence:** canonical FinBERT reproduction error is `1.72e-15`; v2
+  Modern vectors differ from v1 (mean L2 `2.0673`). v2 remains a frozen
+  encoder probe and does not validate the full Fin-ModernBERT paper system.

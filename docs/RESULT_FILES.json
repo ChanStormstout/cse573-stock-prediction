@@ -1595,6 +1595,106 @@
     "sha256": "cb47386c3f8568e718973f12c1f19a543476eb3b7f5a382f3402c7aa02dbee9f"
   },
   {
+    "path": "outputs/stock_foundation_4h/pooling.py",
+    "bytes": 696,
+    "sha256": "492d04ebddd9e630e33a8770dec7f768d15cd65c2a6eb7bb18b9173a1d09d275"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/encode_modern_v2.py",
+    "bytes": 4616,
+    "sha256": "80235386150854f112e845bc449f70ae90b1d51c32b345e55421049813231684"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/experiment_v2.py",
+    "bytes": 5670,
+    "sha256": "7a86b7af8d8c66b1b90e569d8b1867e0a11a3e87d9a67c41c8c2b9f325366680"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/verify_v2.py",
+    "bytes": 2304,
+    "sha256": "b03211aeadfc1c0e21d17956bc7acda78ea892679251ac9460e07f3b02742b80"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/PRE_REGISTRATION.md",
+    "bytes": 1416,
+    "sha256": "b89ded35dea32a948440611b8e7b54989216938e80802bc36862105a77987d1c"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/REPORT.md",
+    "bytes": 2974,
+    "sha256": "8062434d31da181e6876d08a9e5f0461171f016178f8cad60ba2f2e922c042c2"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/CASE_NOTES.md",
+    "bytes": 839,
+    "sha256": "c746f2cd45c4f29f9fbfc6358c31062fd05f6df2d3ecb4ab88603974497ad1e9"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/modern_inference.json",
+    "bytes": 1164,
+    "sha256": "2c1b1f6495d201b7a28018ccae677a582975e46f4a9af32be77e6fe1267dc2c9"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/finbert_match_metrics.csv",
+    "bytes": 6020,
+    "sha256": "82a9962ffe79baeb6fd326acda6029ca749650b67468466d5ed35e48252eba9c"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/finbert_match_monthly.csv",
+    "bytes": 23036,
+    "sha256": "b689b54abc5de0cac506ff878d11c5b42e59aa8ed9ab0803158d7585ba28b07a"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/finbert_match_predictions.csv",
+    "bytes": 278922,
+    "sha256": "8181458fa66f5e10c7097839b5b4e372cc0a7c800c8b8210f56861be043f78ea"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/finbert_match_training.json",
+    "bytes": 17037,
+    "sha256": "bea38ae38cfd2ae0d1da1a5f4ee220c60318aaed190e1ec63bc64a7bedc4607f"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/finbert_match_cv.csv",
+    "bytes": 5793,
+    "sha256": "23c8c485b82ffee601b88010257a82d9805c6a3e164fa28afc844e4841d449ea"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/modern_metrics.csv",
+    "bytes": 6014,
+    "sha256": "9dd4faa40c8e56b9aaebb1f990329da68ca2c11a9bec3ede4d6d9984ba493e70"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/modern_monthly.csv",
+    "bytes": 23059,
+    "sha256": "fbcf5311947cba6591aa078e835fcae76cb5b64a3114b293901cf02dafdf2d95"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/modern_predictions.csv",
+    "bytes": 278936,
+    "sha256": "8ef245010499d5d40ce9b19e38787568e8cdfc07461e70a70c40ca6e72f9d62f"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/modern_training.json",
+    "bytes": 16907,
+    "sha256": "b30efeb1c0a0ae5402a20eb3c3943da6de7387ae8d24e4f09d903c2ee0bb5846"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/modern_cv.csv",
+    "bytes": 5846,
+    "sha256": "fbdd87ec503820c48085f5ccf10cf8a94f1661d77d930735c5667ae8ddbfb4fc"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/pooling_audit.json",
+    "bytes": 661,
+    "sha256": "6a11b1e58261311b6b46e133d1589d98ea9f8cd3c94f1e327c71d0371980eee0"
+  },
+  {
+    "path": "outputs/stock_foundation_4h/v2/verification.json",
+    "bytes": 661,
+    "sha256": "6a11b1e58261311b6b46e133d1589d98ea9f8cd3c94f1e327c71d0371980eee0"
+  },
+  {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION.md",
     "bytes": 2467,
     "sha256": "5923aa01d991cc8429057e78b0d24072b8f72b8e1cfb771eeb3667bc7b8357f1"

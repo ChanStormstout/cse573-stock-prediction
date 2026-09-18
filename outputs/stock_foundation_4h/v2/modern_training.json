@@ -1,0 +1,540 @@
+{
+  "fits": [
+    {
+      "name": "modern_AAPL_2018-03_MODERN_0.01.joblib",
+      "train_n": 116,
+      "eval_n": 62,
+      "seconds": 0.004198833019472659,
+      "reload_error": 2.220446049250313e-16,
+      "sha256": "91518e6ed063d60e1b12df4c7f59715c766754994c92e5c50955b81cb5ca5ea6",
+      "train_end": "2018-02-28 20:30:00+00:00",
+      "cutoff_min": "2018-03-01 14:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-03_MODERN_0.1.joblib",
+      "train_n": 116,
+      "eval_n": 62,
+      "seconds": 0.004016207996755838,
+      "reload_error": 3.885780586188048e-16,
+      "sha256": "64bf2016e8c59b5b6b7a7c69b7700c12db3775e81b18d7dc6e35cec4eeed85f1",
+      "train_end": "2018-02-28 20:30:00+00:00",
+      "cutoff_min": "2018-03-01 14:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-03_MODERN_1.0.joblib",
+      "train_n": 116,
+      "eval_n": 62,
+      "seconds": 0.004071584000485018,
+      "reload_error": 8.326672684688674e-16,
+      "sha256": "0977bc51811ba4ad5fcf6867cf750c84200c415bb09a942a81a52f156dda53ac",
+      "train_end": "2018-02-28 20:30:00+00:00",
+      "cutoff_min": "2018-03-01 14:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-04_MODERN_0.01.joblib",
+      "train_n": 178,
+      "eval_n": 63,
+      "seconds": 0.004592832992784679,
+      "reload_error": 0.0,
+      "sha256": "b5e5a86225916e7897fa2e64bead4fe31f88f02c9bb8e6be9fe1407ee8c512e7",
+      "train_end": "2018-03-29 19:30:00+00:00",
+      "cutoff_min": "2018-04-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-04_MODERN_0.1.joblib",
+      "train_n": 178,
+      "eval_n": 63,
+      "seconds": 0.0040379579877480865,
+      "reload_error": 0.0,
+      "sha256": "4e5fc01af2eafc76d868c4c87b2d43d7bdfe995d1f4f8942a605bc4b29ae4403",
+      "train_end": "2018-03-29 19:30:00+00:00",
+      "cutoff_min": "2018-04-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-04_MODERN_1.0.joblib",
+      "train_n": 178,
+      "eval_n": 63,
+      "seconds": 0.004095709009561688,
+      "reload_error": 0.0,
+      "sha256": "dd300d9fd2d7050668ae8926a4e601fea9827482a3daf95241abc9fd3f77d139",
+      "train_end": "2018-03-29 19:30:00+00:00",
+      "cutoff_min": "2018-04-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-05_MODERN_0.01.joblib",
+      "train_n": 241,
+      "eval_n": 66,
+      "seconds": 0.004531999991741031,
+      "reload_error": 0.0,
+      "sha256": "5ae5132160ffd89d3f6a5bd1c3264bf4ce2d63b1c7e48de91b68ae7037a07d65",
+      "train_end": "2018-04-30 19:30:00+00:00",
+      "cutoff_min": "2018-05-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-05_MODERN_0.1.joblib",
+      "train_n": 241,
+      "eval_n": 66,
+      "seconds": 0.004252375016221777,
+      "reload_error": 0.0,
+      "sha256": "fba6ca13704f09fa13a3e1debf3f399c12b248ea543b637db452f8a2a9222bb1",
+      "train_end": "2018-04-30 19:30:00+00:00",
+      "cutoff_min": "2018-05-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-05_MODERN_1.0.joblib",
+      "train_n": 241,
+      "eval_n": 66,
+      "seconds": 0.004553165985271335,
+      "reload_error": 0.0,
+      "sha256": "e883459b64f39acb1035813647df5cd8852cf504b8063bc98f72b048918ce8a0",
+      "train_end": "2018-04-30 19:30:00+00:00",
+      "cutoff_min": "2018-05-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-06_MODERN_0.01.joblib",
+      "train_n": 307,
+      "eval_n": 63,
+      "seconds": 0.0046392499934881926,
+      "reload_error": 0.0,
+      "sha256": "3e1197134ee97dea5769c58ee498889b24388229631cea46e9c4cb88084293e7",
+      "train_end": "2018-05-31 19:30:00+00:00",
+      "cutoff_min": "2018-06-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-06_MODERN_0.1.joblib",
+      "train_n": 307,
+      "eval_n": 63,
+      "seconds": 0.004357249999884516,
+      "reload_error": 0.0,
+      "sha256": "c36ad9e9b2b0abe21b8696829bed39f9224ec4144625b54f79bc825ba6af0ce3",
+      "train_end": "2018-05-31 19:30:00+00:00",
+      "cutoff_min": "2018-06-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-06_MODERN_1.0.joblib",
+      "train_n": 307,
+      "eval_n": 63,
+      "seconds": 0.00455804102239199,
+      "reload_error": 0.0,
+      "sha256": "e76658daef0b6a390690d2857fff2eaf2efe127ac43ad5a2f2c215f301d6e475",
+      "train_end": "2018-05-31 19:30:00+00:00",
+      "cutoff_min": "2018-06-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-07_MODERN_0.01.joblib",
+      "train_n": 370,
+      "eval_n": 60,
+      "seconds": 0.004631833988241851,
+      "reload_error": 0.0,
+      "sha256": "548ec615592aa3316f0ec980b365607b026a7889ecb462d7b30f15245a7b37bc",
+      "train_end": "2018-06-29 19:30:00+00:00",
+      "cutoff_min": "2018-07-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-07_MODERN_0.1.joblib",
+      "train_n": 370,
+      "eval_n": 60,
+      "seconds": 0.004545000003417954,
+      "reload_error": 0.0,
+      "sha256": "df9bd70fff6be0c233d7991e840a1667d32aa27ce7af24c4706e64ab307a1f6f",
+      "train_end": "2018-06-29 19:30:00+00:00",
+      "cutoff_min": "2018-07-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-07_MODERN_1.0.joblib",
+      "train_n": 370,
+      "eval_n": 60,
+      "seconds": 0.004852582991588861,
+      "reload_error": 0.0,
+      "sha256": "73b50c520ced2bb1bcb1759c8a6b16e270b55cb72f192bac7fe8e999362cb52f",
+      "train_end": "2018-06-29 19:30:00+00:00",
+      "cutoff_min": "2018-07-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-08_MODERN_0.01.joblib",
+      "train_n": 430,
+      "eval_n": 69,
+      "seconds": 0.004718625015811995,
+      "reload_error": 0.0,
+      "sha256": "813780f96329212c6858248823cf4cc00d849df2c51b78342ad233144b4b109b",
+      "train_end": "2018-07-31 19:30:00+00:00",
+      "cutoff_min": "2018-08-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-08_MODERN_0.1.joblib",
+      "train_n": 430,
+      "eval_n": 69,
+      "seconds": 0.004611250013113022,
+      "reload_error": 0.0,
+      "sha256": "99736697583e07fd94d7e7ce755c6d72b92783b200f31ef0b0a92dd7f4f16ef2",
+      "train_end": "2018-07-31 19:30:00+00:00",
+      "cutoff_min": "2018-08-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_2018-08_MODERN_1.0.joblib",
+      "train_n": 430,
+      "eval_n": 69,
+      "seconds": 0.00490699999500066,
+      "reload_error": 0.0,
+      "sha256": "54f6129957bfd5b4b5a26816dacb8709083be635746245ba145342744bfe4574",
+      "train_end": "2018-07-31 19:30:00+00:00",
+      "cutoff_min": "2018-08-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AAPL_final_MODERN_0.1.joblib",
+      "train_n": 499,
+      "eval_n": 304,
+      "seconds": 0.005454166006529704,
+      "reload_error": 0.0,
+      "sha256": "ab7f546a697d756174e1084fce668691dc878d8ef79eb78601c6e946166ccc05",
+      "train_end": "2018-08-31 19:30:00+00:00",
+      "cutoff_min": "2018-09-04 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-03_MODERN_0.01.joblib",
+      "train_n": 117,
+      "eval_n": 62,
+      "seconds": 0.003906416997779161,
+      "reload_error": 2.220446049250313e-16,
+      "sha256": "ffc3d0892d95c5a65ac455068a97bd473cc34ec6538efc6f92f0feb86e26acb6",
+      "train_end": "2018-02-28 20:30:00+00:00",
+      "cutoff_min": "2018-03-01 14:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-03_MODERN_0.1.joblib",
+      "train_n": 117,
+      "eval_n": 62,
+      "seconds": 0.004320500011090189,
+      "reload_error": 3.3306690738754696e-16,
+      "sha256": "fea54ef4703f0bca09d762c5724b43cf910a50da827337859894a35866cc42d1",
+      "train_end": "2018-02-28 20:30:00+00:00",
+      "cutoff_min": "2018-03-01 14:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-03_MODERN_1.0.joblib",
+      "train_n": 117,
+      "eval_n": 62,
+      "seconds": 0.004006957984529436,
+      "reload_error": 4.440892098500626e-16,
+      "sha256": "5c5e9c60f9cb1c1ea47b3e66eadf98287decb243a925305b7843d63a37636c8e",
+      "train_end": "2018-02-28 20:30:00+00:00",
+      "cutoff_min": "2018-03-01 14:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-04_MODERN_0.01.joblib",
+      "train_n": 179,
+      "eval_n": 63,
+      "seconds": 0.003979375003837049,
+      "reload_error": 2.220446049250313e-16,
+      "sha256": "476ab9e97676cc1b5ead628c269b24b1ea1dc796502d670cbfc6cd43ad450a4a",
+      "train_end": "2018-03-29 19:30:00+00:00",
+      "cutoff_min": "2018-04-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-04_MODERN_0.1.joblib",
+      "train_n": 179,
+      "eval_n": 63,
+      "seconds": 0.004156082984991372,
+      "reload_error": 2.220446049250313e-16,
+      "sha256": "1e35283991acfcbf326265539a13a29146012125133e7e6f859ea3ddbef45a25",
+      "train_end": "2018-03-29 19:30:00+00:00",
+      "cutoff_min": "2018-04-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-04_MODERN_1.0.joblib",
+      "train_n": 179,
+      "eval_n": 63,
+      "seconds": 0.004101083002751693,
+      "reload_error": 3.3306690738754696e-16,
+      "sha256": "3bf0c202df9b44e6d5183fd3f46f500387c28ba194a572521c0f6b0a253bce30",
+      "train_end": "2018-03-29 19:30:00+00:00",
+      "cutoff_min": "2018-04-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-05_MODERN_0.01.joblib",
+      "train_n": 242,
+      "eval_n": 65,
+      "seconds": 0.004109458008315414,
+      "reload_error": 1.1102230246251565e-16,
+      "sha256": "47986f40e6e3cc27336e412045fb583722614a19934d5cb03a91cc399e4f9bc8",
+      "train_end": "2018-04-30 19:30:00+00:00",
+      "cutoff_min": "2018-05-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-05_MODERN_0.1.joblib",
+      "train_n": 242,
+      "eval_n": 65,
+      "seconds": 0.004424833983648568,
+      "reload_error": 1.1102230246251565e-16,
+      "sha256": "67ab25b515c484202d6bda0b55f0e366ebb63ffbdfee5ed18fc9e2ec48c3214f",
+      "train_end": "2018-04-30 19:30:00+00:00",
+      "cutoff_min": "2018-05-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-05_MODERN_1.0.joblib",
+      "train_n": 242,
+      "eval_n": 65,
+      "seconds": 0.004217999987304211,
+      "reload_error": 2.220446049250313e-16,
+      "sha256": "f6ceba28bf25ef9587103274676da6d597e2deb675b312429053daaa458264b2",
+      "train_end": "2018-04-30 19:30:00+00:00",
+      "cutoff_min": "2018-05-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-06_MODERN_0.01.joblib",
+      "train_n": 307,
+      "eval_n": 63,
+      "seconds": 0.004268999997293577,
+      "reload_error": 1.1102230246251565e-16,
+      "sha256": "80882e9dfe647d8de96fe056847183c7078de61c7726060bd2ae901a54b167d5",
+      "train_end": "2018-05-31 19:30:00+00:00",
+      "cutoff_min": "2018-06-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-06_MODERN_0.1.joblib",
+      "train_n": 307,
+      "eval_n": 63,
+      "seconds": 0.004305624985136092,
+      "reload_error": 2.220446049250313e-16,
+      "sha256": "083e0e8972a80313e62aa7f0447dfcdcd2729afcdd8fc8604016ad25563d40c0",
+      "train_end": "2018-05-31 19:30:00+00:00",
+      "cutoff_min": "2018-06-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-06_MODERN_1.0.joblib",
+      "train_n": 307,
+      "eval_n": 63,
+      "seconds": 0.004344916989794001,
+      "reload_error": 2.7755575615628914e-16,
+      "sha256": "a366eecb8cee49311c6e7329cdee81898a5cfa15c04613fc9571de5e37538681",
+      "train_end": "2018-05-31 19:30:00+00:00",
+      "cutoff_min": "2018-06-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-07_MODERN_0.01.joblib",
+      "train_n": 370,
+      "eval_n": 60,
+      "seconds": 0.004586041992297396,
+      "reload_error": 1.1102230246251565e-16,
+      "sha256": "da3891e8f609937fa45059e4de9314afcf406caea9421f35c82c95b3d1f33238",
+      "train_end": "2018-06-29 19:30:00+00:00",
+      "cutoff_min": "2018-07-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-07_MODERN_0.1.joblib",
+      "train_n": 370,
+      "eval_n": 60,
+      "seconds": 0.004602125001838431,
+      "reload_error": 1.1102230246251565e-16,
+      "sha256": "6ac1815475a2e85bef5b7a48d947f6169b34c2f6a3d114af8b8c7f3081c17150",
+      "train_end": "2018-06-29 19:30:00+00:00",
+      "cutoff_min": "2018-07-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-07_MODERN_1.0.joblib",
+      "train_n": 370,
+      "eval_n": 60,
+      "seconds": 0.004510291997576132,
+      "reload_error": 1.6653345369377348e-16,
+      "sha256": "d4b38a02137eafc166c3f5f356be3657e6ce84142b7e9476b3b6edc3db5b5a3b",
+      "train_end": "2018-06-29 19:30:00+00:00",
+      "cutoff_min": "2018-07-02 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-08_MODERN_0.01.joblib",
+      "train_n": 430,
+      "eval_n": 69,
+      "seconds": 0.004552083992166445,
+      "reload_error": 1.1102230246251565e-16,
+      "sha256": "0236b419b4eaac5150ce04002760ad88806f83d84c03b49be25374713116d202",
+      "train_end": "2018-07-31 19:30:00+00:00",
+      "cutoff_min": "2018-08-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-08_MODERN_0.1.joblib",
+      "train_n": 430,
+      "eval_n": 69,
+      "seconds": 0.0045612080139108,
+      "reload_error": 1.1102230246251565e-16,
+      "sha256": "8da33c90129820cb2fb30af45394a9d7b94e310b97173034dcae13d9c63dbcd2",
+      "train_end": "2018-07-31 19:30:00+00:00",
+      "cutoff_min": "2018-08-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_2018-08_MODERN_1.0.joblib",
+      "train_n": 430,
+      "eval_n": 69,
+      "seconds": 0.004666291002649814,
+      "reload_error": 1.1102230246251565e-16,
+      "sha256": "ffe52a3dd8b0317541827529d1c41dff825cae2599c72faa656a3f9d5ec4ee4e",
+      "train_end": "2018-07-31 19:30:00+00:00",
+      "cutoff_min": "2018-08-01 13:25:00+00:00"
+    },
+    {
+      "name": "modern_AMZN_final_MODERN_0.01.joblib",
+      "train_n": 499,
+      "eval_n": 305,
+      "seconds": 0.005109582998557016,
+      "reload_error": 2.220446049250313e-16,
+      "sha256": "9918aca65afa26e025152e3c1730640e244818b57d78cb016365cf52b4b25416",
+      "train_end": "2018-08-31 19:30:00+00:00",
+      "cutoff_min": "2018-09-04 13:25:00+00:00"
+    }
+  ],
+  "choices": [
+    {
+      "symbol": "AAPL",
+      "month": "2018-03",
+      "method": "MODERN",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-04",
+      "method": "MODERN",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-05",
+      "method": "MODERN",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-06",
+      "method": "MODERN",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-07",
+      "method": "MODERN",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "2018-08",
+      "method": "MODERN",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "month": "final",
+      "method": "MODERN",
+      "C": 0.1,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-03",
+      "method": "MODERN",
+      "C": 0.1,
+      "selection_months": []
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-04",
+      "method": "MODERN",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-05",
+      "method": "MODERN",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-06",
+      "method": "MODERN",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-07",
+      "method": "MODERN",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "2018-08",
+      "method": "MODERN",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07"
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "month": "final",
+      "method": "MODERN",
+      "C": 0.01,
+      "selection_months": [
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08"
+      ]
+    }
+  ],
+  "code_sha256": "7a86b7af8d8c66b1b90e569d8b1867e0a11a3e87d9a67c41c8c2b9f325366680",
+  "protocol_sha256": "b89ded35dea32a948440611b8e7b54989216938e80802bc36862105a77987d1c"
+}

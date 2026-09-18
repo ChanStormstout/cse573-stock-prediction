@@ -113,3 +113,16 @@ status is PASS; D1 remains a small diagnostic and D2 remains stopped by gate.
 
 No private weight audit rows or model binaries were added to Git. A push was
 attempted after this local stage and again requires GitHub DNS/network access.
+
+## Stage 3 completion (local)
+
+The canonical FinBERT J2 path was rerun first and reproduced 1,374 non-warmup
+probabilities with maximum absolute error `1.72e-15`. This satisfied the gate
+for the ModernBERT comparison. v2 then encoded the same 5,078 titles with a
+special-token-excluded mean pool on MPS (159 batches, 26.25 seconds, zero
+trainable parameters) and reran the frozen PCA/LR protocol.
+
+Modern v2 did not pass the cross-stock training-period promotion rule; no
+dual-encoder fusion or further tuning was run. The safe claim is a repaired
+frozen encoder probe with mixed exposed-period results, not a full paper
+reproduction or a proof that ModernBERT is ineffective.

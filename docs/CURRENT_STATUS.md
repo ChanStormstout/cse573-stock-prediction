@@ -11,9 +11,14 @@ stock-month cells，并确认 canonical parity 失败时训练与评价都使用
 核验结果为 PASS，详见 [recency weight audit](../outputs/stock_recency_dense_4h/v4/recency_weight_audit.json)
 和 [v4 verification](../outputs/stock_recency_dense_4h/v4/verification.json)。
 
-Stage 3 的 FinBERT/Fin-ModernBERT 公平 pooling 对照、Stage 4 的 TabPFN
-来源审计及 Stage 5 的 claim-only 审计仍未完成；旧 Modern、TabPFN、SSL、
+Stage 3 的 FinBERT/Fin-ModernBERT 公平 pooling 对照已完成：canonical
+FinBERT 重现误差为 `1.72e-15`，v2 ModernBERT 排除了 special tokens，
+但没有通过晋级线，也没有继续做融合。Stage 4 的 TabPFN 来源审计及
+Stage 5 的 claim-only 审计仍未完成；旧 Modern、TabPFN、SSL、
 analogy、Event Adapter、Chronos 和校准结果继续按方法真值表的窄声明解释。
+
+详见 [ModernBERT v2 报告](../outputs/stock_foundation_4h/v2/REPORT.md) 和
+[v2 verification](../outputs/stock_foundation_4h/v2/verification.json)。
 
 ## 最新完成：v4 recency/dense 修正与全语料新闻 reaction probe（2026-09-17）
 
