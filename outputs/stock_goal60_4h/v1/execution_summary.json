@@ -1,0 +1,32 @@
+{
+  "counts": {
+    "LR_fits": 456,
+    "boosting_fits": 28,
+    "TabPFN_conditioning": 28,
+    "bilinear_final_fits": 84,
+    "bilinear_early_stop_fits": 84
+  },
+  "fit_seconds": {
+    "F1_new": 4.162822665006388,
+    "F2_new": 1.9853497069852892,
+    "H0": 2.933351125975605,
+    "H1": 8.101164290041197,
+    "H2": 5.9639170799346175,
+    "P_cross_hgb": 1.8808091220271308,
+    "P_cross_lr": 0.21668374817818403,
+    "P_cross_tabpfn": 22.602119708055397,
+    "P_own_hgb": 1.100959041097667,
+    "P_own_lr": 0.2519509139820002,
+    "P_own_tabpfn": 23.566588166053407,
+    "T_A1": 6.4000282510533,
+    "T_A1_interaction": 3.7285357100190595,
+    "T_mix": 3.8897365428856574,
+    "T_original": 1.9650963310559746,
+    "T_original_interaction": 4.277013833052479
+  },
+  "independent_metric_rows": 222,
+  "max_metric_error": 1.1102230246251565e-16,
+  "model_bundle_hashes": 596,
+  "all_advanced": false,
+  "all_periods_exposed": true
+}

@@ -1,0 +1,26 @@
+{
+  "protocol_sha256": "43bc92e9fea80ea18a77055645412ec35e008d998c3a1c70ce2154aa5520d6ad",
+  "status": "completed finite existing-data experiment",
+  "sample_count": 1607,
+  "all_periods_exposed": true,
+  "external_market": "AUTH_REQUIRED",
+  "methods": [
+    "F1_new",
+    "F2_new",
+    "H0",
+    "H1",
+    "H2",
+    "P_cross_hgb",
+    "P_cross_lr",
+    "P_cross_tabpfn",
+    "P_own_hgb",
+    "P_own_lr",
+    "P_own_tabpfn",
+    "T_A1",
+    "T_A1_interaction",
+    "T_mix",
+    "T_original",
+    "T_original_interaction"
+  ],
+  "independent_event_quality_review": false
+}

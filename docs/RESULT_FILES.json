@@ -873,5 +873,135 @@
     "path": "outputs/stock_foundation_4h/v1/verification.json",
     "bytes": 758,
     "sha256": "5b13407f30ae2eb1b69f3d700814e5254ce618ebfbfd343d8b2fdae9bd838a49"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/advancement.json",
+    "bytes": 3462,
+    "sha256": "55cddce643757523e6f4bbf48c99eafb71fb8d0b0280598c0af47e3dbb75c082"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/calibration.json",
+    "bytes": 31417,
+    "sha256": "9042e45eed37f28c480d37fc3daa9ef105d59ef7ebf9706b2927e53dc2878dc3"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/case_selection.json",
+    "bytes": 4173,
+    "sha256": "4ec99d55158f69c287918868a503fde1baea9400866f90d19de68967a860e322"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/cases.json",
+    "bytes": 16900,
+    "sha256": "74f9dcccc3ea4365b26c7acea10e712ffe5149df1efcaf3bac76781d850c4749"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/checks.json",
+    "bytes": 1898,
+    "sha256": "049b1ae54d86822f8cb9f9866484095a91a632e682a45cb78112bed261033d25"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/combination_selection.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/demo.html",
+    "bytes": 473427,
+    "sha256": "58797987e58be64eb46c5537c1f8fe2138931453b01b7a404a1e367c35047793"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/demo_verification.json",
+    "bytes": 317,
+    "sha256": "f014106bb4fcdaac8dabe3438f6ec1d3a20a42eea764a975048a5e2ed2bb2793"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/environment.json",
+    "bytes": 493,
+    "sha256": "c9528570df733027a2783dff6b6d0cb7a634f928d59dc87dba20f05dd667200f"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/execution_summary.json",
+    "bytes": 933,
+    "sha256": "cc9b41b050f3ed8aaf01f17ebeb22d4b00c7735754da5d6194a399475faddeec"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/external_data_status.json",
+    "bytes": 297,
+    "sha256": "f1a879763c51656167c41804e2ca07dd05442c8c003238b4b12392aaadb81047"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/history_coverage_summary.csv",
+    "bytes": 299,
+    "sha256": "eb55ff358ca19ed4cc4c24399859e302b3fc3a1207d97f6b0d39ef4ae349f011"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/history_independent_checks.json",
+    "bytes": 663,
+    "sha256": "b44c048df6ab7acb181e2cc6d18eb6ead58f5a56f581e98146b6002912899a53"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/inference_evidence.json",
+    "bytes": 3921,
+    "sha256": "dd0c62a057ab8e4b2df59858bd24a9873cbb016c9393be3c5edf49a2932515f2"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/matched_intervals.csv",
+    "bytes": 14302,
+    "sha256": "42b56c841770528c9b09fe421b86a00e81f5e66a678ade75d38d80233ef2df2a"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/metrics.csv",
+    "bytes": 25530,
+    "sha256": "3d19f58d660c99db300b57a3ec7ebcc1b55cd2691de3a87abf792176719a6e8a"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/monthly_metrics.csv",
+    "bytes": 92688,
+    "sha256": "1792100f9f94b340b3a0bf017ffeb1251d8d48280624ca2a69f442b0a99256f4"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/outer_monthly_summary.csv",
+    "bytes": 1396,
+    "sha256": "f6e989c28ba573474d4f7fdc858aa2954ad41420331bac068fc1f43c1a4dd150"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/paired_intervals.csv",
+    "bytes": 16206,
+    "sha256": "76f3f692c225d005a2f36c2c4191f98eb5b9c97d155ae41c6e807f5417c6a955"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/predictions.csv",
+    "bytes": 1093536,
+    "sha256": "0050509aa1c8fb84dadf9748d399b972bef04c936fad2afb00b8a232977113a6"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/protocol.json",
+    "bytes": 573,
+    "sha256": "68f94953036bb89ee3b8be3a65c3778f2b2c28e563b7570233049de90c1e3725"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/seed_metrics.csv",
+    "bytes": 6542,
+    "sha256": "735142d208471e6d7e0e733aa2a5b6fce683c7021801ccfa9138a7c319f877a8"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/seed_summary.csv",
+    "bytes": 2843,
+    "sha256": "0e2fd68f46a12f9b39d7df5879ebe8ef24c5088715580e4080aa77add894e8d6"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/strata_metrics.csv",
+    "bytes": 44887,
+    "sha256": "33627bee7592c356058e17ba743a4f42ad9561f34b581fceab1780697234e6c3"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/training_evidence.json",
+    "bytes": 1379587,
+    "sha256": "3c976980e3a1313fc3c1acb4a04dd7d0650beb52219d4fdc4a03a396d3ebaeaa"
+  },
+  {
+    "path": "outputs/stock_goal60_4h/v1/transitions.csv",
+    "bytes": 8951,
+    "sha256": "790653b180c3c22e35b9b049b6b8937ada9c346b88965d818f19bb717b806084"
   }
 ]

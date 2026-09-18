@@ -1,0 +1,1570 @@
+[
+  {
+    "method": "F1_new",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051876979198517,
+    "past_n": 62
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005188032680568,
+    "past_n": 62
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005188447547437,
+    "past_n": 125
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051880946115721,
+    "past_n": 125
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051881898532504,
+    "past_n": 191
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051883367782687,
+    "past_n": 190
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051877636384534,
+    "past_n": 254
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051889397114148,
+    "past_n": 253
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051889080631572,
+    "past_n": 314
+  },
+  {
+    "method": "F1_new",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051899302577055,
+    "past_n": 313
+  },
+  {
+    "method": "F1_new",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.09571435417600277,
+    "past_n": 383
+  },
+  {
+    "method": "F1_new",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.12066494760932776,
+    "past_n": 382
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051888104315702,
+    "past_n": 62
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051882934748749,
+    "past_n": 62
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051874272148882,
+    "past_n": 125
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051886872238137,
+    "past_n": 125
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051879843211868,
+    "past_n": 191
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005188488793383,
+    "past_n": 190
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051896218822482,
+    "past_n": 254
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051887012678418,
+    "past_n": 253
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051898646651587,
+    "past_n": 314
+  },
+  {
+    "method": "F2_new",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051891404930855,
+    "past_n": 313
+  },
+  {
+    "method": "F2_new",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051883226637378,
+    "past_n": 383
+  },
+  {
+    "method": "F2_new",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051894446223213,
+    "past_n": 382
+  },
+  {
+    "method": "H0",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "H0",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "H0",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051891524935512,
+    "past_n": 62
+  },
+  {
+    "method": "H0",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051877170295216,
+    "past_n": 62
+  },
+  {
+    "method": "H0",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051894251956765,
+    "past_n": 125
+  },
+  {
+    "method": "H0",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051891606124894,
+    "past_n": 125
+  },
+  {
+    "method": "H0",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051880089825153,
+    "past_n": 191
+  },
+  {
+    "method": "H0",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051891521245934,
+    "past_n": 190
+  },
+  {
+    "method": "H0",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051872302123694,
+    "past_n": 254
+  },
+  {
+    "method": "H0",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051892304673635,
+    "past_n": 253
+  },
+  {
+    "method": "H0",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051870290733502,
+    "past_n": 314
+  },
+  {
+    "method": "H0",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051894136213109,
+    "past_n": 313
+  },
+  {
+    "method": "H0",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051882776439812,
+    "past_n": 383
+  },
+  {
+    "method": "H0",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051896315312087,
+    "past_n": 382
+  },
+  {
+    "method": "H1",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "H1",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "H1",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005189571017996,
+    "past_n": 62
+  },
+  {
+    "method": "H1",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051884710215482,
+    "past_n": 62
+  },
+  {
+    "method": "H1",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.0510522021794145,
+    "past_n": 125
+  },
+  {
+    "method": "H1",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051896247137995,
+    "past_n": 125
+  },
+  {
+    "method": "H1",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005189979607409,
+    "past_n": 191
+  },
+  {
+    "method": "H1",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051894277194369,
+    "past_n": 190
+  },
+  {
+    "method": "H1",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051879206436657,
+    "past_n": 254
+  },
+  {
+    "method": "H1",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051895348158525,
+    "past_n": 253
+  },
+  {
+    "method": "H1",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005190267790748,
+    "past_n": 314
+  },
+  {
+    "method": "H1",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051896605915241,
+    "past_n": 313
+  },
+  {
+    "method": "H1",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051885168325789,
+    "past_n": 383
+  },
+  {
+    "method": "H1",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051897327324644,
+    "past_n": 382
+  },
+  {
+    "method": "H2",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "H2",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "H2",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051895254594075,
+    "past_n": 62
+  },
+  {
+    "method": "H2",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051884115059499,
+    "past_n": 62
+  },
+  {
+    "method": "H2",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.044846468855612776,
+    "past_n": 125
+  },
+  {
+    "method": "H2",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051895381033502,
+    "past_n": 125
+  },
+  {
+    "method": "H2",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051875340324378,
+    "past_n": 191
+  },
+  {
+    "method": "H2",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005189364841387,
+    "past_n": 190
+  },
+  {
+    "method": "H2",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051888383616918,
+    "past_n": 254
+  },
+  {
+    "method": "H2",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051893576533166,
+    "past_n": 253
+  },
+  {
+    "method": "H2",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051871114562485,
+    "past_n": 314
+  },
+  {
+    "method": "H2",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051894696571164,
+    "past_n": 313
+  },
+  {
+    "method": "H2",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051899626881338,
+    "past_n": 383
+  },
+  {
+    "method": "H2",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051895334857123,
+    "past_n": 382
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051870347971566,
+    "past_n": 62
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051882909945442,
+    "past_n": 62
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.045785869340864,
+    "past_n": 125
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051886865323127,
+    "past_n": 125
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051874949887445,
+    "past_n": 191
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005189222419288,
+    "past_n": 190
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010151566280393915,
+    "past_n": 254
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051892146128462,
+    "past_n": 253
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.05058760364194341,
+    "past_n": 314
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051891239214347,
+    "past_n": 313
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.14399691526685623,
+    "past_n": 383
+  },
+  {
+    "method": "P_cross_hgb",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051892465537959,
+    "past_n": 382
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051894591278625,
+    "past_n": 62
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051882469642186,
+    "past_n": 62
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.0100518833211374,
+    "past_n": 125
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051883224836923,
+    "past_n": 125
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005187325156793,
+    "past_n": 191
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051884472541244,
+    "past_n": 190
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051876220715558,
+    "past_n": 254
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051890754334394,
+    "past_n": 253
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051877167257145,
+    "past_n": 314
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051897829608518,
+    "past_n": 313
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.11224231503683038,
+    "past_n": 383
+  },
+  {
+    "method": "P_cross_lr",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.02042113936430335,
+    "past_n": 382
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051891749926623,
+    "past_n": 62
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051889242809465,
+    "past_n": 62
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051878944879708,
+    "past_n": 125
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051887987396004,
+    "past_n": 125
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051894638600511,
+    "past_n": 191
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005188814386989,
+    "past_n": 190
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051884913129788,
+    "past_n": 254
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005189108053721,
+    "past_n": 253
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.07654082085379686,
+    "past_n": 314
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005189303734709,
+    "past_n": 313
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.12227528082290895,
+    "past_n": 383
+  },
+  {
+    "method": "P_cross_tabpfn",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005189804725816,
+    "past_n": 382
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051895869438545,
+    "past_n": 62
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051882897635487,
+    "past_n": 62
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051892163511076,
+    "past_n": 125
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051886078391331,
+    "past_n": 125
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005188261685154,
+    "past_n": 191
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051891258246294,
+    "past_n": 190
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.05602910362745651,
+    "past_n": 254
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051897233585252,
+    "past_n": 253
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.10343617802167472,
+    "past_n": 314
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051895887342071,
+    "past_n": 313
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.20773184182911417,
+    "past_n": 383
+  },
+  {
+    "method": "P_own_hgb",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005189645938405,
+    "past_n": 382
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051893758183487,
+    "past_n": 62
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051878768208811,
+    "past_n": 62
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.08943157679435386,
+    "past_n": 125
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051886782024467,
+    "past_n": 125
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.0839296585933008,
+    "past_n": 191
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051886270802215,
+    "past_n": 190
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.02412308467923129,
+    "past_n": 254
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051892800898141,
+    "past_n": 253
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.09407718615343132,
+    "past_n": 314
+  },
+  {
+    "method": "P_own_lr",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051870170668513,
+    "past_n": 313
+  },
+  {
+    "method": "P_own_lr",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.239235994698555,
+    "past_n": 383
+  },
+  {
+    "method": "P_own_lr",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.044737692783537106,
+    "past_n": 382
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051890292251574,
+    "past_n": 62
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005187834486637,
+    "past_n": 62
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051902781809138,
+    "past_n": 125
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051878956995807,
+    "past_n": 125
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051896009114172,
+    "past_n": 191
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051879970879495,
+    "past_n": 190
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005189243572353,
+    "past_n": 254
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051884289450303,
+    "past_n": 253
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.1695522618691278,
+    "past_n": 314
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051887564588241,
+    "past_n": 313
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.4469957288115399,
+    "past_n": 383
+  },
+  {
+    "method": "P_own_tabpfn",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051893104175928,
+    "past_n": 382
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.2547692450896912,
+    "past_n": 62
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051883739980075,
+    "past_n": 62
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.06886628351162126,
+    "past_n": 125
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051891381091175,
+    "past_n": 125
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.03953109416383486,
+    "past_n": 191
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051892549509079,
+    "past_n": 190
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051900949667323,
+    "past_n": 254
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051898722852635,
+    "past_n": 253
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051897750368934,
+    "past_n": 314
+  },
+  {
+    "method": "T_A1",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051870422908752,
+    "past_n": 313
+  },
+  {
+    "method": "T_A1",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.057290272843491065,
+    "past_n": 383
+  },
+  {
+    "method": "T_A1",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051876424893967,
+    "past_n": 382
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051880547382909,
+    "past_n": 62
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005188832763434,
+    "past_n": 62
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051900629402782,
+    "past_n": 125
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051882407866405,
+    "past_n": 125
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005189246011408,
+    "past_n": 191
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051885863043428,
+    "past_n": 190
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051887129165818,
+    "past_n": 254
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051892455387144,
+    "past_n": 253
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051883115345488,
+    "past_n": 314
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051881178027645,
+    "past_n": 313
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051887007536045,
+    "past_n": 383
+  },
+  {
+    "method": "T_A1_interaction",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.13578280456018144,
+    "past_n": 382
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005188371929494,
+    "past_n": 62
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051878260543996,
+    "past_n": 62
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051891802668855,
+    "past_n": 125
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051895949525155,
+    "past_n": 125
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005189314349701,
+    "past_n": 191
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051893214818435,
+    "past_n": 190
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051892507943905,
+    "past_n": 254
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051893776439563,
+    "past_n": 253
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051893679421997,
+    "past_n": 314
+  },
+  {
+    "method": "T_mix",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051895507276544,
+    "past_n": 313
+  },
+  {
+    "method": "T_mix",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005188290191863,
+    "past_n": 383
+  },
+  {
+    "method": "T_mix",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.0100518971742368,
+    "past_n": 382
+  },
+  {
+    "method": "T_original",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_original",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_original",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.23667951606998305,
+    "past_n": 62
+  },
+  {
+    "method": "T_original",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051879288882957,
+    "past_n": 62
+  },
+  {
+    "method": "T_original",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005188389714774,
+    "past_n": 125
+  },
+  {
+    "method": "T_original",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051894241000137,
+    "past_n": 125
+  },
+  {
+    "method": "T_original",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051879209097473,
+    "past_n": 191
+  },
+  {
+    "method": "T_original",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051885585352076,
+    "past_n": 190
+  },
+  {
+    "method": "T_original",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051870902761625,
+    "past_n": 254
+  },
+  {
+    "method": "T_original",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051901056403594,
+    "past_n": 253
+  },
+  {
+    "method": "T_original",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051871432512797,
+    "past_n": 314
+  },
+  {
+    "method": "T_original",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005187089859788,
+    "past_n": 313
+  },
+  {
+    "method": "T_original",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005189880926077,
+    "past_n": 383
+  },
+  {
+    "method": "T_original",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051878020977812,
+    "past_n": 382
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-03",
+    "symbol": "AAPL",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-03",
+    "symbol": "AMZN",
+    "positive_slope": 1.0,
+    "past_n": 0
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-04",
+    "symbol": "AAPL",
+    "positive_slope": 0.01005189140996055,
+    "past_n": 62
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-04",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051897719883103,
+    "past_n": 62
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-05",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051892426595876,
+    "past_n": 125
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-05",
+    "symbol": "AMZN",
+    "positive_slope": 0.01005189880615718,
+    "past_n": 125
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-06",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051896274633768,
+    "past_n": 191
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-06",
+    "symbol": "AMZN",
+    "positive_slope": 0.010051884472176212,
+    "past_n": 190
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-07",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051896982713039,
+    "past_n": 254
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-07",
+    "symbol": "AMZN",
+    "positive_slope": 0.07718512675061188,
+    "past_n": 253
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-08",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051882252084286,
+    "past_n": 314
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "2018-08",
+    "symbol": "AMZN",
+    "positive_slope": 0.27125757190902133,
+    "past_n": 313
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "final",
+    "symbol": "AAPL",
+    "positive_slope": 0.010051897549030282,
+    "past_n": 383
+  },
+  {
+    "method": "T_original_interaction",
+    "month": "final",
+    "symbol": "AMZN",
+    "positive_slope": 0.46458601746269157,
+    "past_n": 382
+  }
+]

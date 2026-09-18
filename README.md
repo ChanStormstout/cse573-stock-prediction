@@ -5,7 +5,9 @@
 ## 从这里开始
 
 - [当前结论与结果](docs/CURRENT_STATUS.md)
-- [最新Fin-ModernBERT、Chronos-2与固定正则对照](outputs/stock_foundation_4h/v1/REPORT.md)
+- [最新跨股价格、A1稠密与历史新闻实验](outputs/stock_goal60_4h/v1/REPORT.md)
+- [最新离线回放](outputs/stock_goal60_4h/v1/demo.html)
+- [Fin-ModernBERT、Chronos-2与固定正则对照](outputs/stock_foundation_4h/v1/REPORT.md)
 - [新模型离线回放](outputs/stock_foundation_4h/v1/demo.html)
 - [最新有限组合与AMZN归因](outputs/stock_combination_4h/v1/REPORT.md)
 - [课程报告主稿](docs/COURSE_REPORT_4H.md)
@@ -25,7 +27,7 @@
 
 ## 目前的结论
 
-完整四小时流水线已训练并保存结果，但尚未证明新组合对两只股票均有稳定提升。最新事件实验实际训练A0／A1／A2三种FinBERT适配器；A1在暂定April检查集的完整事实F1达到79.17%，明显高于已有规则和Qwen对照，但训练期OOF仍选择不对F1基础概率作事件修正。因此新闻理解改善没有转化成可验证的四小时方向增量。价格＋全文F1在四个股票×时期单元的BA都高于50%，仍是当前跨时期最稳定的统一方法；价格＋标题F0继续作为主baseline，不能依据后续时期的最高分事后挑股票专属模型。
+完整四小时流水线已训练并保存结果，但尚未证明新组合对两只股票均有稳定提升。最新跨股价格、TabPFN、A1稠密迁移、rank2交互和三交易日新闻状态均已实际运行，未通过预注册晋级线；因此没有强行融合，也没有找到两股稳定60%的方案。最新事件实验实际训练A0／A1／A2三种FinBERT适配器；A1在暂定April检查集的完整事实F1达到79.17%，明显高于已有规则和Qwen对照，但训练期OOF仍选择不对F1基础概率作事件修正。因此新闻理解改善没有转化成可验证的四小时方向增量。价格＋全文F1在四个股票×时期单元的BA都高于50%，仍是当前跨时期最稳定的统一方法；价格＋标题F0继续作为主baseline，不能依据后续时期的最高分事后挑股票专属模型。
 
 所有现有历史时期已经参与探索，结果称为**探索性历史回测**，不再称为全新独立测试。事件标签仍是双GPT＋助手裁决的暂定标签，独立质量复核尚未完成。旧F2中的FinBERT保持冻结；最新事件实验另外完成了顶部两层解冻和q/v LoRA，但没有直接用四小时涨跌标签全参数微调FinBERT。早期GRU、RL等实验不能当作四小时版本的已完成工作。
 

@@ -1,0 +1,99 @@
+{
+  "raw_four_hour_labels": 1607,
+  "P_own_lr": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true
+  },
+  "T_mix": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "H2": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "T_original_interaction": {
+    "fits": 14,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "F1_new": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "P_own_tabpfn": {
+    "fits": 14,
+    "past_only": true,
+    "fingerprint": true
+  },
+  "P_cross_hgb": {
+    "fits": 14,
+    "past_only": true,
+    "fingerprint": true
+  },
+  "F2_new": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "P_cross_lr": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true
+  },
+  "T_A1_interaction": {
+    "fits": 14,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "H1": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "H0": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "P_cross_tabpfn": {
+    "fits": 14,
+    "past_only": true,
+    "fingerprint": true
+  },
+  "T_A1": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "P_own_hgb": {
+    "fits": 14,
+    "past_only": true,
+    "fingerprint": true
+  },
+  "T_original": {
+    "fits": 38,
+    "past_only": true,
+    "fingerprint": true,
+    "exact_fallback": true
+  },
+  "fingerprint_change_rejected_before_fit": true,
+  "cross_time_rows": 1607,
+  "cross_features_recomputed": true,
+  "future_bar_perturbation": true,
+  "identical_encoder_tokens": true,
+  "mix_vs_F2_identical_price_input": true
+}

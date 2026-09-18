@@ -1,0 +1,16 @@
+{
+  "source": "Alpaca",
+  "symbols": [
+    "SPY",
+    "QQQ"
+  ],
+  "date": "2018-01-10",
+  "timeframe": "1Min",
+  "feed": "iex",
+  "adjustment": "raw",
+  "http_status": 401,
+  "status": "AUTH_REQUIRED",
+  "authenticated": false,
+  "included_in_experiments": false,
+  "user_has_no_account": true
+}

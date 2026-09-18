@@ -21,3 +21,8 @@ ${PYTHON} outputs/stock_nextgen_4h/test_contract.py -v
 ```
 
 随后按 README 运行 `run_all.py`。验证保存权重、全量原始标签与本地Qwen推理仍需要私有资产；不能只凭语法检查宣称完成这些核验。早期 `stock_adaptive_4h` 的环境与命令仍保留在其原目录，仅用于复现对应历史实验。
+
+
+### Latest finite goal60 round
+
+See `outputs/stock_goal60_4h/README.md`. Run `work/stock-data/finbert-env/bin/python outputs/stock_goal60_4h/run_all.py` with the private source artifacts available. The separate TabPFN runtime versions and exact checkpoint revision are in `v1/environment.json`. `replay_model.py T_A1_interaction` verifies an independently reloaded private model without retraining. Raw data and weights are intentionally not distributed.

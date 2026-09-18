@@ -1,0 +1,156 @@
+[
+  {
+    "key": "AAPL|2018-10-25 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "development",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AAPL|2018-09-21 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "development",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AAPL|2018-09-04 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "development",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AAPL|2018-10-04 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "development",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AAPL|2018-11-16 15:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "later",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AAPL|2018-12-26 16:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "later",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AAPL|2018-08-21 13:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "train_forward_oof",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AAPL|2018-04-24 14:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "train_forward_oof",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AAPL|2018-07-10 13:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "train_forward_oof",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AAPL|2018-04-06 13:30:00+00:00",
+    "symbol": "AAPL",
+    "phase": "train_forward_oof",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-09-13 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "development",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-10-01 15:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "development",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-10-02 13:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "development",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-10-10 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "development",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2019-01-14 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "later",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-11-09 16:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "later",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-11-12 15:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "later",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-11-30 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "later",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-03-09 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "train_forward_oof",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-04-05 15:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "train_forward_oof",
+    "original_news": 0,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-07-16 14:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "train_forward_oof",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  },
+  {
+    "key": "AMZN|2018-04-02 15:30:00+00:00",
+    "symbol": "AMZN",
+    "phase": "train_forward_oof",
+    "original_news": 1,
+    "selection": "first two SHA256 keys before new outcomes"
+  }
+]

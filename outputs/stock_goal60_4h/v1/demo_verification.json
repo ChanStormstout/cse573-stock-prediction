@@ -1,0 +1,11 @@
+{
+  "method": "Playwright browser navigation and DOM change event",
+  "http_status": 200,
+  "options": 609,
+  "first": "AAPL|2018-09-04 13:30:00+00:00",
+  "last": "AMZN|2019-02-01 15:30:00+00:00",
+  "selection_changed": true,
+  "table_rows": 84,
+  "finite_probability": true,
+  "console_only_missing_favicon": true
+}

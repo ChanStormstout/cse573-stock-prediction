@@ -55,3 +55,8 @@ INPUT_AUDIT.md、CASE_NOTES.md、METRICS.csv、TRANSITIONS.csv 和 PAIRED_INTERV
 > 的输入限制。检查新闻方向成绩与Brier是否一致改善、联合输入是否产生增量，
 > 将行为关联与因果解释分开。现代LLM可能预训练见过历史新闻，所有时期已暴露；
 > 不能把两股某单段BA超过50%直接写成独立泛化或校准成功。
+
+
+## Latest finite mechanism round
+
+Read [stock_goal60_4h report](../outputs/stock_goal60_4h/v1/REPORT.md), its PRE_REGISTRATION.md and IMPLEMENTATION_NOTES.md, then advancement.json, metrics.csv, training_evidence.json and CASE_NOTES.md. All16 new branches completed; none passed the declared gate. No final blend is claimed. Distinguish AMZN coverage recovery from predictive gain; independently review the matched price repair and strict float64 fallback. Alpaca remains AUTH_REQUIRED.
