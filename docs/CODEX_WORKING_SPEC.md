@@ -6,9 +6,11 @@ Repair and audit the experimental foundation of the ASU CSE 573 AAPL/AMZN
 four-hour direction project. Preserve the existing 1,607 official windows and
 all historical runs, repair only materially invalid or confounded implementations,
 correct claims about paper-inspired methods, and leave an external reviewer a
-reproducible method-validity trail. Phase A validity repairs are complete.
-Phase B is implemented and preregistered but remains unexecuted until explicit
-`APPROVE_GATE_RUN`.
+reproducible method-validity trail. Dense v5 is the accepted Phase A dense
+artifact. Reaction v3 is retained as a historical artifact but is superseded
+pending the v4 repair below. Phase B is implemented and preregistered but
+remains unexecuted until explicit `APPROVE_GATE_RUN` after its preflight
+repairs pass.
 
 ## Starting Git SHA
 
@@ -90,6 +92,15 @@ historical backtests because September onward has already been exposed.
 | ISSUE-039 | HIGH | Reaction grouping, duplicate suppression, and target-pair membership are not tied to the downstream manifest with auditable counts | The downstream sample may not be the same registered article/event unit | RESOLVED_PHASE_A |
 | ISSUE-040 | HIGH | The corrected reaction run needs a frozen protocol fingerprint and a new output directory rather than in-place repair | Historical reaction results could be silently mixed with repaired results | RESOLVED_PHASE_A |
 | ISSUE-041 | BLOCKING | Reaction downstream eligibility was incorrectly described as requiring AR2, even though AR1 has its own complete article-level promotion gate | A valid AR1 article candidate could be discarded solely because the optional AR2 binary is unavailable | RESOLVED_BEFORE_V3_CORRECTED |
+| ISSUE-042 | BLOCKING | Reaction v3 ran only 60m/240m although the preregistered corrected article gate applies to 30m/60m/120m/240m | The exposed 120m candidate was silently excluded and the candidate family was incomplete | RESOLVED_V4_ALL_HORIZONS_GATE_FAIL |
+| ISSUE-043 | BLOCKING | Reaction v3 encodes unavailable pre-article price context as numeric zero and does not give AR0/AR1 validity flags | The model cannot distinguish a true zero return/realized volatility from missing context | RESOLVED_V4_NAN_PLUS_UNSCALED_FLAGS |
+| ISSUE-044 | HIGH | The target builder treats every standalone AAPL token as Apple ticker evidence, including the known American Association for Physician Leadership acronym expansion | AAPL target association can include a known non-Apple entity | RESOLVED_V4_NARROW_REJECTION |
+| ISSUE-045 | BLOCKING | Stock-specific controller preparation omits the registered `advantage` target used by the runner | Phase B cannot execute the stated supervised controller protocol | RESOLVED_PREFLIGHT_NOT_RUN |
+| ISSUE-046 | BLOCKING | The controller's advertised R1 support fallback sets `d_hat=0`, which maps to a 50/50 R1/F1 mixture | Rows labelled as R1 fallback are not exact R1 predictions | RESOLVED_PREFLIGHT_NOT_RUN |
+| ISSUE-047 | BLOCKING | Controller evaluation fills missing state with the training mean although fitting used the training median before scaling | Training and evaluation preprocessing are not the same registered transform | RESOLVED_PREFLIGHT_NOT_RUN |
+| ISSUE-048 | HIGH | Controller routing headroom counts any probability difference rather than prediction-direction disagreement | The BA advancement requirement can be satisfied by rows a convex mixture cannot directionally repair | RESOLVED_PREFLIGHT_NOT_RUN |
+| ISSUE-049 | BLOCKING | Controller evidence validates F1_new substantially but does not establish the R1 issued-probability chronological provenance | One of the two frozen experts is not independently evidenced | RESOLVED_PREFLIGHT_NOT_RUN |
+| ISSUE-050 | BLOCKING | Static verification does not exercise the actual preparation path or the registered fallback/imputation/headroom contracts | Existing PASS could miss the concrete Phase B failures above | RESOLVED_PREFLIGHT_NOT_RUN |
 
 ### Addendum correction for ISSUE-041
 
@@ -119,6 +130,8 @@ earlier v2 downstream protocol remains a historical mismatch.
   reaction artifacts (ISSUE-022 through ISSUE-040).
 - [x] Stage 8A — implement and preregister the stock-specific reliability gate;
   predictive execution remains gated by explicit `APPROVE_GATE_RUN`.
+- [x] Stage 8B — repair Reaction v4 and Phase B preflight contracts
+  (ISSUE-042 through ISSUE-050); do not generate Phase B predictions.
 
 ## Stop conditions
 
@@ -174,6 +187,41 @@ Stage 6 is complete locally. All five public verifiers, `refresh_repository.py`,
 `outputs/stock_method_validity_audit/v1/final_verification.json`. A push is
 still attempted after the final commit; if GitHub DNS remains unavailable,
 the local commit and remote-tracking boundary are reported explicitly.
+
+## External review checkpoint after `8842d37` (2026-09-18)
+
+The external reviewer accepts dense v5 with its existing `VALID_WITH_CAVEAT`
+status. It requires a new, non-overwriting reaction v4: all four registered
+30/60/120/240 minute horizons; NaN plus explicit validity flags for missing
+pre-article price context; and high-precision rejection of the known AAPL
+association acronym. v3 is `SUPERSEDED_PENDING_REPAIR` until that verifier
+passes. The same review found Phase B defects: the missing `advantage` target,
+false R1 support fallback, mismatched imputation, probability rather than
+direction headroom, incomplete R1 provenance, and insufficient static tests.
+`run_gate.py --approve-gate-run` remained prohibited during repair. The
+preflight now passes but Phase B remains `PREREGISTERED_NOT_RUN` until a later
+explicit approval; repair wrote no G0--G3 metrics, predictions, oracle
+ceilings, or exposed-period gate results.
+
+## Reaction v4 and Phase B preflight checkpoint (2026-09-18)
+
+`stock_reaction_features_4h/v4` rebuilt the full source corpus in a new
+directory. It rejected five occurrences of the known non-Apple AAPL acronym
+under the intentionally narrow rule, used completed-bar context with NaN for
+missing returns/realized volatility, and supplied unscaled validity indicators
+to AR0/AR1. The all-horizon verifier passed. All AR1 candidates failed their
+independent June--August gates: 30m has AAPL/AMZN mean BA deltas
+`-0.996pp/-0.811pp`; 60m `-0.351pp/-0.561pp`; 120m `+0.322pp/+2.570pp`
+but violates AAPL's +1pp and Brier requirements; 240m `+0.336pp/+0.653pp`
+and has AMZN constant-direction collapse. Therefore no W0--W3 downstream run
+was permitted. AR2 remains `NOT_RUN_MODEL_UNAVAILABLE`.
+
+The Phase B preflight reads the actual 1,607 keys. It now independently proves
+advantage arithmetic, R1 parity to the real `nextgen_4h/price_v1` output,
+R1/F1_new chronological fit provenance, exact R1 and nested fallback behavior,
+identical median-based train/evaluation transforms, direction-disagreement
+headroom, finite weights, and G3 nesting. It is a preflight only, not a
+controller result.
 
 ## Historical reviewer-addendum pause record (2026-09-17; superseded)
 

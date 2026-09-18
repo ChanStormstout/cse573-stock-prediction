@@ -1,0 +1,164 @@
+{
+  "AR2": {
+    "eligible": false,
+    "reason": "target-context FinBERT binary unavailable; no cached title vectors substituted",
+    "status": "NOT_RUN_MODEL_UNAVAILABLE"
+  },
+  "downstream": [],
+  "promoted_article_candidates": [],
+  "promotion": [
+    {
+      "C": 1.0,
+      "candidate": "AR1",
+      "gate_formula": "both stocks mean_delta_BA>=0.01; max_delta_Brier<=0.002; positive stock months>=2/3; macro AUC delta>0; positive macro BA months>=2; complete/coverage/no constant collapse",
+      "horizon_minutes": 30,
+      "macro": {
+        "macro_auc_ar0": 0.5332934347413166,
+        "macro_auc_ar1": 0.5106629503787531,
+        "macro_auc_delta": -0.022630484362563475,
+        "positive_macro_months": 0
+      },
+      "passes": false,
+      "status": "FAIL",
+      "stock_rows": [
+        {
+          "constant_direction": false,
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.003733835854480505,
+          "mean_delta_BA": -0.009963980826808772,
+          "min_month_rows": 969,
+          "months": 3,
+          "positive_months": 1,
+          "symbol": "AAPL"
+        },
+        {
+          "constant_direction": false,
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.012281210079079175,
+          "mean_delta_BA": -0.008109184794076574,
+          "min_month_rows": 381,
+          "months": 3,
+          "positive_months": 1,
+          "symbol": "AMZN"
+        }
+      ]
+    },
+    {
+      "C": 0.1,
+      "candidate": "AR1",
+      "gate_formula": "both stocks mean_delta_BA>=0.01; max_delta_Brier<=0.002; positive stock months>=2/3; macro AUC delta>0; positive macro BA months>=2; complete/coverage/no constant collapse",
+      "horizon_minutes": 60,
+      "macro": {
+        "macro_auc_ar0": 0.5403945042733855,
+        "macro_auc_ar1": 0.5222092897896045,
+        "macro_auc_delta": -0.018185214483780993,
+        "positive_macro_months": 0
+      },
+      "passes": false,
+      "status": "FAIL",
+      "stock_rows": [
+        {
+          "constant_direction": false,
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.0023164805068610073,
+          "mean_delta_BA": -0.0035127134945165763,
+          "min_month_rows": 905,
+          "months": 3,
+          "positive_months": 1,
+          "symbol": "AAPL"
+        },
+        {
+          "constant_direction": false,
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.0028984735784485516,
+          "mean_delta_BA": -0.005610488037690727,
+          "min_month_rows": 360,
+          "months": 3,
+          "positive_months": 0,
+          "symbol": "AMZN"
+        }
+      ]
+    },
+    {
+      "C": 0.01,
+      "candidate": "AR1",
+      "gate_formula": "both stocks mean_delta_BA>=0.01; max_delta_Brier<=0.002; positive stock months>=2/3; macro AUC delta>0; positive macro BA months>=2; complete/coverage/no constant collapse",
+      "horizon_minutes": 120,
+      "macro": {
+        "macro_auc_ar0": 0.5055641246180548,
+        "macro_auc_ar1": 0.5058005281053698,
+        "macro_auc_delta": 0.0002364034873149993,
+        "positive_macro_months": 2
+      },
+      "passes": false,
+      "status": "FAIL",
+      "stock_rows": [
+        {
+          "constant_direction": false,
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.003880117582197945,
+          "mean_delta_BA": 0.00322184159521105,
+          "min_month_rows": 764,
+          "months": 3,
+          "positive_months": 2,
+          "symbol": "AAPL"
+        },
+        {
+          "constant_direction": false,
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.002748931614554695,
+          "mean_delta_BA": 0.0256978332342853,
+          "min_month_rows": 313,
+          "months": 3,
+          "positive_months": 3,
+          "symbol": "AMZN"
+        }
+      ]
+    },
+    {
+      "C": 0.01,
+      "candidate": "AR1",
+      "gate_formula": "both stocks mean_delta_BA>=0.01; max_delta_Brier<=0.002; positive stock months>=2/3; macro AUC delta>0; positive macro BA months>=2; complete/coverage/no constant collapse",
+      "horizon_minutes": 240,
+      "macro": {
+        "macro_auc_ar0": 0.4717054790595984,
+        "macro_auc_ar1": 0.47085276268378745,
+        "macro_auc_delta": -0.0008527163758109227,
+        "positive_macro_months": 3
+      },
+      "passes": false,
+      "status": "FAIL",
+      "stock_rows": [
+        {
+          "constant_direction": false,
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 6.490822284233033e-05,
+          "mean_delta_BA": 0.003364951864470352,
+          "min_month_rows": 438,
+          "months": 3,
+          "positive_months": 2,
+          "symbol": "AAPL"
+        },
+        {
+          "constant_direction": true,
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.0002097262720294757,
+          "mean_delta_BA": 0.006533751493428885,
+          "min_month_rows": 164,
+          "months": 3,
+          "positive_months": 2,
+          "symbol": "AMZN"
+        }
+      ]
+    }
+  ],
+  "status": "COMPLETE"
+}

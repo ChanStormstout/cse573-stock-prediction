@@ -1262,3 +1262,34 @@ target-pair uniqueness, fold-local preprocessing, model reload, gate recording
 and the no-downstream-on-failure rule.  Independent human association review is
 still not claimed.  Phase B G0--G3 remains preregistered but unexecuted pending
 the explicit `APPROVE_GATE_RUN` message.
+
+## 2026-09-18：reaction v4 complete candidate family and Phase B preflight repair
+
+**Why:** the external review of `8842d37` found that v3 did not execute every
+registered article horizon, represented missing pre-article price context as a
+true zero without exposing validity flags to the model, and retained a known
+ambiguous AAPL acronym. It also identified six implementation defects that
+would make the preregistered stock-specific gate unsafe to execute.
+
+**What changed:** v4 is a new, non-overwriting reaction artifact. It runs
+30/60/120/240-minute AR0/AR1 candidates with completed-bar context; unavailable
+returns and realized volatility are `NaN`, with explicit unscaled validity
+features and fold-local imputation/scaling. The builder applies only a narrow
+high-precision rejection for *American Association for Physician Leadership*
+when independent Apple evidence is absent, recording five private review cards.
+The Phase B preparation now creates the registered advantage target, traces the
+real R1 private source with parity to the public column, implements exact R1
+support fallback, applies median-based transforms identically at train/eval,
+and measures routing headroom by direction disagreement. Its verifier exercises
+the real 1,607-row preparation path and all nested fallback contracts.
+
+**Observed result:** the v4 verifier passed. All four independent AR1 gates
+failed: 30m mean BA changes were AAPL/AMZN `-0.996pp/-0.811pp`; 60m
+`-0.351pp/-0.561pp`; 120m `+0.322pp/+2.570pp` but misses AAPL's BA/Brier
+requirements; 240m `+0.336pp/+0.653pp` and AMZN collapses to one direction.
+AR2 is `NOT_RUN_MODEL_UNAVAILABLE`. As preregistered, W0--W3 did not run.
+
+**Boundary:** dense v5 remains current. v3 remains historical/superseded.
+Phase B preflight passed, but it is not a predictive experiment: no G0--G3
+prediction, metric, oracle or exposed-period result was generated. The project
+waits for an explicit `APPROVE_GATE_RUN` before that separate execution.

@@ -1,0 +1,14 @@
+{
+  "AR2": "NOT_RUN_MODEL_UNAVAILABLE",
+  "builder_sha256": "fd95abd010e8dc471062bf1b2961fdf3a8f85f263826b1b833a26c5bad73960c",
+  "downstream_rule": "run every independently promoted candidate; never choose by W0-W3 performance",
+  "horizons": [
+    30,
+    60,
+    120,
+    240
+  ],
+  "preregistration_sha256": "97518996e5100e8077b5c227788700896af0125bd5d82d23c192b250e27d9fc1",
+  "protocol": "reaction_v4_full_registered_horizons_missingness_repair",
+  "runner_sha256": "9d880d431a59281fb4a2dbf8a88a6cc47ba5271afd6ae2feebb6290f2cd4ba2e"
+}

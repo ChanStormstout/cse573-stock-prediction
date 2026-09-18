@@ -1,0 +1,296 @@
+{
+  "checks": {
+    "advantage_present_and_recomputed": true,
+    "both_expert_provenances_verified": true,
+    "canonical_key_count_1607": true,
+    "exact_r1_support_fallback": true,
+    "fold_imputation_reconstruction_uses_training_median": true,
+    "g1_to_g0_fallback": true,
+    "g3_to_g2_fallback": true,
+    "g3_to_g2_to_r1_chained_fallback": true,
+    "g3_zero_nested_design": true,
+    "map_weights_finite_and_bounded": true,
+    "no_forbidden_state_feature": true,
+    "no_news_expert_contract_documented": true,
+    "state_columns_exact": true
+  },
+  "expert_evidence": {
+    "all_expert_provenance_verified": true,
+    "evidence_sha256": "3c976980e3a1313fc3c1acb4a04dd7d0650beb52219d4fdc4a03a396d3ebaeaa",
+    "experts": {
+      "F1_new": {
+        "all_training_label_ends_before_row_cutoff": true,
+        "fit_evidence_key": "F1_new",
+        "fit_records": 38,
+        "missing_selected_fit_records": 0,
+        "rows_checked": 1036,
+        "september_onward_frozen_august_model": true
+      },
+      "R1": {
+        "all_training_label_ends_before_row_cutoff": true,
+        "fit_evidence_key": "nextgen_4h/price_v1/fits.json",
+        "fit_records": 200,
+        "missing_selected_fit_records": 0,
+        "rows_checked": 1036,
+        "september_onward_frozen_august_model": true
+      }
+    },
+    "r1_evidence_sha256": "1b4d72ac77fe3df35e824f29cf04fccf8b93825fedf3b8df749ed55b313281fb"
+  },
+  "expert_provenance": {
+    "experts": {
+      "F1_new": {
+        "column": "F1_new",
+        "fit_evidence_key": "F1_new",
+        "issued_prediction_file": "outputs/stock_goal60_4h/v1/predictions.csv"
+      },
+      "R1": {
+        "column": "R1",
+        "fit_evidence_key": "nextgen_4h/price_v1/fits.json",
+        "issued_prediction_file": "outputs/stock_goal60_4h/v1/predictions.csv",
+        "issued_private_prediction_file": "work/stock-data/nextgen_4h/price_v1/predictions.csv",
+        "private_column": "R1",
+        "private_fit_evidence_file": "work/stock-data/nextgen_4h/price_v1/fits.json",
+        "private_fit_evidence_sha256": "1b4d72ac77fe3df35e824f29cf04fccf8b93825fedf3b8df749ed55b313281fb",
+        "private_prediction_sha256": "1ebe2dd87ef82a266ba3a6984bd3706725ed9f58fb993deee2661be7a30a0cd9",
+        "probability_parity_max_abs_error": 1.1102230246251565e-16
+      }
+    },
+    "inputs_sha256": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b",
+    "predictions_sha256": "0050509aa1c8fb84dadf9748d399b972bef04c936fad2afb00b8a232977113a6",
+    "state_columns": [
+      "recent_return_15",
+      "recent_return_60",
+      "recent_rv_15",
+      "recent_rv_60",
+      "minutes_from_open",
+      "overnight_gap",
+      "overnight_gap_missing",
+      "log_news_count",
+      "abs_expert_gap",
+      "abs_price_centered"
+    ],
+    "training_evidence_sha256": "3c976980e3a1313fc3c1acb4a04dd7d0650beb52219d4fdc4a03a396d3ebaeaa"
+  },
+  "fold_preprocessing_records": [
+    {
+      "eval_rows": 124,
+      "fold": "2018-03",
+      "independent_transform_max_abs_error": null,
+      "preprocessing": "not fit; registered exact-R1 support fallback",
+      "train_rows": 0
+    },
+    {
+      "eval_rows": 126,
+      "fold": "2018-04",
+      "independent_transform_max_abs_error": 0.0,
+      "train_rows": 91,
+      "training_mean_after_imputation": [
+        -0.0006227730532358595,
+        -0.0007557256222893405,
+        0.002224295703823437,
+        0.004416938682615842,
+        59.61538461538461,
+        -0.0003085293425555551,
+        0.2967032967032967,
+        2.132057586284264,
+        0.11352309322520805,
+        0.14309715545822288
+      ],
+      "training_median": [
+        -0.0003483544105246864,
+        -0.0006968031736113281,
+        0.00211236288131656,
+        0.004120874111257951,
+        55.0,
+        0.00028529856688340433,
+        0.0,
+        2.4849066497880004,
+        0.09170612414105656,
+        0.1314023230282787
+      ],
+      "training_scale": [
+        0.0024329706440003387,
+        0.00341985937945691,
+        0.0011952407321003367,
+        0.001600113220888564,
+        48.90690174238074,
+        0.00724710171184408,
+        0.45680460858959404,
+        0.8619108889120634,
+        0.08534566354059503,
+        0.09503924901218552
+      ]
+    },
+    {
+      "eval_rows": 131,
+      "fold": "2018-05",
+      "independent_transform_max_abs_error": 0.0,
+      "train_rows": 192,
+      "training_mean_after_imputation": [
+        -0.0001223036955085127,
+        0.0007203482555894161,
+        0.002356973643236384,
+        0.005027046487408351,
+        57.8125,
+        0.0012390105061375733,
+        0.3125,
+        2.0473977104751633,
+        0.11029037037468382,
+        0.1038324818623166
+      ],
+      "training_median": [
+        1.9928523033457405e-05,
+        0.0006606805249482805,
+        0.0021894180246604545,
+        0.004834711248984055,
+        55.0,
+        0.0016011897971189848,
+        0.0,
+        2.3978952727983707,
+        0.09145046018780406,
+        0.08402054252252095
+      ],
+      "training_scale": [
+        0.00231447734345816,
+        0.00418064200797554,
+        0.0012707349569518356,
+        0.0017916213030927724,
+        49.10030390690061,
+        0.011193050575647257,
+        0.46351240544347894,
+        0.9165744785693452,
+        0.08155370712012679,
+        0.08399805043899453
+      ]
+    },
+    {
+      "eval_rows": 126,
+      "fold": "2018-06",
+      "independent_transform_max_abs_error": 0.0,
+      "train_rows": 298,
+      "training_mean_after_imputation": [
+        5.227442797460837e-05,
+        0.00013904049270919985,
+        0.0020589477374360846,
+        0.004161599012364575,
+        58.02013422818792,
+        0.0006008246984015081,
+        0.3087248322147651,
+        2.092190131640666,
+        0.09552937109579146,
+        0.09118805147106514
+      ],
+      "training_median": [
+        0.00017113164379535192,
+        0.0,
+        0.001855048936279748,
+        0.0038906933143984753,
+        55.0,
+        9.337819771520394e-05,
+        0.0,
+        2.4849066497880004,
+        0.07583059639265724,
+        0.07675227348069574
+      ],
+      "training_scale": [
+        0.0021205170362228127,
+        0.003475222498710351,
+        0.001181525785642793,
+        0.0016288867609194123,
+        48.937773088702265,
+        0.009709548400535369,
+        0.4619673258886718,
+        0.9816297760314942,
+        0.0743126324081861,
+        0.07451186211507863
+      ]
+    },
+    {
+      "eval_rows": 120,
+      "fold": "2018-07",
+      "independent_transform_max_abs_error": 0.0,
+      "train_rows": 393,
+      "training_mean_after_imputation": [
+        0.00013469148765399345,
+        0.0001922430373786818,
+        0.0019431879101772576,
+        0.003966299452551451,
+        57.44274809160305,
+        0.0006754162772206093,
+        0.31297709923664124,
+        2.0751970689692123,
+        0.09078089451235079,
+        0.08473051953186259
+      ],
+      "training_median": [
+        0.0002104489490870645,
+        4.465040329611172e-05,
+        0.0017525146502355166,
+        0.003753672243439889,
+        55.0,
+        0.0005881252341577895,
+        0.0,
+        2.3978952727983707,
+        0.07355487568850672,
+        0.0718514126453551
+      ],
+      "training_scale": [
+        0.001950180955757457,
+        0.003114014879140298,
+        0.0010946420689204722,
+        0.0014784176372427623,
+        48.92885632999171,
+        0.008797007288936464,
+        0.4637051159843493,
+        0.9684067217187488,
+        0.06992348746565,
+        0.06806127613676982
+      ]
+    },
+    {
+      "eval_rows": 138,
+      "fold": "2018-08",
+      "independent_transform_max_abs_error": 0.0,
+      "train_rows": 478,
+      "training_mean_after_imputation": [
+        0.00011104302866251034,
+        0.00020319262312263022,
+        0.001885129328270364,
+        0.003785522885686849,
+        58.01255230125523,
+        0.0009019622379697158,
+        0.3054393305439331,
+        1.9920647013194055,
+        0.0837296805878704,
+        0.0817380069719497
+      ],
+      "training_median": [
+        0.0001718821095924505,
+        6.629984618740436e-05,
+        0.001708530702528914,
+        0.0035638475051726418,
+        55.0,
+        0.0008181472670697746,
+        0.0,
+        2.1972245773362196,
+        0.06636657446154445,
+        0.0693462635839128
+      ],
+      "training_scale": [
+        0.0018607344188750468,
+        0.0029550797600188636,
+        0.0010931707183676727,
+        0.0014441825809758874,
+        48.691281012352036,
+        0.008554848949379782,
+        0.46059325429364145,
+        0.9284853805471944,
+        0.06783378059253545,
+        0.06394350081972361
+      ]
+    }
+  ],
+  "mode": "preflight_only_no_G0_G3_predictive_execution",
+  "status": "PASS"
+}

@@ -66,7 +66,8 @@ are separate forward folds.  September onward uses one frozen controller fit
 on eligible March--August rows and never updates with exposed labels.
 
 Before any controller is used, require at least 60 eligible news rows overall
-and 20 unique stock-days.  G0--G3 return exact R1 until this holds.  G1/G3
+and 20 unique stock-days. G0--G3 return exact R1 until this holds: this is an
+explicit force-price mode, not a synthetic `d_hat=0` mixture. G1/G3
 require at least 20 eligible rows for each stock; G1 falls back to G0 and G3
 falls back to G2 when that stock-specific support is absent.  Every fallback is
 recorded.
@@ -82,8 +83,11 @@ The three prespecified contrasts are G1−G0, G2−G1 and G3−G2.  A contrast i
 supported only when the weaker stock's June--August mean BA improves at least
 1 percentage point; neither stock loses over 1 point; macro BA is positive in at
 least two of three months; neither stock's mean Brier worsens over 0.002; no
-stock is effectively constant; and each stock has at least ten rows with
-different expert predictions.  These are engineering evidence conditions, not
+stock is effectively constant; and each stock has at least ten eligible rows
+where the two experts have different **0.5-threshold directions**. Probability
+differences that leave both experts on the same side of 0.5 are recorded for
+diagnosis but do not satisfy this BA-routing headroom condition. These are
+engineering evidence conditions, not
 significance claims.
 
 The label-using per-row perfect switch between P and T is reported only as

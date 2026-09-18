@@ -1,0 +1,13 @@
+{
+  "ambiguous_AAPL_acronym_rejected_count": 5,
+  "builder_version": "v4",
+  "candidate_pairs": 89953,
+  "canonical_all_time": 85397,
+  "gate_pass": true,
+  "jan_aug_rows": 51482,
+  "missing_context_representation": "invalid return/rv are NaN and validity flags are explicit model inputs",
+  "private_ambiguous_AAPL_review_card_count": 5,
+  "private_pair_path": "/Users/victor/Documents/Codex/2026-09-14/wox/work/stock-data/reaction_features_4h/v4/canonical_pairs_all_time.pkl",
+  "raw_rows": 78055,
+  "status": "COMPLETE"
+}

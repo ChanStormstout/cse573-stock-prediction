@@ -239,3 +239,43 @@ old residual W0--W3 results remain superseded.
 The stock-specific reliability gate is implemented and preregistered, but its
 predictive run is intentionally blocked until the user sends the exact
 `APPROVE_GATE_RUN` approval. No G0--G3 result is available.
+
+## CORR-023 — `8842d37` external review requires reaction v4 and Phase B preflight repair
+
+The v3 reaction result is preserved but superseded pending a new v4 artifact.
+v3 evaluated only 60m and 240m even though the corrected registered family is
+30m, 60m, 120m, and 240m; it also represented unavailable pre-article context
+as zero without model-visible validity flags. v4 must rerun every registered
+horizon with completed-bar time safety, fold-local numeric preprocessing, and
+explicit validity indicators. Its builder must additionally reject the known
+non-Apple expansion of `AAPL` (American Association for Physician Leadership)
+when no independent Apple evidence exists. This is a high-precision exclusion,
+not a claim that entity ambiguity is solved generally.
+
+The same review blocks Phase B execution until the registered advantage target,
+exact R1 support fallback, identical train/evaluation imputation, directional
+routing headroom, R1 provenance, and real-path static preflight checks are
+repaired. No G0--G3 predictions, metrics, oracle, or exposed-period result is
+generated during this correction.
+
+## CORR-024 — reaction v4 completed the corrected article-level rerun; Phase B remains unexecuted
+
+- **Historical statement:** reaction v3 was preserved as the corrected article
+  probe even though it omitted 30m and 120m and encoded unavailable context as
+  a numeric zero without model-visible flags.
+- **Repair:** v4 used a new public/private artifact pair, all four registered
+  30m/60m/120m/240m horizons, completed five-minute bars only, fold-local
+  imputation/scaling, unscaled validity flags, and a narrow deterministic
+  rejection of the known non-Apple AAPL acronym use. The verifier passed all
+  registered time-safety and protocol checks.
+- **Corrected result:** AR1 30m, 60m, 120m, and 240m each failed the complete
+  June--August article-level gate. At 120m, AAPL/AMZN mean BA deltas were
+  `+0.322pp/+2.570pp`, but AAPL missed the `+1pp` requirement and the Brier
+  guardrail failed. At 240m, both BA deltas remained below `+1pp` and AMZN had
+  constant-direction collapse. No candidate was promoted, so no W0--W3
+  downstream artifact was generated.
+- **Phase B boundary:** the stock-specific gate now passes its real-input
+  preflight for advantage arithmetic, R1/F1_new provenance, exact support
+  fallback, median preprocessing, directional headroom and nested fallback.
+  It remains `PREREGISTERED_NOT_RUN`: no G0--G3 predictions, metrics, oracle
+  ceilings, or exposed-period gate results exist.

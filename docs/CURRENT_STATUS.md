@@ -1,5 +1,13 @@
 # 当前权威状态（2026-09-18，Phase A 已修复；Phase B 仅预注册）
 
+> **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
+> v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
+> 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除
+> 重新执行，并通过时间安全核验。四个 AR1 候选均未通过完整文章 gate，因此
+> 没有 W0–W3 下游预测。stock-specific gate 的 repair preflight 已通过，但仍为
+> `PREREGISTERED_NOT_RUN`；在明确 `APPROVE_GATE_RUN` 前不得执行或生成
+> G0–G3 预测结果。
+
 本次从 `dd836d80c709cd98065249ab5cdde233bd7abdc1` 继续，历史运行和原始
 数据均保留。外部审查提出的 ISSUE-022—ISSUE-040 已在新的 v5/v2 目录中
 修复并核验：

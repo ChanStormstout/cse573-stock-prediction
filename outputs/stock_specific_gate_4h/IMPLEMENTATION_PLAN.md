@@ -1,14 +1,21 @@
 # Implementation plan
 
 1. `prepare.py` loads the fixed `R1`/`F1_new` predictions and the ten-state
-   vector from the current `paper_methods_4h/v1/inputs.pkl`.  It checks keys,
-   labels, cutoffs, and expert provenance without writing a result.
+   vector from the current `paper_methods_4h/v1/inputs.pkl`. It checks keys,
+   labels, cutoffs, both experts' chronological fit records, and parity between
+   the issued R1 column and its canonical private `P_own_lr` probability file
+   without writing a predictive result. It creates the registered advantage
+   target only after those checks.
 2. `run_gate.py` requires an explicit `--approve-gate-run` flag, builds each
    chronological fold, fits G0--G3 with the fixed weighted ridge protocol,
    saves all evidence and metrics, and freezes the August controller for the
    exposed periods.
-3. `verify.py` reconstructs metrics and checks time safety, no-news equality,
-   finite weights, advantage arithmetic, and the G3-to-G2 nesting regression.
+3. `verify.py` first performs a real-input preflight without predictive
+   execution. It checks advantage arithmetic, both expert provenances, exact
+   R1 fallback and nested fallbacks, fold-local median/mean/scale transforms,
+   direction-disagreement headroom semantics, finite weights, and G3-to-G2
+   nesting. After a separately approved result run it reconstructs all reported
+   metrics independently.
 4. `report.py` renders the saved CSV/JSON artifacts into a human-readable
    report after an approved run.
 
