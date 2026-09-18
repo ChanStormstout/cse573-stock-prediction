@@ -266,3 +266,51 @@ a historical protocol-mismatch artifact.
 
 The repository remains waiting for explicit `APPROVE_GATE_RUN` before that
 command may run.
+
+## External review repair completion — reaction v4 and Phase B preflight (2026-09-18)
+
+- **Starting SHA:** `8842d37a58a9ac3fa00c3ec9a56df9e917fa4e62`.
+- **Ending SHA (repair payload):** `a69044096cb4ac5421381da1aa12ddc46d6b4f95`
+  (`Repair reaction v4 and gate preflight`).
+- **Issues registered and resolved:** ISSUE-042 through ISSUE-050. These cover
+  the complete 30/60/120/240m candidate family, missing price-context
+  representation, the narrow AAPL acronym association rule, the controller
+  advantage target, exact R1 fallback, consistent median preprocessing,
+  direction-disagreement headroom, R1 provenance, and real-path preflight
+  verification. Earlier v3 remains a preserved `SUPERSEDED_PENDING_REPAIR`
+  artifact; no historical result was overwritten.
+
+### Reaction v4 result
+
+The new `outputs/stock_reaction_features_4h/v4/` article-level run passed its
+time-safety, completed-bar, future-price-perturbation, fold-local
+preprocessing, no-public-text, entity-audit, candidate-completeness and gate
+recording verifier. It fits all four preregistered AR1 horizons (240 fits,
+76,248 article prediction rows). AR2 is explicitly
+`NOT_RUN_MODEL_UNAVAILABLE`; it was not replaced with cached title vectors.
+
+| AR1 horizon | AAPL mean June--August BA delta vs AR0 | AMZN delta | Result |
+|---|---:|---:|---|
+| 30m | -0.996pp | -0.811pp | fail |
+| 60m | -0.351pp | -0.561pp | fail |
+| 120m | +0.322pp | +2.570pp | fail: AAPL misses +1pp and Brier guardrail |
+| 240m | +0.336pp | +0.653pp | fail: both below +1pp; AMZN constant-direction collapse |
+
+No AR1 candidate passed its full independent promotion gate. Per protocol,
+W0--W3 was not run and no downstream performance selected a horizon.
+
+### Stock-specific reliability gate preflight
+
+`outputs/stock_specific_gate_4h/verify.py` passed in preflight-only mode on the
+real 1,607 canonical keys. The public R1 column now has maximum absolute
+probability difference `1.1102230246251565e-16` from the traced private
+`nextgen_4h/price_v1` issued prediction source. R1 and F1_new each pass
+chronological provenance checks for 1,036 evaluated rows; September onward is
+verified as August-frozen. Independent advantage recomputation, state-column
+allowlist, same-median train/evaluation transforms, exact R1 support fallback,
+G1→G0, G3→G2, G3→G2→R1 and G3 nesting all pass.
+
+This is still `PREREGISTERED_NOT_RUN`. No G0--G3 predictions, metrics, oracle
+ceilings, advancement results, development/later gate results, or approval
+command execution exist. The only permitted next predictive action is an
+explicit owner message containing `APPROVE_GATE_RUN`.
