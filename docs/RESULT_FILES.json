@@ -2250,6 +2250,56 @@
     "sha256": "33f9e7b9d23e93048e555f12e1101cbb31421fed46298479927dbbe55adba981"
   },
   {
+    "path": "outputs/stock_activity_4h/v1/predictions.csv",
+    "bytes": 160896,
+    "sha256": "41e57c2c9004cd12f714362e447d9cd87b32aa33bea2dc9be916a5f98470b524"
+  },
+  {
+    "path": "outputs/stock_activity_4h/v1/monthly_metrics.csv",
+    "bytes": 12171,
+    "sha256": "c174ac540bf774c967fd12618d1784356f389b461f358536b6cb6f299aceffe4"
+  },
+  {
+    "path": "outputs/stock_activity_4h/v1/metrics.csv",
+    "bytes": 3270,
+    "sha256": "f2d074a80bdfd48d277b3eef888577455181e48b4b2833bb90536fb94486db4f"
+  },
+  {
+    "path": "outputs/stock_activity_4h/v1/cv.csv",
+    "bytes": 11244,
+    "sha256": "694e369321a2f7a0db5a4834d243768be9e1e63f549ca450adc3af1d98fa896e"
+  },
+  {
+    "path": "outputs/stock_activity_4h/v1/selection.json",
+    "bytes": 10156,
+    "sha256": "b2aee43686e30e9b199b032fbcdd71e4047164b993062d541532ebe4cfbd0e5a"
+  },
+  {
+    "path": "outputs/stock_activity_4h/v1/advancement.json",
+    "bytes": 470,
+    "sha256": "2b64276d75a4f8bcebae0322fcac3e53228426ff52372b97a89d3599b035093f"
+  },
+  {
+    "path": "outputs/stock_activity_4h/v1/attribution_control.json",
+    "bytes": 482,
+    "sha256": "677d4cee64c6014a136ede81fe4f8d85dcf41e44542044d45a915fe7f21b6d02"
+  },
+  {
+    "path": "outputs/stock_activity_4h/v1/protocol_fingerprint.json",
+    "bytes": 2533,
+    "sha256": "9e7f679efbe0fe6ea8f4fa7a45e3a72fd4a7699daa9cb9203e009ef9b7f76a56"
+  },
+  {
+    "path": "outputs/stock_activity_4h/v1/verification.json",
+    "bytes": 33002,
+    "sha256": "d521bb96d98eff02ffa1a85f117333260c17abc55e2fe9d333a35f572b9e5038"
+  },
+  {
+    "path": "outputs/stock_activity_4h/v1/verifier_recovery_input_hashes.json",
+    "bytes": 10325,
+    "sha256": "d9d7b6e34dbc2bc7c401b119fb5c69cdfe4161339d2f828a0540c0ae2048882d"
+  },
+  {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md",
     "bytes": 2808,
     "sha256": "97518996e5100e8077b5c227788700896af0125bd5d82d23c192b250e27d9fc1"

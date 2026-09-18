@@ -1,0 +1,14 @@
+{
+  "contrast": "A1_matchedC_vs_A0",
+  "AAPL_mean_delta_BA": 0.002367186190715631,
+  "AMZN_mean_delta_BA": 0.0007954356155255674,
+  "weaker_stock_mean_delta_BA": 0.0007954356155255674,
+  "macro_delta_BA": 0.0015813109031205992,
+  "positive_macro_months": 2,
+  "AAPL_mean_delta_Brier": 0.00097048042300892,
+  "AMZN_mean_delta_Brier": 0.0017423620503740263,
+  "max_stock_mean_delta_Brier": 0.0017423620503740263,
+  "constant_any_stock": false,
+  "outer_cells": 6,
+  "passes": false
+}

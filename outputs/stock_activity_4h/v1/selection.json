@@ -1,0 +1,510 @@
+[
+  {
+    "symbol": "AAPL",
+    "month": "2018-03",
+    "method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-03",
+    "method": "A1",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-03",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-04",
+    "method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-04",
+    "method": "A1",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-04",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-05",
+    "method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-05",
+    "method": "A1",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-05",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-06",
+    "method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-06",
+    "method": "A1",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-06",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-07",
+    "method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-07",
+    "method": "A1",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-07",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-08",
+    "method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-08",
+    "method": "A1",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "2018-08",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AAPL",
+    "month": "final",
+    "method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07",
+      "2018-08"
+    ]
+  },
+  {
+    "symbol": "AAPL",
+    "month": "final",
+    "method": "A1",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07",
+      "2018-08"
+    ]
+  },
+  {
+    "symbol": "AAPL",
+    "month": "final",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07",
+      "2018-08"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-03",
+    "method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-03",
+    "method": "A1",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-03",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-04",
+    "method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-04",
+    "method": "A1",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-04",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-05",
+    "method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-05",
+    "method": "A1",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-05",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-06",
+    "method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-06",
+    "method": "A1",
+    "chosen_C": 0.01,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-06",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-07",
+    "method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-07",
+    "method": "A1",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-07",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-08",
+    "method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-08",
+    "method": "A1",
+    "chosen_C": 1.0,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07"
+    ],
+    "selection_rule": "past forward BA, Brier, smaller C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "2018-08",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07"
+    ],
+    "selection_rule": "same-fold A0 C"
+  },
+  {
+    "symbol": "AMZN",
+    "month": "final",
+    "method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07",
+      "2018-08"
+    ]
+  },
+  {
+    "symbol": "AMZN",
+    "month": "final",
+    "method": "A1",
+    "chosen_C": 1.0,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07",
+      "2018-08"
+    ]
+  },
+  {
+    "symbol": "AMZN",
+    "month": "final",
+    "method": "A1_matchedC",
+    "source_method": "A0",
+    "chosen_C": 0.1,
+    "eligible_prior_months": [
+      "2018-03",
+      "2018-04",
+      "2018-05",
+      "2018-06",
+      "2018-07",
+      "2018-08"
+    ],
+    "selection_rule": "same-fold A0 C"
+  }
+]

@@ -1424,3 +1424,12 @@ selected model 后逐概率核验。未执行 A1，也未生成 candidate 模型
 兼容 loader 不改写模型，逐一重建 candidate scaler 和概率后 PASS。原始结果及
 candidate 模型最终哈希仍与恢复前账本一致。A1 对预注册双股票 gate 失败：AAPL
 六月--八月 BA 平均仅 +0.237pp，AMZN -3.662pp；因此没有 promotion。
+
+## 2026-09-18：Context increment initial audit
+
+新 lane 不运行真实 Mmeta/M1、news 或 joint scoring。Alpaca 文档端点的 bounded
+SPY/QQQ raw SIP probe 在无本地授权凭据时正确停止为 `AUTH_REQUIRED`。原始 archive
+metadata 全量扫描完成；`thread`/`ord_in_thread`/highlights 均保持语义未决，不作为
+金融事件或摘要特征。64 个无结果标签 pair（四层各16）完成 lexical comparator；没有
+可验证 frozen Qwen revision，因此 LLM 0 calls、`QUALITY_UNVERIFIED`。Synthetic
+fixture 的独立 subprocess save→reload→report 与未来未完成 bar fault 通过。

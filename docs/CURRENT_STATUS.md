@@ -33,6 +33,11 @@
 > -3.662pp），所以该 opaque activity construction 没有稳定双股票增量证据。
 > development/later 仅是 `EXPOSED EXPLORATORY HISTORICAL BACKTEST`。
 
+> **Context-increment lane:** `outputs/stock_context_4h/` has completed its initial
+> access, metadata and synthetic-contract audit. SPY/QQQ intake is `AUTH_REQUIRED`
+> (no credentials were printed or requested); no real Mmeta/M1/news/joint candidate
+> was fitted or scored. See `docs/CONTEXT_INCREMENT_WORKING_SPEC.md`.
+
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
 > 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除

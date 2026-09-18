@@ -488,3 +488,12 @@ and model artifacts remain local.
   PASS. Original results and candidate model bytes are unchanged from the recovery ledger.
 - Registered advancement: A1 vs A0 is FAIL (AAPL `+0.237pp`, AMZN `-3.662pp`).
   The report is generated from preserved outputs; no tuning, rerun or new experiment.
+
+## Context-increment initial audit — 2026-09-18
+
+- Starting checkout was `27f7b477459c28e48aa3d3321ba874ebff8a36b1`.
+- Activity v1 small public evidence was allowlisted without regenerating values.
+- Alpaca SIP/raw fixed probe is `AUTH_REQUIRED`; the market feature experiment remains
+  preregistered and unrun. Full raw-news metadata audit and a 64-pair outcome-blind
+  lexical pilot completed; frozen-Qwen provenance was unavailable, so LLM calls are 0
+  and quality is `QUALITY_UNVERIFIED`.
