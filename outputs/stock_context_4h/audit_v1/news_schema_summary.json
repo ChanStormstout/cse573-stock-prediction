@@ -1,0 +1,8 @@
+{
+  "records": 78055,
+  "thread_uuid_equals_post_uuid": 75879,
+  "thread_url_equals_post_url": 75879,
+  "ord_zero": 78055,
+  "thread_count": 77800,
+  "conclusion": "PROVIDER_UNCONFIRMED; thread semantics are unresolved for cross-publisher financial events. Page/conversation metadata cannot establish event identity; ord_in_thread and highlights are not used as event/summary features."
+}

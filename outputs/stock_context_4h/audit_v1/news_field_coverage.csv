@@ -1,0 +1,18 @@
+field,records,present_fraction,nonempty_fraction,type_counts,capped_distinct_count
+thread.uuid,78055,1.0,1.0,"{""str"": 78055}",77800
+thread.url,78055,1.0,1.0,"{""str"": 78055}",77800
+thread.site,78055,1.0,1.0,"{""str"": 78055}",2175
+thread.site_type,78055,1.0,1.0,"{""str"": 78055}",1
+thread.published,78055,1.0,1.0,"{""str"": 78055}",46591
+ord_in_thread,78055,1.0,1.0,"{""int"": 78055}",1
+uuid,78055,1.0,1.0,"{""str"": 78055}",77768
+url,78055,1.0,1.0,"{""str"": 78055}",77768
+published,78055,1.0,1.0,"{""str"": 78055}",46591
+crawled,78055,1.0,1.0,"{""str"": 78055}",77986
+updated,78055,0.0,0.0,"{""NoneType"": 78055}",0
+entities.organizations,78055,1.0,0.8662609698289667,"{""list"": 78055}",50614
+organizations,78055,1.0,0.0,"{""list"": 78055}",0
+persons,78055,1.0,0.0,"{""list"": 78055}",0
+highlightText,78055,1.0,0.0,"{""str"": 78055}",0
+highlightTitle,78055,1.0,0.0,"{""str"": 78055}",0
+external_links,78055,1.0,0.5433732624431491,"{""list"": 78055}",29707

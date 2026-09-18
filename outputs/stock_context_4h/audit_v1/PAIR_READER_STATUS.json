@@ -1,0 +1,7 @@
+{
+  "status": "PAIR_READER_NOT_RUN_MODEL_UNAVAILABLE",
+  "llm_calls": 0,
+  "reason": "no verified locally available frozen Qwen checkpoint/revision/quantization manifest for this lane; lexical comparator only",
+  "quality_status": "QUALITY_UNVERIFIED",
+  "mechanical_checks": "PASS"
+}

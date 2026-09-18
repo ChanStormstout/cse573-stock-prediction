@@ -1,0 +1,1 @@
+{"status": "PASS", "subprocesses": ["fit_save", "verify_report"], "faults": ["coefficient/feature-order fixture schema", "future incomplete bar", "unverified report blocked"]}

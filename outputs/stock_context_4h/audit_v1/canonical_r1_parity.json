@@ -1,0 +1,8 @@
+{
+  "status": "CANONICAL_R1_AUDIT_PARTIAL_SECOND_SOURCE",
+  "goal60_evaluated_keys": 1374,
+  "nextgen_overlap_keys": 609,
+  "nextgen_overlap_max_abs_error": 0.0,
+  "nextgen_overlap_direction_parity": true,
+  "note": "Goal60 supplies all 1,374 non-warmup canonical R1 probabilities; the inspected nextgen public source supplies only 609 overlapping frozen keys. This is a read-only audit, not an independent coefficient refit."
+}

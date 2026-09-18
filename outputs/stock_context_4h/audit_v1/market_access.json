@@ -1,0 +1,18 @@
+{
+  "provider": "Alpaca",
+  "endpoint": "https://data.alpaca.markets/v2/stocks/{symbol}/bars",
+  "feed": "sip",
+  "adjustment": "raw",
+  "symbols": [
+    "SPY",
+    "QQQ"
+  ],
+  "credentials_present": false,
+  "attempts": 0,
+  "status": "AUTH_REQUIRED",
+  "required_environment": [
+    "APCA_API_KEY_ID",
+    "APCA_API_SECRET_KEY"
+  ],
+  "acquired_at_utc": "2026-09-18T22:11:13Z"
+}
