@@ -1,0 +1,94 @@
+{
+  "checks": {
+    "advancement_has_exact_six_outer_cells_per_contrast": true,
+    "advancement_independently_reconstructed": false,
+    "all_expected_controller_key_rows_present": true,
+    "august_freeze_has_no_exposed_label_update": true,
+    "coefficient_structure_and_no_extra_features": true,
+    "controller_fit_structure_exact": true,
+    "controller_forward_chronology_safe": true,
+    "controller_preprocessing_is_training_only": true,
+    "controllers_exactly_g0_to_g3": true,
+    "folds_and_exposed_freeze_exact": true,
+    "metrics_independently_reconstructed": true,
+    "monthly_metrics_independently_reconstructed": true,
+    "no_duplicate_prediction_key_controller": true,
+    "no_news_exact_r1_probability_and_weight": true,
+    "ordinary_mapping_independently_reconstructed": true,
+    "prediction_rows_match_frozen_experts": true,
+    "required_result_artifacts_present": true,
+    "support_fallback_exact_r1_probability_and_weight": true
+  },
+  "evidence": {
+    "advancement_recomputed": [
+      {
+        "AAPL_mean_delta_BA": 0.008903133903133872,
+        "AMZN_mean_delta_BA": 0.0,
+        "constant_any_stock": false,
+        "contrast": "G1_vs_G0",
+        "expert_direction_disagreement_rows": {
+          "AAPL": 65,
+          "AMZN": 46
+        },
+        "expert_probability_difference_rows": {
+          "AAPL": 191,
+          "AMZN": 88
+        },
+        "macro_delta_BA": 0.004451566951566936,
+        "max_stock_mean_delta_Brier": 0.00012054458415859208,
+        "outer_cells": 6,
+        "passes": false,
+        "positive_outer_months": 2,
+        "routing_headroom_sufficient": true,
+        "weaker_stock_mean_delta_BA": 0.0
+      },
+      {
+        "AAPL_mean_delta_BA": -0.0007581380130399773,
+        "AMZN_mean_delta_BA": -0.010326086956521744,
+        "constant_any_stock": false,
+        "contrast": "G2_vs_G1",
+        "expert_direction_disagreement_rows": {
+          "AAPL": 65,
+          "AMZN": 46
+        },
+        "expert_probability_difference_rows": {
+          "AAPL": 191,
+          "AMZN": 88
+        },
+        "macro_delta_BA": -0.0055421124847808605,
+        "max_stock_mean_delta_Brier": 9.504453866056768e-05,
+        "outer_cells": 6,
+        "passes": false,
+        "positive_outer_months": 0,
+        "routing_headroom_sufficient": true,
+        "weaker_stock_mean_delta_BA": -0.010326086956521744
+      },
+      {
+        "AAPL_mean_delta_BA": 0.001361655773420493,
+        "AMZN_mean_delta_BA": 0.0,
+        "constant_any_stock": false,
+        "contrast": "G3_vs_G2",
+        "expert_direction_disagreement_rows": {
+          "AAPL": 65,
+          "AMZN": 46
+        },
+        "expert_probability_difference_rows": {
+          "AAPL": 191,
+          "AMZN": 88
+        },
+        "macro_delta_BA": 0.0006808278867102465,
+        "max_stock_mean_delta_Brier": 0.00015509479157544784,
+        "outer_cells": 6,
+        "passes": false,
+        "positive_outer_months": 1,
+        "routing_headroom_sufficient": true,
+        "weaker_stock_mean_delta_BA": 0.0
+      }
+    ],
+    "controller_fit_records": 28,
+    "prediction_rows": 5496
+  },
+  "mode": "postrun_independent_verification",
+  "preflight_status": "PASS",
+  "status": "FAIL"
+}

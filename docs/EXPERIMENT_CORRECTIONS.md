@@ -315,3 +315,21 @@ generated during this correction.
   tuning, v2 creation or activity-column experiment was performed in this
   stage. A separate future authorization is required before repairing the
   verifier or using the preserved run further.
+
+## CORR-027 — verifier-only recovery still leaves the Phase B run unverified
+
+- **Scope preserved:** the only authorized code edit moved the existing
+  `clean(value)` helper from `preflight_main` to module scope. No model,
+  verification calculation, runner, saved prediction, metric, or advancement
+  file was changed. SHA-256 records prove all eleven v1 files that predated
+  recovery are byte-identical before repair, before verification, and after it.
+- **Recovered result:** the existing post-run verifier now writes
+  `v1/verification.json`, with 17 passing checks and one failed check:
+  `advancement_independently_reconstructed`.
+- **Exact stop reason:** the verifier reconstructs advancement at full floating
+  point precision, whereas `advancement.json` was persisted by pandas
+  `to_json` at approximately ten decimal digits. Its `1e-12` record comparison
+  rejects that serialization difference. This is not repaired in place.
+- **Boundary:** the single frozen controller run remains
+  `UNVERIFIED_STOPPED_PENDING_EXTERNAL_REVIEW`. No runner rerun, report,
+  tuning, v2 output, activity experiment, or result-artifact rewrite occurred.

@@ -2190,6 +2190,21 @@
     "sha256": "8acfe953459e97fc8fc80927f3834a13ad4145ebc8a27642e628f9d272d80d96"
   },
   {
+    "path": "outputs/stock_specific_gate_4h/v1/verifier_recovery_input_hashes.json",
+    "bytes": 2502,
+    "sha256": "8f3a08d317e18c61379b89bf2a98a826df32e000b7886afa4dc3048ce511c6e1"
+  },
+  {
+    "path": "outputs/stock_specific_gate_4h/v1/verification.json",
+    "bytes": 3209,
+    "sha256": "269cf67d7724ef15e43f677a811e97c50822884c450f7986b298ca2ed57642b7"
+  },
+  {
+    "path": "outputs/stock_specific_gate_4h/v1/verifier_recovery_outcome.json",
+    "bytes": 1191,
+    "sha256": "fccb72c29d6e662a118df410186c2cd23f4ee596dfbaa301c783f710257ee383"
+  },
+  {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md",
     "bytes": 2808,
     "sha256": "97518996e5100e8077b5c227788700896af0125bd5d82d23c192b250e27d9fc1"

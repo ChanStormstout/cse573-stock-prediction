@@ -1332,3 +1332,23 @@ repair, score search, v2 run, or activity-column experiment was performed.
 The precise failure record is public; raw predictions and model artifacts stay
 local under the repository artifact rules. A future instruction must explicitly
 authorize any verifier repair or additional action.
+
+## 2026-09-18：仅 verifier recovery 仍因 advancement 精度审计停止
+
+**Authorized scope:** 未重跑模型或 `run_gate.py`。唯一代码修改是把既有的
+`clean(value)` helper 从 `preflight_main` 移到 module scope，使保存的 v1
+结果能进入既有 post-run verifier。
+
+**Integrity evidence:** 恢复前、修复后且验证前、以及 verifier 执行后的
+十一份既存 v1 artifact 的 SHA-256 完全一致。新增的仅是 recovery 元数据和
+`verification.json`；预测、metrics、monthly metrics、advancement、系数和
+训练证据均未改写。
+
+**Observed verifier result:** `verification.json` 记录 17 项 PASS 和 1 项
+FAIL：`advancement_independently_reconstructed`。独立重算保留完整浮点精度，
+而保存的 `advancement.json` 经 pandas `to_json` 写入时约保留十位小数，和
+verifier 的 `1e-12` 比较阈值不一致。因此 v1 是
+`UNVERIFIED_STOPPED_PENDING_EXTERNAL_REVIEW`，不是可报告的模型结果。
+
+**Actions not taken:** 没有 runner rerun、报告、调参、v2、activity-column
+实验，或为消除此差异改写任何既有结果文件。

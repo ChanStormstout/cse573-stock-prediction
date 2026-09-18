@@ -19,6 +19,16 @@ FORWARD_MONTHS = [f"2018-{month:02d}" for month in range(3, 9)]
 OUTER_MONTHS = ["2018-06", "2018-07", "2018-08"]
 
 
+def clean(value):
+    if hasattr(value, "item"):
+        return clean(value.item())
+    if isinstance(value, dict):
+        return {str(key): clean(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [clean(item) for item in value]
+    return value
+
+
 def synthetic_rows(aapl_rows: int, amzn_rows: int, day_count: int) -> pd.DataFrame:
     records = []
     for symbol, count in (("AAPL", aapl_rows), ("AMZN", amzn_rows)):
@@ -214,14 +224,6 @@ def preflight_main() -> dict:
         "expert_evidence": evidence["expert_evidence"],
         "fold_preprocessing_records": records,
     }
-    def clean(value):
-        if hasattr(value, "item"):
-            return clean(value.item())
-        if isinstance(value, dict):
-            return {str(key): clean(item) for key, item in value.items()}
-        if isinstance(value, (list, tuple)):
-            return [clean(item) for item in value]
-        return value
     result = clean(result)
     OUT.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
     return result

@@ -24,6 +24,17 @@
 > generated, and no post-result repair or tuning has been performed. See
 > `v1/verification_failure.json` for the exact failure record.
 
+> **Verifier-only recovery boundary:** the authorized scope repair moved only
+> the pre-existing `clean()` helper. SHA-256 hashes for all eleven v1 files
+> that existed before recovery are identical before repair, immediately before
+> verification, and after verification. The recovered verifier wrote
+> `v1/verification.json=FAIL`: 17 checks pass, but independent advancement
+> reconstruction rejects values at `1e-12` because `advancement.json` was
+> serialized at approximately ten decimal digits. The runner and saved
+> predictive CSVs remain unchanged; no report, tuning, rerun, or activity
+> experiment occurred. Status remains
+> `UNVERIFIED_STOPPED_PENDING_EXTERNAL_REVIEW`.
+
 本次从 `dd836d80c709cd98065249ab5cdde233bd7abdc1` 继续，历史运行和原始
 数据均保留。外部审查提出的 ISSUE-022—ISSUE-040 已在新的 v5/v2 目录中
 修复并核验：

@@ -107,6 +107,7 @@ historical backtests because September onward has already been exposed.
 | ISSUE-054 | HIGH | Reaction v4 perturbation replay changes bars by start time and does not explicitly mutate a still-forming bar whose end is after availability | The replay does not directly attack the historical unfinished-bar failure mode | RESOLVED_V4_STRONGER_VERIFIER_PASS |
 | ISSUE-055 | LOW | The stock-specific implementation plan still says no command has executed after real-input preflight completed | Documentation understates executed verification and can blur the predictive boundary | RESOLVED_DOCUMENTATION |
 | ISSUE-056 | BLOCKING | The approved run's post-run verifier raises `NameError: clean is not defined` before writing `v1/verification.json` | The sole G0--G3 run is not independently verified and must not be interpreted or used for tuning | STOPPED_UNVERIFIED_RUN_PRESERVED |
+| ISSUE-057 | BLOCKING | Verifier-only recovery writes `v1/verification.json=FAIL`: the independent advancement record differs from `advancement.json` at more than `1e-12` because the latter was persisted with approximately ten decimal digits | The one frozen run remains unverified unless external review authorizes a resolution; the runner and saved result files must not be changed | STOPPED_UNVERIFIED_RUN_PRESERVED |
 
 ### Addendum correction for ISSUE-041
 
@@ -145,6 +146,9 @@ earlier v2 downstream protocol remains a historical mismatch.
   independent verifier. ISSUE-056 stopped interpretation because the verifier
   failed before writing `v1/verification.json`; no repair, report or tuning is
   authorized in this stage.
+- [x] Stage 9R — verifier-only recovery moved the pre-existing `clean()` helper
+  into module scope and ran only the existing verifier. ISSUE-057 leaves one
+  advancement reconstruction check false; stop without runner or result edits.
 
 ## Stop conditions
 
