@@ -279,3 +279,24 @@ generated during this correction.
   fallback, median preprocessing, directional headroom and nested fallback.
   It remains `PREREGISTERED_NOT_RUN`: no G0--G3 predictions, metrics, oracle
   ceilings, or exposed-period gate results exist.
+
+## CORR-025 — final code-only verifier repairs before any Phase B approval
+
+- **Oracle contract:** the future hindsight diagnostic now has a
+  `ROUTING_ELIGIBLE` view that switches only rows with `eligible_news=1`, and a
+  `FULL_SYSTEM_R1_ON_NO_NEWS` view that forces R1 on no-news rows. Both are
+  labelled `HINDSIGHT DIAGNOSTIC ORACLE — NOT A MODEL` and remain excluded from
+  fitting and selection.
+- **Post-run audit:** `verify.py` now writes the existing preflight result when
+  `v1` is absent, and otherwise independently reconstructs saved mappings,
+  metrics, monthly metrics, advancement, chronology, preprocessing and
+  coefficient structure without calling `run_gate.py`'s metric/advancement
+  helpers.
+- **Strengthened contracts:** preflight now regression-tests that 0.70 versus
+  0.60 is not routing headroom, while 0.70 versus 0.40 is. Reaction v4's
+  replay now changes bars whose *end* exceeds availability and separately tests
+  an availability time of 10:02; `verify_v4.py` passes without rerunning the
+  article models.
+- **Boundary:** these are code-only repairs. Phase B remains
+  `PREREGISTERED_NOT_RUN`; no G0--G3 prediction, metric, oracle, advancement,
+  development or later artifact was generated.

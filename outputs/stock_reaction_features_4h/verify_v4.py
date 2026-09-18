@@ -44,8 +44,9 @@ def context_future_replay(builder, reactions, sessions) -> bool:
     cutoff = pd.Timestamp(row.available_utc)
     before = builder._completed_context_v4(bars, session, cutoff, 60)
     future = bars.copy()
-    future.loc[future.index >= cutoff, "close"] = (
-        future.loc[future.index >= cutoff, "close"] * 3.0 + 7.0
+    future_mask = future.index + pd.Timedelta("5min") > cutoff
+    future.loc[future_mask, "close"] = (
+        future.loc[future_mask, "close"] * 3.0 + 7.0
     )
     after = builder._completed_context_v4(future, session, cutoff, 60)
     return bool(
@@ -53,6 +54,27 @@ def context_future_replay(builder, reactions, sessions) -> bool:
         and before["used_bar_end_utc"] == after["used_bar_end_utc"]
         and np.isclose(before["return"], after["return"])
         and np.isclose(before["rv"], after["rv"])
+    )
+
+
+def non_boundary_unfinished_bar_contract(builder) -> bool:
+    """At 10:02, the 10:00--10:05 bar must be excluded from context."""
+    index = pd.DatetimeIndex([
+        pd.Timestamp("2020-01-02 09:55", tz="UTC"),
+        pd.Timestamp("2020-01-02 10:00", tz="UTC"),
+    ])
+    bars = pd.DataFrame({"open": [100.0, 101.0], "close": [101.0, 999.0]}, index=index)
+    session = pd.Series({
+        "open": pd.Timestamp("2020-01-02 09:30", tz="UTC"),
+        "close": pd.Timestamp("2020-01-02 16:00", tz="UTC"),
+    })
+    available = pd.Timestamp("2020-01-02 10:02", tz="UTC")
+    context = builder._completed_context_v4(bars, session, available, 5)
+    expected_end = pd.Timestamp("2020-01-02 10:00", tz="UTC").isoformat()
+    return bool(
+        context["valid"]
+        and context["used_bar_end_utc"] == expected_end
+        and np.isclose(context["return"], np.log(101.0 / 100.0))
     )
 
 
@@ -117,6 +139,7 @@ def main() -> None:
     checks["future_price_perturbation_context_invariant"] = context_future_replay(
         builder, reactions, sessions
     )
+    checks["non_boundary_unfinished_bar_excluded"] = non_boundary_unfinished_bar_contract(builder)
 
     build = json.loads((PUBLIC / "build_evidence.json").read_text())
     private_cards = PRIVATE / "ambiguous_AAPL_acronym_review_cards.jsonl"

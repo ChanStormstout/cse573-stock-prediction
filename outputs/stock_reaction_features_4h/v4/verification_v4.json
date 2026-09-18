@@ -10,6 +10,7 @@
     "fit_count_instrumented": true,
     "future_price_perturbation_context_invariant": true,
     "missing_context_is_nan_with_binary_flags": true,
+    "non_boundary_unfinished_bar_excluded": true,
     "official_windows_follow_article_gate_only": true,
     "past_fold_preprocessing_recorded": true,
     "prediction_horizons_exactly_registered": true,

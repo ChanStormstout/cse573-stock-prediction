@@ -9,6 +9,8 @@
     "g3_to_g2_fallback": true,
     "g3_to_g2_to_r1_chained_fallback": true,
     "g3_zero_nested_design": true,
+    "headroom_uses_direction_disagreement": true,
+    "hindsight_oracle_forces_r1_on_no_news": true,
     "map_weights_finite_and_bounded": true,
     "no_forbidden_state_feature": true,
     "no_news_expert_contract_documented": true,

@@ -99,11 +99,70 @@ def prediction_rows(frame, fitted, method, fold):
 
 
 def oracle_table(frame):
+    """Emit only diagnostic perfect-switch bounds under the no-news contract."""
     rows = []
-    for (phase, symbol, month), g in frame.groupby(["phase", "symbol", "month"]):
-        g = g[g.p_price.notna() & g.p_text.notna()].copy(); y = g.label.to_numpy(int); a = (g.p_price.to_numpy(float) >= .5).astype(int); b = (g.p_text.to_numpy(float) >= .5).astype(int); ca = a == y; cb = b == y; disagree = a != b; oracle = np.where(disagree & ca, a, np.where(disagree & cb, b, a))
-        rows.append({"phase": phase, "symbol": symbol, "month": month, "n": len(g), "disagreement": int(disagree.sum()), "disagreement_rate": float(disagree.mean()) if len(g) else 0.0, "R1_wrong_F1_right": int((~ca & cb).sum()), "R1_right_F1_wrong": int((ca & ~cb).sum()), "both_right": int((ca & cb).sum()), "both_wrong": int((~ca & ~cb).sum()), "oracle_BA": float(balanced_accuracy_score(y, oracle)) if len(np.unique(y)) == 2 else None, "label": "HINDSIGHT DIAGNOSTIC ORACLE — NOT A MODEL"})
+    for (phase, symbol, month), original in frame.groupby(["phase", "symbol", "month"]):
+        full = original[original.p_price.notna()].copy()
+        routing = full[full.eligible_news.eq(1) & full.p_text.notna()].copy()
+        for scope, g in (("ROUTING_ELIGIBLE", routing), ("FULL_SYSTEM_R1_ON_NO_NEWS", full)):
+            if g.empty:
+                continue
+            y = g.label.to_numpy(int)
+            price_direction = (g.p_price.to_numpy(float) >= .5).astype(int)
+            text_eligible = g.eligible_news.eq(1).to_numpy() & g.p_text.notna().to_numpy()
+            text_direction = price_direction.copy()
+            text_direction[text_eligible] = (g.loc[text_eligible, "p_text"].to_numpy(float) >= .5).astype(int)
+            price_correct = price_direction == y
+            text_correct = text_direction == y
+            direction_disagreement = text_eligible & (price_direction != text_direction)
+            oracle = np.where(
+                direction_disagreement & text_correct,
+                text_direction,
+                price_direction,
+            )
+            eligible = text_eligible
+            rows.append({
+                "phase": phase,
+                "symbol": symbol,
+                "month": month,
+                "oracle_scope": scope,
+                "n": int(len(g)),
+                "eligible_row_count": int(eligible.sum()),
+                "direction_disagreement": int(direction_disagreement.sum()),
+                "direction_disagreement_rate": float(direction_disagreement[eligible].mean()) if eligible.any() else 0.0,
+                "R1_wrong_F1_right": int((eligible & ~price_correct & text_correct).sum()),
+                "R1_right_F1_wrong": int((eligible & price_correct & ~text_correct).sum()),
+                "both_right": int((eligible & price_correct & text_correct).sum()),
+                "both_wrong": int((eligible & ~price_correct & ~text_correct).sum()),
+                "perfect_switch_BA": float(balanced_accuracy_score(y, oracle)) if len(np.unique(y)) == 2 else None,
+                "label": "HINDSIGHT DIAGNOSTIC ORACLE — NOT A MODEL",
+            })
     return pd.DataFrame(rows)
+
+
+def fit_evidence_record(fit, train, evaluate, fold):
+    return {
+        "fold": fold,
+        "method": None,
+        "variant": fit["variant"],
+        "train_rows": int(len(train)),
+        "eligible_rows": fit["fit_rows"],
+        "eval_rows": int(len(evaluate)),
+        "training_months": sorted(train.month.astype(str).unique().tolist()),
+        "train_target_end_max": train.end_utc.max().isoformat() if len(train) else None,
+        "eval_cutoff_min": evaluate.cutoff_utc.min().isoformat() if len(evaluate) else None,
+        "time_safe": bool(not len(train) or train.end_utc.max() < evaluate.cutoff_utc.min()),
+        "fallback": fit["fallback"] or "NONE",
+        "force_price": bool(fit.get("force_price", False)),
+        "support": fit["support"],
+        "weights_sum": fit["weights_sum"],
+        "state_fit_rows": fit["fit_rows"],
+        "state_preprocessing": {
+            "training_median": fit["state_median"],
+            "training_mean_after_imputation": fit["state_mean"],
+            "training_scale": fit["state_scale"],
+        },
+    }
 
 
 def make_metrics(pred):
@@ -137,14 +196,14 @@ def run(output: Path):
         ev = d[(d.month == fold) & d.p_price.notna()].copy(); train = d[(d.month < fold) & d.eligible_news.eq(1) & (d.end_utc < ev.cutoff_utc.min())].copy()
         for method in CONTROLLER_NAMES:
             fit = fit_controller(train, ev, method, fold); all_predictions.append(prediction_rows(ev, fit, method, fold));
-            fits.append({"fold": fold, "method": method, "train_rows": int(len(train)), "eligible_rows": fit["fit_rows"], "eval_rows": int(len(ev)), "train_target_end_max": train.end_utc.max().isoformat() if len(train) else None, "eval_cutoff_min": ev.cutoff_utc.min().isoformat() if len(ev) else None, "time_safe": bool(not len(train) or train.end_utc.max() < ev.cutoff_utc.min()), "fallback": fit["fallback"] or "NONE", "force_price": bool(fit.get("force_price", False)), "support": fit["support"], "weights_sum": fit["weights_sum"], "state_fit_rows": fit["fit_rows"], "state_preprocessing": {"training_median": fit["state_median"], "training_mean_after_imputation": fit["state_mean"], "training_scale": fit["state_scale"]}})
+            record = fit_evidence_record(fit, train, ev, fold); record["method"] = method; fits.append(record)
             fallbacks.append({"fold": fold, "method": method, "fallback": fit["fallback"] or "NONE", **fit["support"]})
             for c in fit["coefs"]: coefficients.append({"fold": fold, "method": method, **c})
     final_ev = d[(d.month >= "2018-09") & d.p_price.notna()].copy()
     final_train = d[(d.month >= "2018-03") & (d.month < "2018-09") & d.eligible_news.eq(1) & (d.end_utc < final_ev.cutoff_utc.min())]
     for method in CONTROLLER_NAMES:
-        fit = fit_controller(final_train, final_ev, method, "august_freeze"); all_predictions.append(prediction_rows(final_ev, fit, method, "august_freeze")); fits.append({"fold": "august_freeze", "method": method, "train_rows": int(len(final_train)), "eligible_rows": fit["fit_rows"], "eval_rows": int(len(final_ev)), "train_target_end_max": final_train.end_utc.max().isoformat() if len(final_train) else None, "eval_cutoff_min": final_ev.cutoff_utc.min().isoformat() if len(final_ev) else None, "time_safe": bool(not len(final_train) or final_train.end_utc.max() < final_ev.cutoff_utc.min()), "fallback": fit["fallback"] or "NONE", "force_price": bool(fit.get("force_price", False)), "support": fit["support"], "weights_sum": fit["weights_sum"], "state_fit_rows": fit["fit_rows"], "state_preprocessing": {"training_median": fit["state_median"], "training_mean_after_imputation": fit["state_mean"], "training_scale": fit["state_scale"]}, "frozen_no_exposed_label_update": True}); fallbacks.append({"fold": "august_freeze", "method": method, "fallback": fit["fallback"] or "NONE", "force_price": bool(fit.get("force_price", False)), **fit["support"]}); [coefficients.append({"fold": "august_freeze", "method": method, **c}) for c in fit["coefs"]]
-    pred = pd.concat(all_predictions, ignore_index=True); pred.to_csv(output / "predictions.csv", index=False); metrics, monthly = make_metrics(pred); metrics.to_csv(output / "metrics.csv", index=False); monthly.to_csv(output / "monthly_metrics.csv", index=False); oracle = oracle_table(d[d.month >= "2018-03"].copy()); oracle.to_csv(output / "oracle_ceiling.csv", index=False); oracle.to_csv(output / "disagreement_audit.csv", index=False); pd.DataFrame(coefficients).to_csv(output / "controller_coefficients.csv", index=False); pd.DataFrame(fallbacks).to_csv(output / "fallback_audit.csv", index=False); write_json(output / "controller_training_evidence.json", {"fits": fits, "expert_provenance": provenance, "expert_evidence": evidence, "state_columns": STATE_COLUMNS, "protocol_sha256": sha(HERE / "PRE_REGISTRATION.md")}); adv = advancement(monthly, pred); adv.to_json(output / "advancement.json", orient="records", indent=2); write_json(output / "protocol_fingerprint.json", {"inputs_sha256": sha(INPUTS), "predictions_sha256": sha(PREDICTIONS), "evidence_sha256": sha(EVIDENCE), "runner_sha256": sha(HERE / "run_gate.py"), "preregistration_sha256": sha(HERE / "PRE_REGISTRATION.md"), "runtime_seconds": time.monotonic() - start}); return pred, metrics, monthly, adv
+        fit = fit_controller(final_train, final_ev, method, "august_freeze"); all_predictions.append(prediction_rows(final_ev, fit, method, "august_freeze")); record = fit_evidence_record(fit, final_train, final_ev, "august_freeze"); record["method"] = method; record["frozen_no_exposed_label_update"] = True; fits.append(record); fallbacks.append({"fold": "august_freeze", "method": method, "fallback": fit["fallback"] or "NONE", "force_price": bool(fit.get("force_price", False)), **fit["support"]}); [coefficients.append({"fold": "august_freeze", "method": method, **c}) for c in fit["coefs"]]
+    pred = pd.concat(all_predictions, ignore_index=True); pred.to_csv(output / "predictions.csv", index=False); metrics, monthly = make_metrics(pred); metrics.to_csv(output / "metrics.csv", index=False); monthly.to_csv(output / "monthly_metrics.csv", index=False); oracle = oracle_table(d[d.month >= "2018-03"].copy()); oracle.to_csv(output / "oracle_ceiling.csv", index=False); oracle[oracle.oracle_scope.eq("ROUTING_ELIGIBLE")].to_csv(output / "disagreement_audit.csv", index=False); pd.DataFrame(coefficients).to_csv(output / "controller_coefficients.csv", index=False); pd.DataFrame(fallbacks).to_csv(output / "fallback_audit.csv", index=False); write_json(output / "controller_training_evidence.json", {"fits": fits, "expert_provenance": provenance, "expert_evidence": evidence, "state_columns": STATE_COLUMNS, "protocol_sha256": sha(HERE / "PRE_REGISTRATION.md")}); adv = advancement(monthly, pred); adv.to_json(output / "advancement.json", orient="records", indent=2); write_json(output / "protocol_fingerprint.json", {"inputs_sha256": sha(INPUTS), "predictions_sha256": sha(PREDICTIONS), "evidence_sha256": sha(EVIDENCE), "runner_sha256": sha(HERE / "run_gate.py"), "preregistration_sha256": sha(HERE / "PRE_REGISTRATION.md"), "runtime_seconds": time.monotonic() - start}); return pred, metrics, monthly, adv
 
 
 def main():

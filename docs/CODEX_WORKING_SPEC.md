@@ -101,6 +101,11 @@ historical backtests because September onward has already been exposed.
 | ISSUE-048 | HIGH | Controller routing headroom counts any probability difference rather than prediction-direction disagreement | The BA advancement requirement can be satisfied by rows a convex mixture cannot directionally repair | RESOLVED_PREFLIGHT_NOT_RUN |
 | ISSUE-049 | BLOCKING | Controller evidence validates F1_new substantially but does not establish the R1 issued-probability chronological provenance | One of the two frozen experts is not independently evidenced | RESOLVED_PREFLIGHT_NOT_RUN |
 | ISSUE-050 | BLOCKING | Static verification does not exercise the actual preparation path or the registered fallback/imputation/headroom contracts | Existing PASS could miss the concrete Phase B failures above | RESOLVED_PREFLIGHT_NOT_RUN |
+| ISSUE-051 | HIGH | The hindsight routing oracle can switch to F1_new on no-news rows although the registered system requires exact R1 there | A diagnostic oracle can manufacture routing headroom that the controller may never use | RESOLVED_CODE_ONLY_ORACLE_CONTRACT |
+| ISSUE-052 | BLOCKING | `verify.py` verifies only preflight contracts and cannot independently reconstruct a future approved controller run | A future G0--G3 report would lack an independent result audit | RESOLVED_CODE_ONLY_POSTRUN_VERIFIER |
+| ISSUE-053 | MEDIUM | The preflight has no direct regression example proving BA headroom requires direction disagreement rather than any probability difference | A later edit could silently regress the registered advancement diagnostic | RESOLVED_CODE_ONLY_REGRESSION_TEST |
+| ISSUE-054 | HIGH | Reaction v4 perturbation replay changes bars by start time and does not explicitly mutate a still-forming bar whose end is after availability | The replay does not directly attack the historical unfinished-bar failure mode | RESOLVED_V4_STRONGER_VERIFIER_PASS |
+| ISSUE-055 | LOW | The stock-specific implementation plan still says no command has executed after real-input preflight completed | Documentation understates executed verification and can blur the predictive boundary | RESOLVED_DOCUMENTATION |
 
 ### Addendum correction for ISSUE-041
 
@@ -132,6 +137,9 @@ earlier v2 downstream protocol remains a historical mismatch.
   predictive execution remains gated by explicit `APPROVE_GATE_RUN`.
 - [x] Stage 8B — repair Reaction v4 and Phase B preflight contracts
   (ISSUE-042 through ISSUE-050); do not generate Phase B predictions.
+- [x] Stage 8C — final code-only verification repairs (ISSUE-051 through
+  ISSUE-055); preflight and strengthened reaction v4 verifier passed without
+  a predictive controller replay.
 
 ## Stop conditions
 

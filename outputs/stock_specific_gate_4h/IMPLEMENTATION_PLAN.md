@@ -14,13 +14,16 @@
    execution. It checks advantage arithmetic, both expert provenances, exact
    R1 fallback and nested fallbacks, fold-local median/mean/scale transforms,
    direction-disagreement headroom semantics, finite weights, and G3-to-G2
-   nesting. After a separately approved result run it reconstructs all reported
-   metrics independently.
+   nesting. After a separately approved result run it independently reconstructs
+   prediction mapping, no-news/exact-R1 behavior, metrics, monthly metrics,
+   advancement, chronology, preprocessing and coefficient structure without
+   calling the runner's metric or advancement helpers.
 4. `report.py` renders the saved CSV/JSON artifacts into a human-readable
    report after an approved run.
 
-No command in this implementation plan has been executed.  The required later
-command is:
+Implementation and the real-input preflight have executed. G0--G3 predictive
+replay has **not** executed: there is no oracle, metrics, advancement or
+prediction result directory. The required later command is:
 
 ```bash
 work/stock-data/finbert-env/bin/python3 outputs/stock_specific_gate_4h/run_gate.py \

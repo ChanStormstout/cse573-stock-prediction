@@ -8,6 +8,14 @@
 > `PREREGISTERED_NOT_RUN`；在明确 `APPROVE_GATE_RUN` 前不得执行或生成
 > G0–G3 预测结果。
 
+> **最终 code-only 审查修复：**reaction v4 的 future-price replay 现会
+> 攻击任何结束时间晚于文章可用时刻的 bar，并以 10:02 的合成案例证明
+> 10:00--10:05 未完成 bar 不会进入特征；强化 verifier 通过。Phase B 的
+> `verify.py` 现同时包含批准后独立重算 prediction mapping、指标、advancement、
+> chronology、preprocessing 和 coefficient structure 的分支。当前实际运行的仍
+> 只有 preflight，且通过；没有 `v1` 预测、G0--G3 metrics、oracle 或 advancement
+> artifact。
+
 本次从 `dd836d80c709cd98065249ab5cdde233bd7abdc1` 继续，历史运行和原始
 数据均保留。外部审查提出的 ISSUE-022—ISSUE-040 已在新的 v5/v2 目录中
 修复并核验：

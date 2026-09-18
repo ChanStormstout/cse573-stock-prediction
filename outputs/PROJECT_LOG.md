@@ -1293,3 +1293,24 @@ AR2 is `NOT_RUN_MODEL_UNAVAILABLE`. As preregistered, W0--W3 did not run.
 Phase B preflight passed, but it is not a predictive experiment: no G0--G3
 prediction, metric, oracle or exposed-period result was generated. The project
 waits for an explicit `APPROVE_GATE_RUN` before that separate execution.
+
+## 2026-09-18：最终 code-only verification repair（无 Phase B 预测）
+
+**Why:** the follow-up external review found four final evidence gaps: oracle
+could illegally select text on no-news rows; the promised post-run independent
+verifier had not been implemented; headroom lacked an explicit regression case;
+and reaction replay did not mutate an unfinished bar that began before cutoff.
+
+**What changed:** the future oracle now reports a routing-eligible perfect
+switch separately from a full-system diagnostic that forces R1 for no-news
+rows. `verify.py` keeps its preflight mode and adds a future post-run mode that
+rebuilds saved predictions, metrics, monthly metrics, advancement, chronology,
+preprocessing and coefficient checks without using runner metric helpers.
+Preflight now checks .70/.60 versus .70/.40 direction semantics. Reaction v4
+replay mutates every bar whose end time exceeds availability and includes a
+10:02 synthetic unfinished-bar test.
+
+**Observed result:** strengthened `verify_v4.py` and real-input Phase B
+preflight both PASS. This did not retrain AR0/AR1 and did not execute the
+controller. `outputs/stock_specific_gate_4h/v1/` remains absent: no G0--G3
+predictions, metrics, oracle ceiling or advancement results exist.
