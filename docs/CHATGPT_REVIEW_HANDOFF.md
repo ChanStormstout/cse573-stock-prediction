@@ -468,6 +468,7 @@ and model artifacts remain local.
 ## Activity v1 runtime repair handoff — 2026-09-18
 
 - **Starting SHA:** `5510e9088836a185860c2be8255f38b685ef35dc`.
+- **Runtime-repair payload SHA:** `1d34bc33b76ce190fe6d4c4a5de4f68b5c249d50`.
 - **ISSUE-063--068:** frozen-C schema, verifier-local calendar, Boolean selection
   logic, period labels, independent selected-model reloads and protocol fingerprinting
   are repaired in code only.

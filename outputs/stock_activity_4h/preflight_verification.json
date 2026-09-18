@@ -582,8 +582,8 @@
       "ten_reference_valid": true,
       "extra_activity_feature_rejected": true,
       "modified_source_hash_rejected": true,
-      "current_month_c_excluded": true,
-      "matched_c_equals_a0": true,
+      "runner_a0_selected_c_schema_regression": true,
+      "postrun_helper_selftest_pass": true,
       "six_cell_gate_rejects_non_six": true
     },
     "a0_goal60_max_abs_probability_error": 1.1102230246251565e-16,
