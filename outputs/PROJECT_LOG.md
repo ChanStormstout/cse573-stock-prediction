@@ -1393,3 +1393,11 @@ A0/R1 parity 和 no-A1-result 都通过。A0 与 goal60 及 nextgen 保存 R1 �
 **Boundary:** `run_activity.py` 只有带 `--approve-activity-run` 才能执行。
 v1 的 predictions、metrics、monthly metrics 和 advancement 均不存在；等待
 外部审批，不运行任何 candidate 或 Phase B 变体。
+
+## 2026-09-18：Activity v1 code-only final repair
+
+外部 review 要求在任何 A1 运行前补齐 future runner、post-run verifier 和 report。
+新 verifier 对 1,607 keys 的全部八个 activity features 直接从 raw five-minute
+bars 和 schedule 重构；每个字段 NaN mismatch 为 0、最大有限误差为 0。它还验证
+全部 frozen source hashes、严格 20-session membership、按月 coverage 和合成边界
+cases。Activity v1 仍为 `PREREGISTERED_NOT_RUN`；没有执行 A1。

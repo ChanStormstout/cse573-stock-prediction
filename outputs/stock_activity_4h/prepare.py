@@ -43,7 +43,8 @@ def build():
             evidence.append(record)
     if set(ACTIVITY_FEATURES) != {c for c in data.columns if c in ACTIVITY_FEATURES}: raise AssertionError("activity feature contract changed")
     data.to_pickle(FEATURES); pd.DataFrame(evidence).to_csv(EVIDENCE,index=False)
-    dump(SOURCES,{"source_hashes":{str(p):sha(p) for p in source_paths},"r1_columns":r1,"rows":len(data),"feature_names":ACTIVITY_FEATURES,"semantics":"SEMANTICS_UNRESOLVED_OPAQUE_ACTIVITY"})
+    frozen_code=[ROOT/"outputs/stock_nextgen_4h/recent_price.py",ROOT/"outputs/stock_nextgen_4h/common.py",Path(__file__),HERE/"common.py"]
+    dump(SOURCES,{"source_hashes":{str(p):sha(p) for p in dict.fromkeys(source_paths+frozen_code)},"r1_columns":r1,"rows":len(data),"feature_names":ACTIVITY_FEATURES,"semantics":"SEMANTICS_UNRESOLVED_OPAQUE_ACTIVITY"})
     return data
 
 def ensure(): return pd.read_pickle(FEATURES) if FEATURES.exists() else build()

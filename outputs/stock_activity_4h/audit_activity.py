@@ -27,7 +27,8 @@ def main():
                 w=bars.reindex(pd.date_range(stamp,stamp+pd.Timedelta(minutes=minutes-5),freq="5min"))
                 if len(w)==minutes//5 and w.activity.notna().all(): checks.append((float(row.activity),float(w.activity.mean()),float(w.activity.sum())))
             a=np.asarray(checks)
-            gran.append({"symbol":symbol,"minutes":minutes,"complete_windows":int(len(a)),"mean_abs_error_vs_5m_mean":float(np.abs(a[:,0]-a[:,1]).mean()) if len(a) else None,"mean_abs_error_vs_5m_sum":float(np.abs(a[:,0]-a[:,2]).mean()) if len(a) else None,"status":"DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF"})
+            diff=np.abs(a[:,0]-a[:,2]) if len(a) else np.array([])
+            gran.append({"symbol":symbol,"minutes":minutes,"complete_windows":int(len(a)),"exact_sum_match_count":int((diff==0).sum()),"exact_sum_match_fraction":float((diff==0).mean()) if len(diff) else None,"max_abs_sum_discrepancy":float(diff.max()) if len(diff) else None,"mean_abs_sum_discrepancy":float(diff.mean()) if len(diff) else None,"mean_abs_error_vs_5m_mean":float(np.abs(a[:,0]-a[:,1]).mean()) if len(a) else None,"status":"DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF"})
     summary=pd.DataFrame(rows); summary.to_csv(HERE/"activity_summary.csv",index=False)
     profile=pd.concat(profiles).groupby(["symbol","slot"]).activity.agg(median="median",q25=lambda x:x.quantile(.25),q75=lambda x:x.quantile(.75),count="size").reset_index(); profile.to_csv(HERE/"activity_intraday_profile.csv",index=False)
     result={"status":"SEMANTICS_UNRESOLVED_OPAQUE_ACTIVITY","schedule_sha256":sha(schedule_path),"sources":summary.to_dict("records"),"intraday_slots":int(len(profile)),"cross_granularity":gran,"authoritative_definition_found":False,"definition_search":"Local course metadata names the seventh field activity but does not define vendor semantics."}

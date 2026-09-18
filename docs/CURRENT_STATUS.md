@@ -21,6 +21,9 @@
 > 8 个冻结特征均已构建。A0 对两个保存的 canonical R1 来源最大概率误差均为
 > `1.1102230246251565e-16`、方向完全一致；13 项 preflight checks PASS，且
 > 尚不存在 A1/A1_matchedC v1 结果。只有精确 `APPROVE_ACTIVITY_RUN` 可解锁。
+> Code-only repair 另加入 raw-bar 独立八字段重构（最大误差 0）、feature source
+> hash 校验、按月 coverage、future post-run verifier 和 PASS-gated report；它们
+> 均未运行 A1。
 
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部

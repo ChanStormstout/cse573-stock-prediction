@@ -56,6 +56,11 @@ extension. The opaque seventh field remains `activity`. Its exact eight-field
 in `outputs/stock_activity_4h/PRE_REGISTRATION.md`. A0 parity and feature
 preflight pass; A1 execution requires a separate exact `APPROVE_ACTIVITY_RUN`.
 
+| ISSUE-058 | BLOCKING | Activity runner stopped after candidate predictions, leaving an approved run incomplete | Replaced terminal stop with artifact-writing execution path; remains unrun | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-059 | BLOCKING | Activity verifier only performed preflight and did not independently reconstruct raw feature values | Added verifier-local raw-bar reconstruction of all eight fields and a post-run entrypoint | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-060 | HIGH | Activity report was a stub | Implemented PASS-gated report renderer; not executed | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-061 | HIGH | Feature preflight allowed extra `activity_*` columns and did not fingerprint all build sources | Exact column and frozen-hash checks now required | RESOLVED_PREFLIGHT_PASS |
+
 ## Known issues that must be repaired
 
 | ID | Severity | Issue | Why it matters | Initial status |

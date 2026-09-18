@@ -2221,8 +2221,8 @@
   },
   {
     "path": "outputs/stock_activity_4h/ACTIVITY_AUDIT.md",
-    "bytes": 2846,
-    "sha256": "7f44526776ea19903d19ca8c007ec0f9b04dd193842b6c2a09e302b9c50cf2de"
+    "bytes": 3510,
+    "sha256": "835fa0c523387f0471319f8bc80fdbf6e93c0428aa0958eb056c55f6dd5d6614"
   },
   {
     "path": "outputs/stock_activity_4h/activity_summary.csv",
@@ -2236,13 +2236,18 @@
   },
   {
     "path": "outputs/stock_activity_4h/activity_data_audit.json",
-    "bytes": 3055,
-    "sha256": "97d191e92320d6b4c295296055f005b71ca7b38bc55249c38691b86f25a6895a"
+    "bytes": 3757,
+    "sha256": "ef029186e7a5f1b7cedc8534015c7868551c27cab434f59d1bfb2d9a5986c9ce"
   },
   {
     "path": "outputs/stock_activity_4h/preflight_verification.json",
-    "bytes": 1539,
-    "sha256": "d3a4286243aa8c37f6839a57263b38f46a86dd38d6ba1d0afddaa21522e5ea2a"
+    "bytes": 16468,
+    "sha256": "cf169b4e6de28f3758a4cceadc7045195a6c9f335d380a6822849bcb51d490cc"
+  },
+  {
+    "path": "outputs/stock_activity_4h/activity_feature_coverage_by_month.csv",
+    "bytes": 2618,
+    "sha256": "33f9e7b9d23e93048e555f12e1101cbb31421fed46298479927dbbe55adba981"
   },
   {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md",

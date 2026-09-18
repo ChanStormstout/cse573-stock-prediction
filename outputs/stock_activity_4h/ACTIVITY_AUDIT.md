@@ -11,13 +11,13 @@ Status: **SEMANTICS_UNRESOLVED_OPAQUE_ACTIVITY**. No authoritative vendor defini
 
 ## Cross-granularity check
 
-| symbol   |   minutes |   complete_windows |   mean_abs_error_vs_5m_mean |   mean_abs_error_vs_5m_sum | status                              |
-|:---------|----------:|-------------------:|----------------------------:|---------------------------:|:------------------------------------|
-| AAPL     |        15 |              12793 |                    1222.68  |                 0.00343938 | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
-| AAPL     |        30 |               6346 |                    3080.13  |                 0          | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
-| AAPL     |        60 |               2994 |                    6993.01  |                 0          | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
-| AMZN     |        15 |              10045 |                     639.402 |                 0          | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
-| AMZN     |        30 |               4998 |                    1606.1   |                 0          | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
-| AMZN     |        60 |               2359 |                    3637.95  |                 0          | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
+| symbol   |   minutes |   complete_windows |   exact_sum_match_count |   exact_sum_match_fraction |   max_abs_sum_discrepancy |   mean_abs_sum_discrepancy |   mean_abs_error_vs_5m_mean | status                              |
+|:---------|----------:|-------------------:|------------------------:|---------------------------:|--------------------------:|---------------------------:|----------------------------:|:------------------------------------|
+| AAPL     |        15 |              12793 |                   12792 |                   0.999922 |                        44 |                 0.00343938 |                    1222.68  | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
+| AAPL     |        30 |               6346 |                    6346 |                   1        |                         0 |                 0          |                    3080.13  | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
+| AAPL     |        60 |               2994 |                    2994 |                   1        |                         0 |                 0          |                    6993.01  | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
+| AMZN     |        15 |              10045 |                   10045 |                   1        |                         0 |                 0          |                     639.402 | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
+| AMZN     |        30 |               4998 |                    4998 |                   1        |                         0 |                 0          |                    1606.1   | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
+| AMZN     |        60 |               2359 |                    2359 |                   1        |                         0 |                 0          |                    3637.95  | DESCRIPTIVE_ONLY_NOT_SEMANTIC_PROOF |
 
 The raw 15/30/60 files exist, but their aggregation comparison is descriptive only and does not identify the opaque field as volume or any other semantic quantity.
