@@ -89,3 +89,10 @@ unverified until Stage 4.
 
 No new experiment command was run in Stage 0. Start Stage 1 from the repository
 root with the v4 recency command after its parity audit is complete.
+
+## Stage 0 finalization
+
+The Stage 0 documentation commit is `5eec28e` (`Document method audit and
+repair plan`). A push was attempted after this commit and was blocked by the
+same unresolved GitHub DNS error; `origin/main` remains the prior tracking
+commit. The next stage proceeds locally without rewriting the existing v4 run.
