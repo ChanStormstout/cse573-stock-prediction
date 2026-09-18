@@ -1,0 +1,9 @@
+{
+  "gate_months": [
+    "2018-06",
+    "2018-07",
+    "2018-08"
+  ],
+  "runner_sha256": "7b86695e9b190bfc587e2105d8ea864cfe08d810adb2fc3932f2bc9d51fe65c3",
+  "source_dense_sha256": "9802b851a8cf1747d64deb99cf7a72442484839baf75194925990b5dd3163044"
+}

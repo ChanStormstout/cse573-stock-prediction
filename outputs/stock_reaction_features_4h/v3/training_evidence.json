@@ -1,0 +1,3810 @@
+{
+  "AR2": {
+    "eligible": false,
+    "reason": "target-context FinBERT binary unavailable; no cached title vectors substituted",
+    "status": "NOT_RUN_MODEL_UNAVAILABLE"
+  },
+  "fit_count": 120,
+  "fits": [
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 1483,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2424,
+        "numeric_scaler_fit_rows": 2424
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2424,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 750,
+        "numeric_scaler_fit_rows": 750
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 750,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 1556,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3907,
+        "numeric_scaler_fit_rows": 3907
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3907,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1112,
+        "numeric_scaler_fit_rows": 1112
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1112,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 2257,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 5463,
+        "numeric_scaler_fit_rows": 5463
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 5463,
+      "train_target_end_max": "2018-04-30T19:55:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 446,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1474,
+        "numeric_scaler_fit_rows": 1474
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1474,
+      "train_target_end_max": "2018-04-30T18:35:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 1483,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2424,
+        "numeric_scaler_fit_rows": 2424
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2424,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 750,
+        "numeric_scaler_fit_rows": 750
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 750,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 1556,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3907,
+        "numeric_scaler_fit_rows": 3907
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3907,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1112,
+        "numeric_scaler_fit_rows": 1112
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1112,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 2257,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 5463,
+        "numeric_scaler_fit_rows": 5463
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 5463,
+      "train_target_end_max": "2018-04-30T19:55:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 446,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1474,
+        "numeric_scaler_fit_rows": 1474
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1474,
+      "train_target_end_max": "2018-04-30T18:35:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 1483,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2424,
+        "numeric_scaler_fit_rows": 2424
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2424,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 750,
+        "numeric_scaler_fit_rows": 750
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 750,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 1556,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3907,
+        "numeric_scaler_fit_rows": 3907
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3907,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1112,
+        "numeric_scaler_fit_rows": 1112
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1112,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 2257,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 5463,
+        "numeric_scaler_fit_rows": 5463
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 5463,
+      "train_target_end_max": "2018-04-30T19:55:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 446,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1474,
+        "numeric_scaler_fit_rows": 1474
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1474,
+      "train_target_end_max": "2018-04-30T18:35:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 1483,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2424,
+        "numeric_scaler_fit_rows": 2424
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2424,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 750,
+        "numeric_scaler_fit_rows": 750
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 750,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 1556,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3907,
+        "numeric_scaler_fit_rows": 3907
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3907,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1112,
+        "numeric_scaler_fit_rows": 1112
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1112,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 2257,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 5463,
+        "numeric_scaler_fit_rows": 5463
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 5463,
+      "train_target_end_max": "2018-04-30T19:55:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 446,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1474,
+        "numeric_scaler_fit_rows": 1474
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1474,
+      "train_target_end_max": "2018-04-30T18:35:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-06-01T13:30:00+00:00",
+      "eval_n": 1404,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-06",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 7720,
+        "numeric_scaler_fit_rows": 7720
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 7720,
+      "train_target_end_max": "2018-05-31T20:00:00+00:00",
+      "weight_sum": 103.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-06-01T13:52:07.002000+00:00",
+      "eval_n": 440,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-06",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1920,
+        "numeric_scaler_fit_rows": 1920
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1920,
+      "train_target_end_max": "2018-05-31T20:00:00+00:00",
+      "weight_sum": 102.99999999999999
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-07-02T13:53:29+00:00",
+      "eval_n": 905,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-07",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 9124,
+        "numeric_scaler_fit_rows": 9124
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 9124,
+      "train_target_end_max": "2018-06-29T20:00:00+00:00",
+      "weight_sum": 124.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-07-02T13:53:29+00:00",
+      "eval_n": 360,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-07",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2360,
+        "numeric_scaler_fit_rows": 2360
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 2360,
+      "train_target_end_max": "2018-06-29T20:00:00+00:00",
+      "weight_sum": 124.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-08-01T13:30:00+00:00",
+      "eval_n": 1259,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-08",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 10029,
+        "numeric_scaler_fit_rows": 10029
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 10029,
+      "train_target_end_max": "2018-07-31T19:55:00+00:00",
+      "weight_sum": 145.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-08-01T13:57:26+00:00",
+      "eval_n": 417,
+      "horizon_minutes": 60,
+      "method": "AR0",
+      "month": "2018-08",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2720,
+        "numeric_scaler_fit_rows": 2720
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 2720,
+      "train_target_end_max": "2018-07-31T19:35:00+00:00",
+      "weight_sum": 145.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 1483,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 2424,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5570,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2424,
+        "numeric_scaler_fit_rows": 2424
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2424,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 750,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 3532,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 750,
+        "numeric_scaler_fit_rows": 750
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 750,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 1556,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 3907,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 7360,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3907,
+        "numeric_scaler_fit_rows": 3907
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3907,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1112,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4343,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1112,
+        "numeric_scaler_fit_rows": 1112
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1112,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 2257,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 5463,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 8990,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 5463,
+        "numeric_scaler_fit_rows": 5463
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 5463,
+      "train_target_end_max": "2018-04-30T19:55:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 446,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1474,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5046,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1474,
+        "numeric_scaler_fit_rows": 1474
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1474,
+      "train_target_end_max": "2018-04-30T18:35:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 1483,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 2424,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5570,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2424,
+        "numeric_scaler_fit_rows": 2424
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2424,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 750,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 3532,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 750,
+        "numeric_scaler_fit_rows": 750
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 750,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 1556,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 3907,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 7360,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3907,
+        "numeric_scaler_fit_rows": 3907
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3907,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1112,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4343,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1112,
+        "numeric_scaler_fit_rows": 1112
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1112,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 2257,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 5463,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 8990,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 5463,
+        "numeric_scaler_fit_rows": 5463
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 5463,
+      "train_target_end_max": "2018-04-30T19:55:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 446,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1474,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5046,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1474,
+        "numeric_scaler_fit_rows": 1474
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1474,
+      "train_target_end_max": "2018-04-30T18:35:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 1483,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 2424,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5570,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2424,
+        "numeric_scaler_fit_rows": 2424
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2424,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 750,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 3532,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 750,
+        "numeric_scaler_fit_rows": 750
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 750,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 1556,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 3907,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 7360,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3907,
+        "numeric_scaler_fit_rows": 3907
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3907,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1112,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4343,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1112,
+        "numeric_scaler_fit_rows": 1112
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1112,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 2257,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 5463,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 8990,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 5463,
+        "numeric_scaler_fit_rows": 5463
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 5463,
+      "train_target_end_max": "2018-04-30T19:55:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 446,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1474,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5046,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1474,
+        "numeric_scaler_fit_rows": 1474
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1474,
+      "train_target_end_max": "2018-04-30T18:35:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 1483,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 2424,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5570,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2424,
+        "numeric_scaler_fit_rows": 2424
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2424,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 750,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 3532,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 750,
+        "numeric_scaler_fit_rows": 750
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 750,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 1556,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 3907,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 7360,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3907,
+        "numeric_scaler_fit_rows": 3907
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3907,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 362,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1112,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4343,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1112,
+        "numeric_scaler_fit_rows": 1112
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1112,
+      "train_target_end_max": "2018-03-29T19:55:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 2257,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 5463,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 8990,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 5463,
+        "numeric_scaler_fit_rows": 5463
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 5463,
+      "train_target_end_max": "2018-04-30T19:55:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 446,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1474,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5046,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1474,
+        "numeric_scaler_fit_rows": 1474
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1474,
+      "train_target_end_max": "2018-04-30T18:35:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-06-01T13:30:00+00:00",
+      "eval_n": 1404,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-06",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 7720,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 10890,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 7720,
+        "numeric_scaler_fit_rows": 7720
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 7720,
+      "train_target_end_max": "2018-05-31T20:00:00+00:00",
+      "weight_sum": 103.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-06-01T13:52:07.002000+00:00",
+      "eval_n": 440,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-06",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 1920,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 6045,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1920,
+        "numeric_scaler_fit_rows": 1920
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1920,
+      "train_target_end_max": "2018-05-31T20:00:00+00:00",
+      "weight_sum": 102.99999999999999
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-07-02T13:53:29+00:00",
+      "eval_n": 905,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-07",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 9124,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 11932,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 9124,
+        "numeric_scaler_fit_rows": 9124
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 9124,
+      "train_target_end_max": "2018-06-29T20:00:00+00:00",
+      "weight_sum": 124.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-07-02T13:53:29+00:00",
+      "eval_n": 360,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-07",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 2360,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 6920,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2360,
+        "numeric_scaler_fit_rows": 2360
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 2360,
+      "train_target_end_max": "2018-06-29T20:00:00+00:00",
+      "weight_sum": 124.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-08-01T13:30:00+00:00",
+      "eval_n": 1259,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-08",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 10029,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 12574,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 10029,
+        "numeric_scaler_fit_rows": 10029
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 10029,
+      "train_target_end_max": "2018-07-31T19:55:00+00:00",
+      "weight_sum": 145.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-08-01T13:57:26+00:00",
+      "eval_n": 417,
+      "horizon_minutes": 60,
+      "method": "AR1",
+      "month": "2018-08",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 2720,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 7377,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2720,
+        "numeric_scaler_fit_rows": 2720
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 2720,
+      "train_target_end_max": "2018-07-31T19:35:00+00:00",
+      "weight_sum": 145.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 688,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1173,
+        "numeric_scaler_fit_rows": 1173
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1173,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 160,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 332,
+        "numeric_scaler_fit_rows": 332
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 332,
+      "train_target_end_max": "2018-02-28T19:40:00+00:00",
+      "weight_sum": 39.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 782,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1861,
+        "numeric_scaler_fit_rows": 1861
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1861,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 186,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 492,
+        "numeric_scaler_fit_rows": 492
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 492,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 60.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 1112,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2643,
+        "numeric_scaler_fit_rows": 2643
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2643,
+      "train_target_end_max": "2018-04-30T19:45:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 197,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 678,
+        "numeric_scaler_fit_rows": 678
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 678,
+      "train_target_end_max": "2018-04-30T19:20:00+00:00",
+      "weight_sum": 80.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 688,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1173,
+        "numeric_scaler_fit_rows": 1173
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1173,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 160,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 332,
+        "numeric_scaler_fit_rows": 332
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 332,
+      "train_target_end_max": "2018-02-28T19:40:00+00:00",
+      "weight_sum": 39.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 782,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1861,
+        "numeric_scaler_fit_rows": 1861
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1861,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 186,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 492,
+        "numeric_scaler_fit_rows": 492
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 492,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 60.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 1112,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2643,
+        "numeric_scaler_fit_rows": 2643
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2643,
+      "train_target_end_max": "2018-04-30T19:45:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 197,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 678,
+        "numeric_scaler_fit_rows": 678
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 678,
+      "train_target_end_max": "2018-04-30T19:20:00+00:00",
+      "weight_sum": 80.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 688,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1173,
+        "numeric_scaler_fit_rows": 1173
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1173,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 160,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 332,
+        "numeric_scaler_fit_rows": 332
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 332,
+      "train_target_end_max": "2018-02-28T19:40:00+00:00",
+      "weight_sum": 39.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 782,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1861,
+        "numeric_scaler_fit_rows": 1861
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1861,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 186,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 492,
+        "numeric_scaler_fit_rows": 492
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 492,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 60.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 1112,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2643,
+        "numeric_scaler_fit_rows": 2643
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2643,
+      "train_target_end_max": "2018-04-30T19:45:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 197,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 678,
+        "numeric_scaler_fit_rows": 678
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 678,
+      "train_target_end_max": "2018-04-30T19:20:00+00:00",
+      "weight_sum": 80.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 688,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1173,
+        "numeric_scaler_fit_rows": 1173
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1173,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 160,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 332,
+        "numeric_scaler_fit_rows": 332
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 332,
+      "train_target_end_max": "2018-02-28T19:40:00+00:00",
+      "weight_sum": 39.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 782,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1861,
+        "numeric_scaler_fit_rows": 1861
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1861,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 186,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 492,
+        "numeric_scaler_fit_rows": 492
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 492,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 60.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 1112,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2643,
+        "numeric_scaler_fit_rows": 2643
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2643,
+      "train_target_end_max": "2018-04-30T19:45:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 197,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 678,
+        "numeric_scaler_fit_rows": 678
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 678,
+      "train_target_end_max": "2018-04-30T19:20:00+00:00",
+      "weight_sum": 80.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-06-01T13:30:00+00:00",
+      "eval_n": 731,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-06",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3755,
+        "numeric_scaler_fit_rows": 3755
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3755,
+      "train_target_end_max": "2018-05-31T20:00:00+00:00",
+      "weight_sum": 103.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-06-01T13:52:07.002000+00:00",
+      "eval_n": 201,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-06",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 875,
+        "numeric_scaler_fit_rows": 875
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 875,
+      "train_target_end_max": "2018-05-31T19:50:00+00:00",
+      "weight_sum": 102.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-07-02T13:53:29+00:00",
+      "eval_n": 438,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-07",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 4486,
+        "numeric_scaler_fit_rows": 4486
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 4486,
+      "train_target_end_max": "2018-06-29T19:55:00+00:00",
+      "weight_sum": 124.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-07-02T13:53:29+00:00",
+      "eval_n": 164,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-07",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1076,
+        "numeric_scaler_fit_rows": 1076
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1076,
+      "train_target_end_max": "2018-06-29T19:30:00+00:00",
+      "weight_sum": 123.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-08-01T13:30:00+00:00",
+      "eval_n": 566,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-08",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 4924,
+        "numeric_scaler_fit_rows": 4924
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 4924,
+      "train_target_end_max": "2018-07-31T20:00:00+00:00",
+      "weight_sum": 144.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-08-01T13:57:26+00:00",
+      "eval_n": 170,
+      "horizon_minutes": 240,
+      "method": "AR0",
+      "month": "2018-08",
+      "phase": "outer",
+      "preprocessing": {
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1240,
+        "numeric_scaler_fit_rows": 1240
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1240,
+      "train_target_end_max": "2018-07-31T20:00:00+00:00",
+      "weight_sum": 143.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 688,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1173,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 3600,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1173,
+        "numeric_scaler_fit_rows": 1173
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1173,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 160,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 332,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2090,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 332,
+        "numeric_scaler_fit_rows": 332
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 332,
+      "train_target_end_max": "2018-02-28T19:40:00+00:00",
+      "weight_sum": 39.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 782,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1861,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4580,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1861,
+        "numeric_scaler_fit_rows": 1861
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1861,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 186,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 492,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2560,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 492,
+        "numeric_scaler_fit_rows": 492
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 492,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 60.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 1112,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 2643,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5538,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2643,
+        "numeric_scaler_fit_rows": 2643
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2643,
+      "train_target_end_max": "2018-04-30T19:45:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 197,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 678,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2944,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 678,
+        "numeric_scaler_fit_rows": 678
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 678,
+      "train_target_end_max": "2018-04-30T19:20:00+00:00",
+      "weight_sum": 80.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 688,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1173,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 3600,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1173,
+        "numeric_scaler_fit_rows": 1173
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1173,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 160,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 332,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2090,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 332,
+        "numeric_scaler_fit_rows": 332
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 332,
+      "train_target_end_max": "2018-02-28T19:40:00+00:00",
+      "weight_sum": 39.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 782,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1861,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4580,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1861,
+        "numeric_scaler_fit_rows": 1861
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1861,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 186,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 492,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2560,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 492,
+        "numeric_scaler_fit_rows": 492
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 492,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 60.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 1112,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 2643,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5538,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2643,
+        "numeric_scaler_fit_rows": 2643
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2643,
+      "train_target_end_max": "2018-04-30T19:45:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.1,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 197,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 678,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2944,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 678,
+        "numeric_scaler_fit_rows": 678
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 678,
+      "train_target_end_max": "2018-04-30T19:20:00+00:00",
+      "weight_sum": 80.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 688,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1173,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 3600,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1173,
+        "numeric_scaler_fit_rows": 1173
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1173,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 160,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 332,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2090,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 332,
+        "numeric_scaler_fit_rows": 332
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 332,
+      "train_target_end_max": "2018-02-28T19:40:00+00:00",
+      "weight_sum": 39.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 782,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1861,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4580,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1861,
+        "numeric_scaler_fit_rows": 1861
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1861,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 186,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 492,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2560,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 492,
+        "numeric_scaler_fit_rows": 492
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 492,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 60.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 1112,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 2643,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5538,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2643,
+        "numeric_scaler_fit_rows": 2643
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2643,
+      "train_target_end_max": "2018-04-30T19:45:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 1.0,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 197,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 678,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2944,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 678,
+        "numeric_scaler_fit_rows": 678
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 678,
+      "train_target_end_max": "2018-04-30T19:20:00+00:00",
+      "weight_sum": 80.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:18.058000+00:00",
+      "eval_n": 688,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1173,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 3600,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1173,
+        "numeric_scaler_fit_rows": 1173
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1173,
+      "train_target_end_max": "2018-02-28T20:55:00+00:00",
+      "weight_sum": 40.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-03-01T14:31:57.035000+00:00",
+      "eval_n": 160,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-03",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 332,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2090,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 332,
+        "numeric_scaler_fit_rows": 332
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 332,
+      "train_target_end_max": "2018-02-28T19:40:00+00:00",
+      "weight_sum": 39.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:31:33+00:00",
+      "eval_n": 782,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 1861,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4580,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1861,
+        "numeric_scaler_fit_rows": 1861
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 1861,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 61.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-04-02T13:36:44.013000+00:00",
+      "eval_n": 186,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-04",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 492,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2560,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 492,
+        "numeric_scaler_fit_rows": 492
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 492,
+      "train_target_end_max": "2018-03-29T19:50:00+00:00",
+      "weight_sum": 60.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:38:00+00:00",
+      "eval_n": 1112,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 2643,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 5538,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 2643,
+        "numeric_scaler_fit_rows": 2643
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 2643,
+      "train_target_end_max": "2018-04-30T19:45:00+00:00",
+      "weight_sum": 81.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-05-01T13:55:15.003000+00:00",
+      "eval_n": 197,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-05",
+      "phase": "inner",
+      "preprocessing": {
+        "lexical_fit_rows": 678,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 2944,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 678,
+        "numeric_scaler_fit_rows": 678
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 678,
+      "train_target_end_max": "2018-04-30T19:20:00+00:00",
+      "weight_sum": 80.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-06-01T13:30:00+00:00",
+      "eval_n": 731,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-06",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 3755,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 7012,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 3755,
+        "numeric_scaler_fit_rows": 3755
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 3755,
+      "train_target_end_max": "2018-05-31T20:00:00+00:00",
+      "weight_sum": 103.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-06-01T13:52:07.002000+00:00",
+      "eval_n": 201,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-06",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 875,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 3552,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 875,
+        "numeric_scaler_fit_rows": 875
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 875,
+      "train_target_end_max": "2018-05-31T19:50:00+00:00",
+      "weight_sum": 102.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-07-02T13:53:29+00:00",
+      "eval_n": 438,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-07",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 4486,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 7851,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 4486,
+        "numeric_scaler_fit_rows": 4486
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 4486,
+      "train_target_end_max": "2018-06-29T19:55:00+00:00",
+      "weight_sum": 124.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-07-02T13:53:29+00:00",
+      "eval_n": 164,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-07",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 1076,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4009,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1076,
+        "numeric_scaler_fit_rows": 1076
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1076,
+      "train_target_end_max": "2018-06-29T19:30:00+00:00",
+      "weight_sum": 123.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-08-01T13:30:00+00:00",
+      "eval_n": 566,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-08",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 4924,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 8238,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 4924,
+        "numeric_scaler_fit_rows": 4924
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AAPL",
+      "train_n": 4924,
+      "train_target_end_max": "2018-07-31T20:00:00+00:00",
+      "weight_sum": 144.0
+    },
+    {
+      "C": 0.01,
+      "eval_available_min": "2018-08-01T13:57:26+00:00",
+      "eval_n": 170,
+      "horizon_minutes": 240,
+      "method": "AR1",
+      "month": "2018-08",
+      "phase": "outer",
+      "preprocessing": {
+        "lexical_fit_rows": 1240,
+        "lexical_selected_features": 500,
+        "lexical_selection": "chi2_on_past_fold_then_lexicographic_tie_break",
+        "lexical_vocabulary_size": 4230,
+        "numeric_columns": [
+          "pre_5m_return",
+          "pre_5m_rv",
+          "pre_15m_return",
+          "pre_15m_rv",
+          "pre_30m_return",
+          "pre_30m_rv",
+          "pre_60m_return",
+          "pre_60m_rv",
+          "minutes_from_open"
+        ],
+        "numeric_imputer_fit_rows": 1240,
+        "numeric_scaler_fit_rows": 1240
+      },
+      "reload_max_abs_error": 0.0,
+      "symbol": "AMZN",
+      "train_n": 1240,
+      "train_target_end_max": "2018-07-31T20:00:00+00:00",
+      "weight_sum": 143.0
+    }
+  ],
+  "runtime_seconds": 17.54446062500938,
+  "selection": [
+    {
+      "C": 1.0,
+      "horizon_minutes": 60,
+      "inner_scores": [
+        [
+          0.01,
+          0.49637154864892236
+        ],
+        [
+          0.1,
+          0.5002280902274437
+        ],
+        [
+          1.0,
+          0.5033774537798396
+        ]
+      ],
+      "method": "AR0"
+    },
+    {
+      "C": 0.01,
+      "horizon_minutes": 60,
+      "inner_scores": [
+        [
+          0.01,
+          0.5003698777325291
+        ],
+        [
+          0.1,
+          0.49856345870329705
+        ],
+        [
+          1.0,
+          0.4883867824902441
+        ]
+      ],
+      "method": "AR1"
+    },
+    {
+      "C": 0.01,
+      "horizon_minutes": 240,
+      "inner_scores": [
+        [
+          0.01,
+          0.4975447325478914
+        ],
+        [
+          0.1,
+          0.4899684354393281
+        ],
+        [
+          1.0,
+          0.4952365409709579
+        ]
+      ],
+      "method": "AR0"
+    },
+    {
+      "C": 0.01,
+      "horizon_minutes": 240,
+      "inner_scores": [
+        [
+          0.01,
+          0.48464341351169776
+        ],
+        [
+          0.1,
+          0.4806203178812716
+        ],
+        [
+          1.0,
+          0.48346374830801647
+        ]
+      ],
+      "method": "AR1"
+    }
+  ],
+  "status": "ARTICLE_AR0_AR1_COMPLETE_AR2_NOT_RUN"
+}

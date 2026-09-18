@@ -37,12 +37,13 @@
 - **stock_method_validity_audit**: Python source archive
 - **stock_nextgen_4h**: [FINAL_STATUS.md](../outputs/stock_nextgen_4h/FINAL_STATUS.md) · [PROTOCOL.md](../outputs/stock_nextgen_4h/PROTOCOL.md) · [README.md](../outputs/stock_nextgen_4h/README.md) · [REPORT.md](../outputs/stock_nextgen_4h/REPORT.md)
 - **stock_paper_methods_4h**: [README.md](../outputs/stock_paper_methods_4h/README.md)
-- **stock_reaction_features_4h**: [PRE_REGISTRATION.md](../outputs/stock_reaction_features_4h/PRE_REGISTRATION.md)
+- **stock_reaction_features_4h**: [PRE_REGISTRATION.md](../outputs/stock_reaction_features_4h/PRE_REGISTRATION.md) · [PRE_REGISTRATION_v2.md](../outputs/stock_reaction_features_4h/PRE_REGISTRATION_v2.md) · [PRE_REGISTRATION_v3.md](../outputs/stock_reaction_features_4h/PRE_REGISTRATION_v3.md)
 - **stock_recency_dense_4h**: [PRE_REGISTRATION.md](../outputs/stock_recency_dense_4h/PRE_REGISTRATION.md)
 - **stock_review_fixes**: [README.md](../outputs/stock_review_fixes/README.md)
 - **stock_robust**: [README.md](../outputs/stock_robust/README.md) · [REPORT.md](../outputs/stock_robust/REPORT.md)
 - **stock_signal_audit**: [README.md](../outputs/stock_signal_audit/README.md)
 - **stock_small_boost**: [REPORT.md](../outputs/stock_small_boost/REPORT.md)
+- **stock_specific_gate_4h**: [IMPLEMENTATION_PLAN.md](../outputs/stock_specific_gate_4h/IMPLEMENTATION_PLAN.md) · [PRE_REGISTRATION.md](../outputs/stock_specific_gate_4h/PRE_REGISTRATION.md)
 - **stock_ssl_4h**: [README.md](../outputs/stock_ssl_4h/README.md)
 - **stock_structured**: Python source archive
 - **stock_tabpfn_4h**: Python source archive

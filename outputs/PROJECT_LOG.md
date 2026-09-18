@@ -1216,5 +1216,49 @@ ModernBERT v2 与 TabPFN v2 的 current-facing 文案改为“未显示稳定的
 没有重跑 encoder 或 TabPFN。详细 reaction addendum 要求拆分为
 ISSUE-028—ISSUE-040，覆盖完成 bar、逐行 provenance、时间对齐、W0–W3、完整
 promotion gate、AR1/AR2、future perturbation、grouping manifest 和新运行指纹。
-状态继续为 `PAUSED_PENDING_REVIEWER_ADDENDUM`，待完整 addendum 纳入后才可
-制定 repair protocol 和新输出目录。
+该段是历史暂停记录；已由本节 2026-09-18 Phase A repair checkpoint supersede。
+
+## 2026-09-18：Phase A dense/reaction repair and Phase B preregistration
+
+从本地 checkpoint `dd836d80c709cd98065249ab5cdde233bd7abdc1` 继续，未改写
+任何历史目录。新 dense v5 修复了 June--August gate 的实际过滤：6 个
+stock-month cells 中 AAPL D1−D0_day 为 `+3.740pp`，AMZN 为 `−0.079pp`，
+两股 gate FAIL。原 v4 `+0.42/+0.78pp` 仅保留为 superseded historical
+diagnostic。June--August infinity parity 新增 42 行，最大概率误差
+`1.67e-15`，通过。
+
+新 reaction v2 从完整语料重建 89,958 个候选和 85,402 个 canonical groups。
+完成 bar、逐行 used-bar end、reaction maturity、fold-local AR1 preprocessing、
+target-pair manifest、future-price perturbation replay 和完整 promotion gate
+均通过。240m AR1 article gate PASS；但 downstream W0→W1 AAPL
+`48.70%→51.98%`、AMZN `60.63%→44.43%`，未作为四小时改进推广。AR2 因
+缺少 target-context FinBERT binary 明确 `NOT_RUN_MODEL_BINARY_UNAVAILABLE`。
+`verify_v2.py`、`verify_v5.py` 和 infinity parity verifier 均 PASS。
+
+随后实现并静态测试 `outputs/stock_specific_gate_4h/` Phase B：固定 R1 与
+F1_new、十个状态变量、G0--G3、加权 ridge、exact no-news 回退和 August
+freeze；没有执行 `run_gate.py`，没有生成任何 G0--G3 结果。等待明确
+`APPROVE_GATE_RUN`。
+
+## 2026-09-18：reaction v3 addendum correction and full-gate rerun
+
+The reviewer clarified that AR1 and AR2 have independent article-level
+eligibility.  AR2 unavailability must not block a separately passing AR1.  This
+was registered as ISSUE-041 and added to `PRE_REGISTRATION_v3.md` before the
+rerun.  The first v3 article-only checkpoint is preserved at
+`v3_article_audit_checkpoint/`; the corrected run is a new `v3/` artifact.
+
+The corrected v3 run used 120 fold-local AR0/AR1 fits.  The 240-minute AR1
+candidate improved June--August mean BA by AAPL `+1.763pp` and AMZN `+3.218pp`
+and stayed within the per-stock Brier guardrail, but macro AUC changed by
+`-0.570pp`, so the full gate failed.  The 60-minute candidate also failed.
+AR2 is explicitly `NOT_RUN_MODEL_UNAVAILABLE`.  Because no candidate passed,
+the exact W0=R1, W1=coverage, W2=five reaction fields, W3=F1+R1+five fields
+downstream protocol was not run.  v2's old W0--W3 numbers remain a historical
+protocol mismatch and are superseded for current claims.
+
+`verify_v3.py` passed completed-bar and maturity safety, future-price replay,
+target-pair uniqueness, fold-local preprocessing, model reload, gate recording
+and the no-downstream-on-failure rule.  Independent human association review is
+still not claimed.  Phase B G0--G3 remains preregistered but unexecuted pending
+the explicit `APPROVE_GATE_RUN` message.

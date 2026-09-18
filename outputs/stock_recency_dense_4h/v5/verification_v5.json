@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "exact_six_gate_cells": true,
+    "fit_count_instrumented": true,
+    "gate_filter_before_merge": true,
+    "gate_months_june_august": true,
+    "historical_v4_preserved": true,
+    "parity_handled": true,
+    "status_complete": true
+  },
+  "gate": {
+    "AAPL_delta_BA": 0.03740214034331683,
+    "AMZN_delta_BA": -0.0007850241545894013,
+    "baseline": "D0_day",
+    "candidate": "D1",
+    "expected_stock_month_cells": [
+      [
+        "AAPL",
+        "2018-06"
+      ],
+      [
+        "AAPL",
+        "2018-07"
+      ],
+      [
+        "AAPL",
+        "2018-08"
+      ],
+      [
+        "AMZN",
+        "2018-06"
+      ],
+      [
+        "AMZN",
+        "2018-07"
+      ],
+      [
+        "AMZN",
+        "2018-08"
+      ]
+    ],
+    "filter_applied_before_merge": true,
+    "macro_delta_BA": 0.018308558094363714,
+    "months": [
+      "2018-06",
+      "2018-07",
+      "2018-08"
+    ],
+    "n_rows": 6,
+    "passes": false,
+    "positive_outer_months": 2
+  },
+  "status": "PASS"
+}

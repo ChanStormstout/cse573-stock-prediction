@@ -14,7 +14,7 @@ generalization has been proven.
 | recency R1 | half-life weighted price | recency inspiration | same LR with infinity/80/40/20 XNYS sample weights | MATCHED_COMPONENT_TEST | `outputs/stock_recency_dense_4h/run_recency_v4.py` | VALID_WITH_CAVEAT | tested recency weighting failed the preregistered cross-stock gate | recency method is invalid in general | Stage 1 complete; formula audit PASS |
 | recency F1 | half-life weighted sparse text | recency inspiration | weighted J0 text classifier, separate equal/weighted R1 fallbacks | MATCHED_COMPONENT_TEST | `outputs/stock_recency_dense_4h/run_recency_v4.py` | VALID_WITH_CAVEAT | v4 tested canonical J0 with explicit fallback modes | paper recency model was reproduced | Stage 1 complete; formula audit PASS |
 | recency F2 | half-life weighted FinBERT | recency inspiration | v4 J2 canonical transform plus sample weights | MATCHED_COMPONENT_TEST | `outputs/stock_recency_dense_4h/run_recency_v4.py` | VALID_WITH_CAVEAT | v4 corrected F2 recency probe did not pass gate | old v3 F2 delta was recency-only | Stage 1 complete; formula audit PASS |
-| dense price windows | 30-minute stride dense bars | dense sampling idea | 48 contiguous five-minute bars, reconstructed matched control when parity fails | MATCHED_COMPONENT_TEST | `outputs/stock_recency_dense_4h/build_dense_windows_v4.py`, `run_dense_v4.py` | NEEDS_RERUN | historical dense artifact is retained, but its executable advancement gate is superseded pending a corrected June–August calculation | six-cell June–August comparison is currently valid or dense sampling was ruled out | SUPERSEDED_PENDING_RERUN (ISSUE-022/028) |
+| dense price windows (v4 historical) | 30-minute stride dense bars | dense sampling idea | 48 contiguous five-minute bars, reconstructed matched control when parity fails | MATCHED_COMPONENT_TEST | `outputs/stock_recency_dense_4h/build_dense_windows_v4.py`, `run_dense_v4.py` | SUPERSEDED | historical v4 artifact retained; its executable March–August gate is superseded by repaired v5 | six-cell June–August comparison is currently valid or dense sampling was ruled out | superseded by v5 (ISSUE-022/028) |
 | Fin-ModernBERT | modern financial encoder | Fin-ModernBERT | v2 frozen title encoder, special-token-excluded pooling, PCA/LR downstream | FOUNDATION_MODEL_PROBE | `outputs/stock_foundation_4h/encode_modern_v2.py`, `outputs/stock_foundation_4h/experiment_v2.py` | VALID_WITH_CAVEAT | matched frozen encoder probe has mixed exposed-period results; it is a descriptive comparison, not a machine-recorded promotion failure | reproduced Fin-ModernBERT stock forecasting or proved it ineffective | Stage 3 complete; promotion wording downgraded; no fusion |
 | FinBERT + Modern 8+8 | dual representation | ensemble idea | v1 PCA8 concatenation with old pooling | MATCHED_COMPONENT_TEST | `outputs/stock_foundation_4h/experiment.py` | NEEDS_RERUN | historical v1 fusion remains unmatched; no v2 fusion was authorized after Modern gate failed | ModernBERT fusion is validated | Stage 3 stopped after single-encoder probe |
 | Chronos-2 | time-series foundation model | Chronos-2 | frozen endpoint/quantile features, prediction_length 49, matched 512-bar LR | FOUNDATION_MODEL_PROBE | `outputs/stock_foundation_4h/chronos_experiment.py` | VALID_WITH_CAVEAT | tested frozen Chronos endpoint features lacked stable gain | Chronos-2 is ineffective for stocks | claim correction only |
@@ -45,3 +45,23 @@ downstream head; it is not a reproduction of a paper's full training system.
 `PAPER_INSPIRED_SIMPLIFICATION` explicitly records a related idea with missing
 components. A negative result for a simplified probe cannot be generalized to
 the cited paper or model family.
+
+## Phase A repaired artifacts (authoritative current status)
+
+The old dense v4 row remains a preserved historical artifact and is
+`SUPERSEDED_PENDING_RERUN`. The repaired v5 calculation is the current
+evidence:
+
+| method | implementation / result | status | safe claim |
+|---|---|---|---|
+| dense v5 | `outputs/stock_recency_dense_4h/run_dense_v5.py`, `outputs/stock_recency_dense_4h/v5/` | `VALID_WITH_CAVEAT` | executable June--August six-cell gate is correctly filtered; AAPL +3.740pp, AMZN −0.079pp, so no two-stock promotion |
+| reaction v2 | `outputs/stock_reaction_features_4h/run_reaction_probe_v2.py`, `outputs/stock_reaction_features_4h/v2/` | `SUPERSEDED` | historical time-safety repair retained, but its W0--W3 downstream protocol did not match the complete reviewer addendum |
+| reaction v3 corrected | `outputs/stock_reaction_features_4h/run_reaction_probe_v3.py`, `outputs/stock_reaction_features_4h/v3/` | `VALID_WITH_CAVEAT` | AR0/AR1 article gate is complete and time-safe; both horizons fail the full gate (240m fails macro AUC), so no W0--W3 scores were produced |
+| reaction AR2 | `outputs/stock_reaction_features_4h/v3/` | `NOT_RUN_MODEL_UNAVAILABLE` | required target-context FinBERT binary was unavailable; no substitute vectors were used; this does not block a separately passing AR1 candidate |
+| stock-specific reliability gate | `outputs/stock_specific_gate_4h/` | `PREREGISTERED_NOT_RUN` | fixed R1/F1_new G0--G3 mechanism implemented and static-tested; no predictive result exists |
+
+The v5 raw dense feature parity check is false and is explicitly recorded;
+both control and augmented rows use the reconstructed generator. This is a
+matched component comparison, not a claim of canonical feature parity. All
+June--August, development and later figures are exposed exploratory historical
+backtests.

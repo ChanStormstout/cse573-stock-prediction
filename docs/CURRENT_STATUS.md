@@ -1,4 +1,26 @@
-# 当前状态（2026-09-17）
+# 当前权威状态（2026-09-18，Phase A 已修复；Phase B 仅预注册）
+
+本次从 `dd836d80c709cd98065249ab5cdde233bd7abdc1` 继续，历史运行和原始
+数据均保留。外部审查提出的 ISSUE-022—ISSUE-040 已在新的 v5/v2 目录中
+修复并核验：
+
+- dense v5 的 June–August gate 确实在合并前过滤两边，6 个单元完整；AAPL
+  平均增量 `+3.740pp`，AMZN `−0.079pp`，因此没有两股稳定提升。
+- reaction v2 只使用完成的五分钟 bar，并记录每行 used-bar end；它保留为
+  历史 time-safety 修复，但其 W0--W3 下游协议与完整 addendum 不一致，
+  所以下游数字已 superseded。
+- reaction v3 按修正后的独立候选规则重跑了 AR0/AR1：240m AR1 的两股
+  June--August BA 增量为 AAPL `+1.763pp`、AMZN `+3.218pp`，但宏 AUC
+  增量为 `−0.570pp`，完整文章 gate 失败；60m 也失败。因此 v3 正确停止
+  在 W0--W3 之前。AR2 记录为 `NOT_RUN_MODEL_UNAVAILABLE`，没有用不匹配
+  的向量替代，也没有宣称独立人工复核通过。
+
+Phase B `outputs/stock_specific_gate_4h/` 已写好协议、实现和静态契约测试，
+固定 R1/F1_new、十个状态变量、G0–G3 和精确 no-news 回退；**尚未运行
+`run_gate.py`，没有任何 G0–G3 结果。** 只有收到明确的
+`APPROVE_GATE_RUN` 后才允许执行。
+
+# 历史状态（2026-09-17）
 
 ## 当前审计进度：Stage 1–6 repair-first 审计已在本地完成
 
@@ -47,7 +69,7 @@ F1/F2 历史控制和 F1_new/F2_new 的区别。
 `git push origin main` 因 `Could not resolve host: github.com` 失败，当前
 `origin/main` 仍为 `e32785d`，所以不能把 GitHub 说成已更新。
 
-## 外部审查后的暂停状态（2026-09-18）
+## 历史暂停记录（2026-09-18；已由上方 Phase A checkpoint supersede）
 
 外部审查发现 dense v4 的实际月份 gate、reaction 的未完成五分钟 bar、
 W0–W3 协议、promotion gate、AR1/AR2 预处理／表示和 reaction 时间安全
@@ -55,9 +77,8 @@ W0–W3 协议、promotion gate、AR1/AR2 预处理／表示和 reaction 时间�
 拆成详细的 `ISSUE-028`—`ISSUE-040`；历史结果
 全部保留，但受影响 artifact 的 PASS 只能视为此前本地检查结果。
 
-当前状态为 `PAUSED_PENDING_REVIEWER_ADDENDUM`。没有运行新的模型或实验，
-也没有重置、删除或覆盖已有工作；必须先纳入完整详细 addendum，再制定新的
-repair protocol 和独立输出目录。
+当时状态为 `PAUSED_PENDING_REVIEWER_ADDENDUM`。该记录保留以说明审查边界；
+详细 addendum 已纳入，新的 repair protocol 和独立输出目录见上方。
 
 ## 最新完成：v4 recency/dense 修正与全语料新闻 reaction probe（2026-09-17）
 
@@ -67,7 +88,7 @@ repair protocol 和独立输出目录。
 - recency 只在 2018-03—05 选择全局半衰期，2018-06—08 做 gate；R1/F1/F2 均选 20，但外层增量分别为 AAPL/AMZN `+2.80pp/-7.40pp`、`+4.57pp/-0.38pp`、`-4.34pp/+1.16pp`，均未通过。稠密窗口修正为 6 个月份行，D1 相对重建 D0_day 为 `+0.42pp/+0.78pp`，也未通过，D2 按协议停止。
 - 官方与重建 dense 输入逐列 parity 不一致，所以 v4 的官方控制、训练和增广统一使用 reconstructed generator；没有混合两套特征。原 v3 “non-overlapping”措辞也已在 v4 纠正为 30 分钟起点的重叠四小时窗口。
 - 全部 78,055 条原始新闻索引参与 reaction coverage 审计，得到 89,958 个 article×target 候选、85,402 个 canonical groups；AAPL/AMZN 都通过预登记可行性 gate。冻结 AR1 在 120m/240m 的文章级外层 gate 通过，但下游 W0–W3 没有两股稳定提升：AAPL W0/W1-120 为 48.70%/51.66%，AMZN 为 60.63%/45.51%。
-- ⚠️ **历史结果已 superseded：**外部审查发现 dense v4 的可执行月份 gate、reaction 的完成 bar／时间安全、W0–W3 协议和 promotion gate 均需修复；因此本节的 `+0.42/+0.78pp` dense 数值以及 `120m/240m`、W0–W3 predictive/gate 表述只能作为保留的 exploratory artifact，不能作为当前有效结论，等待按 `ISSUE-022`—`ISSUE-040` 完成 time-safe rerun。
+- ⚠️ **历史结果已 superseded：**外部审查发现 dense v4 的可执行月份 gate、reaction 的完成 bar／时间安全、W0–W3 协议和 promotion gate 均需修复；因此本节的 `+0.42/+0.78pp` dense 数值以及 `120m/240m`、W0–W3 predictive/gate 表述只能作为保留的 exploratory artifact，不能作为当前有效结论。dense v5 与 reaction v3 已完成 time-safe rerun；reaction v2 的旧下游协议仍标为 superseded。
 - 当前没有宣布独立人工事件关联验收通过；FinBERT 二进制不可重新加载，AR2 只是已有私有向量的约 10.36% coverage probe。没有新增微调、GNN、RL、Chronos 或付费数据。
 
 新的公开核验：[recency v4 verification](../outputs/stock_recency_dense_4h/v4/verification.json)、[reaction v1 verification](../outputs/stock_reaction_features_4h/v1/verification.json)。所有 development/later/Jun-Aug 结果仍是已暴露的探索性历史回测。

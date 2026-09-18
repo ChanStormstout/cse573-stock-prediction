@@ -1,0 +1,29 @@
+{
+  "ar2": {
+    "status": "NOT_RUN_MODEL_BINARY_UNAVAILABLE"
+  },
+  "checks": {
+    "ar2_explicit_not_run": true,
+    "completed_bar_context_safe": true,
+    "context_columns_present": true,
+    "feasibility_pass": true,
+    "fit_count_instrumented": true,
+    "fold_preprocessing_recorded": true,
+    "future_price_perturbation_context_invariant": true,
+    "prediction_pair_keys_unique": true,
+    "promotion_gate_complete": true,
+    "protocol_fingerprint_present": true,
+    "public_text_not_published": true,
+    "reaction_columns_present": true,
+    "reaction_start_maturity_safe": true,
+    "row_max_context_safe": true,
+    "target_pair_key_present": true,
+    "target_pair_key_unique": true,
+    "w0_present": true,
+    "w3_exact_fallback": true
+  },
+  "fit_count": 240,
+  "gate_status": "PASS",
+  "probe_status": "COMPLETE",
+  "status": "PASS"
+}

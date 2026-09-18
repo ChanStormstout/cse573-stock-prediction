@@ -1,0 +1,135 @@
+{
+  "AR2": {
+    "status": "NOT_RUN_MODEL_BINARY_UNAVAILABLE"
+  },
+  "downstream": {
+    "promoted_horizons": [
+      240
+    ],
+    "protocol": "W0 fixed F1; W1 single promoted horizon; W2 all promoted horizons; W3 W1 with n_articles>=2 else exact W0",
+    "rows": 384,
+    "status": "COMPLETE"
+  },
+  "promotion": [
+    {
+      "candidate": "AR1",
+      "gate_formula": "each stock: mean_delta_BA>=0.01, max_delta_Brier<=0.002, positive_months>=2/3; both stocks have 3 complete outer months, >=30 rows/month, coverage>=0.8",
+      "horizon_minutes": 30,
+      "passes": false,
+      "status": "FAIL",
+      "stock_rows": [
+        {
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.00033358429010130197,
+          "mean_delta_BA": 0.004590520112246328,
+          "min_month_rows": 969,
+          "months": 3,
+          "positive_months": 2,
+          "symbol": "AAPL"
+        },
+        {
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.0010217433673262166,
+          "mean_delta_BA": -0.021358140558079053,
+          "min_month_rows": 381,
+          "months": 3,
+          "positive_months": 0,
+          "symbol": "AMZN"
+        }
+      ]
+    },
+    {
+      "candidate": "AR1",
+      "gate_formula": "each stock: mean_delta_BA>=0.01, max_delta_Brier<=0.002, positive_months>=2/3; both stocks have 3 complete outer months, >=30 rows/month, coverage>=0.8",
+      "horizon_minutes": 60,
+      "passes": false,
+      "status": "FAIL",
+      "stock_rows": [
+        {
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.0004463461674762692,
+          "mean_delta_BA": -0.004506775640309861,
+          "min_month_rows": 905,
+          "months": 3,
+          "positive_months": 1,
+          "symbol": "AAPL"
+        },
+        {
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.0009880270521217815,
+          "mean_delta_BA": 0.0075840871272659744,
+          "min_month_rows": 360,
+          "months": 3,
+          "positive_months": 2,
+          "symbol": "AMZN"
+        }
+      ]
+    },
+    {
+      "candidate": "AR1",
+      "gate_formula": "each stock: mean_delta_BA>=0.01, max_delta_Brier<=0.002, positive_months>=2/3; both stocks have 3 complete outer months, >=30 rows/month, coverage>=0.8",
+      "horizon_minutes": 120,
+      "passes": false,
+      "status": "FAIL",
+      "stock_rows": [
+        {
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.001524625696064985,
+          "mean_delta_BA": 0.008288972220404256,
+          "min_month_rows": 764,
+          "months": 3,
+          "positive_months": 3,
+          "symbol": "AAPL"
+        },
+        {
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.0030832895936613314,
+          "mean_delta_BA": 0.03011374356066045,
+          "min_month_rows": 313,
+          "months": 3,
+          "positive_months": 3,
+          "symbol": "AMZN"
+        }
+      ]
+    },
+    {
+      "candidate": "AR1",
+      "gate_formula": "each stock: mean_delta_BA>=0.01, max_delta_Brier<=0.002, positive_months>=2/3; both stocks have 3 complete outer months, >=30 rows/month, coverage>=0.8",
+      "horizon_minutes": 240,
+      "passes": true,
+      "status": "PASS",
+      "stock_rows": [
+        {
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 5.9935451210357815e-05,
+          "mean_delta_BA": 0.017627847751395625,
+          "min_month_rows": 438,
+          "months": 3,
+          "positive_months": 3,
+          "symbol": "AAPL"
+        },
+        {
+          "coverage_min": 1.0,
+          "horizon_complete": true,
+          "max_delta_Brier": 0.0007102600014764482,
+          "mean_delta_BA": 0.032177287617236094,
+          "min_month_rows": 164,
+          "months": 3,
+          "positive_months": 2,
+          "symbol": "AMZN"
+        }
+      ]
+    }
+  ],
+  "protocol_sha256": "1c61ea452b62fa7b66522323b49360953e64df76147c806fdc66215589f981e7",
+  "run_sha256": "8ce45f7a29a8c275e0add9fd50ea5f1d5d97da7c3d3f36e3736af57289c6a1a0",
+  "runtime_seconds": 22.69234308297746,
+  "status": "COMPLETE"
+}

@@ -1,0 +1,11 @@
+{
+  "article_gate": "AR1 independent; AR2 optional",
+  "horizons": [
+    60,
+    240
+  ],
+  "official_protocol": "W0=R1; W1=R1+coverage; W2=R1+five reaction features; W3=F1+R1+five reaction features",
+  "preregistration_sha256": "2203f06f628f561daf71570fd0ea0133f359522ffd43499c00761c95e7c2f248",
+  "protocol": "reaction_v3_corrected",
+  "run_sha256": "5965c7a09a818429a386150938ec7463bc9c8fba771b191fc5d8f0fc94c8a5cd"
+}

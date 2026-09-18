@@ -188,7 +188,7 @@ failed with `Could not resolve host: github.com`; `origin/main` remains at
 `e32785d`. The boundary note is recorded in a follow-up documentation commit;
 GitHub has not been claimed as updated.
 
-## Reviewer addendum pause (2026-09-18)
+## Historical reviewer addendum pause (2026-09-18; superseded below)
 
 The external reviewer reported six coarse blocking validity issues in the
 earlier `e32785d` dense/reaction implementation. They are recorded as
@@ -198,8 +198,71 @@ month range, unfinished-bar reaction context, the W0–W3 protocol, the complete
 promotion gate, AR1/AR2 preprocessing and representation, reaction time-safety
 verification, manifest auditability, and a new-run fingerprint.
 
-Execution is paused pending the detailed addendum. No experiment or model
-execution was started after this notice; no historical output was deleted,
-reset, or overwritten. The prior verifier outputs remain preserved as
-historical artifacts and are not treated as final validity evidence for the
-affected paths until the addendum is incorporated and the repairs are rerun.
+At that point execution was paused pending the detailed addendum. No historical
+output was deleted, reset, or overwritten. The prior verifier outputs remain
+preserved as historical artifacts; the repair checkpoint below incorporates
+the addendum and supplies the current v5/v2 evidence.
+
+## Repair checkpoint before stock-specific gate experiment — 2026-09-18
+
+Starting SHA for this repair was local `dd836d80c709cd98065249ab5cdde233bd7abdc1`.
+All earlier dense/reaction files remain unchanged.
+
+### Resolved issue IDs and evidence
+
+- ISSUE-022/028: `stock_recency_dense_4h/v5` filters both gate sides before
+  merging exactly six June--August stock-month cells. Corrected deltas are
+  AAPL `+3.740pp`, AMZN `−0.079pp`, macro `+1.831pp`; the gate fails.
+- ISSUE-023/029/030/037/038: reaction v2 uses completed bars only, saves row
+  used-bar ends and reaction maturity, and passes future-price perturbation
+  replay plus availability/start/end assertions.
+- ISSUE-024/031/032/033: v2 freezes the F1 W0, single-horizon W1,
+  multi-horizon W2 and strict two-article W3 fallback protocol.
+- ISSUE-025/034: every horizon has machine-readable stock-month BA/Brier,
+  coverage, row-count and horizon-completeness checks. 240m passes the article
+  gate; 30/60/120m fail.
+- ISSUE-026/035/036: AR1 preprocessing is fold-local. The required
+  target-context FinBERT binary is unavailable, so AR2 is
+  `NOT_RUN_MODEL_BINARY_UNAVAILABLE`; no substitute representation was used.
+- ISSUE-039/040: target-pair keys, grouping counts, downstream manifests and a
+  v2 preregistration fingerprint are saved in a new directory.
+
+`verify_v5.py`, June--August infinity parity (`42` rows), and `verify_v2.py`
+all pass. The v2 downstream result is not promoted: W0→W1 is AAPL
+`48.70%→51.98%` and AMZN `60.63%→44.43%`. The old v4 `+0.42/+0.78pp` and v1
+reaction 120m/240m claims are superseded for current validity statements.
+
+### Phase B implementation, not execution
+
+`outputs/stock_specific_gate_4h/` contains `PRE_REGISTRATION.md`,
+`IMPLEMENTATION_PLAN.md`, `common.py`, `prepare.py`, `run_gate.py`,
+`verify.py` and `report.py`. It freezes `R1` and `F1_new`, the ten state
+features, weighted G0--G3 ridge controllers, no-news exact R1 fallback and
+August-frozen exposed evaluation. Static contract tests pass. No G0--G3
+prediction, metric, oracle or exposed result has been generated. The exact
+later command is:
+
+```bash
+work/stock-data/finbert-env/bin/python3 outputs/stock_specific_gate_4h/run_gate.py \
+  --approve-gate-run --output outputs/stock_specific_gate_4h/v1
+```
+
+## Addendum correction and reaction v3 corrected checkpoint — 2026-09-18
+
+The earlier v2 downstream protocol and the first v3 preregistration wording
+incorrectly made AR2 availability a prerequisite for W0--W3.  ISSUE-041 is
+registered in the working spec.  AR1 now has an independent full article-level
+gate, including per-stock Brier `<=0.002`, macro AUC, positive macro-month,
+coverage, completeness and non-constant checks.  AR2 remains optional and is
+`NOT_RUN_MODEL_UNAVAILABLE` because the target-context FinBERT binary is absent.
+
+The corrected run is `outputs/stock_reaction_features_4h/v3/`.  AR1 240m gains
+both stocks' June--August BA but fails macro AUC (`-0.570pp`); AR1 60m also
+fails.  Therefore no article candidate is eligible and the corrected run stops
+before W0--W3.  The exact eligible downstream protocol is frozen in
+`PRE_REGISTRATION_v3.md`; no exposed score selects a candidate.  The previous
+article-only run is preserved as `v3_article_audit_checkpoint/`, and v2 remains
+a historical protocol-mismatch artifact.
+
+The repository remains waiting for explicit `APPROVE_GATE_RUN` before that
+command may run.

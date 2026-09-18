@@ -204,3 +204,38 @@ These items supersede the affected dense/reaction PASS interpretation but do
 not delete or rewrite the historical artifacts. No code has been repaired and
 no rerun has been started under this correction; execution remains paused
 until the complete detailed addendum is incorporated.
+
+## CORR-020 — Phase A repaired dense/reaction checkpoint (2026-09-18)
+
+The previous pause has now been resolved by new, separate artifacts; v4/v1
+files were not overwritten. Dense v5 filters both baseline and candidate sides
+to June--August before the six-cell merge. Its corrected deltas are AAPL
+`+3.740pp`, AMZN `−0.079pp`, macro `+1.831pp`, and the two-stock gate fails.
+The earlier dense `+0.42/+0.78pp` values remain superseded historical values.
+
+Reaction v2 censors unfinished five-minute context bars, saves row-level used
+bar-end provenance, uses the corrected W0--W3 protocol, and writes a complete
+machine-readable promotion gate. Its 240m AR1 article gate passes, but the
+downstream W1 changes AAPL from `48.70%` to `51.98%` and AMZN from `60.63%` to
+`44.43%`; this is not a promoted four-hour improvement. AR2 is explicitly
+`NOT_RUN_MODEL_BINARY_UNAVAILABLE`, and no independent human association gate
+is claimed. `verify_v2.py`, dense v5 verification, and June--August infinity
+parity verification all pass.
+
+## CORR-022 — AR2 is optional for reaction downstream eligibility
+
+The initial v3 preregistration wording incorrectly made AR2 availability a
+precondition for W0--W3.  The reviewer addendum requires independent article-
+level gates: a time-safe AR1 horizon that passes its full gate (including the
+per-stock Brier guardrail, macro AUC, positive macro months, coverage and
+non-constant checks) is eligible to supply reaction features even when the
+target-context FinBERT binary for AR2 is unavailable.  AR2 remains explicitly
+`NOT_RUN_MODEL_UNAVAILABLE`; cached title vectors are not substituted.  The
+corrected v3 downstream run uses the registered W0=R1, W1=R1+coverage,
+W2=R1+five reaction fields, and W3=F1+R1+the same five fields protocol.  The
+first v3 article-only checkpoint is retained as a historical checkpoint; v2's
+old residual W0--W3 results remain superseded.
+
+The stock-specific reliability gate is implemented and preregistered, but its
+predictive run is intentionally blocked until the user sends the exact
+`APPROVE_GATE_RUN` approval. No G0--G3 result is available.

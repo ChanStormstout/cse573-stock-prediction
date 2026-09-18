@@ -1,0 +1,9 @@
+{
+  "candidate_pairs": 89958,
+  "canonical_all_time": 85402,
+  "gate_pass": true,
+  "jan_aug_rows": 51485,
+  "private_pair_path": "work/stock-data/reaction_features_4h/v2/canonical_pairs_all_time.pkl",
+  "raw_rows": 78055,
+  "status": "COMPLETE"
+}

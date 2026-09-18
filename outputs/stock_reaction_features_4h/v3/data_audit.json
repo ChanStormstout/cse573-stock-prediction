@@ -1,0 +1,32 @@
+{
+  "status": "PASS_PROVISIONAL_SOURCE_AUDIT",
+  "provisional_event_panel": {
+    "rows": 458,
+    "split_counts": {"train": 249, "development": 87, "check": 122},
+    "train_positive_articles": 60,
+    "train_event_facts": 75,
+    "positive_articles": {"train_AAPL": 47, "train_AMZN": 13, "check_AAPL": 17, "check_AMZN": 5},
+    "independent_human_review_passed": false
+  },
+  "reaction_corpus": {
+    "raw_index_rows": 78055,
+    "english_rows": 70732,
+    "sufficient_english_text": 70601,
+    "candidate_target_pairs": 89958,
+    "canonical_groups_all_time": 85402,
+    "jan_aug_groups": 51485,
+    "jan_aug_by_symbol": {"AAPL": 40764, "AMZN": 10721},
+    "valid_reactions_jan_aug": {
+      "AAPL": {"60m": 11288, "240m": 5490},
+      "AMZN": {"60m": 3137, "240m": 1410}
+    }
+  },
+  "time_contract": {
+    "availability": "max(valid_published_utc,crawled_utc)",
+    "context": "completed_five_minute_bar_end <= article_availability",
+    "selection_months": ["2018-03", "2018-04", "2018-05"],
+    "outer_gate_months": ["2018-06", "2018-07", "2018-08"],
+    "exposed_periods": ["2018-09 onward"]
+  },
+  "duplicate_split_crossing_groups": 0
+}
