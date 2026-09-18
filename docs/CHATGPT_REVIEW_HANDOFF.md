@@ -314,3 +314,36 @@ This is still `PREREGISTERED_NOT_RUN`. No G0--G3 predictions, metrics, oracle
 ceilings, advancement results, development/later gate results, or approval
 command execution exist. The only permitted next predictive action is an
 explicit owner message containing `APPROVE_GATE_RUN`.
+
+## Final code-only verification repair — 2026-09-18
+
+- **Starting SHA:** `6a0942337e6d5ec76fd8677076052c06e3b7bb4f`.
+- **Ending SHA (repair payload):** `422717eda924a7013742a504fec1482159da6c08`
+  (`Harden Phase B verification contracts`).
+- **Issues resolved:** ISSUE-051 through ISSUE-055. This was a code-only
+  checkpoint. It did not run `run_gate.py --approve-gate-run` or create a
+  `stock_specific_gate_4h/v1` result directory.
+
+### Reaction v4 stronger verifier
+
+The strengthened verifier changes all bars whose **end** is later than article
+availability, so it attacks a bar that began before cutoff but was unfinished
+at cutoff. A separate 10:02 synthetic case proves that the 10:00--10:05 bar is
+excluded. `verify_v4.py` passes with this check; the existing v4 article
+models and predictions were not rerun because the saved corpus still satisfies
+the completed-bar contract.
+
+### Phase B verification state
+
+The real-input preflight passes again, including explicit regression tests that
+0.70 versus 0.60 has a probability difference but no BA-routing direction
+disagreement, while 0.70 versus 0.40 does. It also tests that the hindsight
+oracle forces R1 on no-news rows. `verify.py` now has an automatic post-run
+branch: after an approved v1 exists, it independently reconstructs prediction
+mapping, no-news and exact-R1 fallbacks, metrics, monthly metrics, advancement,
+chronology, preprocessing, and coefficient structure without using the
+runner's metric or advancement helper.
+
+No G0--G3 prediction, metric, oracle ceiling, advancement, development, later,
+or post-run verification artifact exists. The repository remains
+`PREREGISTERED_NOT_RUN` pending an explicit owner approval.
