@@ -474,3 +474,17 @@ and model artifacts remain local.
   are repaired in code only.
 - **Preflight:** exercises the actual frozen-A0 selected-C helper and post-run helper
   paths with synthetic CV/selection/metric/gate data. A1 remains absent and unscored.
+
+## Activity v1 approved-run recovery — 2026-09-18
+
+- **Starting predictive-run SHA:** `32f553f191025b54ed8e55ff72828aa8fc20e170`.
+- Runner executed exactly once. The first verifier failed only while unpickling
+  `__main__.StandardizeMissing`; no predictive conclusion was made before recovery.
+- Recovery ledger records ten frozen result artifacts and all v1 models. Every A1 and
+  A1_matchedC selected/frozen model matched its recorded SHA; A0 private files changed
+  in the expected `reproduce_a0()` path and are not used for post-run model validation.
+- Compatibility reload, independently reconstructed scaler parameters, prediction
+  parity, metrics, selection, chronology, canonical A0 parity and the fingerprint all
+  PASS. Original results and candidate model bytes are unchanged from the recovery ledger.
+- Registered advancement: A1 vs A0 is FAIL (AAPL `+0.237pp`, AMZN `-3.662pp`).
+  The report is generated from preserved outputs; no tuning, rerun or new experiment.

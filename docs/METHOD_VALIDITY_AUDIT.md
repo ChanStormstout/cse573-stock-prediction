@@ -60,11 +60,16 @@ evidence:
 | reaction v4 corrected | `outputs/stock_reaction_features_4h/build_reaction_dataset_v4.py`, `run_reaction_probe_v4.py`, `verify_v4.py`, `outputs/stock_reaction_features_4h/v4/` | `VALID_WITH_CAVEAT` | the v4 implementation passed time-safety/preprocessing/entity-rule verification; all four registered AR1 candidates were evaluated and each failed its complete June--August gate, so no W0--W3 downstream score exists | lexical reaction modeling is generally ineffective or article reactions cannot help four-hour direction |
 | reaction AR2 | `outputs/stock_reaction_features_4h/v4/` | `NOT_RUN_MODEL_UNAVAILABLE` | required target-context FinBERT binary was unavailable; no substitute vectors were used; this does not block a separately passing AR1 candidate |
 | stock-specific reliability gate | `outputs/stock_specific_gate_4h/` | `VALID_EXPLORATORY_NO_PROMOTION` | the one approved frozen run passes all 18 post-run verifier checks after only advancement comparison is storage-normalized with the runner's documented ten-decimal pandas JSON representation; raw precision diagnostics and unchanged artifact hashes are saved | this verifies a stable/promoted controller or permits development/later backtests to select a method |
-| activity incremental v1 | `outputs/stock_activity_4h/` | `PREREGISTERED_NOT_RUN` | exact eight-field raw-bar reconstruction, source hashes, A0 parity and synthetic time/reference tests pass; runner/verifier/report are implemented but A1 remains guarded and unscored | opaque-field activity is volume or has incremental four-hour predictive value |
+| activity incremental v1 | `outputs/stock_activity_4h/v1/` | `VALID_NO_PROMOTION` | one approved frozen run, recovered independent verifier PASS, exact feature/source/A0/model parity; registered A1 June--August gate fails | opaque-field activity is volume or generally lacks predictive information |
 
 Activity ISSUE-063--068 also repairs the future frozen-C retrieval, verifier-local
 calendar and C logic, selected-model reload verification, fingerprinting and report
 period labels. These are code-only checks; they do not create predictive evidence.
+
+Activity v1 was subsequently run exactly once after approval. Following a verifier-only
+pickle compatibility recovery, its independent verification passed. The registered A1
+June--August gate failed, so the safe claim remains no stable two-stock incremental
+value for this frozen opaque-field construction.
 
 The v5 raw dense feature parity check is false and is explicitly recorded;
 both control and augmented rows use the reconstructed generator. This is a

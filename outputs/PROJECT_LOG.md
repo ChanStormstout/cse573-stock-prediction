@@ -1414,3 +1414,13 @@ contrasts，并与 runner 输出逐项核对。它尚未在 A1 结果上执行�
 统一 selected evidence 的 `C` 字段、使用 verifier-local months、执行真实的 synthetic
 selection/self-test、记录 training months 和协议哈希，并让 future verifier 重载每一个
 selected model 后逐概率核验。未执行 A1，也未生成 candidate 模型或分数。
+
+## 2026-09-18：Activity v1 approved single run and verifier recovery
+
+已批准的 runner 仅执行一次。第一次 verifier 因 runner pickle 内的
+`__main__.StandardizeMissing` 名称失败；恢复前保存了 10 个预测/结果文件和 64 个
+模型文件的 SHA-256。A1/A1_matchedC 所有 selected/frozen 模型保持匹配；A0 私有
+模型哈希改变，符合失败 verifier 调用 `reproduce_a0()` 的覆盖风险。verifier-only
+兼容 loader 不改写模型，逐一重建 candidate scaler 和概率后 PASS。原始结果及
+candidate 模型最终哈希仍与恢复前账本一致。A1 对预注册双股票 gate 失败：AAPL
+六月--八月 BA 平均仅 +0.237pp，AMZN -3.662pp；因此没有 promotion。

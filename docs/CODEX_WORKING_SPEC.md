@@ -67,6 +67,9 @@ preflight pass; A1 execution requires a separate exact `APPROVE_ACTIVITY_RUN`.
 | ISSUE-066 | HIGH | Report mislabeled March--August OOF aggregate as June--August | Separate OOF and registered-gate sections are now rendered | RESOLVED_CODE_ONLY_NOT_RUN |
 | ISSUE-067 | HIGH | Post-run verifier trusted runner reload evidence | It now reloads every selected model, recomputes probabilities and checks hashes/columns locally | RESOLVED_CODE_ONLY_NOT_RUN |
 | ISSUE-068 | HIGH | Protocol fingerprint only recorded lists | Frozen code, input and parity-source hashes plus constants are now stored and independently checked | RESOLVED_CODE_ONLY_NOT_RUN |
+| ISSUE-069 | BLOCKING | Runner-model pickle stored `__main__.StandardizeMissing`, so verifier reload crashed | Verifier-only compatibility scaler loads persisted state and independently recomputes transform; recovered verification PASS | RESOLVED_POSTRUN_PASS |
+| ISSUE-070 | BLOCKING | Pre-run absence check would reject a legitimate post-run artifact set | Absence check is now pre-run-only | RESOLVED_POSTRUN_PASS |
+| ISSUE-071 | HIGH | Failed verifier called `reproduce_a0()` and could overwrite private A0 files | Recovery ledger confirms A0 hashes changed; post-run verifier now validates preserved A0 probabilities against canonical R1 | RESOLVED_POSTRUN_PASS |
 
 ## Known issues that must be repaired
 

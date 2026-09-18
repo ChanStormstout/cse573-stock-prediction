@@ -28,6 +28,11 @@
 > calendar/selection、独立模型重载、协议 fingerprint 和报告期标签；preflight
 > self-tests 通过，状态仍为 `PREREGISTERED_NOT_RUN`。
 
+> **Activity v1 approved run:** runner 已严格执行一次，verifier runtime recovery
+> 后通过全部独立检查。预注册 A1 gate 为 FAIL（AAPL June--August +0.237pp、AMZN
+> -3.662pp），所以该 opaque activity construction 没有稳定双股票增量证据。
+> development/later 仅是 `EXPOSED EXPLORATORY HISTORICAL BACKTEST`。
+
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
 > 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除
