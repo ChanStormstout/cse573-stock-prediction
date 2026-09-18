@@ -368,3 +368,30 @@ no repair-and-rerun, score interpretation, post-result tuning, v2 run, or
 activity-column experiment was performed. The exact public failure record is
 `outputs/stock_specific_gate_4h/v1/verification_failure.json`; raw predictions
 and model artifacts remain local.
+
+## Verifier-only recovery of preserved Phase B v1 — 2026-09-18
+
+- **Starting SHA:** `a8bdfb204a7b99fb8933024c448d31bdfb431488`.
+- **Ending SHA (recovery payload):** `6cb101297e27a58ef930d0b7ba617a98e3bf5fe7`
+  (`Correct Phase B recovery hash evidence`).
+- **Authorized scope:** `run_gate.py` was not run again. The only code repair
+  moved the pre-existing `clean(value)` helper from `preflight_main` into module
+  scope so the preserved run could reach the pre-existing post-run verifier.
+  No model, predictor, result calculation, or existing v1 result file changed.
+- **Integrity proof:** the corrected recovery ledger records matching SHA-256
+  hashes for all eleven v1 artifacts existing before recovery, before and after
+  verifier execution. Its first `metrics.csv` entry accidentally omitted one
+  final hexadecimal character and was corrected as metadata only; the preserved
+  artifact was not changed.
+- **Verifier command and outcome:**
+  `work/stock-data/finbert-env/bin/python3 outputs/stock_specific_gate_4h/verify.py`
+  writes `v1/verification.json=FAIL`. Seventeen checks pass; the sole failed
+  check is `advancement_independently_reconstructed`.
+- **Exact stop reason:** the verifier reconstructs advancement with full
+  floating-point precision, while saved `advancement.json` was serialized by
+  pandas `to_json` at approximately ten decimal digits. The `1e-12` record
+  comparison rejects the resulting serialization difference.
+- **Boundary:** this preserved run is
+  `UNVERIFIED_STOPPED_PENDING_EXTERNAL_REVIEW`. No report, scientific score
+  interpretation, tuning, v2 run, activity-column experiment, or result-file
+  rewrite occurred.
