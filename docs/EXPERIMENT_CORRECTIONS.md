@@ -25,12 +25,18 @@ current-facing documentation and future comparisons.
 - **Repair:** v4 fits all-one sample weights and compares probabilities.
 - **Corrected result:** maximum difference is `1.665e-15`; v4 parity passes.
 
-## CORR-003 — Dense gate used the wrong months
+## CORR-003 — Dense gate used the wrong months (historical statement superseded)
 
-- **Discovered:** v3 computed the dense gate over March–August.
-- **Repair:** v4 asserts exactly six June–August stock-month cells and uses a
-  matched reconstructed control after feature parity failed.
-- **Corrected result:** D1−D0_day is AAPL `+0.42pp`, AMZN `+0.78pp`; no upgrade.
+- **Historical statement:** the earlier audit reported that v4 computed the
+  dense gate over exactly six June–August stock-month cells and treated
+  D1−D0_day as AAPL `+0.42pp`, AMZN `+0.78pp`.
+- **External review correction:** ISSUE-022 found that the executable gate still
+  uses March–August even though it constructs June–August `gate_rows`. The
+  earlier v4 PASS interpretation is therefore superseded pending a corrected
+  rerun. The `+0.42/+0.78pp` values remain preserved historical output and must
+  not be presented as the registered gate result.
+- **Required repair:** audit the actual gate calculation path, make the
+  June–August rule executable, then rerun in a new artifact directory.
 
 ## CORR-004 — Dense-window overlap wording
 
@@ -107,11 +113,14 @@ reproducibility. F1_new/F2_new are reselected actual-system controls used in
 later experiments. Reports must name which control they use; no silent swap is
 allowed.
 
-## CORR-015 — Recency weight formula and dense gate verification
+## CORR-015 — Recency weight formula and dense gate verification (partly superseded)
 
-- **Discovered:** The v4 results already used the registered session-age
-  formula and the corrected June–August dense gate, but the public verifier
-  checked only broad positivity/parity conditions.
+- **Historical statement:** the v4 results were previously described as using
+  the registered session-age formula and corrected June–August dense gate.
+- **External review correction:** the recency weight formula evidence remains
+  useful, but the dense-gate portion is superseded by ISSUE-022. The public
+  verifier's six-cell checks do not prove that the executable advancement gate
+  consumed those rows.
 - **Repair:** `age_weights` now asserts non-negative session ages, exact
   `2**(-session_age/half_life)` values, unit weights for infinity, and
   monotonic decrease with age. `verify_weight_audit_v4.py` audits all saved
@@ -119,9 +128,9 @@ allowed.
   six gated stock-month cells and the matched reconstructed feature mode when
   canonical dense parity fails.
 - **Evidence:** 17,140 private weight rows have zero formula error and zero
-  monotonic/unit-weight violations; public v4 verification passes. This is a
-  verification strengthening, not a new score search or a changed numeric
-  result.
+  monotonic/unit-weight violations; the recency portion remains a verification
+  strengthening. Dense gate evidence and its `+0.42/+0.78pp` deltas are
+  retained only as historical diagnostics until the corrected rerun.
 
 ## CORR-016 — ModernBERT special-token pooling
 
@@ -146,9 +155,14 @@ allowed.
 - **Repair:** A new v2 probe audited the local provenance and ran the same
   own/cross-stock chronological protocol with the library default
   `n_estimators=8`. The n=1 outputs remain a matched historical control.
-- **Result:** n=8 did not pass the cross-stock promotion rule. The safe claim
-is a corrected frozen-prior configuration probe; neither synthetic-only
-performance nor the TabPFN paper's full pretraining system is established.
+- **Historical result wording (superseded):** the v2 report originally said
+  that n=8 did not pass the cross-stock promotion rule. The v2 preregistration
+  and runner did not save the exact goal60 formula as a machine-readable gate,
+  so that wording is not evidence of a formal pass/fail decision.
+- **Current safe claim:** n=8 showed no stable two-stock improvement under the
+  fixed chronological comparison. This is a corrected frozen-prior
+  configuration probe; neither synthetic-only performance nor the TabPFN
+  paper's full pretraining system is established.
 
 ## CORR-018 — Stage 5 claim-only audit and calibration slopes
 
@@ -167,3 +181,26 @@ records that Qwen UP/DOWN values are token preferences, C2 tests one auxiliary
 objective rather than all return signal, dissemination gains are
 regularization-confounded, and historical F1/F2 controls must remain separate
 from reselected F1_new/F2_new. No independent event-review gate is claimed.
+
+## CORR-019 — Detailed reviewer addendum expands the dense/reaction blockers
+
+The external reviewer addendum is more specific than the original coarse
+ISSUE-022--ISSUE-027 list. Before any reaction code is changed, the detailed
+requirements are tracked separately as ISSUE-028--ISSUE-040 in
+`docs/CODEX_WORKING_SPEC.md`: censor unfinished five-minute bars and publish
+per-row used-bar-end provenance (028--029); assert availability, reaction
+start, and horizon maturity together (030); freeze the requested W0 baseline,
+the W1/W2 horizon/aggregation definition, and the W3 residual/fallback
+protocol (031--033); implement one machine-readable promotion gate covering
+stock, month, Brier, coverage, and horizon completeness (034); fit AR1 numeric
+and lexical transforms only on each past fold and use the registered AR2
+target-context representation with source/coverage accounting (035--036);
+verify time safety with used-bar assertions and future-price perturbation
+replay (037--038); tie grouping and target-pair membership to the downstream
+manifest (039); and use a protocol fingerprint plus a new output directory for
+the repaired run (040).
+
+These items supersede the affected dense/reaction PASS interpretation but do
+not delete or rewrite the historical artifacts. No code has been repaired and
+no rerun has been started under this correction; execution remains paused
+until the complete detailed addendum is incorporated.

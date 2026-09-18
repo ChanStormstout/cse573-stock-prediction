@@ -16,9 +16,12 @@ to proceed. The new pooling changed the ModernBERT vectors substantially
 are not interchangeable.
 
 ModernBERT still did not become a stable improvement. It is higher than F2 in
-some exposed periods and lower in others, with no training-period promotion
-under the registered protocol. We do not select a stock-specific winner or
-combine it after seeing development/later scores.
+some exposed periods and lower in others. Under the fixed chronological
+comparison it does not show a stable two-stock improvement; v2 does not save a
+machine-readable reconstruction of the original foundation-model promotion
+formula, so this report makes no formal promotion pass/fail claim. We do not
+select a stock-specific winner or combine it after seeing development/later
+scores.
 
 ## Actual run
 
@@ -51,8 +54,9 @@ reliable cross-stock winner.
 ## Interpretation
 
 **Observed:** the pooling repair changes the ModernBERT representation; the
-canonical FinBERT path reproduces; Modern v2 has mixed period/stock results and
-does not pass the registered promotion line.
+canonical FinBERT path reproduces; Modern v2 has mixed period/stock results
+and no stable two-stock improvement under the fixed comparison. No formal
+promotion pass/fail claim is made because the exact gate was not saved by v2.
 
 **Not established:** that Fin-ModernBERT is ineffective in general, that a
 different input (full body, target prefix, fine-tuning) would fail, or that

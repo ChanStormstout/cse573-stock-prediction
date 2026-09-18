@@ -122,10 +122,12 @@ for the ModernBERT comparison. v2 then encoded the same 5,078 titles with a
 special-token-excluded mean pool on MPS (159 batches, 26.25 seconds, zero
 trainable parameters) and reran the frozen PCA/LR protocol.
 
-Modern v2 did not pass the cross-stock training-period promotion rule; no
-dual-encoder fusion or further tuning was run. The safe claim is a repaired
-frozen encoder probe with mixed exposed-period results, not a full paper
-reproduction or a proof that ModernBERT is ineffective.
+Modern v2 showed mixed exposed-period results and no stable two-stock
+improvement; no dual-encoder fusion or further tuning was run. Because v2 did
+not save the exact cross-stock promotion formula as a machine-readable gate,
+this is not a formal pass/fail promotion claim. The safe claim is a repaired
+frozen encoder probe, not a full paper reproduction or a proof that ModernBERT
+is ineffective.
 
 ## Stage 4 completion (local)
 
@@ -135,8 +137,10 @@ real-data-fine-tuned `Prior-Labs/tabpfn_2_5` checkpoint; the old
 synthetic-only description is therefore corrected. A separate v2 run used the
 same own/cross inputs and chronological splits with fixed `n_estimators=8`
 (28 fits, no gradient training). Reload, finite-probability and time-order
-checks passed, but the corrected probe did not pass the cross-stock promotion
-line. No further TabPFN tuning was run.
+checks passed, but the corrected probe showed no stable two-stock improvement.
+Because v2 did not save the exact goal60 promotion formula as a machine-readable
+gate, this is not a formal pass/fail promotion claim. No further TabPFN tuning
+was run.
 
 ## Stage 5 completion (local)
 
@@ -186,12 +190,13 @@ GitHub has not been claimed as updated.
 
 ## Reviewer addendum pause (2026-09-18)
 
-The external reviewer reported six blocking validity issues in the earlier
-`e32785d` dense/reaction implementation. They are recorded as ISSUE-022 through
-ISSUE-027 in `docs/CODEX_WORKING_SPEC.md`: dense executable gate month range,
-unfinished-bar reaction context, the W0–W3 protocol, the complete promotion
-gate, AR1/AR2 preprocessing and representation, and reaction time-safety
-verification.
+The external reviewer reported six coarse blocking validity issues in the
+earlier `e32785d` dense/reaction implementation. They are recorded as
+ISSUE-022 through ISSUE-027 in `docs/CODEX_WORKING_SPEC.md`, with the detailed
+requirements split into ISSUE-028 through ISSUE-040: dense executable gate
+month range, unfinished-bar reaction context, the W0–W3 protocol, the complete
+promotion gate, AR1/AR2 preprocessing and representation, reaction time-safety
+verification, manifest auditability, and a new-run fingerprint.
 
 Execution is paused pending the detailed addendum. No experiment or model
 execution was started after this notice; no historical output was deleted,

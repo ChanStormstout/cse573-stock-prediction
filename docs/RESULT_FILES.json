@@ -1621,8 +1621,8 @@
   },
   {
     "path": "outputs/stock_foundation_4h/v2/REPORT.md",
-    "bytes": 2974,
-    "sha256": "8062434d31da181e6876d08a9e5f0461171f016178f8cad60ba2f2e922c042c2"
+    "bytes": 3263,
+    "sha256": "7157e4ae293876196f66155183b42e8e66acfdaa505202b004deb9bc78ff9312"
   },
   {
     "path": "outputs/stock_foundation_4h/v2/CASE_NOTES.md",
@@ -1721,8 +1721,8 @@
   },
   {
     "path": "outputs/stock_tabpfn_4h/v2/REPORT.md",
-    "bytes": 2649,
-    "sha256": "356120dab7eb957b226ecfd8b3b1533279843f52d37f06405f91a1711d1dc496"
+    "bytes": 2986,
+    "sha256": "8b9a3ac485e0c7a08944e405b30bb6a1a00822e5c71185b9517dd813b99c7b59"
   },
   {
     "path": "outputs/stock_tabpfn_4h/v2/CASE_NOTES.md",

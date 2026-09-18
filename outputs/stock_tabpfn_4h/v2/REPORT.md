@@ -40,14 +40,18 @@ conditioning comparison.
 
 Training-period forward OOF BA for own n=8 was AAPL `53.85%` and AMZN
 `48.54%`; cross n=8 was `52.04%` and `50.09%`. The n=8 ensemble does not
-produce a stable two-stock or cross-period improvement, so no combination or
-further TabPFN grid was run.
+show a stable two-stock or cross-period improvement under this fixed
+chronological comparison, so no combination or further TabPFN grid was run.
+The v2 protocol did not save the exact goal60 promotion formula as a
+machine-readable gate, so this report does **not** claim a formal promotion
+pass/fail; the statement is descriptive.
 
 ## Safe conclusion
 
 **Observed:** the previous synthetic-only label was incorrect; n=8 was run
-with the verified real-data-fine-tuned default checkpoint and did not pass the
-registered promotion rule.
+with the verified real-data-fine-tuned default checkpoint and did not show a
+stable two-stock improvement under the fixed comparison. No formal promotion
+decision is claimed because the exact gate was not saved by v2.
 
 **Not established:** that TabPFN is ineffective in general, that the real-data
 fine-tuning is harmful, or that another checkpoint/feature representation

@@ -76,6 +76,19 @@ historical backtests because September onward has already been exposed.
 | ISSUE-025 | BLOCKING | Reaction promotion gate is incomplete | A reaction branch may have been promoted or stopped without all registered conditions | PAUSED_PENDING_ADDENDUM |
 | ISSUE-026 | BLOCKING | AR1 numeric/text preprocessing and AR2 representation need correction | Reaction and representation results are not yet valid evidence for their intended mechanisms | PAUSED_PENDING_ADDENDUM |
 | ISSUE-027 | BLOCKING | Reaction verification does not assert the critical time-safety contracts | A PASS status does not currently prove no future price context entered the reaction features | PAUSED_PENDING_ADDENDUM |
+| ISSUE-028 | BLOCKING | Reaction price context selects bars by start time but can include the bar that was still forming at article availability | The feature can include post-availability price movement | PAUSED_PENDING_ADDENDUM |
+| ISSUE-029 | BLOCKING | Reaction features do not publish a per-row maximum used-bar end time and completion flag | The cutoff contract cannot be audited row by row | PAUSED_PENDING_ADDENDUM |
+| ISSUE-030 | HIGH | Article availability, same-session reaction start, and horizon maturity are not asserted together in the downstream input manifest | A reaction label or context can be aligned to a different information boundary | PAUSED_PENDING_ADDENDUM |
+| ISSUE-031 | BLOCKING | W0 baseline construction is not frozen against the originally requested base model, split, and feature source | W0–W3 deltas may compare a different baseline than the protocol specifies | PAUSED_PENDING_ADDENDUM |
+| ISSUE-032 | BLOCKING | W1/W2 horizon selection and aggregation do not have an explicit registered definition and coverage rule | A downstream gain/loss cannot be attributed to the intended reaction input | PAUSED_PENDING_ADDENDUM |
+| ISSUE-033 | BLOCKING | W3 residual adjustment and strict fallback condition are not recorded as a complete protocol | Windows with insufficient valid reactions may be changed or retained inconsistently | PAUSED_PENDING_ADDENDUM |
+| ISSUE-034 | BLOCKING | Reaction promotion needs per-stock, per-month, Brier, coverage, and horizon-completeness checks in one machine-readable gate | Article-level promotion can occur without satisfying the downstream guardrails | PAUSED_PENDING_ADDENDUM |
+| ISSUE-035 | BLOCKING | AR1 numeric scaling and lexical preprocessing must be fit only on the past fold and applied identically to evaluation rows | Text and numeric effects can be confounded or leak future distribution information | PAUSED_PENDING_ADDENDUM |
+| ISSUE-036 | BLOCKING | AR2 must use the registered target-context representation with explicit source provenance and coverage accounting | Precomputed or mismatched vectors cannot support the intended AR2 claim | PAUSED_PENDING_ADDENDUM |
+| ISSUE-037 | BLOCKING | Reaction verification lacks assertions that every feature's used-bar end is at or before the article cutoff | Existing PASS does not establish time safety | PAUSED_PENDING_ADDENDUM |
+| ISSUE-038 | HIGH | Reaction verification lacks a future-price perturbation/replay test for context and labels | A hidden future dependency may survive ordinary key and range checks | PAUSED_PENDING_ADDENDUM |
+| ISSUE-039 | HIGH | Reaction grouping, duplicate suppression, and target-pair membership are not tied to the downstream manifest with auditable counts | The downstream sample may not be the same registered article/event unit | PAUSED_PENDING_ADDENDUM |
+| ISSUE-040 | HIGH | The corrected reaction run needs a frozen protocol fingerprint and a new output directory rather than in-place repair | Historical reaction results could be silently mixed with repaired results | PAUSED_PENDING_ADDENDUM |
 
 ## Planned execution stages
 
@@ -90,7 +103,7 @@ historical backtests because September onward has already been exposed.
   (ISSUE-012 through ISSUE-021).
 - [x] Stage 6 — global verification, final logs, handoff, commit and push.
 - [ ] Stage 7 — incorporate reviewer addendum and repair/re-run blocked dense and
-  reaction artifacts (ISSUE-022 through ISSUE-027); **paused**.
+  reaction artifacts (ISSUE-022 through ISSUE-040); **paused**.
 
 ## Stop conditions
 
@@ -121,13 +134,17 @@ public verification only, without overwriting historical runs. Remote push is
 pending network/DNS recovery.
 
 Stage 3 is also complete: canonical FinBERT reproduction passed at
-`1.72e-15`; ModernBERT v2 used special-token-excluded pooling and did not pass
-the promotion line, so no dual-encoder fusion was run.
+`1.72e-15`; ModernBERT v2 used special-token-excluded pooling and showed no
+stable two-stock improvement. Because v2 did not save the exact promotion
+formula as a machine-readable gate, no formal promotion pass/fail claim is
+made and no dual-encoder fusion was run.
 
 Stage 4 is complete. The local TabPFN 6.3.0 metadata/checkpoint audit passed;
 the default classifier is real-data-fine-tuned, so the old synthetic-only
-wording is corrected. A fixed n=8 own/cross probe ran successfully but did not
-pass the promotion line; no further TabPFN grid was authorized.
+wording is corrected. A fixed n=8 own/cross probe ran successfully but showed
+no stable two-stock improvement. Because v2 did not save the exact goal60
+formula as a machine-readable gate, no formal promotion pass/fail claim is
+made; no further TabPFN grid was authorized.
 
 Stage 5 is complete. The claim-only audit found 32 negative slopes in the 84
 saved early unconstrained Platt records, all from the AMZN branch. The later
@@ -154,10 +171,13 @@ The exact repair instructions/addendum have not yet been incorporated here.
 Execution is now **PAUSED_PENDING_REVIEWER_ADDENDUM**. Do not start another
 experimental stage or model execution, including ModernBERT, TabPFN, reaction
 extensions, or any new model. Do not tune, select, publish, or combine scores
-while these blockers are open. The six blocking areas are ISSUE-022 through
-ISSUE-027 above: the executable dense gate month range, unfinished-bar price
-context, requested reaction W0–W3 protocol, complete reaction promotion gate,
-AR1/AR2 preprocessing and representation, and time-safety verification.
+while these blockers are open. The coarse blocking areas are ISSUE-022 through
+ISSUE-027; the detailed reaction requirements are now split into ISSUE-028
+through ISSUE-040 above: completed-bar censoring and row provenance,
+availability/horizon alignment, the exact W0/W1/W2/W3 protocol and fallback,
+the full promotion gate, AR1 preprocessing, AR2 provenance/coverage,
+time-safety and future-perturbation verification, grouping auditability, and a
+new-run fingerprint.
 
 No command was running when this pause was received. All previous work,
 historical runs, local commits, and audit artifacts remain preserved; no reset,
@@ -176,8 +196,11 @@ before any rerun.
   audits additional historical method claims without rewriting v3/v4 files.
 - The v4 recency weight audit covered 17,140 private fold rows: formula error
   was zero and there were no monotonic or infinity-unit-weight violations.
-- The dense verifier now confirms exactly six June–August stock-month cells
-  and requires the matched reconstructed feature mode after parity failed.
+- The historical dense verifier artifact reports exactly six June–August
+  stock-month cells and requires the matched reconstructed feature mode after
+  parity failed; ISSUE-022 now supersedes that interpretation because the
+  executable advancement gate was found to use March–August. A corrected
+  June–August calculation is pending.
 - The v2 ModernBERT run used 5,078 matched titles, 159 MPS batches, and zero
   trainable encoder parameters. Its old-v1 versus v2 article-vector mean L2
   difference is 2.0673.

@@ -5,15 +5,17 @@
 本轮 repair-first 审计没有重新追逐 exposed period 分数。v4 recency 的
 session-age 权重已通过 17,140 个私有 fold 行的公式、单调性和 infinity
 等权检查（公式最大误差 0，违规数 0）；公开 parity 仍为
-`1.67e-15`。dense verifier 现在确认 gate 只含 June–August 的六个
+`1.67e-15`。早期 dense verifier artifact 报告 gate 只含 June–August 的六个
 stock-month cells，并确认 canonical parity 失败时训练与评价都使用同一
-`reconstructed_all_official_and_augmented` 特征模式。数值结果未改写；公开
-核验结果为 PASS，详见 [recency weight audit](../outputs/stock_recency_dense_4h/v4/recency_weight_audit.json)
+`reconstructed_all_official_and_augmented` 特征模式；外部审查随后发现可执行
+gate 仍使用 March–August，因此该 gate/PASS 解读已 superseded，等待 time-safe
+rerun。数值结果未改写；详见 [recency weight audit](../outputs/stock_recency_dense_4h/v4/recency_weight_audit.json)
 和 [v4 verification](../outputs/stock_recency_dense_4h/v4/verification.json)。
 
 Stage 3 的 FinBERT/Fin-ModernBERT 公平 pooling 对照已完成：canonical
 FinBERT 重现误差为 `1.72e-15`，v2 ModernBERT 排除了 special tokens，
-但没有通过晋级线，也没有继续做融合。Stage 4 的 TabPFN 来源审计和
+但没有显示稳定的两股提升；v2 没有保存原晋级公式的 machine-readable gate，
+因此不作正式 pass/fail 晋级判定，也没有继续做融合。Stage 4 的 TabPFN 来源审计和
 Stage 5 的 claim-only 审计也已完成；旧 Modern、TabPFN、SSL、analogy、
 Event Adapter、Chronos 和校准结果继续按方法真值表的窄声明解释。
 
@@ -22,8 +24,9 @@ Event Adapter、Chronos 和校准结果继续按方法真值表的窄声明解�
 
 TabPFN 的旧“synthetic-only”描述也已纠正：本地 TabPFN 6.3.0 metadata 与
 checkpoint archive 表明 default classifier 是 real-data fine-tuned。固定
-`n_estimators=8` 的 own/cross probe 已实际运行，但没有跨股晋级，因此不再
-扩大 TabPFN 网格。详见 [TabPFN v2 report](../outputs/stock_tabpfn_4h/v2/REPORT.md)
+`n_estimators=8` 的 own/cross probe 已实际运行，但没有显示稳定的两股提升；
+v2 没有保存 exact goal60 gate，因此不作正式 pass/fail 晋级判定，也不再扩大
+TabPFN 网格。详见 [TabPFN v2 report](../outputs/stock_tabpfn_4h/v2/REPORT.md)
 和 [provenance audit](../outputs/stock_tabpfn_4h/v2/provenance.json)。
 
 Stage 5 的[方法主张审计](../outputs/stock_method_validity_audit/v1/REPORT.md)
@@ -48,11 +51,12 @@ F1/F2 历史控制和 F1_new/F2_new 的区别。
 
 外部审查发现 dense v4 的实际月份 gate、reaction 的未完成五分钟 bar、
 W0–W3 协议、promotion gate、AR1/AR2 预处理／表示和 reaction 时间安全
-核验仍有阻塞问题。这些问题已登记为 `ISSUE-022`—`ISSUE-027`；历史结果
+核验仍有阻塞问题。这些问题已登记为粗粒度 `ISSUE-022`—`ISSUE-027`，并已
+拆成详细的 `ISSUE-028`—`ISSUE-040`；历史结果
 全部保留，但受影响 artifact 的 PASS 只能视为此前本地检查结果。
 
 当前状态为 `PAUSED_PENDING_REVIEWER_ADDENDUM`。没有运行新的模型或实验，
-也没有重置、删除或覆盖已有工作；必须先纳入详细 addendum，再制定新的
+也没有重置、删除或覆盖已有工作；必须先纳入完整详细 addendum，再制定新的
 repair protocol 和独立输出目录。
 
 ## 最新完成：v4 recency/dense 修正与全语料新闻 reaction probe（2026-09-17）
@@ -63,6 +67,7 @@ repair protocol 和独立输出目录。
 - recency 只在 2018-03—05 选择全局半衰期，2018-06—08 做 gate；R1/F1/F2 均选 20，但外层增量分别为 AAPL/AMZN `+2.80pp/-7.40pp`、`+4.57pp/-0.38pp`、`-4.34pp/+1.16pp`，均未通过。稠密窗口修正为 6 个月份行，D1 相对重建 D0_day 为 `+0.42pp/+0.78pp`，也未通过，D2 按协议停止。
 - 官方与重建 dense 输入逐列 parity 不一致，所以 v4 的官方控制、训练和增广统一使用 reconstructed generator；没有混合两套特征。原 v3 “non-overlapping”措辞也已在 v4 纠正为 30 分钟起点的重叠四小时窗口。
 - 全部 78,055 条原始新闻索引参与 reaction coverage 审计，得到 89,958 个 article×target 候选、85,402 个 canonical groups；AAPL/AMZN 都通过预登记可行性 gate。冻结 AR1 在 120m/240m 的文章级外层 gate 通过，但下游 W0–W3 没有两股稳定提升：AAPL W0/W1-120 为 48.70%/51.66%，AMZN 为 60.63%/45.51%。
+- ⚠️ **历史结果已 superseded：**外部审查发现 dense v4 的可执行月份 gate、reaction 的完成 bar／时间安全、W0–W3 协议和 promotion gate 均需修复；因此本节的 `+0.42/+0.78pp` dense 数值以及 `120m/240m`、W0–W3 predictive/gate 表述只能作为保留的 exploratory artifact，不能作为当前有效结论，等待按 `ISSUE-022`—`ISSUE-040` 完成 time-safe rerun。
 - 当前没有宣布独立人工事件关联验收通过；FinBERT 二进制不可重新加载，AR2 只是已有私有向量的约 10.36% coverage probe。没有新增微调、GNN、RL、Chronos 或付费数据。
 
 新的公开核验：[recency v4 verification](../outputs/stock_recency_dense_4h/v4/verification.json)、[reaction v1 verification](../outputs/stock_reaction_features_4h/v1/verification.json)。所有 development/later/Jun-Aug 结果仍是已暴露的探索性历史回测。

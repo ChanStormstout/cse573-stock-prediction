@@ -1202,3 +1202,19 @@ ISSUE-027 写入 `docs/CODEX_WORKING_SPEC.md`。
 ModernBERT、TabPFN、reaction extension 或其他模型实验。当前等待详细
 reviewer addendum；在其纳入新的 repair protocol 之前，不将此前 affected
 artifact 的 PASS 当作最终有效性结论。
+
+# 2026-09-18：checkpoint evidence corrections and detailed blocker register
+
+本次只更新文档和证据边界，没有运行模型、reaction 代码或新的实验。外部
+审查要求已落实：dense v4 的可执行月份 gate 在 `METHOD_VALIDITY_AUDIT.md`
+中降为 `NEEDS_RERUN`／`SUPERSEDED_PENDING_RERUN`；CORR-003/CORR-015 保留
+历史 `+0.42/+0.78pp` 但明确 superseded；CURRENT_STATUS 的 v4 历史段落加入
+reaction 120m/240m/W0–W3 predictive/gate 警告。
+
+ModernBERT v2 与 TabPFN v2 的 current-facing 文案改为“未显示稳定的两股提升”，
+并明确它们没有保存 exact promotion formula，因此不作正式 pass/fail 晋级声称；
+没有重跑 encoder 或 TabPFN。详细 reaction addendum 要求拆分为
+ISSUE-028—ISSUE-040，覆盖完成 bar、逐行 provenance、时间对齐、W0–W3、完整
+promotion gate、AR1/AR2、future perturbation、grouping manifest 和新运行指纹。
+状态继续为 `PAUSED_PENDING_REVIEWER_ADDENDUM`，待完整 addendum 纳入后才可
+制定 repair protocol 和新输出目录。
