@@ -1340,7 +1340,9 @@ authorize any verifier repair or additional action.
 结果能进入既有 post-run verifier。
 
 **Integrity evidence:** 恢复前、修复后且验证前、以及 verifier 执行后的
-十一份既存 v1 artifact 的 SHA-256 完全一致。新增的仅是 recovery 元数据和
+十一份既存 v1 artifact 的 SHA-256 完全一致。初始 recovery 记录中的
+`metrics.csv` SHA-256 曾遗漏最后一个十六进制字符，已作为 metadata transcription
+修正为完整 64 字符值，非 artifact 改写。新增的仅是 recovery 元数据和
 `verification.json`；预测、metrics、monthly metrics、advancement、系数和
 训练证据均未改写。
 

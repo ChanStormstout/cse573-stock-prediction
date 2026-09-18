@@ -3,6 +3,7 @@
   "mode": "verifier_only_recovery_of_preserved_v1",
   "run_gate_rerun": false,
   "existing_predictive_result_artifacts_unchanged": true,
+  "hash_ledger_note": "The initial metrics.csv SHA-256 transcription omitted its final hexadecimal character. The corrected 64-character entry matches the preserved file; this is metadata-only.",
   "minimal_code_repair": "Moved the existing clean(value) helper from preflight_main scope to module scope; no verification calculation or model definition changed.",
   "postrun_verifier_command": "work/stock-data/finbert-env/bin/python3 outputs/stock_specific_gate_4h/verify.py",
   "failed_checks": [

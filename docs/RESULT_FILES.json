@@ -2191,8 +2191,8 @@
   },
   {
     "path": "outputs/stock_specific_gate_4h/v1/verifier_recovery_input_hashes.json",
-    "bytes": 2502,
-    "sha256": "8f3a08d317e18c61379b89bf2a98a826df32e000b7886afa4dc3048ce511c6e1"
+    "bytes": 2790,
+    "sha256": "666756628b00d459aa5be6749ae0613f201f8d442d3d441d6192afeeb16a90ef"
   },
   {
     "path": "outputs/stock_specific_gate_4h/v1/verification.json",
@@ -2201,8 +2201,8 @@
   },
   {
     "path": "outputs/stock_specific_gate_4h/v1/verifier_recovery_outcome.json",
-    "bytes": 1191,
-    "sha256": "fccb72c29d6e662a118df410186c2cd23f4ee596dfbaa301c783f710257ee383"
+    "bytes": 1387,
+    "sha256": "38d275cc15f3f01fc136eeb48178cb261564c2da612372ade5ae8a1f5413d33b"
   },
   {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION_v4.md",

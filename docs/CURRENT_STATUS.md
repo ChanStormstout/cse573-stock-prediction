@@ -25,9 +25,10 @@
 > `v1/verification_failure.json` for the exact failure record.
 
 > **Verifier-only recovery boundary:** the authorized scope repair moved only
-> the pre-existing `clean()` helper. SHA-256 hashes for all eleven v1 files
-> that existed before recovery are identical before repair, immediately before
-> verification, and after verification. The recovered verifier wrote
+> the pre-existing `clean()` helper. The recovery record corrects one missing
+> final hexadecimal character in its initial `metrics.csv` SHA-256 entry; the
+> corrected 64-character hashes for all eleven v1 files are identical before
+> repair, immediately before verification, and after verification. The recovered verifier wrote
 > `v1/verification.json=FAIL`: 17 checks pass, but independent advancement
 > reconstruction rejects values at `1e-12` because `advancement.json` was
 > serialized at approximately ten decimal digits. The runner and saved

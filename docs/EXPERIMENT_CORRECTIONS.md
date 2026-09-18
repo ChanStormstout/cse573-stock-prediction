@@ -323,6 +323,9 @@ generated during this correction.
   verification calculation, runner, saved prediction, metric, or advancement
   file was changed. SHA-256 records prove all eleven v1 files that predated
   recovery are byte-identical before repair, before verification, and after it.
+  The recovery ledger initially omitted the final hexadecimal character of the
+  `metrics.csv` SHA-256 and now records the corrected 64-character hash; this
+  was a metadata transcription repair, not an artifact change.
 - **Recovered result:** the existing post-run verifier now writes
   `v1/verification.json`, with 17 passing checks and one failed check:
   `advancement_independently_reconstructed`.
