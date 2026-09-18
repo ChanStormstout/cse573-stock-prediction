@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "target_association": "PASS",
+  "family_isolation": "PASS",
+  "cross_split_family_count": 0,
+  "qwen_hashes": "PASS",
+  "token_audit": {
+    "pair_count": 64,
+    "max_prompt_tokens": 2777,
+    "over_limit_count": 0
+  }
+}

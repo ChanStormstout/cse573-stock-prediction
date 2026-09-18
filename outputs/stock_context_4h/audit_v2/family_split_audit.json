@@ -1,0 +1,115 @@
+{
+  "selected_pair_count": 64,
+  "unique_selected_article_target_nodes": 127,
+  "full_family_graph_node_count": 99423,
+  "unique_family_count": 65979,
+  "pilot_pair_count": 36,
+  "locked_pair_count": 28,
+  "cross_split_family_count": 0,
+  "largest_family_size": 151,
+  "largest_pair_component_size": 2,
+  "pair_component_count": 63,
+  "stock_stratum_split_counts": [
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "locked_check",
+      "count": 4
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "pilot",
+      "count": 4
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "locked_check",
+      "count": 5
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "pilot",
+      "count": 3
+    },
+    {
+      "target": "AAPL",
+      "stratum": "near_duplicate_candidate",
+      "split": "locked_check",
+      "count": 4
+    },
+    {
+      "target": "AAPL",
+      "stratum": "near_duplicate_candidate",
+      "split": "pilot",
+      "count": 4
+    },
+    {
+      "target": "AAPL",
+      "stratum": "weak_overlap_candidate",
+      "split": "locked_check",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "weak_overlap_candidate",
+      "split": "pilot",
+      "count": 7
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "locked_check",
+      "count": 4
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "pilot",
+      "count": 4
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "locked_check",
+      "count": 2
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "pilot",
+      "count": 6
+    },
+    {
+      "target": "AMZN",
+      "stratum": "near_duplicate_candidate",
+      "split": "locked_check",
+      "count": 4
+    },
+    {
+      "target": "AMZN",
+      "stratum": "near_duplicate_candidate",
+      "split": "pilot",
+      "count": 4
+    },
+    {
+      "target": "AMZN",
+      "stratum": "weak_overlap_candidate",
+      "split": "locked_check",
+      "count": 4
+    },
+    {
+      "target": "AMZN",
+      "stratum": "weak_overlap_candidate",
+      "split": "pilot",
+      "count": 4
+    }
+  ],
+  "candidate_counts": {
+    "eligible_current_AAPL": 35512,
+    "eligible_current_AMZN": 9119
+  },
+  "json_read_error": 0
+}

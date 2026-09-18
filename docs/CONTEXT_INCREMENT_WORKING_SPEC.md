@@ -32,3 +32,12 @@ must not fit, rebuild input, or overwrite a model.
 | CONTEXT-007 | HIGH | Synthetic fixture bypasses production paths | full fixture/corruption suite required |
 | CONTEXT-008 | HIGH | Qwen availability was not hash-audited | 13/13 exact files now verified |
 | CONTEXT-009 | MEDIUM | Initial checklist was stale | statuses updated in this section |
+# Relation-reader blocking repairs (2026-09-18)
+
+`CONTEXT-010` through `CONTEXT-020` are registered from the external review:
+target-local DSU identity; target-aware pair identity/deduplication; full-universe
+bridge families; measured component size; tuple-safe public summaries; defensive
+generated-output validation; token-level numeric grounding; raw JSON read failure
+skip; explicit ZipFile caching/cleanup; removal of the unregistered current cap;
+and missing-hash normalization. Qwen inference remains blocked until the repaired
+pair build, unit tests, model-hash check, and full token audit pass.

@@ -1,0 +1,10 @@
+{
+  "card_count": 28,
+  "sha256": "5c74cc58cabf5ed4effd0198f8a7aa73e3959686945e9e069ce62295ebd36754",
+  "schema": [
+    "pair_id",
+    "target",
+    "current_sentences",
+    "past_sentences"
+  ]
+}
