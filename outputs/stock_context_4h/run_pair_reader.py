@@ -43,7 +43,10 @@ def validate(obj,row):
     if pd.Timestamp(row['current_available_utc'])<=pd.Timestamp(row['past_available_utc']):errors.append('time_order')
     return sorted(set(errors))
 def packets():
-    if (PRIVATE/'pair_passages.jsonl').exists():raise FileExistsError('refuse to overwrite packet evidence')
+    # A successful preflight already freezes packets. Reuse that immutable file;
+    # only relation outputs themselves are single-run guarded.
+    if (PRIVATE/'pair_passages.jsonl').exists():
+        return [json.loads(line) for line in (PRIVATE/'pair_passages.jsonl').open() if line.strip()]
     pairs=pd.read_json(PRIVATE/'news_pairs_private.jsonl',lines=True);ix=pd.read_pickle(ROOT/'work/stock-data/audit/news_index.pkl');lookup={f'{r.archive}::{r.member}':r for r in ix.itertuples(index=False)};zips={};rows=[]
     try:
       for r in pairs.itertuples():
