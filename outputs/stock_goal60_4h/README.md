@@ -15,6 +15,12 @@ work/stock-data/finbert-env/bin/python outputs/stock_goal60_4h/history.py encode
 work/stock-data/finbert-env/bin/python outputs/stock_goal60_4h/history_models.py
 ```
 
-TabPFN uses the synthetic-only 2.5 checkpoint, one estimator, CPU, telemetry disabled. Its local training-sample conditioning is distinct from gradient training. Dense A1 uses existing January–February adapter weights, not newly fitted encoders. LR, boosting and bilinear heads are actually fitted in this round. Original and A1 token inputs are identical.
+The historical v1 TabPFN probe used one estimator. A later v2 audit verified the
+bundled default TabPFN 2.5 checkpoint as real-data-fine-tuned and reran the same
+protocol with eight estimators; see [the corrected report](v2/REPORT.md) and
+[provenance](v2/provenance.json). TabPFN's local training-sample conditioning
+is distinct from gradient training. Dense A1 uses existing January–February
+adapter weights, not newly fitted encoders. LR, boosting and bilinear heads are
+actually fitted in this round. Original and A1 token inputs are identical.
 
 Alpaca fixed January 10, 2018 SPY/QQQ sample request returned HTTP401 without credentials. External-market branch is AUTH_REQUIRED and is excluded, not imputed or assumed available. No paid subscriptions or APIs are used.

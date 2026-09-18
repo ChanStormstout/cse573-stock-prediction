@@ -147,5 +147,23 @@ allowed.
   own/cross-stock chronological protocol with the library default
   `n_estimators=8`. The n=1 outputs remain a matched historical control.
 - **Result:** n=8 did not pass the cross-stock promotion rule. The safe claim
-  is a corrected frozen-prior configuration probe; neither synthetic-only
-  performance nor the TabPFN paper's full pretraining system is established.
+is a corrected frozen-prior configuration probe; neither synthetic-only
+performance nor the TabPFN paper's full pretraining system is established.
+
+## CORR-018 — Stage 5 claim-only audit and calibration slopes
+
+The claim-only audit read 420 saved calibration records without fitting or
+changing predictions. The early unconstrained Platt manifest contains 32
+negative slopes among 84 records, all in the AMZN branch. A negative slope
+reverses score ordering, so those values are historical score remappings, not
+simple monotone calibration. The later constrained `platt_shrunk`, temperature
+and positive-slope manifests contain no negative slopes in the audit.
+
+The same audit narrows several method labels: masked reconstruction is an SSL
+pilot rather than TS2Vec; analogy is a lexical historical probe rather than
+FinSeer; Event Adapter is a target-specific extraction probe rather than Ding
+event/graph embedding; and Chronos is an endpoint-feature probe. It also
+records that Qwen UP/DOWN values are token preferences, C2 tests one auxiliary
+objective rather than all return signal, dissemination gains are
+regularization-confounded, and historical F1/F2 controls must remain separate
+from reselected F1_new/F2_new. No independent event-review gate is claimed.

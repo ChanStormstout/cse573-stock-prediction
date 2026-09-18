@@ -1,0 +1,11 @@
+issue,method,status,safe_claim,unsafe_claim
+ISSUE-012,masked-reconstruction SSL,VALID_WITH_CAVEAT,small SSL pilot only; not TS2Vec,TS2Vec failed
+ISSUE-013,historical analogy,VALID_WITH_CAVEAT,lexical/coarse historical analogy probe,FinSeer was reproduced or refuted
+ISSUE-014,Event Adapter,VALID_WITH_CAVEAT,target evidence/action extraction probe,Ding event/graph embedding was reproduced
+ISSUE-015,Chronos-2,VALID_WITH_CAVEAT,frozen endpoint-feature probe,Chronos-2 is ineffective in general
+ISSUE-016,early unconstrained Platt,AUDITED,32 of 84 saved early Platt fits have negative slopes; later constrained maps are the interpretable calibration,all historical Platt maps are monotone
+ISSUE-017,dissemination/event clustering,VALID_WITH_CAVEAT,local gain is regularization-confounded,deduplication independently caused the AMZN gain
+ISSUE-018,Qwen direct UP/DOWN,VALID_WITH_CAVEAT,"conditional token preference, not calibrated probability",token scores are market probabilities
+ISSUE-019,cross-stock past state,VALID,uses only peer state available before the cutoff,future contemporaneous peer returns were used
+ISSUE-020,continuous-return auxiliary,VALID_WITH_CAVEAT,one shared direction-plus-return objective lacked stable promotion,return magnitude has no signal
+ISSUE-021,F1/F2 controls,DOCUMENTED,historical controls are separate from reselected F1_new/F2_new,the controls were silently swapped

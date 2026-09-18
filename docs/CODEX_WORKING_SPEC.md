@@ -80,9 +80,9 @@ historical backtests because September onward has already been exposed.
 - [x] Stage 3 — matched FinBERT/Fin-ModernBERT pooling probe (ISSUE-008/009).
 - [x] Stage 4 — TabPFN checkpoint/configuration audit and conditional corrected
   probe (ISSUE-010/011).
-- [ ] Stage 5 — claim-only wording and calibration/dedup interpretation audit
+- [x] Stage 5 — claim-only wording and calibration/dedup interpretation audit
   (ISSUE-012 through ISSUE-021).
-- [ ] Stage 6 — global verification, final logs, handoff, commit and push.
+- [x] Stage 6 — global verification, final logs, handoff, commit and push.
 
 ## Stop conditions
 
@@ -120,6 +120,20 @@ Stage 4 is complete. The local TabPFN 6.3.0 metadata/checkpoint audit passed;
 the default classifier is real-data-fine-tuned, so the old synthetic-only
 wording is corrected. A fixed n=8 own/cross probe ran successfully but did not
 pass the promotion line; no further TabPFN grid was authorized.
+
+Stage 5 is complete. The claim-only audit found 32 negative slopes in the 84
+saved early unconstrained Platt records, all from the AMZN branch. The later
+constrained calibration manifests have no negative slopes. Current-facing
+wording now distinguishes small probes from full paper reproductions, treats
+the dissemination result as regularization-confounded, treats Qwen scores as
+token preferences, and separates historical F1/F2 controls from F1_new/F2_new.
+No prediction, model, or exposed-period score was changed in this stage.
+
+Stage 6 is complete locally. All five public verifiers, `refresh_repository.py`,
+`check_repository.py`, and `git diff --check` passed. The final evidence is in
+`outputs/stock_method_validity_audit/v1/final_verification.json`. A push is
+still attempted after the final commit; if GitHub DNS remains unavailable,
+the local commit and remote-tracking boundary are reported explicitly.
 
 ## Deviations / new problems discovered while executing
 

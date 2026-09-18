@@ -1,0 +1,11 @@
+{
+  "script": "outputs/stock_method_validity_audit/audit_claims.py",
+  "script_sha256": "686eb7ccaa5acd90ce8ee1e46ea80ef23baae4be2dad85cda8758affdfa67755",
+  "outputs": [
+    "REPORT.md",
+    "CALIBRATION_SLOPES.csv",
+    "METHOD_CLAIM_AUDIT.csv",
+    "verification.json"
+  ],
+  "status": "PASS"
+}

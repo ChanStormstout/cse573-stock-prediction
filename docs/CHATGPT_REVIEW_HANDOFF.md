@@ -137,3 +137,40 @@ same own/cross inputs and chronological splits with fixed `n_estimators=8`
 (28 fits, no gradient training). Reload, finite-probability and time-order
 checks passed, but the corrected probe did not pass the cross-stock promotion
 line. No further TabPFN tuning was run.
+
+## Stage 5 completion (local)
+
+Stage 5 was deliberately claim-only. `outputs/stock_method_validity_audit/v1`
+records the exact public calibration manifests and the safe/unsafe wording
+table for ISSUE-012 through ISSUE-021. The audit found 32 negative slopes in
+the 84 saved early unconstrained Platt records (all AMZN); the later
+constrained manifests contain no negative slopes. No fit, inference, model
+selection, prediction, or exposed-period score was changed.
+
+Current-facing course documentation now uses the repaired special-token-
+excluded ModernBERT comparison and the verified real-data-fine-tuned TabPFN
+description. It calls the SSL, analogy, Event Adapter and Chronos runs narrow
+probes rather than full paper reproductions, treats Qwen direct scores as token
+preferences, and keeps dissemination gains separate from regularization.
+Historical F1/F2 controls are explicitly separated from F1_new/F2_new.
+
+Stage 6 remains: run all public verifiers and repository checks, update the
+project log, commit the audit, attempt the required push, and report the
+network boundary if GitHub DNS is still unavailable.
+
+## Stage 6 verification (local)
+
+The final verification pass completed successfully:
+
+- recency weight audit, recency/dense v4, ModernBERT pooling v2, TabPFN v2,
+  and the claim audit all returned `PASS`;
+- `scripts/refresh_repository.py` refreshed 378 selected result files and
+  `scripts/check_repository.py` passed 836 tracked/selected files with 285
+  Python sources parsed;
+- `git diff --check` passed;
+- `outputs/stock_method_validity_audit/v1/final_verification.json` records the
+  evidence counts and limitations.
+
+The task is complete locally pending the final commit and the required push
+attempt. The remote branch will only be described as updated if a subsequent
+network check verifies it.

@@ -368,3 +368,11 @@ outputs/stock_reaction_features_4h/v1/reaction_training_evidence.json
 outputs/stock_reaction_features_4h/v1/verification.json
 outputs/stock_reaction_features_4h/v1/TARGET_ASSOCIATION_AUDIT.csv
 outputs/stock_reaction_features_4h/verify_v1.py
+outputs/stock_method_validity_audit/audit_claims.py
+outputs/stock_method_validity_audit/v1/PRE_REGISTRATION.md
+outputs/stock_method_validity_audit/v1/REPORT.md
+outputs/stock_method_validity_audit/v1/CALIBRATION_SLOPES.csv
+outputs/stock_method_validity_audit/v1/METHOD_CLAIM_AUDIT.csv
+outputs/stock_method_validity_audit/v1/verification.json
+outputs/stock_method_validity_audit/v1/manifest.json
+outputs/stock_method_validity_audit/v1/final_verification.json

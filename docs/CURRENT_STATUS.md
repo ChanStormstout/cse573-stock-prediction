@@ -1,6 +1,6 @@
 # 当前状态（2026-09-17）
 
-## 当前审计进度：Stage 1–2 recency/dense 验证已完成
+## 当前审计进度：Stage 1–6 repair-first 审计已在本地完成
 
 本轮 repair-first 审计没有重新追逐 exposed period 分数。v4 recency 的
 session-age 权重已通过 17,140 个私有 fold 行的公式、单调性和 infinity
@@ -13,9 +13,9 @@ stock-month cells，并确认 canonical parity 失败时训练与评价都使用
 
 Stage 3 的 FinBERT/Fin-ModernBERT 公平 pooling 对照已完成：canonical
 FinBERT 重现误差为 `1.72e-15`，v2 ModernBERT 排除了 special tokens，
-但没有通过晋级线，也没有继续做融合。Stage 4 的 TabPFN 来源审计及
-Stage 5 的 claim-only 审计仍未完成；旧 Modern、TabPFN、SSL、
-analogy、Event Adapter、Chronos 和校准结果继续按方法真值表的窄声明解释。
+但没有通过晋级线，也没有继续做融合。Stage 4 的 TabPFN 来源审计和
+Stage 5 的 claim-only 审计也已完成；旧 Modern、TabPFN、SSL、analogy、
+Event Adapter、Chronos 和校准结果继续按方法真值表的窄声明解释。
 
 详见 [ModernBERT v2 报告](../outputs/stock_foundation_4h/v2/REPORT.md) 和
 [v2 verification](../outputs/stock_foundation_4h/v2/verification.json)。
@@ -25,6 +25,19 @@ checkpoint archive 表明 default classifier 是 real-data fine-tuned。固定
 `n_estimators=8` 的 own/cross probe 已实际运行，但没有跨股晋级，因此不再
 扩大 TabPFN 网格。详见 [TabPFN v2 report](../outputs/stock_tabpfn_4h/v2/REPORT.md)
 和 [provenance audit](../outputs/stock_tabpfn_4h/v2/provenance.json)。
+
+Stage 5 的[方法主张审计](../outputs/stock_method_validity_audit/v1/REPORT.md)
+只读取保存的公开校准清单和文档，没有重新训练或推理。早期未约束 Platt
+记录中 84 条有 32 条负斜率（全部是 AMZN）；后续受约束清单没有负斜率。
+因此早期数值只能称为历史 score remapping，不能笼统称作单调校准。该轮
+同时把 SSL/analogy/Event Adapter/Chronos 统一改成窄 probe 说法，并明确
+事件聚合增益与正则化混杂、Qwen 直接输出是 token preference，以及
+F1/F2 历史控制和 F1_new/F2_new 的区别。
+
+最终五个公开 verifier、`refresh_repository.py`、`check_repository.py` 和
+`git diff --check` 均通过；汇总见
+[final verification](../outputs/stock_method_validity_audit/v1/final_verification.json)。
+本地 commit 后仍会尝试 push；GitHub 是否更新以网络可验证结果为准。
 
 ## 最新完成：v4 recency/dense 修正与全语料新闻 reaction probe（2026-09-17）
 

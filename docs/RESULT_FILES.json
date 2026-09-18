@@ -1848,5 +1848,45 @@
     "path": "outputs/stock_reaction_features_4h/verify_v1.py",
     "bytes": 2058,
     "sha256": "ca04e9f8bfee206d74703f01f0abb94489c72b9ebea6d5ab46834c50af186e9c"
+  },
+  {
+    "path": "outputs/stock_method_validity_audit/audit_claims.py",
+    "bytes": 9139,
+    "sha256": "686eb7ccaa5acd90ce8ee1e46ea80ef23baae4be2dad85cda8758affdfa67755"
+  },
+  {
+    "path": "outputs/stock_method_validity_audit/v1/PRE_REGISTRATION.md",
+    "bytes": 759,
+    "sha256": "8ea2de4b89581b0a1b91c805691d8177ca5091b530876bbf9c49967dce314ba4"
+  },
+  {
+    "path": "outputs/stock_method_validity_audit/v1/REPORT.md",
+    "bytes": 3002,
+    "sha256": "35428dac6861bef81773538604777d170b51bdcece82cb56705e21a36bd33da7"
+  },
+  {
+    "path": "outputs/stock_method_validity_audit/v1/CALIBRATION_SLOPES.csv",
+    "bytes": 48406,
+    "sha256": "11ff8e76c397b2fac7a9a482e1fedbc97738c71a75d8e0ca0d6e32acc3566568"
+  },
+  {
+    "path": "outputs/stock_method_validity_audit/v1/METHOD_CLAIM_AUDIT.csv",
+    "bytes": 1414,
+    "sha256": "7f1d5a96587c447a8377f27494d6d18bb85b8e5e440f9de43519d7954450ddda"
+  },
+  {
+    "path": "outputs/stock_method_validity_audit/v1/verification.json",
+    "bytes": 726,
+    "sha256": "25e6afcae3614e05cc2111e8c57756ec6cbdb2a1440ba628524ec4c1d7975b73"
+  },
+  {
+    "path": "outputs/stock_method_validity_audit/v1/manifest.json",
+    "bytes": 298,
+    "sha256": "378f67d64d1c66497cdf2f43752e17f9b326bd90ccf5f5bac049ad1b5687a3c2"
+  },
+  {
+    "path": "outputs/stock_method_validity_audit/v1/final_verification.json",
+    "bytes": 954,
+    "sha256": "8df669e1edf1c4d0bad29601bd79e26616747c816e3d82c55eb14984d1199ea0"
   }
 ]

@@ -1144,3 +1144,42 @@ F1是四个单元BA都高于50%的最清楚统一候选，相对F0却分别为+7
 - 官方/重建 dense parity 的差异仍需在未来获得输入生成器定义后进一步追溯；v4 已用 matched reconstructed control 避免把差异当作收益。
 - AR2 因模型二进制缺失只覆盖约 10.36% reaction rows；没有把它写成完整语义结果。独立组员事件/目标关联复核仍未完成。
 - 按停止规则，本轮不继续扩大 reaction horizon、recency 网格或 D2；保留全部结果供课程报告说明“为什么机制没有稳定提高”。
+
+## 2026-09-17：Stage 5 方法主张与校准审计
+
+**为什么做：**Stage 0–4 已修复并验证 recency/dense、ModernBERT pooling
+和 TabPFN provenance。剩余风险主要是把小型 paper-inspired probe 说成
+完整论文复现，或把校准／去重的局部结果解释过宽。因此本轮只做 claim-only
+审计，不追逐新分数。
+
+**实际执行：**先固定 `outputs/stock_method_validity_audit/v1/PRE_REGISTRATION.md`，
+再运行 `audit_claims.py` 读取四份公开校准清单，生成 420 条 slope 记录、
+安全／不安全主张表和机器核验 JSON。没有重新训练、推理、标签选择、开发／
+后续期调参或改写历史输出。
+
+**发现：**早期未约束 Platt 的 84 条记录中 32 条为负斜率，全部来自 AMZN；
+负斜率会反转分数排序，不能笼统称作单调概率校准。后续 constrained
+`platt_shrunk`、temperature 和正斜率清单没有负斜率。该结果只改变解释，
+不改变 BA/Brier 数值。
+
+**主张收窄：**SSL 是 masked-reconstruction pilot 而不是 TS2Vec；analogy
+是词法历史案例 probe 而不是 FinSeer；Event Adapter 是目标证据／动作抽取
+probe 而不是 Ding event/graph embedding；Chronos 是 frozen endpoint probe；
+Qwen 直接输出是 token preference；C2 只检验一个连续收益辅助目标；事件聚合
+增益与正则化混杂；历史 F1/F2 与 F1_new/F2_new 已明确分开。独立人工事件
+复核仍未通过或声称通过。
+
+**交付：**`outputs/stock_method_validity_audit/v1/REPORT.md`、
+`CALIBRATION_SLOPES.csv`、`METHOD_CLAIM_AUDIT.csv`、`verification.json` 和
+`manifest.json`；当前课程报告、状态页、工作规范、修正日志和 ChatGPT handoff
+均已更新。下一步只剩 Stage 6 全量 verifier、仓库刷新／检查、提交和 push。
+
+## 2026-09-17：Stage 6 最终核验（本地完成）
+
+五个公开 verifier（recency weight、recency/dense v4、ModernBERT v2、TabPFN
+v2、claim audit）均返回 PASS；`refresh_repository.py` 刷新 378 个选定结果，
+`check_repository.py` 检查 836 个文件并解析 285 个 Python source，
+`git diff --check` 也通过。最终证据写入
+`outputs/stock_method_validity_audit/v1/final_verification.json`。本轮没有
+修改原始数据、模型二进制或历史运行。commit 后按要求尝试 push；remote
+是否更新需由实际网络响应确认。

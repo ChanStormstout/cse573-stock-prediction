@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "local repair-first audit; no new model search",
+  "public_verifiers": {
+    "recency_weight_audit": "PASS",
+    "recency_dense_v4": "PASS",
+    "modern_pooling_v2": "PASS",
+    "tabpfn_v2": "PASS",
+    "claim_audit": "PASS"
+  },
+  "repository_hygiene": {
+    "refresh_repository": "PASS",
+    "check_repository": "PASS"
+  },
+  "key_evidence": {
+    "recency_weight_rows": 17140,
+    "recency_max_formula_error": 0.0,
+    "recency_max_probability_error": 1.6653345369377348e-15,
+    "modern_finbert_reproduction_max_probability_error": 1.7208456881689926e-15,
+    "tabpfn_v2_fit_count": 28,
+    "calibration_records_audited": 420,
+    "negative_early_platt_slopes": 32
+  },
+  "limitations": [
+    "Development and later periods are exposed exploratory historical backtests.",
+    "Independent human event-review acceptance is not claimed.",
+    "GitHub push remains subject to the unresolved network/DNS boundary."
+  ]
+}

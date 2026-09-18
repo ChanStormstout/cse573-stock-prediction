@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "claim-only; no fit, inference, or model selection",
+  "calibration_rows": 420,
+  "negative_early_platt_slopes": 32,
+  "positive_or_zero_slopes": 388,
+  "source_counts": {
+    "outputs/stock_nextgen_4h/runs/v1/CALIBRATION_FITS.json": {
+      "rows": 84,
+      "negative": 32
+    },
+    "outputs/stock_paper_methods_4h/v1/calibration.csv": {
+      "rows": 84,
+      "negative": 0
+    },
+    "outputs/stock_combination_4h/v1/calibrators.csv": {
+      "rows": 28,
+      "negative": 0
+    },
+    "outputs/stock_goal60_4h/v1/calibration.json": {
+      "rows": 224,
+      "negative": 0
+    }
+  },
+  "negative_slopes_are_non_monotone": true,
+  "later_constrained_files_have_negative_slopes": false
+}

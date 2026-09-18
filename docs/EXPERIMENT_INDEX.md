@@ -34,6 +34,7 @@
 - **stock_llm_direct_4h**: [PROTOCOL.md](../outputs/stock_llm_direct_4h/PROTOCOL.md) · [README.md](../outputs/stock_llm_direct_4h/README.md) · [REPORT.md](../outputs/stock_llm_direct_4h/REPORT.md)
 - **stock_llm_model_compare**: [PROTOCOL.md](../outputs/stock_llm_model_compare/PROTOCOL.md) · [README.md](../outputs/stock_llm_model_compare/README.md) · [REPORT.md](../outputs/stock_llm_model_compare/REPORT.md)
 - **stock_market_return_4h**: [README.md](../outputs/stock_market_return_4h/README.md)
+- **stock_method_validity_audit**: Python source archive
 - **stock_nextgen_4h**: [FINAL_STATUS.md](../outputs/stock_nextgen_4h/FINAL_STATUS.md) · [PROTOCOL.md](../outputs/stock_nextgen_4h/PROTOCOL.md) · [README.md](../outputs/stock_nextgen_4h/README.md) · [REPORT.md](../outputs/stock_nextgen_4h/REPORT.md)
 - **stock_paper_methods_4h**: [README.md](../outputs/stock_paper_methods_4h/README.md)
 - **stock_reaction_features_4h**: [PRE_REGISTRATION.md](../outputs/stock_reaction_features_4h/PRE_REGISTRATION.md)
