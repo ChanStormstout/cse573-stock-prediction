@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "activity_not_used": true,
+    "all_pass": true,
+    "dense_unique": true,
+    "equal_reference_exact": true,
+    "fit_weights_valid": true,
+    "future_target_perturbation_unchanged": true,
+    "labels_match": true,
+    "metrics_reconstruct": true,
+    "official_keys_exact": true,
+    "probabilities_finite": true,
+    "reaction_audit_nonnegative_counts": true
+  },
+  "parity_max_abs_error": {
+    "F1": 0.0,
+    "F2": 0.0,
+    "R1": 0.0
+  },
+  "source_sha256": {
+    "inputs": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b"
+  },
+  "status": "PASS"
+}

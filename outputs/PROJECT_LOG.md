@@ -1109,3 +1109,12 @@ F1是四个单元BA都高于50%的最清楚统一候选，相对F0却分别为+7
 **判断与停止：**这是实际训练和完整对照，不是只写方案。观察上，连续收益能在个别时期提供回报相关性，但当前输入没有把它稳定转化为方向增益；raw分支的OOF选择把辅助权重压到0，是停止扩大双任务网格的直接证据。解释上，仍不能证明收益监督永远无效，主要结论是这份数据和特征不足以支持更复杂组合。下一步优先级保持：若用户配置可验证的SPY／QQQ分钟数据，再做市场状态分支；否则不继续扩大RL、Graph、LLM或高容量搜索。
 
 **交付与核验：**`stock_market_return_4h/v1/REPORT.md`、`METRICS_SUMMARY.md`、`metrics.csv`、`cv_and_metrics.csv`、`predictions.csv`、`training_evidence.json`、`promotion_gate.csv`、`paired_block_intervals.csv`、`choices.json`、`alpaca_audit.json`和`verification.json`已生成；`verification.py`通过键、概率范围、标签符号、窗口计数、特征排除、时间顺序、checkpoint重载和注册参数检查。原始输入、环境和模型文件仍留在`work/`，不进Git。
+# 2026-09-17 — Recency weighting, dense windows, and article reaction audit
+
+**为什么做：**在市场状态数据仍缺少可验证 SPY/QQQ 分钟输入、连续收益辅助监督未通过晋级线之后，执行一轮有限、可复现的历史信息实验。目标是区分“近期样本应否更重要”“增加日内窗口是否有增量”和“新闻在可用时间后是否有足够可测反应”，不继续堆叠 LLM 或神经模型。
+
+**实际执行：**在新目录 `outputs/stock_recency_dense_4h/v3` 保存预注册协议、R1/F1/F2 四种精确半衰期（infinity/80/40/20 NYSE sessions）的加权逻辑回归、30 分钟 stride 的 48 根五分钟稠密窗口、文章 30/60/120/240 分钟反应审计，以及 activity 列审计。等权 R1/F1/F2 直接与已保存官方概率逐窗口对齐，最大误差为 0；加权训练和模型重载在 M5 本地环境完成。原文、embedding、模型和逐文章反应行保留在 `work/`。
+
+**观察到的结果：**recency 选择为 R1=20、F1=80、F2=20，但 June–August 的 AAPL/AMZN BA 增量分别为 R1 +0.41/−7.40pp、F1 +4.12/−3.21pp、F2 +5.97/−4.31pp，均未通过“弱股至少 +1pp、无股损失超过 1pp、三个月至少两个月为正”的工程线。稠密 D1 相对官方日归一化 D0_day 为 AAPL +0.42pp、AMZN +0.78pp，低于每股 +1pp，文本扩展和 D2 按协议停止。文章审计覆盖 4,930 篇 accepted article、4,930 个 normalized groups 和 39,440 个 article×horizon rows；这证明可做后续 event-study，但不构成因果或预测提升。activity 为非负整数型描述字段，但定义/单位未在仓库元数据中确认，保持 `SEMANTICS_UNRESOLVED_NOT_USED`。
+
+**核验与决定：**通过官方 keys/labels、等权概率精确复现、概率与指标重算、权重有限、dense 唯一性、未来 target-bar 扰动不改变 cutoff 特征、反应计数和 activity 未使用检查。结论是近期加权和稠密窗口没有稳定增量；后续优先级仍是获得可验证的 contemporaneous market-state 数据，不能把本轮局部改进包装成新泛化。

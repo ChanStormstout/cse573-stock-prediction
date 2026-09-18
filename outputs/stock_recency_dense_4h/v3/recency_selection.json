@@ -1,0 +1,142 @@
+{
+  "c_schedule_sha256": "34d00db85a3d6bb64388e13ae8837078814d577884ab75403447bd7c01aa6e78",
+  "embedding_sha256": "f0f56bda8ee8476fa79523a0855e1e2b556c54e53508123e39de9e88e537c74b",
+  "gate": [
+    {
+      "AAPL_delta_BA": 0.004114893820776233,
+      "AMZN_delta_BA": -0.0739942528735632,
+      "macro_delta_BA": -0.034939679526393486,
+      "method": "R1",
+      "passes": false,
+      "positive_outer_months": 1,
+      "selected_half_life": "20"
+    },
+    {
+      "AAPL_delta_BA": 0.04118185735832797,
+      "AMZN_delta_BA": -0.03213601532567053,
+      "macro_delta_BA": 0.00452292101632872,
+      "method": "F1",
+      "passes": false,
+      "positive_outer_months": 1,
+      "selected_half_life": "80"
+    },
+    {
+      "AAPL_delta_BA": 0.05966745672628029,
+      "AMZN_delta_BA": -0.043055555555555534,
+      "macro_delta_BA": 0.008305950585362376,
+      "method": "F2",
+      "passes": false,
+      "positive_outer_months": 2,
+      "selected_half_life": "20"
+    }
+  ],
+  "half_lives": [
+    "infinity",
+    "80",
+    "40",
+    "20"
+  ],
+  "input_sha256": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b",
+  "protocol_sha256": "b264cadd0bff71ae016281ea0bc8334888cf17695b636e6f83a03b92ea09b879",
+  "selections": {
+    "F1": {
+      "chosen": "80",
+      "inner": [
+        {
+          "AAPL_mean_BA": 0.5282017661432289,
+          "AMZN_mean_BA": 0.46680590364800895,
+          "half_life": "infinity",
+          "macro_mean_BA": 0.4975038348956189,
+          "weaker_stock_mean_BA": 0.46680590364800895
+        },
+        {
+          "AAPL_mean_BA": 0.5105433297591251,
+          "AMZN_mean_BA": 0.4851967882669637,
+          "half_life": "80",
+          "macro_mean_BA": 0.49787005901304443,
+          "weaker_stock_mean_BA": 0.4851967882669637
+        },
+        {
+          "AAPL_mean_BA": 0.5304349886594046,
+          "AMZN_mean_BA": 0.48037222686345493,
+          "half_life": "40",
+          "macro_mean_BA": 0.5054036077614298,
+          "weaker_stock_mean_BA": 0.48037222686345493
+        },
+        {
+          "AAPL_mean_BA": 0.5135867826948194,
+          "AMZN_mean_BA": 0.4777081592871066,
+          "half_life": "20",
+          "macro_mean_BA": 0.4956474709909629,
+          "weaker_stock_mean_BA": 0.4777081592871066
+        }
+      ]
+    },
+    "F2": {
+      "chosen": "20",
+      "inner": [
+        {
+          "AAPL_mean_BA": 0.49863384658295673,
+          "AMZN_mean_BA": 0.40015548129583217,
+          "half_life": "infinity",
+          "macro_mean_BA": 0.4493946639393945,
+          "weaker_stock_mean_BA": 0.40015548129583217
+        },
+        {
+          "AAPL_mean_BA": 0.516005187612529,
+          "AMZN_mean_BA": 0.4066439246263807,
+          "half_life": "80",
+          "macro_mean_BA": 0.46132455611945494,
+          "weaker_stock_mean_BA": 0.4066439246263807
+        },
+        {
+          "AAPL_mean_BA": 0.4821971338691305,
+          "AMZN_mean_BA": 0.41215770908753363,
+          "half_life": "40",
+          "macro_mean_BA": 0.4471774214783321,
+          "weaker_stock_mean_BA": 0.41215770908753363
+        },
+        {
+          "AAPL_mean_BA": 0.4744655076377824,
+          "AMZN_mean_BA": 0.42584934558618764,
+          "half_life": "20",
+          "macro_mean_BA": 0.450157426611985,
+          "weaker_stock_mean_BA": 0.42584934558618764
+        }
+      ]
+    },
+    "R1": {
+      "chosen": "20",
+      "inner": [
+        {
+          "AAPL_mean_BA": 0.5154899546376187,
+          "AMZN_mean_BA": 0.44671632785667875,
+          "half_life": "infinity",
+          "macro_mean_BA": 0.4811031412471487,
+          "weaker_stock_mean_BA": 0.44671632785667875
+        },
+        {
+          "AAPL_mean_BA": 0.4846077619610712,
+          "AMZN_mean_BA": 0.45655806182121966,
+          "half_life": "80",
+          "macro_mean_BA": 0.4705829118911455,
+          "weaker_stock_mean_BA": 0.45655806182121966
+        },
+        {
+          "AAPL_mean_BA": 0.4792314178750497,
+          "AMZN_mean_BA": 0.46423466072588876,
+          "half_life": "40",
+          "macro_mean_BA": 0.4717330393004693,
+          "weaker_stock_mean_BA": 0.46423466072588876
+        },
+        {
+          "AAPL_mean_BA": 0.49173898592697257,
+          "AMZN_mean_BA": 0.4812795878585352,
+          "half_life": "20",
+          "macro_mean_BA": 0.48650928689275386,
+          "weaker_stock_mean_BA": 0.4812795878585352
+        }
+      ]
+    }
+  }
+}

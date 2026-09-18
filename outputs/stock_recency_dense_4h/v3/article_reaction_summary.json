@@ -1,0 +1,15 @@
+{
+  "association": "official_accepted_article_ids_only",
+  "bar_sources": {
+    "AAPL": "059a29b0b24f438bd2d6f1be4102974f9b10631fd69b6c75ac2076930b0381cf",
+    "AMZN": "ea5ec298fe39364fa3cb3d9dfdd46393c5490f46c9e2da7984f839953e380282"
+  },
+  "feasibility_threshold": 100,
+  "feasible_for_next_reaction_experiment": true,
+  "note": "Reaction returns are descriptive after-availability measurements, not causal estimates; no reaction model was trained.",
+  "rows": 39440,
+  "source_sha256": "089b883f26b6b91f7d76ad5e785feb53313bf394ffce5e9bd6c416d661b950da",
+  "status": "AUDIT_ONLY",
+  "unique_articles": 4930,
+  "unique_groups": 4930
+}

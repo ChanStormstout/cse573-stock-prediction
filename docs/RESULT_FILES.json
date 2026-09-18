@@ -975,6 +975,181 @@
     "sha256": "77c98961a886f570962b1cbe5b8e9a50c83d6fade124bf7ac5d66136438ce9f7"
   },
   {
+    "path": "outputs/stock_recency_dense_4h/PRE_REGISTRATION.md",
+    "bytes": 4337,
+    "sha256": "b264cadd0bff71ae016281ea0bc8334888cf17695b636e6f83a03b92ea09b879"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/common.py",
+    "bytes": 4857,
+    "sha256": "0149b238195f440842f9c9032e3a9a09578f0481aaf31a0fed5678d96ea24455"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/run_recency.py",
+    "bytes": 16802,
+    "sha256": "ebf3a4777f5f8d517a4c727983e4efe2d5b8979deec0eb6a4ebfbef56116e81d"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/build_dense_windows.py",
+    "bytes": 6662,
+    "sha256": "8779450da01e47d77461175fa6ef39667fa922790158bf42cea1ad55ff199413"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/run_dense.py",
+    "bytes": 6941,
+    "sha256": "304c062c83add7311b865409e84c40dc84188ea21222a77ee35fcd55f6287e18"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/audit_article_reactions.py",
+    "bytes": 6663,
+    "sha256": "d3f55cfc6f774c5a04421d0383a9d130337f2b0c0549f648cab323418d0a79a6"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/audit_activity.py",
+    "bytes": 3937,
+    "sha256": "a88e43e91edd3f232b14c57a8b3d3fbcc93aebcb37fdda90ea5e098e688dc1d8"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/report.py",
+    "bytes": 9006,
+    "sha256": "e97e0c6f7e897b89a291835d0ef20674f6732128cdcc2bfa55650f6a280f0302"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/verify.py",
+    "bytes": 4401,
+    "sha256": "1fd26db9d900b99fa1cb97d298cfc13c02e9ac63162c413887f9e8cdc258d0e0"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/REPORT.md",
+    "bytes": 6702,
+    "sha256": "909ae08e6af5c4387e7a2ab3ef82fbd3ae991cea12e779a8d8dc7ef809c86cff"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/DATA_AUDIT.md",
+    "bytes": 1004,
+    "sha256": "986bf97eef51d39ac4136ec6d71f29c1eb2bd9e4abdcc9af190d97dd7ea97d89"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/ACTIVITY_AUDIT.md",
+    "bytes": 2229,
+    "sha256": "bcc39675fa661d59d2470b710a3d72d333bfc6e1e439fcf719adeca8692389f6"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/CASE_NOTES.md",
+    "bytes": 305,
+    "sha256": "418221558ef38b4abe37adb637e08b8c716ba786697c1d1771968ad0cf30f562"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/metrics.csv",
+    "bytes": 6277,
+    "sha256": "bec93ecf92ccd91ef14e8ff2c9f23cd84c060a26566389275b3fcae052be830e"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/monthly_metrics.csv",
+    "bytes": 24043,
+    "sha256": "968aca50c6a00eba690e79a47112b9dc1f7f109d97b892f41c71aa50083eb9ff"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/predictions.csv",
+    "bytes": 286553,
+    "sha256": "4b6f52863417c15e7ba45cd34d77182a1d200dab69c57356994571c9324abffa"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/recency_metrics.csv",
+    "bytes": 6277,
+    "sha256": "bec93ecf92ccd91ef14e8ff2c9f23cd84c060a26566389275b3fcae052be830e"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/recency_monthly_metrics.csv",
+    "bytes": 24043,
+    "sha256": "968aca50c6a00eba690e79a47112b9dc1f7f109d97b892f41c71aa50083eb9ff"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/recency_predictions.csv",
+    "bytes": 286553,
+    "sha256": "4b6f52863417c15e7ba45cd34d77182a1d200dab69c57356994571c9324abffa"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/recency_selection.json",
+    "bytes": 4382,
+    "sha256": "1280ad77000cc1fb6562f7588987a448fb6d56cd8f69ff14a68228b2e989c83d"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/dense_window_audit.csv",
+    "bytes": 3042,
+    "sha256": "2a2de7583bfc5b1bf308a9d5a361cb8301c393f9cd8e7e007aa22ca4620c61ad"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/dense_metrics.csv",
+    "bytes": 3109,
+    "sha256": "c8abf9fe5f87df6b78449666e182ce188c36ea80c2872c0af31232d301847767"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/dense_monthly_metrics.csv",
+    "bytes": 11751,
+    "sha256": "64ff7b4efe7a0dc0f6eea6e02fa2c8e9df4967a5d7c2cc2ddc350b10914abc70"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/dense_predictions.csv",
+    "bytes": 205870,
+    "sha256": "1cb7e88586d7f6ba265c50981c6b6608bf3d22dd2c445c8a13d1688baeee3a0b"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/dense_outer_scores.csv",
+    "bytes": 5649,
+    "sha256": "7981c699fa1994bd6d4477e48512e8c1aac0d1d88bc09448a329aa315a0ee27f"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/dense_training_summary.json",
+    "bytes": 523,
+    "sha256": "6a9ba7d229b3d31d8b495fe414fd7e316c1251450ed15a81cdf2a1ced12ce524"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/article_reaction_audit.csv",
+    "bytes": 3865,
+    "sha256": "74e047ced9916abeaa3239346a73eca1ffe945be687dd259b09780a4e6cfba69"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/article_reaction_summary.json",
+    "bytes": 636,
+    "sha256": "0b00e22c25326d80ce498347a2ffd213131976e71f05bdf9138c5b6099d248d8"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/activity_summary.csv",
+    "bytes": 584,
+    "sha256": "0196707d4202588cddd2c5f0c386efa23cb96b1c20d51548501b280f90abdc0d"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/activity_audit.json",
+    "bytes": 825,
+    "sha256": "fdaf5102ab2b67ba4ee7e46b9efaee064128322a0a05e024fa92c30400784256"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/inner_selection_scores.csv",
+    "bytes": 11531,
+    "sha256": "055b9f3614e9efce3ccbe75857801d330ee1a55104ec888104f9283ba15c9b0d"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/outer_scores_all.csv",
+    "bytes": 5967,
+    "sha256": "37f6bb09057e29e93f489e5c2b1e6f39b8742c48419b85532bfe9679560dc7c4"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/protocol.json",
+    "bytes": 345,
+    "sha256": "cbd6c9eadc22c1d5f6b24877c46664dbe8123d25e5307aa7a5967e283adac5f4"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/training_evidence.json",
+    "bytes": 85962,
+    "sha256": "75c1d3ce46744615ddce94e9a7445ebe0aa2be9e626f081f51d4f1cbdf4f0424"
+  },
+  {
+    "path": "outputs/stock_recency_dense_4h/v3/verification.json",
+    "bytes": 593,
+    "sha256": "182878b82b2e31e6b39646b84618c9e7f25521e1425bf95615f08791247da47e"
+  },
+  {
     "path": "outputs/stock_goal60_4h/v1/advancement.json",
     "bytes": 3462,
     "sha256": "55cddce643757523e6f4bbf48c99eafb71fb8d0b0280598c0af47e3dbb75c082"

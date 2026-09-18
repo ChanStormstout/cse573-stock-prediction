@@ -1,5 +1,15 @@
 # 当前状态（2026-09-17）
 
+## 最新完成：recency、稠密窗口与新闻反应审计（stock_recency_dense_4h/v3）
+
+[运行报告](../outputs/stock_recency_dense_4h/v3/REPORT.md)、[数据审计](../outputs/stock_recency_dense_4h/v3/DATA_AUDIT.md)、[核验](../outputs/stock_recency_dense_4h/v3/verification.json)。本轮固定原始 AAPL/AMZN 四小时任务和 1,607 个官方窗口，等权 R1/F1/F2 逐窗口复现原保存概率（最大误差 0），再只改变训练标签权重。
+
+- R1/F1/F2 在 infinity/80/40/20 NYSE session 半衰期中分别选择 20/80/20；June–August 增量为 R1 AAPL +0.41pp、AMZN −7.40pp，F1 +4.12/−3.21pp，F2 +5.97/−4.31pp，均未过弱股 +1pp、无股损失 >1pp、三个月至少两个月为正的预注册线。
+- 30 分钟 stride、48 根完成五分钟线的稠密窗口共 2,012 行（含 998 个 Jan–Aug 官方行）；D1 相对官方日归一化 D0_day 的外层增量为 AAPL +0.42pp、AMZN +0.78pp，低于门槛，因此文本扩展和 D2 按协议停止。
+- 文章反应审计使用已接受文章 ID，覆盖 4,930 篇文章、4,930 个 normalized groups 和 39,440 个 article×horizon 行，按 30/60/120/240 分钟、same-session/trading-time 分开统计；它是描述性 event-study 输入审计，不是因果或预测模型。
+- activity 第七列为非负整数型，但未找到权威定义和单位，状态保持 `SEMANTICS_UNRESOLVED_NOT_USED`，没有进入任何模型。
+- 所有 development/later 数值都是已经暴露的历史回测；后续优先级仍是获得可验证的 contemporaneous market-state 数据，不依据本轮局部提升挑选方法。
+
 ## 最新完成：市场状态审计与连续四小时收益辅助监督（stock_market_return_4h/v1）
 
 [运行报告](../outputs/stock_market_return_4h/v1/REPORT.md)、[指标表](../outputs/stock_market_return_4h/v1/metrics.csv)、[协议](../outputs/stock_market_return_4h/PRE_REGISTRATION.md)。按GPT Pro诊断先做了两条低成本验证：固定日期的SPY/QQQ一分钟Alpaca可行性审计，以及在原1,607个AAPL/AMZN四小时窗口上加入真实`target_return`的辅助监督。主任务和时间切分没有改变，development/later仍是已暴露历史回测。

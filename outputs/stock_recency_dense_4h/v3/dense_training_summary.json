@@ -1,0 +1,19 @@
+{
+  "D2_reason": "R1 recency gate did not pass",
+  "D2_status": "RUN_NOT_RUN_RECENCY_GATE_FAILED",
+  "dense_gate": {
+    "AAPL_delta_BA": 0.00416821835432384,
+    "AMZN_delta_BA": 0.007752851331226597,
+    "baseline": "D0_day",
+    "candidate": "D1",
+    "macro_delta_BA": 0.0059605348427752185,
+    "passes": false,
+    "positive_outer_months": 3
+  },
+  "fits": 28,
+  "official_rows": 998,
+  "rows": 2012,
+  "runtime_seconds": 0.33998262500972487,
+  "status": "COMPLETE",
+  "text_extension": "NOT_RUN_DENSE_GATE_FAILED"
+}
