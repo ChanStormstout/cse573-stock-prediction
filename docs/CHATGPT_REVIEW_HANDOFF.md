@@ -418,3 +418,28 @@ and model artifacts remain local.
 - **Interpretation boundary:** all three unchanged G1/G0, G2/G1 and G3/G2
   promotion contrasts fail. No post-result tuning or activity experiment
   occurred. Development/later remain exposed exploratory historical backtests.
+
+## Activity v1 preregistration and preflight checkpoint — 2026-09-18
+
+- **Starting SHA:** `11b4f29f806fc486c1519f1cfcdef02c6336924f`.
+- **Ending SHA (preflight payload):** `b7ff8606cc6bfef9163c8e8ae3170b1b22d912a3`
+  (`Add Activity v1 preregistration and preflight`).
+- **Semantics:** `SEMANTICS_UNRESOLVED_OPAQUE_ACTIVITY`. No authoritative
+  field/vendor definition was found in local course receipts, profile or chart
+  metadata. Cross-granularity sum agreement is saved as a descriptive audit,
+  not a claim that activity is volume.
+- **Raw source hashes:** AAPL 5-minute
+  `059a29b0b24f438bd2d6f1be4102974f9b10631fd69b6c75ac2076930b0381cf`;
+  AMZN 5-minute
+  `ea5ec298fe39364fa3cb3d9dfdd46393c5490f46c9e2da7984f839953e380282`.
+- **Frozen fields and coverage:** exactly 15/60-minute current `logmean`,
+  history-only relative level and four missing flags. AAPL current/relative
+  valid fractions are 66.63%/64.51% at 15m and 33.37%/32.25% at 60m; AMZN is
+  66.54%/64.30% and 33.33%/32.21%.
+- **A0 parity:** exact threshold direction parity with both canonical sources;
+  max absolute issued-probability error is `1.1102230246251565e-16` for each.
+- **Safety:** all 13 preflight checks pass, including completed-bar cutoff,
+  strictly preceding reference sessions, 20/10 history limits and a synthetic
+  10:02 unfinished-bar exclusion. A1/A1_matchedC result artifacts do not exist.
+- **Exact later command — not run:**
+  `work/stock-data/finbert-env/bin/python3 outputs/stock_activity_4h/run_activity.py --approve-activity-run --output outputs/stock_activity_4h/v1`
