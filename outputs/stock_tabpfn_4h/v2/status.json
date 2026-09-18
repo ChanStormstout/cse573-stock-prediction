@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE",
+  "rows": 1607,
+  "n_estimators": 8,
+  "checkpoint_sha256": "5d7170e2d3af01f9c501bb09ec3bd12e9944f8604de18002c647873c6ec04a12",
+  "runtime": "local TabPFN 6.3.0 bundle",
+  "source_protocol_sha256": "1cee5674ef4214977bf7af1f118127901cde4c5971521191bacad8c18a2b8fdb"
+}

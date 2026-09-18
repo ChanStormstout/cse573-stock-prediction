@@ -126,3 +126,14 @@ Modern v2 did not pass the cross-stock training-period promotion rule; no
 dual-encoder fusion or further tuning was run. The safe claim is a repaired
 frozen encoder probe with mixed exposed-period results, not a full paper
 reproduction or a proof that ModernBERT is ineffective.
+
+## Stage 4 completion (local)
+
+The local TabPFN 6.3.0 runtime and checkpoint were audited before inference.
+The bundled metadata and archive identify the default classifier as a
+real-data-fine-tuned `Prior-Labs/tabpfn_2_5` checkpoint; the old
+synthetic-only description is therefore corrected. A separate v2 run used the
+same own/cross inputs and chronological splits with fixed `n_estimators=8`
+(28 fits, no gradient training). Reload, finite-probability and time-order
+checks passed, but the corrected probe did not pass the cross-stock promotion
+line. No further TabPFN tuning was run.

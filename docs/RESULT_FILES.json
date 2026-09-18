@@ -1695,6 +1695,66 @@
     "sha256": "6a11b1e58261311b6b46e133d1589d98ea9f8cd3c94f1e327c71d0371980eee0"
   },
   {
+    "path": "outputs/stock_tabpfn_4h/v2/PRE_REGISTRATION.md",
+    "bytes": 1361,
+    "sha256": "1cee5674ef4214977bf7af1f118127901cde4c5971521191bacad8c18a2b8fdb"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/audit_tabpfn.py",
+    "bytes": 3398,
+    "sha256": "e7ed9ceec3f07c9763062d1a247171d7a1393ea36e9832a7cb7ab536de4fe939"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/run_tabpfn_v2.py",
+    "bytes": 6366,
+    "sha256": "0045d9c1c0e51c262245ede940aa923069ab119e7799e4c9976f57c28ac5ce79"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/verify_v2.py",
+    "bytes": 3104,
+    "sha256": "14d4f7ce2bb046a33dbe9f486c2873ee92d9c17a2d64f44f9e0ff42fa598cba5"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/DATA_AUDIT.md",
+    "bytes": 799,
+    "sha256": "c6b24b5b28b198d8806277bc282f4499312ef9d53a482c8b87263b523ebac0d1"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/REPORT.md",
+    "bytes": 2649,
+    "sha256": "356120dab7eb957b226ecfd8b3b1533279843f52d37f06405f91a1711d1dc496"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/CASE_NOTES.md",
+    "bytes": 580,
+    "sha256": "5f515ba1e2e754e2c8aac3176527d06d13b077e414e1352b75fee10019841fb0"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/provenance.json",
+    "bytes": 1048,
+    "sha256": "264a084554772daa8a88808c732427e9a403f1669901712b39ccf7200781b7c3"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/status.json",
+    "bytes": 293,
+    "sha256": "bab6744eb28c6b1e6a4e2f00b2ee165776169622dfd0f90e0d45d2584529555e"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/comparison_metrics.csv",
+    "bytes": 4006,
+    "sha256": "30e1ca77d9c26e3b6203436e8212db805d6454038747818f877a15c9d3265885"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/comparison_predictions.csv",
+    "bytes": 251947,
+    "sha256": "b83175826021c9b754c1de0ae27530ce941b876d83e856a152bcd7845c2babe7"
+  },
+  {
+    "path": "outputs/stock_tabpfn_4h/v2/verification.json",
+    "bytes": 745,
+    "sha256": "633e3eb4d4002dd2cb8c3f8283721d824a33eab2f4964ac39d6e78d81024d8a4"
+  },
+  {
     "path": "outputs/stock_reaction_features_4h/PRE_REGISTRATION.md",
     "bytes": 2467,
     "sha256": "5923aa01d991cc8429057e78b0d24072b8f72b8e1cfb771eeb3667bc7b8357f1"

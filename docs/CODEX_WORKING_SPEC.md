@@ -78,7 +78,7 @@ historical backtests because September onward has already been exposed.
 - [x] Stage 1 — canonical parity and recency repairs (ISSUE-001/002/003/007).
 - [x] Stage 2 — dense gate and feature parity repair (ISSUE-004/005/006).
 - [x] Stage 3 — matched FinBERT/Fin-ModernBERT pooling probe (ISSUE-008/009).
-- [ ] Stage 4 — TabPFN checkpoint/configuration audit and conditional corrected
+- [x] Stage 4 — TabPFN checkpoint/configuration audit and conditional corrected
   probe (ISSUE-010/011).
 - [ ] Stage 5 — claim-only wording and calibration/dedup interpretation audit
   (ISSUE-012 through ISSUE-021).
@@ -116,6 +116,11 @@ Stage 3 is also complete: canonical FinBERT reproduction passed at
 `1.72e-15`; ModernBERT v2 used special-token-excluded pooling and did not pass
 the promotion line, so no dual-encoder fusion was run.
 
+Stage 4 is complete. The local TabPFN 6.3.0 metadata/checkpoint audit passed;
+the default classifier is real-data-fine-tuned, so the old synthetic-only
+wording is corrected. A fixed n=8 own/cross probe ran successfully but did not
+pass the promotion line; no further TabPFN grid was authorized.
+
 ## Deviations / new problems discovered while executing
 
 - The requested remote fetch was attempted but GitHub DNS resolution failed;
@@ -132,6 +137,10 @@ the promotion line, so no dual-encoder fusion was run.
 - The v2 ModernBERT run used 5,078 matched titles, 159 MPS batches, and zero
   trainable encoder parameters. Its old-v1 versus v2 article-vector mean L2
   difference is 2.0673.
+- The TabPFN audit verified package 6.3.0, checkpoint SHA
+  `5d7170e2d3af01f9c501bb09ec3bd12e9944f8604de18002c647873c6ec04a12`, and
+  the real-data-fine-tuned provenance. The corrected n=8 probe completed 28
+  fits with maximum reload error `1.79e-7`.
 
 ## Exact commands executed
 

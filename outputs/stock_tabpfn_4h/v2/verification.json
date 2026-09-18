@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "comparison_keys_unique": true,
+    "comparison_recompute": true,
+    "cross_n8_finite_predictions": true,
+    "cross_n8_fit_count_14": true,
+    "cross_n8_fixed_n8": true,
+    "cross_n8_no_gradient_training": true,
+    "cross_n8_time_order": true,
+    "not_synthetic_only": true,
+    "own_n8_finite_predictions": true,
+    "own_n8_fit_count_14": true,
+    "own_n8_fixed_n8": true,
+    "own_n8_no_gradient_training": true,
+    "own_n8_time_order": true,
+    "provenance_pass": true
+  },
+  "fit_count": 28,
+  "max_reload_error": 1.7881393432617188e-07,
+  "note": "n=8 is a corrected configuration probe. The old n=1 run is a matched historical control; all exposed periods remain exploratory backtests.",
+  "status": "PASS"
+}

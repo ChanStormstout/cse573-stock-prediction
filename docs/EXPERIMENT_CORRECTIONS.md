@@ -134,3 +134,18 @@ allowed.
 - **Evidence:** canonical FinBERT reproduction error is `1.72e-15`; v2
   Modern vectors differ from v1 (mean L2 `2.0673`). v2 remains a frozen
   encoder probe and does not validate the full Fin-ModernBERT paper system.
+
+## CORR-017 — TabPFN checkpoint provenance and ensemble size
+
+- **Discovered:** The old goal60 report described the default classifier
+  checkpoint as synthetic-only without checking the bundled package metadata;
+  the old code also set `n_estimators=1`.
+- **Evidence:** TabPFN 6.3.0 metadata identifies the checkpoint as the
+  `Prior-Labs/tabpfn_2_5` default classifier fine-tuned on real data, and the
+  archive root is `real-large-samples-and-features`.
+- **Repair:** A new v2 probe audited the local provenance and ran the same
+  own/cross-stock chronological protocol with the library default
+  `n_estimators=8`. The n=1 outputs remain a matched historical control.
+- **Result:** n=8 did not pass the cross-stock promotion rule. The safe claim
+  is a corrected frozen-prior configuration probe; neither synthetic-only
+  performance nor the TabPFN paper's full pretraining system is established.

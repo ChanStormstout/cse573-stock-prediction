@@ -1,0 +1,26 @@
+{
+  "checkpoint": "work/stock-data/goal60_4h/tabpfn_model/tabpfn-v2.5-classifier-v2.5_default.ckpt",
+  "checkpoint_archive_roots": [
+    "tabpfn-v2.5-classifier-v2.5_real-large-samples-and-features"
+  ],
+  "checkpoint_bytes": 42935499,
+  "checkpoint_sha256": "5d7170e2d3af01f9c501bb09ec3bd12e9944f8604de18002c647873c6ec04a12",
+  "corrected_configuration": {
+    "device": "cpu",
+    "n_estimators": 8,
+    "n_preprocessing_jobs": 1,
+    "random_state": 573
+  },
+  "model_filename": "tabpfn-v2.5-classifier-v2.5_default.ckpt",
+  "model_repo": "Prior-Labs/tabpfn_2_5",
+  "note": "Local package/checkpoint evidence; this does not independently reproduce the TabPFN pretraining paper.",
+  "old_configuration": {
+    "device": "cpu",
+    "n_estimators": 1
+  },
+  "package_version": "6.3.0",
+  "provenance": "default TabPFN-2.5 classifier fine-tuned on real data according to bundled package metadata",
+  "runtime_metadata_sha256": "ebc9b01fd212fbafc67721a55bbc19dc2e13f8ddf4edc0fa8fe7de9dacd79336",
+  "status": "PASS",
+  "synthetic_only_claim": false
+}

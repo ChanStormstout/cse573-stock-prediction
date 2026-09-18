@@ -20,6 +20,12 @@ analogy、Event Adapter、Chronos 和校准结果继续按方法真值表的窄�
 详见 [ModernBERT v2 报告](../outputs/stock_foundation_4h/v2/REPORT.md) 和
 [v2 verification](../outputs/stock_foundation_4h/v2/verification.json)。
 
+TabPFN 的旧“synthetic-only”描述也已纠正：本地 TabPFN 6.3.0 metadata 与
+checkpoint archive 表明 default classifier 是 real-data fine-tuned。固定
+`n_estimators=8` 的 own/cross probe 已实际运行，但没有跨股晋级，因此不再
+扩大 TabPFN 网格。详见 [TabPFN v2 report](../outputs/stock_tabpfn_4h/v2/REPORT.md)
+和 [provenance audit](../outputs/stock_tabpfn_4h/v2/provenance.json)。
+
 ## 最新完成：v4 recency/dense 修正与全语料新闻 reaction probe（2026-09-17）
 
 [v4 recency/dense 报告](../outputs/stock_recency_dense_4h/v4/REPORT.md)、[v4 数据审计](../outputs/stock_recency_dense_4h/v4/DATA_AUDIT.md)、[reaction 报告](../outputs/stock_reaction_features_4h/v1/REPORT.md)已经实际运行完成。该轮保留 AAPL/AMZN 四小时任务、原始窗口和 cutoff，v3 未改写。
