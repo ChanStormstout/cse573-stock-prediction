@@ -42,6 +42,14 @@ records using the registered BA/Brier/smaller-C ordering. `audit_v5` preserves
 audit_v4 and adds a shared all-method September C corruption rejected by
 `final_C_from_MarAug`. No real market run is authorized.
 
+## Canonical R1 row binding (2026-09-18)
+
+Real mode independently compares all 1,607 source R1 rows to the accepted
+canonical window source: key, label, target start, cutoff, session and every
+raw R1 feature. It requires exactly 1,374 evaluated March-onward rows. audit_v6
+adds a cutoff-only source corruption and rejects it with
+`canonical_r1_row_contract`; no real run was performed.
+
 Starting SHA: `27f7b477459c28e48aa3d3321ba874ebff8a36b1`. This lane preserves all
 historical experiments and does not authorize real Mmeta/M1, news-direction, joint,
 Activity v2, router, thread/newness, or market-state candidate scoring.

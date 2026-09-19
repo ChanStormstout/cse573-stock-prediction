@@ -28,6 +28,11 @@
 - Audit v5 clean synthetic run passed; the final-C fault failed its dedicated
   check. No market prediction was run.
 
+## Context increment: canonical R1 row binding (2026-09-18)
+
+- Added a real-mode independent row/window contract and a cutoff-only fault.
+- Audit v6 passes cleanly; cutoff shift fails the dedicated contract.
+
 - Full title-and-body association and target-local family isolation produced 64
   pairs, with no family crossing pilot and locked-check splits.
 - The frozen Qwen3.5-9B pass received association-centered article sentences only:

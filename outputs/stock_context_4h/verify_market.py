@@ -39,6 +39,24 @@ def canonical_schedule_path(): return REPO/'work/stock-data/audit/xnys_schedule.
 def canonical_schedule_for(sched):
  c=pd.read_csv(canonical_schedule_path());c['open']=pd.to_datetime(c.open,utc=True);c['close']=pd.to_datetime(c.close,utc=True)
  dates=set(sched.open.dt.date);return c[c.open.dt.date.isin(dates)][['open','close']].sort_values('open').reset_index(drop=True)
+def canonical_r1_rows(mode, source, schedule):
+ if mode=='real':
+  c=pd.read_pickle(REPO/'work/stock-data/nextgen_4h/price_v1/features.pkl').copy()
+  c['start_utc']=pd.to_datetime(c.start_utc,utc=True);c['cutoff_utc']=pd.to_datetime(c.cutoff_utc,utc=True)
+ else:
+  c=pd.read_csv(source/'canonical_r1_rows.csv');c['start_utc']=pd.to_datetime(c.start_utc,utc=True);c['cutoff_utc']=pd.to_datetime(c.cutoff_utc,utc=True)
+ c['session_id']=c.start_utc.dt.date.astype(str)
+ return c
+def canonical_r1_row_contract(source_rows, canonical, schedule, real):
+ s=source_rows.copy();s['start_utc']=pd.to_datetime(s.start_utc,utc=True);s['cutoff_utc']=pd.to_datetime(s.cutoff_utc,utc=True);s['session_id']=s.session_id.astype(str)
+ c=canonical[['key','label','start_utc','cutoff_utc','session_id']+R1_FEATURES].copy().set_index('key');s=s.set_index('key')
+ if set(s.index)!=set(c.index) or (real and (len(s)!=1607 or len(c)!=1607)):return False,0
+ s=s.loc[c.index];basic=(s.label.astype(int).to_numpy()==c.label.astype(int).to_numpy()).all() and (s.start_utc.to_numpy()==c.start_utc.to_numpy()).all() and (s.cutoff_utc.to_numpy()==(c.start_utc-pd.Timedelta(minutes=5)).to_numpy()).all() and (s.session_id.to_numpy()==c.session_id.to_numpy()).all()
+ feature=all(np.allclose(s[col].to_numpy(float),c[col].to_numpy(float),atol=1e-12,rtol=0,equal_nan=True) for col in R1_FEATURES)
+ evaluated=int((s.index.to_series().str.contains('|2018-',regex=False)).sum())
+ # Canonical evaluation is March onward; keys are authoritative and no label is used.
+ evaluated=int((s.start_utc.dt.strftime('%Y-%m')>='2018-03').sum())
+ return bool(basic and feature and (evaluated==1374 if real else evaluated==int((canonical.start_utc.dt.strftime('%Y-%m')>='2018-03').sum()))),evaluated
 def grid_independent(schedule):
  rows=[]
  for r in schedule.itertuples(index=False):
@@ -67,6 +85,7 @@ def main():
   failcheck(checks,'source_exists',source.exists());
  if source is not None and source.exists():
   d=pd.read_csv(source/'r1_rows.csv');d.cutoff_utc=pd.to_datetime(d.cutoff_utc,utc=True);sched=pd.read_csv(source/'schedule.csv');sched.open=pd.to_datetime(sched.open,utc=True);sched.close=pd.to_datetime(sched.close,utc=True);etf={'SPY':bars(source/'bars_SPY.csv'),'QQQ':bars(source/'bars_QQQ.csv')};expected=json.loads((source/'expected_keys.json').read_text());grid=grid_independent(sched);manifest=json.loads((source/'source_manifest.json').read_text())
+  canonical_rows=canonical_r1_rows(fp.get('mode'),source,sched);row_ok,row_n=canonical_r1_row_contract(d,canonical_rows,sched,fp.get('mode')=='real');failcheck(checks,'canonical_r1_row_contract',row_ok,f'evaluated={row_n}')
   here=HERE
   r1a=here/'audit_v2/r1_independent_refit.json';r1j=json.loads(r1a.read_text())
   actual_hashes={s:sha(source/f'bars_{s}.csv') for s in ('SPY','QQQ')}

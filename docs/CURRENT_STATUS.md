@@ -66,6 +66,11 @@
 > the all-method shared final-C corruption is rejected. This remains code and
 > synthetic evidence only.
 
+> **Market Context canonical-window binding:** audit_v6 adds a source-to-
+> canonical R1 row contract for key/label/window/session/raw features. Its
+> cutoff-only corruption is rejected. This is synthetic integrity evidence;
+> no real market model has run.
+
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
 > 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除

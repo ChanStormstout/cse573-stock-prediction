@@ -26,6 +26,12 @@ schedule parity and reconstructed final-C checks. audit_v5 passed cleanly; its
 15th mutation changes every September-or-later method C consistently and is
 rejected by `final_C_from_MarAug`. No real run occurred.
 
+## 2026-09-18 — canonical window binding
+
+Added a real-mode canonical R1 row contract and audit_v6 cutoff-shift fault.
+The synthetic fixture passes and the changed cutoff is rejected by the
+dedicated contract. No real market score exists.
+
 ## 2026-09-18 — initialized
 
 Starting SHA is `27f7b477459c28e48aa3d3321ba874ebff8a36b1`; actual checkout will be
