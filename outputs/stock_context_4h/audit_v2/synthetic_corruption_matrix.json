@@ -1,0 +1,62 @@
+{
+  "expected_rejections": 14,
+  "actual_rejections": 14,
+  "results": [
+    {
+      "fault": "prediction",
+      "rejected": true
+    },
+    {
+      "fault": "npz",
+      "rejected": true
+    },
+    {
+      "fault": "columns",
+      "rejected": true
+    },
+    {
+      "fault": "hash",
+      "rejected": true
+    },
+    {
+      "fault": "future_bar",
+      "rejected": true
+    },
+    {
+      "fault": "missing_bar",
+      "rejected": true
+    },
+    {
+      "fault": "c_mismatch",
+      "rejected": true
+    },
+    {
+      "fault": "current_month",
+      "rejected": true
+    },
+    {
+      "fault": "label",
+      "rejected": true
+    },
+    {
+      "fault": "duplicate",
+      "rejected": true
+    },
+    {
+      "fault": "gate_missing",
+      "rejected": true
+    },
+    {
+      "fault": "gate_extra",
+      "rejected": true
+    },
+    {
+      "fault": "september",
+      "rejected": true
+    },
+    {
+      "fault": "report_gate",
+      "rejected": true
+    }
+  ]
+}
