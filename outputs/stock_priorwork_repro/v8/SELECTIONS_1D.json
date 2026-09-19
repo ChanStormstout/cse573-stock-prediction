@@ -1,0 +1,110 @@
+{
+  "1d:DNEWS_24H:AAPL:PAPER_1G_L1LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AAPL:PAPER_1G_L1LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AMZN:PAPER_1G_L1LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AMZN:PAPER_1G_L1LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AAPL:PAPER_1G_LINSVM": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AAPL:PAPER_1G_LINSVM": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AMZN:PAPER_1G_LINSVM": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AMZN:PAPER_1G_LINSVM": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AAPL:PAPER_2G_L1LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AAPL:PAPER_2G_L1LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AMZN:PAPER_2G_L1LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AMZN:PAPER_2G_L1LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AAPL:TFIDF_LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AAPL:TFIDF_LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AMZN:TFIDF_LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AMZN:TFIDF_LR": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AAPL:TFIDF_LINSVM": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AAPL:TFIDF_LINSVM": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AMZN:TFIDF_LINSVM": {
+    "C": 0.1
+  },
+  "1d:DNEWS_OVERNIGHT:AMZN:TFIDF_LINSVM": {
+    "C": 0.1
+  },
+  "1d:DNEWS_24H:AAPL:TFIDF_RF": {
+    "max_depth": 8,
+    "min_samples_leaf": 1
+  },
+  "1d:DNEWS_OVERNIGHT:AAPL:TFIDF_RF": {
+    "max_depth": 8,
+    "min_samples_leaf": 1
+  },
+  "1d:DNEWS_24H:AMZN:TFIDF_RF": {
+    "max_depth": 8,
+    "min_samples_leaf": 1
+  },
+  "1d:DNEWS_OVERNIGHT:AMZN:TFIDF_RF": {
+    "max_depth": 8,
+    "min_samples_leaf": 1
+  },
+  "1d:DNEWS_24H:AAPL:TFIDF_ADABOOST": {
+    "learning_rate": 0.05,
+    "n_estimators": 50
+  },
+  "1d:DNEWS_OVERNIGHT:AAPL:TFIDF_ADABOOST": {
+    "learning_rate": 0.05,
+    "n_estimators": 50
+  },
+  "1d:DNEWS_24H:AMZN:TFIDF_ADABOOST": {
+    "learning_rate": 0.05,
+    "n_estimators": 50
+  },
+  "1d:DNEWS_OVERNIGHT:AMZN:TFIDF_ADABOOST": {
+    "learning_rate": 0.05,
+    "n_estimators": 50
+  },
+  "1d:DNEWS_24H:AAPL:TFIDF_KNN": {
+    "n_neighbors": 5,
+    "weights": "uniform"
+  },
+  "1d:DNEWS_OVERNIGHT:AAPL:TFIDF_KNN": {
+    "n_neighbors": 5,
+    "weights": "uniform"
+  },
+  "1d:DNEWS_24H:AMZN:TFIDF_KNN": {
+    "n_neighbors": 5,
+    "weights": "uniform"
+  },
+  "1d:DNEWS_OVERNIGHT:AMZN:TFIDF_KNN": {
+    "n_neighbors": 5,
+    "weights": "uniform"
+  }
+}

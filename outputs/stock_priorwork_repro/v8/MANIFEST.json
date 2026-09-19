@@ -1,0 +1,12 @@
+{
+  "lineage_addendum_sha": "319e3176245a16628137eaafcaba6fb01f72592190bf1088ed0eef21d4d0842e",
+  "rows": 1072,
+  "parity": {
+    "article_key_parity": {
+      "total": "1607/1607",
+      "AAPL": "0/803"
+    },
+    "stem_body_parity": "1607/1607",
+    "pass": true
+  }
+}

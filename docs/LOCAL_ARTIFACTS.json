@@ -10940,6 +10940,12 @@
       "in_git": false
     },
     {
+      "path": "outputs/stock_priorwork_repro/v8/private_daily.pkl",
+      "bytes": 11105242,
+      "sha256": "ea6ab19aaef8c50f8b38f90648c03b95b3b59b115aa57086ac0d9bede18dc728",
+      "in_git": false
+    },
+    {
       "path": "outputs/stock_robust/results/data.pkl",
       "bytes": 14773939,
       "sha256": "5f04dd99abe9da6deabf2b2049d488e9ae25a27adf580207ea7d47960219e0b2",

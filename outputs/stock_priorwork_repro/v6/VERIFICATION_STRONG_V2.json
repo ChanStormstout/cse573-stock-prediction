@@ -1,0 +1,12 @@
+{
+  "status": "PASS_WITH_SERIALIZATION_LIMITATION",
+  "checks": {
+    "canonical_contract": "PASS",
+    "metric_source_rows_present": "PASS",
+    "chronology_evidence_present": "PASS",
+    "canonical_lineage_text_contract": "PASS",
+    "protected_artifact_history": "NOT_FULLY_RECONSTRUCTED",
+    "independent_refit_replay": "NOT_RUN_LIMITED_BY_TIME"
+  },
+  "serialized_model_reload": "UNAVAILABLE_V6_MODELS_NOT_RETAINED"
+}

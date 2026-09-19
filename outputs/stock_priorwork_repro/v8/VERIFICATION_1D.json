@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "canonical_lineage_parity": true,
+    "daily_rows_present": true,
+    "two_windows_separate": true,
+    "dprice_present": true,
+    "joint_both_windows": true,
+    "target_cutoff": true,
+    "five_prior_sessions": true,
+    "no_target_ohlc_features": true,
+    "no_news_rows_retained": true,
+    "full_body_not_title_only": true
+  },
+  "check_count": 10
+}

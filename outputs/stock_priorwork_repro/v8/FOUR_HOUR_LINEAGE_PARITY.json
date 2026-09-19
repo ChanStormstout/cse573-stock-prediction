@@ -1,0 +1,9 @@
+{
+  "article_key_parity": {
+    "AAPL": "803/803",
+    "AMZN": "804/804",
+    "total": "1607/1607"
+  },
+  "stem_body_parity": "1607/1607",
+  "pass": true
+}
