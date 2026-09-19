@@ -1,0 +1,30 @@
+{
+  "DPRICE_COLUMNS": [
+    "DRET_1",
+    "DRET_2",
+    "DRET_5",
+    "RANGE_1",
+    "RV_5",
+    "MEAN_5",
+    "HISTORY_AGE_HOURS"
+  ],
+  "formula_reconstruction_max_error": {
+    "DRET_1": 0.0,
+    "DRET_2": 0.0,
+    "DRET_5": 0.0,
+    "HISTORY_AGE_HOURS": 0.0,
+    "MEAN_5": 0.0,
+    "RANGE_1": 0.0,
+    "RV_5": 0.0
+  },
+  "future_or_target_day_feature_violations": 0,
+  "phase_counts": {
+    "OOF": 258,
+    "development": 84,
+    "later": 124,
+    "warmup": 70
+  },
+  "rows_with_exactly_five_prior_sessions": 536,
+  "status": "PASS",
+  "target_rows": 536
+}

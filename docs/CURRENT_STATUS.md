@@ -4,6 +4,8 @@
 
 > **Prior-work V10 Stage A2 final verifier-only repair (2026-09-19):** the historical Stage A audit remains intact, and V2 replaces its two residual checks with computed evidence. It verified all 576 parameter decisions against the physically isolated March--August grid partition (8,874 authorized candidate references; 0 quarantined references) and reloaded each exact final manifest-hashed private model file. All 576 hashes matched, probabilities/scores reproduced V9 within `4.44e-16`, and no model bytes or tracked V6--V9 artifacts changed. [V2 audit](../outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT_V2.json) is PASS; no Stage B work ran.
 
+> **Prior-work V10 Stage B1 (2026-09-19):** frozen daily DPRICE ran with only seven completed-prior-session features and a three-value chronological C grid. Raw sources produced 536 unique daily targets (70 warmup, 258 OOF, 84 development, 124 later); exactly 36 March--August candidate rows and 24 issued model bundles were produced. Independent reload verification passed at `8.33e-17` maximum probability error with zero direction mismatches. Text method families were frozen from V9 issued March--August NEWS-only OOF predictions only. [B1 audit](../outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT.json) is PASS. No NEWS+PRICE model has run.
+
 > **Prior-work reproduction / 1d study (2026-09-19):** immutable v6 completed
 > with a preregistration hash and PASS verifier. It evaluates bounded,
 > fold-local paper-style and TF-IDF classical controls on the existing 4h task

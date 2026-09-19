@@ -1,0 +1,299 @@
+{
+  "rankings": {
+    "24h": [
+      {
+        "AAPL_mean_monthly_BA": 0.5004346824199765,
+        "AMZN_mean_monthly_BA": 0.5531685906685906,
+        "decision_only": false,
+        "macro_BA": 0.5268016365442836,
+        "mean_Brier": 0.2661894750462794,
+        "method": "TFIDF_ADABOOST",
+        "rank": 1,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": true,
+        "weaker_stock_BA": 0.5004346824199765
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.5,
+        "AMZN_mean_monthly_BA": 0.5202140452140451,
+        "decision_only": false,
+        "macro_BA": 0.5101070226070226,
+        "mean_Brier": 0.2570357947596542,
+        "method": "PAPER_2G_L1LR",
+        "rank": 2,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": true,
+        "weaker_stock_BA": 0.5
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.49673202614379086,
+        "AMZN_mean_monthly_BA": 0.500474987974988,
+        "decision_only": false,
+        "macro_BA": 0.49860350705938944,
+        "mean_Brier": 0.33046181611078224,
+        "method": "TFIDF_KNN",
+        "rank": 3,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": true,
+        "weaker_stock_BA": 0.49673202614379086
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.4940115712174536,
+        "AMZN_mean_monthly_BA": 0.5574254449254449,
+        "decision_only": false,
+        "macro_BA": 0.5257185080714493,
+        "mean_Brier": 0.27061409434442535,
+        "method": "TFIDF_RF",
+        "rank": 4,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.4940115712174536
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.5,
+        "AMZN_mean_monthly_BA": 0.47007575757575754,
+        "decision_only": false,
+        "macro_BA": 0.48503787878787874,
+        "mean_Brier": 0.2516546355325712,
+        "method": "TFIDF_LR",
+        "rank": 5,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.47007575757575754
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.5,
+        "AMZN_mean_monthly_BA": 0.46283670033670044,
+        "decision_only": true,
+        "macro_BA": 0.4814183501683502,
+        "mean_Brier": null,
+        "method": "TFIDF_LINSVM",
+        "rank": 6,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.46283670033670044
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.4583333333333333,
+        "AMZN_mean_monthly_BA": 0.4554052429052429,
+        "decision_only": false,
+        "macro_BA": 0.4568692881192881,
+        "mean_Brier": 0.2999309360892783,
+        "method": "PAPER_1G_L1LR",
+        "rank": 7,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.4554052429052429
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.45027385468561937,
+        "AMZN_mean_monthly_BA": 0.45639730639730636,
+        "decision_only": true,
+        "macro_BA": 0.45333558054146283,
+        "mean_Brier": null,
+        "method": "PAPER_1G_LINSVM",
+        "rank": 8,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.45027385468561937
+      }
+    ],
+    "4h": [
+      {
+        "AAPL_mean_monthly_BA": 0.5,
+        "AMZN_mean_monthly_BA": 0.5,
+        "decision_only": false,
+        "macro_BA": 0.5,
+        "mean_Brier": 0.2475351766066475,
+        "method": "TFIDF_LR",
+        "rank": 1,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": true,
+        "weaker_stock_BA": 0.5
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.49819243936890995,
+        "AMZN_mean_monthly_BA": 0.5171536186097984,
+        "decision_only": false,
+        "macro_BA": 0.5076730289893542,
+        "mean_Brier": 0.2589234957080841,
+        "method": "PAPER_2G_L1LR",
+        "rank": 2,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": true,
+        "weaker_stock_BA": 0.49819243936890995
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.5112449915291513,
+        "AMZN_mean_monthly_BA": 0.49683041467987815,
+        "decision_only": false,
+        "macro_BA": 0.5040377031045147,
+        "mean_Brier": 0.27230117701827533,
+        "method": "TFIDF_RF",
+        "rank": 3,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": true,
+        "weaker_stock_BA": 0.49683041467987815
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.4975983272129317,
+        "AMZN_mean_monthly_BA": 0.4892857142857143,
+        "decision_only": false,
+        "macro_BA": 0.493442020749323,
+        "mean_Brier": 0.25754567792529165,
+        "method": "PAPER_1G_L1LR",
+        "rank": 4,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.4892857142857143
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.4844276659486302,
+        "AMZN_mean_monthly_BA": 0.5,
+        "decision_only": true,
+        "macro_BA": 0.4922138329743151,
+        "mean_Brier": null,
+        "method": "TFIDF_LINSVM",
+        "rank": 5,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.4844276659486302
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.48244796766799697,
+        "AMZN_mean_monthly_BA": 0.529626865417194,
+        "decision_only": false,
+        "macro_BA": 0.5060374165425955,
+        "mean_Brier": 0.2990445727751849,
+        "method": "TFIDF_KNN",
+        "rank": 6,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.48244796766799697
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.5241302323883187,
+        "AMZN_mean_monthly_BA": 0.4721808773279748,
+        "decision_only": false,
+        "macro_BA": 0.4981555548581468,
+        "mean_Brier": 0.2676160472292186,
+        "method": "TFIDF_ADABOOST",
+        "rank": 7,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.4721808773279748
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.4428820671517486,
+        "AMZN_mean_monthly_BA": 0.5315502684469516,
+        "decision_only": true,
+        "macro_BA": 0.4872161677993501,
+        "mean_Brier": null,
+        "method": "PAPER_1G_LINSVM",
+        "rank": 8,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.4428820671517486
+      }
+    ],
+    "overnight": [
+      {
+        "AAPL_mean_monthly_BA": 0.5212418300653595,
+        "AMZN_mean_monthly_BA": 0.5619708994708995,
+        "decision_only": false,
+        "macro_BA": 0.5416063647681295,
+        "mean_Brier": 0.26091143556768753,
+        "method": "PAPER_1G_L1LR",
+        "rank": 1,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": true,
+        "weaker_stock_BA": 0.5212418300653595
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.5,
+        "AMZN_mean_monthly_BA": 0.5257275132275132,
+        "decision_only": false,
+        "macro_BA": 0.5128637566137566,
+        "mean_Brier": 0.25093945351943764,
+        "method": "TFIDF_LR",
+        "rank": 2,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": true,
+        "weaker_stock_BA": 0.5
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.5,
+        "AMZN_mean_monthly_BA": 0.5087121212121213,
+        "decision_only": false,
+        "macro_BA": 0.5043560606060606,
+        "mean_Brier": 0.25624951515333694,
+        "method": "PAPER_2G_L1LR",
+        "rank": 3,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": true,
+        "weaker_stock_BA": 0.5
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.5153629050687875,
+        "AMZN_mean_monthly_BA": 0.49224987974987977,
+        "decision_only": true,
+        "macro_BA": 0.5038063924093337,
+        "mean_Brier": null,
+        "method": "PAPER_1G_LINSVM",
+        "rank": 4,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.49224987974987977
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.5,
+        "AMZN_mean_monthly_BA": 0.4842412217412217,
+        "decision_only": true,
+        "macro_BA": 0.4921206108706109,
+        "mean_Brier": null,
+        "method": "TFIDF_LINSVM",
+        "rank": 5,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.4842412217412217
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.4653925187013423,
+        "AMZN_mean_monthly_BA": 0.5302849927849927,
+        "decision_only": false,
+        "macro_BA": 0.4978387557431675,
+        "mean_Brier": 0.3027375913357255,
+        "method": "TFIDF_KNN",
+        "rank": 6,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.4653925187013423
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.4673435905053552,
+        "AMZN_mean_monthly_BA": 0.451485088985089,
+        "decision_only": false,
+        "macro_BA": 0.45941433974522206,
+        "mean_Brier": 0.27854978373510547,
+        "method": "TFIDF_ADABOOST",
+        "rank": 7,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.451485088985089
+      },
+      {
+        "AAPL_mean_monthly_BA": 0.41808450264332614,
+        "AMZN_mean_monthly_BA": 0.516955266955267,
+        "decision_only": false,
+        "macro_BA": 0.4675198847992965,
+        "mean_Brier": 0.2706044303748157,
+        "method": "TFIDF_RF",
+        "rank": 8,
+        "tie_break": "weaker_stock_BA, macro_BA, probabilistic_Brier_when_both_valid, lexical_method",
+        "top_three": false,
+        "weaker_stock_BA": 0.41808450264332614
+      }
+    ]
+  },
+  "source": "V9 issued NEWS-only predictions, March-August 2018 only"
+}

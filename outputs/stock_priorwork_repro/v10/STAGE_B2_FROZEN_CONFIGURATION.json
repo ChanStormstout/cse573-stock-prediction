@@ -1,0 +1,191 @@
+{
+  "branches": [
+    {
+      "classifier_family": "LR",
+      "final_frozen_parameter": {
+        "C": 1.0
+      },
+      "horizon_window": "4h",
+      "method": "TFIDF_LR",
+      "price_feature_set_name": "R1_4H",
+      "stock": "AAPL"
+    },
+    {
+      "classifier_family": "LR",
+      "final_frozen_parameter": {
+        "C": 1.0
+      },
+      "horizon_window": "4h",
+      "method": "TFIDF_LR",
+      "price_feature_set_name": "R1_4H",
+      "stock": "AMZN"
+    },
+    {
+      "classifier_family": "L1_LogisticRegression",
+      "final_frozen_parameter": {
+        "C": 0.1
+      },
+      "horizon_window": "4h",
+      "method": "PAPER_2G_L1LR",
+      "price_feature_set_name": "R1_4H",
+      "stock": "AAPL"
+    },
+    {
+      "classifier_family": "L1_LogisticRegression",
+      "final_frozen_parameter": {
+        "C": 1.0
+      },
+      "horizon_window": "4h",
+      "method": "PAPER_2G_L1LR",
+      "price_feature_set_name": "R1_4H",
+      "stock": "AMZN"
+    },
+    {
+      "classifier_family": "RF",
+      "final_frozen_parameter": {
+        "max_depth": null,
+        "min_samples_leaf": 1
+      },
+      "horizon_window": "4h",
+      "method": "TFIDF_RF",
+      "price_feature_set_name": "R1_4H",
+      "stock": "AAPL"
+    },
+    {
+      "classifier_family": "RF",
+      "final_frozen_parameter": {
+        "max_depth": 8,
+        "min_samples_leaf": 5
+      },
+      "horizon_window": "4h",
+      "method": "TFIDF_RF",
+      "price_feature_set_name": "R1_4H",
+      "stock": "AMZN"
+    },
+    {
+      "classifier_family": "L1_LogisticRegression",
+      "final_frozen_parameter": {
+        "C": 1.0
+      },
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "PAPER_1G_L1LR",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AAPL"
+    },
+    {
+      "classifier_family": "L1_LogisticRegression",
+      "final_frozen_parameter": {
+        "C": 1.0
+      },
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "PAPER_1G_L1LR",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AMZN"
+    },
+    {
+      "classifier_family": "LR",
+      "final_frozen_parameter": {
+        "C": 0.01
+      },
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "TFIDF_LR",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AAPL"
+    },
+    {
+      "classifier_family": "LR",
+      "final_frozen_parameter": {
+        "C": 1.0
+      },
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "TFIDF_LR",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AMZN"
+    },
+    {
+      "classifier_family": "L1_LogisticRegression",
+      "final_frozen_parameter": {
+        "C": 0.1
+      },
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "PAPER_2G_L1LR",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AAPL"
+    },
+    {
+      "classifier_family": "L1_LogisticRegression",
+      "final_frozen_parameter": {
+        "C": 0.01
+      },
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "PAPER_2G_L1LR",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AMZN"
+    },
+    {
+      "classifier_family": "ADABOOST",
+      "final_frozen_parameter": {
+        "learning_rate": 0.05,
+        "n_estimators": 50
+      },
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "TFIDF_ADABOOST",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AAPL"
+    },
+    {
+      "classifier_family": "ADABOOST",
+      "final_frozen_parameter": {
+        "learning_rate": 0.1,
+        "n_estimators": 100
+      },
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "TFIDF_ADABOOST",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AMZN"
+    },
+    {
+      "classifier_family": "L1_LogisticRegression",
+      "final_frozen_parameter": {
+        "C": 0.01
+      },
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "PAPER_2G_L1LR",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AAPL"
+    },
+    {
+      "classifier_family": "L1_LogisticRegression",
+      "final_frozen_parameter": {
+        "C": 1.0
+      },
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "PAPER_2G_L1LR",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AMZN"
+    },
+    {
+      "classifier_family": "KNN",
+      "final_frozen_parameter": {
+        "n_neighbors": 5,
+        "weights": "uniform"
+      },
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "TFIDF_KNN",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AAPL"
+    },
+    {
+      "classifier_family": "KNN",
+      "final_frozen_parameter": {
+        "n_neighbors": 5,
+        "weights": "uniform"
+      },
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "TFIDF_KNN",
+      "price_feature_set_name": "DPRICE_1D",
+      "stock": "AMZN"
+    }
+  ],
+  "status": "FROZEN_FOR_FUTURE_B2_ONLY"
+}

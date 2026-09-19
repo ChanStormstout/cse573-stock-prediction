@@ -2503,5 +2503,85 @@
     "path": "outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT_V2.json",
     "bytes": 150890,
     "sha256": "12241182e81dcf8ef7cb6a94a00fdf94d32baf129c86d1344be45cca3dedcd8c"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_B1_PRE_RUN_HASHES.json",
+    "bytes": 18044,
+    "sha256": "99b9803af21fdc9049cb68581a2f36ad8c3fbf74a6a8e4d7b17903c8cc29269f"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/DPRICE_SOURCE_AUDIT.json",
+    "bytes": 561,
+    "sha256": "2511e14592d0823966646f1cb9385c6f68ec7a7aa13246ffbf13f82728ba8db6"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/GRID_OOF_DPRICE.csv",
+    "bytes": 9882,
+    "sha256": "8cd4ef0ace43dc11a3ecc5ea27c5eb55398a05aa73fa50e46b446024fcfa11cb"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/ISSUED_PARAMS_DPRICE.csv",
+    "bytes": 3651,
+    "sha256": "576e26d0df72aa67bdc98041060fb2c083207398731c75481d0112bc42d5408c"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/DPRICE_PREDICTIONS.csv",
+    "bytes": 50235,
+    "sha256": "54f4dd3b55545d457c81e941eef303cb41d8765f37fe666bf87fc6dad195fbbf"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/DPRICE_METRICS.csv",
+    "bytes": 1691,
+    "sha256": "e6a99164a9747153bb0627ccb29793fe1677a68a0ac11d3788d4e3fab0dc563d"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/DPRICE_MONTHLY.csv",
+    "bytes": 5284,
+    "sha256": "a7921e000eb32a0a5d7b465b93dee47db5fa3fd071bfaa3322f46b896dabbfdf"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/DPRICE_MODEL_MANIFEST.json",
+    "bytes": 8071,
+    "sha256": "8fab78b23f6ef0d3354b404112a3b602e3264bf59eaa1ca8752f54b88c005d6c"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/DPRICE_VERIFICATION.json",
+    "bytes": 1078,
+    "sha256": "72b455f2c8d3bbf991e3d026223201217793c9636b263a4a03a73aeb2a405314"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/METHOD_SELECTION_INPUT_4H.csv",
+    "bytes": 5992,
+    "sha256": "01b9509eba62cbb8fd9b54ef1f4ce490d8f4df1aecd141a9ac0833c3f897fffe"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/METHOD_SELECTION_INPUT_1D_OVERNIGHT.csv",
+    "bytes": 5785,
+    "sha256": "d957d0f40da3ce53850211471f0120bea0fdf2af4776e3102d514314b7dd1258"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/METHOD_SELECTION_INPUT_1D_24H.csv",
+    "bytes": 5795,
+    "sha256": "4d39b5baeb4abff17e0010b2b0fb0ae0142101626e91c16d5c8ea5a4b46c4250"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/METHOD_SELECTIONS.json",
+    "bytes": 11020,
+    "sha256": "5ad7c6e6dd87e80cf9e3cae5a379bd75fad0faa1f4f327c6eff967b8ead46011"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_B2_FROZEN_CONFIGURATION.json",
+    "bytes": 4812,
+    "sha256": "32b522ff711ea91338d59c1c807e5ce28b526681bccefbb343585b73a11ffcb1"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT.json",
+    "bytes": 2139,
+    "sha256": "a7495f00d56daddf1585f8cf6425f18f33e5d76a01e0ab7de5da121149f32370"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_B1_REPORT.md",
+    "bytes": 749,
+    "sha256": "840d8aad1be0e06ff858be488c119ef8251a1f480c72d451e7adfc047d214063"
   }
 ]

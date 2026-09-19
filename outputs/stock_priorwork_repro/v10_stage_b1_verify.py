@@ -1,6 +1,6 @@
 """Fit-free independent verifier for frozen V10 Stage B1 artifacts."""
 from __future__ import annotations
-import hashlib,json,subprocess
+import functools,hashlib,json,subprocess
 from pathlib import Path
 import joblib,numpy as np,pandas as pd
 from sklearn.metrics import accuracy_score,balanced_accuracy_score,brier_score_loss,f1_score,matthews_corrcoef,precision_score,recall_score,roc_auc_score
@@ -28,6 +28,31 @@ def mscore(y,p):
  return {'n':int(len(y)),'accuracy':float(accuracy_score(y,z)),'BA':float(balanced_accuracy_score(y,z)) if both else None,'MCC':float(matthews_corrcoef(y,z)) if both else None,'precision':float(precision_score(y,z,zero_division=0)),'recall':float(recall_score(y,z,zero_division=0)),'F1':float(f1_score(y,z,zero_division=0)),'up_recall':float(recall_score(y,z,pos_label=1,zero_division=0)),'down_recall':float(recall_score(y,z,pos_label=0,zero_division=0)),'pred_up':float(z.mean()),'true_up':float(y.mean()),'AUC':float(roc_auc_score(y,p)) if both else None,'Brier':float(brier_score_loss(y,p)),'constant':bool(z.min()==z.max())}
 def expected_months(m):return [] if m=='2018-03' else (pd.period_range('2018-03',str(pd.Period(m)-1),freq='M').astype(str).tolist() if m<='2018-08' else OOF)
 def choose(g):return float(g.groupby('C',as_index=False).agg(BA=('BA','mean'),Brier=('Brier','mean')).sort_values(['BA','Brier','C'],ascending=[False,True,True]).iloc[0].C)
+def build_method_input(pred,horizon):
+ rows=[]
+ for method in ['PAPER_1G_L1LR','PAPER_1G_LINSVM','PAPER_2G_L1LR','TFIDF_LR','TFIDF_LINSVM','TFIDF_RF','TFIDF_ADABOOST','TFIDF_KNN']:
+  for stock in ['AAPL','AMZN']:
+   for month in OOF:
+    x=pred[(pred.symbol==stock)&(pred.horizon==horizon)&(pred.method==method)&(pred.month==month)];dec='LINSVM' in method;y=x.label.to_numpy();s=x.p.to_numpy(float);z=(s>=0 if dec else s>=.5).astype(int)
+    rows.append({'method':method,'stock':stock,'month':month,'n':len(x),'BA':float(balanced_accuracy_score(y,z)),'Brier':None if dec else float(brier_score_loss(y,s)),'decision_only':dec})
+ return pd.DataFrame(rows)
+def rank_methods(inp):
+ rec=[]
+ for method,g in inp.groupby('method'):
+  a=float(g[g.stock=='AAPL'].BA.mean());b=float(g[g.stock=='AMZN'].BA.mean());decision=bool(g.decision_only.iloc[0]);rec.append({'method':method,'weaker_stock_BA':min(a,b),'macro_BA':(a+b)/2,'mean_Brier':None if decision else float(g.Brier.mean())})
+ def cmp(x,y):
+  for k in ['weaker_stock_BA','macro_BA']:
+   if x[k]!=y[k]:return -1 if x[k]>y[k] else 1
+  if x['mean_Brier'] is not None and y['mean_Brier'] is not None and x['mean_Brier']!=y['mean_Brier']:return -1 if x['mean_Brier']<y['mean_Brier'] else 1
+  return -1 if x['method']<y['method'] else 1 if x['method']>y['method'] else 0
+ return [x['method'] for x in sorted(rec,key=functools.cmp_to_key(cmp))]
+def same_selection_input(actual,expected):
+ if list(actual.columns)!=list(expected.columns) or len(actual)!=len(expected):return False
+ for col in actual.columns:
+  if col in ('BA','Brier'):
+   if not np.allclose(actual[col].to_numpy(float),expected[col].to_numpy(float),rtol=0,atol=1e-12,equal_nan=True):return False
+  elif not actual[col].equals(expected[col]):return False
+ return True
 def main():
  data,source_ok=raw_daily();grid=pd.read_csv(O/'GRID_OOF_DPRICE.csv');issued=pd.read_csv(O/'ISSUED_PARAMS_DPRICE.csv');pred=pd.read_csv(O/'DPRICE_PREDICTIONS.csv',parse_dates=['start_utc','cutoff_utc']);manifest=json.loads((O/'DPRICE_MODEL_MANIFEST.json').read_text());pre=json.loads((O/'STAGE_B1_PRE_RUN_HASHES.json').read_text())
  # grid / issued chronology is recomputed from persisted authorized rows only.
@@ -53,9 +78,15 @@ def main():
    elif v is not None:metric_ok &= abs(float(v)-float(want[k]))<=1e-12
  current={k:sha(ROOT/k) for k in pre['tracked_files']};unchanged=current==pre['tracked_files']
  # selection input tables must be exactly March-August, 8 methods x 2 stocks x 6 months.
- input_ok=[]
- for f in ['METHOD_SELECTION_INPUT_4H.csv','METHOD_SELECTION_INPUT_1D_OVERNIGHT.csv','METHOD_SELECTION_INPUT_1D_24H.csv']:
-  x=pd.read_csv(O/f);input_ok.append(len(x)==96 and set(x.month)==set(OOF) and set(x.method)==set(['PAPER_1G_L1LR','PAPER_1G_LINSVM','PAPER_2G_L1LR','TFIDF_LR','TFIDF_LINSVM','TFIDF_RF','TFIDF_ADABOOST','TFIDF_KNN']))
- checks={'daily_source_contract':source_ok and len(data)==536,'dprice_feature_contract':COLS==['DRET_1','DRET_2','DRET_5','RANGE_1','RV_5','MEAN_5','HISTORY_AGE_HOURS'],'dprice_target_day_exclusion':True,'dprice_grid_count_36':len(grid)==36,'dprice_no_sep_plus_grid':grid.month.max()=='2018-08','dprice_selection_chronology':chrono,'dprice_sep_plus_freeze':freeze,'dprice_metric_recomputation':metric_ok,'dprice_serialized_model_count_24':len(manifest)==24 and len(before)==24,'dprice_serialized_reload':err<=1e-12 and mis==0 and not hash_bad and before==after,'method_selection_input_4h_only_mar_aug':input_ok[0],'method_selection_input_overnight_only_mar_aug':input_ok[1],'method_selection_input_24h_only_mar_aug':input_ok[2],'no_candidate_grid_maxima_used':True,'three_methods_selected_4h':True,'three_methods_selected_overnight':True,'three_methods_selected_24h':True,'stage_b2_configuration_frozen':len(json.loads((O/'STAGE_B2_FROZEN_CONFIGURATION.json').read_text())['branches'])==18,'no_joint_model_fit':not any(O.glob('*NEWS*PRICE*')),'pre_b1_artifacts_unchanged':unchanged}
+ p4=pd.read_csv(V9/'PREDICTIONS_4H.csv');p1=pd.read_csv(V9/'PREDICTIONS_1D.csv');selection=json.loads((O/'METHOD_SELECTIONS.json').read_text())['rankings'];input_ok=[];computed_rankings=[]
+ for f,source,horizon in [('METHOD_SELECTION_INPUT_4H.csv',p4,'4h'),('METHOD_SELECTION_INPUT_1D_OVERNIGHT.csv',p1,'1d:DNEWS_OVERNIGHT'),('METHOD_SELECTION_INPUT_1D_24H.csv',p1,'1d:DNEWS_24H')]:
+  actual=pd.read_csv(O/f).sort_values(['method','stock','month']).reset_index(drop=True);expected=build_method_input(source,horizon).sort_values(['method','stock','month']).reset_index(drop=True);input_ok.append(len(actual)==96 and same_selection_input(actual,expected));computed_rankings.append(rank_methods(expected))
+ saved_rankings=[ [x['method'] for x in selection[k]] for k in ['4h','overnight','24h'] ]
+ selected_ok=[computed_rankings[i][:3]==saved_rankings[i][:3] and len(set(saved_rankings[i][:3]))==3 for i in range(3)]
+ stage_a=json.loads((O/'STAGE_A_FINAL_AUDIT_V2.json').read_text());stage_a_ok=stage_a.get('status')=='PASS' and stage_a['checks'].get('quarantine_selection_isolation') and stage_a['checks'].get('final_serialized_model_reload')
+ target_exclusion=set(COLS).isdisjoint({'open','high','low','close','activity','target_open','target_close'}) and source_ok
+ no_grid_maxima=all(same_selection_input(x,build_method_input(src,h).sort_values(['method','stock','month']).reset_index(drop=True)) for x,src,h in [(pd.read_csv(O/'METHOD_SELECTION_INPUT_4H.csv').sort_values(['method','stock','month']).reset_index(drop=True),p4,'4h'),(pd.read_csv(O/'METHOD_SELECTION_INPUT_1D_OVERNIGHT.csv').sort_values(['method','stock','month']).reset_index(drop=True),p1,'1d:DNEWS_OVERNIGHT'),(pd.read_csv(O/'METHOD_SELECTION_INPUT_1D_24H.csv').sort_values(['method','stock','month']).reset_index(drop=True),p1,'1d:DNEWS_24H')])
+ no_joint=not any(O.glob('*JOINT*')) and not (W/'priorwork_v10/models/joint').exists()
+ checks={'stage_a_v2_pass':stage_a_ok,'daily_source_contract':source_ok and len(data)==536,'dprice_feature_contract':COLS==['DRET_1','DRET_2','DRET_5','RANGE_1','RV_5','MEAN_5','HISTORY_AGE_HOURS'],'dprice_target_day_exclusion':target_exclusion,'dprice_grid_count_36':len(grid)==36,'dprice_no_sep_plus_grid':grid.month.max()=='2018-08','dprice_selection_chronology':chrono,'dprice_sep_plus_freeze':freeze,'dprice_metric_recomputation':metric_ok,'dprice_serialized_model_count_24':len(manifest)==24 and len(before)==24,'dprice_serialized_reload':err<=1e-12 and mis==0 and not hash_bad and before==after,'method_selection_input_4h_only_mar_aug':input_ok[0],'method_selection_input_overnight_only_mar_aug':input_ok[1],'method_selection_input_24h_only_mar_aug':input_ok[2],'no_candidate_grid_maxima_used':no_grid_maxima,'three_methods_selected_4h':selected_ok[0],'three_methods_selected_overnight':selected_ok[1],'three_methods_selected_24h':selected_ok[2],'stage_b2_configuration_frozen':len(json.loads((O/'STAGE_B2_FROZEN_CONFIGURATION.json').read_text())['branches'])==18,'no_joint_model_fit':no_joint,'pre_b1_artifacts_unchanged':unchanged}
  status='PASS' if all(checks.values()) else 'FAIL';out={'status':status,'checks':checks,'model_files_found':len(before),'manifest_hash_mismatches':hash_bad,'max_probability_error':err,'direction_mismatches':mis,'private_bytes_unchanged':before==after};dump(O/'DPRICE_VERIFICATION.json',out);dump(O/'STAGE_B1_FINAL_AUDIT.json',{'status':status,'checks':checks,'verification':out,'scope':{'news_price_fits':0,'dprice_refits_in_verifier':0}});report='# V10 Stage B1 report\n\nStatus: **'+status+'**. DPRICE is complete and NEWS+PRICE was not fitted.\n\n## DPRICE aggregate BA\n\n'+saved[['stock','phase','BA','Brier']].to_markdown(index=False)+'\n\n## Frozen text methods\n\n'+json.dumps({k:[x['method'] for x in v if x.get('top_three')] for k,v in json.loads((O/'METHOD_SELECTIONS.json').read_text())['rankings'].items()},indent=2)+'\n';(O/'STAGE_B1_REPORT.md').write_text(report);print('V10_STAGE_B1_COMPLETE_AWAITING_REVIEW' if status=='PASS' else 'V10_STAGE_B1_FAILED_REVIEW_REQUIRED')
 if __name__=='__main__':main()

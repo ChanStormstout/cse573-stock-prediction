@@ -1,0 +1,61 @@
+{
+  "checks": {
+    "daily_source_contract": true,
+    "dprice_feature_contract": true,
+    "dprice_grid_count_36": true,
+    "dprice_metric_recomputation": true,
+    "dprice_no_sep_plus_grid": true,
+    "dprice_selection_chronology": true,
+    "dprice_sep_plus_freeze": true,
+    "dprice_serialized_model_count_24": true,
+    "dprice_serialized_reload": true,
+    "dprice_target_day_exclusion": true,
+    "method_selection_input_24h_only_mar_aug": true,
+    "method_selection_input_4h_only_mar_aug": true,
+    "method_selection_input_overnight_only_mar_aug": true,
+    "no_candidate_grid_maxima_used": true,
+    "no_joint_model_fit": true,
+    "pre_b1_artifacts_unchanged": true,
+    "stage_a_v2_pass": true,
+    "stage_b2_configuration_frozen": true,
+    "three_methods_selected_24h": true,
+    "three_methods_selected_4h": true,
+    "three_methods_selected_overnight": true
+  },
+  "scope": {
+    "dprice_refits_in_verifier": 0,
+    "news_price_fits": 0
+  },
+  "status": "PASS",
+  "verification": {
+    "checks": {
+      "daily_source_contract": true,
+      "dprice_feature_contract": true,
+      "dprice_grid_count_36": true,
+      "dprice_metric_recomputation": true,
+      "dprice_no_sep_plus_grid": true,
+      "dprice_selection_chronology": true,
+      "dprice_sep_plus_freeze": true,
+      "dprice_serialized_model_count_24": true,
+      "dprice_serialized_reload": true,
+      "dprice_target_day_exclusion": true,
+      "method_selection_input_24h_only_mar_aug": true,
+      "method_selection_input_4h_only_mar_aug": true,
+      "method_selection_input_overnight_only_mar_aug": true,
+      "no_candidate_grid_maxima_used": true,
+      "no_joint_model_fit": true,
+      "pre_b1_artifacts_unchanged": true,
+      "stage_a_v2_pass": true,
+      "stage_b2_configuration_frozen": true,
+      "three_methods_selected_24h": true,
+      "three_methods_selected_4h": true,
+      "three_methods_selected_overnight": true
+    },
+    "direction_mismatches": 0,
+    "manifest_hash_mismatches": [],
+    "max_probability_error": 8.326672684688674e-17,
+    "model_files_found": 24,
+    "private_bytes_unchanged": true,
+    "status": "PASS"
+  }
+}

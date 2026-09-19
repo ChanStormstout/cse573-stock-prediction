@@ -15,6 +15,13 @@
 - **Integrity:** every private model file had identical before/after bytes. All 32 tracked V6--V9 artifacts were also identical before/after. `STAGE_A_FINAL_AUDIT.json` is preserved; `STAGE_A_FINAL_AUDIT_V2.json` is PASS.
 - **Boundary:** no candidate-grid rerun, refit, DPRICE, NEWS+PRICE, method-family selection, Market Context, or relation-reader work occurred. This is an external-review checkpoint; it does not start Stage B.
 
+## 2026-09-19 — V10 Stage B1 DPRICE and frozen NEWS-only family selection
+
+- **DPRICE source contract:** raw teacher daily charts and the XNYS schedule yielded 536 distinct stock-session targets: 70 warmup, 258 March--August OOF, 84 development and 124 later. Every row used exactly five completed prior sessions and only `DRET_1`, `DRET_2`, `DRET_5`, `RANGE_1`, `RV_5`, `MEAN_5`, and `HISTORY_AGE_HOURS`.
+- **Chronological experiment:** the authorized grid contains 36 rows only (two stocks × six OOF months × three C values). It produced 24 issued DPRICE models. September--February each use the C frozen from March--August evidence for their stock; the training rows expand only with already-ended targets.
+- **Verification:** the independent verifier rebuilt daily labels/features, recomputed aggregate metrics, reconstructed the C chronology, and reloaded all final manifest-hashed files. Its maximum probability difference was `8.33e-17`, with zero hash or direction mismatches. Pre-B1 Stage A, V6--V9, canonical F0/F1/F2, Market Context and relation-reader tracked files were unchanged.
+- **Method freeze:** all eight text methods were ranked separately for 4h, daily overnight and daily 24-hour using only V9 issued March--August OOF predictions. The top three per window and their already-frozen September-plus parameters are stored for a future B2; no joint model was fitted or evaluated.
+
 ## 2026-09-19 — V7 repair stopped before daily prediction
 
 The repair addendum was committed before any v7 work. A stronger v6 verifier
