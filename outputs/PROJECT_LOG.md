@@ -1521,3 +1521,27 @@ metadata 全量扫描完成；`thread`/`ord_in_thread`/highlights 均保持语�
 金融事件或摘要特征。64 个无结果标签 pair（四层各16）完成 lexical comparator；没有
 可验证 frozen Qwen revision，因此 LLM 0 calls、`QUALITY_UNVERIFIED`。Synthetic
 fixture 的独立 subprocess save→reload→report 与未来未完成 bar fault 通过。
+
+## 2026-09-19: V10 Stage B1 final independent replay verifier
+
+**Scope:** verifier-only. The frozen Stage B1 DPRICE predictions, candidate
+grid, issued parameters, metrics, method selections, B2 configuration, and all
+24 private model files were hashed before replay and remained byte-identical.
+No Stage B2 or NEWS+PRICE model was run.
+
+**Independent replay:** verifier-local code reconstructed 536 daily rows from
+the raw teacher daily bars and XNYS schedule (70 warmup, 258 OOF, 84
+development, 124 later). It independently fit all 36 authorized March--August
+candidate models; the maximum discrepancy from the frozen grid was
+`1.1102230246251565e-16`, with zero training-boundary violations. The replayed
+grid reconstructed all 24 issued C decisions with zero mismatches and zero
+September-onward freeze violations.
+
+**Issued models and integrity:** all 24 issued models were independently refit
+and all 466 row-level predictions replayed. The independent-refit versus frozen
+maximum probability error was `8.326672684688674e-17`, with zero row-key or
+direction mismatches. Independently refit predictions matched the final
+manifest-hashed serialized models exactly; manifest mismatches were zero and
+private bytes were unchanged. The V9 row-level March--August evidence reproduced
+the three frozen top-three method sets, and all 18 B2 branches retained their
+verified September-onward parameters. `STAGE_B1_FINAL_AUDIT_V2.json` is PASS.

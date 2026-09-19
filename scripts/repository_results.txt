@@ -515,3 +515,7 @@ outputs/stock_priorwork_repro/v10/METHOD_SELECTIONS.json
 outputs/stock_priorwork_repro/v10/STAGE_B2_FROZEN_CONFIGURATION.json
 outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT.json
 outputs/stock_priorwork_repro/v10/STAGE_B1_REPORT.md
+outputs/stock_priorwork_repro/v10/DPRICE_GRID_INDEPENDENT_REPLAY.csv
+outputs/stock_priorwork_repro/v10/DPRICE_GRID_INDEPENDENT_REPLAY_AUDIT.json
+outputs/stock_priorwork_repro/v10/DPRICE_ISSUED_INDEPENDENT_REFIT_AUDIT.json
+outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT_V2.json

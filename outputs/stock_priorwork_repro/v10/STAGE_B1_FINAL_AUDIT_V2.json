@@ -1,0 +1,114 @@
+{
+  "b2_configuration": {
+    "branch_count": 18,
+    "parameter_mismatch_count": 0,
+    "parameter_mismatches": [],
+    "status": "FROZEN_FOR_FUTURE_B2_ONLY"
+  },
+  "checks": {
+    "b2_configuration_frozen": true,
+    "existing_b1_scientific_artifacts_unchanged": true,
+    "f0_f1_f2_unchanged": true,
+    "historical_b1_audit_pass_and_unchanged": true,
+    "independent_24_issued_model_refit": true,
+    "independent_36_candidate_grid_replay": true,
+    "independent_issued_C_reconstruction": true,
+    "market_context_unchanged": true,
+    "method_selection_frozen_and_reproducible": true,
+    "news_price_fit_count_zero": true,
+    "pre_b1_protected_artifacts_unchanged": true,
+    "private_model_bytes_unchanged": true,
+    "raw_daily_source_reconstruction": true,
+    "relation_reader_unchanged": true,
+    "row_level_prediction_replay": true,
+    "serialized_model_three_way_parity": true,
+    "stage_a_unchanged": true,
+    "v6_v9_unchanged": true
+  },
+  "grid_replay": {
+    "candidate_rows_expected": 36,
+    "candidate_rows_replayed": 36,
+    "maximum_metric_discrepancy": 1.1102230246251565e-16,
+    "row_keys_match": true,
+    "sep_plus_candidate_models_fitted": 0,
+    "training_boundary_violations": 0,
+    "training_metadata_match": true
+  },
+  "issued_refit": {
+    "direction_mismatches": 0,
+    "final_serialized_vs_frozen_max_probability_error": 8.326672684688674e-17,
+    "final_serialized_vs_independent_refit_max_probability_error": 0.0,
+    "independent_refit_vs_frozen_max_probability_error": 8.326672684688674e-17,
+    "issued_models_expected": 24,
+    "issued_models_independently_refit": 24,
+    "manifest_hash_mismatches": [],
+    "private_model_bytes_unchanged": true,
+    "row_key_mismatches": 0,
+    "row_level_predictions_expected": 466,
+    "row_level_predictions_replayed": 466,
+    "selection_reconstruction": {
+      "final_frozen_C": {
+        "AAPL": 0.01,
+        "AMZN": 0.01
+      },
+      "issued_C_mismatch_count": 0,
+      "issued_C_mismatches": [],
+      "issued_decisions_checked": 24,
+      "issued_decisions_expected": 24,
+      "sep_plus_freeze_violations": 0
+    }
+  },
+  "method_selection": {
+    "candidate_grid_maxima_used": false,
+    "development_or_later_used": false,
+    "row_level_v9_issued_oof_reconstruction": true,
+    "top_three": {
+      "24h": [
+        "TFIDF_ADABOOST",
+        "PAPER_2G_L1LR",
+        "TFIDF_KNN"
+      ],
+      "4h": [
+        "TFIDF_LR",
+        "PAPER_2G_L1LR",
+        "TFIDF_RF"
+      ],
+      "overnight": [
+        "PAPER_1G_L1LR",
+        "TFIDF_LR",
+        "PAPER_2G_L1LR"
+      ]
+    }
+  },
+  "raw_daily_reconstruction": {
+    "activity_feature_count": 0,
+    "latest_prior_close_cutoff_failures": 0,
+    "overnight_target_gap_feature_count": 0,
+    "phase_counts": {
+      "OOF": 258,
+      "development": 84,
+      "later": 124,
+      "warmup": 70
+    },
+    "predictive_features": [
+      "DRET_1",
+      "DRET_2",
+      "DRET_5",
+      "RANGE_1",
+      "RV_5",
+      "MEAN_5",
+      "HISTORY_AGE_HOURS"
+    ],
+    "prior_session_chronology_failures": 0,
+    "prior_session_count_failures": 0,
+    "target_day_feature_count": 0,
+    "target_rows": 536
+  },
+  "scope": {
+    "b2_runs": 0,
+    "candidate_models_independently_refit": 36,
+    "issued_models_independently_refit": 24,
+    "news_price_fits": 0
+  },
+  "status": "PASS"
+}

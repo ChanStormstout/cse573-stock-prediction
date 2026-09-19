@@ -1,0 +1,194 @@
+{
+  "direction_mismatches": 0,
+  "final_serialized_vs_frozen_max_probability_error": 8.326672684688674e-17,
+  "final_serialized_vs_independent_refit_max_probability_error": 0.0,
+  "independent_refit_vs_frozen_max_probability_error": 8.326672684688674e-17,
+  "issued_models_expected": 24,
+  "issued_models_independently_refit": 24,
+  "manifest_hash_mismatches": [],
+  "models": [
+    {
+      "C": 0.1,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2018-03",
+      "prediction_n": 21,
+      "train_n": 35
+    },
+    {
+      "C": 1.0,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2018-04",
+      "prediction_n": 21,
+      "train_n": 56
+    },
+    {
+      "C": 1.0,
+      "independent_refit_vs_frozen_max_error": 8.326672684688674e-17,
+      "logical_model_id": "AAPL_2018-05",
+      "prediction_n": 22,
+      "train_n": 77
+    },
+    {
+      "C": 1.0,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2018-06",
+      "prediction_n": 21,
+      "train_n": 99
+    },
+    {
+      "C": 1.0,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2018-07",
+      "prediction_n": 21,
+      "train_n": 120
+    },
+    {
+      "C": 1.0,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2018-08",
+      "prediction_n": 23,
+      "train_n": 141
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2018-09",
+      "prediction_n": 19,
+      "train_n": 164
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2018-10",
+      "prediction_n": 23,
+      "train_n": 183
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2018-11",
+      "prediction_n": 21,
+      "train_n": 206
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2018-12",
+      "prediction_n": 19,
+      "train_n": 227
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AAPL_2019-01",
+      "prediction_n": 21,
+      "train_n": 246
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 0.0,
+      "logical_model_id": "AAPL_2019-02",
+      "prediction_n": 1,
+      "train_n": 267
+    },
+    {
+      "C": 0.1,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2018-03",
+      "prediction_n": 21,
+      "train_n": 35
+    },
+    {
+      "C": 0.1,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2018-04",
+      "prediction_n": 21,
+      "train_n": 56
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2018-05",
+      "prediction_n": 22,
+      "train_n": 77
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2018-06",
+      "prediction_n": 21,
+      "train_n": 99
+    },
+    {
+      "C": 0.1,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2018-07",
+      "prediction_n": 21,
+      "train_n": 120
+    },
+    {
+      "C": 0.1,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2018-08",
+      "prediction_n": 23,
+      "train_n": 141
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 0.0,
+      "logical_model_id": "AMZN_2018-09",
+      "prediction_n": 19,
+      "train_n": 164
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 0.0,
+      "logical_model_id": "AMZN_2018-10",
+      "prediction_n": 23,
+      "train_n": 183
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2018-11",
+      "prediction_n": 21,
+      "train_n": 206
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2018-12",
+      "prediction_n": 19,
+      "train_n": 227
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2019-01",
+      "prediction_n": 21,
+      "train_n": 246
+    },
+    {
+      "C": 0.01,
+      "independent_refit_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "AMZN_2019-02",
+      "prediction_n": 1,
+      "train_n": 267
+    }
+  ],
+  "private_model_bytes_unchanged": true,
+  "row_key_mismatches": 0,
+  "row_level_predictions_expected": 466,
+  "row_level_predictions_replayed": 466,
+  "selection_reconstruction": {
+    "final_frozen_C": {
+      "AAPL": 0.01,
+      "AMZN": 0.01
+    },
+    "issued_C_mismatch_count": 0,
+    "issued_C_mismatches": [],
+    "issued_decisions_checked": 24,
+    "issued_decisions_expected": 24,
+    "sep_plus_freeze_violations": 0
+  }
+}

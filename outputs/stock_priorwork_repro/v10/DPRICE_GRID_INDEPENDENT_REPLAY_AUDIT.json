@@ -1,0 +1,9 @@
+{
+  "candidate_rows_expected": 36,
+  "candidate_rows_replayed": 36,
+  "maximum_metric_discrepancy": 1.1102230246251565e-16,
+  "row_keys_match": true,
+  "sep_plus_candidate_models_fitted": 0,
+  "training_boundary_violations": 0,
+  "training_metadata_match": true
+}

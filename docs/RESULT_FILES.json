@@ -2583,5 +2583,25 @@
     "path": "outputs/stock_priorwork_repro/v10/STAGE_B1_REPORT.md",
     "bytes": 749,
     "sha256": "840d8aad1be0e06ff858be488c119ef8251a1f480c72d451e7adfc047d214063"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/DPRICE_GRID_INDEPENDENT_REPLAY.csv",
+    "bytes": 9882,
+    "sha256": "8cd4ef0ace43dc11a3ecc5ea27c5eb55398a05aa73fa50e46b446024fcfa11cb"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/DPRICE_GRID_INDEPENDENT_REPLAY_AUDIT.json",
+    "bytes": 264,
+    "sha256": "40e457f5aa5189510df013b7a9656cbd87109a702c93ed1f6176acc0b878b982"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/DPRICE_ISSUED_INDEPENDENT_REFIT_AUDIT.json",
+    "bytes": 5277,
+    "sha256": "b77da7dd587960ea758b684bf7ad8a40329d641fa323207ea98c70f3fdb0f9dd"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT_V2.json",
+    "bytes": 3332,
+    "sha256": "adf8b6e16dc2910b16e559eb5af8b61a21d6c984a1107b6c16746d9c665f6dd9"
   }
 ]
