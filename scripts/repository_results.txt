@@ -484,3 +484,15 @@ outputs/stock_reaction_features_4h/v4/reaction_probe_gate.json
 outputs/stock_reaction_features_4h/v4/official_window_status.json
 outputs/stock_reaction_features_4h/v4/training_evidence.json
 outputs/stock_reaction_features_4h/v4/verification_v4.json
+outputs/stock_priorwork_repro/v10/V9_SOURCE_BINDING.json
+outputs/stock_priorwork_repro/v10/ISSUED_PARAMS_4H.csv
+outputs/stock_priorwork_repro/v10/ISSUED_PARAMS_1D.csv
+outputs/stock_priorwork_repro/v10/SELECTION_RECONSTRUCTION_AUDIT.json
+outputs/stock_priorwork_repro/v10/V9_GRID_REPLAY_4H.csv
+outputs/stock_priorwork_repro/v10/V9_GRID_REPLAY_1D.csv
+outputs/stock_priorwork_repro/v10/V9_GRID_REPLAY_AUDIT.json
+outputs/stock_priorwork_repro/v10/V9_ISSUED_PREDICTION_REPLAY_AUDIT.json
+outputs/stock_priorwork_repro/v10/NEWS_ONLY_MODEL_MANIFEST.json
+outputs/stock_priorwork_repro/v10/PREPROCESSING_PERTURBATION_TEST.json
+outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT.json
+outputs/stock_priorwork_repro/v10/STAGE_A_REPORT.md

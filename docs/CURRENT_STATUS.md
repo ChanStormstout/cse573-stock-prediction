@@ -1,5 +1,7 @@
 # 当前权威状态（2026-09-18，Phase A 已修复；Phase B 仅预注册）
 
+> **Prior-work V10 Stage A2 (2026-09-19):** the frozen V9 NEWS-only evidence is now independently reproducible. The verifier bound all nine source artifacts to commit `b7ee2af…`; raw canonical reconstruction achieved 1,607/1,607 article-key and full-body parity, and the independently rebuilt daily task matched its private raw-source cache. It reconstructed all 576 issued parameters with zero mismatches, replayed all 1,044 authorized March--August candidate rows within `1.12e-16` maximum metric discrepancy, and refit/reloaded 576 private model bundles with zero direction mismatches. This is an integrity checkpoint only: V9 September-and-later candidate grids remain quarantined; no DPRICE, NEWS+PRICE, or method-family selection ran. See [Stage A audit](../outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT.json).
+
 > **Prior-work reproduction / 1d study (2026-09-19):** immutable v6 completed
 > with a preregistration hash and PASS verifier. It evaluates bounded,
 > fold-local paper-style and TF-IDF classical controls on the existing 4h task

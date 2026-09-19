@@ -2428,5 +2428,65 @@
     "path": "outputs/stock_reaction_features_4h/v4/verification_v4.json",
     "bytes": 1100,
     "sha256": "947891e05eeca4727199246d84235ef41197b1e9c4ae3c66fd4eae912d7bb223"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/V9_SOURCE_BINDING.json",
+    "bytes": 1883,
+    "sha256": "74d92ef7fa6f6cf501e80b690960b5173dcecfa2e23c1d401aa2546fc6dca665"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/ISSUED_PARAMS_4H.csv",
+    "bytes": 30558,
+    "sha256": "f8fa5e2db919cf3db28f05585a583eea6037429fa3ff19ea2c3b38232fcb56d5"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/ISSUED_PARAMS_1D.csv",
+    "bytes": 66046,
+    "sha256": "c7719b85a42f9c9d52c9ce977a290e2700e8ed332bf9116f051e7e924fc9870f"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/SELECTION_RECONSTRUCTION_AUDIT.json",
+    "bytes": 33601,
+    "sha256": "3f2acd3c7800dd4c84b00a51656f7cb2337714955bfd9f98bdd05e75d372f899"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/V9_GRID_REPLAY_4H.csv",
+    "bytes": 122617,
+    "sha256": "fec4de5511d3fb54b9f7bbd3edc58cbf5971bb9fe6e9424494cdaf9f873c9db1"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/V9_GRID_REPLAY_1D.csv",
+    "bytes": 253423,
+    "sha256": "d618aa69dafeb1f4e7885f12e6449a98de536f426b22df63a8f2a295a6af5287"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/V9_GRID_REPLAY_AUDIT.json",
+    "bytes": 1218,
+    "sha256": "d7d4bee294c9cdeca225993c7d3889e34111b6f13d72405e98bfa557f226aa24"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/V9_ISSUED_PREDICTION_REPLAY_AUDIT.json",
+    "bytes": 453,
+    "sha256": "3367816882e91ff77e3ca5f3f5cd7d3653b85b4c842611f20239d05d52212cc3"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/NEWS_ONLY_MODEL_MANIFEST.json",
+    "bytes": 333425,
+    "sha256": "06fed7d6af40bb4b2a299971df7aabbe2f808334c73f7af445367cd5c993ab1a"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/PREPROCESSING_PERTURBATION_TEST.json",
+    "bytes": 785,
+    "sha256": "4cfeb14afb46432ab552cb189e9f376f15326d9a102959ff4c4983e90b25460b"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT.json",
+    "bytes": 43225,
+    "sha256": "8e0f27abbb62372e84ef65398014ef1754df10b947898df05f822f64051af02b"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_A_REPORT.md",
+    "bytes": 674,
+    "sha256": "8b74832ce1236f3a19d2b31376b0f1ab0c9abd0fe164c6881e6c200e8a3e8123"
   }
 ]

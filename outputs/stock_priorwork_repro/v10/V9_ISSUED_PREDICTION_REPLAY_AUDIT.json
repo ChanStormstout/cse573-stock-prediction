@@ -1,0 +1,19 @@
+{
+  "1d": {
+    "direction_mismatches": 0,
+    "model_count": 384,
+    "probability": 1.1102230246251565e-16,
+    "reload_direction_mismatches": 0,
+    "reload_error": 0.0,
+    "svm_score": 4.440892098500626e-16
+  },
+  "4h": {
+    "direction_mismatches": 0,
+    "model_count": 192,
+    "probability": 1.1102230246251565e-16,
+    "reload_direction_mismatches": 0,
+    "reload_error": 0.0,
+    "svm_score": 4.440892098500626e-16
+  },
+  "status": "PASS"
+}

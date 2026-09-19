@@ -1,0 +1,1877 @@
+{
+  "authorized_grid_counts": {
+    "authorized_1d_rows": 696,
+    "authorized_4h_rows": 348,
+    "quarantined_1d_rows": 696,
+    "quarantined_4h_rows": 348
+  },
+  "authorized_grid_independent_replay": {
+    "1d": {
+      "max_metric_discrepancy": {
+        "accuracy": 8.326672684688674e-17,
+        "auc": 8.326672684688674e-17,
+        "ba": 5.551115123125783e-17,
+        "brier": 8.326672684688674e-17,
+        "constant": 0.0,
+        "down_recall": 1.1102230246251565e-16,
+        "f1": 8.326672684688674e-17,
+        "mcc": 9.020562075079397e-17,
+        "n": 0.0,
+        "precision": 8.326672684688674e-17,
+        "pred_up": 1.1102230246251565e-16,
+        "recall": 1.1102230246251565e-16,
+        "true_up": 5.551115123125783e-17,
+        "up_recall": 1.1102230246251565e-16
+      },
+      "pass": true,
+      "rows": 696
+    },
+    "4h": {
+      "max_metric_discrepancy": {
+        "accuracy": 5.551115123125783e-17,
+        "auc": 5.551115123125783e-17,
+        "ba": 5.551115123125783e-17,
+        "brier": 8.326672684688674e-17,
+        "constant": 0.0,
+        "down_recall": 8.326672684688674e-17,
+        "f1": 5.551115123125783e-17,
+        "mcc": 9.974659986866641e-17,
+        "n": 0.0,
+        "precision": 5.551115123125783e-17,
+        "pred_up": 1.1102230246251565e-16,
+        "recall": 1.1102230246251565e-16,
+        "true_up": 5.551115123125783e-17,
+        "up_recall": 1.1102230246251565e-16
+      },
+      "pass": true,
+      "rows": 348
+    },
+    "status": "PASS"
+  },
+  "canonical_4h_row_contract": {
+    "article_key_parity": "1607/1607",
+    "available_by_cutoff": "1607/1607",
+    "canonical_4h_rows": 1607,
+    "daily_cache_rows": 1072,
+    "daily_raw_rows": 1072,
+    "daily_source_cache_parity": true,
+    "stem_body_parity": "1607/1607"
+  },
+  "checks": {
+    "article_key_parity": true,
+    "authorized_grid_counts": true,
+    "authorized_grid_independent_replay": true,
+    "candidate_grid_completeness": true,
+    "canonical_4h_row_contract": true,
+    "daily_source_reconstruction": true,
+    "direction_mismatch_count": true,
+    "future_text_perturbation": true,
+    "issued_row_level_prediction_replay": true,
+    "issued_selection_reconstruction": true,
+    "quarantine_selection_isolation": true,
+    "quarantined_grid_counts": true,
+    "sep_plus_parameter_freeze": true,
+    "serialized_model_count": true,
+    "serialized_model_reload": true,
+    "stem_body_parity": true,
+    "training_boundary": true,
+    "v9_source_git_binding": true,
+    "v9_source_hash_binding": true
+  },
+  "future_text_perturbation": {
+    "status": "PASS",
+    "tests": [
+      {
+        "chi2_selected_terms_unchanged": true,
+        "classifier_state_unchanged": true,
+        "future_rows_mutated": 1374,
+        "idf_unchanged": true,
+        "method": "PAPER_1G_L1LR",
+        "month": "2018-03",
+        "pass": true,
+        "prediction_max_error": 0.0,
+        "stock": "AAPL",
+        "training_rows_unchanged": true,
+        "vocabulary_unchanged": true
+      },
+      {
+        "chi2_selected_terms_unchanged": true,
+        "classifier_state_unchanged": true,
+        "future_rows_mutated": 1374,
+        "idf_unchanged": true,
+        "method": "TFIDF_LR",
+        "month": "2018-03",
+        "pass": true,
+        "prediction_max_error": 0.0,
+        "stock": "AAPL",
+        "training_rows_unchanged": true,
+        "vocabulary_unchanged": true
+      }
+    ]
+  },
+  "issued_row_level_prediction_replay": {
+    "1d": {
+      "direction_mismatches": 0,
+      "model_count": 384,
+      "probability": 1.1102230246251565e-16,
+      "reload_direction_mismatches": 0,
+      "reload_error": 0.0,
+      "svm_score": 4.440892098500626e-16
+    },
+    "4h": {
+      "direction_mismatches": 0,
+      "model_count": 192,
+      "probability": 1.1102230246251565e-16,
+      "reload_direction_mismatches": 0,
+      "reload_error": 0.0,
+      "svm_score": 4.440892098500626e-16
+    },
+    "status": "PASS"
+  },
+  "issued_selection_reconstruction": {
+    "1d_actual": 384,
+    "1d_expected": 384,
+    "1d_mismatches": 0,
+    "4h_actual": 192,
+    "4h_expected": 192,
+    "4h_mismatches": 0,
+    "machine_precision_ties": [
+      {
+        "horizon": "4h",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.3541666666666666,
+            "brier": 0.3796822656049737,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "4h",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4772486772486772,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AMZN"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_1G_L1LR",
+        "month": "2018-05",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.39903846153846156,
+            "brier": 0.33121267277991484,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_1G_L1LR",
+        "month": "2018-06",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.44784382284382285,
+            "brier": 0.3368863458313804,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_1G_L1LR",
+        "month": "2018-07",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4152097902097902,
+            "brier": 0.3624569460726338,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_1G_L1LR",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.3846153846153846,
+            "brier": 0.3614793883870053,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_1G_L1LR",
+        "month": "2018-05",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4700854700854701,
+            "brier": 0.3060741536627951,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_1G_L1LR",
+        "month": "2018-06",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.48005698005698005,
+            "brier": 0.3375008276257547,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_1G_L1LR",
+        "month": "2018-07",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4610042735042735,
+            "brier": 0.35355885976724255,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_1G_LINSVM",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4086538461538461,
+            "brier": 0.2898093616680618,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-05",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.39877136752136744,
+            "brier": 0.3456005466078639,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-06",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4476657601657601,
+            "brier": 0.34552560883544037,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-07",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.459547397047397,
+            "brier": 0.3290897989189751,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-08",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.47629176379176374,
+            "brier": 0.3198721258248153,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4567307692307692,
+            "brier": 0.3578685058298506,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-05",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4505876068376068,
+            "brier": 0.3381761020479207,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-06",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.48220991970991967,
+            "brier": 0.34000048487331697,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-07",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.25,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.46382090132090126,
+            "brier": 0.34086646792085035,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.2493294460641399,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.2493294460641399,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4444444444444444,
+            "brier": 0.310541626078357,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AMZN"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-05",
+        "ranking": [
+          {
+            "ba": 0.5022727272727272,
+            "brier": 0.24967990767735665,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5022727272727272,
+            "brier": 0.24967990767735665,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4881313131313131,
+            "brier": 0.2988015883670469,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AMZN"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-06",
+        "ranking": [
+          {
+            "ba": 0.6015151515151514,
+            "brier": 0.24906236241410806,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.6015151515151514,
+            "brier": 0.24906236241410806,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.5498316498316499,
+            "brier": 0.2682969319435962,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AMZN"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-07",
+        "ranking": [
+          {
+            "ba": 0.5761363636363637,
+            "brier": 0.24929737913442068,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5761363636363637,
+            "brier": 0.24929737913442068,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.516540404040404,
+            "brier": 0.2735657030397113,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AMZN"
+      },
+      {
+        "horizon": "1d",
+        "method": "PAPER_2G_L1LR",
+        "month": "2018-08",
+        "ranking": [
+          {
+            "ba": 0.5609090909090909,
+            "brier": 0.24945377632340957,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5609090909090909,
+            "brier": 0.24945377632340957,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.5086868686868687,
+            "brier": 0.27590194132369483,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AMZN"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-05",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-06",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.48484848484848486,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-07",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.45257867132867136,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-08",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.4495629370629371,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-05",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.47916666666666663,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-06",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.47095959595959597,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-07",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.48663315850815847,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_LINSVM",
+        "month": "2018-08",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              0,
+              "{\"C\":0.01}"
+            ],
+            "params": {
+              "C": 0.01
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": null,
+            "capacity": [
+              1,
+              "{\"C\":0.1}"
+            ],
+            "params": {
+              "C": 0.1
+            }
+          },
+          {
+            "ba": 0.48930652680652675,
+            "brier": null,
+            "capacity": [
+              2,
+              "{\"C\":1.0}"
+            ],
+            "params": {
+              "C": 1.0
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_RF",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.5,
+            "brier": 0.2426483828979438,
+            "capacity": [
+              0,
+              0,
+              "{\"max_depth\":8,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.2426483828979438,
+            "capacity": [
+              1,
+              0,
+              "{\"max_depth\":null,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.2545055261610817,
+            "capacity": [
+              0,
+              1,
+              "{\"max_depth\":8,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 1
+            }
+          },
+          {
+            "ba": 0.5,
+            "brier": 0.254579365079365,
+            "capacity": [
+              1,
+              1,
+              "{\"max_depth\":null,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 1
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_RF",
+        "month": "2018-04",
+        "ranking": [
+          {
+            "ba": 0.4711538461538461,
+            "brier": 0.2769549077781215,
+            "capacity": [
+              0,
+              0,
+              "{\"max_depth\":8,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.4711538461538461,
+            "brier": 0.2769549077781215,
+            "capacity": [
+              1,
+              0,
+              "{\"max_depth\":null,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.3701923076923077,
+            "brier": 0.2887603174603174,
+            "capacity": [
+              0,
+              1,
+              "{\"max_depth\":8,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 1
+            }
+          },
+          {
+            "ba": 0.3701923076923077,
+            "brier": 0.2887603174603174,
+            "capacity": [
+              1,
+              1,
+              "{\"max_depth\":null,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 1
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_RF",
+        "month": "2018-05",
+        "ranking": [
+          {
+            "ba": 0.4716880341880342,
+            "brier": 0.2746497287557735,
+            "capacity": [
+              0,
+              0,
+              "{\"max_depth\":8,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.4716880341880342,
+            "brier": 0.2746497287557735,
+            "capacity": [
+              1,
+              0,
+              "{\"max_depth\":null,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.3795405982905983,
+            "brier": 0.28793386243386243,
+            "capacity": [
+              1,
+              1,
+              "{\"max_depth\":null,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 1
+            }
+          },
+          {
+            "ba": 0.3795405982905983,
+            "brier": 0.28820884186591755,
+            "capacity": [
+              0,
+              1,
+              "{\"max_depth\":8,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 1
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_RF",
+        "month": "2018-06",
+        "ranking": [
+          {
+            "ba": 0.39021626521626523,
+            "brier": 0.27622063121467516,
+            "capacity": [
+              0,
+              0,
+              "{\"max_depth\":8,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.39021626521626523,
+            "brier": 0.27622063121467516,
+            "capacity": [
+              1,
+              0,
+              "{\"max_depth\":null,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.3590876715876716,
+            "brier": 0.2846849743691653,
+            "capacity": [
+              0,
+              1,
+              "{\"max_depth\":8,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 1
+            }
+          },
+          {
+            "ba": 0.34393615643615644,
+            "brier": 0.28321600929934265,
+            "capacity": [
+              1,
+              1,
+              "{\"max_depth\":null,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 1
+            }
+          }
+        ],
+        "stock": "AAPL"
+      },
+      {
+        "horizon": "1d",
+        "method": "TFIDF_RF",
+        "month": "2018-05",
+        "ranking": [
+          {
+            "ba": 0.5223484848484848,
+            "brier": 0.2861963640891185,
+            "capacity": [
+              0,
+              0,
+              "{\"max_depth\":8,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.5223484848484848,
+            "brier": 0.2861963640891185,
+            "capacity": [
+              1,
+              0,
+              "{\"max_depth\":null,\"min_samples_leaf\":5}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 5
+            }
+          },
+          {
+            "ba": 0.5181818181818182,
+            "brier": 0.28478471752844076,
+            "capacity": [
+              1,
+              1,
+              "{\"max_depth\":null,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": null,
+              "min_samples_leaf": 1
+            }
+          },
+          {
+            "ba": 0.5181818181818182,
+            "brier": 0.2865112808318555,
+            "capacity": [
+              0,
+              1,
+              "{\"max_depth\":8,\"min_samples_leaf\":1}"
+            ],
+            "params": {
+              "max_depth": 8,
+              "min_samples_leaf": 1
+            }
+          }
+        ],
+        "stock": "AMZN"
+      }
+    ],
+    "sep_plus_freeze_violations": [],
+    "status": "PASS"
+  },
+  "quarantined_grid_counts": {
+    "1d": 696,
+    "4h": 348
+  },
+  "scope": {
+    "dprice_run": false,
+    "method_family_selection_run": false,
+    "news_price_run": false
+  },
+  "serialized_model_count": 576,
+  "status": "PASS",
+  "training_boundary_violations": [],
+  "v9_source_git_binding": {
+    "commit_sha256": {
+      "GRID_OOF_1D.csv": "2561f88bd4285b7ac2ad2cb9f8c3130f985cdfd10c7acf89260d8c0cee6e0cd0",
+      "GRID_OOF_4H.csv": "addcda13b97dde0a0dd9d10fd19bea86b6b0f800261aa68792de6b26facf2f21",
+      "METRICS_1D.csv": "6c88e02e7ed17e386d47872819a55483c79f3b052d18bd8170a88c1bfeffc43f",
+      "METRICS_4H.csv": "60cd4530c3996402abb28de5383ece58ca414da35a1d2314a2065d262bda6197",
+      "MODEL_MANIFEST.json": "bf3c9f0d1a43f4dc53668c0e263452d9d52a378a5bbd1186ca6e101ce2a5f71f",
+      "PREDICTIONS_1D.csv": "cfbd27062a1706d6518d963055fd9bd645937baa60be061c5542f481945ab923",
+      "PREDICTIONS_4H.csv": "daa39e9d0df590bc0cd4bd843e056300cbb7080959e6496e68920a8a56ad7e80",
+      "PREREGISTRATION_SNAPSHOT.md": "7754e4c6ce06d59c31df16e4a2e3ba05223e0856a026554a0942abfb08d060ed",
+      "VERIFICATION.json": "ac5a9142e1316a75a8bbd9957fe65ce20d910100791b21cd700750955ecd27d4"
+    },
+    "current_sha256": {
+      "GRID_OOF_1D.csv": "2561f88bd4285b7ac2ad2cb9f8c3130f985cdfd10c7acf89260d8c0cee6e0cd0",
+      "GRID_OOF_4H.csv": "addcda13b97dde0a0dd9d10fd19bea86b6b0f800261aa68792de6b26facf2f21",
+      "METRICS_1D.csv": "6c88e02e7ed17e386d47872819a55483c79f3b052d18bd8170a88c1bfeffc43f",
+      "METRICS_4H.csv": "60cd4530c3996402abb28de5383ece58ca414da35a1d2314a2065d262bda6197",
+      "MODEL_MANIFEST.json": "bf3c9f0d1a43f4dc53668c0e263452d9d52a378a5bbd1186ca6e101ce2a5f71f",
+      "PREDICTIONS_1D.csv": "cfbd27062a1706d6518d963055fd9bd645937baa60be061c5542f481945ab923",
+      "PREDICTIONS_4H.csv": "daa39e9d0df590bc0cd4bd843e056300cbb7080959e6496e68920a8a56ad7e80",
+      "PREREGISTRATION_SNAPSHOT.md": "7754e4c6ce06d59c31df16e4a2e3ba05223e0856a026554a0942abfb08d060ed",
+      "VERIFICATION.json": "ac5a9142e1316a75a8bbd9957fe65ce20d910100791b21cd700750955ecd27d4"
+    },
+    "git_diff_stdout": "",
+    "git_path_identical": true,
+    "hash_identical": true,
+    "v9_source_commit": "b7ee2af9829143707ec309e0ec6809935524324b"
+  }
+}

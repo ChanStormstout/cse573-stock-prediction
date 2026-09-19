@@ -1,5 +1,13 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-19 — V10 Stage A2 independent V9 NEWS-only reconstruction
+
+- **Purpose:** establish whether the frozen V9 full-grid NEWS-only evidence can be independently reproduced before any Stage B work. The audit did not rank exposed September-and-later candidates or interpret predictive winners.
+- **Input contract:** nine frozen V9 evidence files were byte-identical to commit `b7ee2af9829143707ec309e0ec6809935524324b`. Independent raw reconstruction reproduced all 1,607 canonical four-hour article memberships and full-body `stem_body` fields; the daily raw reconstruction had 1,072 rows and exactly matched the retained private daily cache.
+- **Selection and replay:** an independent implementation reconstructed 192 four-hour and 384 daily issued parameters from physically isolated March--August grid rows, with zero mismatches and no September-plus freeze violation. It replayed 348 four-hour plus 696 daily authorized candidate rows. The largest metric discrepancy was `1.11e-16`, entirely floating-point rounding.
+- **Model evidence:** 576 V10-reconstructed private model bundles reproduced V9 row-level probabilities/scores at no more than `4.44e-16`, with zero direction mismatches; every reload produced an exact score match. Future-text perturbation passed for PAPER_1G_L1LR and TFIDF_LR, and all 576 training boundaries were strict.
+- **Boundary:** `STAGE_A_FINAL_AUDIT.json` is PASS. No DPRICE, NEWS+PRICE, method-family selection, Market Context, or relation-reader action ran. V6/V7/V8/V9, F0/F1/F2 and existing artifacts remain unmodified. This authorizes only external review of Stage A, not automatic Stage B execution.
+
 ## 2026-09-19 — V7 repair stopped before daily prediction
 
 The repair addendum was committed before any v7 work. A stronger v6 verifier

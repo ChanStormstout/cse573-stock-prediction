@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "chi2_selected_terms_unchanged": true,
+      "classifier_state_unchanged": true,
+      "future_rows_mutated": 1374,
+      "idf_unchanged": true,
+      "method": "PAPER_1G_L1LR",
+      "month": "2018-03",
+      "pass": true,
+      "prediction_max_error": 0.0,
+      "stock": "AAPL",
+      "training_rows_unchanged": true,
+      "vocabulary_unchanged": true
+    },
+    {
+      "chi2_selected_terms_unchanged": true,
+      "classifier_state_unchanged": true,
+      "future_rows_mutated": 1374,
+      "idf_unchanged": true,
+      "method": "TFIDF_LR",
+      "month": "2018-03",
+      "pass": true,
+      "prediction_max_error": 0.0,
+      "stock": "AAPL",
+      "training_rows_unchanged": true,
+      "vocabulary_unchanged": true
+    }
+  ]
+}
