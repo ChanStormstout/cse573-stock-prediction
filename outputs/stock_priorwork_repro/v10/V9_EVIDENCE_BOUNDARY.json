@@ -1,0 +1,13 @@
+{
+  "authorized_4h_rows": 348,
+  "authorized_1d_rows": 696,
+  "quarantined_4h_rows": 348,
+  "quarantined_1d_rows": 696,
+  "authorized_group_candidate_counts_4h": {
+    "29": 12
+  },
+  "authorized_group_candidate_counts_1d": {
+    "29": 24
+  },
+  "status": "PASS"
+}
