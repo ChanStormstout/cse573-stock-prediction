@@ -54,6 +54,12 @@
 > scoring. Real Mmeta/M1 remains blocked on authenticated frozen Alpaca SIP data
 > and explicit execution approval.
 
+> **Market Context final integrity freeze:** `audit_v4` strengthens the
+> synthetic-only raw future-bar, shared-C inheritance and post-August training
+> contamination tests. The future real entrypoint is connected but was not
+> invoked; it still requires authenticated frozen Alpaca SIP source data and a
+> separate real-execution authorization. No real market predictive score exists.
+
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
 > 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除

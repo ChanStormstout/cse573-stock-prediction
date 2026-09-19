@@ -15,6 +15,13 @@
 - **Boundary:** no real SPY/QQQ bars were acquired, no real Mmeta/M1 score was
   generated, and the Qwen relation lane was not changed.
 
+## Context increment: final market integrity freeze (2026-09-18)
+
+- Connected the future real entrypoint without running it.
+- Strengthened source hashes, R1 parity binding, verifier independence and
+  synthetic corruption coverage in `audit_v4`.
+- No real source was acquired or scored.
+
 - Full title-and-body association and target-local family isolation produced 64
   pairs, with no family crossing pilot and locked-check splits.
 - The frozen Qwen3.5-9B pass received association-centered article sentences only:

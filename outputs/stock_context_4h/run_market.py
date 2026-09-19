@@ -9,7 +9,6 @@ def main():
  p=argparse.ArgumentParser();p.add_argument('--synthetic-input');p.add_argument('--approve-market-context-run',action='store_true');p.add_argument('--output',required=True);a=p.parse_args()
  if a.synthetic_input: run_pipeline(Path(a.synthetic_input),Path(a.output),'synthetic'); return
  if not a.approve_market_context_run: raise SystemExit('STOP_NO_MARKET_RUN: real path is preregistered and requires explicit approval')
- # The full production branch is deliberately implemented, but real fitting is not authorized.
  if not real_source_root().exists(): raise SystemExit('STOP_NO_MARKET_RUN: AUTH_REQUIRED; no authenticated frozen Alpaca SIP source artifact')
- raise SystemExit('STOP_NO_MARKET_RUN: real Mmeta/M1 scoring is not authorized')
+ run_pipeline(real_source_root(),Path(a.output),'real')
 if __name__=='__main__':main()

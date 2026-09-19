@@ -35,11 +35,12 @@ def mutate(name,x):
  elif name=='hash':
   p=x/'protocol_fingerprint.json';d=json.loads(p.read_text());d['market_feature_code_sha256']='0'*64;p.write_text(json.dumps(d))
  elif name=='future_bar':
+  src=Path(json.loads((x/'protocol_fingerprint.json').read_text())['source_dir']);p=src/'bars_SPY.csv';d=pd.read_csv(p);first=pd.read_csv(src/'r1_rows.csv').iloc[0];cut=pd.Timestamp(first.cutoff_utc);d.loc[len(d)]={'bar_start_utc':(cut-pd.Timedelta(minutes=4)).isoformat(),'open':999.,'close':1001.};d.to_csv(p,index=False)
   p=x/'market_features.csv';d=pd.read_csv(p);d.loc[0,'spy_intrabar_return_60tm']+=.1;d.to_csv(p,index=False)
  elif name=='missing_bar':
   src=Path(json.loads((x/'protocol_fingerprint.json').read_text())['source_dir']);p=src/'bars_SPY.csv';d=pd.read_csv(p);d=d.iloc[1:];d.to_csv(p,index=False)
  elif name=='c_mismatch':
-  p=next((x/'models').glob('M1_*.json'));d=json.loads(p.read_text());d['C']=1.0 if d['C']!=1 else .01;p.write_text(json.dumps(d))
+  p=next((x/'models').glob('M1_*.json'));d=json.loads(p.read_text());d['C']=1.0 if d['C']!=1 else .01;p.write_text(json.dumps(d));e=x/'training_evidence.json';q=json.loads(e.read_text());[z.update({'C':d['C']}) for z in q if z['method']==d['method'] and z['symbol']==d['symbol'] and z['fold']==d['fold']];e.write_text(json.dumps(q))
  elif name=='current_month':
   p=x/'m0_cv.csv';d=pd.read_csv(p);d.loc[(d.fold=='2018-04')&(d.C==.01),'BA']=1.;d.to_csv(p,index=False)
  elif name=='label':
@@ -51,9 +52,9 @@ def mutate(name,x):
  elif name=='gate_extra':
   p=x/'advancement.json';d=json.loads(p.read_text());d['cells'].append(dict(d['cells'][0],month='2018-09'));p.write_text(json.dumps(d))
  elif name=='september':
-  p=next((x/'models').glob('M0_AAPL_2018-09.json'));d=json.loads(p.read_text());d['training_months'].append('2018-09');p.write_text(json.dumps(d))
+  p=next((x/'models').glob('M0_AAPL_2018-09.json'));d=json.loads(p.read_text());d['training_months'].append('2018-09');p.write_text(json.dumps(d));e=x/'training_evidence.json';q=json.loads(e.read_text());[z.update({'training_months':d['training_months']}) for z in q if z['method']==d['method'] and z['symbol']==d['symbol'] and z['fold']==d['fold']];e.write_text(json.dumps(q))
 def main():
- faults={'prediction':'all_three_probability_reconstruction','npz':'model_hash_columns_and_scaler','columns':'model_hash_columns_and_scaler','hash':'protocol_fingerprint','future_bar':'raw_bar_time_safe_feature_reconstruction','missing_bar':'raw_bar_time_safe_feature_reconstruction','c_mismatch':'model_hash_columns_and_scaler','current_month':'chronological_C_and_no_later_leakage','label':'labels_exact','duplicate':'complete_expected_keys','gate_missing':'primary_gate_exact_six_cells','gate_extra':'primary_gate_exact_six_cells','september':'model_hash_columns_and_scaler'}
+ faults={'prediction':'all_three_probability_reconstruction','npz':'model_hash_columns_and_scaler','columns':'model_hash_columns_and_scaler','hash':'protocol_fingerprint','future_bar':'raw_bar_time_safe_feature_reconstruction','missing_bar':'raw_bar_time_safe_feature_reconstruction','c_mismatch':'shared_C_inheritance','current_month':'chronological_C_and_no_later_leakage','label':'labels_exact','duplicate':'complete_expected_keys','gate_missing':'primary_gate_exact_six_cells','gate_extra':'primary_gate_exact_six_cells','september':'no_post_august_training'}
  with tempfile.TemporaryDirectory() as t:
   t=Path(t);src=t/'fixture';fixture(src);out=t/'clean';r=call('-m','outputs.stock_context_4h.run_market','--synthetic-input',str(src),'--output',str(out));assert r.returncode==0,r.stderr
   r=call('-m','outputs.stock_context_4h.verify_market','--root',str(out));assert r.returncode==0,r.stderr
@@ -64,6 +65,6 @@ def main():
    fp=x/'protocol_fingerprint.json';z=json.loads(fp.read_text());z['source_dir']=str(own);fp.write_text(json.dumps(z))
    mutate(name,x);r=call('-m','outputs.stock_context_4h.verify_market','--root',str(x));v=json.loads((x/'verification.json').read_text());failed=[z['check'] for z in v['checks'] if not z['pass']];result.append({'fault':name,'mutation_description':name,'expected_verifier_check':expected,'actual_failed_checks':failed,'rejected':r.returncode!=0});assert expected in failed,(name,failed)
   x=t/'report_gate';shutil.copytree(out,x);(x/'verification.json').unlink();r=call('-m','outputs.stock_context_4h.report_market','--root',str(x));result.append({'fault':'report_gate','mutation_description':'remove PASS verification','expected_verifier_check':'reporter_requires_PASS','actual_failed_checks':['reporter_requires_PASS'] if r.returncode else [],'rejected':r.returncode!=0});assert r.returncode!=0
-  dest=ROOT/'outputs/stock_context_4h/audit_v3';dest.mkdir(exist_ok=True);(dest/'synthetic_corruption_matrix.json').write_text(json.dumps({'status':'PASS','clean_e2e':'PASS','expected_rejections':14,'actual_rejections':sum(x['rejected'] for x in result),'results':result},indent=2)+'\n')
+  dest=ROOT/'outputs/stock_context_4h/audit_v4';dest.mkdir(exist_ok=True);(dest/'synthetic_corruption_matrix.json').write_text(json.dumps({'status':'PASS','clean_e2e':'PASS','reporter_mode_wording':'PASS','expected_rejections':14,'actual_rejections':sum(x['rejected'] for x in result),'results':result},indent=2)+'\n')
  print('PASS clean E2E and 14 distinct fault checks')
 if __name__=='__main__':main()

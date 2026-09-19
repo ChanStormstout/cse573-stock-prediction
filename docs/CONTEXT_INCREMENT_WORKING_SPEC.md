@@ -22,6 +22,17 @@ no real market data was acquired and no real Mmeta/M1 prediction was fitted or
 scored. The real branch is implemented but remains `AUTH_REQUIRED` and
 execution-prohibited.
 
+## Final integrity freeze (2026-09-18)
+
+The real runner entrypoint is now connected to the accepted shared core but was
+not invoked. The verifier no longer imports runner answer-calculation helpers;
+it has local probability, metric, gate, attribution and key-hash routines. It
+also verifies actual ETF file hashes against both the source manifest and
+fingerprint, timestamp counts, the accepted R1 parity artifact, real-only
+canonical schedule/probability parity, and dedicated shared-C/no-post-August
+checks. `audit_v4` supersedes neither historical output nor audit_v3; it is the
+final frozen synthetic integrity fixture with strengthened fault mutations.
+
 Starting SHA: `27f7b477459c28e48aa3d3321ba874ebff8a36b1`. This lane preserves all
 historical experiments and does not authorize real Mmeta/M1, news-direction, joint,
 Activity v2, router, thread/newness, or market-state candidate scoring.
