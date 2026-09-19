@@ -1,0 +1,14 @@
+{
+  "status": "FAIL",
+  "checks": {
+    "canonical_lineage_parity": "NOT_REPLAYED_IN_RUNNER",
+    "grid_4h_rows": 696,
+    "grid_1d_rows": 1392,
+    "full_grid_candidate_scoring": "PASS_FOR_NEWS_ONLY",
+    "dprice_full_grid": "MISSING",
+    "joint_follow_up": "MISSING",
+    "issued_parameter_history": "MISSING",
+    "serialized_model_reload": "MISSING"
+  },
+  "reason": "Runner completed NEWS_ONLY full-grid scoring but omitted required DPRICE, issued-history, joint and serialized-model artifacts. Results are preserved; no interpretation or tuning performed."
+}

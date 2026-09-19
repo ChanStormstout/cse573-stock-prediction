@@ -1,0 +1,5402 @@
+[
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_1G_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_1G_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_PAPER_2G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_PAPER_2G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_RF_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_RF_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "n_estimators": 50,
+      "learning_rate": 0.05
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_ADABOOST_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "n_estimators": 50,
+      "learning_rate": 0.05
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_ADABOOST_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "distance"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "distance"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "distance"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 15,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AAPL_TFIDF_KNN_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "distance"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/4h_4H_AMZN_TFIDF_KNN_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "PAPER_1G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_1G_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_1G_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "PAPER_1G_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "PAPER_2G_L1LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_LR",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 0.01
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LINSVM_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_LINSVM",
+    "params": {
+      "C": 1.0
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_RF_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_RF_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_RF_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_RF_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_RF",
+    "params": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "n_estimators": 50,
+      "learning_rate": 0.05
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "n_estimators": 50,
+      "learning_rate": 0.05
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.05,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_ADABOOST_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "n_estimators": 50,
+      "learning_rate": 0.05
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "n_estimators": 50,
+      "learning_rate": 0.05
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_ADABOOST_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_ADABOOST",
+    "params": {
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 15,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 15,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "distance"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "distance"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AAPL_TFIDF_KNN_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-03.json",
+    "month": "2018-03",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-04.json",
+    "month": "2018-04",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-05.json",
+    "month": "2018-05",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-06.json",
+    "month": "2018-06",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-07.json",
+    "month": "2018-07",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-08.json",
+    "month": "2018-08",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-09.json",
+    "month": "2018-09",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-10.json",
+    "month": "2018-10",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-11.json",
+    "month": "2018-11",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2018-12.json",
+    "month": "2018-12",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2019-01.json",
+    "month": "2019-01",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AAPL_TFIDF_KNN_2019-02.json",
+    "month": "2019-02",
+    "stock": "AAPL",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 15,
+      "weights": "distance"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "distance"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_24H_AMZN_TFIDF_KNN_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-03.json",
+    "month": "2018-03",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-04.json",
+    "month": "2018-04",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-05.json",
+    "month": "2018-05",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-06.json",
+    "month": "2018-06",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-07.json",
+    "month": "2018-07",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-08.json",
+    "month": "2018-08",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-09.json",
+    "month": "2018-09",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-10.json",
+    "month": "2018-10",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-11.json",
+    "month": "2018-11",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2018-12.json",
+    "month": "2018-12",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2019-01.json",
+    "month": "2019-01",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  },
+  {
+    "id": "work/stock-data/priorwork_v9/models/1d_DNEWS_OVERNIGHT_AMZN_TFIDF_KNN_2019-02.json",
+    "month": "2019-02",
+    "stock": "AMZN",
+    "method": "TFIDF_KNN",
+    "params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    }
+  }
+]
