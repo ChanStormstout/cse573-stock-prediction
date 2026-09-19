@@ -68,13 +68,13 @@ def select_c(records, month):
     ranks=[]
     for c in C_GRID:
         q=[x for x in prior if float(x['C'])==c]
-        ranks.append((c,float(np.mean([x['BA'] for x in q])),float(np.mean([x['Brier'] for x in q]))))
+        ranks.append((c,round(float(np.mean([x['BA'] for x in q])),12),round(float(np.mean([x['Brier'] for x in q])),12)))
     return sorted(ranks,key=lambda x:(-x[1],x[2],x[0]))[0][0]
 def final_c(records):
     ranks=[]
     for c in C_GRID:
         q=[x for x in records if float(x['C'])==c]
-        ranks.append((c,float(np.mean([x['BA'] for x in q])),float(np.mean([x['Brier'] for x in q]))))
+        ranks.append((c,round(float(np.mean([x['BA'] for x in q])),12),round(float(np.mean([x['Brier'] for x in q])),12)))
     return sorted(ranks,key=lambda x:(-x[1],x[2],x[0]))[0][0]
 def fit_one(train, ev, cols, c):
     mean,scale=standard_fit(train,cols); z=standard_apply(train,cols,mean,scale)
@@ -131,7 +131,7 @@ def run_pipeline(source_dir,out,mode='synthetic'):
     monthly=[]; aggregate=[]
     for (s,m,method),g in long.groupby(['symbol','month','method']): monthly.append({'symbol':s,'month':m,'method':method,**metric(g.label,g.probability)})
     for (phase,s,method),g in long.groupby(['phase','symbol','method']): aggregate.append({'phase':phase,'symbol':s,'method':method,**metric(g.label,g.probability)})
-    pd.DataFrame(monthly).to_csv(out/'monthly_metrics.csv',index=False); pd.DataFrame(aggregate).to_csv(out/'metrics.csv',index=False); pd.DataFrame(cv).to_csv(out/'m0_cv.csv',index=False)
+    pd.DataFrame(monthly).to_csv(out/'monthly_metrics.csv',index=False); pd.DataFrame(aggregate).to_csv(out/'metrics.csv',index=False); pd.DataFrame(cv).to_csv(out/'m0_cv.csv',index=False,float_format='%.17g')
     (out/'training_evidence.json').write_text(json.dumps(evidence,indent=2)+'\n'); (out/'advancement.json').write_text(json.dumps(build_gate(wide),indent=2)+'\n'); (out/'attribution.json').write_text(json.dumps(build_attribution(wide),indent=2)+'\n')
     fp={'mode':mode,'source_dir':str(source.resolve()),'methods':METHODS,'market_preregistration_sha256':sha(Path(__file__).with_name('MARKET_PREREGISTRATION.md')),'market_feature_code_sha256':sha(Path(__file__).with_name('market_features.py')),'runner_code_sha256':sha(Path(__file__).with_name('run_market.py')),'canonical_r1_input_sha256':sha(source/'r1_rows.csv'),'market_source_manifest_sha256':sha(source/'source_manifest.json'),'normalized_etf_bar_hashes':manifest['bar_hashes'],'calendar_schedule_sha256':sha(source/'schedule.csv'),'r1_parity_artifact_sha256':sha(Path(__file__).with_name('audit_v2')/'r1_independent_refit.json'),'feature_columns':METHODS,'C_grid':list(C_GRID),'seed':SEED,'solver':SOLVER,'tol':TOL,'cutoff_rule':'bar_end_utc + 1 minute <= cutoff_utc','expected_key_hash':key_hash(expected['keys'])}
     (out/'protocol_fingerprint.json').write_text(json.dumps(fp,indent=2)+'\n')

@@ -170,6 +170,11 @@
     "sha256": "d75b520d024648f279bad7f720233e8bd2077f1c7887f8bdcab9d7398854156d"
   },
   {
+    "path": "outputs/stock_context_4h/audit_v5/synthetic_corruption_matrix.json",
+    "bytes": 4436,
+    "sha256": "16ead0f0506ddf8fd7e0ff26f46194a31913edcf2fc2c3014bb542694bba97e5"
+  },
+  {
     "path": "outputs/stock_llm_4h/runs/integration_v2/status.json",
     "bytes": 1371,
     "sha256": "cf217a231a05a8c005a781c293c6e28cc8561d6ca94bafd4457c2de7f4749185"

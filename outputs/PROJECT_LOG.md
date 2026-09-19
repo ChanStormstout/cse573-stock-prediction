@@ -22,6 +22,12 @@
   synthetic corruption coverage in `audit_v4`.
 - No real source was acquired or scored.
 
+## Context increment: real verifier path repair (2026-09-18)
+
+- Repaired only canonical-path, canonical-session and final-C verifier logic.
+- Audit v5 clean synthetic run passed; the final-C fault failed its dedicated
+  check. No market prediction was run.
+
 - Full title-and-body association and target-local family isolation produced 64
   pairs, with no family crossing pilot and locked-check splits.
 - The frozen Qwen3.5-9B pass received association-centered article sentences only:

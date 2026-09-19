@@ -25,8 +25,20 @@ def build_attribution(pred):
  cells=[]
  for (s,m),g in pred[pred.month.isin(['2018-06','2018-07','2018-08'])].groupby(['symbol','month']):cells.append({'symbol':s,'month':m,'delta_BA':metric(g.label,g.M1)['BA']-metric(g.label,g.Mmeta)['BA'],'delta_Brier':metric(g.label,g.M1)['Brier']-metric(g.label,g.Mmeta)['Brier']})
  return {'comparison':'M1_vs_Mmeta','cells':cells,'macro_delta_BA':float(np.mean([x['delta_BA'] for x in cells]))}
+def normalized(v):
+ if isinstance(v,float): return round(v,12)
+ if isinstance(v,list): return [normalized(x) for x in v]
+ if isinstance(v,dict): return {k:normalized(x) for k,x in v.items()}
+ return v
 
 def failcheck(checks,name,ok,detail=''): checks.append({'check':name,'pass':bool(ok),'detail':detail})
+HERE=Path(__file__).resolve().parent
+REPO=HERE.parents[1]
+def canonical_goal60_predictions_path(): return REPO/'outputs/stock_goal60_4h/v1/predictions.csv'
+def canonical_schedule_path(): return REPO/'work/stock-data/audit/xnys_schedule.csv'
+def canonical_schedule_for(sched):
+ c=pd.read_csv(canonical_schedule_path());c['open']=pd.to_datetime(c.open,utc=True);c['close']=pd.to_datetime(c.close,utc=True)
+ dates=set(sched.open.dt.date);return c[c.open.dt.date.isin(dates)][['open','close']].sort_values('open').reset_index(drop=True)
 def grid_independent(schedule):
  rows=[]
  for r in schedule.itertuples(index=False):
@@ -55,7 +67,7 @@ def main():
   failcheck(checks,'source_exists',source.exists());
  if source is not None and source.exists():
   d=pd.read_csv(source/'r1_rows.csv');d.cutoff_utc=pd.to_datetime(d.cutoff_utc,utc=True);sched=pd.read_csv(source/'schedule.csv');sched.open=pd.to_datetime(sched.open,utc=True);sched.close=pd.to_datetime(sched.close,utc=True);etf={'SPY':bars(source/'bars_SPY.csv'),'QQQ':bars(source/'bars_QQQ.csv')};expected=json.loads((source/'expected_keys.json').read_text());grid=grid_independent(sched);manifest=json.loads((source/'source_manifest.json').read_text())
-  here=Path(__file__).resolve().parent
+  here=HERE
   r1a=here/'audit_v2/r1_independent_refit.json';r1j=json.loads(r1a.read_text())
   actual_hashes={s:sha(source/f'bars_{s}.csv') for s in ('SPY','QQQ')}
   expected_fp={'canonical_r1_input_sha256':sha(source/'r1_rows.csv'),'market_source_manifest_sha256':sha(source/'source_manifest.json'),'calendar_schedule_sha256':sha(source/'schedule.csv'),'normalized_etf_bar_hashes':actual_hashes,'r1_parity_artifact_sha256':sha(r1a),'market_feature_code_sha256':sha(here/'market_features.py'),'runner_code_sha256':sha(here/'run_market.py'),'market_preregistration_sha256':sha(here/'MARKET_PREREGISTRATION.md')}
@@ -63,7 +75,7 @@ def main():
   failcheck(checks,'actual_etf_hashes_and_raw_timestamp_contract',manifest.get('bar_hashes')==actual_hashes and int(manifest.get('duplicate_timestamp_count',-1))==sum(int(etf[s].index.duplicated().sum()) for s in etf) and int(manifest.get('unexpected_timestamp_count',-1))==sum(int((~etf[s].index.isin(pd.DatetimeIndex(grid.bar_start_utc))).sum()) for s in etf))
   failcheck(checks,'accepted_r1_parity_artifact',r1j.get('status')=='PASS' and r1j.get('n')==1374 and r1j.get('max_abs_probability_error',np.inf)<=1e-12 and r1j.get('direction_parity') is True)
   if fp.get('mode')=='real':
-   canonical=pd.read_csv(here.parents[1]/'stock_goal60_4h/v1/predictions.csv')[['key','R1']].dropna();realpred=pd.read_csv(root/'predictions.csv');j=realpred.merge(canonical,on='key',validate='one_to_one');err=float(np.max(np.abs(j.M0-j.R1))) if len(j) else np.inf;failcheck(checks,'real_canonical_schedule_parity',len(sched)==len(sched.drop_duplicates(['open','close'])));failcheck(checks,'real_M0_canonical_probability_parity',len(j)==1374 and err<=1e-12 and bool(np.array_equal(j.M0>=.5,j.R1>=.5)),f'max_error={err}')
+   canonical=pd.read_csv(canonical_goal60_predictions_path())[['key','R1']].dropna();realpred=pd.read_csv(root/'predictions.csv');j=realpred.merge(canonical,on='key',validate='one_to_one');err=float(np.max(np.abs(j.M0-j.R1))) if len(j) else np.inf;cs=canonical_schedule_for(sched);ss=sched[['open','close']].sort_values('open').reset_index(drop=True);failcheck(checks,'real_canonical_schedule_parity',ss.equals(cs));failcheck(checks,'real_M0_canonical_probability_parity',len(j)==1374 and err<=1e-12 and bool(np.array_equal(j.M0>=.5,j.R1>=.5)),f'max_error={err}')
   else: failcheck(checks,'synthetic_schedule_contract',len(sched)==len(sched.drop_duplicates(['open','close'])))
   pred=pd.read_csv(root/'predictions.csv'); mf=pd.read_csv(root/'market_features.csv'); d=d.merge(mf[['key']+list(METHODS['M1'][len(R1_FEATURES):])],on='key',how='left',validate='one_to_one'); ev=json.loads((root/'training_evidence.json').read_text()); cv=pd.read_csv(root/'m0_cv.csv'); monthly=pd.read_csv(root/'monthly_metrics.csv'); aggregate=pd.read_csv(root/'metrics.csv')
   failcheck(checks,'canonical_feature_contract',fp.get('feature_columns',{}).get('M0')==R1_FEATURES and 'p0' not in fp.get('feature_columns',{}).get('M0',[]))
@@ -99,12 +111,18 @@ def main():
   cok=True
   for (s,fold),g in cv.groupby(['symbol','fold']):
    if fold=='final':continue
-   prior=cv[(cv.symbol==s)&(cv.fold<fold)]; chosen=.1 if fold=='2018-03' else sorted([(c,prior[prior.C==c].BA.mean(),prior[prior.C==c].Brier.mean()) for c in C_GRID],key=lambda z:(-z[1],z[2],z[0]))[0][0]
+   prior=cv[(cv.symbol==s)&(cv.fold<fold)]; chosen=.1 if fold=='2018-03' else sorted([(c,round(float(prior[prior.C==c].BA.mean()),12),round(float(prior[prior.C==c].Brier.mean()),12)) for c in C_GRID],key=lambda z:(-z[1],z[2],z[0]))[0][0]
    vals=[x['C'] for x in ev if x['symbol']==s and x['fold']==fold]; cok &= len(vals)==3 and all(float(v)==float(chosen) for v in vals) and set(g.C)==set(C_GRID)
   for (s,fold),g in pd.DataFrame(ev).groupby(['symbol','fold']): cok &= len(set(g.C))==1 and (fold<'2018-09' or all(m<'2018-09' for m in g.training_months.iloc[0]))
   failcheck(checks,'chronological_C_and_no_later_leakage',cok)
   failcheck(checks,'shared_C_inheritance',all(len(set(g.C))==1 for _,g in pd.DataFrame(ev).groupby(['symbol','fold'])))
   failcheck(checks,'no_post_august_training',all(all(m<'2018-09' for m in g.training_months.iloc[0]) for (_,fold),g in pd.DataFrame(ev).groupby(['symbol','fold']) if fold>='2018-09'))
+  final_ok=True
+  for symbol in sorted(cv.symbol.unique()):
+   rec=cv[(cv.symbol==symbol)&(cv.fold<='2018-08')]
+   ranked=[(c,round(float(rec[rec.C==c].BA.mean()),12),round(float(rec[rec.C==c].Brier.mean()),12)) for c in C_GRID]; chosen=sorted(ranked,key=lambda z:(-z[1],z[2],z[0]))[0][0]
+   later=pd.DataFrame(ev);later=later[(later.symbol==symbol)&(later.fold>='2018-09')];final_ok &= not later.empty and all(float(v)==float(chosen) for v in later.C)
+  failcheck(checks,'final_C_from_MarAug',final_ok)
   # Independent saved-metric and gate/attribution reconstruction.
   mrows=[];arows=[]
   for method in METHODS:
@@ -115,8 +133,8 @@ def main():
    return list(a[keys].itertuples(index=False,name=None))==list(b[keys].itertuples(index=False,name=None)) and all(np.allclose(a[c].fillna(-999),b[c].fillna(-999),atol=1e-12) for c in a.columns if c not in keys and a[c].dtype.kind in 'fiu')
   failcheck(checks,'independent_metrics',equal_frames(pd.DataFrame(mrows),monthly,['symbol','month','method']) and equal_frames(pd.DataFrame(arows),aggregate,['phase','symbol','method']))
   gate=build_gate(pred_safe); attr=build_attribution(pred_safe);sg=json.loads((root/'advancement.json').read_text());sa=json.loads((root/'attribution.json').read_text())
-  failcheck(checks,'primary_gate_exact_six_cells',gate==sg and gate['outer_cells']==6)
-  failcheck(checks,'attribution_exact_six_cells',attr==sa and len(attr['cells'])==6)
+  failcheck(checks,'primary_gate_exact_six_cells',normalized(gate)==normalized(sg) and gate['outer_cells']==6)
+  failcheck(checks,'attribution_exact_six_cells',normalized(attr)==normalized(sa) and len(attr['cells'])==6)
  status='PASS' if checks and all(x['pass'] for x in checks) else 'FAIL';(root/'verification.json').write_text(json.dumps({'status':status,'fit_free':True,'checks':checks,'check_count':len(checks)},indent=2)+'\n')
  if status!='PASS': raise SystemExit('verification failed')
 if __name__=='__main__':main()

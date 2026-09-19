@@ -4,6 +4,7 @@ import hashlib,json,shutil,subprocess,sys,tempfile
 from pathlib import Path
 import numpy as np,pandas as pd
 from outputs.stock_context_4h.market_core import R1_FEATURES
+from outputs.stock_context_4h.verify_market import canonical_goal60_predictions_path
 
 ROOT=Path(__file__).resolve().parents[3]
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -53,18 +54,27 @@ def mutate(name,x):
   p=x/'advancement.json';d=json.loads(p.read_text());d['cells'].append(dict(d['cells'][0],month='2018-09'));p.write_text(json.dumps(d))
  elif name=='september':
   p=next((x/'models').glob('M0_AAPL_2018-09.json'));d=json.loads(p.read_text());d['training_months'].append('2018-09');p.write_text(json.dumps(d));e=x/'training_evidence.json';q=json.loads(e.read_text());[z.update({'training_months':d['training_months']}) for z in q if z['method']==d['method'] and z['symbol']==d['symbol'] and z['fold']==d['fold']];e.write_text(json.dumps(q))
+ elif name=='final_c':
+  e=x/'training_evidence.json';q=json.loads(e.read_text())
+  for z in q:
+   if z['fold']>='2018-09':
+    z['C']=1.0 if z['C']!=1.0 else .01
+    p=x/'models'/f"{z['method']}_{z['symbol']}_{z['fold']}.json";m=json.loads(p.read_text());m['C']=z['C'];p.write_text(json.dumps(m))
+  e.write_text(json.dumps(q))
 def main():
- faults={'prediction':'all_three_probability_reconstruction','npz':'model_hash_columns_and_scaler','columns':'model_hash_columns_and_scaler','hash':'protocol_fingerprint','future_bar':'raw_bar_time_safe_feature_reconstruction','missing_bar':'raw_bar_time_safe_feature_reconstruction','c_mismatch':'shared_C_inheritance','current_month':'chronological_C_and_no_later_leakage','label':'labels_exact','duplicate':'complete_expected_keys','gate_missing':'primary_gate_exact_six_cells','gate_extra':'primary_gate_exact_six_cells','september':'no_post_august_training'}
+ assert canonical_goal60_predictions_path().is_file(), canonical_goal60_predictions_path()
+ faults={'prediction':'all_three_probability_reconstruction','npz':'model_hash_columns_and_scaler','columns':'model_hash_columns_and_scaler','hash':'protocol_fingerprint','future_bar':'raw_bar_time_safe_feature_reconstruction','missing_bar':'raw_bar_time_safe_feature_reconstruction','c_mismatch':'shared_C_inheritance','current_month':'chronological_C_and_no_later_leakage','label':'labels_exact','duplicate':'complete_expected_keys','gate_missing':'primary_gate_exact_six_cells','gate_extra':'primary_gate_exact_six_cells','september':'no_post_august_training','final_c':'final_C_from_MarAug'}
  with tempfile.TemporaryDirectory() as t:
   t=Path(t);src=t/'fixture';fixture(src);out=t/'clean';r=call('-m','outputs.stock_context_4h.run_market','--synthetic-input',str(src),'--output',str(out));assert r.returncode==0,r.stderr
-  r=call('-m','outputs.stock_context_4h.verify_market','--root',str(out));assert r.returncode==0,r.stderr
+  r=call('-m','outputs.stock_context_4h.verify_market','--root',str(out));assert r.returncode==0,(r.stderr,(out/'verification.json').read_text())
   assert call('-m','outputs.stock_context_4h.report_market','--root',str(out)).returncode==0
+  assert 'synthetic engineering fixture, not an authenticated market result.' in (out/'REPORT.md').read_text()
   result=[]
   for name,expected in faults.items():
    x=t/name;shutil.copytree(out,x); own=t/f'{name}_source';shutil.copytree(src,own)
    fp=x/'protocol_fingerprint.json';z=json.loads(fp.read_text());z['source_dir']=str(own);fp.write_text(json.dumps(z))
    mutate(name,x);r=call('-m','outputs.stock_context_4h.verify_market','--root',str(x));v=json.loads((x/'verification.json').read_text());failed=[z['check'] for z in v['checks'] if not z['pass']];result.append({'fault':name,'mutation_description':name,'expected_verifier_check':expected,'actual_failed_checks':failed,'rejected':r.returncode!=0});assert expected in failed,(name,failed)
   x=t/'report_gate';shutil.copytree(out,x);(x/'verification.json').unlink();r=call('-m','outputs.stock_context_4h.report_market','--root',str(x));result.append({'fault':'report_gate','mutation_description':'remove PASS verification','expected_verifier_check':'reporter_requires_PASS','actual_failed_checks':['reporter_requires_PASS'] if r.returncode else [],'rejected':r.returncode!=0});assert r.returncode!=0
-  dest=ROOT/'outputs/stock_context_4h/audit_v4';dest.mkdir(exist_ok=True);(dest/'synthetic_corruption_matrix.json').write_text(json.dumps({'status':'PASS','clean_e2e':'PASS','reporter_mode_wording':'PASS','expected_rejections':14,'actual_rejections':sum(x['rejected'] for x in result),'results':result},indent=2)+'\n')
- print('PASS clean E2E and 14 distinct fault checks')
+  dest=ROOT/'outputs/stock_context_4h/audit_v5';dest.mkdir(exist_ok=True);(dest/'synthetic_corruption_matrix.json').write_text(json.dumps({'status':'PASS','clean_e2e':'PASS','reporter_mode_wording':'PASS','expected_rejections':15,'actual_rejections':sum(x['rejected'] for x in result),'results':result},indent=2)+'\n')
+ print('PASS clean E2E and 15 distinct fault checks')
 if __name__=='__main__':main()

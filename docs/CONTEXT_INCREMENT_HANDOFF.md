@@ -19,6 +19,13 @@ binding, real-only canonical schedule/M0 parity checks, and dedicated C and
 post-August evidence checks. audit_v4 cleanly passed with 14 fault-specific
 rejections. Real market access remains `AUTH_REQUIRED`.
 
+## 2026-09-18 — real verifier path repair only
+
+Corrected the repository-safe canonical R1 location and added real-session
+schedule parity and reconstructed final-C checks. audit_v5 passed cleanly; its
+15th mutation changes every September-or-later method C consistently and is
+rejected by `final_C_from_MarAug`. No real run occurred.
+
 ## 2026-09-18 — initialized
 
 Starting SHA is `27f7b477459c28e48aa3d3321ba874ebff8a36b1`; actual checkout will be

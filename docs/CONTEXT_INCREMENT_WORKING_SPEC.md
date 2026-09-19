@@ -33,6 +33,15 @@ canonical schedule/probability parity, and dedicated shared-C/no-post-August
 checks. `audit_v4` supersedes neither historical output nor audit_v3; it is the
 final frozen synthetic integrity fixture with strengthened fault mutations.
 
+## Real verifier path and final-C repair (2026-09-18)
+
+The real verifier resolves the canonical Goal60 prediction file from the
+repository root, compares every real session date/open/close against the
+frozen XNYS schedule, and reconstructs final C from saved March--August M0 CV
+records using the registered BA/Brier/smaller-C ordering. `audit_v5` preserves
+audit_v4 and adds a shared all-method September C corruption rejected by
+`final_C_from_MarAug`. No real market run is authorized.
+
 Starting SHA: `27f7b477459c28e48aa3d3321ba874ebff8a36b1`. This lane preserves all
 historical experiments and does not authorize real Mmeta/M1, news-direction, joint,
 Activity v2, router, thread/newness, or market-state candidate scoring.

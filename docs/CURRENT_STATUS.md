@@ -60,6 +60,12 @@
 > invoked; it still requires authenticated frozen Alpaca SIP source data and a
 > separate real-execution authorization. No real market predictive score exists.
 
+> **Market Context final-C verifier repair:** audit_v5 adds repository-safe
+> canonical R1/session schedule paths and a computed March--August final-C
+> inheritance check for September onward. Its clean synthetic fixture passes;
+> the all-method shared final-C corruption is rejected. This remains code and
+> synthetic evidence only.
+
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
 > 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除
