@@ -1,5 +1,14 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-19 — Prior-work clean reproduction and one-day study
+
+Created and committed preregistration before fitting. v1--v5 are preserved
+software-abort artifacts; v6 cleanly separates the two daily news windows and
+passes its contract verifier. The run uses train-fold-only sparse vocabulary,
+IDF and chi-square with chronological selection. It does not alter F0/F1/F2,
+Market Context or the relation lane. Results are exploratory historical
+backtests, not a live or independent final test.
+
 ## Context increment: outcome-blind news relation pilot (2026-09-18)
 
 ## Context increment: market production-path repair (2026-09-18)

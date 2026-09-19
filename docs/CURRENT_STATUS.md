@@ -1,5 +1,12 @@
 # 当前权威状态（2026-09-18，Phase A 已修复；Phase B 仅预注册）
 
+> **Prior-work reproduction / 1d study (2026-09-19):** immutable v6 completed
+> with a preregistration hash and PASS verifier. It evaluates bounded,
+> fold-local paper-style and TF-IDF classical controls on the existing 4h task
+> and a separately frozen daily task. Results are exploratory historical
+> backtests; XGBoost and Word2Vec are `NOT_RUN_DEPENDENCY_UNAVAILABLE`. Earlier
+> aborted v1--v5 directories are retained and not interpreted.
+
 > **Context relation-reader pilot:** The repaired full-universe target association
 > produced 64 target-aware pairs with zero cross-split family leakage. The exact
 > frozen Qwen checkpoint passed 13/13 file hashes; its single outcome-blind pass

@@ -10868,6 +10868,78 @@
       "in_git": false
     },
     {
+      "path": "outputs/stock_priorwork_repro/v1/private_four.pkl",
+      "bytes": 8294308,
+      "sha256": "9d5c54a52b69af9035fc338419d961cfa5bfabb47f29174e13a6daf96afce028",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v1/private_one.pkl",
+      "bytes": 6743460,
+      "sha256": "fca89746a655c3a6735165059510c8c8b6d7bc45633c12c7db7c6689a6e0dadd",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v2/private_four.pkl",
+      "bytes": 8294308,
+      "sha256": "9d5c54a52b69af9035fc338419d961cfa5bfabb47f29174e13a6daf96afce028",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v2/private_one.pkl",
+      "bytes": 6743460,
+      "sha256": "fca89746a655c3a6735165059510c8c8b6d7bc45633c12c7db7c6689a6e0dadd",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v3/private_four.pkl",
+      "bytes": 8294308,
+      "sha256": "9d5c54a52b69af9035fc338419d961cfa5bfabb47f29174e13a6daf96afce028",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v3/private_one.pkl",
+      "bytes": 6743460,
+      "sha256": "fca89746a655c3a6735165059510c8c8b6d7bc45633c12c7db7c6689a6e0dadd",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v4/private_four.pkl",
+      "bytes": 8294308,
+      "sha256": "9d5c54a52b69af9035fc338419d961cfa5bfabb47f29174e13a6daf96afce028",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v4/private_one.pkl",
+      "bytes": 6743460,
+      "sha256": "fca89746a655c3a6735165059510c8c8b6d7bc45633c12c7db7c6689a6e0dadd",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v5/private_four.pkl",
+      "bytes": 8294308,
+      "sha256": "9d5c54a52b69af9035fc338419d961cfa5bfabb47f29174e13a6daf96afce028",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v5/private_one.pkl",
+      "bytes": 6743460,
+      "sha256": "fca89746a655c3a6735165059510c8c8b6d7bc45633c12c7db7c6689a6e0dadd",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v6/private_four.pkl",
+      "bytes": 8294308,
+      "sha256": "9d5c54a52b69af9035fc338419d961cfa5bfabb47f29174e13a6daf96afce028",
+      "in_git": false
+    },
+    {
+      "path": "outputs/stock_priorwork_repro/v6/private_one.pkl",
+      "bytes": 6743460,
+      "sha256": "fca89746a655c3a6735165059510c8c8b6d7bc45633c12c7db7c6689a6e0dadd",
+      "in_git": false
+    },
+    {
       "path": "outputs/stock_robust/results/data.pkl",
       "bytes": 14773939,
       "sha256": "5f04dd99abe9da6deabf2b2049d488e9ae25a27adf580207ea7d47960219e0b2",
