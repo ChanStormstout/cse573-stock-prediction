@@ -8,6 +8,13 @@
 - **Model evidence:** 576 V10-reconstructed private model bundles reproduced V9 row-level probabilities/scores at no more than `4.44e-16`, with zero direction mismatches; every reload produced an exact score match. Future-text perturbation passed for PAPER_1G_L1LR and TFIDF_LR, and all 576 training boundaries were strict.
 - **Boundary:** `STAGE_A_FINAL_AUDIT.json` is PASS. No DPRICE, NEWS+PRICE, method-family selection, Market Context, or relation-reader action ran. V6/V7/V8/V9, F0/F1/F2 and existing artifacts remain unmodified. This authorizes only external review of Stage A, not automatic Stage B execution.
 
+## 2026-09-19 — V10 Stage A2 final verifier-only repair
+
+- **Repair:** the historical audit's literal quarantine Boolean was replaced by a computed record-level isolation audit. It checked all 576 decisions, their expected month histories, and 8,874 referenced authorized grid rows; zero September-plus candidate rows were referenced.
+- **Final-artifact check:** the verifier read, hashed and reloaded the final 576 manifest-hashed joblib files without fitting or writing any model. All manifest hashes matched; maximum probability and LinearSVM score errors versus frozen V9 predictions were `1.11e-16` and `4.44e-16`, respectively, with zero direction mismatches.
+- **Integrity:** every private model file had identical before/after bytes. All 32 tracked V6--V9 artifacts were also identical before/after. `STAGE_A_FINAL_AUDIT.json` is preserved; `STAGE_A_FINAL_AUDIT_V2.json` is PASS.
+- **Boundary:** no candidate-grid rerun, refit, DPRICE, NEWS+PRICE, method-family selection, Market Context, or relation-reader work occurred. This is an external-review checkpoint; it does not start Stage B.
+
 ## 2026-09-19 — V7 repair stopped before daily prediction
 
 The repair addendum was committed before any v7 work. A stronger v6 verifier

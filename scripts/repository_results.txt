@@ -496,3 +496,6 @@ outputs/stock_priorwork_repro/v10/NEWS_ONLY_MODEL_MANIFEST.json
 outputs/stock_priorwork_repro/v10/PREPROCESSING_PERTURBATION_TEST.json
 outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT.json
 outputs/stock_priorwork_repro/v10/STAGE_A_REPORT.md
+outputs/stock_priorwork_repro/v10/QUARANTINE_SELECTION_ISOLATION_AUDIT.json
+outputs/stock_priorwork_repro/v10/FINAL_SERIALIZED_MODEL_RELOAD_AUDIT.json
+outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT_V2.json

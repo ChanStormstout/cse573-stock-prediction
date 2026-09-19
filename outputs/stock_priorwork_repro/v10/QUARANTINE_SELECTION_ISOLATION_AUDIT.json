@@ -1,0 +1,13 @@
+{
+  "authorized_candidate_references_checked": 8874,
+  "bad_selection_month_records": [],
+  "issued_decisions_checked": 576,
+  "quarantined_candidate_references": 0,
+  "selection_reconstruction_status": "PASS",
+  "source_counts": {
+    "authorized_grid_rows": 1044,
+    "quarantined_grid_rows": 1044
+  },
+  "status": "PASS",
+  "title": "Computed quarantine selection isolation audit"
+}

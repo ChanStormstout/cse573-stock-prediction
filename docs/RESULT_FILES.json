@@ -2488,5 +2488,20 @@
     "path": "outputs/stock_priorwork_repro/v10/STAGE_A_REPORT.md",
     "bytes": 674,
     "sha256": "8b74832ce1236f3a19d2b31376b0f1ab0c9abd0fe164c6881e6c200e8a3e8123"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/QUARANTINE_SELECTION_ISOLATION_AUDIT.json",
+    "bytes": 386,
+    "sha256": "8eb0a0272f6bda9686faa8913086117c73715015758bbc5a1b589dd286b56dfe"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/FINAL_SERIALIZED_MODEL_RELOAD_AUDIT.json",
+    "bytes": 139151,
+    "sha256": "956a31a463257e9f947b814071654518ccfabcdbf53bbccbf107491c0a188fc9"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT_V2.json",
+    "bytes": 150890,
+    "sha256": "12241182e81dcf8ef7cb6a94a00fdf94d32baf129c86d1344be45cca3dedcd8c"
   }
 ]

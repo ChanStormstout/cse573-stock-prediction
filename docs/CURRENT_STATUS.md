@@ -2,6 +2,8 @@
 
 > **Prior-work V10 Stage A2 (2026-09-19):** the frozen V9 NEWS-only evidence is now independently reproducible. The verifier bound all nine source artifacts to commit `b7ee2af…`; raw canonical reconstruction achieved 1,607/1,607 article-key and full-body parity, and the independently rebuilt daily task matched its private raw-source cache. It reconstructed all 576 issued parameters with zero mismatches, replayed all 1,044 authorized March--August candidate rows within `1.12e-16` maximum metric discrepancy, and refit/reloaded 576 private model bundles with zero direction mismatches. This is an integrity checkpoint only: V9 September-and-later candidate grids remain quarantined; no DPRICE, NEWS+PRICE, or method-family selection ran. See [Stage A audit](../outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT.json).
 
+> **Prior-work V10 Stage A2 final verifier-only repair (2026-09-19):** the historical Stage A audit remains intact, and V2 replaces its two residual checks with computed evidence. It verified all 576 parameter decisions against the physically isolated March--August grid partition (8,874 authorized candidate references; 0 quarantined references) and reloaded each exact final manifest-hashed private model file. All 576 hashes matched, probabilities/scores reproduced V9 within `4.44e-16`, and no model bytes or tracked V6--V9 artifacts changed. [V2 audit](../outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT_V2.json) is PASS; no Stage B work ran.
+
 > **Prior-work reproduction / 1d study (2026-09-19):** immutable v6 completed
 > with a preregistration hash and PASS verifier. It evaluates bounded,
 > fold-local paper-style and TF-IDF classical controls on the existing 4h task
