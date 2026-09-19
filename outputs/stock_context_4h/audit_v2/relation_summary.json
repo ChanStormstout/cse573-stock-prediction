@@ -1,0 +1,274 @@
+{
+  "status": "PROVISIONAL_MODEL_RELATIONS_NOT_GOLD",
+  "calls": 64,
+  "valid_count": 63,
+  "counts": [
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "locked_check",
+      "relation": "different_actor_object_or_period",
+      "count": 3
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "locked_check",
+      "relation": "repeat_same_fact",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "pilot",
+      "relation": "different_actor_object_or_period",
+      "count": 4
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "locked_check",
+      "relation": "background_or_recap",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "locked_check",
+      "relation": "different_actor_object_or_period",
+      "count": 2
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "locked_check",
+      "relation": "new_or_changed_fact",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "locked_check",
+      "relation": "repeat_same_fact",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "pilot",
+      "relation": "new_or_changed_fact",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "pilot",
+      "relation": "repeat_same_fact",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "pilot",
+      "relation": "unrelated_or_insufficient",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "near_duplicate_candidate",
+      "split": "locked_check",
+      "relation": "different_actor_object_or_period",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "near_duplicate_candidate",
+      "split": "locked_check",
+      "relation": "repeat_same_fact",
+      "count": 3
+    },
+    {
+      "target": "AAPL",
+      "stratum": "near_duplicate_candidate",
+      "split": "pilot",
+      "relation": "repeat_same_fact",
+      "count": 4
+    },
+    {
+      "target": "AAPL",
+      "stratum": "weak_overlap_candidate",
+      "split": "locked_check",
+      "relation": "different_actor_object_or_period",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "weak_overlap_candidate",
+      "split": "pilot",
+      "relation": "different_actor_object_or_period",
+      "count": 3
+    },
+    {
+      "target": "AAPL",
+      "stratum": "weak_overlap_candidate",
+      "split": "pilot",
+      "relation": "new_or_changed_fact",
+      "count": 1
+    },
+    {
+      "target": "AAPL",
+      "stratum": "weak_overlap_candidate",
+      "split": "pilot",
+      "relation": "unrelated_or_insufficient",
+      "count": 3
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "locked_check",
+      "relation": "background_or_recap",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "locked_check",
+      "relation": "different_actor_object_or_period",
+      "count": 2
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "locked_check",
+      "relation": "new_or_changed_fact",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "pilot",
+      "relation": "background_or_recap",
+      "count": 2
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "pilot",
+      "relation": "different_actor_object_or_period",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_numeric_difference",
+      "split": "pilot",
+      "relation": "unrelated_or_insufficient",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "locked_check",
+      "relation": "different_actor_object_or_period",
+      "count": 2
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "pilot",
+      "relation": "background_or_recap",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "pilot",
+      "relation": "different_actor_object_or_period",
+      "count": 4
+    },
+    {
+      "target": "AMZN",
+      "stratum": "moderate_overlap_same_numeric_tokens",
+      "split": "pilot",
+      "relation": "repeat_same_fact",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "near_duplicate_candidate",
+      "split": "locked_check",
+      "relation": "background_or_recap",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "near_duplicate_candidate",
+      "split": "locked_check",
+      "relation": "different_actor_object_or_period",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "near_duplicate_candidate",
+      "split": "locked_check",
+      "relation": "repeat_same_fact",
+      "count": 2
+    },
+    {
+      "target": "AMZN",
+      "stratum": "near_duplicate_candidate",
+      "split": "pilot",
+      "relation": "different_actor_object_or_period",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "near_duplicate_candidate",
+      "split": "pilot",
+      "relation": "repeat_same_fact",
+      "count": 3
+    },
+    {
+      "target": "AMZN",
+      "stratum": "weak_overlap_candidate",
+      "split": "locked_check",
+      "relation": "background_or_recap",
+      "count": 2
+    },
+    {
+      "target": "AMZN",
+      "stratum": "weak_overlap_candidate",
+      "split": "locked_check",
+      "relation": "different_actor_object_or_period",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "weak_overlap_candidate",
+      "split": "locked_check",
+      "relation": "unrelated_or_insufficient",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "weak_overlap_candidate",
+      "split": "pilot",
+      "relation": "background_or_recap",
+      "count": 1
+    },
+    {
+      "target": "AMZN",
+      "stratum": "weak_overlap_candidate",
+      "split": "pilot",
+      "relation": "different_actor_object_or_period",
+      "count": 2
+    },
+    {
+      "target": "AMZN",
+      "stratum": "weak_overlap_candidate",
+      "split": "pilot",
+      "relation": "unrelated_or_insufficient",
+      "count": 1
+    }
+  ],
+  "prompt_sha256": "7d96270e7b5d433b554e6355656201ccf262eaf8a4cef6bf96bb2b57cf2c63e0"
+}

@@ -1,5 +1,15 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## Context increment: outcome-blind news relation pilot (2026-09-18)
+
+- Full title-and-body association and target-local family isolation produced 64
+  pairs, with no family crossing pilot and locked-check splits.
+- The frozen Qwen3.5-9B pass received association-centered article sentences only:
+  no prices, returns, labels, reactions, or future articles.
+- All 64 outputs were written; 63 passed mechanical JSON/evidence/time validation.
+  The invalid output is retained without repair or rerun.
+- These are provisional model relation labels, not human gold or prediction scores.
+
 维护日期：2026-09-15。用途：给组员解释我们尝试过什么、为什么改变、观察到了什么，以及下一步决定的依据。目标是完成课程项目与有说服力的实验，不以发表新算法为前提。
 
 ## 使用约定

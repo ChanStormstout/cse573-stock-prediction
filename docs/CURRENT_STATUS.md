@@ -1,5 +1,12 @@
 # 当前权威状态（2026-09-18，Phase A 已修复；Phase B 仅预注册）
 
+> **Context relation-reader pilot:** The repaired full-universe target association
+> produced 64 target-aware pairs with zero cross-split family leakage. The exact
+> frozen Qwen checkpoint passed 13/13 file hashes; its single outcome-blind pass
+> produced all 64 records, 63 mechanically valid. This is
+> `PROVISIONAL_MODEL_RELATIONS_NOT_GOLD`; no stock-direction or market-context
+> candidate was fitted or scored.
+
 > **最新权威状态 — Phase B v1 已验证：**外部审查仅授权修复 verifier 对
 > `advancement.json` 的存储精度比较。没有重跑 `run_gate.py`；十个既存预测/
 > 结果 artifact 的 SHA-256 在修复前、verifier 后和报告后完全一致。修复后的
