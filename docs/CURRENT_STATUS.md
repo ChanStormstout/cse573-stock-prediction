@@ -7,6 +7,14 @@
 > backtests; XGBoost and Word2Vec are `NOT_RUN_DEPENDENCY_UNAVAILABLE`. Earlier
 > aborted v1--v5 directories are retained and not interpreted.
 
+> **Prior-work v7 repair boundary (2026-09-19):** v6 four-hour results remain
+> frozen. The stronger verifier is `PASS_WITH_EXPLICIT_LIMITATION`: canonical,
+> mapping and chronology contracts pass, but v6 did not retain fitted-model
+> artifacts for an independent model reload/probability replay. Daily v7 stops
+> before fitting: canonical key membership parity is 1,607/1,607 only through
+> the legacy title matcher, which is prohibited as the repaired daily authority;
+> no retained all-universe accepted full-text association generator was found.
+
 > **Context relation-reader pilot:** The repaired full-universe target association
 > produced 64 target-aware pairs with zero cross-split family leakage. The exact
 > frozen Qwen checkpoint passed 13/13 file hashes; its single outcome-blind pass

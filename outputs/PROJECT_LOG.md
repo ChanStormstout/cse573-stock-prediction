@@ -1,5 +1,15 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-19 — V7 repair stopped before daily prediction
+
+The repair addendum was committed before any v7 work. A stronger v6 verifier
+passes canonical row, prediction mapping, timing and training-boundary checks,
+with an explicit limitation that v6 does not retain fitted models for an
+independent probability replay. Canonical 4h article membership is 1,607/1,607
+under the retained reconstruction, but that reconstruction is the prohibited
+title matcher. There is no retained all-universe accepted full-text association
+generator, so v7 daily fitting and scoring were correctly not run.
+
 ## 2026-09-19 — Prior-work clean reproduction and one-day study
 
 Created and committed preregistration before fitting. v1--v5 are preserved

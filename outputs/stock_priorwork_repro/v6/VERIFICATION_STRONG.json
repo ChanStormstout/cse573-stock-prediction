@@ -1,0 +1,21 @@
+{
+  "status": "PASS_WITH_EXPLICIT_LIMITATION",
+  "checks": {
+    "canonical_rows_1607": true,
+    "canonical_unique_keys": true,
+    "march_onward_1374": true,
+    "cutoff_is_start_minus_5m": true,
+    "four_hour_duration": true,
+    "prediction_exact_canonical_mapping": true,
+    "prediction_labels_match_canonical": true,
+    "training_before_evaluation_cutoff": true,
+    "metrics_rows_present": true,
+    "protected_paths_exist": [
+      "outputs/stock_goal60_4h/v1/predictions.csv",
+      "outputs/stock_context_4h"
+    ]
+  },
+  "check_count": 10,
+  "explicit_limitation": "v6 retained fold evidence and predictions but not fitted model artifacts; exact independent model reload/probability replay is unavailable without rerunning a changed execution path.",
+  "old_11_check_status": "SHALLOW_SUPERSEDED"
+}

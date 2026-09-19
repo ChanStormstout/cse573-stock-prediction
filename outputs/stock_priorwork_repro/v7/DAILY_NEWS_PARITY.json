@@ -1,0 +1,11 @@
+{
+  "status": "DAILY_TARGET_ASSOCIATION_PARITY_UNRESOLVED",
+  "canonical_article_key_set_parity": {
+    "AAPL": "803/803",
+    "AMZN": "804/804",
+    "total": "1607/1607"
+  },
+  "canonical_full_text_parity": "canonical stem_body is retained but no retained all-universe accepted association/full-body generator exists",
+  "blocking_reason": "The only exact membership reconstruction is outputs/stock_baseline/run_baseline.py::build(), a title matcher explicitly prohibited as daily association authority. Using it would violate the v7 repair addendum.",
+  "no_v7_predictive_run": true
+}
