@@ -33,6 +33,12 @@
 - Added a real-mode independent row/window contract and a cutoff-only fault.
 - Audit v6 passes cleanly; cutoff shift fails the dedicated contract.
 
+## Context increment: authenticated market-source preflight (2026-09-19)
+
+- The permitted Alpaca SIP/raw 5-minute access probe found no supported
+  credential pair and recorded `AUTH_REQUIRED` with zero attempts.
+- Stopped before acquisition, source materialization, coverage, or model work.
+
 - Full title-and-body association and target-local family isolation produced 64
   pairs, with no family crossing pilot and locked-check splits.
 - The frozen Qwen3.5-9B pass received association-centered article sentences only:

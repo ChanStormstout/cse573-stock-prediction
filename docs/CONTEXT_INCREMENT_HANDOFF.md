@@ -32,6 +32,12 @@ Added a real-mode canonical R1 row contract and audit_v6 cutoff-shift fault.
 The synthetic fixture passes and the changed cutoff is rejected by the
 dedicated contract. No real market score exists.
 
+## 2026-09-19 — authenticated source preflight
+
+The Alpaca SIP/raw 5Min probe found no supported credential pair, made zero
+network attempts, and recorded `AUTH_REQUIRED`. The acquisition and source-
+only coverage work stopped before raw data or predictions were created.
+
 ## 2026-09-18 — initialized
 
 Starting SHA is `27f7b477459c28e48aa3d3321ba874ebff8a36b1`; actual checkout will be

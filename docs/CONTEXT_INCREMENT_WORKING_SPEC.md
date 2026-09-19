@@ -50,6 +50,14 @@ raw R1 feature. It requires exactly 1,374 evaluated March-onward rows. audit_v6
 adds a cutoff-only source corruption and rejects it with
 `canonical_r1_row_contract`; no real run was performed.
 
+## Authenticated source acquisition preflight (2026-09-19)
+
+The bounded credential-safe Alpaca historical-bars probe returned
+`AUTH_REQUIRED` with zero attempts because the supported credential pair was
+absent. No materialization, API pagination, market-feature coverage audit, or
+predictive model execution was performed. Acquisition remains blocked pending
+an authenticated Alpaca SIP/raw/5Min source.
+
 Starting SHA: `27f7b477459c28e48aa3d3321ba874ebff8a36b1`. This lane preserves all
 historical experiments and does not authorize real Mmeta/M1, news-direction, joint,
 Activity v2, router, thread/newness, or market-state candidate scoring.

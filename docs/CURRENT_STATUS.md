@@ -71,6 +71,10 @@
 > cutoff-only corruption is rejected. This is synthetic integrity evidence;
 > no real market model has run.
 
+> **Market Context source preflight:** the credential-safe Alpaca SIP/raw
+> 5-minute probe returned `AUTH_REQUIRED` with zero attempts. No SPY/QQQ raw
+> bars, source manifest, coverage audit, or real predictive score was created.
+
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
 > 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除
