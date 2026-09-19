@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "clean_e2e": "PASS",
+  "expected_rejections": 14,
+  "actual_rejections": 14,
+  "results": [
+    {
+      "fault": "prediction",
+      "mutation_description": "prediction",
+      "expected_verifier_check": "all_three_probability_reconstruction",
+      "actual_failed_checks": [
+        "all_three_probability_reconstruction",
+        "independent_metrics"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "npz",
+      "mutation_description": "npz",
+      "expected_verifier_check": "model_hash_columns_and_scaler",
+      "actual_failed_checks": [
+        "model_hash_columns_and_scaler",
+        "all_three_probability_reconstruction"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "columns",
+      "mutation_description": "columns",
+      "expected_verifier_check": "model_hash_columns_and_scaler",
+      "actual_failed_checks": [
+        "model_hash_columns_and_scaler"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "hash",
+      "mutation_description": "hash",
+      "expected_verifier_check": "protocol_fingerprint",
+      "actual_failed_checks": [
+        "protocol_fingerprint"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "future_bar",
+      "mutation_description": "future_bar",
+      "expected_verifier_check": "raw_bar_time_safe_feature_reconstruction",
+      "actual_failed_checks": [
+        "raw_bar_time_safe_feature_reconstruction",
+        "model_hash_columns_and_scaler"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "missing_bar",
+      "mutation_description": "missing_bar",
+      "expected_verifier_check": "raw_bar_time_safe_feature_reconstruction",
+      "actual_failed_checks": [
+        "raw_bar_time_safe_feature_reconstruction",
+        "independent_coverage"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "c_mismatch",
+      "mutation_description": "c_mismatch",
+      "expected_verifier_check": "model_hash_columns_and_scaler",
+      "actual_failed_checks": [
+        "model_hash_columns_and_scaler"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "current_month",
+      "mutation_description": "current_month",
+      "expected_verifier_check": "chronological_C_and_no_later_leakage",
+      "actual_failed_checks": [
+        "chronological_C_and_no_later_leakage"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "label",
+      "mutation_description": "label",
+      "expected_verifier_check": "labels_exact",
+      "actual_failed_checks": [
+        "labels_exact",
+        "independent_metrics"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "duplicate",
+      "mutation_description": "duplicate",
+      "expected_verifier_check": "complete_expected_keys",
+      "actual_failed_checks": [
+        "complete_expected_keys"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "gate_missing",
+      "mutation_description": "gate_missing",
+      "expected_verifier_check": "primary_gate_exact_six_cells",
+      "actual_failed_checks": [
+        "primary_gate_exact_six_cells"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "gate_extra",
+      "mutation_description": "gate_extra",
+      "expected_verifier_check": "primary_gate_exact_six_cells",
+      "actual_failed_checks": [
+        "primary_gate_exact_six_cells"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "september",
+      "mutation_description": "september",
+      "expected_verifier_check": "model_hash_columns_and_scaler",
+      "actual_failed_checks": [
+        "model_hash_columns_and_scaler"
+      ],
+      "rejected": true
+    },
+    {
+      "fault": "report_gate",
+      "mutation_description": "remove PASS verification",
+      "expected_verifier_check": "reporter_requires_PASS",
+      "actual_failed_checks": [
+        "reporter_requires_PASS"
+      ],
+      "rejected": true
+    }
+  ]
+}

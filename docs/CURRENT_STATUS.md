@@ -45,6 +45,15 @@
 > (no credentials were printed or requested); no real Mmeta/M1/news/joint candidate
 > was fitted or scored. See `docs/CONTEXT_INCREMENT_WORKING_SPEC.md`.
 
+> **Market Context v1 repair:** the previous synthetic corruption matrix is
+> `SYNTHETIC_V1_SUPERSEDED_PENDING_FAULT_SPECIFIC_REPAIR`; it used a simplified
+> `p0` model path and repeated a generic mutation. The replacement shared core
+> now uses raw canonical R1 features, completed raw market bars, chronological
+> C inheritance, and a fit-free independent verifier. Its synthetic E2E and
+> fourteen fault-specific checks pass in `audit_v3`; this is not real market
+> scoring. Real Mmeta/M1 remains blocked on authenticated frozen Alpaca SIP data
+> and explicit execution approval.
+
 > **当前外部审查状态：**dense v5 仍是当前有效的稠密窗口 artifact。reaction
 > v3 已保留且为 `SUPERSEDED_PENDING_REPAIR`；新的 v4 已用全部
 > 30/60/120/240 分钟候选、`NaN + valid` 缺失值表示和高精度 AAPL 缩写排除

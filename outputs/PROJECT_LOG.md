@@ -2,6 +2,19 @@
 
 ## Context increment: outcome-blind news relation pilot (2026-09-18)
 
+## Context increment: market production-path repair (2026-09-18)
+
+- **Problem:** the prior synthetic test used `p0` rather than raw R1 features;
+  nine listed corruptions shared one generic mutation, so it could not establish
+  the production-path contracts.
+- **Change:** created a shared R1/Mmeta/M1 core, raw-bar feature builder,
+  chronological C selection, independent fit-free verifier, PASS-gated reporter,
+  and versioned fault-specific synthetic fixture.
+- **Observation:** clean synthetic `prepare → run → verify → report` passed;
+  all fourteen distinct mutations were rejected by their named expected checks.
+- **Boundary:** no real SPY/QQQ bars were acquired, no real Mmeta/M1 score was
+  generated, and the Qwen relation lane was not changed.
+
 - Full title-and-body association and target-local family isolation produced 64
   pairs, with no family crossing pilot and locked-check splits.
 - The frozen Qwen3.5-9B pass received association-centered article sentences only:

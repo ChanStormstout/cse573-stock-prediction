@@ -1,5 +1,27 @@
 # Context Increment + Fact Change Working Specification
 
+## Market Context v1 production-path repair (2026-09-18)
+
+The former synthetic matrix is retained as historical evidence but is
+`SYNTHETIC_V1_SUPERSEDED_PENDING_FAULT_SPECIFIC_REPAIR`: nine nominal faults
+had used the same empty-training-evidence mutation.  It is not evidence of a
+production-verified market pipeline.
+
+The replacement uses one shared core for synthetic fixtures and the future
+authenticated Alpaca/SIP/raw/5Min branch. M0 consumes canonical raw R1 columns;
+Mmeta adds only the three registered coverage controls; M1 adds the four
+registered SPY/QQQ returns/volatility fields. It records per-fold model,
+scaler, keys, C, source and protocol hashes. The fit-free verifier independently
+rebuilds the calendar and raw-bar features, coverage, all three probabilities,
+scalers, C chronology, metrics, six-cell gate and attribution.
+
+`audit_v3/synthetic_corruption_matrix.json` records a clean separate-process
+prepare/run/verify/report PASS and fourteen distinct fault mutations, each
+rejected by its expected check. This is an engineering contract test only:
+no real market data was acquired and no real Mmeta/M1 prediction was fitted or
+scored. The real branch is implemented but remains `AUTH_REQUIRED` and
+execution-prohibited.
+
 Starting SHA: `27f7b477459c28e48aa3d3321ba874ebff8a36b1`. This lane preserves all
 historical experiments and does not authorize real Mmeta/M1, news-direction, joint,
 Activity v2, router, thread/newness, or market-state candidate scoring.
