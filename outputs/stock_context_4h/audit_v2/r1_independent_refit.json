@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "n": 1374,
+  "max_abs_probability_error": 1.1102230246251565e-16,
+  "direction_parity": true,
+  "selection": [
+    {
+      "symbol": "AAPL",
+      "fold": "2018-03",
+      "C": 0.1
+    },
+    {
+      "symbol": "AAPL",
+      "fold": "2018-04",
+      "C": 0.01
+    },
+    {
+      "symbol": "AAPL",
+      "fold": "2018-05",
+      "C": 0.01
+    },
+    {
+      "symbol": "AAPL",
+      "fold": "2018-06",
+      "C": 0.01
+    },
+    {
+      "symbol": "AAPL",
+      "fold": "2018-07",
+      "C": 0.01
+    },
+    {
+      "symbol": "AAPL",
+      "fold": "2018-08",
+      "C": 0.01
+    },
+    {
+      "symbol": "AAPL",
+      "fold": "final",
+      "C": 0.01
+    },
+    {
+      "symbol": "AMZN",
+      "fold": "2018-03",
+      "C": 0.1
+    },
+    {
+      "symbol": "AMZN",
+      "fold": "2018-04",
+      "C": 0.01
+    },
+    {
+      "symbol": "AMZN",
+      "fold": "2018-05",
+      "C": 0.1
+    },
+    {
+      "symbol": "AMZN",
+      "fold": "2018-06",
+      "C": 0.1
+    },
+    {
+      "symbol": "AMZN",
+      "fold": "2018-07",
+      "C": 0.1
+    },
+    {
+      "symbol": "AMZN",
+      "fold": "2018-08",
+      "C": 0.1
+    },
+    {
+      "symbol": "AMZN",
+      "fold": "final",
+      "C": 0.1
+    }
+  ]
+}
