@@ -2,9 +2,9 @@
 
 ## Presentation
 
-16 English slides: 13 main slides for a 10–12 minute discussion and three appendix slides. The deck uses the supplied Simple Light Mode template. The native tables and method diagrams remain editable.
+17 English slides: 14 main slides for a 10–12 minute discussion and three appendix slides. The deck uses the supplied Simple Light Mode template. The native tables and method diagrams remain editable.
 
-The final local file is `CSE573_News_Context_Faculty_Meeting_v6.pptx`. Presentation binaries remain outside Git under the existing repository policy. [Presenter notes](PRESENTER_NOTES.md) include slide-specific sources and explanations. [Method proposal](METHOD_PROPOSAL.md) records the design boundary.
+The final local file is `CSE573_News_Context_Faculty_Meeting_v8.pptx`. Presentation binaries remain outside Git under the existing repository policy. [Presenter notes](PRESENTER_NOTES.md) include slide-specific sources and explanations. [Method proposal](METHOD_PROPOSAL.md) records the design boundary.
 
 ## Narrative
 
@@ -35,3 +35,7 @@ The course connection is classical ML plus modern language representations and e
 ## Readability revision
 
 The updated deck retains the light template, with navy headings, teal emphasis on proposed information increments, pale grouping backgrounds and stronger typographic hierarchy. Diagrams distinguish the reference path from the proposed correction. Numeric evidence and method status are unchanged. Earlier PowerPoint versions remain local.
+
+## Logic-led visual revision
+
+Removed arbitrary one-sided backgrounds from parallel text comparisons. Three completed-experiment observations now precede a separate full-width hypothesis, explicitly labeled as a question rather than a proven cause. Color inside diagrams distinguishes existing components and proposed changes. Short definitions accompany financial language features, BA and extraction fact F1. A new evidence page records matched provisional extraction results and the observed N0415 maintain-rating/raise-target case. Extraction metrics are never presented as direction accuracy. The stock-results page keeps all four cells and gives later-period relative changes with an explicit mixed-development qualification. No scores were invented or hidden; no prediction experiment was run.

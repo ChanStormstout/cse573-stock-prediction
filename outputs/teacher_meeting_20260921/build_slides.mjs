@@ -21,36 +21,37 @@ function rich(s,txt,x,y,w,h,accent=NAVY){
 }
 function surface(s,x,y,w,h,fill){return s.shapes.add({geometry:'rect',position:{left:x,top:y,width:w,height:h},fill,line:{fill:'none',width:0}});}
 function cols(title,items,notes){let s=slide(5,title,notes);for(let q of [...s.shapes.items])if(q.position.top>150&&q.position.top<650)s.shapes.deleteById(q.id);
- let selected=[2,7,10,11,13].includes(plans.length);
+ let selected=false;
  if(selected)surface(s,644,183,594,389,TEALBG);
- items.forEach((t,i)=>rich(s,t,54+i*608,204,560,363,i?TEAL:NAVY));return s;}
+ items.forEach((t,i)=>rich(s,t,54+i*608,204,560,363,NAVY));return s;}
 function four(title,items,notes){let s=slide(13,title,notes);for(let q of [...s.shapes.items])if(q.position.top>150&&q.position.top<650)s.shapes.deleteById(q.id);
- if([3,6].includes(plans.length))surface(s,644,390,594,185,TEALBG);
- items.forEach((t,i)=>rich(s,t,54+(i%2)*608,205+Math.floor(i/2)*205,560,172,i===3?TEAL:NAVY));return s;}
+
+ items.forEach((t,i)=>rich(s,t,54+(i%2)*608,205+Math.floor(i/2)*205,560,172,NAVY));return s;}
 function blank(title,notes){let s=slide(5,title,notes);for(let q of [...s.shapes.items])if(q.position.top>150&&q.position.top<650)s.shapes.deleteById(q.id);return s;}
 function box(s,txt,x,y,w,h){let q=s.shapes.add({geometry:'rect',position:{left:x,top:y,width:w,height:h},fill:BLUEBG,line:{fill:'#B7C9DB',width:1}});q.text=txt;q.text.style={typeface:FONT,fontSize:23,color:NAVY,bold:true,alignment:'center',verticalAlignment:'middle',autoFit:'none'};return q;}
 function arrow(s,a,b,from='right',to='left'){return s.shapes.connect(a,b,{kind:'straight',fromSide:from,toSide:to,line:{fill:'#627C8B',width:2},tail:{type:'arrow',width:'med',length:'med'}});}
 function note(s,t){text(s,t,42,595,1165,48,20,'#555555');}
-function table(s,values,top=230){let t=s.tables.add({rows:values.length,columns:values[0].length,left:42,top,width:1196,height:values.length*53,columnWidths:values[0].length===5?[360,209,209,209,209]:undefined,values});for(let r=0;r<values.length;r++)for(let c=0;c<values[0].length;c++){let x=t.getCell(r,c);x.fill=r===0?NAVY:(['Price + FinBERT','+ Fact changes'].includes(values[r][0])?TEALBG:(r%2?'#FFFFFF':BLUEBG));x.text.style={typeface:FONT,fontSize:23,color:r===0?'#FFFFFF':INK,bold:r===0||['Price + FinBERT','+ Fact changes'].includes(values[r][0])};}t.borders.assign({fill:'#D4E0E7',width:0.6,style:'solid'});return t;}
+function table(s,values,top=230){let t=s.tables.add({rows:values.length,columns:values[0].length,left:42,top,width:1196,height:values.length*53,columnWidths:values[0].length===5?[360,209,209,209,209]:(values[0].length===4?[480,238,239,239]:undefined),values});for(let r=0;r<values.length;r++)for(let c=0;c<values[0].length;c++){let x=t.getCell(r,c);x.fill=r===0?NAVY:(['Price + FinBERT','+ Fact changes','Task-adapted FinBERT'].includes(values[r][0])?TEALBG:(r%2?'#FFFFFF':BLUEBG));x.text.style={typeface:FONT,fontSize:23,color:r===0?'#FFFFFF':INK,bold:r===0||['Price + FinBERT','+ Fact changes','Task-adapted FinBERT'].includes(values[r][0])};}t.borders.assign({fill:'#D4E0E7',width:0.6,style:'solid'});return t;}
 const repo='https://github.com/ChanStormstout/cse573-stock-prediction/blob/652b1999407a2e248064d61e8758cd68050dcf89/';
 const src=(f)=>repo+f;
 let s=slide(1,'',`Opening: We study whether news adds useful information to a four-hour stock-direction forecast. The next method is a proposal, not a claimed experimental improvement. Present the mechanism and ask for feedback on a finite evaluation.\nSource checkpoint: 652b1999407a2e248064d61e8758cd68050dcf89.`);
-let q=s.shapes.items;edit(q.find(x=>x.id==='4'),'News context for\nstock prediction',82);edit(q.find(x=>x.id==='5'),'AAPL and AMZN, four-hour direction\nPrice + FinBERT results and a proposed news-context method',26);edit(q.find(x=>x.id==='6'),'CSE 573  /  Faculty discussion  /  21 September 2026',24);
+let q=s.shapes.items;edit(q.find(x=>x.id==='4'),'News context for\nstock prediction',82);edit(q.find(x=>x.id==='5'),'AAPL and AMZN, four-hour direction\nFinancial language features and a proposed news-context method',26);edit(q.find(x=>x.id==='6'),'CSE 573  /  Faculty discussion  /  21 September 2026',24);
 cols('The prediction task',[
 'Question\nDoes news improve the direction forecast beyond recent price information?\n\nTarget\nUp or down over the next four-hour open-to-close window.',
 'Data and evaluation\n1,607 prediction windows for Apple and Amazon. Their stock tickers are AAPL and AMZN.\n\nAll inputs stop five minutes before the target starts. Existing evaluation periods are exposed historical backtests.'
 ],`Explain the cutoff in ordinary language: the model must make its decision before the four-hour interval begins. Windows overlap and are not independent observations. Four hours is the fixed current task, not a horizon selected for this deck. Source: ${src('outputs/stock_foundation_4h/v1/REPORT.md')}`);
 four('The course contribution is information mining',[
 'Classical learning\nWord features and logistic regression provide a transparent prediction reference.',
-'Modern language features\nFinBERT converts financial language into a compact numerical representation.',
+'Modern language features\nFinBERT is a language model trained on financial text. It converts sentences into numerical features.',
 'Entity and relation mining\nLink the company, analyst, event, value and time to their supporting text.',
 'Prediction test\nMeasure whether the extracted relations add information beyond the same reference model.'
 ],`Course basis: the supplied CSE 573 group-project slides, pages 3, 7 and 20, require classical ML plus modern AI and a Semantic Web or Web Mining connection. The assigned Alostad and Davulcu paper asks whether news selected by breaking Twitter activity improves direction prediction. Our proposed extension instead asks whether relations between past and current reports reveal useful fact changes. We do not reproduce the Twitter mechanism. Reference: https://journals.sagepub.com/doi/10.3233/WEB-170349. This is evidence for the project's framing, not a claim about the instructor's private preferences.`);
 s=blank('The reference model combines news meaning and prices',`F2 uses ProsusAI/FinBERT title vectors, equal article averaging, PCA fitted on training articles, price features and news metadata in logistic regression. Special-token-excluded pooling is the canonical implementation. With no admitted news, the stored F2 system returns R1. The encoder is frozen; the downstream classifier really is trained. Source: ${src('outputs/stock_paper_methods_4h/run.py')} and ${src('outputs/stock_foundation_4h/v2/REPORT.md')}. FinBERT basis: https://arxiv.org/abs/1908.10063`);
-let a=box(s,'Available\nnews titles',42,240,210,96),b=box(s,'FinBERT\nFinancial text encoder',292,240,210,96),c=box(s,'Average vectors\n16-value summary',542,240,245,96),d=box(s,'Direction\nclassifier',827,330,195,110),e=box(s,'Probability\nof rising',1062,330,176,110),f=box(s,'Price history + news metadata',292,425,495,86);arrow(s,a,b);arrow(s,b,c);arrow(s,c,d);arrow(s,f,d);arrow(s,d,e);note(s,'A compact text representation is useful, but averaging does not preserve how an event changes.');
+text(s,'Example: “maintains Buy, cuts target price” contains two different actions.',42,160,1180,55,23,MUTED);
+let a=box(s,'Available\nnews titles',42,240,210,96),b=box(s,'FinBERT\nText → features',292,240,210,96),c=box(s,'Combine news\n16-number summary',542,240,245,96),d=box(s,'Direction\nclassifier',827,330,195,110),e=box(s,'Probability\nof rising',1062,330,176,110),f=box(s,'Price history + news metadata',292,425,495,86);arrow(s,a,b);arrow(s,b,c);arrow(s,c,d);arrow(s,f,d);arrow(s,d,e);note(s,'FinBERT turns financial text into numerical features. We freeze it and train the direction classifier.');
 s=blank('FinBERT gains vary across companies and periods',`All numbers are historical saved values, not invented or newly trained for this presentation. F0 is price plus title word features; F1 is price plus full-body word features selected from the same admitted article lineage; F2 is the canonical frozen FinBERT system. Source: ${src('outputs/stock_finbert_event_adapter_4h/v1/REPORT.md')}. The later period was exposed and used during the broader exploration. Do not call these independent test generalization estimates.`);
 text(s,'Balanced accuracy (%)    Development: Sep–Oct 2018    Later: Nov 2018–Feb 2019',42,160,1180,44,23);
-table(s,[['Method','AAPL dev','AAPL later','AMZN dev','AMZN later'],['Price + title words','50.46','51.89','48.33','49.79'],['Price + full-text words','57.94','51.74','55.66','54.36'],['Price + FinBERT','54.13','56.71','46.29','54.27']]);note(s,'Balanced accuracy gives equal weight to up/down recall. Previously examined historical periods.');
+table(s,[['Method','AAPL dev','AAPL later','AMZN dev','AMZN later'],['Price + title words','50.46','51.89','48.33','49.79'],['Price + full-text words','57.94','51.74','55.66','54.36'],['Price + FinBERT','54.13','56.71','46.29','54.27']]);note(s,'BA gives equal weight to up/down recall. Later gains vs title words: AAPL +4.82 pp; AMZN +4.48 pp.\nDevelopment is mixed. All periods were previously examined; highlighted row is our focus, not a universal winner.');
 four('What our experiments changed in our thinking',[
 'Encoder replacement\nA newer financial encoder improves some AMZN periods but loses ground on AAPL.',
 'Event extraction\nFinBERT learns to extract event facts more accurately. The selected correction still adds no direction gain.',
@@ -70,10 +71,10 @@ a=box(s,'Current news\n+ past archive',42,220,225,100);b=box(s,'Company + event\
 e=box(s,'Price + FinBERT\nReference probability',312,450,240,96);f=box(s,'Small score adjustment\nKeep base if uncertain',912,450,326,96);arrow(s,d,f,'bottom','top');arrow(s,e,f);text(s,'Repeat / changed fact / correction / unknown',360,352,820,42,25);note(s,'Proposed extension. Predictive benefit still requires an experiment.');
 cols('How extracted information changes the forecast',[
 'Correction rule\nFinal score = reference score\n+ a small context adjustment\n\nThe adjustment learns from past errors.\nMissing or rejected evidence keeps the original forecast exactly.',
-'Limited capacity\nUse a small shared linear correction with strong regularization and a capped magnitude.\n\nStart with repeat, change, contradiction, information age, and evidence status.'
+'Limited capacity\nUse a small correction learned jointly from both stocks. Limit its weights and adjustment size.\n\nIllustration: base forecast 55% + rejected evidence → exactly 55%. No improvement is assumed.'
 ],`Proposed details: z has at most 12 predefined features; no unconstrained news-specific intercept. One candidate correction is alpha*tanh(w^T z), alpha in {0,0.1,0.25,0.5} log-odds, with L2 C in {0.01,0.1}. Alpha=0 is the unchanged base. These are proposed finite settings to preregister, not selected values or current authorization to run. Shared effects reduce AMZN's sparse-event problem; no per-stock later-period winner selection. This differs from prior F1 absolute-event corrections by using F2 as the offset and relative news facts; neither component is guaranteed to add predictive information.`);
 cols('Training follows the order information becomes available',[
-'First: train the reader\nArticle pairs teach company, event and change relations.\n\nKeep duplicate reports together. Separate training and evaluation event groups.',
+'First: train the reader\nPaired articles teach repeat, changed fact, correction and unknown. Each label needs evidence.\n\nKeep duplicate reports together. Separate training and evaluation event groups.',
 'Then: train the correction\nUse earlier forecasts made on examples the model had not trained on.\n\nChoose settings on later training folds. Freeze the complete pipeline before evaluation.'
 ],`Chronological proposal: inside each outer fold fit or adapt the reader only on earlier annotations, index only earlier articles, create base probabilities and event features without fitting on each row's label, and train the correction on those OOF rows. All preprocessing is fold-local. Purge training labels whose end time overlaps the next evaluation cutoff. Keep the same two-stock architecture. Modern pretraining on historical text remains a retrospective caveat even if downstream time order is correct. Existing development and later periods remain exposed, not new holdouts.`);
 s=blank('The experiment must isolate the value of context',`Proposed matched ablations only; none is executed during deck creation. Keep canonical windows, F2 offset, data cutoffs, shared predictor capacity and selection budget fixed. K1 checks extra history/availability. K2 uses current-article facts without pair relations. K3 adds verified pair changes with matched count/age features. Report monthly BA/MCC/Brier, 1- and 5-day block paired intervals, coverage and changed/repaired/introduced errors. Require improvement on each stock across multiple training months with a Brier guardrail before selecting a candidate. Do not choose the method using exposed later-period results.`);
@@ -95,6 +96,29 @@ cols('Appendix: sources and method status',[
 'Method references\nAraci (2019), FinBERT.\nFinancial-domain language representation.\n\nFININ (2024).\nNews interactions motivate the proposed comparison of current and prior reports.',
 'Project evidence\nPrice + FinBERT and matched encoder comparison.\nFinBERT event adapter v1.\nV10 classical final summary.\n\nProposed contextual correction:\nDesigned for discussion; untested.'
 ],`References: https://arxiv.org/abs/1908.10063; https://arxiv.org/abs/2410.10614. Project source checkpoint: 652b1999407a2e248064d61e8758cd68050dcf89. Exact evidence links appear in notes on each result slide. No paper's benchmark gains are transferred to this project. No model training, data acquisition, entity labeling or reader calls took place in making these slides.`);
+// Three parallel observations lead to one separate, explicitly tentative hypothesis.
+{
+const sl=made[5];
+for(const q of [...sl.shapes.items])if(q.position.top>150&&q.position.top<650)sl.shapes.deleteById(q.id);
+text(sl,'OBSERVATIONS FROM COMPLETED EXPERIMENTS',42,150,1180,36,19,MUTED,true);
+const xs=[42,450,858];
+const headings=['Text-model replacement','More accurate event reading','Classical word features'];
+const bodies=['A newer language model gives mixed gains across companies.','Better fact extraction does not produce a selected direction gain.','No consistent advantage across both stocks and evaluation periods.'];
+for(let i=0;i<3;i++){text(sl,headings[i],xs[i],210,360,72,27,NAVY,true);text(sl,bodies[i],xs[i],290,360,125,25,INK);}
+text(sl,'These findings motivate a test; they do not establish the cause of the errors.',42,421,1190,42,22,MUTED);
+surface(sl,42,487,1196,119,TEALBG);
+text(sl,'NEXT HYPOTHESIS TO TEST',64,500,1150,32,20,TEAL,true);
+text(sl,'Does a company’s change relative to earlier reports add useful predictive information?',64,539,1140,60,27,TEAL,true);
+}
+// Add a measured extraction contribution, visibly separate from direction accuracy.
+s=blank('Event reading improved; direction gains remain unverified',`Saved April provisional check results on 122 articles with 23 complete reference facts. Labels are dual-GPT/assistant provisional labels, not independently reviewed human gold. The four systems use the same complete-fact comparison signature. This is an extraction task, not stock BA. FinBERT A1 was selected using training folds before check evaluation. Its final stock correction selected BASE. Example N0415 shows rating-maintain and target-price-raise; QLoRA Qwen retains only target-price-raise, selected FinBERT retains both. Sources: ${src('outputs/stock_finbert_event_adapter_4h/v1/REPORT.md')}; ${src('outputs/stock_finbert_event_adapter_4h/v1/CASE_NOTES.md')}. No new training for this deck.`);
+text(s,'Complete-fact extraction: 122 articles / 23 reference facts / provisional labels',42,146,1190,48,23,MUTED);
+table(s,[['Extractor','Precision','Recall','Fact F1'],['Rules','9.09%','78.26%','16.29%'],['Tuned small language model','42.86%','26.09%','32.43%'],['Larger staged language model','37.50%','39.13%','38.30%'],['Task-adapted FinBERT','76.00%','82.61%','79.17%']],209);
+text(s,'Observed case: rating maintained + target price raised',42,499,1180,38,26,NAVY,true);
+text(s,'The adapted reader retains both actions; the tuned small model misses “maintain”.',42,543,1180,40,23,INK);
+note(s,'Fact F1 balances correct extractions and finding the reference facts; it is NOT stock direction accuracy.\nIndependent human review is pending. No stable downstream direction improvement was established.');
+// Insert immediately after the historical prediction comparison.
+made.splice(5,0,made.pop());plans.splice(5,0,plans.pop());
 for(let original of originals)original.delete();
 for(let i=0;i<made.length;i++){made[i].moveTo(i);for(let q of made[i].shapes.items)if(q.position.top>650&&q.position.left>1100)edit(q,String(i+1),12);}
 // Reader guidance: dark blue is the established reference; teal marks the proposed information increment.
@@ -104,11 +128,11 @@ for(let i=0;i<made.length;i++){
   const pos=q.position;
   if(pos.top<100&&pos.width>900){q.text.color=NAVY;q.text.fontSize=34;q.text.style={typeface:FONT,fontSize:34,color:NAVY,bold:true,autoFit:'none'};}
   if(pos.top>590&&pos.top<650){q.text.color=MUTED;}
-  if([7,8].includes(i)&&q.geometry==='rect'){q.fill=TEALBG;q.text.color=TEAL;}
+
  }
 }
 // Emphasize only the semantic steps in editable diagrams.
-for(const i of [3,7,8])for(const q of made[i].shapes.items){
+for(const sl of made)for(const q of sl.shapes.items){
  const txt=q.text?.toString?.()||'';
  if(/change reader|Computed change|Learned adjustment|Small score adjustment/.test(txt)&&q.position.top>150&&q.position.top<580){q.fill=TEALBG;q.text.color=TEAL;}
 }
@@ -119,7 +143,7 @@ await fs.writeFile(path.join(BUILD,'storyboard.json'),JSON.stringify(plans,null,
 await (await PresentationFile.exportPptx(p)).save(path.join(BUILD,'candidate.pptx'));
 await fs.mkdir(path.join(BUILD,'renders'),{recursive:true});
 for(let i=0;i<p.slides.items.length;i++){let s=p.slides.items[i];let b=await p.export({slide:s,format:'png',scale:1});await fs.writeFile(path.join(BUILD,'renders',`slide-${i+1}.png`),new Uint8Array(await b.arrayBuffer()));}
-await fs.writeFile(path.join(OUT,'PRESENTER_NOTES.md'),'# Faculty meeting notes\n\nSuggested length: 10–12 minutes, with slides 14–16 held for questions.\n\n'+plans.map((x,i)=>`## Slide ${i+1}: ${x.title||'News context for stock prediction'}\n\n${x.notes}\n`).join('\n'));
+await fs.writeFile(path.join(OUT,'PRESENTER_NOTES.md'),'# Faculty meeting notes\n\nSuggested length: 10–12 minutes, with slides 15–17 held for questions.\n\n'+plans.map((x,i)=>`## Slide ${i+1}: ${x.title||'News context for stock prediction'}\n\n${x.notes}\n`).join('\n'));
 const {finalizePresentation}=await import(path.join(SKILL,'container_tools/artifact_tool_utils.mjs'));
-const out=await finalizePresentation({workspaceDir:ROOT,candidatePath:path.join(BUILD,'candidate.pptx'),finalPath:path.join(OUT,'CSE573_News_Context_Faculty_Meeting_v6.pptx'),pythonExecutable:'/Users/victor/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',integrityValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit','--require-native-table-slide','5','--require-native-table-slide','12','--require-native-table-slide','14'],fontPolicy:{basis:'reference',families:[FONT],referencePath:REF,referenceSha256:crypto.createHash('sha256').update(await fs.readFile(REF)).digest('hex')},explicitTotalSlideCount:16,requiredNativeTableOwnerSlides:[5,12,14],verifyArtifactToolImport:true,receiptPath:path.join(BUILD,'validation_v6.json')});
+const out=await finalizePresentation({workspaceDir:ROOT,candidatePath:path.join(BUILD,'candidate.pptx'),finalPath:path.join(OUT,'CSE573_News_Context_Faculty_Meeting_v8.pptx'),pythonExecutable:'/Users/victor/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',integrityValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit','--require-native-table-slide','5','--require-native-table-slide','6','--require-native-table-slide','13','--require-native-table-slide','15'],fontPolicy:{basis:'reference',families:[FONT],referencePath:REF,referenceSha256:crypto.createHash('sha256').update(await fs.readFile(REF)).digest('hex')},explicitTotalSlideCount:17,requiredNativeTableOwnerSlides:[5,6,13,15],verifyArtifactToolImport:true,receiptPath:path.join(BUILD,'validation_v8.json')});
 console.log(JSON.stringify(out,null,2));
