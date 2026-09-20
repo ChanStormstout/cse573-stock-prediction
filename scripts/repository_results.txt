@@ -557,3 +557,4 @@ outputs/stock_external_benchmark_audit/ECNI_METHOD_SPEC.md
 outputs/stock_external_benchmark_audit/READER_LABELING_PROTOCOL.md
 outputs/stock_external_benchmark_audit/FUTURE_EXPERIMENT_MATRIX.md
 outputs/stock_external_benchmark_audit/AUDIT_MANIFEST.json
+outputs/stock_ecni_e1/PRE_REGISTRATION.md

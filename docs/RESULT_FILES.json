@@ -2793,5 +2793,10 @@
     "path": "outputs/stock_external_benchmark_audit/AUDIT_MANIFEST.json",
     "bytes": 2642,
     "sha256": "5c8040f27aa54b790d8ae0a2358d9455d03b11faf84213c5aedff818f92fa3df"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/PRE_REGISTRATION.md",
+    "bytes": 5028,
+    "sha256": "71525ddbaea15583218dcdabd6520e32f78482ca8edf537ef38841ac02d16367"
   }
 ]
