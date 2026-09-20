@@ -2933,5 +2933,10 @@
     "path": "outputs/stock_ecni_e1/verify_e1.py",
     "bytes": 3399,
     "sha256": "fd5b529813ca0807cb2da51b34012052dee5578a2a9f4b91162eef8622bdc713"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/PRE_REGISTRATION.md",
+    "bytes": 8256,
+    "sha256": "c93dcbdfc5b0ad995c712432fa0cb46fe256809594f0a7cd8dac9aae61746247"
   }
 ]

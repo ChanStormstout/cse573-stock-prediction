@@ -585,3 +585,4 @@ outputs/stock_ecni_e1/E1_REPORT.md
 outputs/stock_ecni_e1/run_data_audit.py
 outputs/stock_ecni_e1/finalize_e1.py
 outputs/stock_ecni_e1/verify_e1.py
+outputs/stock_ecni_e1r/PRE_REGISTRATION.md
