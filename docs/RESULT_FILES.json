@@ -3753,5 +3753,35 @@
     "path": "outputs/stock_representation_4h/v1/training_evidence.json",
     "bytes": 401,
     "sha256": "0b41df24999da520299896d1e804747f61d11a9c32dc81afe72404de83858f9a"
+  },
+  {
+    "path": "outputs/stock_pro_completion_4h/v1/protocol.json",
+    "bytes": 5057,
+    "sha256": "cb2069e8e4c582e228ed26d1fa87dd01892606605534669206e69876b4a2c568"
+  },
+  {
+    "path": "outputs/stock_pro_completion_4h/v1/INPUT_AUDIT.json",
+    "bytes": 239,
+    "sha256": "1210be5947e3c2936f159ae83ac8c757e6a5c2d0c7841143ebbbf05af9109711"
+  },
+  {
+    "path": "outputs/stock_pro_completion_4h/v1/PRE_EXECUTION_REPAIR.json",
+    "bytes": 215,
+    "sha256": "94e6050e2c9d0989dd0939934041a7dc0da137ad63d9288b254c339193ef9e69"
+  },
+  {
+    "path": "outputs/stock_pro_completion_4h/v1/EXECUTION_SCHEDULING.json",
+    "bytes": 405,
+    "sha256": "082b7a1a4ed3878c619292ecebd134d2b1ad9c5bf11efc5f1bc5b23be4c1c058"
+  },
+  {
+    "path": "outputs/stock_pro_completion_4h/v1/KERNEL_RUNTIME_REPAIR.json",
+    "bytes": 1041,
+    "sha256": "c5e7d7b4bdc7dbda49c41dcb4e3d44021c2d28124874a0e87272b90027035e73"
+  },
+  {
+    "path": "outputs/stock_pro_completion_4h/v1/EARLY_CONTROL_PARITY.json",
+    "bytes": 134,
+    "sha256": "3a6590285d38823cf873b88ef05a2f437549576695de766c2a161daad5e5e4fa"
   }
 ]

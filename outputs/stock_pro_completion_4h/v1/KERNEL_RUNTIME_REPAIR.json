@@ -1,0 +1,31 @@
+{
+  "status": "PASS_SYNTHETIC_EQUIVALENCE",
+  "changes": "Dense BLAS storage of same linear SVC fit; coefficient-form linear decision computation",
+  "hyperparameters_changed": false,
+  "features_changed": false,
+  "selection_changed": false,
+  "model_family_changed": false,
+  "partial_old_kernel_results": 0,
+  "partial_old_kernel_fits": "uncheckpointed, count unavailable; not included in completed-fit totals",
+  "old_log_sha": "4413da0b3549b1ada069fa69640486c0726b4879fd7a1f7e88d53ee9e70817e0",
+  "synthetic_margin_errors": [
+    2.1649348980190553e-15,
+    2.1649348980190553e-15,
+    2.1649348980190553e-15
+  ],
+  "predict_only_test": {
+    "status": "PASS",
+    "maximum_margin_error": 3.1086244689504383e-15,
+    "C": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "training_solver_changed": false,
+    "synthetic_only": true
+  },
+  "files": {
+    "kernel_fast.py": "e158de56d72dcc5edfb6cfe7eb8f312df36aec902cfb61d0a52ad715cd6cfa7c",
+    "run_kernel_fast.py": "e942b95dde85d80ffab95403d59495c95a5839cab8b9ff8b23837ed8b25db062"
+  }
+}

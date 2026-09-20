@@ -750,3 +750,10 @@ outputs/stock_representation_4h/v1/preprocess_selected_C.csv
 outputs/stock_representation_4h/v1/protocol.json
 outputs/stock_representation_4h/v1/summary.csv
 outputs/stock_representation_4h/v1/training_evidence.json
+
+outputs/stock_pro_completion_4h/v1/protocol.json
+outputs/stock_pro_completion_4h/v1/INPUT_AUDIT.json
+outputs/stock_pro_completion_4h/v1/PRE_EXECUTION_REPAIR.json
+outputs/stock_pro_completion_4h/v1/EXECUTION_SCHEDULING.json
+outputs/stock_pro_completion_4h/v1/KERNEL_RUNTIME_REPAIR.json
+outputs/stock_pro_completion_4h/v1/EARLY_CONTROL_PARITY.json

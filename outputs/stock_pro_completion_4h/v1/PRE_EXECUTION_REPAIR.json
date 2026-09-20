@@ -1,0 +1,6 @@
+{
+  "reason": "Verifier local module name typo corrected before any real fit",
+  "real_fits": 0,
+  "old_seal_sha": "2ed4971569d874ea8e634b505b3c44ab5dd6f04bf30c66fb55c96e3f04a17e09",
+  "changed_file": "verify.py"
+}

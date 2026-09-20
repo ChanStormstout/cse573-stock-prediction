@@ -1,0 +1,9 @@
+{
+  "same_predictive_functions": true,
+  "main_body_parity_except_lock": true,
+  "runner_sha": "499cbbadbc8c2a2286d2da5285e7b49dc5788264f669ab481da16e4d1bb87c05",
+  "wrapper_sha": "4e58a5bba9b9bbd765d64f4be54815af15cd20b0052efeb561769abceb561f3e",
+  "startup_wrapper_import_failure_before_fits": true,
+  "waiting_duplicate_launcher_cancelled_before_lock": true,
+  "original_lexical_run_preserved": true
+}

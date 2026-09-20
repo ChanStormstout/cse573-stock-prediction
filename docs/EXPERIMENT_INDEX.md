@@ -53,3 +53,4 @@
 - **stock_text_joint_4h**: [README.md](../outputs/stock_text_joint_4h/README.md) · [findings](../outputs/stock_text_joint_4h/v1/FINDINGS.md) · [REPORT.md](../outputs/stock_text_joint_4h/v1/REPORT.md)
 
 - **stock_representation_4h**: [Findings](../outputs/stock_representation_4h/v1/FINDINGS.md) · [Report](../outputs/stock_representation_4h/v1/REPORT.md) · [Protocol](../outputs/stock_representation_4h/v1/protocol.json)
+- **stock_pro_completion_4h**: [finite mechanism scope](../outputs/stock_pro_completion_4h/README.md) · [execution handoff](PRO_COMPLETION_4H_HANDOFF.md)

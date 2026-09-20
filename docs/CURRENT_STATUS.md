@@ -1,3 +1,7 @@
+# Active: GPT Pro finite mechanism completion
+
+Implementation and real execution are in progress in `stock_pro_completion_4h/v1`; see [handoff](PRO_COMPLETION_4H_HANDOFF.md). Frozen scope: real-adjacency bigram/NB SVM, summed semantic/price kernels with a price-state interaction, independent compact LR/RF/TabPFN, and genuinely nested-crossfit R16 residual. Same exposed 1,607-window random protocol; these are not prospective scores. Stage verifiers replay saved models without fitting. No new encoder/LLM or external-data lane is running. No complete new score table is claimed until all stages pass.
+
 # Latest completed: preprocessing, grouped SVM and aggregation-order study
 
 **COMPLETE / VERIFIED.** [Plain-language findings](../outputs/stock_representation_4h/v1/FINDINGS.md) · [full report](../outputs/stock_representation_4h/v1/REPORT.md) · [handoff](REPRESENTATION_4H_HANDOFF.md).

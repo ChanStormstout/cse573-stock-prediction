@@ -1,0 +1,132 @@
+{
+  "status": "FROZEN_BEFORE_FITS",
+  "reference_sha": "e686c49305a7771ff9298568b98587f4af44a7c0",
+  "interpretation": "EXPOSED EXPLORATORY RANDOM HISTORICAL BACKTEST; overlapping news/windows may cross random folds; not prospective performance",
+  "rows": 1607,
+  "seeds": [
+    573,
+    574,
+    575
+  ],
+  "outer_folds": 10,
+  "inner_folds": 3,
+  "C": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "threshold": 0.5,
+  "lexical": {
+    "methods": [
+      "UNI",
+      "BIGRAM",
+      "NB_BIGRAM"
+    ],
+    "unigrams": "exact old stem_body token set, default length>=2 token restriction",
+    "bigrams": "unique pairs of adjacent retained alphabetic tokens within each original sentence/paragraph/title; stopword removal DOES NOT bridge a gap; stemmer/stoplist unchanged; no invented pairs from sorted stem_body",
+    "representation": "same min_df3 max5000 sublinear TFIDF, 3-fold sigmoid calibrated ensemble LinearSVC; NB uses binary occurrence log smoothed class-count ratio within each calibration training partition",
+    "selection": "text-only inner mean BA descending, Brier ascending, smaller C; same as historical SVM"
+  },
+  "kernel": {
+    "methods": [
+      "K_WP",
+      "K_MEAN",
+      "K_AFTER",
+      "K_SET",
+      "K_INTERACTION"
+    ],
+    "solver": "linear-kernel SVC on explicit concatenated maps, equivalent to sum of block dot-product kernels; 3-fold calibrated ensemble",
+    "base": "historical unigram TFIDF5000 + standardized OLD16 /sqrt16",
+    "mean": "train-standardized chunk mean /sqrt768",
+    "after": "Gaussian RFF of ordinary mean",
+    "set": "weighted mean of Gaussian chunk RFF; token weights within article, equal article weights; no final L2 normalization",
+    "RFF_dimensions": 256,
+    "RFF_seed": 573,
+    "geometry": "unique training chunks only; median positive sampled paired distance, matching earlier geometry",
+    "semantic_weight": 1,
+    "interaction": "K_set elementwise-multiplied by K_state implemented by tensor product",
+    "state": [
+      "return_mean",
+      "return_std",
+      "range_1"
+    ],
+    "state_scale": "train standardized /sqrt3",
+    "gamma_candidates": [
+      0.1,
+      1.0
+    ],
+    "selection": "mean text-and-price inner BA descending, Brier ascending, C ascending, gamma ascending",
+    "no_main_effect_advancement_gate": true,
+    "no_evidence": "use matching K_WP probability exactly",
+    "no_news": "saved same-fold PRICE probability exactly"
+  },
+  "table": {
+    "methods": [
+      "TABLE_LR",
+      "TABLE_RF",
+      "TABLE_TABPFN"
+    ],
+    "word_features": 128,
+    "semantic_dimensions": 32,
+    "price_features": 16,
+    "metadata": [
+      "log1p(news_count)",
+      "evidence_flag"
+    ],
+    "max_dimensions": 178,
+    "feature_selection": "train chi2 top128 of same bigram TFIDF; PCA32 fit unique training evidence articles",
+    "LR_C": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "RF": {
+      "n_estimators": 200,
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "TabPFN": {
+      "version": "6.3.0",
+      "checkpoint_version": "2.5 default fine-tuned on real data",
+      "checkpoint_sha": "5d7170e2d3af01f9c501bb09ec3bd12e9944f8604de18002c647873c6ec04a12",
+      "n_estimators": 8,
+      "device": "cpu",
+      "n_preprocessing_jobs": 1,
+      "license": "Prior Labs License; retained existing local authorized checkpoint; no redistribution",
+      "task_gradient_training": false
+    },
+    "selection": "LR only: inner mean BA/Brier/C; RF/TabPFN fixed without inner model tuning",
+    "variants": [
+      "NOSEM",
+      "SEM"
+    ],
+    "no_evidence": "same learner NOSEM probability",
+    "no_news": "saved same-fold PRICE probability",
+    "independent_of_kernel_result": true
+  },
+  "residual": {
+    "name": "R16",
+    "base": "FULL binary chi2top500 OLD16 LR plus PRICE36 fallback; same C grid and inner selection",
+    "fit": "offset logistic 16 coefficients, no intercept, sum logloss + ||w||^2/(2C)",
+    "OOF": "fresh 3-fold nested crossfit inside EVERY residual training scope; each base C selected only inside that crossfit complement; never use old selection_oof_NOT_META_TRAIN for fitting",
+    "selection": "C by original inner folds; include OFF, ties prefer OFF; outer base uses canonical inner folds",
+    "PCA": "unique training evidence articles only, train evidence scale",
+    "gate": "no evidence returns base probability bit-exact"
+  },
+  "reporting": {
+    "all_seeds": true,
+    "no_stock_winners": true,
+    "monthly": true,
+    "paired_intervals": "1000 paired day and 5day blocks, descriptive only",
+    "cases": "hash-first per repair/harm/sharedwrong/sharedright, seed573; examples are diagnostic not causal"
+  },
+  "deferred": [
+    "TabSTAR later-stage joint pretrained architecture",
+    "new LLM calls/learned retrieval",
+    "attention",
+    "LoRA",
+    "RL",
+    "pseudo-label consistency"
+  ],
+  "verification": "no-fit reload of ALL final models; inner selection replay; membership, exact fallbacks, cache seals, protected artifacts; TabPFN deterministic CPU tolerance1e-5, other probabilities1e-10"
+}

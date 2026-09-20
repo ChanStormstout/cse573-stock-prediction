@@ -1,0 +1,10 @@
+{
+  "status": "PASS_FIT_FREE",
+  "rows": 1607,
+  "blocks": 60,
+  "articles": 5078,
+  "bigram_windows": 1212,
+  "protected_files": 35119,
+  "fits": 0,
+  "checkpoint_sha": "5d7170e2d3af01f9c501bb09ec3bd12e9944f8604de18002c647873c6ec04a12"
+}
