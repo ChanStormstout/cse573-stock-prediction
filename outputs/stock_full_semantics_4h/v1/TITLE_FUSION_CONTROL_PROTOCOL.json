@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_BEFORE_SEMANTIC_PREDICTIVE_RESULTS",
+  "purpose": "Retain current title-vector versions as FULL-fusion controls, so any gain is not automatically attributed to longer input",
+  "base": "existing FULL",
+  "signals": [
+    "existing FINBERT title branch",
+    "existing MODERN title branch"
+  ],
+  "weights": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "selection": "finite weight on existing inner selection predictions; higher mean fold BA lower Brier smaller weight; no learned meta coefficients",
+  "existing_head_C": "already selected in inner CV; not reselected using outer results",
+  "scope": "same exposed 3-seed 10-fold partitions, all windows; no news exact FULL fallback",
+  "limitation": "This is not a perfectly isolated input ablation: body-head C and weight are jointly selected, title head C was previously selected; body evidence gate also differs. Do not claim any observed difference uniquely measures semantic content."
+}

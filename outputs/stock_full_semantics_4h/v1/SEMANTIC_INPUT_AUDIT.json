@@ -1,0 +1,15 @@
+{
+  "status": "PREPARED_OUTCOME_BLIND",
+  "article_target_pairs": 5226,
+  "paragraphs": 30448,
+  "chunks": 31059,
+  "with_explicit_target_paragraph_by_stock": {
+    "AAPL": 4841,
+    "AMZN": 365
+  },
+  "max_finbert_tokens": 512,
+  "max_modern_tokens": 512,
+  "discarded_selected_paragraphs": 0,
+  "source": "canonical title-filtered article membership unchanged; target paragraph lexical match is not independent semantic validation",
+  "offset_space": "HTML-unescaped tag-stripped body; raw and normalized hashes retained"
+}

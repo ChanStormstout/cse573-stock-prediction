@@ -1,8 +1,9 @@
 """Read-only source, selection and exact probability/fallback replay."""
 from train_semantics import *
 def main():
- check_sources();d,*_=load();frames=[];error=0.;fallback=0;models=0
+ check_sources();d,*_=load();frames=[];selections=[];error=0.;fallback=0;models=0
  dest=NEW/'semantic_training';seal=dest/'seal.json';stamp=json.loads(seal.read_text());assert stamp['code']==sha(Path(__file__).with_name('train_semantics.py'));assert stamp['protocol']==sha(PUBLIC/'SEMANTIC_PROTOCOL.json')
+ for n,h in stamp['base_hashes'].items():assert sha(PRIVATE/n)==h
  for name in ['FINBERT','MODERN']:
   assert stamp['inputs'][name]==sha(SRC/(name+'_articles.npz'));emb,ids,means=semantic_input(d,name)
   for root in sorted(dest.glob(name+'_*')):
@@ -17,12 +18,13 @@ def main():
    expected=p.FULL.to_numpy().copy();w=bundle['weight']
    if w:expected[gate]=(1-w)*expected[gate]+w*prob[gate]
    error=max(error,float(np.max(abs(prob-p.semantic_p))),float(np.max(abs(expected-p.p))));fallback+=int(np.count_nonzero(p.p.to_numpy()[~gate]!=p.FULL.to_numpy()[~gate]));assert error<1e-12 and fallback==0
+   selections.append(dict(encoder=name,symbol=p.symbol.iloc[0],seed=int(p.seed.iloc[0]),fold=int(p.fold.iloc[0]),C=bundle['C'],weight=w,train_n=len(tr),train_evidence_n=sum(bool(ids[i]) for i in tr)))
    frames.append(p);models+=1
  assert models==120;allp=pd.concat(frames,ignore_index=True);metrics=[]
  for (name,stock,seed),g in allp.groupby(['encoder','symbol','seed']):
   y=g.label.to_numpy();base=g.FULL.to_numpy()>=.5;q=g.p.to_numpy()>=.5
   metrics.append(dict(encoder=name,symbol=stock,seed=seed,**metric(y,g.p),base_BA=metric(y,g.FULL)['BA'],base_Brier=metric(y,g.FULL)['Brier'],coverage=float(g.gate.mean()),changed=int(sum(q!=base)),repaired=int(sum((base!=y)&(q==y))),introduced=int(sum((base==y)&(q!=y)))))
- pd.DataFrame(metrics).to_csv(PUBLIC/'SEMANTIC_METRICS.csv',index=False);allp.to_csv(PUBLIC/'SEMANTIC_PREDICTIONS.csv',index=False,float_format='%.17g')
+ pd.DataFrame(selections).to_csv(PUBLIC/'SEMANTIC_SELECTIONS.csv',index=False);pd.DataFrame(metrics).to_csv(PUBLIC/'SEMANTIC_METRICS.csv',index=False);allp.to_csv(PUBLIC/'SEMANTIC_PREDICTIONS.csv',index=False,float_format='%.17g')
  dump(PUBLIC/'SEMANTIC_VERIFICATION.json',dict(status='PASS',fit_calls=0,models=models,rows=len(allp),max_probability_error=error,no_evidence_fallback_mismatches=fallback,checks=['source hashes','code and protocol seal','model/artifact hashes','labels and row keys','disjoint training','training-only PCA membership','inner C and weight reconstruction','direct sigmoid and fusion replay','exact no-evidence fallback']))
  print('SEMANTIC PASS',models,error)
 if __name__=='__main__':main()

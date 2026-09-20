@@ -32,7 +32,13 @@ def main():
     end=start+1
     def payload(n):return 'TARGET='+symbol+'\nTITLE: '+title+'\nPARAGRAPH: '+para['text'][pieces[start].start():pieces[n-1].end()]
     if max(len(t.encode(payload(end))) for t in [fb,modern])>512:raise ValueError('single word/title cannot fit common 512 budget; no silent truncation')
-    while end<len(pieces) and max(len(t.encode(payload(end+1))) for t in [fb,modern])<=512:end+=1
+    lo=end;hi=len(pieces)
+    while lo<hi:
+     mid=(lo+hi+1)//2
+     if max(len(t.encode(payload(mid))) for t in [fb,modern])<=512:lo=mid
+     else:hi=mid-1
+    end=lo
+    assert max(len(t.encode(payload(end))) for t in [fb,modern])<=512
     cid=digest(aid+'|'+str(para['paragraph_id'])+'|'+str(start));text=payload(end)
     chunks.append(dict(chunk_id=cid,article_id=aid,symbol=symbol,record_key=key,paragraph_id=para['paragraph_id'],start=para['start']+pieces[start].start(),end=para['start']+pieces[end-1].end(),text=text,finbert_tokens=len(fb.encode(text)),modern_tokens=len(modern.encode(text))))
     article_chunks.append(cid);start=end

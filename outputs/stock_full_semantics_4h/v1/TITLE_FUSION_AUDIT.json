@@ -1,0 +1,9 @@
+{
+  "status": "PASS_FIT_FREE_ARITHMETIC_REPLAY",
+  "fit_calls": 0,
+  "rows": 9642,
+  "fallback_mismatches": 0,
+  "protocol_sha256": "590c58450fda5adf1e2372b9be1303115f7057fb8315a9c607f3a62d1f88afec",
+  "code_sha256": "e9c36ce3635f9500c94a1593fb6ac7e00192a2a72ab040f0a551b677587e5ce6",
+  "not_an_independent_encoder_replay": true
+}

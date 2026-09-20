@@ -1,0 +1,12 @@
+{
+  "type": "FIT_FREE_PREPARATION_RUNTIME_OPTIMIZATION",
+  "old_code_sha256": "eadf40029941edbca85fd3c8b3d53d1c9830d6d6aa22468680244bff30653faf",
+  "new_code_sha256": "4c3cccd5fcaa3253c2a02bd3d30afd1511f19e5c7806006a018b89f5a7276e2a",
+  "reason": "replace repeated linear prefix tokenization with bounded binary prefix search",
+  "old_preparation_outputs": 0,
+  "encoder_calls_before_change": 0,
+  "semantic_classifier_fits_before_change": 0,
+  "scientific_input_contract_changed": false,
+  "preserved": "initial code in f7fbae1; initial log and empty directory retained",
+  "contract": "all selected paragraph words, same common chunk text, both token lengths <=512; no requirement for maximal chunk endpoint"
+}

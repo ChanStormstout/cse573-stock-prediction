@@ -20,7 +20,12 @@ def blend(base,semantic,gate,w):
  return out
 def main():
  check_sources();d,*_=load();outer=pd.read_csv(PRIVATE/'outer_folds.csv');inner=json.loads((PRIVATE/'inner_folds.json').read_text());dest=NEW/'semantic_training';dest.mkdir(exist_ok=True)
- stamp={'code':sha(__file__),'protocol':sha(PUBLIC/'SEMANTIC_PROTOCOL.json'),'inputs':{name:sha(SRC/(name+'_articles.npz')) for name in ['FINBERT','MODERN']},'source_manifest':sha(PRIVATE/'manifest.json')}
+ base_hashes={}
+ for block in sorted((PRIVATE/'baseline').iterdir()):
+  complete=json.loads((block/'complete.json').read_text())
+  for n,h in complete['artifacts'].items():assert sha(block/n)==h
+  for n in ['FULL_selection_oof_NOT_META_TRAIN.csv','outer_predictions_SEALED.csv','complete.json']:base_hashes[str((block/n).relative_to(PRIVATE))]=sha(block/n)
+ stamp={'base_hashes':base_hashes,'code':sha(__file__),'protocol':sha(PUBLIC/'SEMANTIC_PROTOCOL.json'),'inputs':{name:sha(SRC/(name+'_articles.npz')) for name in ['FINBERT','MODERN']},'source_manifest':sha(PRIVATE/'manifest.json')}
  seal=dest/'seal.json'
  if seal.exists():assert json.loads(seal.read_text())==stamp
  else:dump(seal,stamp)

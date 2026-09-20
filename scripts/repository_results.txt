@@ -669,3 +669,13 @@ outputs/stock_full_semantics_4h/v1/CLASSICAL_METRICS.csv
 outputs/stock_full_semantics_4h/v1/CLASSICAL_PREDICTIONS.csv
 outputs/stock_full_semantics_4h/v1/CLASSICAL_VERIFICATION.json
 outputs/stock_full_semantics_4h/v1/TRAINING_EVIDENCE.json
+outputs/stock_full_semantics_4h/v1/ENVIRONMENT.json
+outputs/stock_full_semantics_4h/v1/PAIRED_INTERVALS.csv
+outputs/stock_full_semantics_4h/v1/PREPARATION_RUNTIME_NOTE.json
+outputs/stock_full_semantics_4h/v1/SEMANTIC_INPUT_AUDIT.json
+outputs/stock_full_semantics_4h/v1/SEMANTIC_INPUT_VERIFICATION.json
+outputs/stock_full_semantics_4h/v1/TITLE_FUSION_AUDIT.json
+outputs/stock_full_semantics_4h/v1/TITLE_FUSION_CONTROL_PROTOCOL.json
+outputs/stock_full_semantics_4h/v1/TITLE_FUSION_METRICS.csv
+outputs/stock_full_semantics_4h/v1/TITLE_FUSION_PREDICTIONS.csv
+outputs/stock_full_semantics_4h/v1/TITLE_FUSION_SELECTIONS.json

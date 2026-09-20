@@ -3353,5 +3353,55 @@
     "path": "outputs/stock_full_semantics_4h/v1/TRAINING_EVIDENCE.json",
     "bytes": 245,
     "sha256": "771f015a01029ce48dbbf161d5f76de0328d32c8d729ff5e19188fd7a2d397a0"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/ENVIRONMENT.json",
+    "bytes": 331,
+    "sha256": "bce34cdeb694a4c59626695c890e9df502212852ce007ecbf8258657bbba31d1"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/PAIRED_INTERVALS.csv",
+    "bytes": 1072,
+    "sha256": "9a9966964cf732fb4f61a5c89d4da2c526970516d7b30f84cfe72b90a42b2ed6"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/PREPARATION_RUNTIME_NOTE.json",
+    "bytes": 713,
+    "sha256": "8217702c4e9007562393b5c411b35aee408d1588a8c6d728a136431d4697753b"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_INPUT_AUDIT.json",
+    "bytes": 526,
+    "sha256": "dcd1e72931c390550542d86280b4ff9654c0cc08a20282befa1fd74923e18092"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_INPUT_VERIFICATION.json",
+    "bytes": 297,
+    "sha256": "5b6eeb3061b765d6275c60619daed2ed1233072f24879c5f5f2ef066d759a368"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/TITLE_FUSION_AUDIT.json",
+    "bytes": 331,
+    "sha256": "f5b93f1f3be8b8d23dddac44fcce394f111d2de9fbd537df89b812290913daa1"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/TITLE_FUSION_CONTROL_PROTOCOL.json",
+    "bytes": 970,
+    "sha256": "590c58450fda5adf1e2372b9be1303115f7057fb8315a9c607f3a62d1f88afec"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/TITLE_FUSION_METRICS.csv",
+    "bytes": 1651,
+    "sha256": "9b3be3cd3e6adc67f2d46cd593c3f7358d10276472cbcbe8b3cb8ff48a86f7b9"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/TITLE_FUSION_PREDICTIONS.csv",
+    "bytes": 930312,
+    "sha256": "e141a36ae2d1f3cf6339db809d3ab25d19d313241f595eae6a03b35f83818837"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/TITLE_FUSION_SELECTIONS.json",
+    "bytes": 82471,
+    "sha256": "88a7a5286427b4405886ca3e7a371c3c9bd5a0462de3fd3db7bb3475e94ea54e"
   }
 ]

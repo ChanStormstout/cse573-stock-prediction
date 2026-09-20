@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "article_pairs": 5226,
+  "chunks": 31059,
+  "source_membership": true,
+  "source_hashes": true,
+  "exact_offsets": true,
+  "complete_paragraph_word_coverage": true,
+  "matched_chunk_budget": true,
+  "fit_calls": 0,
+  "semantic_role_quality": "NOT_INDEPENDENTLY_REVIEWED"
+}
