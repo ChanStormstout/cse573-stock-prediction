@@ -1,0 +1,9 @@
+{
+  "historical_status": "FAIL",
+  "joint_model_fit_count": 0,
+  "passed_check_count": 20,
+  "pre_run_hash_sha256": "2b2bab5cef1617e44b401614df0fd6ef018f748c1d096ca787ebdcf9acccc48d",
+  "repair_checkpoint_sha": "8cde819f3ff86edc1ba37c9d81da0988e0cade5b",
+  "sole_failed_check": "protected_pre_run_hashes_match",
+  "scientific_and_input_checks_passed": true
+}

@@ -1,0 +1,108 @@
+{
+  "branch_counts": {
+    "1d:DNEWS_24H": 6,
+    "1d:DNEWS_OVERNIGHT": 6,
+    "4h": 6
+  },
+  "checks": {
+    "branch_count_18": true,
+    "branch_parameter_mismatches_zero": true,
+    "branch_split_6_6_6": true,
+    "cross_window_dprice_disagreements_zero": true,
+    "daily_exact_two_windows": true,
+    "daily_rows_after_merge_1072": true,
+    "daily_rows_before_merge_1072": true,
+    "daily_unique_stock_day_536": true,
+    "dprice_right_rows_536": true,
+    "dprice_right_unique": true,
+    "expected_4h_prediction_rows_1827": true,
+    "expected_daily_prediction_rows_1248": true,
+    "four_day_metadata_available": true,
+    "four_day_metadata_mismatch_count_zero": true,
+    "four_rows_1607": true,
+    "frozen_configuration_status": true,
+    "joint_metric_files_absent": true,
+    "joint_model_fit_count_zero": true,
+    "joint_prediction_files_absent": true,
+    "missing_dprice_cells_zero": true,
+    "original_pre_run_ledger_matches": true,
+    "private_joint_model_count_zero": true,
+    "required_4h_fields": true,
+    "required_daily_fields": true,
+    "stage_a_v2_pass": true,
+    "stage_b1_v2_pass": true
+  },
+  "expected_prediction_rows_1d": 1248,
+  "expected_prediction_rows_4h": 1827,
+  "input_audit": {
+    "cross_window_dprice_disagreements": 0,
+    "daily_raw_audit": {
+      "activity_feature_count": 0,
+      "latest_prior_close_cutoff_failures": 0,
+      "overnight_target_gap_feature_count": 0,
+      "phase_counts": {
+        "OOF": 258,
+        "development": 84,
+        "later": 124,
+        "warmup": 70
+      },
+      "predictive_features": [
+        "DRET_1",
+        "DRET_2",
+        "DRET_5",
+        "RANGE_1",
+        "RV_5",
+        "MEAN_5",
+        "HISTORY_AGE_HOURS"
+      ],
+      "prior_session_chronology_failures": 0,
+      "prior_session_count_failures": 0,
+      "target_day_feature_count": 0,
+      "target_rows": 536
+    },
+    "daily_rows": 1072,
+    "daily_rows_before_dprice_merge": 1072,
+    "daily_rows_per_stock_day_exactly_two": true,
+    "daily_unique_stock_day": 536,
+    "daily_window_set_exact": true,
+    "dprice_duplicate_stock_day_keys": 0,
+    "dprice_feature_count": 7,
+    "dprice_right_rows": 536,
+    "four_day_metadata_mismatch_count": 0,
+    "four_day_metadata_source": "existing",
+    "four_rows": 1607,
+    "goal60_key_count": 1607,
+    "missing_dprice_cells": 0,
+    "r1_feature_count": 16,
+    "r1_max_feature_parity_error": 0.0,
+    "stage_a_source_audit": {
+      "article_key_parity": "1607/1607",
+      "available_by_cutoff": "1607/1607",
+      "canonical_4h_rows": 1607,
+      "daily_cache_rows": 1072,
+      "daily_raw_rows": 1072,
+      "daily_source_cache_parity": true,
+      "stem_body_parity": "1607/1607"
+    }
+  },
+  "parameter_mismatches": 0,
+  "pre_run_hash_sha256": "2b2bab5cef1617e44b401614df0fd6ef018f748c1d096ca787ebdcf9acccc48d",
+  "private_joint_model_count": 0,
+  "source_counts_1d": {
+    "1d:DNEWS_24H|AAPL|development": 42,
+    "1d:DNEWS_24H|AAPL|later": 62,
+    "1d:DNEWS_24H|AMZN|development": 42,
+    "1d:DNEWS_24H|AMZN|later": 62,
+    "1d:DNEWS_OVERNIGHT|AAPL|development": 42,
+    "1d:DNEWS_OVERNIGHT|AAPL|later": 62,
+    "1d:DNEWS_OVERNIGHT|AMZN|development": 42,
+    "1d:DNEWS_OVERNIGHT|AMZN|later": 62
+  },
+  "source_counts_4h": {
+    "AAPL|development": 126,
+    "AAPL|later": 178,
+    "AMZN|development": 126,
+    "AMZN|later": 179
+  },
+  "status": "PASS"
+}

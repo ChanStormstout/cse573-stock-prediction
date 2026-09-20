@@ -27,7 +27,10 @@ def metric(y,p):
  return {'n':len(y),'accuracy':accuracy_score(y,z),'BA':balanced_accuracy_score(y,z) if both else None,'MCC':matthews_corrcoef(y,z) if both else None,'precision':precision_score(y,z,zero_division=0),'recall':recall_score(y,z,zero_division=0),'F1':f1_score(y,z,zero_division=0),'up_recall':recall_score(y,z,pos_label=1,zero_division=0),'down_recall':recall_score(y,z,pos_label=0,zero_division=0),'pred_up':z.mean(),'true_up':y.mean(),'AUC':roc_auc_score(y,p) if both else None,'Brier':brier_score_loss(y,p),'constant':bool(z.min()==z.max())}
 def load_inputs():
  sys.path.insert(0,str(BASE)); import v10_stage_a2 as a; import v10_stage_b1_final_verify as b
- four,daily,_=a.reconstruct_inputs(); raw,_=b.reconstruct_daily(); four=four.copy();four['horizon_window']='4h';four['phase']=four.split.replace({'oof':'OOF'});four['target_key']=four.symbol.astype(str)+'|'+four.start_utc.astype(str)
+ four,daily,_=a.reconstruct_inputs(); raw,_=b.reconstruct_daily(); four=four.copy()
+ if 'day' not in four.columns:four['day']=four.start_utc.dt.strftime('%Y-%m-%d')
+ assert int((four.day.astype(str)!=four.start_utc.dt.strftime('%Y-%m-%d')).sum())==0
+ four['horizon_window']='4h';four['phase']=four.split.replace({'oof':'OOF'});four['target_key']=four.symbol.astype(str)+'|'+four.start_utc.astype(str)
  daily=daily.copy().rename(columns={'news_window':'horizon_window'});daily['horizon_window']='1d:'+daily.horizon_window.astype(str);daily['phase']=daily.split.replace({'oof':'OOF'});daily['target_key']=daily.symbol.astype(str)+'|'+daily.start_utc.astype(str);price=raw.rename(columns={'stock':'symbol'})
  assert len(daily)==1072 and daily[['symbol','day']].drop_duplicates().shape[0]==536
  required={'1d:DNEWS_OVERNIGHT','1d:DNEWS_24H'}; groups=daily.groupby(['symbol','day'])['horizon_window'].agg(list);assert all(len(x)==2 and set(x)==required for x in groups)

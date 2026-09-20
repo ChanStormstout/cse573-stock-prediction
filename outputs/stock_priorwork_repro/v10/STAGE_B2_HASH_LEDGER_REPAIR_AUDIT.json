@@ -1,0 +1,15 @@
+{
+  "dprice_hash_mismatches": [],
+  "dprice_model_count": 24,
+  "explicit_input_hash_mismatches": [],
+  "new_runtime_artifacts_excluded_from_original_ledger_comparison": true,
+  "news_only_hash_mismatches": [],
+  "news_only_model_count": 576,
+  "original_pre_run_ledger_sha256": "2b2bab5cef1617e44b401614df0fd6ef018f748c1d096ca787ebdcf9acccc48d",
+  "original_protected_tracked_file_count": 160,
+  "protected_tracked_files_expected": 160,
+  "protected_tracked_files_found": 160,
+  "status": "PASS",
+  "tracked_hash_mismatches": [],
+  "tracked_missing_files": []
+}

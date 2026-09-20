@@ -76,6 +76,11 @@ def load_inputs() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     four, daily, source_audit = stage_a.reconstruct_inputs()
     raw_daily, raw_audit = stage_b1.reconstruct_daily()
     four = four.copy()
+    day_source = "existing" if "day" in four.columns else "deterministically_derived"
+    if "day" not in four.columns:
+        four["day"] = four["start_utc"].dt.strftime("%Y-%m-%d")
+    day_mismatches = int((four["day"].astype(str) != four["start_utc"].dt.strftime("%Y-%m-%d")).sum())
+    assert day_mismatches == 0
     four["horizon_window"] = "4h"
     four["phase"] = four["split"].replace({"oof":"OOF"})
     four["target_key"] = four["symbol"].astype(str)+"|"+four["start_utc"].astype(str)
@@ -104,7 +109,8 @@ def load_inputs() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     parity = 0.0
     for col in R1:
         parity = max(parity, float(np.nanmax(np.abs(four[col].to_numpy(float)-canonical[col].to_numpy(float)))))
-    audit = {"four_rows":len(four),"daily_rows_before_dprice_merge":1072,"daily_unique_stock_day":536,
+    audit = {"four_rows":len(four),"four_day_metadata_source":day_source,"four_day_metadata_mismatch_count":day_mismatches,
+             "daily_rows_before_dprice_merge":1072,"daily_unique_stock_day":536,
              "daily_rows_per_stock_day_exactly_two":True,"daily_window_set_exact":True,
              "dprice_right_rows":len(price),"dprice_duplicate_stock_day_keys":int(price[["symbol","day"]].duplicated().sum()),
              "daily_rows":len(daily),"missing_dprice_cells":int(daily[DPRICE].isna().sum().sum()),
@@ -129,9 +135,9 @@ def branch_parameter_mismatches(configuration: dict) -> int:
 
 def preflight(configuration: dict) -> dict:
     existing = json.loads((OUT/"STAGE_B2_PRE_RUN_HASHES.json").read_text())
-    current = protected_hashes()
+    ledger_audit = verify_original_pre_run_ledger(existing)
     four, daily, input_audit = load_inputs()
-    required4 = {"symbol","start_utc","end_utc","cutoff_utc","label","stem_body","has_news","target_key",*R1}
+    required4 = {"symbol","day","start_utc","end_utc","cutoff_utc","label","stem_body","has_news","target_key",*R1}
     required1 = {"symbol","day","start_utc","end_utc","cutoff_utc","label","stem_body","has_news","horizon_window","target_key",*DPRICE}
     sep4 = four[four.phase.isin(["development","later"])]
     sep1 = daily[daily.phase.isin(["development","later"])]
@@ -147,7 +153,7 @@ def preflight(configuration: dict) -> dict:
         "branch_count_18":len(configuration["branches"])==18,
         "branch_split_6_6_6":branch_counts=={"4h":6,"1d:DNEWS_OVERNIGHT":6,"1d:DNEWS_24H":6},
         "branch_parameter_mismatches_zero":branch_parameter_mismatches(configuration)==0,
-        "protected_pre_run_hashes_match":current==existing,
+        "original_pre_run_ledger_matches":ledger_audit["status"]=="PASS",
         "four_rows_1607":len(four)==1607,
         "daily_rows_before_merge_1072":input_audit["daily_rows_before_dprice_merge"]==1072,
         "daily_unique_stock_day_536":input_audit["daily_unique_stock_day"]==536,
@@ -159,15 +165,20 @@ def preflight(configuration: dict) -> dict:
         "cross_window_dprice_disagreements_zero":input_audit["cross_window_dprice_disagreements"]==0,
         "required_4h_fields":required4.issubset(four.columns),
         "required_daily_fields":required1.issubset(daily.columns),
+        "four_day_metadata_available":"day" in four.columns,
+        "four_day_metadata_mismatch_count_zero":input_audit["four_day_metadata_mismatch_count"]==0,
         "expected_4h_prediction_rows_1827":expected4==1827,
         "expected_daily_prediction_rows_1248":expected1==1248,
         "private_joint_model_count_zero":len(list(PRIVATE.glob("*.joblib")))==0,
+        "joint_prediction_files_absent":not (OUT/"JOINT_PREDICTIONS_4H.csv").exists() and not (OUT/"JOINT_PREDICTIONS_1D.csv").exists(),
+        "joint_metric_files_absent":not (OUT/"JOINT_METRICS_4H.csv").exists() and not (OUT/"JOINT_METRICS_1D.csv").exists(),
+        "joint_model_fit_count_zero":len(list(PRIVATE.glob("*.joblib")))==0,
     }
     result={"status":"PASS" if all(checks.values()) else "FAIL","checks":checks,"pre_run_hash_sha256":sha(OUT/"STAGE_B2_PRE_RUN_HASHES.json"),"input_audit":input_audit,
             "branch_counts":branch_counts,"parameter_mismatches":branch_parameter_mismatches(configuration),
             "source_counts_4h":{"|".join(k):int(v) for k,v in source_counts_4h.items()},"source_counts_1d":{"|".join(k):int(v) for k,v in source_counts_1d.items()},
             "expected_prediction_rows_4h":expected4,"expected_prediction_rows_1d":expected1,"private_joint_model_count":len(list(PRIVATE.glob("*.joblib")))}
-    dump(OUT/"STAGE_B2_INPUT_PREFLIGHT.json",result)
+    dump(OUT/"STAGE_B2_INPUT_PREFLIGHT_V2.json",result)
     return result
 
 
@@ -224,6 +235,20 @@ def protected_hashes() -> dict:
     dprice={p.name:sha(p) for p in sorted((WORK/"priorwork_v10/models/dprice").glob("*.joblib"))}
     return {"tracked_files":{x:sha(ROOT/x) for x in files},"news_only_private_models":news,"dprice_private_models":dprice,
             "explicit_inputs":{x:sha(OUT/x) for x in ["STAGE_B2_FROZEN_CONFIGURATION.json","METHOD_SELECTIONS.json","ISSUED_PARAMS_4H.csv","ISSUED_PARAMS_1D.csv","DPRICE_PREDICTIONS.csv","DPRICE_MODEL_MANIFEST.json"]}}
+
+
+def verify_original_pre_run_ledger(existing: dict) -> dict:
+    missing=[path for path in existing["tracked_files"] if not (ROOT/path).exists()]
+    mismatched=[path for path,expected in existing["tracked_files"].items() if (ROOT/path).exists() and sha(ROOT/path)!=expected]
+    news={p.name:sha(p) for p in sorted((WORK/"priorwork_v10/models/news_only").glob("*.joblib"))}
+    dprice={p.name:sha(p) for p in sorted((WORK/"priorwork_v10/models/dprice").glob("*.joblib"))}
+    news_bad=sorted(set(news)^set(existing["news_only_private_models"]))+sorted(name for name in set(news)&set(existing["news_only_private_models"]) if news[name]!=existing["news_only_private_models"][name])
+    dprice_bad=sorted(set(dprice)^set(existing["dprice_private_models"]))+sorted(name for name in set(dprice)&set(existing["dprice_private_models"]) if dprice[name]!=existing["dprice_private_models"][name])
+    explicit_bad=[path for path,expected in existing["explicit_inputs"].items() if not (OUT/path).exists() or sha(OUT/path)!=expected]
+    audit={"original_pre_run_ledger_sha256":sha(OUT/"STAGE_B2_PRE_RUN_HASHES.json"),"original_protected_tracked_file_count":len(existing["tracked_files"]),"protected_tracked_files_expected":len(existing["tracked_files"]),"protected_tracked_files_found":len(existing["tracked_files"])-len(missing),"tracked_hash_mismatches":mismatched,"tracked_missing_files":missing,"news_only_model_count":len(news),"news_only_hash_mismatches":news_bad,"dprice_model_count":len(dprice),"dprice_hash_mismatches":dprice_bad,"explicit_input_hash_mismatches":explicit_bad,"new_runtime_artifacts_excluded_from_original_ledger_comparison":True}
+    audit["status"]="PASS" if audit["original_pre_run_ledger_sha256"]=="2b2bab5cef1617e44b401614df0fd6ef018f748c1d096ca787ebdcf9acccc48d" and not missing and not mismatched and len(news)==576 and not news_bad and len(dprice)==24 and not dprice_bad and not explicit_bad else "FAIL"
+    dump(OUT/"STAGE_B2_HASH_LEDGER_REPAIR_AUDIT.json",audit)
+    return audit
 
 
 def phase_metrics(pred: pd.DataFrame) -> tuple[pd.DataFrame,pd.DataFrame]:
