@@ -51,3 +51,5 @@
 - **stock_temporal**: [README.md](../outputs/stock_temporal/README.md) · [REPORT.md](../outputs/stock_temporal/REPORT.md)
 - **stock_text_regularization**: [README.md](../outputs/stock_text_regularization/README.md)
 - **stock_text_joint_4h**: [README.md](../outputs/stock_text_joint_4h/README.md) · [findings](../outputs/stock_text_joint_4h/v1/FINDINGS.md) · [REPORT.md](../outputs/stock_text_joint_4h/v1/REPORT.md)
+
+- **stock_representation_4h**: [Findings](../outputs/stock_representation_4h/v1/FINDINGS.md) · [Report](../outputs/stock_representation_4h/v1/REPORT.md) · [Protocol](../outputs/stock_representation_4h/v1/protocol.json)

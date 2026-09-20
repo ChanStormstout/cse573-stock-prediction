@@ -1,3 +1,15 @@
+# Latest completed: preprocessing, grouped SVM and aggregation-order study
+
+**COMPLETE / VERIFIED.** [Plain-language findings](../outputs/stock_representation_4h/v1/FINDINGS.md) · [full report](../outputs/stock_representation_4h/v1/REPORT.md) · [handoff](REPRESENTATION_4H_HANDOFF.md).
+
+Same 1,607 four-hour windows; all results remain exposed exploratory historical backtests. Ordinary random mean BA: fixed SVM + PRICE fallback **69.55% / 61.14%**; restore frequency **70.13% / 60.61%**; retain negation **69.59% / 61.36%**; numeric expressions **68.69% / 61.59%**; no stemming **69.09% / 60.35%** (AAPL/AMZN). All preprocessing paired intervals vs SVM include zero; the frequency AAPL gain is driven by one seed.
+
+The separate association-group test is much weaker: SVM **49.23% / 51.17%**, FULL **52.39% / 51.74%**, price-only **55.84% / 51.45%**. AAPL grouped SVM predicts up 97.72% of the time. These results expose sensitivity to splitting and calibration isolation; they do not quantify an exact leakage contribution or invalidate every historical result.
+
+Matched aggregation LR: no semantics **64.99% / 59.51%**; mean-then-map **65.09% / 59.06%**; map-then-mean **65.22% / 59.27%**. The latter fails the frozen follow-up screen because AMZN is worse than the matched no-semantic baseline. No price interactions, TabPFN expansion, LLM continuation or encoder run was started.
+
+Verification: 5,400 saved model containers reloaded, maximum probability error 3.33e-16; 9,000 calibration memberships checked. Actual computation: 9,000 SVM classifiers + 2,400 LR classifiers, plus 9,000 calibrators. All 28,780 protected files unchanged, canonical base probabilities exact and every fitted classifier below its iteration limit. Nine synthetic/unit tests pass; no independent human review is claimed.
+
 # Latest completed: ordered text and joint FinBERT, random protocol
 
 **COMPLETE / VERIFIED.** [Findings](../outputs/stock_text_joint_4h/v1/FINDINGS.md) · [full report](../outputs/stock_text_joint_4h/v1/REPORT.md) · [handoff](TEXT_JOINT_4H_HANDOFF.md).

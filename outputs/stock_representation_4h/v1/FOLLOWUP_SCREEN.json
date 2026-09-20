@@ -1,0 +1,35 @@
+{
+  "status": "DESCRIPTIVE_BUDGET_SCREEN_ONLY",
+  "passes": false,
+  "values": {
+    "AAPL": {
+      "SET_BASE": {
+        "mean_delta_BA": 0.0022998917208062464,
+        "positive_seeds": 2,
+        "mean_delta_Brier": -0.0003569608305607208,
+        "passes": true
+      },
+      "MEAN_THEN_MAP": {
+        "mean_delta_BA": 0.0012889388639013937,
+        "positive_seeds": 2,
+        "mean_delta_Brier": -2.909480522583774e-05,
+        "passes": true
+      }
+    },
+    "AMZN": {
+      "SET_BASE": {
+        "mean_delta_BA": -0.0023460216759186117,
+        "positive_seeds": 2,
+        "mean_delta_Brier": 0.0010571679142500439,
+        "passes": false
+      },
+      "MEAN_THEN_MAP": {
+        "mean_delta_BA": 0.002089941845096477,
+        "positive_seeds": 2,
+        "mean_delta_Brier": -0.00032018974745162687,
+        "passes": true
+      }
+    }
+  },
+  "decision": "Do not expand aggregation to price interactions; no automatic TabPFN or model grid"
+}

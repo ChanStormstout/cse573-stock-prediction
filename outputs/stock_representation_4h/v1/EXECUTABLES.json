@@ -1,0 +1,16 @@
+{
+  "files": {
+    "outputs/stock_representation_4h/check_geometry.py": "5b3447e6d3bec6aa4d5ed6eba6ccb94934cc57e243bea6d44bd6ea67a06eaa22",
+    "outputs/stock_representation_4h/engine.py": "f5bd22d0a6fa146d5784d0da1bd3d8782083063e77a7b3ef204337f7a54e7201",
+    "outputs/stock_representation_4h/feature_diagnostics.py": "89d3c6c77407374bb1d2e242d5202885d4d2fd74564f5b6a11b670d72d114cff",
+    "outputs/stock_representation_4h/final_audit.py": "3c01c5ae5a6dda5d44a7efa9d09ef6ce0201274f4e0e5f404d3d158112324e73",
+    "outputs/stock_representation_4h/prepare.py": "ea827fb4f50b76c922039fc131c7fe595c1e30e9acac3aaccfaae3626ce719e1",
+    "outputs/stock_representation_4h/report.py": "b14655e28f440b2f6ffeadaf308cfd7a4dc0da7252f451612931d4cad5f276f1",
+    "outputs/stock_representation_4h/run.py": "83ae3b369f9021de09f1d0b06eec36cc867753ef8853f2a1154c74a7747ef53d",
+    "outputs/stock_representation_4h/test_contracts.py": "2dab9269ef435f7b4551ac090b959e2fb28e7e916c8d169d3c1b83590bf7bb46",
+    "outputs/stock_representation_4h/verify.py": "dee5a3d084351e8684a22b543c523b7bb2a57f676b02ca0f4b74055a96737a74",
+    "outputs/stock_representation_4h/verify_inputs.py": "8ffd7f2bd0b55aa460d1bd625f353406fa721c670b0c9f21bb52652100d26c08"
+  },
+  "training_seal": "b16792eb9fea563c91e63131059d732009a1d563a4053c2d13194ae108466d86",
+  "note": "Final source fingerprints; predictive engine/run/prepare remain identical to the pre-fit seal. Only diagnostics, tests and reporting were supplemented after execution; no predictive change."
+}

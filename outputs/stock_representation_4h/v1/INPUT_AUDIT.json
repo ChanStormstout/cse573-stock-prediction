@@ -1,0 +1,31 @@
+{
+  "status": "PASS_FIT_FREE",
+  "rows": 1607,
+  "articles": 5078,
+  "chunks": 31059,
+  "original_text_exact_parity_rows": 1607,
+  "random_blocks": 60,
+  "grouped_blocks": 60,
+  "group_calibration_feasibility": "PASS",
+  "max_chunk_reaggregation_error": 3.1086244689504383e-15,
+  "protected_files": 28780,
+  "protected_sha": "a740c4e7c8230d37128c973500a494904ed00974dd1e74256f66bdf158d3cd60",
+  "seal_sha": "b16792eb9fea563c91e63131059d732009a1d563a4053c2d13194ae108466d86",
+  "fits": 0,
+  "coverage": {
+    "AAPL": {
+      "rows": 803,
+      "no_news": 6
+    },
+    "AMZN": {
+      "rows": 804,
+      "no_news": 389
+    }
+  },
+  "document_changes": {
+    "FREQUENCY": 1208,
+    "NEGATION": 1027,
+    "NUMERIC": 1204,
+    "NO_STEM": 1212
+  }
+}

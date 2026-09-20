@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "articles_reread": 5078,
+  "rows_reconstructed": 1607,
+  "variant_row_checks": 8035,
+  "tokens": {
+    "CONTROL": 906214,
+    "FREQUENCY": 3976068,
+    "NEGATION": 908109,
+    "NUMERIC": 1211827,
+    "NO_STEM": 1066231
+  },
+  "fit_calls": 0
+}

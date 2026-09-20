@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "historical_files_unchanged": 28780,
+  "classifier_convergence_checked": 11400,
+  "max_iterations": 46,
+  "prior_probability_parity": [
+    {
+      "stage": "preprocess",
+      "blocks": 60,
+      "base_probabilities_exact": true
+    },
+    {
+      "stage": "grouped",
+      "blocks": 60,
+      "base_probabilities_exact": true
+    },
+    {
+      "stage": "aggregation",
+      "blocks": 60,
+      "base_probabilities_exact": true
+    }
+  ],
+  "LLM_rows": 1972,
+  "LLM_unchanged": true,
+  "fit_calls": 0,
+  "source_seal_pass": true
+}

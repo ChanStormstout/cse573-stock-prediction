@@ -1,0 +1,95 @@
+{
+  "reference_sha": "c8d4d8f73fa6d60cc03030aeddbbbb1dfb7519f6",
+  "status": "FROZEN_BEFORE_FITS",
+  "interpretation": "EXPOSED EXPLORATORY RANDOM HISTORICAL BACKTEST",
+  "rows": 1607,
+  "seeds": [
+    573,
+    574,
+    575
+  ],
+  "C": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "threshold": 0.5,
+  "preprocessing": {
+    "methods": [
+      "FREQUENCY",
+      "NEGATION",
+      "NUMERIC",
+      "NO_STEM"
+    ],
+    "control": "saved old TF-IDF calibrated SVM + matched PRICE fallback",
+    "cleaning": "exact historical body cleaning and alphabetic word extraction; same title and article membership",
+    "FREQUENCY": "keep repeated occurrences rather than sorted unique tokens only",
+    "NEGATION": "remove only no/not/nor from stoplist",
+    "NUMERIC": "add unique namespaced numeric expressions; historical alphabetic extraction unchanged",
+    "NO_STEM": "disable stemming only",
+    "selection": "text-only inner mean BA descending, Brier ascending, smaller C, matching historical SVM",
+    "calibration": "same 3 shuffled stratified folds, independently refit TFIDF and classifier per calibration fold",
+    "vocabulary": "min_df3 max5000 sublinearTF L2; unigram only",
+    "fallback": "same saved PRICE on every no-news window"
+  },
+  "grouped": {
+    "method": "same fixed CONTROL SVM, original association-group outer and inner partitions",
+    "calibration": "three StratifiedGroupKFold splits within each current fit; same group cannot cross calibration boundary",
+    "selection": "same text-only inner BA/Brier/C rule",
+    "interpretation": "association components not certified event IDs; separate robustness test, not a replacement main score"
+  },
+  "aggregation": {
+    "methods": [
+      "SET_BASE",
+      "MEAN_LINEAR",
+      "MEAN_THEN_MAP",
+      "MAP_THEN_MEAN"
+    ],
+    "base": "TFIDF original stem_body max5000 plus train-standardized OLD16 divided by sqrt(16); L2 logistic regression",
+    "semantic_weight": 1.0,
+    "candidate_C": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "mean_linear_dimensions": 768,
+    "RFF_dimensions": 256,
+    "RFF_seed": 573,
+    "kernel": "Gaussian random Fourier features, exp(-squared_distance/(2*sigma^2))",
+    "geometry": "standardize unique training chunks only; sigma median positive pair distance of seed573 permutation of up to1024 unique train chunks",
+    "chunk_weights": "existing token-count weights within each article; equal evidence articles within window",
+    "normalization": "L2 window semantic vector; same for all representations; zero if no evidence",
+    "same_mapping_for_before_after": true,
+    "fit_scope": "vocabulary, scaler, distance bandwidth fit separately within each training partition",
+    "selection": "fallback-applied inner mean BA descending, Brier ascending, smaller C",
+    "fallback": "exact saved PRICE when no news; news without evidence retains trained joint classifier with zero semantic block",
+    "no_new_encoder": true,
+    "no_PCA": true,
+    "comparison": "same LR and same word/price block; compare to FULL and fixed old calibrated SVM as external controls"
+  },
+  "followup": {
+    "interactions": "deferred unless MAP_THEN_MEAN improves both-stock three-seed mean BA vs SET_BASE and MEAN_THEN_MAP, improves at least2seeds perstock, Brier harm <=.002 each stock; descriptive budget screen not independent significance",
+    "TabPFN": "later conditional proposal only; not auto-run",
+    "LLM": "remain paused; no continuation",
+    "no_best_seed_or_stock_winner": true
+  },
+  "reporting": {
+    "metrics": [
+      "BA",
+      "MCC",
+      "Brier",
+      "predicted_up",
+      "constant"
+    ],
+    "paired_intervals": "1000 common-day and 5-day-block paired bootstrap; shared weights across seeds; descriptive",
+    "cases": "seed573 hash-first2 per stock/method corrected, harmed, shared wrong, shared right; no causal claim",
+    "verification": "all saved model containers reloaded without fit; inner selection recomputed; calibration membership and fallbacks; raw reconstruction; preservation"
+  },
+  "budget": {
+    "preprocess_top_level_fits": 2400,
+    "preprocess_svm_internal_classifiers": 7200,
+    "grouped_top_level_fits": 600,
+    "grouped_svm_internal_classifiers": 1800,
+    "aggregation_LR_fits": 2400
+  }
+}

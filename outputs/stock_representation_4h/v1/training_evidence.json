@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "top_level_fit_calls": 5400,
+  "SVM_internal_classifier_fits": 9000,
+  "sigmoid_calibrators": 9000,
+  "LR_fits": 2400,
+  "fit_seconds": 1491.2011481826776,
+  "device": "CPU",
+  "threads": 2,
+  "encoder_training": false,
+  "encoder_inference": false,
+  "LLM_continued": false,
+  "counts": {
+    "aggregation": 2400,
+    "grouped": 600,
+    "preprocess": 2400
+  }
+}

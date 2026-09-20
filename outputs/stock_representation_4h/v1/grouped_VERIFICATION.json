@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "blocks": 60,
+  "rows": 4821,
+  "reloaded_models": 600,
+  "max_probability_error": 0.0,
+  "calibration_memberships_checked": 1800,
+  "inner_metrics_recomputed": true,
+  "selection_reconstructed": true,
+  "exact_PRICE_fallback": true,
+  "fit_calls": 0
+}

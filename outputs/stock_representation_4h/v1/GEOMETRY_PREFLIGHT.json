@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "partitions": 240,
+  "min_sigma": 37.50180283286951,
+  "min_positive_distances": 1023,
+  "model_fits": 0
+}
