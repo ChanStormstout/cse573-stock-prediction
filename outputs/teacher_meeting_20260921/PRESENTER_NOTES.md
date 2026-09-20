@@ -1,6 +1,6 @@
 # Faculty meeting notes
 
-Suggested length: 10–12 minutes, with slides 15–17 held for questions.
+Suggested length: 10–12 minutes, with slides 16–18 held for questions.
 
 ## Slide 1: News context for stock prediction
 
@@ -55,18 +55,22 @@ Chronological proposal: inside each outer fold fit or adapt the reader only on e
 
 Proposed matched ablations only; none is executed during deck creation. Keep canonical windows, F2 offset, data cutoffs, shared predictor capacity and selection budget fixed. K1 checks extra history/availability. K2 uses current-article facts without pair relations. K3 adds verified pair changes with matched count/age features. Report monthly BA/MCC/Brier, 1- and 5-day block paired intervals, coverage and changed/repaired/introduced errors. Require improvement on each stock across multiple training months with a Brier guardrail before selecting a candidate. Do not choose the method using exposed later-period results.
 
-## Slide 14: Monday discussion and the next decision
+## Slide 14: Evaluation target: the new pipeline has not yet run
+
+This slide states the user's desired research goal, not a forecast, empirical result, confidence interval, or registered promotion gate. No statistical basis supports forecasting 60% BA for the proposed method. The complete relative-news-change plus fixed price/FinBERT correction has not run. Keep actual results as NOT RUN. Existing extraction F1 and historical FinBERT BA cannot substitute for this result. Any future experiment needs the authorized preregistration and chronological matched evaluation. This presentation does not change an experimental protocol or authorize a paused lane.
+
+## Slide 15: Monday discussion and the next decision
 
 The review pack is a prerequisite, not a completed semantic validation. No independent entity review has passed yet. The broader 66-company external-data lane remains separate from the AAPL/AMZN course task and has no predictive result. This meeting can agree on a narrow contribution and data scope. Ask whether to prioritize a careful negative result plus clear mechanism test over a broad new model search. Sources: https://github.com/ChanStormstout/cse573-stock-prediction/blob/652b1999407a2e248064d61e8758cd68050dcf89/outputs/stock_ecni_e1rv2_gpt_review/GPT_REVIEW_README.md and https://github.com/ChanStormstout/cse573-stock-prediction/blob/652b1999407a2e248064d61e8758cd68050dcf89/docs/CURRENT_STATUS.md.
 
-## Slide 15: Appendix: price + FinBERT across periods
+## Slide 16: Appendix: price + FinBERT across periods
 
 Saved canonical F2 values, no retraining. Brier is mean squared probability error; lower is better. A constant 0.5 forecast has Brier 0.25. BA=50% is a chance benchmark, not a proof of statistical significance. Source: https://github.com/ChanStormstout/cse573-stock-prediction/blob/652b1999407a2e248064d61e8758cd68050dcf89/outputs/stock_finbert_event_adapter_4h/v1/REPORT.md.
 
-## Slide 16: Appendix: what the evaluation supports
+## Slide 17: Appendix: what the evaluation supports
 
 Use precise, respectful language in the meeting. Distinguish confirmed implementation leakage, repeated development-set exposure, different evaluation protocols and uncertain pretraining overlap. Source: https://github.com/ChanStormstout/cse573-stock-prediction/blob/652b1999407a2e248064d61e8758cd68050dcf89/docs/METHOD_VALIDITY_AUDIT.md; https://github.com/ChanStormstout/cse573-stock-prediction/blob/652b1999407a2e248064d61e8758cd68050dcf89/docs/EXPERIMENT_CORRECTIONS.md; https://github.com/ChanStormstout/cse573-stock-prediction/blob/652b1999407a2e248064d61e8758cd68050dcf89/outputs/stock_priorwork_repro/v10/CLASSICAL_LANE_FINAL_SUMMARY.md. We have not conducted an independent paper-wide leakage audit for this deck.
 
-## Slide 17: Appendix: sources and method status
+## Slide 18: Appendix: sources and method status
 
 References: https://arxiv.org/abs/1908.10063; https://arxiv.org/abs/2410.10614. Project source checkpoint: 652b1999407a2e248064d61e8758cd68050dcf89. Exact evidence links appear in notes on each result slide. No paper's benchmark gains are transferred to this project. No model training, data acquisition, entity labeling or reader calls took place in making these slides.

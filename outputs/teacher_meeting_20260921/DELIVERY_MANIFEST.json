@@ -2,13 +2,13 @@
   "task": "faculty meeting slides",
   "date": "2026-09-21",
   "source_checkpoint": "652b1999407a2e248064d61e8758cd68050dcf89",
-  "local_pptx": "CSE573_News_Context_Faculty_Meeting_v8.pptx",
-  "sha256": "32797e002a8948227aedfefe874b439657a691f1fc0a9ae4c3a36dbc911d2dc2",
-  "slides": 17,
-  "main_slides": 14,
+  "local_pptx": "CSE573_News_Context_Faculty_Meeting_v9.pptx",
+  "sha256": "f2bbf4b1de5080fa1242a556ad8ef93ab77457ba728514c50ed2603892008c45",
+  "slides": 18,
+  "main_slides": 15,
   "appendix_slides": 3,
   "status": "PROPOSED_METHOD_WITH_SAVED_HISTORICAL_EVIDENCE",
   "new_model_runs": 0,
   "template_sha256": "2ae8105571f68403f438458cd51e6ad14f0d989c7af64239e280437a4ac2a633",
-  "visual_revision": "v8: observations before hypothesis; remove arbitrary backgrounds; define terms; add verified provisional extraction evidence and examples"
+  "visual_revision": "v9: explicit research-target page; measured new-pipeline results remain NOT RUN"
 }

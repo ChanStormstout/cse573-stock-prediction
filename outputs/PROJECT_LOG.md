@@ -2,11 +2,13 @@
 
 ## 2026-09-20 — Faculty presentation and proposed news-context correction
 
+Added an explicitly aspirational evaluation-target page (both stocks BA at least 60%); measured new-pipeline results remain NOT RUN. No protocol/gate changed or new experiment executed.
+
 Logic revision: parallel observations now lead to a separately labeled hypothesis. Added plain-language definitions, an observed extraction case and the saved provisional full-fact comparison (adapted FinBERT 79.17% F1; not stock BA). Existing stock scores and all evaluation caveats remain. Removed arbitrary background emphasis from parallel text layouts. No new training or research-lane execution.
 
 Readability revision: navy headings, selective pale backgrounds and teal emphasis distinguish the proposed information increment; historical numbers and experiment status are unchanged.
 
-Prepared a 17-slide English faculty meeting deck using the requested Simple Light Mode template. Descriptive method names explain price + FinBERT, evidence-linked company facts and a proposed relative-news-change correction. Saved historical scores remain explicitly exploratory; the proposed correction has no new result. The target-price example is labeled illustrative. No models, data, labels or gates changed; no paused lane resumed. Independent entity review remains pending.
+Prepared an 18-slide English faculty meeting deck using the requested Simple Light Mode template. Descriptive method names explain price + FinBERT, evidence-linked company facts and a proposed relative-news-change correction. Saved historical scores remain explicitly exploratory; the proposed correction has no new result. The target-price example is labeled illustrative. No models, data, labels or gates changed; no paused lane resumed. Independent entity review remains pending.
 
 Review entrypoint: [meeting overview](teacher_meeting_20260921/README.md), with speaker notes, sources and the bounded method proposal. The editable PPTX is local under the existing binary exclusion policy; text materials and authoring source are published.
 
