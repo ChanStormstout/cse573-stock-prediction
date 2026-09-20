@@ -1,5 +1,9 @@
 # Current status
 
+## 2026-09-20 — Random-protocol core comparison prepared
+
+Owner-authorized separate course-data lane: [protocol](../outputs/stock_random_protocol_4h/PROTOCOL.md). Fit-free source and split audit PASS: 1,607 rows, 60 outer stock/seed/fold blocks, 180 inner splits, 203 dependence components. No new predictive result at preregistration. External ECNI review remains pending.
+
 ## 2026-09-20 — Faculty presentation and proposed news-context correction
 
 Added an explicitly aspirational evaluation-target page (both stocks BA at least 60%); measured new-pipeline results remain NOT RUN. No protocol/gate changed or new experiment executed.

@@ -1629,3 +1629,14 @@ verified September-onward parameters. `STAGE_B1_FINAL_AUDIT_V2.json` is PASS.
 **Observed packaging evidence:** The source sample SHA-256 is `41a906f9822b52539f76cb61636954b7c9ff4e996e7bb472984a08712e8a9654`; 515/515 cards mapped successfully and have valid HTTP(S) URLs. There are 509 unique URLs; six URL values occur twice. Each of the five batches has 103 rows and together they exactly partition the 515 IDs.
 
 **Boundary and verification:** The fit-free verifier passes 21/21 checks. Public row schemas contain no title, body, evidence excerpt, relinker answer, sample role, risk flag, gate result, or prefilled semantic label. Codex generated zero labels and accessed zero returns or outcomes. The current status remains awaiting independent semantic review; no entity rules, panel, model, or predictive experiment changed.
+
+## 2026-09-20 — Random-protocol study preregistration and fit-free preparation
+
+Owner authorized the staged random-split comparison and full news-context pipeline.
+Registered five core structures and nested 10x3-fold selection across seeds 573–575
+before any new estimator fit. Reused only frozen article vectors with corrected
+Modern v2 pooling; previous probabilities and supervised reader gates excluded.
+Source audit binds 1,607 canonical rows and time cutoffs. There are 203 dependence
+components (largest 245), motivating grouped sensitivity. Six synthetic contract
+tests pass. No new predictive results yet; existing historical and external lanes
+remain unchanged. See outputs/stock_random_protocol_4h/PROTOCOL.md.

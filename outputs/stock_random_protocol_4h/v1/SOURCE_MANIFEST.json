@@ -1,0 +1,19 @@
+{
+  "sources": {
+    "rows": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b",
+    "finbert": "f0f56bda8ee8476fa79523a0855e1e2b556c54e53508123e39de9e88e537c74b",
+    "modern": "5831da669c003fd80acaa9ee3faa913ce7edf73261aff91563e83e9143d7cef3",
+    "modern_evidence": "2c1b1f6495d201b7a28018ccae677a582975e46f4a9af32be77e6fe1267dc2c9",
+    "titles": "d010876750a8fe47d5c7c69bdbf0c2f123e91465ec0f38677103ccfa1387aa79",
+    "raw_index": "089b883f26b6b91f7d76ad5e785feb53313bf394ffce5e9bd6c416d661b950da",
+    "canonical": "51b2c8bc3314fc754fb299e28b7685f2b3e335d01e4bc8ead92dc14c2953d562",
+    "canonical_manifest": "151e57044fa80950748c6739a1337cc538338f783751bf7ebed670b8792dc023",
+    "price_audit": "0ce537aa2b2865e9fc2e5309b9bebe255bc36313b80bbad112a563bafb1c2aac",
+    "protocol": "3261d1dae74d6818a76bb04f545fc392f4555f7a5621b92e7567f769b7587c7e"
+  },
+  "private_artifacts": {
+    "outer_folds.csv": "c3a339f705f3012cd4449c6ccc396f6a278feaca5a868e2a0841d1175d16fbe1",
+    "inner_folds.json": "da956eb4e63d71ab8109c442f1a8adda2b39575e797d034046230e108fbbb295",
+    "groups.csv": "65e8ff4f9b45a85fb12ed3d90be230110b8e68a3fbe47134acc0c42824defe6e"
+  }
+}

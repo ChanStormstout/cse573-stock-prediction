@@ -647,3 +647,5 @@ outputs/teacher_meeting_20260921/METHOD_PROPOSAL.md
 outputs/teacher_meeting_20260921/PRESENTER_NOTES.md
 outputs/teacher_meeting_20260921/DELIVERY_MANIFEST.json
 outputs/teacher_meeting_20260921/build_slides.mjs
+outputs/stock_random_protocol_4h/v1/INPUT_AUDIT.json
+outputs/stock_random_protocol_4h/v1/SOURCE_MANIFEST.json

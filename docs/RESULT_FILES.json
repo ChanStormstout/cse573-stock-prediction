@@ -3243,5 +3243,15 @@
     "path": "outputs/teacher_meeting_20260921/build_slides.mjs",
     "bytes": 27428,
     "sha256": "f160a5615afb19c59ef1add9446bc86423b2decc083d30c6c683af76a7310a9f"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/INPUT_AUDIT.json",
+    "bytes": 668,
+    "sha256": "b96d1cf2bbdd1d027eabecab69d1584d67831d485508202f571d2114da23dde5"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/SOURCE_MANIFEST.json",
+    "bytes": 1173,
+    "sha256": "5d74f2c446053bf1a3a47f01af51833ccd240a5ba8500b18c153a8b51d580223"
   }
 ]

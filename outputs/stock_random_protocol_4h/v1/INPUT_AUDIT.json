@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "rows": 1607,
+  "stocks": {
+    "AAPL": 803,
+    "AMZN": 804
+  },
+  "folds": 60,
+  "inner_splits": 180,
+  "estimator_fits": 0,
+  "same_day_shared_and_near_duplicate_components": 203,
+  "largest_component": 245,
+  "near_duplicate_links": 480,
+  "grouping_class_group_counts": {
+    "('AAPL', 0)": 144,
+    "('AAPL', 1)": 162,
+    "('AMZN', 0)": 147,
+    "('AMZN', 1)": 155
+  },
+  "grouped_max_feasible_folds": 10,
+  "features": {
+    "PRICE": 36,
+    "other_joint_price": 16,
+    "PCA": 16
+  },
+  "no_saved_probabilities_imported": true,
+  "modern_pooling": "corrected_v2_special_token_excluded_mean",
+  "external_entity_lane_untouched": true
+}
