@@ -1,6 +1,6 @@
 {
-  "status": "PARTIAL_PENDING_OTHER_ENCODER",
-  "fits": 600,
-  "selected_models": 60,
+  "status": "COMPLETE_PENDING_VERIFICATION",
+  "fits": 1200,
+  "selected_models": 120,
   "learned_meta_coefficients": 0
 }

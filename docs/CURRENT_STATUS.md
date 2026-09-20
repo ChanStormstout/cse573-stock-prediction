@@ -1,3 +1,7 @@
+## 2026-09-20 — FULL semantic extension complete and verified
+
+[Report](../outputs/stock_full_semantics_4h/v1/REPORT.md) · [Handoff](FULL_SEMANTICS_4H_HANDOFF.md). Three-seed random testing: FULL BA AAPL/AMZN **67.57%/60.28%**; TF-IDF SVM **69.49%/60.12%**; FULL + FinBERT body **67.19%/59.75%**; FULL + Modern body **67.51%/59.78%**. Body Brier improves, but neither body variant raises mean direction BA on either stock. No claimed stable future-period improvement. All 300 new selected models passed reload verification; body max probability error 4.44e-16 and zero no-evidence fallback mismatches. Original LLM remains paused at 1,972 outputs; no attention/LoRA or external lane was started. Historical in-progress entries below are superseded by this completed snapshot.
+
 ## 2026-09-20 — Traditional randomized extension verified; full paragraphs running
 
 [Current handoff](FULL_SEMANTICS_4H_HANDOFF.md). TF-IDF LR/SVM/RF comparisons completed and independently replayed. Target-paragraph input verification passed; FinBERT encoding and 600 downstream fits are complete, awaiting full verification. Modern encoding is in progress. Original Qwen inference remains paused at 1,972 outputs; no partial-window LLM score is reported. All random outer periods are exposed.

@@ -1,0 +1,72 @@
+[
+  {
+    "encoder": "FINBERT",
+    "symbol": "AAPL",
+    "coverage": 0.9925280199252802,
+    "mean_abs_base_probability_minus_half": 0.2552293123289623,
+    "mean_abs_new_probability_minus_half": 0.22141783162596382,
+    "weight_counts": {
+      "0.0": 18,
+      "0.25": 8,
+      "0.5": 4
+    },
+    "selected_C_counts": {
+      "0.01": 26,
+      "0.1": 1,
+      "1.0": 3
+    }
+  },
+  {
+    "encoder": "FINBERT",
+    "symbol": "AMZN",
+    "coverage": 0.5124378109452736,
+    "mean_abs_base_probability_minus_half": 0.18835714064586642,
+    "mean_abs_new_probability_minus_half": 0.1522171316110796,
+    "weight_counts": {
+      "0.0": 10,
+      "0.25": 9,
+      "0.5": 10,
+      "0.75": 1
+    },
+    "selected_C_counts": {
+      "0.01": 19,
+      "0.1": 8,
+      "1.0": 3
+    }
+  },
+  {
+    "encoder": "MODERN",
+    "symbol": "AAPL",
+    "coverage": 0.9925280199252802,
+    "mean_abs_base_probability_minus_half": 0.2552293123289623,
+    "mean_abs_new_probability_minus_half": 0.21674188365380945,
+    "weight_counts": {
+      "0.0": 16,
+      "0.25": 8,
+      "0.5": 6
+    },
+    "selected_C_counts": {
+      "0.01": 21,
+      "0.1": 6,
+      "1.0": 3
+    }
+  },
+  {
+    "encoder": "MODERN",
+    "symbol": "AMZN",
+    "coverage": 0.5124378109452736,
+    "mean_abs_base_probability_minus_half": 0.18835714064586642,
+    "mean_abs_new_probability_minus_half": 0.14757653074637078,
+    "weight_counts": {
+      "0.0": 7,
+      "0.25": 11,
+      "0.5": 10,
+      "0.75": 2
+    },
+    "selected_C_counts": {
+      "0.01": 17,
+      "0.1": 9,
+      "1.0": 4
+    }
+  }
+]

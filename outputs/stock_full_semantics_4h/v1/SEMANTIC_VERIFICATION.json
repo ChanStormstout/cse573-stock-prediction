@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "fit_calls": 0,
+  "embedding_aggregation_errors": {
+    "FINBERT": 0.0,
+    "MODERN": 0.0
+  },
+  "models": 120,
+  "actual_fit_count_reconstructed": 1200,
+  "rows": 9642,
+  "max_probability_error": 4.440892098500626e-16,
+  "no_evidence_fallback_mismatches": 0,
+  "checks": [
+    "source hashes",
+    "code and protocol seal",
+    "model/artifact hashes",
+    "labels and row keys",
+    "canonical outer-fold membership",
+    "canonical FULL probability parity",
+    "disjoint training",
+    "training-only PCA membership",
+    "inner C and weight reconstruction",
+    "direct sigmoid and fusion replay",
+    "exact no-evidence fallback"
+  ]
+}

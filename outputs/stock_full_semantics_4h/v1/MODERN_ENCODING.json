@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "chunks": 31059,
+  "article_target_pairs": 5226,
+  "device": "mps",
+  "seconds": 1395.3693044580286,
+  "encoder_training": false,
+  "trainable_parameters": 0,
+  "gradients_present": false,
+  "output_sha256": "aa67acf37920c186043edb552d91905636e88d9427a83459c2c208ceb92f56b8",
+  "seal": {
+    "code": "45668d8d1d53c12c66066a397a78ae0e3874abc67e36f32197ccbd98ef5d06f6",
+    "input": "fc8f974f75385accdfb9fe537186e6b802d08b7640822ff0a097379c09ac1f4c",
+    "protocol": "f839cb2e67b22c1ed6207cc5b9f30f781f2934ebfd92a8d0066529d2d413abb3",
+    "encoder": "MODERN",
+    "binary_hashes": {
+      "model.safetensors": "8c715fd0b59dda90762df8187a3266d4f02fc05d1c02cce18e296c86da912b65",
+      "tokenizer_config.json": "1553b789dd2193c4894ea9f1c6009771fc1e7e83e6387d0ace1bec90c5ba576f",
+      "special_tokens_map.json": "ea97ecdbcc73713039d8d64dbb05e3689495c96657fbd9a18f5bed381be81049",
+      "config.json": "ff7d067de8cce5e583ca904b45e7b86ab1c184988c973b6a4670f3c7412fb3e0",
+      "tokenizer.json": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30",
+      "train_results.json": "f1cb13fda85a6fffd6d67253dd8b3a19f7ab85337e97d8d98ad3f077fd6d4632",
+      "README.md": "45c13b700308fe60c92cf9055cdfd81fe0874c1b605047de43e40b0e13ce9abf",
+      "eval_results.json": "33770c83246048d860a98079c51eb09c3f5af99a6bf876f6f9b7ccac948e52e9",
+      "all_results.json": "759dcede9e59b84010981b8271af841de9a69e83e3fcb2101c769a71db49013c",
+      "trainer_state.json": "19a35fab5740d98d830defcc058c1964873eb75009f4223e2c6106b1de5e6615"
+    },
+    "dtype": "float32",
+    "batch": 8
+  }
+}

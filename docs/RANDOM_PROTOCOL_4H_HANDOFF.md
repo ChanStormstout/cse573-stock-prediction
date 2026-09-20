@@ -1,3 +1,7 @@
+## Subsequent finite extension completed
+
+See [FULL semantics handoff](FULL_SEMANTICS_4H_HANDOFF.md). The owner-directed traditional and paragraph-semantic comparisons are complete and verified. This original LLM lane remains paused at 1,972 outputs; the original automatic continuation must not resume. Earlier sealed-score and active-process entries below are historical.
+
 # 2026-09-20 update: owner-directed pause and FULL semantic extension
 
 Original LLM inference and continuation are suspended after 1,972 saved responses; see outputs/stock_random_protocol_4h/v1/PAUSE_AUDIT.json. Preserve process memory and output hashes; do not restart the automatic chain. Side chat has exposed ordinary and grouped random outer scores. Earlier sealed-score statements below describe historical state only and are superseded for current use. All subsequent same-split work is exploratory random backtesting. New isolated finite traditional comparisons and target-paragraph semantic extensions are authorized; old frozen protocol remains unchanged.

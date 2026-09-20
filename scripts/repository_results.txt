@@ -683,3 +683,9 @@ outputs/stock_full_semantics_4h/v1/ARRAY_LOADING_RUNTIME_NOTE.json
 outputs/stock_full_semantics_4h/v1/FINBERT_ENCODING.json
 outputs/stock_full_semantics_4h/v1/SEMANTIC_PREFLIGHT.json
 outputs/stock_full_semantics_4h/v1/SEMANTIC_TRAINING.json
+outputs/stock_full_semantics_4h/v1/FUSION_DIAGNOSTIC.json
+outputs/stock_full_semantics_4h/v1/MODERN_ENCODING.json
+outputs/stock_full_semantics_4h/v1/SEMANTIC_METRICS.csv
+outputs/stock_full_semantics_4h/v1/SEMANTIC_PREDICTIONS.csv
+outputs/stock_full_semantics_4h/v1/SEMANTIC_SELECTIONS.csv
+outputs/stock_full_semantics_4h/v1/SEMANTIC_VERIFICATION.json

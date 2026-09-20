@@ -3361,8 +3361,8 @@
   },
   {
     "path": "outputs/stock_full_semantics_4h/v1/PAIRED_INTERVALS.csv",
-    "bytes": 1072,
-    "sha256": "9a9966964cf732fb4f61a5c89d4da2c526970516d7b30f84cfe72b90a42b2ed6"
+    "bytes": 1791,
+    "sha256": "8d113ddbe654065f28514b27fd1f0cbbd52f1cbc4714644977b000976e3490d3"
   },
   {
     "path": "outputs/stock_full_semantics_4h/v1/PREPARATION_RUNTIME_NOTE.json",
@@ -3421,7 +3421,37 @@
   },
   {
     "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_TRAINING.json",
-    "bytes": 122,
-    "sha256": "391c102acf1286ef1ce406c357e67fe884a51359bcea8421670000eea0233751"
+    "bytes": 124,
+    "sha256": "8c45602d5f9ab730558ad876a89d3a12228d40175126e1753e24beecad0890f5"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/FUSION_DIAGNOSTIC.json",
+    "bytes": 1566,
+    "sha256": "ac99503d9a39749a278f44b0a47f359e19629510ca53d53a9956a40d2527eef5"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/MODERN_ENCODING.json",
+    "bytes": 1604,
+    "sha256": "3e083ba5a9ed253bb3ebfe23fa7daceac87609e7b567443eca52b6fdbdb7fbe5"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_METRICS.csv",
+    "bytes": 2365,
+    "sha256": "d032a62a5309d2ddf8418555f65d6dba55ca43f8ca27e92797b0f9e2664a5bc0"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_PREDICTIONS.csv",
+    "bytes": 1172559,
+    "sha256": "9bdb15fa583d3ca1818351891b6f63f2b734b5933adc5401b4262d4f4c5c4f76"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_SELECTIONS.csv",
+    "bytes": 4321,
+    "sha256": "883a6a371ec2c93d14ebd0c8862dd0fc0229748ed5f1c0db20976e5a322aed91"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_VERIFICATION.json",
+    "bytes": 666,
+    "sha256": "a5912a501a3ad43d91cf84fa566d8b14e9727554f2ea27735cdcde2bf42f4eda"
   }
 ]
