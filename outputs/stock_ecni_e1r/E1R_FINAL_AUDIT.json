@@ -1,0 +1,41 @@
+{
+  "status": "PASS_PANEL_AND_ARCHITECTURE_FROZEN",
+  "native_FNSPID_role_preserved": "ROLE_C_PANEL_PRICE_ONLY_OR_REJECTED_NEWS",
+  "FNSPID_RELINKED_role": "RELINKED_ROLE_B_DISSEMINATION_AND_DENSE_TEXT",
+  "architecture": "ARCH_B_SEC_FACTS_PLUS_RELINKED_NEWS_DISSEMINATION",
+  "complete_rows_processed": 28606813,
+  "relinked_edges": 7377941,
+  "body_fraction": 0.6667178552932316,
+  "timestamp_eligible_fraction": 1.0,
+  "panel_pass": true,
+  "selected_companies": 66,
+  "represented_industries": {
+    "Money": 6,
+    "Hlth": 6,
+    "BusEq": 6,
+    "Durbl": 6,
+    "Chems": 6,
+    "Enrgy": 6,
+    "Utils": 6,
+    "NoDur": 6,
+    "Manuf": 6,
+    "Shops": 6,
+    "Telcm": 6
+  },
+  "minimum_companies_per_industry": 6,
+  "complete_coverage_companies": 1693,
+  "historical_industry_candidates_checked": 198,
+  "company_split_status": "FROZEN",
+  "company_split_counts": {
+    "TRAIN_COMPANIES": 44,
+    "DEV_UNSEEN_COMPANIES": 11,
+    "LOCKED_UNSEEN_COMPANIES": 11
+  },
+  "time_split_status": "FROZEN",
+  "SEC_pilot_records": 66,
+  "locked_2023_outcomes_inspected_or_summarized": 0,
+  "stock_predictive_models_fitted": 0,
+  "BA_MCC_Brier_computed": 0,
+  "return_based_stock_selection": 0,
+  "reader_models_trained": 0
+}

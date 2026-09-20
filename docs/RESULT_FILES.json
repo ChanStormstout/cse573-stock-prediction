@@ -2938,5 +2938,125 @@
     "path": "outputs/stock_ecni_e1r/PRE_REGISTRATION.md",
     "bytes": 8256,
     "sha256": "c93dcbdfc5b0ad995c712432fa0cb46fe256809594f0a7cd8dac9aae61746247"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/FNSPID_COMPLETE_METADATA_MANIFEST.json",
+    "bytes": 1246,
+    "sha256": "64f5fde7b75a7ba160be55344c29032d93f3e5649810ae502d5cca875046d510"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/SOURCE_MANIFEST_E1R.json",
+    "bytes": 1024,
+    "sha256": "bf583d41889e9832182e666ff4cb9311a4a92a09aa8260f4a82158ca59c3a9d8"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/SEC_ISSUER_IDENTITY_HISTORY.csv",
+    "bytes": 681684,
+    "sha256": "84d15c8eb422cee2c1a7f4752ce64f80a8e12db5279788a91b009ac7022a9816"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/AMBIGUOUS_ALIAS_LEDGER.csv",
+    "bytes": 14854,
+    "sha256": "52113e76a3923096015bf83df99dd0b0a93fa34e90fda0e34fe98aad851b51f4"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/ENTITY_RELINK_AUDIT.md",
+    "bytes": 984,
+    "sha256": "266e2e3f4489a53d8308daa7f414022b03229d604fbac1810b021d4aaa5354c1"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/TIMESTAMP_CENSUS.csv",
+    "bytes": 1958,
+    "sha256": "c0e319317d01d8c8cbcb2b5a829b526a95fdbb8b9adc0b3453b905e2ae565aca"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/DUPLICATE_GROUP_CENSUS.json",
+    "bytes": 447,
+    "sha256": "a7211da375a619e8b61a79ef2e858bdb6c1b1b7d9da553250e1e2f0cbb11488f"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/LOCAL_CORPUS_ARTIFACTS_MANIFEST.json",
+    "bytes": 2086,
+    "sha256": "d37903497697710a538e1c1333b8b0a8b86b1e633c151252ba5e59668f6f545a"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/HISTORICAL_INDUSTRY_LEDGER.csv",
+    "bytes": 85409,
+    "sha256": "c7ab0304dd7f1f3e59a851de50a5f98396b13be170f69c9c78506a9955e3b634"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/RELINKED_TRAINING_NEWS_COVERAGE.csv",
+    "bytes": 367558,
+    "sha256": "1a814a621a0d9c1fb8647f72af39a9bd9861af30eda367c89fccfd04e67fbb80"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/FROZEN_STOCK_PANEL_E1R.csv",
+    "bytes": 328257,
+    "sha256": "7c5a1a1d618f76a9801cd57a05f531c1a2885674500e11c93e1697d903559948"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/COMPANY_SPLITS_E1R.json",
+    "bytes": 1891,
+    "sha256": "7ae03321d0ede4e444a90b89cede0d26291eac756eac2aaeb757f9035fb28f34"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/TIME_SPLIT_E1R.json",
+    "bytes": 272,
+    "sha256": "53ed35ad21ff462fa6913db1d1acaa41126771d6c355e9e4f77c572c40acba3c"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/EXACT_TIME_EVENT_CORPUS_AUDIT.json",
+    "bytes": 217,
+    "sha256": "cc9afce7a64c009e304b90b14ccec6aba0809f1d8f3e5213d9031f8f5b344468"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/SEC_FACT_CHANNEL_PILOT.md",
+    "bytes": 448,
+    "sha256": "68bbb0a7a188aad08aef0b663506a1dde039da7e645e800bdd892fb3363ac1eb"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/ECNI_FINAL_DATA_ARCHITECTURE.md",
+    "bytes": 698,
+    "sha256": "5c0e8829401cb942ea2a5582ce6cd7eb8e411628f85e89e74ff7b719ece319df"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/READER_PILOT_INPUT_AUDIT.json",
+    "bytes": 858,
+    "sha256": "61ce8284f81191f992c80e909485716c324509f5923446624761a41ecde7bd16"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/E1R_FINAL_AUDIT.json",
+    "bytes": 1217,
+    "sha256": "b28114b895ecbe7ef3ace8e42279e9271e5e94165922ac168796b9381c669705"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/E1R_VERIFICATION.json",
+    "bytes": 720,
+    "sha256": "11d4bdb7a96e165c534e06fc5b99f2eaee86d6091c3a6ca82df6510140bfc273"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/E1R_REPORT.md",
+    "bytes": 2118,
+    "sha256": "05ea0bf6fa96cdfb9aeb9c95f713e74bc5258d9016f2c5aae507127d561010ba"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/run_complete_census.py",
+    "bytes": 13149,
+    "sha256": "913d6eb9e189f4abdbac25140752447754e3be989ac0474533939f55c9b8df92"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/build_panel.py",
+    "bytes": 17463,
+    "sha256": "b2505d47fae8c210cb22ec8ef25cac40a9b52e2eec4f1194b659b241e2e0041c"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/finalize_e1r.py",
+    "bytes": 9772,
+    "sha256": "f2d25a5acb7abf4e3da3eb8157fe7cca130e9e9ac9552b34c1a2effcdafa4277"
+  },
+  {
+    "path": "outputs/stock_ecni_e1r/verify_e1r.py",
+    "bytes": 4536,
+    "sha256": "ec6373ae2bbb73828ef7880b58ae98ba370078d42ab3d7af8421244052266bd1"
   }
 ]

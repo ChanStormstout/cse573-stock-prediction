@@ -1,3 +1,15 @@
+# Current status
+
+## 2026-09-19 — ECNI Stage E1R outcome-blind panel freeze
+
+Stage E1R is complete with status **`PASS_PANEL_AND_ARCHITECTURE_FROZEN`**. The preregistration was pushed before the complete coverage census at `c5443c880399426976bb07b7430f5564700469e3`. The two official FNSPID files yielded 28,606,813 parsed rows with zero parse failures. Native ticker assignment remained diagnostic only; independent issuer rules produced 7,377,941 high-confidence edges. This rule-supported relinking has not received independent human precision validation.
+
+The frozen panel contains 66 companies: six companies in each of 11 historically reconstructed Fama–French industries. The deterministic unseen-company split is 44 train, 11 development-unseen, and 11 locked-unseen, with a 4/1/1 split in every industry. The time split remains 2018–2021 train/forward validation, 2022 development, and 2023 locked. No 2022/2023 outcome balance or return was inspected.
+
+The original native FNSPID conclusion remains `ROLE_C_PANEL_PRICE_ONLY_OR_REJECTED_NEWS`. Only the derived independently relinked view is assigned `RELINKED_ROLE_B_DISSEMINATION_AND_DENSE_TEXT`. The frozen architecture is `ARCH_B_SEC_FACTS_PLUS_RELINKED_NEWS_DISSEMINATION`. The bounded SEC pilot retained 66 filing metadata objects and kept report period separate from acceptance time.
+
+The independent fit-free verifier passes all checks. Stock predictor fits, reader fits, return-based selection, and BA/MCC/Brier computations are all zero. The complete 10,848,303-edge ledger and 31,457,434-group duplicate ledger remain local and are hash-addressed in `outputs/stock_ecni_e1r/LOCAL_CORPUS_ARTIFACTS_MANIFEST.json`; they exceed the repository's 10 MiB artifact limit and contain no committed article bodies. Compact audits, frozen selections, manifests, reports, and executable code are published. E1R stops here pending external review; reader training is not authorized.
+
 # 当前权威状态（2026-09-19，V10 classical lane 已冻结完成）
 
 > **ECNI Stage E1 data qualification:** E1 completed outcome-blind with

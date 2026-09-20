@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": {
+    "required_outputs": true,
+    "local_complete_artifact_hashes": true,
+    "native_role_preserved": true,
+    "complete_census": true,
+    "native_not_ground_truth": true,
+    "zero_predictive_work": true,
+    "locked_outcomes_uninspected": true,
+    "edges_have_explicit_rules": true,
+    "no_native_only_edge_rule": true,
+    "panel_gate": true,
+    "selected_industry_stable": true,
+    "company_split_frozen": true,
+    "company_split_exact_44_11_11": true,
+    "company_split_disjoint_complete": true,
+    "company_split_industry_stratified": true,
+    "sec_pilot_completed": true,
+    "time_classes_separated": true
+  },
+  "fit_calls": 0,
+  "direction_or_return_metrics": 0
+}

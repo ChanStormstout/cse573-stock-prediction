@@ -1,0 +1,22 @@
+{
+  "high_confidence_edges": 7377941,
+  "body_edges": 4919005,
+  "unique_news_articles": 4602806,
+  "SEC_backed_pairs": 0,
+  "news_only_edges": 7377941,
+  "category_support_status": "NOT_MEASURED_WITHOUT_OUTCOME_BLIND_HUMAN_RELATION_LABELS",
+  "reader_training_authorized": false,
+  "reader_scores_computed": 0,
+  "outcome_blind_candidate_counts": {
+    "new_event": "UNLABELED_POOL_REQUIRES_HUMAN_REVIEW",
+    "repeat_exact_title_excess_records": 17766778,
+    "numeric_update_heuristic": 5688169,
+    "period_change_heuristic": 4496676,
+    "action_change_heuristic": 1466287,
+    "denial_correction_heuristic": 207246,
+    "different_actor": "UNRESOLVED_WITHOUT_ACTOR_EXTRACTION",
+    "different_company_multi_edge_articles": 1508398,
+    "hypothetical_opinion_heuristic": 2922439,
+    "insufficient_evidence": "UNLABELED_POOL_REQUIRES_HUMAN_REVIEW"
+  }
+}

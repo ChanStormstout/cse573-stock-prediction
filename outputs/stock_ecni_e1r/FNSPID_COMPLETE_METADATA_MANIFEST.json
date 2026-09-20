@@ -1,0 +1,44 @@
+{
+  "status": "COMPLETE",
+  "official_revision": "bf9189c41527198897d1af3e17b1a0095279fc45",
+  "files": [
+    {
+      "source_file": "all_external",
+      "path": "All_external.csv",
+      "bytes": 5731397037,
+      "sha256": "5d4c018036bd82ca821da71b7a9c0c7db3289642e0fc6f897ea69f4a0c5135c3",
+      "rows_processed": 13057514,
+      "rows_parsed": 13057514,
+      "parse_failures": 0,
+      "year_min": 1914,
+      "year_max": 2020
+    },
+    {
+      "source_file": "nasdaq",
+      "path": "nasdaq_exteral_data.csv",
+      "bytes": 23232979597,
+      "sha256": "1a7a3eb8e6b97ec19f286f2cfca3371542bddb272ab1eb8f36e33ad98fa5c4da",
+      "rows_processed": 15549299,
+      "rows_parsed": 15549299,
+      "parse_failures": 0,
+      "year_min": 1914,
+      "year_max": 2024
+    }
+  ],
+  "total_rows_processed": 28606813,
+  "total_parse_failures": 0,
+  "private_metadata_index": {
+    "format": "parquet",
+    "sha256": "52778b687458b1892d63efbc6eeb46078598bdc7427ba3d63d91cbe0fe600217",
+    "committed": false
+  },
+  "relinked_edges": {
+    "rows": 10848303,
+    "native_agreement": {
+      "agree": 1215920,
+      "disagree": 9632383
+    }
+  },
+  "native_ticker_used_as_ground_truth": false,
+  "copyrighted_bodies_retained_in_public_outputs": false
+}

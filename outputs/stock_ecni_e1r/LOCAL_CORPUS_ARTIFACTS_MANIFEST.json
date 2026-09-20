@@ -1,0 +1,65 @@
+{
+  "status": "LOCAL_COMPLETE_CORPUS_ARTIFACTS_HASHED_NOT_COMMITTED",
+  "reason": "Complete derived ledgers exceed the repository 10 MiB artifact policy; raw or copyrighted body text is not included.",
+  "artifacts": [
+    {
+      "path": "outputs/stock_ecni_e1r/FNSPID_RELINKED_ENTITY_EDGES.parquet",
+      "format": "parquet",
+      "bytes": 672592665,
+      "rows": 10848303,
+      "sha256": "c86623d2f85cf5bb00ef63debe0fa93fc1c23eca85b19f0a00ec8e43ddb9f2a3",
+      "committed": false,
+      "columns": [
+        "record_id_hash",
+        "company_id",
+        "CIK",
+        "native_ticker",
+        "resolved_ticker",
+        "relation_type",
+        "matched_alias",
+        "matched_field",
+        "evidence_start_normalized",
+        "evidence_end_normalized",
+        "confidence_rule",
+        "available_time_class",
+        "recorded_time",
+        "source_file",
+        "publisher_hash",
+        "body_available",
+        "title_hash",
+        "url_hash"
+      ],
+      "relation_counts": {
+        "DIRECT_TARGET_HIGH_CONFIDENCE": 3094408,
+        "MULTI_COMPANY_DIRECT_HIGH_CONFIDENCE": 4283533,
+        "INDIRECT_OR_COMPETITOR": 3470362
+      }
+    },
+    {
+      "path": "outputs/stock_ecni_e1r/DUPLICATE_GROUP_SUMMARY.csv",
+      "format": "csv",
+      "bytes": 5685449524,
+      "rows": 31457434,
+      "sha256": "90efca2d8496ca8043df573adafb5479a34888fc0fce956519c678577c62075e",
+      "committed": false,
+      "columns": [
+        "group_type",
+        "duplicate_group_id",
+        "article_count",
+        "independent_publisher_count",
+        "first_observation",
+        "latest_observation",
+        "time_spread_days",
+        "company_membership_reference"
+      ],
+      "group_counts": {
+        "EXACT_BODY": 1684268,
+        "EXACT_TITLE": 9032965,
+        "EXACT_URL": 12008767,
+        "NEAR_TITLE_CANDIDATE": 8731434
+      }
+    }
+  ],
+  "copyrighted_article_bodies_committed": false,
+  "reconstruction": "Run run_complete_census.py and build_panel.py against the source files whose revisions and hashes are frozen in SOURCE_MANIFEST_E1R.json."
+}

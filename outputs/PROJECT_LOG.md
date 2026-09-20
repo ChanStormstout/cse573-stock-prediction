@@ -1584,3 +1584,14 @@ manifest-hashed serialized models exactly; manifest mismatches were zero and
 private bytes were unchanged. The V9 row-level March--August evidence reproduced
 the three frozen top-three method sets, and all 18 B2 branches retained their
 verified September-onward parameters. `STAGE_B1_FINAL_AUDIT_V2.json` is PASS.
+## 2026-09-19 — ECNI Stage E1R complete-corpus relinking and panel freeze
+
+**Why:** Stage E1 showed that native FNSPID ticker association was not sufficient evidence for a primary news panel. E1R tested whether an independently relinked, historically reconstructed dataset could support a future multi-stock ECNI study without looking at outcomes.
+
+**What ran:** A preregistration was pushed first at `c5443c880399426976bb07b7430f5564700469e3`. Streaming census code then parsed all 28,606,813 rows from the two frozen official FNSPID files, built a point-in-time SEC issuer identity ledger, applied safe issuer aliases and explicit ticker syntax, reconstructed training-period SIC to Fama–French 12 industries, froze a deterministic balanced panel and company/time splits, and ran the bounded SEC factual-channel pilot. No stock or reader estimator was fitted.
+
+**Observed data:** Parsing failures were zero. The complete relation ledger has 10,848,303 issuer edges: 3,094,408 direct high-confidence, 4,283,533 multi-company direct high-confidence, and 3,470,362 indirect/competitor controls. Panel coverage uses only the 7,377,941 registered high-confidence edges. Native tags disagreed with the independently resolved ticker on 9,632,383 edges, reinforcing the original E1 rejection of native tags as ground truth. The complete duplicate ledger contains 31,457,434 groups. These two oversized complete ledgers remain local and are hash-addressed; compact evidence is committed.
+
+**Panel and architecture:** The gate passed with 66 companies across 11 industries, six per industry. The company split is 44/11/11 and exactly 4/1/1 per industry. The original native role remains Role C; the relinked view is frozen as Role B, and architecture B combines SEC facts with relinked-news dissemination. The SEC pilot retained 66 metadata objects, with 38 showing a report-period date distinct from the availability date.
+
+**Verification and limits:** The final fit-free verifier passes all 17 checks, including complete-ledger hashes, safe rules, stable historical industry assignments, disjoint/exhaustive unseen-company splits, time-class separation, and zero predictive work. The 600-case locked audit measures deterministic rule support only; there is no independent human precision estimate. Locked 2023 outcomes remain uninspected. E1R stops before reader training or any predictive experiment.

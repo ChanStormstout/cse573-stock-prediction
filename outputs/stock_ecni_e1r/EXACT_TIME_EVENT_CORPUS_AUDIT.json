@@ -1,0 +1,9 @@
+{
+  "task": "EXACT_TIME_EVENT_CONDITIONED",
+  "horizon": "NOT_SELECTED_IN_E1R",
+  "edge_records": 1338232,
+  "unique_articles": 1257741,
+  "companies": 1519,
+  "body_edges": 42488,
+  "outcome_statistics_computed": 0
+}

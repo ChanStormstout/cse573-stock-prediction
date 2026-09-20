@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE",
+  "total_groups": 31457434,
+  "group_counts": {
+    "EXACT_BODY": 1684268,
+    "EXACT_TITLE": 9032965,
+    "EXACT_URL": 12008767,
+    "NEAR_TITLE_CANDIDATE": 8731434
+  },
+  "complete_local_ledger_sha256": "90efca2d8496ca8043df573adafb5479a34888fc0fce956519c678577c62075e",
+  "future_safe_note": "Groups are retained without collapsing records; earlier-cutoff state must use only observations available by that cutoff."
+}

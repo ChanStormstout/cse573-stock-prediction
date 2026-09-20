@@ -1,0 +1,16 @@
+{
+  "train_forward_validation": [
+    "2018-01-01",
+    "2021-12-31"
+  ],
+  "development": [
+    "2022-01-01",
+    "2022-12-31"
+  ],
+  "locked_test": [
+    "2023-01-01",
+    "2023-12-31"
+  ],
+  "locked_outcome_status": "NOT_INSPECTED_OR_SUMMARIZED",
+  "status": "FROZEN"
+}
