@@ -1696,3 +1696,31 @@ FinBERT paragraph encoding completed on MPS in 1,100.83 seconds with zero traina
 **Interpretation versus observation:** probabilities move toward 0.5 on average, so confidence shrinkage is a plausible explanation for lower Brier. This is not proof of additional semantic predictive information, and a matched calibration control would be needed to separate those effects. Title-fusion controls have different C-selection staging/evidence gates, explicitly documented. No causal attribution or fresh-future generalization is claimed.
 
 **Decision:** retain FULL as the declared reference and SVM as a strong traditional comparator. Do not present the body branch as a direction improvement. Stop this finite extension; no attention, LoRA, or renewed LLM batch. Preserve all 1,972 original outputs unchanged. No old prediction/model artifact was altered, and unrelated repository edits remain untouched.
+
+
+## 2026-09-20 — Ordered text and joint semantics v1 started
+
+Motivation: the previous paragraph probability-fusion models reduced confidence/Brier without improving mean direction BA. The original stem_body is a sorted set and discards order, repetitions, numeric expressions and stoplisted negation.
+
+The owner supplied a bounded follow-up: three raw-text TF-IDF models; two direct FULL+FinBERT paragraph joint models (PCA16 versus 768 dimensions); matching old-text PRICE fallback; and probability-only shrinkage. Existing random 3x10 outer/3 inner partitions and all 1,607 windows are frozen. No LLM or advanced expansion is authorized.
+
+Before new fits, saved protocol/input audit and hashes for 24,230 old input/model/result files. Independent raw-source reread reconstructed all 1,607 original stem representations and 5,078 source articles. Five fit-free unit/corruption tests and 180 inner-partition feasibility checks passed. Canonical news gaps: AAPL 6/803 without news; AMZN 389/804 without news plus 3 without qualifying target paragraphs. These are input coverage observations, not new predictive results.
+
+Actual classifier training is in progress. Reports will require no-fit verification PASS; source text and model files remain private. No interpretation of partial outer predictions, parameter expansion or post-result stock-specific winner selection.
+
+
+## 2026-09-20 — Ordered text and joint semantics v1 completed / verified
+
+Completed the finite requested matrix without changing the grid after results. Actual computation: 4,043 top-level fit calls, 5,243 classifiers including calibrated SVM internals, 1,800 sigmoid calibrators; 61.1 minutes training wall time. No encoder inference, LLM continuation or advanced expansion. Sixty blocks and all 4,821 outer window/seed predictions completed.
+
+No-fit verification PASS: all 4,043 checkpoint containers replayed (maximum probability error 6.66e-16), 1,171,503 inner prediction records checked, 263,307 rho-zero probabilities replayed, 1,800 calibration memberships checked. Independently reconstructed selected vocabulary document frequencies/IDF/budget for 300 pipelines. Five unit/corruption tests PASS. All 24,230 protected artifacts and 42 prior public result hashes unchanged.
+
+Mean AAPL/AMZN BA: FULL 67.57/60.28; old SVM 69.49/60.12; old SVM + matched PRICE fallback 69.55/61.14; raw A1 61.71/61.06; raw A2 59.21/60.26; raw A3 63.28/61.16; joint B1 PCA16 67.59/59.96; joint B2 uncompressed 65.98/60.40. No new A/B method beats both references on both stocks. The useful matched fallback control involves no new SVM fit, and its paired intervals still include zero.
+
+FULL confidence shrinkage leaves every direction unchanged and reduces Brier from .2228/.2524 to .2133/.2382, better than prior paragraph fusions. This supports a confidence-based alternative explanation for probability gains, not a proof of absent semantic information. AMZN has 389 no-news windows containing mean 172.67 FULL errors (54.2% of its errors); these remain outside the new news mechanisms' influence.
+
+Fixed stable-hash cases include repaired, harmed, shared errors/correct decisions and news-coverage/text-type supplements. Eight cases reviewed against private source text show mixed-company, holdings, repeated-rating and direct-company-development content. The observations do not identify causal feature contributions. Raw evidence stays private; no independent gold review is claimed.
+
+Reporting-only correction: one-class subgroup BA/MCC now blank/undefined rather than sklearn's single-class recall. Initial derived reports retained privately; no model, probability, selection, overall stock/seed score or scientific protocol changed. No additional fits were run. See outputs/stock_text_joint_4h/v1/FINDINGS.md, REPORT.md, CASE_REVIEW.md and FINAL_STATUS.json. Stop this lane here; future suggestions are not executed.
+
+Final evidence review caught a same-name test-module import in the reporting aggregator: it recorded 13 parent random-protocol tests rather than this lane's five tests. The five current tests had already passed by direct execution before fitting. The aggregator now imports their exact file path; all five were rerun and passed, with the test-module hash stored. The prior parent-test record is preserved privately and TEST_RECORD_CORRECTION.json explains the correction. No predictive fit, input, parameter, probability or selection changed.

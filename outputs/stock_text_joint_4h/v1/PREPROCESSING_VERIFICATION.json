@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "selected_vectorizers_and_calibration_pipelines": 300,
+  "total_vocabulary_entries": 1500000,
+  "training_df_idf_and_budget_reconstructed": true,
+  "wrong_membership_corruption_rejected": true,
+  "prior_public_result_hashes_verified": 42,
+  "fit_calls": 0
+}

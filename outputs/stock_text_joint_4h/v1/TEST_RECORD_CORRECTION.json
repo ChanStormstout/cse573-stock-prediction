@@ -1,0 +1,9 @@
+{
+  "scope": "test-evidence import binding only",
+  "reason": "The aggregator used a same-named test_contracts import after core prepended the parent random-protocol directory; it saved the 13 parent tests instead of this lane\u2019s 5 tests. The 5 new tests had already passed by direct script execution before fits; they are rerun here and imported by explicit file path.",
+  "prior_record_sha256": "fd35d1deb6aa4006edecf6e5677bf54971613206a4b0c964483f39ff65898726",
+  "prior_record_preserved_private": "parent_test_record_before_import_fix.json",
+  "correct_current_tests": 5,
+  "new_model_fits": 0,
+  "predictions_or_selection_changed": false
+}

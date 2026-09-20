@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE_PENDING_NO_FIT_VERIFICATION",
+  "blocks": 60,
+  "top_level_fit_calls": 4043,
+  "actual_classifier_fits": 5243,
+  "SVM_sigmoid_calibrators": 1800,
+  "device": "CPU",
+  "threads": 2,
+  "encoder_fits": 0,
+  "seconds": 3394.5511086658225,
+  "wall_seconds": 3663.4196753749857,
+  "LLM_continued": false
+}

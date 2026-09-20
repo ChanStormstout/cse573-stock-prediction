@@ -1,3 +1,13 @@
+# Latest completed: ordered text and joint FinBERT, random protocol
+
+**COMPLETE / VERIFIED.** [Findings](../outputs/stock_text_joint_4h/v1/FINDINGS.md) · [full report](../outputs/stock_text_joint_4h/v1/REPORT.md) · [handoff](TEXT_JOINT_4H_HANDOFF.md).
+
+Same exposed 1,607 windows and 3x10 nested random protocol. No new A/B mechanism beats FULL and the strong SVM on both stocks. The reused old SVM with matched PRICE fallback scores **69.55% AAPL / 61.14% AMZN**, versus FULL **67.57% / 60.28%**; paired intervals include zero. This is a no-retraining control, not a newly trained semantic model or a confirmed future-period improvement.
+
+Raw-text A3: **63.28% / 61.16%**. Joint paragraph FinBERT PCA16 B1: **67.59% / 59.96%**; uncompressed B2: **65.98% / 60.40%**. FULL shrinkage preserves direction exactly and reduces Brier to **0.2133 / 0.2382**, outperforming the old paragraph fusions on that metric without adding information.
+
+Actual fits: 5,243 classifiers and 1,800 sigmoid calibrators; 4,043 saved model containers independently reloaded, max error 6.66e-16. All 300 selected text/calibration vocabularies independently checked; all 24,230 protected artifacts unchanged. LLM stays paused at 1,972 outputs. No attention/LoRA/RL/new-data or other advanced continuation.
+
 ## 2026-09-20 — FULL semantic extension complete and verified
 
 [Report](../outputs/stock_full_semantics_4h/v1/REPORT.md) · [Handoff](FULL_SEMANTICS_4H_HANDOFF.md). Three-seed random testing: FULL BA AAPL/AMZN **67.57%/60.28%**; TF-IDF SVM **69.49%/60.12%**; FULL + FinBERT body **67.19%/59.75%**; FULL + Modern body **67.51%/59.78%**. Body Brier improves, but neither body variant raises mean direction BA on either stock. No claimed stable future-period improvement. All 300 new selected models passed reload verification; body max probability error 4.44e-16 and zero no-evidence fallback mismatches. Original LLM remains paused at 1,972 outputs; no attention/LoRA or external lane was started. Historical in-progress entries below are superseded by this completed snapshot.

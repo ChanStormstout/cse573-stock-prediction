@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "protected_files": 24230,
+  "report_only_clarification_unchanged_files": [
+    "predictions.csv",
+    "metrics.csv",
+    "summary.csv",
+    "paired_intervals.csv",
+    "selection_records.csv"
+  ],
+  "LLM_states": " 2333 Ts  \n 3030 Ts  \n",
+  "LLM_records": 1972,
+  "new_advanced_runs": 0
+}

@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "verification_files": {
+    "VERIFICATION.json": "13e21ae1c352f393f0b8b30d015c05a38d315370922cf197f6ada3e71f67bc71",
+    "INPUT_VERIFICATION.json": "742f1f5466e2374ce378de50b87da435e044e62e54c8186e25b0d06c9903ceea",
+    "PREPROCESSING_VERIFICATION.json": "4afa983c5696df6d1389f41f7ab987eb6a5029f0cb549f72dcd2a77aa3dd7ee6",
+    "TEST_RESULTS.json": "5664d5a8ca1b7e3cd4ccac30eb56ce679a0d487b64bffa3f8470fe7afcb607d1"
+  },
+  "new_prediction_rows": 4821,
+  "canonical_windows": 1607,
+  "seeds": [
+    573,
+    574,
+    575
+  ],
+  "post_result_model_fits": 0,
+  "post_result_grid_changes": 0,
+  "LLM_outputs": 1972,
+  "LLM_sha256": "c37cbc45187fd6cbd86a3144cd06e294963df509088471fc57664e817e8d8ae7",
+  "advanced_lanes_started": false
+}

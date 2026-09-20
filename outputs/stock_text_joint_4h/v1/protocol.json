@@ -1,0 +1,86 @@
+{
+  "status": "FROZEN_BEFORE_NEW_PREDICTIVE_FITS",
+  "reference_sha": "ce58aac9e50479866419efab5a66bafe04d3d41a",
+  "interpretation": "EXPLORATORY RANDOM HISTORICAL BACKTEST; all periods exposed",
+  "seeds": [
+    573,
+    574,
+    575
+  ],
+  "outer_folds": 10,
+  "inner_folds": 3,
+  "rows": 1607,
+  "stocks": {
+    "AAPL": 803,
+    "AMZN": 804
+  },
+  "threshold": 0.5,
+  "C": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "methods": {
+    "A1": "raw ordered unigram TFIDF LR",
+    "A2": "same unigram+within-sentence bigram TFIDF LR",
+    "A3": "same A2 text; calibrated LinearSVC; full pipeline refit in each of 3 calibration splits",
+    "B1": "original FULL + frozen target-paragraph FinBERT PCA16 jointly fitted LR",
+    "B2": "same FULL + uncompressed 768-d FinBERT jointly fitted LR"
+  },
+  "text": {
+    "min_df": 3,
+    "max_features": 5000,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "token_regex": "[$\u20ac\u00a3]?\\d+(?:[,.]\\d+)*(?:%|[bBmM])?|[A-Za-z]+(?:['\u2019][A-Za-z]+)?",
+    "stopwords": null,
+    "stemming": false,
+    "frequency": "preserved including repeated article occurrences in each canonical window",
+    "boundaries": "title/body, physical paragraph and conservative punctuation hard boundaries; decimals retained; no cross-boundary bigrams",
+    "cleaning": "strip script/style, HTML block tags -> newline; remaining tags stripped, HTML unescape, URLs removed, whitespace normalized; only lines starting fixed template pattern removed",
+    "template_pattern": "^(?:advertisement|privacy policy|terms of use|copyright|subscribe|sign up now|click here|newsletter)\\b"
+  },
+  "semantics": {
+    "source": "existing verified target-company paragraphs, not complete full body",
+    "rho": [
+      0.0,
+      0.1,
+      1.0
+    ],
+    "PCA": "unique train-member evidence articles only",
+    "scale": "per-coordinate train-window mean/std; no-evidence semantic block zero after transform; scale then rho; no subsequent scaling",
+    "base": "original OLD16+binary min_df3 chi2<=500 L2 FULL",
+    "no_new_metadata": true,
+    "rho0": "reuse original per-C FULL inner models; original selected FULL outer path; zero-rho best C must equal original FULL selection",
+    "fallback": "nonzero-rho no evidence exactly selected FULL; no news exactly saved PRICE"
+  },
+  "selection": "higher inner mean BA, lower inner mean Brier, smaller rho then smaller C; A rho=0",
+  "A_fallback": "saved legal PRICE inner/outer predictions on no news",
+  "SVM_direction": "calibrated ensemble probability >=0.5; not raw margin",
+  "shrink": {
+    "a": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "selection": "minimum pooled inner Brier, tie larger a; selected inner FULL OOF used only for finite selection",
+    "no_news": "exact PRICE",
+    "direction": "must remain identical"
+  },
+  "budget": {
+    "A_top_level_fits": 1800,
+    "A_LR_classifier_fits": 1200,
+    "A_SVM_internal_classifier_fits": 1800,
+    "A_SVM_sigmoid_calibrators": 1800,
+    "B_inner_classifier_fits": 2160,
+    "B_outer_classifier_fits_max": 120,
+    "B_outer_rho0_reuses": "no new fit",
+    "total_new_predictive_classifier_fits_max": 5280
+  },
+  "checks": "no-fit verifier, source bindings, calibration memberships, selection reconstruction, exact fallbacks/rho0, reload probabilities, unchanged windows, boundary/frequency tests",
+  "intervals": "1000 paired resamples each one-day, circular-five-day and frozen association groups; shared weights across stocks and seeds; report seed-mean delta, not independent seeds; descriptive after exploration",
+  "cases": "per stock and new method stable hash first two from repaired/harmed/both wrong/both right against FULL at seed573; supplement no-news/negation/numeric/multi-company/near-repost by hash without correctness filter",
+  "stop": "no grid expansion or advanced branches; preserve failed/incomplete runs and report",
+  "LLM": "remain paused at1972; no automatic continuation"
+}

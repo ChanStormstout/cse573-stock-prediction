@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "inner_partitions": 180,
+  "rows": 1607,
+  "semantic_shape": [
+    5226,
+    768
+  ],
+  "fits": 0,
+  "all_A_text_coverage_matches_has_news": true
+}

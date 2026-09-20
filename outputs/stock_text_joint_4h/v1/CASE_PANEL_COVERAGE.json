@@ -1,0 +1,355 @@
+{
+  "rule": "fixed stable hash; no substitute when category empty",
+  "counts": [
+    {
+      "symbol": "AAPL",
+      "method": "A1",
+      "category": "repaired",
+      "available": 75,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A1",
+      "category": "harmed",
+      "available": 113,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A1",
+      "category": "both_wrong",
+      "available": 174,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A1",
+      "category": "both_right",
+      "available": 441,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A2",
+      "category": "repaired",
+      "available": 85,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A2",
+      "category": "harmed",
+      "available": 143,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A2",
+      "category": "both_wrong",
+      "available": 164,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A2",
+      "category": "both_right",
+      "available": 411,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A3",
+      "category": "repaired",
+      "available": 80,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A3",
+      "category": "harmed",
+      "available": 102,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A3",
+      "category": "both_wrong",
+      "available": 169,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A3",
+      "category": "both_right",
+      "available": 452,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "B1",
+      "category": "repaired",
+      "available": 11,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "B1",
+      "category": "harmed",
+      "available": 7,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "B1",
+      "category": "both_wrong",
+      "available": 238,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "B1",
+      "category": "both_right",
+      "available": 547,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "B2",
+      "category": "repaired",
+      "available": 21,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "B2",
+      "category": "harmed",
+      "available": 40,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "B2",
+      "category": "both_wrong",
+      "available": 228,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "B2",
+      "category": "both_right",
+      "available": 514,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A3",
+      "category": "supplement_no_news",
+      "available": 6,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A3",
+      "category": "supplement_negation",
+      "available": 757,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A3",
+      "category": "supplement_numbers",
+      "available": 797,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A3",
+      "category": "supplement_multi_company",
+      "available": 553,
+      "selected": 2
+    },
+    {
+      "symbol": "AAPL",
+      "method": "A3",
+      "category": "supplement_near_repost",
+      "available": 299,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A1",
+      "category": "repaired",
+      "available": 41,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A1",
+      "category": "harmed",
+      "available": 40,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A1",
+      "category": "both_wrong",
+      "available": 270,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A1",
+      "category": "both_right",
+      "available": 453,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A2",
+      "category": "repaired",
+      "available": 43,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A2",
+      "category": "harmed",
+      "available": 51,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A2",
+      "category": "both_wrong",
+      "available": 268,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A2",
+      "category": "both_right",
+      "available": 442,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A3",
+      "category": "repaired",
+      "available": 38,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A3",
+      "category": "harmed",
+      "available": 33,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A3",
+      "category": "both_wrong",
+      "available": 273,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A3",
+      "category": "both_right",
+      "available": 460,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "B1",
+      "category": "repaired",
+      "available": 5,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "B1",
+      "category": "harmed",
+      "available": 13,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "B1",
+      "category": "both_wrong",
+      "available": 306,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "B1",
+      "category": "both_right",
+      "available": 480,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "B2",
+      "category": "repaired",
+      "available": 23,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "B2",
+      "category": "harmed",
+      "available": 18,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "B2",
+      "category": "both_wrong",
+      "available": 288,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "B2",
+      "category": "both_right",
+      "available": 475,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A3",
+      "category": "supplement_no_news",
+      "available": 389,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A3",
+      "category": "supplement_negation",
+      "available": 281,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A3",
+      "category": "supplement_numbers",
+      "available": 413,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A3",
+      "category": "supplement_multi_company",
+      "available": 415,
+      "selected": 2
+    },
+    {
+      "symbol": "AMZN",
+      "method": "A3",
+      "category": "supplement_near_repost",
+      "available": 61,
+      "selected": 2
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "reporting only",
+  "single_class_subgroup_BA_and_MCC": "undefined/null",
+  "reason": "A tiny coverage subgroup has only one true class; sklearn warnings revealed that its default BA is not a two-class mean",
+  "initial_derived_reports_preserved_private": "initial_report_before_single_class_clarification",
+  "new_fits": 0,
+  "predictions_changed": false,
+  "main_stock_seed_metrics_changed": false
+}

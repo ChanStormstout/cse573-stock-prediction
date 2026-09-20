@@ -1,0 +1,19 @@
+{
+  "frozen_training_seal": {
+    "protocol": "b5e0c3ba877c70d84e3f164c5526faa71d9ee0f1c744f3cdd03276e270577414",
+    "inputs": "f9233bc533d5198070b75a535a2db3d7b384812bf9f987d53bc0030176f97dde",
+    "protected": "655ae614a53be43dbbe0f38955cc8f313ae56113282999bd2a0624e51ee0d803",
+    "code": {
+      "core.py": "99adf4a1ebafafd07928a94a496846b2de0ae4e0d5a9ca89a776ec439cdf80d6",
+      "train.py": "50fe22dc87a8eaef42760b2824626ed46acad5575b4a76f03e424d541f33de44"
+    }
+  },
+  "file_birth_times_utc": {
+    "protocol.json": "2026-09-20T12:00:54.547508+00:00",
+    "INPUT_AUDIT.json": "2026-09-20T12:01:17.917407+00:00",
+    "training_seal.json": "2026-09-20T12:03:06.878154+00:00"
+  },
+  "first_saved_new_model_utc": "2026-09-20T12:03:07.436265+00:00",
+  "note": "Local filesystem timestamps plus frozen hashes; not an external timestamp attestation",
+  "raw_data_or_weights_published": false
+}

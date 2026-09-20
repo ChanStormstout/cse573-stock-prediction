@@ -50,3 +50,4 @@
 - **stock_tabpfn_4h**: Python source archive
 - **stock_temporal**: [README.md](../outputs/stock_temporal/README.md) · [REPORT.md](../outputs/stock_temporal/REPORT.md)
 - **stock_text_regularization**: [README.md](../outputs/stock_text_regularization/README.md)
+- **stock_text_joint_4h**: [README.md](../outputs/stock_text_joint_4h/README.md) · [findings](../outputs/stock_text_joint_4h/v1/FINDINGS.md) · [REPORT.md](../outputs/stock_text_joint_4h/v1/REPORT.md)

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "protected_artifacts_unchanged": 24230,
+    "code_input_config_binding": true,
+    "canonical_windows_labels_cutoffs": 1607,
+    "inner_metrics_reconstructed": 1171503,
+    "checkpoint_models_reloaded": 4043,
+    "max_probability_error": 6.661338147750939e-16,
+    "rho0_replayed_probabilities": 263307,
+    "SVM_calibration_pipeline_memberships": 1800,
+    "selection_reconstructed": true,
+    "exact_no_evidence_fallback": true,
+    "exact_no_news_fallback": true,
+    "shrink_preserves_direction": true,
+    "semantic_scale_then_rho": true,
+    "fit_calls": 0
+  },
+  "note": "Independent no-fit membership/selection/reload verification, not independent retraining"
+}

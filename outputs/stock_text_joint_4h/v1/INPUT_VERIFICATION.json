@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "raw_articles_reread": 5078,
+  "canonical_rows_reconstructed": 1607,
+  "old_stem_exact_parity": 1607,
+  "ordered_tokens_reconstructed": 7742049,
+  "repeated_occurrences_preserved": 6124781,
+  "within_sentence_bigrams_only": true,
+  "fit_calls": 0
+}

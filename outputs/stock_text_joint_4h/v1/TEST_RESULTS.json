@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "test_module": "outputs/stock_text_joint_4h/test_contracts.py",
+  "test_module_sha256": "d2717ce09868e67656a92e63062ef4d932da4cf39a66ad118d7a7424c4b54502",
+  "tests": 5,
+  "failures": 0,
+  "errors": 0,
+  "details": "test_cache_corruption_refusal (text_joint_contract_tests.Contracts.test_cache_corruption_refusal) ... ok\ntest_completed_hash_corruption (text_joint_contract_tests.Contracts.test_completed_hash_corruption) ... ok\ntest_incomplete_refusal (text_joint_contract_tests.Contracts.test_incomplete_refusal) ... ok\ntest_shrink_fallback_direction (text_joint_contract_tests.Contracts.test_shrink_fallback_direction) ... ok\ntest_text_information (text_joint_contract_tests.Contracts.test_text_information) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n"
+}
