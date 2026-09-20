@@ -1,5 +1,28 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-19 — ECNI Stage E1 external-data qualification
+
+- **Frozen sample:** preregistered and pushed the E1 protocol before acquisition,
+  then froze 7,711 deterministic FNSPID records across both official news files,
+  17 years, 358 source labels and 55 ticker tags before interpreting quality.
+- **Observed:** 96.99% of sampled timestamps are date-only; combined body
+  availability is 39.66%. The provisional 600-record target-association rate is
+  52.83% (95% Wilson interval 48.83%–56.80%). Duplicate diagnostics retain 198
+  exact normalized-title groups and 2,285 near-title edges as dissemination
+  evidence without collapsing articles.
+- **Price:** the complete official archive matched its frozen SHA-256. It contains
+  7,693 symbol files; 3,172 meet the strict 2018–2023 availability/integrity
+  screen. No return or direction statistic was computed.
+- **Decision:** `CONDITIONAL_DATA_REDESIGN_REQUIRED`. FNSPID is
+  `ROLE_C_PANEL_PRICE_ONLY_OR_REJECTED_NEWS`; a conditional hybrid `ARCH_C`
+  keeps facts unknown unless body, time and target checks pass. Exact per-stock
+  training coverage and historical sector identity were unavailable, so the
+  named panel and company split remain explicitly unfrozen rather than guessed.
+- **Boundary:** zero stock-prediction fits, zero BA/MCC/Brier, zero return-based
+  selection, zero reader training, and no inspection or summary of locked 2023
+  outcomes. The next prerequisite is a metadata-complete news index plus a
+  versioned issuer/sector mapping.
+
 ## 2026-09-19 — External benchmark audit and ECNI data foundation
 
 - **Scope:** opened a new outcome-blind research lane after freezing V10. No stock-direction estimator, reader model, FinBERT/Fin-ModernBERT prediction, BA, MCC, Brier or return-based selection ran.

@@ -1,0 +1,27 @@
+{
+  "status": "CONDITIONAL_DATA_REDESIGN_REQUIRED",
+  "fnspid_role": "ROLE_C_PANEL_PRICE_ONLY_OR_REJECTED_NEWS",
+  "architecture": "ARCH_C_CONDITIONAL",
+  "gates": {
+    "broader_fnspid_audit_completed": true,
+    "timestamp_role_frozen": true,
+    "text_role_frozen": true,
+    "price_corpus_audited": true,
+    "deterministic_named_panel_frozen": false,
+    "company_split_frozen": false,
+    "time_split_frozen": true,
+    "locked_2023_outcomes_uninspected": true,
+    "evidence_ledger_implemented": true,
+    "architecture_frozen": true,
+    "reader_label_protocol_frozen": true,
+    "stock_predictive_models_fitted": 0,
+    "BA_MCC_Brier_calculated": 0,
+    "return_based_stock_selection": 0
+  },
+  "blocking_reasons": [
+    "Bounded range sample cannot yield exact 2018-2021 stock/day news coverage.",
+    "Current identity sources lack a defensible sector taxonomy and historical membership.",
+    "Provisional entity-association lower confidence bound is below 0.80."
+  ],
+  "next_required_action": "Acquire a metadata-complete news index and a versioned sector/issuer mapping, then rerun panel freeze without outcomes."
+}

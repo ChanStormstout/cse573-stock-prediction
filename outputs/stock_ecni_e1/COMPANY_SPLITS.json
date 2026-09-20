@@ -1,0 +1,11 @@
+{
+  "status": "NOT_FROZEN_PANEL_PREREQUISITE_FAILED",
+  "hash_rule": "sha256(company_id|57320260919)",
+  "target_proportions": {
+    "train": "2/3",
+    "dev_unseen": "1/6",
+    "locked_unseen": "1/6"
+  },
+  "assignments": [],
+  "reason": "No deterministic named panel was defensibly frozen."
+}

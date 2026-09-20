@@ -1,5 +1,20 @@
 # 当前权威状态（2026-09-19，V10 classical lane 已冻结完成）
 
+> **ECNI Stage E1 data qualification:** E1 completed outcome-blind with
+> `CONDITIONAL_DATA_REDESIGN_REQUIRED`. The frozen 7,711-record FNSPID audit
+> found 96.99% date-only timestamps and 39.66% body availability overall. A
+> provisional 600-record target-association audit estimated 52.83% association
+> (95% Wilson interval 48.83%–56.80%), below the registered quality gate. The
+> official price archive passed its source hash and contains 7,693 symbols, of
+> which 3,172 pass the strict 2018–2023 availability/integrity screen. The
+> bounded news acquisition cannot yield exact training-period stock/day coverage,
+> and current identity snapshots do not provide a defensible historical sector
+> taxonomy; therefore no named panel or company split was invented. FNSPID is
+> assigned `ROLE_C_PANEL_PRICE_ONLY_OR_REJECTED_NEWS`, with conditional `ARCH_C`.
+> No direction model, BA/MCC/Brier, return selection, reader training, or locked
+> 2023 outcome inspection occurred. See the [E1 report](../outputs/stock_ecni_e1/E1_REPORT.md)
+> and [fit-free verification](../outputs/stock_ecni_e1/E1_VERIFICATION.json).
+
 > **External benchmark and ECNI foundation (2026-09-19):** a new outcome-blind
 > lane audited the course data, CMIN-US, FNSPID, FinMultiTime, EDT, StockNet and
 > SEC EDGAR using primary documentation and bounded samples. FNSPID is the

@@ -1,0 +1,2 @@
+selection_status,symbol,company_id,sector,coverage_stratum,reason,deterministic_tie_break
+NOT_FROZEN,,,,,Exact 2018-2021 per-stock news census and defensible sector taxonomy unavailable from bounded acquisition.,sha256(company_id|57320260919) registered but not applied

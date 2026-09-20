@@ -1,0 +1,19 @@
+{
+  "sample_records": 7711,
+  "exact_url": {
+    "groups": 0,
+    "records_in_groups": 0,
+    "max_group_size": 0,
+    "multi_publisher_groups": 0
+  },
+  "exact_normalized_title": {
+    "groups": 198,
+    "records_in_groups": 521,
+    "max_group_size": 12,
+    "multi_publisher_groups": 44
+  },
+  "near_title_similarity_threshold": 0.9,
+  "near_title_edges": 2285,
+  "body_similarity": "not computed when bodies unavailable; no copyrighted text is exported",
+  "interpretation": "Candidate dissemination groups only; no records collapsed."
+}

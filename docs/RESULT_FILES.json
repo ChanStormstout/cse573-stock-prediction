@@ -2798,5 +2798,140 @@
     "path": "outputs/stock_ecni_e1/PRE_REGISTRATION.md",
     "bytes": 5028,
     "sha256": "71525ddbaea15583218dcdabd6520e32f78482ca8edf537ef38841ac02d16367"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/SOURCE_MANIFEST.json",
+    "bytes": 1948,
+    "sha256": "dd0efc642a1fb5ee075c9d6362d0d2dc859afc35812e205e7f447c1063a26948"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/FNSPID_STRATIFIED_SAMPLE_MANIFEST.json",
+    "bytes": 2098958,
+    "sha256": "4dec9e22b2db486abede6e6df7bb98b270437c84407405dc0eeae836c1b82e4a"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/FNSPID_TIMESTAMP_AUDIT.csv",
+    "bytes": 27088,
+    "sha256": "2892facee6fee7affb9c6739803f887548cbfd50dedd1321744509dd13c52329"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/FNSPID_TEXT_AVAILABILITY_AUDIT.csv",
+    "bytes": 41580,
+    "sha256": "9858ec38fdeebf53f23341c81ee5f06981ae940986abec572b1a1a6b8cbc49dd"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/FNSPID_ENTITY_AUDIT.csv",
+    "bytes": 100977,
+    "sha256": "5827e307dc82c73083b94f93f2f813b7f48f1455c0a1d24b9e514f34f836dde8"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/FNSPID_DUPLICATE_AUDIT.json",
+    "bytes": 541,
+    "sha256": "a0ac0e1d64b153a70addda4a7e71ad44414c5d77502586fef87c6fdacf8b716e"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/FNSPID_PRICE_COVERAGE_BY_SYMBOL.csv",
+    "bytes": 422521,
+    "sha256": "2ff6a9c529e292997526ea14a7ba08f7795fabdcb2821880a20999abd6d929b0"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/COMPANY_IDENTITY_LEDGER.csv",
+    "bytes": 2491408,
+    "sha256": "bad79b77c9179c08ac937dbd8520326bdfb9a36defe63d1ff10b81ddfd5022d0"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/TRAINING_PERIOD_NEWS_COVERAGE.csv",
+    "bytes": 9839,
+    "sha256": "ecf1167f505b32438c9b8747fb8c20df2fee7e651b560dc71efa13c6c689645e"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/FROZEN_STOCK_PANEL.csv",
+    "bytes": 270,
+    "sha256": "18c702c13f9738c041b4f0d30fa5ff44ffcfc12cd9affbff1dccc99b84eecb30"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/COMPANY_SPLITS.json",
+    "bytes": 294,
+    "sha256": "2bb65f740c7d05d1e3466fcdb148d972504a32ff11d3145917af57bc17659f81"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/FROZEN_TIME_SPLIT.json",
+    "bytes": 346,
+    "sha256": "3b63df8f801a67d0d02514cd6d8289c5c5c78d156f008345c00cd8353df515de"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/POINT_IN_TIME_TASK_SPEC.md",
+    "bytes": 1655,
+    "sha256": "3bbc0754b9cccc2a53b145541296183ff15790d81863f1a90254482b3c913598"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/SEC_POINT_IN_TIME_PILOT.csv",
+    "bytes": 123,
+    "sha256": "46992f1a927f91c795e32df8e728b11b28b5b4384ed857ec42139bb59220c1c4"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/UNIFIED_EVIDENCE_LEDGER_SCHEMA.json",
+    "bytes": 2112,
+    "sha256": "1aedf85f861b05a7f365af72b51a6b5840446a386daefde600de0e186efad313"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/ECNI_DATA_ARCHITECTURE_FREEZE.md",
+    "bytes": 1131,
+    "sha256": "780eeaf61509867438e87050af7ee6085c27414564c84b663910d94c6c9e008d"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/CMIN_OFFICIAL_PROTOCOL.md",
+    "bytes": 1175,
+    "sha256": "3d5f91b0fc6368ecf50a300a1e9fbe4f783f09c39ab7579584bef02c6e20350d"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/EDT_ACCESS_AUDIT.md",
+    "bytes": 757,
+    "sha256": "672c4821263235f4097f441ce799429166065fc141f9d29a6a38de393d5ac9a5"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/READER_PILOT_ELIGIBILITY.md",
+    "bytes": 1083,
+    "sha256": "56ac79ae14463c474724fa48562da7f9bdf3d6c039bc882bdaec06e3091d8671"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/HUMAN_READER_LABEL_PROTOCOL.md",
+    "bytes": 1325,
+    "sha256": "9e707ed4010fbcc9b2f3ceb1c5172f581e8ca9812cba9bfb3d5332fea816be30"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/LICENSE_USE_AUDIT.md",
+    "bytes": 724,
+    "sha256": "ada045fc64db79bd0ae28a75a610a710618170b0855018e598a6de737f2312a9"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/E1_FINAL_AUDIT.json",
+    "bytes": 1130,
+    "sha256": "69f32bc2210524ef1c57c68cecedcf633774fd4364dc5555a5a7523edad34d3c"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/E1_VERIFICATION.json",
+    "bytes": 434,
+    "sha256": "0c8691d7402f0c7d2556b7fe0599ab54ea7ef5c1f300ecc61f9f57d375d14ad6"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/E1_REPORT.md",
+    "bytes": 3953,
+    "sha256": "5f64d7f317a719a41f3cf8ffcb420680f7ef8472fccdf00b5d8bad8c69e77dbf"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/run_data_audit.py",
+    "bytes": 9941,
+    "sha256": "13711a74ee4a80ac2ee4f37d038fbd332b23681a410f67db837bb11567088034"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/finalize_e1.py",
+    "bytes": 8586,
+    "sha256": "a93f8174ca4dcd2d63a6dd3ecb8f1e7db0a5f73509e14eede622aff0659ac880"
+  },
+  {
+    "path": "outputs/stock_ecni_e1/verify_e1.py",
+    "bytes": 3399,
+    "sha256": "fd5b529813ca0807cb2da51b34012052dee5578a2a9f4b91162eef8622bdc713"
   }
 ]

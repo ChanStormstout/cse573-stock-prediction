@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "UNIFIED_EVIDENCE_LEDGER_SCHEMA.json",
+  "title": "Unified point-in-time evidence ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id",
+    "target_company_id",
+    "source_type",
+    "source_record_id",
+    "published_or_available_time",
+    "time_precision_class",
+    "target_relation_status",
+    "reader_status"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_company_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_type": {
+      "enum": [
+        "NEWS",
+        "SEC"
+      ]
+    },
+    "source_record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "published_or_available_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "time_precision_class": {
+      "enum": [
+        "EXACT_INTRADAY_USABLE",
+        "DATE_ONLY_CONSERVATIVE",
+        "AMBIGUOUS",
+        "INVALID"
+      ]
+    },
+    "source_or_publisher": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "body_private_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url_or_accession": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_relation_status": {
+      "enum": [
+        "DIRECT_TARGET",
+        "MULTI_COMPANY_INCLUDES_TARGET",
+        "INDIRECT_OR_COMPETITOR",
+        "NO_EVIDENCE_TARGET",
+        "UNDETERMINED"
+      ]
+    },
+    "duplicate_group_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "content_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "event_period": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reader_status": {
+      "type": "string"
+    },
+    "availability_policy": {
+      "type": "string"
+    },
+    "provenance_revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

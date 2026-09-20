@@ -1,0 +1,714 @@
+file,year,source,records,EXACT_INTRADAY_USABLE,DATE_ONLY_CONSERVATIVE,AMBIGUOUS,INVALID,classifiable_fraction
+all,2003,Все,20,0,20,0,0,1.0
+all,2008,www.reuters.com,20,20,0,0,0,1.0
+all,2009,Aurie Maine,3,0,3,0,0,1.0
+all,2009,Benzinga Staff,20,0,20,0,0,1.0
+all,2009,Benzinga Staff 5,2,0,2,0,0,1.0
+all,2009,Benzinga Staff15,4,0,4,0,0,1.0
+all,2009,BenzingaStaff1,11,0,11,0,0,1.0
+all,2009,BenzingaStaff3,9,0,9,0,0,1.0
+all,2009,BullBearTrades,1,0,1,0,0,1.0
+all,2009,CPL,1,0,1,0,0,1.0
+all,2009,CarpeDiem,20,0,20,0,0,1.0
+all,2009,Charles Lewis Sizemore CFA,2,0,2,0,0,1.0
+all,2009,Craig Jones,11,0,11,0,0,1.0
+all,2009,EmergingMarkets,3,0,3,0,0,1.0
+all,2009,Eric Mancini,5,0,5,0,0,1.0
+all,2009,Marco Anthony,1,0,1,0,0,1.0
+all,2009,Mark Moneymaster,3,0,3,0,0,1.0
+all,2009,Market Rewind,1,0,1,0,0,1.0
+all,2009,Monica Gerson,4,0,4,0,0,1.0
+all,2009,Options_Guru,1,0,1,0,0,1.0
+all,2009,Ryan Mallory,2,0,2,0,0,1.0
+all,2009,Sleibhin,3,0,3,0,0,1.0
+all,2009,Swing Trader,1,0,1,0,0,1.0
+all,2009,Ted Friedman,2,0,2,0,0,1.0
+all,2009,Terry Allen,1,0,1,0,0,1.0
+all,2009,William Spencer,1,0,1,0,0,1.0
+all,2009,Zacks,4,0,4,0,0,1.0
+all,2009,inthemoneystocks,2,0,2,0,0,1.0
+all,2009,prudentinvestor,4,0,4,0,0,1.0
+all,2009,superman,4,0,4,0,0,1.0
+all,2009,tradermark,20,0,20,0,0,1.0
+all,2009,webmaster,20,0,20,0,0,1.0
+all,2009,www.bloomberg.com,3,0,3,0,0,1.0
+all,2009,www.reuters.com,20,20,0,0,0,1.0
+all,2009,Все,20,0,20,0,0,1.0
+all,2010,Above Average Odds,1,0,1,0,0,1.0
+all,2010,Alex Furno,3,0,3,0,0,1.0
+all,2010,Angry Bear,1,0,1,0,0,1.0
+all,2010,Benzinga Staff,20,0,20,0,0,1.0
+all,2010,Benzinga Staff 5,20,0,20,0,0,1.0
+all,2010,BenzingaStaff3,7,0,7,0,0,1.0
+all,2010,BenzingaStaffJ,1,0,1,0,0,1.0
+all,2010,BenzingaStaffL,7,0,7,0,0,1.0
+all,2010,BlindReason,1,0,1,0,0,1.0
+all,2010,Bud Fox,13,0,13,0,0,1.0
+all,2010,CarpeDiem,1,0,1,0,0,1.0
+all,2010,Cliff Wachtel,6,0,6,0,0,1.0
+all,2010,Craig Jones,20,0,20,0,0,1.0
+all,2010,Daniel Hayden IV,11,0,11,0,0,1.0
+all,2010,David Bettencourt,1,0,1,0,0,1.0
+all,2010,David Lipton,1,0,1,0,0,1.0
+all,2010,ETF Professor,3,0,3,0,0,1.0
+all,2010,FollowMyAlpha,3,0,3,0,0,1.0
+all,2010,Franklin Price,1,0,1,0,0,1.0
+all,2010,Fred Fuld,1,0,1,0,0,1.0
+all,2010,Gordon Wilcox,3,0,3,0,0,1.0
+all,2010,Ian Wyatt,1,0,1,0,0,1.0
+all,2010,Joe Young,10,0,10,0,0,1.0
+all,2010,John Bougearel,2,0,2,0,0,1.0
+all,2010,John Nyaradi,5,0,5,0,0,1.0
+all,2010,Jonathan Chen,1,0,1,0,0,1.0
+all,2010,Kevin McElroy,1,0,1,0,0,1.0
+all,2010,Lisa Levin,20,0,20,0,0,1.0
+all,2010,Marc Courtenay,1,0,1,0,0,1.0
+all,2010,Marco Anthony,1,0,1,0,0,1.0
+all,2010,Mark Fidelman,1,0,1,0,0,1.0
+all,2010,Mark Moneymaster,7,0,7,0,0,1.0
+all,2010,Mark Riddix,3,0,3,0,0,1.0
+all,2010,Michael J. Zerinskas,20,0,20,0,0,1.0
+all,2010,Michael Snyder,1,0,1,0,0,1.0
+all,2010,Monica Gerson,20,0,20,0,0,1.0
+all,2010,Oakshire Financial,8,0,8,0,0,1.0
+all,2010,Options House,13,0,13,0,0,1.0
+all,2010,Roger Nachman,20,0,20,0,0,1.0
+all,2010,Roger Nusbaum,2,0,2,0,0,1.0
+all,2010,Ronald Weisenstein,2,0,2,0,0,1.0
+all,2010,Ryan Mallory,14,0,14,0,0,1.0
+all,2010,Scott Rubin,15,0,15,0,0,1.0
+all,2010,Sleibhin,3,0,3,0,0,1.0
+all,2010,SmallCapVoice,5,0,5,0,0,1.0
+all,2010,Spock Picks,5,0,5,0,0,1.0
+all,2010,Stephen Castellano,1,0,1,0,0,1.0
+all,2010,Swing Trader,20,0,20,0,0,1.0
+all,2010,TPC,1,0,1,0,0,1.0
+all,2010,Taipan Daily,1,0,1,0,0,1.0
+all,2010,TradeRadar,1,0,1,0,0,1.0
+all,2010,UNKNOWN,1,0,1,0,0,1.0
+all,2010,William K. Black,4,0,4,0,0,1.0
+all,2010,Zacks,20,0,20,0,0,1.0
+all,2010,brettstockblog,1,0,1,0,0,1.0
+all,2010,chenry4287,2,0,2,0,0,1.0
+all,2010,inthemoneystocks,13,0,13,0,0,1.0
+all,2010,moneyshow,2,0,2,0,0,1.0
+all,2010,optionsXpress,20,0,20,0,0,1.0
+all,2010,strichie,1,0,1,0,0,1.0
+all,2010,tradermark,3,0,3,0,0,1.0
+all,2010,webmaster,20,0,20,0,0,1.0
+all,2010,www.bloomberg.com,4,0,4,0,0,1.0
+all,2010,www.reuters.com,20,20,0,0,0,1.0
+all,2011,Abe Raymond,7,0,7,0,0,1.0
+all,2011,Above Average Odds,1,0,1,0,0,1.0
+all,2011,Allie Wickman,20,0,20,0,0,1.0
+all,2011,Angry Bear,1,0,1,0,0,1.0
+all,2011,Anna Gerardi,1,0,1,0,0,1.0
+all,2011,António Costa,1,0,1,0,0,1.0
+all,2011,Benjamin Lee,16,0,16,0,0,1.0
+all,2011,Benzinga Staff,20,0,20,0,0,1.0
+all,2011,Benzinga Staff Writer,14,0,14,0,0,1.0
+all,2011,BenzingaStaffB,9,0,9,0,0,1.0
+all,2011,BenzingaStaffJ,10,0,10,0,0,1.0
+all,2011,BenzingaStaffL,4,0,4,0,0,1.0
+all,2011,BenzingaStaffT,3,0,3,0,0,1.0
+all,2011,BookingAlpha,2,0,2,0,0,1.0
+all,2011,Brett Callwood,1,0,1,0,0,1.0
+all,2011,CEO World,18,0,18,0,0,1.0
+all,2011,CarpeDiem,1,0,1,0,0,1.0
+all,2011,Chris Versace,2,0,2,0,0,1.0
+all,2011,Covestor,1,0,1,0,0,1.0
+all,2011,Craig Jones,6,0,6,0,0,1.0
+all,2011,Daniel Hayden IV,3,1,2,0,0,1.0
+all,2011,Daniel Ho,4,0,4,0,0,1.0
+all,2011,David Johnson,1,0,1,0,0,1.0
+all,2011,Design Taxi,1,0,1,0,0,1.0
+all,2011,ETF Professor,10,0,10,0,0,1.0
+all,2011,EconMatters,1,0,1,0,0,1.0
+all,2011,Eddie Staley,20,0,20,0,0,1.0
+all,2011,Emily Austin,7,0,7,0,0,1.0
+all,2011,Forex Mansion,1,0,1,0,0,1.0
+all,2011,Franklin Price,4,0,4,0,0,1.0
+all,2011,Fred Fuld,2,0,2,0,0,1.0
+all,2011,Gary Cassady,7,0,7,0,0,1.0
+all,2011,General,1,0,1,0,0,1.0
+all,2011,Gordon Wilcox,1,0,1,0,0,1.0
+all,2011,GuruFocus,12,0,12,0,0,1.0
+all,2011,Hilary Farrell,4,0,4,0,0,1.0
+all,2011,Invest With An Edge,1,0,1,0,0,1.0
+all,2011,Investor Ideas,1,0,1,0,0,1.0
+all,2011,Investor's Business Daily,3,0,3,0,0,1.0
+all,2011,Joe Young,20,0,20,0,0,1.0
+all,2011,John Harris,1,0,1,0,0,1.0
+all,2011,John Thorpe,2,0,2,0,0,1.0
+all,2011,Jonathan Chen,19,0,19,0,0,1.0
+all,2011,Juan Lopez,1,0,1,0,0,1.0
+all,2011,Kevin McElroy,6,0,6,0,0,1.0
+all,2011,Lisa Levin,20,0,20,0,0,1.0
+all,2011,Louis Bedigian,2,0,2,0,0,1.0
+all,2011,Luci Morland,2,0,2,0,0,1.0
+all,2011,Lydia Davidson,1,0,1,0,0,1.0
+all,2011,Mark Riddix,1,0,1,0,0,1.0
+all,2011,Matthew Kennedy,20,0,20,0,0,1.0
+all,2011,Michael J. Zerinskas,20,0,20,0,0,1.0
+all,2011,Mike Kulej,1,0,1,0,0,1.0
+all,2011,Minyanville,2,0,2,0,0,1.0
+all,2011,Monica Gerson,20,0,20,0,0,1.0
+all,2011,Nelson Hem,18,0,18,0,0,1.0
+all,2011,Nick Smith,1,0,1,0,0,1.0
+all,2011,Options House,1,0,1,0,0,1.0
+all,2011,Patrick Henderson,1,0,1,0,0,1.0
+all,2011,Paul Quintaro,15,0,15,0,0,1.0
+all,2011,Phil Marsh,11,0,11,0,0,1.0
+all,2011,Roger Nachman,11,0,11,0,0,1.0
+all,2011,Roger Nusbaum,2,0,2,0,0,1.0
+all,2011,Ryan Mallory,2,0,2,0,0,1.0
+all,2011,Scott Rubin,7,0,7,0,0,1.0
+all,2011,SmallCapVoice,2,0,2,0,0,1.0
+all,2011,Steven Anfield,8,0,8,0,0,1.0
+all,2011,T3LIVE,1,0,1,0,0,1.0
+all,2011,The Disciplined Investor,2,0,2,0,0,1.0
+all,2011,Theo Kratz,10,0,10,0,0,1.0
+all,2011,Triple Pundit,1,0,1,0,0,1.0
+all,2011,Zacks,20,0,20,0,0,1.0
+all,2011,inthemoneystocks,6,0,6,0,0,1.0
+all,2011,moneyshow,2,0,2,0,0,1.0
+all,2011,optionsXpress,20,0,20,0,0,1.0
+all,2011,tradermark,1,0,1,0,0,1.0
+all,2011,webmaster,20,0,20,0,0,1.0
+all,2011,www.bloomberg.com,20,0,20,0,0,1.0
+all,2011,www.reuters.com,20,20,0,0,0,1.0
+all,2011,ycharts,1,0,1,0,0,1.0
+all,2012,Allie Wickman,20,0,20,0,0,1.0
+all,2012,António Costa,3,0,3,0,0,1.0
+all,2012,Benjamin Lee,1,0,1,0,0,1.0
+all,2012,Benzinga Staff Writer,2,0,2,0,0,1.0
+all,2012,BookingAlpha,1,0,1,0,0,1.0
+all,2012,Brandon Pilzner,4,0,4,0,0,1.0
+all,2012,Brett Callwood,1,0,1,0,0,1.0
+all,2012,BrianSozzi,1,0,1,0,0,1.0
+all,2012,CapitalCube,1,0,1,0,0,1.0
+all,2012,Charles Gross,20,0,20,0,0,1.0
+all,2012,Covestor,3,0,3,0,0,1.0
+all,2012,Craig Jones,1,0,1,0,0,1.0
+all,2012,David Johnson,20,0,20,0,0,1.0
+all,2012,David Trainer,1,0,1,0,0,1.0
+all,2012,David Tumm,1,0,1,0,0,1.0
+all,2012,Delores Land,5,0,5,0,0,1.0
+all,2012,Dwight Einhorn,6,0,6,0,0,1.0
+all,2012,ETF Professor,12,2,10,0,0,1.0
+all,2012,Eddie Staley,20,0,20,0,0,1.0
+all,2012,George Vieira,1,0,1,0,0,1.0
+all,2012,Gordon Wilcox,6,0,6,0,0,1.0
+all,2012,GuruFocus,20,0,20,0,0,1.0
+all,2012,Hilary Farrell,2,0,2,0,0,1.0
+all,2012,Investopedia,11,0,11,0,0,1.0
+all,2012,Investor's Business Daily,20,0,20,0,0,1.0
+all,2012,James Hunter,1,0,1,0,0,1.0
+all,2012,Jay Wong,1,0,1,0,0,1.0
+all,2012,Jeff Uscher,2,0,2,0,0,1.0
+all,2012,Joe Young,2,0,2,0,0,1.0
+all,2012,John Harris,3,0,3,0,0,1.0
+all,2012,Juan Lopez,20,0,20,0,0,1.0
+all,2012,Katey Stapleton,1,0,1,0,0,1.0
+all,2012,Ken Shreve,2,0,2,0,0,1.0
+all,2012,Larry Doyle,1,0,1,0,0,1.0
+all,2012,Laura Brodbeck,1,0,1,0,0,1.0
+all,2012,Lisa Levin,20,0,20,0,0,1.0
+all,2012,Marcus Goncalves,1,0,1,0,0,1.0
+all,2012,Mark Raymon,3,0,3,0,0,1.0
+all,2012,Matthew Kanterman,7,0,7,0,0,1.0
+all,2012,Matthew Kennedy,12,0,12,0,0,1.0
+all,2012,Michael J. Zerinskas,3,0,3,0,0,1.0
+all,2012,Michael Matthews,3,0,3,0,0,1.0
+all,2012,Monica Gerson,20,0,20,0,0,1.0
+all,2012,Neal Goyal,1,0,1,0,0,1.0
+all,2012,Nelson Hem,20,0,20,0,0,1.0
+all,2012,Paul Quintaro,20,0,20,0,0,1.0
+all,2012,Sam Mattera,9,0,9,0,0,1.0
+all,2012,Scott Rubin,6,0,6,0,0,1.0
+all,2012,Small Cap Network,14,0,14,0,0,1.0
+all,2012,Social Market Analytics,5,0,5,0,0,1.0
+all,2012,TTT Hedge,2,0,2,0,0,1.0
+all,2012,TheStreet.Com,20,0,20,0,0,1.0
+all,2012,Traders Huddle,20,0,20,0,0,1.0
+all,2012,Viktor Puskorius,2,0,2,0,0,1.0
+all,2012,Zacks,20,0,20,0,0,1.0
+all,2012,inthemoneystocks,3,0,3,0,0,1.0
+all,2012,investingdaily,2,0,2,0,0,1.0
+all,2012,moneyshow,5,0,5,0,0,1.0
+all,2012,webmaster,20,0,20,0,0,1.0
+all,2012,www.bloomberg.com,20,0,20,0,0,1.0
+all,2012,www.reuters.com,20,20,0,0,0,1.0
+all,2012,ycharts,2,0,2,0,0,1.0
+all,2013,Alex Biles,1,0,1,0,0,1.0
+all,2013,António Costa,3,0,3,0,0,1.0
+all,2013,Brantley Foster,1,0,1,0,0,1.0
+all,2013,Bruce Kennedy,2,0,2,0,0,1.0
+all,2013,CapitalCube,2,0,2,0,0,1.0
+all,2013,Charles Gross,20,0,20,0,0,1.0
+all,2013,Clay Wyatt,1,0,1,0,0,1.0
+all,2013,Coцсети,6,0,6,0,0,1.0
+all,2013,David Johnson,5,0,5,0,0,1.0
+all,2013,David Pinsen,2,0,2,0,0,1.0
+all,2013,Dwight Einhorn,20,0,20,0,0,1.0
+all,2013,ETF Professor,8,2,6,0,0,1.0
+all,2013,Eddie Staley,2,0,2,0,0,1.0
+all,2013,Erika Janowicz,2,0,2,0,0,1.0
+all,2013,GuruFocus,20,0,20,0,0,1.0
+all,2013,Hal Lindon,10,0,10,0,0,1.0
+all,2013,Investopedia,3,0,3,0,0,1.0
+all,2013,Investor's Business Daily,20,0,20,0,0,1.0
+all,2013,InvestorsObserver,2,0,2,0,0,1.0
+all,2013,Jake L'Ecuyer,20,0,20,0,0,1.0
+all,2013,James Hunt,10,0,10,0,0,1.0
+all,2013,Jayson Derrick,1,0,1,0,0,1.0
+all,2013,Jim Probasco,1,0,1,0,0,1.0
+all,2013,Joe Young,3,0,3,0,0,1.0
+all,2013,Jonathan Yates,1,0,1,0,0,1.0
+all,2013,Juan Lopez,20,0,20,0,0,1.0
+all,2013,Laura Brodbeck,10,0,10,0,0,1.0
+all,2013,Lisa Levin,12,0,12,0,0,1.0
+all,2013,Louis Bedigian,1,0,1,0,0,1.0
+all,2013,Luke Jacobi,1,0,1,0,0,1.0
+all,2013,Matthew Kanterman,17,0,17,0,0,1.0
+all,2013,Matthew McCall,1,0,1,0,0,1.0
+all,2013,Minyanville,1,0,1,0,0,1.0
+all,2013,Monica Gerson,20,0,20,0,0,1.0
+all,2013,Nelson Hem,16,0,16,0,0,1.0
+all,2013,Paul Quintaro,20,0,20,0,0,1.0
+all,2013,PreMarketInfo,9,0,9,0,0,1.0
+all,2013,Sam Mattera,1,0,1,0,0,1.0
+all,2013,Sang Lucci,3,0,3,0,0,1.0
+all,2013,Scott Rubin,11,0,11,0,0,1.0
+all,2013,Small Cap Network,2,0,2,0,0,1.0
+all,2013,TheStreet.Com,11,0,11,0,0,1.0
+all,2013,Tim Parker,2,0,2,0,0,1.0
+all,2013,Zack Armstrong,2,0,2,0,0,1.0
+all,2013,Zacks,20,0,20,0,0,1.0
+all,2013,bret.kenwell@benzinga.com,4,0,4,0,0,1.0
+all,2013,investmentcontrarians,3,0,3,0,0,1.0
+all,2013,lenta.ru,20,0,20,0,0,1.0
+all,2013,pconfidential,1,0,1,0,0,1.0
+all,2013,riddock57,1,0,1,0,0,1.0
+all,2013,webmaster,18,0,18,0,0,1.0
+all,2013,www.bloomberg.com,20,0,20,0,0,1.0
+all,2013,www.reuters.com,20,20,0,0,0,1.0
+all,2013,ycharts,3,0,3,0,0,1.0
+all,2013,Белоруссия,4,0,4,0,0,1.0
+all,2013,Бизнес,20,0,20,0,0,1.0
+all,2013,Вещи,1,0,1,0,0,1.0
+all,2013,Все,20,0,20,0,0,1.0
+all,2013,Гаджеты,6,0,6,0,0,1.0
+all,2013,Госэкономика,20,0,20,0,0,1.0
+all,2013,Деньги,3,0,3,0,0,1.0
+all,2013,Достижения,1,0,1,0,0,1.0
+all,2013,Еда,1,0,1,0,0,1.0
+all,2013,Закавказье,7,0,7,0,0,1.0
+all,2013,Звери,5,0,5,0,0,1.0
+all,2013,Игры,20,0,20,0,0,1.0
+all,2013,Интернет,17,0,17,0,0,1.0
+all,2013,Искусство,8,0,8,0,0,1.0
+all,2013,Кино,20,0,20,0,0,1.0
+all,2013,Книги,2,0,2,0,0,1.0
+all,2013,Конфликты,10,0,10,0,0,1.0
+all,2013,Космос,7,0,7,0,0,1.0
+all,2013,Летние виды,3,0,3,0,0,1.0
+all,2013,Люди,6,0,6,0,0,1.0
+all,2013,Молдавия,2,0,2,0,0,1.0
+all,2013,Музыка,15,0,15,0,0,1.0
+all,2013,Наука,16,0,16,0,0,1.0
+all,2013,Общество,20,0,20,0,0,1.0
+all,2013,Политика,20,0,20,0,0,1.0
+all,2013,Пресса,9,0,9,0,0,1.0
+all,2013,Преступность,20,0,20,0,0,1.0
+all,2013,Прибалтика,6,0,6,0,0,1.0
+all,2013,Происшествия,20,0,20,0,0,1.0
+all,2013,Рынки,5,0,5,0,0,1.0
+all,2013,События,5,0,5,0,0,1.0
+all,2013,Софт,8,0,8,0,0,1.0
+all,2013,Средняя Азия,17,0,17,0,0,1.0
+all,2013,ТВ и радио,6,0,6,0,0,1.0
+all,2013,Театр,6,0,6,0,0,1.0
+all,2013,Техника,7,0,7,0,0,1.0
+all,2013,Украина,20,0,20,0,0,1.0
+all,2013,Футбол,20,0,20,0,0,1.0
+all,2014,Accesswire,5,0,5,0,0,1.0
+all,2014,Alex Furno,2,0,2,0,0,1.0
+all,2014,Ali Berri,1,0,1,0,0,1.0
+all,2014,Benzinga News Desk,1,0,1,0,0,1.0
+all,2014,Bill Stoller,1,0,1,0,0,1.0
+all,2014,Bruce Kennedy,1,0,1,0,0,1.0
+all,2014,Charles Enser,2,0,2,0,0,1.0
+all,2014,Charles Gross,20,0,20,0,0,1.0
+all,2014,Craig Adeyanju,1,0,1,0,0,1.0
+all,2014,Craig Jones,1,0,1,0,0,1.0
+all,2014,David Fabian,3,0,3,0,0,1.0
+all,2014,David Johnson,5,0,5,0,0,1.0
+all,2014,Dwight Einhorn,20,0,20,0,0,1.0
+all,2014,Eddie Staley,20,0,20,0,0,1.0
+all,2014,Eric Niederer,7,0,7,0,0,1.0
+all,2014,Erika Janowicz,4,0,4,0,0,1.0
+all,2014,Fox Business,5,0,5,0,0,1.0
+all,2014,Garrett Cook,13,0,13,0,0,1.0
+all,2014,GuruFocus,20,0,20,0,0,1.0
+all,2014,Hal Lindon,20,0,20,0,0,1.0
+all,2014,Investor's Business Daily,20,0,20,0,0,1.0
+all,2014,Jake L'Ecuyer,14,0,14,0,0,1.0
+all,2014,Jake Mann,1,0,1,0,0,1.0
+all,2014,James Hunt,1,0,1,0,0,1.0
+all,2014,Jason Papallo,1,0,1,0,0,1.0
+all,2014,Jason Shubnell,1,0,1,0,0,1.0
+all,2014,Jayson Derrick,20,0,20,0,0,1.0
+all,2014,Jim Probasco,2,0,2,0,0,1.0
+all,2014,Joel Elconin,2,0,2,0,0,1.0
+all,2014,John Seward,6,0,6,0,0,1.0
+all,2014,Jonathan Yates,1,0,1,0,0,1.0
+all,2014,Juan Lopez,15,0,15,0,0,1.0
+all,2014,Kevin Riley,5,0,5,0,0,1.0
+all,2014,Kurt Zuschlag,1,0,1,0,0,1.0
+all,2014,Laura Brodbeck,20,0,20,0,0,1.0
+all,2014,Lisa Levin,20,0,20,0,0,1.0
+all,2014,Louis Bedigian,3,0,3,0,0,1.0
+all,2014,Luke Jacobi,4,0,4,0,0,1.0
+all,2014,Matthew McCall,2,0,2,0,0,1.0
+all,2014,Mike Butler,1,0,1,0,0,1.0
+all,2014,Monica Gerson,20,0,20,0,0,1.0
+all,2014,MrTopStep,1,0,1,0,0,1.0
+all,2014,Nelson Hem,9,0,9,0,0,1.0
+all,2014,Nick Lazich,2,0,2,0,0,1.0
+all,2014,Paul Quintaro,20,0,20,0,0,1.0
+all,2014,PreMarketInfo,1,0,1,0,0,1.0
+all,2014,Ritesh Anan,1,0,1,0,0,1.0
+all,2014,Seeking Alpha,13,0,13,0,0,1.0
+all,2014,Shazir Mucklai,4,0,4,0,0,1.0
+all,2014,Small Cap Network,1,0,1,0,0,1.0
+all,2014,SmallCapPower,1,0,1,0,0,1.0
+all,2014,Tim Melvin,2,0,2,0,0,1.0
+all,2014,Tim Parker,2,0,2,0,0,1.0
+all,2014,Wayne Duggan,2,0,2,0,0,1.0
+all,2014,Zacks,20,0,20,0,0,1.0
+all,2014,webmaster,5,0,5,0,0,1.0
+all,2014,ycharts,1,0,1,0,0,1.0
+all,2015,Accesswire,5,0,5,0,0,1.0
+all,2015,Adam Sarhan,1,0,1,0,0,1.0
+all,2015,Alex Furno,2,0,2,0,0,1.0
+all,2015,Anthony Sanfilippo,1,0,1,0,0,1.0
+all,2015,Bill Stoller,1,0,1,0,0,1.0
+all,2015,Charles Enser,1,0,1,0,0,1.0
+all,2015,Charles Gross,20,0,20,0,0,1.0
+all,2015,Craig Jones,12,0,12,0,0,1.0
+all,2015,David Fabian,1,0,1,0,0,1.0
+all,2015,Dwight Einhorn,3,0,3,0,0,1.0
+all,2015,ETF Professor,1,0,1,0,0,1.0
+all,2015,Early Global News,1,0,1,0,0,1.0
+all,2015,Eddie Staley,20,0,20,0,0,1.0
+all,2015,Fox Business,5,0,5,0,0,1.0
+all,2015,Fred Fuld,1,0,1,0,0,1.0
+all,2015,Garrett Cook,5,0,5,0,0,1.0
+all,2015,GuruFocus,20,0,20,0,0,1.0
+all,2015,Hal Lindon,20,0,20,0,0,1.0
+all,2015,Investor's Business Daily,20,0,20,0,0,1.0
+all,2015,J.D. Singh,1,0,1,0,0,1.0
+all,2015,Jake Mann,4,0,4,0,0,1.0
+all,2015,Javier Hasse,15,0,15,0,0,1.0
+all,2015,Jayson Derrick,13,0,13,0,0,1.0
+all,2015,Jim Swanson,7,0,7,0,0,1.0
+all,2015,Joel Elconin,7,0,7,0,0,1.0
+all,2015,John Seward,11,0,11,0,0,1.0
+all,2015,Jon Kashat,4,0,4,0,0,1.0
+all,2015,Kenny Polcari,1,0,1,0,0,1.0
+all,2015,Kevin Riley,12,0,12,0,0,1.0
+all,2015,Kyle Dennis,1,0,1,0,0,1.0
+all,2015,Laura Brodbeck,2,0,2,0,0,1.0
+all,2015,Leigh Drogen,1,0,1,0,0,1.0
+all,2015,Lisa Levin,20,1,19,0,0,1.0
+all,2015,Mark Meadows,2,0,2,0,0,1.0
+all,2015,Marketfy Insights,12,0,12,0,0,1.0
+all,2015,Mike Butler,2,0,2,0,0,1.0
+all,2015,Monica Gerson,20,0,20,0,0,1.0
+all,2015,Nelson Hem,7,0,7,0,0,1.0
+all,2015,Nicholas Donato,1,0,1,0,0,1.0
+all,2015,Nicole Sherrod,1,0,1,0,0,1.0
+all,2015,Patrick Williams,1,0,1,0,0,1.0
+all,2015,Paul Quintaro,20,0,20,0,0,1.0
+all,2015,Prudena,2,0,2,0,0,1.0
+all,2015,Rahul Kaundal,1,0,1,0,0,1.0
+all,2015,Richard Smith,1,0,1,0,0,1.0
+all,2015,Ritesh Anan,5,0,5,0,0,1.0
+all,2015,Seeking Alpha,20,0,20,0,0,1.0
+all,2015,Small Cap Network,6,0,6,0,0,1.0
+all,2015,SmallCapPower,1,0,1,0,0,1.0
+all,2015,TD Ameritrade,2,0,2,0,0,1.0
+all,2015,The Ticker Tape,9,0,9,0,0,1.0
+all,2015,Vetr,20,0,20,0,0,1.0
+all,2015,Wayne Duggan,14,0,14,0,0,1.0
+all,2015,Zacks,20,0,20,0,0,1.0
+all,2015,Zoheb Sait,1,0,1,0,0,1.0
+all,2015,www.reuters.com,20,20,0,0,0,1.0
+all,2016,Activist Stocks,1,0,1,0,0,1.0
+all,2016,Amy Weingarden,1,0,1,0,0,1.0
+all,2016,Andrew Efimoff,3,0,3,0,0,1.0
+all,2016,Andrew Zatlin,1,0,1,0,0,1.0
+all,2016,Anthony Sanfilippo,1,0,1,0,0,1.0
+all,2016,BayStreet,8,0,8,0,0,1.0
+all,2016,Benzinga News Desk,12,0,12,0,0,1.0
+all,2016,Brett Hershman,1,0,1,0,0,1.0
+all,2016,Bryan Finnigan,1,0,1,0,0,1.0
+all,2016,Charles Gross,20,1,19,0,0,1.0
+all,2016,Craig Jones,3,0,3,0,0,1.0
+all,2016,Davit Kirakosyan,1,0,1,0,0,1.0
+all,2016,Dhiraj Surapaneni,1,0,1,0,0,1.0
+all,2016,Eddie Staley,20,1,19,0,0,1.0
+all,2016,GuruFocus,20,0,20,0,0,1.0
+all,2016,Hal Lindon,20,1,19,0,0,1.0
+all,2016,Investor's Business Daily,20,0,20,0,0,1.0
+all,2016,Jake Mann,2,0,2,0,0,1.0
+all,2016,Jason Shubnell,1,0,1,0,0,1.0
+all,2016,Javier Hasse,8,0,8,0,0,1.0
+all,2016,Jayson Derrick,13,2,11,0,0,1.0
+all,2016,Jim Swanson,11,0,11,0,0,1.0
+all,2016,Joel Elconin,11,0,11,0,0,1.0
+all,2016,Lisa Levin,20,1,19,0,0,1.0
+all,2016,Manikandan Raman,19,0,19,0,0,1.0
+all,2016,Marketfy Insights,3,0,3,0,0,1.0
+all,2016,Monica Gerson,20,0,20,0,0,1.0
+all,2016,Nelson Hem,4,0,4,0,0,1.0
+all,2016,Paul Quintaro,20,0,20,0,0,1.0
+all,2016,R. Chandrasekaran,10,0,10,0,0,1.0
+all,2016,Rebecca Sheppard,1,0,1,0,0,1.0
+all,2016,Seeking Alpha,20,0,20,0,0,1.0
+all,2016,Shanthi Rexaline,3,0,3,0,0,1.0
+all,2016,Spencer White,1,0,1,0,0,1.0
+all,2016,Taylor Cox,1,0,1,0,0,1.0
+all,2016,The Ticker Tape,10,0,10,0,0,1.0
+all,2016,TipRanks,1,0,1,0,0,1.0
+all,2016,Vetr,16,0,16,0,0,1.0
+all,2016,Wayne Duggan,15,0,15,0,0,1.0
+all,2016,Zacks,6,0,6,0,0,1.0
+all,2016,www.reuters.com,20,20,0,0,0,1.0
+all,2017,Andrew Zatlin,1,0,1,0,0,1.0
+all,2017,BayStreet,4,0,4,0,0,1.0
+all,2017,Benzinga News Desk,7,0,7,0,0,1.0
+all,2017,Benzinga Newsdesk,2,0,2,0,0,1.0
+all,2017,Brent Slava,1,0,1,0,0,1.0
+all,2017,Brett Hershman,4,0,4,0,0,1.0
+all,2017,Charles Gross,20,0,20,0,0,1.0
+all,2017,Chris Dier-Scalise,2,0,2,0,0,1.0
+all,2017,Coцсети,8,0,8,0,0,1.0
+all,2017,Craig Jones,16,0,16,0,0,1.0
+all,2017,Dustin Blitchok,2,0,2,0,0,1.0
+all,2017,Eddie Staley,13,0,13,0,0,1.0
+all,2017,Elizabeth Balboa,1,0,1,0,0,1.0
+all,2017,Ezra Schwarzbaum,3,0,3,0,0,1.0
+all,2017,GuruFocus,20,0,20,0,0,1.0
+all,2017,Hal Lindon,20,0,20,0,0,1.0
+all,2017,Investor's Business Daily,20,0,20,0,0,1.0
+all,2017,JJ Kinahan,1,0,1,0,0,1.0
+all,2017,Javier Hasse,11,1,10,0,0,1.0
+all,2017,Jayson Derrick,14,1,13,0,0,1.0
+all,2017,Jim Swanson,7,0,7,0,0,1.0
+all,2017,Joel Elconin,8,0,8,0,0,1.0
+all,2017,Lisa Levin,20,0,20,0,0,1.0
+all,2017,Manikandan Raman,3,0,3,0,0,1.0
+all,2017,Mark Fritz,2,0,2,0,0,1.0
+all,2017,Matt Hogan - Finbox.io,1,0,1,0,0,1.0
+all,2017,Nelson Hem,5,0,5,0,0,1.0
+all,2017,Paul Quintaro,20,0,20,0,0,1.0
+all,2017,Press Release,1,0,1,0,0,1.0
+all,2017,Scout Finance,4,0,4,0,0,1.0
+all,2017,Seeking Alpha,20,0,20,0,0,1.0
+all,2017,Shanthi Rexaline,13,0,13,0,0,1.0
+all,2017,Spencer Israel,3,0,3,0,0,1.0
+all,2017,Spencer White,2,0,2,0,0,1.0
+all,2017,Taylor Cox,1,0,1,0,0,1.0
+all,2017,The Ticker Tape,2,0,2,0,0,1.0
+all,2017,Vetr,2,0,2,0,0,1.0
+all,2017,Wayne Duggan,14,0,14,0,0,1.0
+all,2017,Zacks,20,0,20,0,0,1.0
+all,2017,lenta.ru,20,0,20,0,0,1.0
+all,2017,vivek.proactive@gmail.com,4,0,4,0,0,1.0
+all,2017,Автобизнес,4,0,4,0,0,1.0
+all,2017,Бизнес,9,0,9,0,0,1.0
+all,2017,Бокс и ММА,5,0,5,0,0,1.0
+all,2017,Вещи,2,0,2,0,0,1.0
+all,2017,Вирусные ролики,2,0,2,0,0,1.0
+all,2017,Внешний вид,5,0,5,0,0,1.0
+all,2017,Все,10,0,10,0,0,1.0
+all,2017,Гаджеты,4,0,4,0,0,1.0
+all,2017,Город,9,0,9,0,0,1.0
+all,2017,Госэкономика,20,0,20,0,0,1.0
+all,2017,Дача,2,0,2,0,0,1.0
+all,2017,Движение,6,0,6,0,0,1.0
+all,2017,Деловой климат,12,0,12,0,0,1.0
+all,2017,Деньги,1,0,1,0,0,1.0
+all,2017,Достижения,9,0,9,0,0,1.0
+all,2017,Еда,1,0,1,0,0,1.0
+all,2017,Закавказье,2,0,2,0,0,1.0
+all,2017,Звери,3,0,3,0,0,1.0
+all,2017,Зимние виды,1,0,1,0,0,1.0
+all,2017,Игры,4,0,4,0,0,1.0
+all,2017,Инструменты,3,0,3,0,0,1.0
+all,2017,Интернет,20,0,20,0,0,1.0
+all,2017,Искусство,4,0,4,0,0,1.0
+all,2017,Квартира,6,0,6,0,0,1.0
+all,2017,Кино,20,0,20,0,0,1.0
+all,2017,Книги,1,0,1,0,0,1.0
+all,2017,Конфликты,5,0,5,0,0,1.0
+all,2017,Космос,9,0,9,0,0,1.0
+all,2017,Криминал,9,0,9,0,0,1.0
+all,2017,Летние виды,4,0,4,0,0,1.0
+all,2017,Люди,5,0,5,0,0,1.0
+all,2017,Мир,16,0,16,0,0,1.0
+all,2017,Мировой бизнес,4,0,4,0,0,1.0
+all,2017,Мнения,3,0,3,0,0,1.0
+all,2017,Молдавия,2,0,2,0,0,1.0
+all,2017,Москва,8,0,8,0,0,1.0
+all,2017,Музыка,12,0,12,0,0,1.0
+all,2017,Наука,16,0,16,0,0,1.0
+all,2017,Общество,20,0,20,0,0,1.0
+all,2017,Офис,1,0,1,0,0,1.0
+all,2017,Политика,20,0,20,0,0,1.0
+all,2017,Полиция и спецслужбы,6,0,6,0,0,1.0
+all,2017,Пресса,4,0,4,0,0,1.0
+all,2017,Преступность,11,0,11,0,0,1.0
+all,2017,Прибалтика,8,0,8,0,0,1.0
+all,2017,Происшествия,20,0,20,0,0,1.0
+all,2017,Регионы,5,0,5,0,0,1.0
+all,2017,Россия,7,0,7,0,0,1.0
+all,2017,Рынки,3,0,3,0,0,1.0
+all,2017,Следствие и суд,20,0,20,0,0,1.0
+all,2017,События,7,0,7,0,0,1.0
+all,2017,Софт,1,0,1,0,0,1.0
+all,2017,Стиль,9,0,9,0,0,1.0
+all,2017,ТВ и радио,7,0,7,0,0,1.0
+all,2017,Театр,20,0,20,0,0,1.0
+all,2017,Туризм,1,0,1,0,0,1.0
+all,2017,Украина,20,0,20,0,0,1.0
+all,2017,Футбол,20,0,20,0,0,1.0
+all,2017,Хоккей,8,0,8,0,0,1.0
+all,2017,Часы,3,0,3,0,0,1.0
+all,2017,Явления,14,0,14,0,0,1.0
+all,2018,Andy Pai,1,0,1,0,0,1.0
+all,2018,Benzinga Newdesk,17,0,17,0,0,1.0
+all,2018,Benzinga Newsdesk,20,1,19,0,0,1.0
+all,2018,Benzinga  Newsdesk,1,0,1,0,0,1.0
+all,2018,Benzinga_Newsdesk,20,0,20,0,0,1.0
+all,2018,Bill Haddad,2,0,2,0,0,1.0
+all,2018,Brad Hammond,8,1,7,0,0,1.0
+all,2018,Brett Hershman,8,0,8,0,0,1.0
+all,2018,Charles Gross,20,0,20,0,0,1.0
+all,2018,Chris Dier-Scalise,1,0,1,0,0,1.0
+all,2018,Craig Jones,2,0,2,0,0,1.0
+all,2018,Eddie Staley,20,0,20,0,0,1.0
+all,2018,Elizabeth Balboa,2,0,2,0,0,1.0
+all,2018,Ezra Schwarzbaum,1,0,1,0,0,1.0
+all,2018,FreightWaves,5,0,5,0,0,1.0
+all,2018,GuruFocus,20,0,20,0,0,1.0
+all,2018,Hal Lindon,20,0,20,0,0,1.0
+all,2018,Hannah Genig,2,0,2,0,0,1.0
+all,2018,Investor's Business Daily,20,0,20,0,0,1.0
+all,2018,JJ Kinahan,1,0,1,0,0,1.0
+all,2018,Javier Hasse,1,0,1,0,0,1.0
+all,2018,Jayson Derrick,19,0,19,0,0,1.0
+all,2018,Lisa Levin,20,0,20,0,0,1.0
+all,2018,Matt Hogan - Finbox.io,1,0,1,0,0,1.0
+all,2018,Nelson Hem,3,0,3,0,0,1.0
+all,2018,Paul Quintaro,20,0,20,0,0,1.0
+all,2018,Rich Worthington,1,0,1,0,0,1.0
+all,2018,Seeking Alpha,20,0,20,0,0,1.0
+all,2018,Shanthi Rexaline,11,2,9,0,0,1.0
+all,2018,Spencer Israel,1,0,1,0,0,1.0
+all,2018,Steve Miller,1,0,1,0,0,1.0
+all,2018,TalkMarkets,5,0,5,0,0,1.0
+all,2018,Taylor Cox,7,0,7,0,0,1.0
+all,2018,The Ticker Tape,1,0,1,0,0,1.0
+all,2018,VantagePoint,1,0,1,0,0,1.0
+all,2018,Vick Meyer,20,0,20,0,0,1.0
+all,2018,Wayne Duggan,9,0,9,0,0,1.0
+all,2018,Zacks,20,0,20,0,0,1.0
+all,2018,lbjacobi,1,0,1,0,0,1.0
+all,2018,luke@benzinga.com,18,0,18,0,0,1.0
+all,2019,Benzinga Newsdesk,20,1,19,0,0,1.0
+all,2019,Benzinga  Newsdesk,3,0,3,0,0,1.0
+all,2019,Benzinga_Newsdesk,20,0,20,0,0,1.0
+all,2019,Brett Hershman,7,0,7,0,0,1.0
+all,2019,Charles Gross,15,0,15,0,0,1.0
+all,2019,Chris Dier-Scalise,2,0,2,0,0,1.0
+all,2019,Craig Jones,1,0,1,0,0,1.0
+all,2019,Dave Royse,3,0,3,0,0,1.0
+all,2019,Elizabeth Balboa,1,0,1,0,0,1.0
+all,2019,FreightWaves,20,0,20,0,0,1.0
+all,2019,GuruFocus,20,0,20,0,0,1.0
+all,2019,Hal Lindon,8,2,6,0,0,1.0
+all,2019,Investor's Business Daily,20,0,20,0,0,1.0
+all,2019,JJ Kinahan,1,0,1,0,0,1.0
+all,2019,Jayson Derrick,1,0,1,0,0,1.0
+all,2019,Joel Elconin,1,0,1,0,0,1.0
+all,2019,Lisa Levin,20,2,18,0,0,1.0
+all,2019,Nelson Hem,2,0,2,0,0,1.0
+all,2019,Priya Nigam,5,0,5,0,0,1.0
+all,2019,Seeking Alpha,20,0,20,0,0,1.0
+all,2019,Shanthi Rexaline,1,0,1,0,0,1.0
+all,2019,Spencer Israel,1,0,1,0,0,1.0
+all,2019,TalkMarkets,20,0,20,0,0,1.0
+all,2019,Tanzeel Akhtar,4,0,4,0,0,1.0
+all,2019,Vick Meyer,20,0,20,0,0,1.0
+all,2019,Wayne Duggan,3,0,3,0,0,1.0
+all,2019,Zacks,20,0,20,0,0,1.0
+all,2019,luke@benzinga.com,9,0,9,0,0,1.0
+all,2020,BayStreet,1,0,1,0,0,1.0
+all,2020,Benzinga Insights,17,8,9,0,0,1.0
+all,2020,Benzinga Newsdesk,20,2,18,0,0,1.0
+all,2020,Benzinga Staff,1,0,1,0,0,1.0
+all,2020,Benzinga_Newsdesk,20,2,18,0,0,1.0
+all,2020,Benzinga Newsdesk,19,17,2,0,0,1.0
+all,2020,Charles Gross,20,0,20,0,0,1.0
+all,2020,Craig Jones,6,0,6,0,0,1.0
+all,2020,Direxion,1,0,1,0,0,1.0
+all,2020,ETF Professor,4,0,4,0,0,1.0
+all,2020,Elizabeth Balboa,8,0,8,0,0,1.0
+all,2020,FreightWaves,13,1,12,0,0,1.0
+all,2020,GuruFocus,20,0,20,0,0,1.0
+all,2020,Henry Khederian,1,0,1,0,0,1.0
+all,2020,Howie Bick,1,0,1,0,0,1.0
+all,2020,IAM Newswire,20,0,20,0,0,1.0
+all,2020,Investor's Business Daily,20,0,20,0,0,1.0
+all,2020,JJ Kinahan,20,0,20,0,0,1.0
+all,2020,Jason Shubnell,3,0,3,0,0,1.0
+all,2020,Javier Hasse,1,0,1,0,0,1.0
+all,2020,Jayson Derrick,8,0,8,0,0,1.0
+all,2020,Lisa Levin,20,1,19,0,0,1.0
+all,2020,Luis Aureliano,1,0,1,0,0,1.0
+all,2020,Luke J Jacobi,3,1,2,0,0,1.0
+all,2020,Neer Varshney,20,1,19,0,0,1.0
+all,2020,Nelson Hem,9,0,9,0,0,1.0
+all,2020,Othanas Economopoulos,1,0,1,0,0,1.0
+all,2020,Priya Nigam,2,1,1,0,0,1.0
+all,2020,Randy Elias,1,0,1,0,0,1.0
+all,2020,Renato Capelj,5,0,5,0,0,1.0
+all,2020,Shanthi Rexaline,14,1,13,0,0,1.0
+all,2020,Shivdeep Dhaliwal,20,0,20,0,0,1.0
+all,2020,Spencer Israel,3,0,3,0,0,1.0
+all,2020,TD Ameritrade,3,0,3,0,0,1.0
+all,2020,TD Ameritrade Network,1,0,1,0,0,1.0
+all,2020,TalkMarkets,20,0,20,0,0,1.0
+all,2020,Tanzeel Akhtar,11,2,9,0,0,1.0
+all,2020,Tobias Van Gils - Countach Research,1,0,1,0,0,1.0
+all,2020,Tyree Gorges,4,0,4,0,0,1.0
+all,2020,Vick Meyer,20,3,17,0,0,1.0
+all,2020,Wayne Duggan,11,0,11,0,0,1.0
+all,2020,Zacks,20,0,20,0,0,1.0
+all,2020,luke@benzinga.com,20,0,20,0,0,1.0
+all,2020,vishwanath@benzinga.com,20,9,11,0,0,1.0
+all,ALL,ALL,5711,232,5479,0,0,1.0
+nasdaq,2014,www.nasdaq.com,7,0,7,0,0,1.0
+nasdaq,2015,www.nasdaq.com,35,0,35,0,0,1.0
+nasdaq,2016,www.nasdaq.com,51,0,51,0,0,1.0
+nasdaq,2017,www.nasdaq.com,236,0,236,0,0,1.0
+nasdaq,2018,www.nasdaq.com,138,0,138,0,0,1.0
+nasdaq,2019,www.nasdaq.com,47,0,47,0,0,1.0
+nasdaq,2020,www.nasdaq.com,30,0,30,0,0,1.0
+nasdaq,2021,www.nasdaq.com,275,0,275,0,0,1.0
+nasdaq,2022,www.nasdaq.com,446,0,446,0,0,1.0
+nasdaq,2023,www.nasdaq.com,735,0,735,0,0,1.0
+nasdaq,ALL,ALL,2000,0,2000,0,0,1.0

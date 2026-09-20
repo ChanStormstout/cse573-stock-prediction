@@ -1,0 +1,48 @@
+{
+  "generated": "2026-09-19",
+  "sources": [
+    {
+      "dataset": "FNSPID",
+      "artifact": "Stock_news/All_external.csv",
+      "revision": "bf9189c41527198897d1af3e17b1a0095279fc45",
+      "remote_size": 5731397037,
+      "remote_sha256": "5d4c018036bd82ca821da71b7a9c0c7db3289642e0fc6f897ea69f4a0c5135c3",
+      "acquisition": "12 deterministic 2 MiB HTTP ranges; private"
+    },
+    {
+      "dataset": "FNSPID",
+      "artifact": "Stock_news/nasdaq_exteral_data.csv",
+      "revision": "bf9189c41527198897d1af3e17b1a0095279fc45",
+      "remote_size": 23232979597,
+      "remote_sha256": "1a7a3eb8e6b97ec19f286f2cfca3371542bddb272ab1eb8f36e33ad98fa5c4da",
+      "acquisition": "12 deterministic 2 MiB HTTP ranges; private"
+    },
+    {
+      "dataset": "FNSPID",
+      "artifact": "Stock_price/full_history.zip",
+      "revision": "bf9189c41527198897d1af3e17b1a0095279fc45",
+      "remote_size": 589525596,
+      "remote_sha256": "03da4fce7ebea90d5715ba3501773d410ae663b617027b338ef000a9955dab91",
+      "local_sha256": "03da4fce7ebea90d5715ba3501773d410ae663b617027b338ef000a9955dab91",
+      "acquisition": "complete official file; private"
+    },
+    {
+      "dataset": "SEC",
+      "artifact": "company_tickers_exchange.json",
+      "revision": "downloaded_current_2026-09-19",
+      "local_size": 523768,
+      "local_sha256": "a4aa20329b32644f7ac3b50ef5fa431343ada802f91286c58423afa88c8f0e55",
+      "acquisition": "official SEC current mapping"
+    },
+    {
+      "dataset": "Nasdaq",
+      "artifact": "screener current snapshot",
+      "revision": "downloaded_current_2026-09-19",
+      "local_size": 1397108,
+      "local_sha256": "4386ee75c1646e5b7cf3d1c33c2f116006195449aac8c7b25f122a23e885acc9",
+      "acquisition": "current identity candidate; no sector fields"
+    }
+  ],
+  "private_sample_sha256": "acc5310f0cf6f8bba0a95f99a4fb34d98c24a95bf115179308019597c5b8a3a6",
+  "copyright_boundary": "No article body is committed."
+}

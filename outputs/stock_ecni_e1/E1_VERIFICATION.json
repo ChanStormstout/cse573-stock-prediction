@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": {
+    "required_artifacts": true,
+    "conditional_status": true,
+    "zero_prediction": true,
+    "frozen_sample_7711": true,
+    "price_rows_7693": true,
+    "no_direction_fields": true,
+    "panel_honestly_unfrozen": true,
+    "ledger_required_fields": true,
+    "point_in_time_query_smoke": true,
+    "locked_outcomes_uninspected": true
+  },
+  "fit_calls": 0,
+  "prediction_metrics_computed": 0
+}
