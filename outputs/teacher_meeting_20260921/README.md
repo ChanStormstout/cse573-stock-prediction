@@ -4,7 +4,7 @@
 
 16 English slides: 13 main slides for a 10–12 minute discussion and three appendix slides. The deck uses the supplied Simple Light Mode template. The native tables and method diagrams remain editable.
 
-The final local file is `CSE573_News_Context_Faculty_Meeting_v4.pptx`. Presentation binaries remain outside Git under the existing repository policy. [Presenter notes](PRESENTER_NOTES.md) include slide-specific sources and explanations. [Method proposal](METHOD_PROPOSAL.md) records the design boundary.
+The final local file is `CSE573_News_Context_Faculty_Meeting_v6.pptx`. Presentation binaries remain outside Git under the existing repository policy. [Presenter notes](PRESENTER_NOTES.md) include slide-specific sources and explanations. [Method proposal](METHOD_PROPOSAL.md) records the design boundary.
 
 ## Narrative
 
@@ -31,3 +31,7 @@ The course connection is classical ML plus modern language representations and e
 ## Build
 
 `build_slides.mjs` is the exact local authoring source, using the installed Presentations artifact-tool runtime and the requested template. Its absolute paths identify this workstation's dependencies; rebuilding elsewhere requires replacing those paths. Outputs and finalizer receipts use versioned names and should not overwrite an existing delivered deck. The template asset is not redistributed. Validation receipts and rendered previews stay under `work/presentation_meeting/build/`.
+
+## Readability revision
+
+The updated deck retains the light template, with navy headings, teal emphasis on proposed information increments, pale grouping backgrounds and stronger typographic hierarchy. Diagrams distinguish the reference path from the proposed correction. Numeric evidence and method status are unchanged. Earlier PowerPoint versions remain local.

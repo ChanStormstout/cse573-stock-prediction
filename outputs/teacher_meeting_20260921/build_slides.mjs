@@ -8,19 +8,30 @@ const REF='/Users/victor/.codex/plugins/cache/openai-curated-remote/openai-templ
 const BUILD=path.join(ROOT,'work/presentation_meeting/build');
 const OUT=path.join(ROOT,'outputs/teacher_meeting_20260921');
 const FONT='Helvetica Neue';
+const NAVY='#17324D',TEAL='#006E73',INK='#293744',MUTED='#536676',BLUEBG='#EDF3F9',TEALBG='#E7F4F1';
 const p=await PresentationFile.importPptx(await FileBlob.load(REF));
 const originals=[...p.slides.items];
 const plans=[]; const made=[];
 function text(s,txt,x,y,w,h,size=24,color='#111111',bold=false){let q=s.shapes.add({geometry:'textbox',position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});q.text=txt;q.text.style={typeface:FONT,fontSize:size,color,bold,autoFit:'none'};return q;}
 function edit(q,txt,size=24){q.text=txt;q.text.style={typeface:FONT,fontSize:size,color:'#111111',autoFit:'none'};}
 function slide(ref,title,notes){let s=originals[ref-1].duplicate();let n=plans.length+1;for(let q of s.shapes.items){const pos=q.position;if(pos.top<100&&pos.width>900)edit(q,title,32);if(pos.top>650&&pos.left>1100)edit(q,String(n),12);}s.speakerNotes.textFrame.setText(notes);plans.push({title,notes,reference_slide:ref});made.push(s);return s;}
-function cols(title,items,notes){let s=slide(5,title,notes);const qs=s.shapes.items.filter(q=>q.position.top>200&&q.position.top<300).sort((a,b)=>a.position.left-b.position.left);items.forEach((t,i)=>edit(qs[i],t,26));return s;}
-function four(title,items,notes){let s=slide(13,title,notes);const qs=s.shapes.items.filter(q=>q.position.top>200&&q.position.top<600).sort((a,b)=>Math.round(a.position.top/100)-Math.round(b.position.top/100)||a.position.left-b.position.left);items.forEach((t,i)=>edit(qs[i],t,25));return s;}
+function rich(s,txt,x,y,w,h,accent=NAVY){
+ let q=text(s,'',x,y,w,h,25,INK);let lines=txt.split('\n');
+ q.text=lines.map((line,i)=>({runs:[{run:line,textStyle:{typeface:FONT,fontSize:(i===0||(lines[i-1]===''&&line.length<55)?'27px':'25px'),bold:i===0||(lines[i-1]===''&&line.length<55),color:i===0||(lines[i-1]===''&&line.length<55)?accent:INK}}]}));return q;
+}
+function surface(s,x,y,w,h,fill){return s.shapes.add({geometry:'rect',position:{left:x,top:y,width:w,height:h},fill,line:{fill:'none',width:0}});}
+function cols(title,items,notes){let s=slide(5,title,notes);for(let q of [...s.shapes.items])if(q.position.top>150&&q.position.top<650)s.shapes.deleteById(q.id);
+ let selected=[2,7,10,11,13].includes(plans.length);
+ if(selected)surface(s,644,183,594,389,TEALBG);
+ items.forEach((t,i)=>rich(s,t,54+i*608,204,560,363,i?TEAL:NAVY));return s;}
+function four(title,items,notes){let s=slide(13,title,notes);for(let q of [...s.shapes.items])if(q.position.top>150&&q.position.top<650)s.shapes.deleteById(q.id);
+ if([3,6].includes(plans.length))surface(s,644,390,594,185,TEALBG);
+ items.forEach((t,i)=>rich(s,t,54+(i%2)*608,205+Math.floor(i/2)*205,560,172,i===3?TEAL:NAVY));return s;}
 function blank(title,notes){let s=slide(5,title,notes);for(let q of [...s.shapes.items])if(q.position.top>150&&q.position.top<650)s.shapes.deleteById(q.id);return s;}
-function box(s,txt,x,y,w,h){let q=s.shapes.add({geometry:'rect',position:{left:x,top:y,width:w,height:h},fill:'#F3F3F3',line:{fill:'#B7B7B7',width:1}});q.text=txt;q.text.style={typeface:FONT,fontSize:23,color:'#111111',alignment:'center',verticalAlignment:'middle',autoFit:'none'};return q;}
-function arrow(s,a,b,from='right',to='left'){return s.shapes.connect(a,b,{kind:'straight',fromSide:from,toSide:to,line:{fill:'#707070',width:1.6},tail:{type:'arrow',width:'med',length:'med'}});}
+function box(s,txt,x,y,w,h){let q=s.shapes.add({geometry:'rect',position:{left:x,top:y,width:w,height:h},fill:BLUEBG,line:{fill:'#B7C9DB',width:1}});q.text=txt;q.text.style={typeface:FONT,fontSize:23,color:NAVY,bold:true,alignment:'center',verticalAlignment:'middle',autoFit:'none'};return q;}
+function arrow(s,a,b,from='right',to='left'){return s.shapes.connect(a,b,{kind:'straight',fromSide:from,toSide:to,line:{fill:'#627C8B',width:2},tail:{type:'arrow',width:'med',length:'med'}});}
 function note(s,t){text(s,t,42,595,1165,48,20,'#555555');}
-function table(s,values,top=230){let t=s.tables.add({rows:values.length,columns:values[0].length,left:42,top,width:1196,height:values.length*53,columnWidths:values[0].length===5?[360,209,209,209,209]:undefined,values});for(let r=0;r<values.length;r++)for(let c=0;c<values[0].length;c++){let x=t.getCell(r,c);x.fill=r===0?'#EAEAEA':(r%2?'#FFFFFF':'#F6F6F6');x.text.style={typeface:FONT,fontSize:23,color:'#111111',bold:r===0};}t.borders.assign({fill:'#D4D4D4',width:0.6,style:'solid'});return t;}
+function table(s,values,top=230){let t=s.tables.add({rows:values.length,columns:values[0].length,left:42,top,width:1196,height:values.length*53,columnWidths:values[0].length===5?[360,209,209,209,209]:undefined,values});for(let r=0;r<values.length;r++)for(let c=0;c<values[0].length;c++){let x=t.getCell(r,c);x.fill=r===0?NAVY:(['Price + FinBERT','+ Fact changes'].includes(values[r][0])?TEALBG:(r%2?'#FFFFFF':BLUEBG));x.text.style={typeface:FONT,fontSize:23,color:r===0?'#FFFFFF':INK,bold:r===0||['Price + FinBERT','+ Fact changes'].includes(values[r][0])};}t.borders.assign({fill:'#D4E0E7',width:0.6,style:'solid'});return t;}
 const repo='https://github.com/ChanStormstout/cse573-stock-prediction/blob/652b1999407a2e248064d61e8758cd68050dcf89/';
 const src=(f)=>repo+f;
 let s=slide(1,'',`Opening: We study whether news adds useful information to a four-hour stock-direction forecast. The next method is a proposal, not a claimed experimental improvement. Present the mechanism and ask for feedback on a finite evaluation.\nSource checkpoint: 652b1999407a2e248064d61e8758cd68050dcf89.`);
@@ -86,6 +97,23 @@ cols('Appendix: sources and method status',[
 ],`References: https://arxiv.org/abs/1908.10063; https://arxiv.org/abs/2410.10614. Project source checkpoint: 652b1999407a2e248064d61e8758cd68050dcf89. Exact evidence links appear in notes on each result slide. No paper's benchmark gains are transferred to this project. No model training, data acquisition, entity labeling or reader calls took place in making these slides.`);
 for(let original of originals)original.delete();
 for(let i=0;i<made.length;i++){made[i].moveTo(i);for(let q of made[i].shapes.items)if(q.position.top>650&&q.position.left>1100)edit(q,String(i+1),12);}
+// Reader guidance: dark blue is the established reference; teal marks the proposed information increment.
+for(let i=0;i<made.length;i++){
+ const sl=made[i];
+ for(let q of sl.shapes.items){
+  const pos=q.position;
+  if(pos.top<100&&pos.width>900){q.text.color=NAVY;q.text.fontSize=34;q.text.style={typeface:FONT,fontSize:34,color:NAVY,bold:true,autoFit:'none'};}
+  if(pos.top>590&&pos.top<650){q.text.color=MUTED;}
+  if([7,8].includes(i)&&q.geometry==='rect'){q.fill=TEALBG;q.text.color=TEAL;}
+ }
+}
+// Emphasize only the semantic steps in editable diagrams.
+for(const i of [3,7,8])for(const q of made[i].shapes.items){
+ const txt=q.text?.toString?.()||'';
+ if(/change reader|Computed change|Learned adjustment|Small score adjustment/.test(txt)&&q.position.top>150&&q.position.top<580){q.fill=TEALBG;q.text.color=TEAL;}
+}
+made[0].shapes.items.find(x=>x.id==='4').text.color=NAVY;
+made[0].shapes.items.find(x=>x.id==='6').text.color=TEAL;
 await fs.mkdir(OUT,{recursive:true});
 await fs.writeFile(path.join(BUILD,'storyboard.json'),JSON.stringify(plans,null,2));
 await (await PresentationFile.exportPptx(p)).save(path.join(BUILD,'candidate.pptx'));
@@ -93,5 +121,5 @@ await fs.mkdir(path.join(BUILD,'renders'),{recursive:true});
 for(let i=0;i<p.slides.items.length;i++){let s=p.slides.items[i];let b=await p.export({slide:s,format:'png',scale:1});await fs.writeFile(path.join(BUILD,'renders',`slide-${i+1}.png`),new Uint8Array(await b.arrayBuffer()));}
 await fs.writeFile(path.join(OUT,'PRESENTER_NOTES.md'),'# Faculty meeting notes\n\nSuggested length: 10–12 minutes, with slides 14–16 held for questions.\n\n'+plans.map((x,i)=>`## Slide ${i+1}: ${x.title||'News context for stock prediction'}\n\n${x.notes}\n`).join('\n'));
 const {finalizePresentation}=await import(path.join(SKILL,'container_tools/artifact_tool_utils.mjs'));
-const out=await finalizePresentation({workspaceDir:ROOT,candidatePath:path.join(BUILD,'candidate.pptx'),finalPath:path.join(OUT,'CSE573_News_Context_Faculty_Meeting_v4.pptx'),pythonExecutable:'/Users/victor/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',integrityValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit','--require-native-table-slide','5','--require-native-table-slide','12','--require-native-table-slide','14'],fontPolicy:{basis:'reference',families:[FONT],referencePath:REF,referenceSha256:crypto.createHash('sha256').update(await fs.readFile(REF)).digest('hex')},explicitTotalSlideCount:16,requiredNativeTableOwnerSlides:[5,12,14],verifyArtifactToolImport:true,receiptPath:path.join(BUILD,'validation_v4.json')});
+const out=await finalizePresentation({workspaceDir:ROOT,candidatePath:path.join(BUILD,'candidate.pptx'),finalPath:path.join(OUT,'CSE573_News_Context_Faculty_Meeting_v6.pptx'),pythonExecutable:'/Users/victor/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',integrityValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit','--require-native-table-slide','5','--require-native-table-slide','12','--require-native-table-slide','14'],fontPolicy:{basis:'reference',families:[FONT],referencePath:REF,referenceSha256:crypto.createHash('sha256').update(await fs.readFile(REF)).digest('hex')},explicitTotalSlideCount:16,requiredNativeTableOwnerSlides:[5,12,14],verifyArtifactToolImport:true,receiptPath:path.join(BUILD,'validation_v6.json')});
 console.log(JSON.stringify(out,null,2));
