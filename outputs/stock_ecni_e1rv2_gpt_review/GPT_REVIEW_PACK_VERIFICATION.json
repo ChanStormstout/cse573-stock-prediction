@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "checks": {
+    "private_frozen_sha256": true,
+    "private_sample_515_unique": true,
+    "index_515_unique": true,
+    "index_exact_frozen_ids": true,
+    "review_indices_exact_1_to_515": true,
+    "five_batches_each_103": true,
+    "batches_partition_frozen_sample": true,
+    "batch_rows_equal_index_rows_in_order": true,
+    "display_order_equals_index": true,
+    "display_order_hash_recomputed": true,
+    "reviewer_safe_fields_only": true,
+    "no_prohibited_answer_or_text_fields": true,
+    "no_prefilled_semantic_labels": true,
+    "no_private_article_body_or_evidence_excerpt": true,
+    "URL_mapping_pass_zero_failures": true,
+    "all_source_statuses_allowed": true,
+    "manifest_source_identity": true,
+    "manifest_index_hash": true,
+    "manifest_order_hash": true,
+    "manifest_batch_hashes": true,
+    "manifest_no_labels_no_outcomes_no_copyrighted_text": true
+  },
+  "details": {
+    "batch_counts": {
+      "BATCH_01.jsonl": 103,
+      "BATCH_02.jsonl": 103,
+      "BATCH_03.jsonl": 103,
+      "BATCH_04.jsonl": 103,
+      "BATCH_05.jsonl": 103
+    },
+    "prohibited_fields_found": [],
+    "unexpected_fields_found": [],
+    "frozen_cards": 515,
+    "index_rows": 515,
+    "batch_rows": 515,
+    "semantic_labels_generated": 0,
+    "returns_or_outcomes_accessed": 0
+  }
+}

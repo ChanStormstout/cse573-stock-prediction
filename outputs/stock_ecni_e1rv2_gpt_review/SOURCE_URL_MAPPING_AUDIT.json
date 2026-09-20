@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source_checkpoint": "ad0c7af2415d436a05bf346d352e2bbbd0edcbef",
+  "cards_total": 515,
+  "cards_with_valid_nonempty_source_url": 515,
+  "cards_without_valid_public_source_url": 0,
+  "cards_with_no_source_url": 0,
+  "cards_with_invalid_source_url": 0,
+  "unique_valid_source_urls": 509,
+  "duplicate_url_values": 6,
+  "cards_in_duplicate_url_groups": 12,
+  "duplicate_card_occurrences_beyond_first": 6,
+  "mapping_failures": 0,
+  "provenance_checks": {
+    "record_id_hash_recomputed_from_exact_source_row": true,
+    "url_hash_matches_frozen_metadata": true
+  },
+  "semantic_content_reviewed_by_builder": false
+}

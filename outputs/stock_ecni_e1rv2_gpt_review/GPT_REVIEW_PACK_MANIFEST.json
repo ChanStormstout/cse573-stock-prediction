@@ -1,0 +1,32 @@
+{
+  "status": "BUILT_PENDING_INDEPENDENT_PACK_VERIFICATION",
+  "source_checkpoint": "ad0c7af2415d436a05bf346d352e2bbbd0edcbef",
+  "source_frozen_card_sha256": "41a906f9822b52539f76cb61636954b7c9ff4e996e7bb472984a08712e8a9654",
+  "source_frozen_card_count": 515,
+  "public_index_sha256": "41e2d8ae8b04560c98ad11a4f338f43b2d34928f66a89cd75d8a32315feb8d87",
+  "display_order_file_sha256": "a1e849e70d54373824edfdc151b7e0430e24954a37956a8f76ba02c938e7be78",
+  "ordered_card_ids_sha256": "467b543b917807f539100e83cf88a07592f9049953c4f0e4db738baca9f5e913",
+  "batch_file_sha256": {
+    "review_batches/BATCH_01.jsonl": "e029b7bd3d8020d9c356c900ba6cdb4ce5b554835d2ad229969047c8d65f9465",
+    "review_batches/BATCH_02.jsonl": "e05df18cbda4d16c40326a43e7e2a7cf28ca6e7ed4d2727d2a7042cad2142960",
+    "review_batches/BATCH_03.jsonl": "7f1fc1505ac95e2403b53d376d20b8b40617ea87c481dd4bded34f0731ec5c19",
+    "review_batches/BATCH_04.jsonl": "c30fffa637c22a1aabea063c835827e21531c461716a22f0c8b39a0f4c4c6d29",
+    "review_batches/BATCH_05.jsonl": "d3c74a1f87a6d7811666e7cd8f2f9c473c7e1bcaad89e15cd4b9a403202048ad"
+  },
+  "batch_counts": {
+    "review_batches/BATCH_01.jsonl": 103,
+    "review_batches/BATCH_02.jsonl": 103,
+    "review_batches/BATCH_03.jsonl": 103,
+    "review_batches/BATCH_04.jsonl": 103,
+    "review_batches/BATCH_05.jsonl": 103
+  },
+  "url_mapping_counts": {
+    "cards_with_valid_nonempty_source_url": 515,
+    "cards_without_valid_public_source_url": 0,
+    "duplicate_url_values": 6,
+    "mapping_failures": 0
+  },
+  "copyrighted_text_committed": false,
+  "semantic_labels_generated_by_codex": 0,
+  "returns_or_outcomes_accessed": 0
+}

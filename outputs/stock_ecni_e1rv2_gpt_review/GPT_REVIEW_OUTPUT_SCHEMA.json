@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ECNI E1R-V2 independent semantic review row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "card_id",
+    "label",
+    "source_checked"
+  ],
+  "properties": {
+    "card_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "label": {
+      "type": "string",
+      "enum": [
+        "DIRECT_TARGET",
+        "MULTI_COMPANY_DIRECT",
+        "INDIRECT_COMPETITOR_OR_COUNTERPARTY",
+        "VENUE_OR_MARKET_NAME_ONLY",
+        "PUBLISHER_OR_SOURCE_NAME_ONLY",
+        "INCIDENTAL_MENTION",
+        "NO_TARGET_EVIDENCE",
+        "UNCERTAIN"
+      ]
+    },
+    "source_checked": {
+      "type": "boolean"
+    },
+    "review_note": {
+      "type": "string",
+      "description": "Optional short rationale based only on the reviewer-safe card and source article."
+    }
+  }
+}

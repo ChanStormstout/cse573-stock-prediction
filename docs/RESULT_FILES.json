@@ -3143,5 +3143,80 @@
     "path": "outputs/stock_ecni_e1rv2/verify_e1rv2.py",
     "bytes": 5944,
     "sha256": "8aa90c947983df551eeccc3716e815033f8cb8c829327e2f3039c9ac63d97516"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/GPT_REVIEW_README.md",
+    "bytes": 2486,
+    "sha256": "cc5f5bd106c7f563512a2d696bdb50973d227003f22322fc22de5197eab4fc05"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/GPT_REVIEW_LABEL_GUIDE.md",
+    "bytes": 860,
+    "sha256": "bbbd6f495dbc0060f46b34af331694db8aba9f47ed9b06269b219e2c96539495"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/GPT_REVIEW_OUTPUT_SCHEMA.json",
+    "bytes": 893,
+    "sha256": "c69e72adcd715e78008391562931ce2d8d541c59ee634d3051e5a208108d9e02"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/ENTITY_REVIEW_INDEX.jsonl",
+    "bytes": 270820,
+    "sha256": "41e2d8ae8b04560c98ad11a4f338f43b2d34928f66a89cd75d8a32315feb8d87"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/BLINDED_DISPLAY_ORDER.json",
+    "bytes": 37368,
+    "sha256": "a1e849e70d54373824edfdc151b7e0430e24954a37956a8f76ba02c938e7be78"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/SOURCE_URL_MAPPING_AUDIT.json",
+    "bytes": 637,
+    "sha256": "550ab02e6f8f6a8507afd929e3b3209d48e53eaaa1e2deaf09ee33a51934895d"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/GPT_REVIEW_PACK_MANIFEST.json",
+    "bytes": 1644,
+    "sha256": "8e0068aae0a304a383198dd23542acfa2eb500f8d91bc1aac8bc6b5ef337009d"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/GPT_REVIEW_PACK_VERIFICATION.json",
+    "bytes": 1320,
+    "sha256": "d6a432b124999e5c069b68191b44f2c362f95f7f161e84baa0a23b0fdd5d2416"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/review_batches/BATCH_01.jsonl",
+    "bytes": 54829,
+    "sha256": "e029b7bd3d8020d9c356c900ba6cdb4ce5b554835d2ad229969047c8d65f9465"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/review_batches/BATCH_02.jsonl",
+    "bytes": 53115,
+    "sha256": "e05df18cbda4d16c40326a43e7e2a7cf28ca6e7ed4d2727d2a7042cad2142960"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/review_batches/BATCH_03.jsonl",
+    "bytes": 54017,
+    "sha256": "7f1fc1505ac95e2403b53d376d20b8b40617ea87c481dd4bded34f0731ec5c19"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/review_batches/BATCH_04.jsonl",
+    "bytes": 54142,
+    "sha256": "c30fffa637c22a1aabea063c835827e21531c461716a22f0c8b39a0f4c4c6d29"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/review_batches/BATCH_05.jsonl",
+    "bytes": 54717,
+    "sha256": "d3c74a1f87a6d7811666e7cd8f2f9c473c7e1bcaad89e15cd4b9a403202048ad"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/build_gpt_review_pack.py",
+    "bytes": 12121,
+    "sha256": "8f52dd6db5f1be0b30ff9e9861f7a31fe8a3f6be937e69800692cd652744dfbc"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2_gpt_review/verify_gpt_review_pack.py",
+    "bytes": 6252,
+    "sha256": "bb8b29a810fe4f79b6f97cb0fbd893d05f01c707f0689521b54628dc8981bf3e"
   }
 ]

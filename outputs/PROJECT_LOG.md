@@ -1607,3 +1607,13 @@ verified September-onward parameters. `STAGE_B1_FINAL_AUDIT_V2.json` is PASS.
 **SEC repair:** The first local count used only SEC recent arrays. A source-completeness audit found 12 companies whose recent arrays began after January 2018, so the outcome-blind audit fetched and hashed all official supplemental submission histories overlapping 2018–2021. Final panel counts are 54 domestic and 12 foreign-private issuers; 2,903 8-K, 655 10-Q, 237 10-K, 1,343 6-K, and 55 20-F filings; 5,193 candidates total. The 19–238 per-company range triggers the frozen mechanical severe-inequality warning, so missingness remains explicit.
 
 **Boundary and verification:** Historical E1R hashes match. No alias repair, relinking rerun, or replacement panel was performed without independent labels. The historical panel remains 66 with 44/11/11 splits pending validation. The fit-free verifier passes 20 checks. Returns/outcomes inspected, predictive models, reader models, and reader-pair cards are all zero. The exact next action is independent blinded labeling of the frozen entity pack, especially the NDAQ sentinel.
+
+## 2026-09-20 — ECNI E1R-V2 blinded GitHub review pack
+
+**Why:** The frozen private 515-card entity sample needed an independently usable review interface without publishing copyrighted article text or revealing the relinker's answers, risk strata, or registered gates.
+
+**What changed:** A new isolated directory, `outputs/stock_ecni_e1rv2_gpt_review/`, maps each frozen card through the complete private metadata index to its exact source row and original URL. The builder recomputed both the source-row record hash and the frozen normalized URL hash. It then applied the registered display seed, wrote five equal batches, and generated a reviewer-only label guide, response schema, and blinding instructions. Historical E1R and E1R-V2 artifacts were not rewritten.
+
+**Observed packaging evidence:** The source sample SHA-256 is `41a906f9822b52539f76cb61636954b7c9ff4e996e7bb472984a08712e8a9654`; 515/515 cards mapped successfully and have valid HTTP(S) URLs. There are 509 unique URLs; six URL values occur twice. Each of the five batches has 103 rows and together they exactly partition the 515 IDs.
+
+**Boundary and verification:** The fit-free verifier passes 21/21 checks. Public row schemas contain no title, body, evidence excerpt, relinker answer, sample role, risk flag, gate result, or prefilled semantic label. Codex generated zero labels and accessed zero returns or outcomes. The current status remains awaiting independent semantic review; no entity rules, panel, model, or predictive experiment changed.

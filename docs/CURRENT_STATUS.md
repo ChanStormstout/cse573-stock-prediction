@@ -510,3 +510,9 @@ M5本地实际完成两版QLoRA，合计1,494个micro-step、192次优化更新�
 ## 小型LLM实际执行结果
 
 [报告](../outputs/stock_llm_4h/REPORT.md)：旧单字母任务存在明显选项顺序敏感性。43个助手暂定样本中22个非重复训练样本；M5完成32步工程训练及两版各66步QLoRA，验证adapter更新、基座不变、重载一致，峰值约2.9GB。开发9个事实中冻结匹配0个、普通微调0个、正例加权1个；历史列表截断的冻结对照匹配1个。均不足以通过质量检查。独立复核0，未运行全量抽取或新的四小时事件预测。17项边界测试和回退核验通过，不能当作预测收益。另有用户要求的固定prompt/context对照，见该报告。
+
+## 2026-09-20 — ECNI E1R-V2 GitHub review pack ready
+
+A public, answer-blind review pack was derived from the exact frozen 515-card private sample without resampling or assigning labels. Each card was mapped through its frozen record provenance to the original FNSPID row; the record ID and stored URL hash were independently recomputed. All 515 cards have a syntactically valid public source URL, with zero mapping failures. Six URL values occur on two cards each because the frozen cards can review different target relations attached to the same source article.
+
+The public pack contains only reviewer-safe metadata, source URLs, a deterministic shuffled order, five batches of 103 cards, the eight-label guide, output schema, and integrity evidence. It contains no article title, body, evidence excerpt, relinker answer, sampling-role indicator, gate outcome, semantic label, stock return, or predictive result. The fit-free pack verifier passes all 21 checks. The project remains `ECNI_E1RV2_AWAITING_INDEPENDENT_ENTITY_REVIEW`; this packaging step does not evaluate semantic precision or change E1R/E1R-V2.
