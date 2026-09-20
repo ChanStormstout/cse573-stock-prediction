@@ -1,0 +1,12 @@
+{
+  "failed_checkpoint_sha": "4e2428ef54ec763b6a4356b3ffbfa49aa4010d7b",
+  "failure_exception": "pandas.errors.MergeError",
+  "failure_stage": "canonical daily input merge",
+  "joint_candidate_grid_fits_before_failure": 0,
+  "joint_models_fitted_before_failure": 0,
+  "joint_predictions_before_failure": 0,
+  "pre_run_hash_artifact_sha256": "2b2bab5cef1617e44b401614df0fd6ef018f748c1d096ca787ebdcf9acccc48d",
+  "private_joint_model_files_before_failure": 0,
+  "repair_type": "PRE_RESULT_CARDINALITY_ONLY_RUNTIME_REPAIR",
+  "scientific_configuration_changed": false
+}

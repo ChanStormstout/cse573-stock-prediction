@@ -28,7 +28,13 @@ def metric(y,p):
 def load_inputs():
  sys.path.insert(0,str(BASE)); import v10_stage_a2 as a; import v10_stage_b1_final_verify as b
  four,daily,_=a.reconstruct_inputs(); raw,_=b.reconstruct_daily(); four=four.copy();four['horizon_window']='4h';four['phase']=four.split.replace({'oof':'OOF'});four['target_key']=four.symbol.astype(str)+'|'+four.start_utc.astype(str)
- daily=daily.copy().rename(columns={'news_window':'horizon_window'});daily['horizon_window']='1d:'+daily.horizon_window.astype(str);daily['phase']=daily.split.replace({'oof':'OOF'});daily['target_key']=daily.symbol.astype(str)+'|'+daily.start_utc.astype(str);price=raw.rename(columns={'stock':'symbol'});daily=daily.merge(price[['symbol','day',*DPRICE]],on=['symbol','day'],how='left',validate='one_to_one')
+ daily=daily.copy().rename(columns={'news_window':'horizon_window'});daily['horizon_window']='1d:'+daily.horizon_window.astype(str);daily['phase']=daily.split.replace({'oof':'OOF'});daily['target_key']=daily.symbol.astype(str)+'|'+daily.start_utc.astype(str);price=raw.rename(columns={'stock':'symbol'})
+ assert len(daily)==1072 and daily[['symbol','day']].drop_duplicates().shape[0]==536
+ required={'1d:DNEWS_OVERNIGHT','1d:DNEWS_24H'}; groups=daily.groupby(['symbol','day'])['horizon_window'].agg(list);assert all(len(x)==2 and set(x)==required for x in groups)
+ assert len(price)==536 and int(price[['symbol','day']].duplicated().sum())==0
+ daily=daily.merge(price[['symbol','day',*DPRICE]],on=['symbol','day'],how='left',validate='many_to_one',sort=False)
+ assert len(daily)==1072 and daily[['symbol','day']].drop_duplicates().shape[0]==536 and int(daily[DPRICE].isna().sum().sum())==0
+ assert all(g[DPRICE].nunique(dropna=False).max()==1 for _,g in daily.groupby(['symbol','day']))
  canonical=pd.read_pickle(WORK/'nextgen_4h/price_v1/features.pkl');err=max(float(np.max(np.abs(four[c].to_numpy(float)-canonical[c].to_numpy(float)))) for c in R1)
  return four,daily,err
 def vec(method):

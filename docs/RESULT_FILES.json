@@ -2603,5 +2603,15 @@
     "path": "outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT_V2.json",
     "bytes": 3332,
     "sha256": "adf8b6e16dc2910b16e559eb5af8b61a21d6c984a1107b6c16746d9c665f6dd9"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_B2_RUNTIME_REPAIR_AUDIT.json",
+    "bytes": 567,
+    "sha256": "6c1f5f8cde8f663a76ac496230dae16839129d381861832164db999bd09c9581"
+  },
+  {
+    "path": "outputs/stock_priorwork_repro/v10/STAGE_B2_INPUT_PREFLIGHT.json",
+    "bytes": 3070,
+    "sha256": "69944443f3756ac74ccb12c8ebff1861d8a5a02db01a3dff70df9a874cea03fd"
   }
 ]

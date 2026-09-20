@@ -519,3 +519,5 @@ outputs/stock_priorwork_repro/v10/DPRICE_GRID_INDEPENDENT_REPLAY.csv
 outputs/stock_priorwork_repro/v10/DPRICE_GRID_INDEPENDENT_REPLAY_AUDIT.json
 outputs/stock_priorwork_repro/v10/DPRICE_ISSUED_INDEPENDENT_REFIT_AUDIT.json
 outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT_V2.json
+outputs/stock_priorwork_repro/v10/STAGE_B2_RUNTIME_REPAIR_AUDIT.json
+outputs/stock_priorwork_repro/v10/STAGE_B2_INPUT_PREFLIGHT.json

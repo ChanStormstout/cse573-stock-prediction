@@ -84,16 +84,91 @@ def load_inputs() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     daily["phase"] = daily["split"].replace({"oof":"OOF"})
     daily["target_key"] = daily["symbol"].astype(str)+"|"+daily["start_utc"].astype(str)
     price = raw_daily.rename(columns={"stock":"symbol"})
-    daily = daily.merge(price[["symbol","day",*DPRICE]], on=["symbol","day"], how="left", validate="one_to_one")
+    assert len(daily) == 1072
+    assert daily[["symbol","day"]].drop_duplicates().shape[0] == 536
+    window_counts = daily.groupby(["symbol","day"])["horizon_window"].agg(list)
+    required_windows = {"1d:DNEWS_OVERNIGHT", "1d:DNEWS_24H"}
+    assert all(len(values) == 2 and set(values) == required_windows for values in window_counts)
+    assert len(price) == 536
+    assert int(price[["symbol","day"]].duplicated().sum()) == 0
+    daily = daily.merge(
+        price[["symbol","day",*DPRICE]], on=["symbol","day"], how="left",
+        validate="many_to_one", sort=False,
+    )
+    assert len(daily) == 1072
+    assert daily[["symbol","day"]].drop_duplicates().shape[0] == 536
+    assert int(daily[DPRICE].isna().sum().sum()) == 0
+    assert all(group[DPRICE].nunique(dropna=False).max() == 1 for _, group in daily.groupby(["symbol","day"]))
     goal = pd.read_csv(ROOT/"outputs/stock_goal60_4h/v1/predictions.csv")
     canonical = pd.read_pickle(WORK/"nextgen_4h/price_v1/features.pkl")
     parity = 0.0
     for col in R1:
         parity = max(parity, float(np.nanmax(np.abs(four[col].to_numpy(float)-canonical[col].to_numpy(float)))))
-    audit = {"four_rows":len(four),"daily_rows":len(daily),"stage_a_source_audit":source_audit,
+    audit = {"four_rows":len(four),"daily_rows_before_dprice_merge":1072,"daily_unique_stock_day":536,
+             "daily_rows_per_stock_day_exactly_two":True,"daily_window_set_exact":True,
+             "dprice_right_rows":len(price),"dprice_duplicate_stock_day_keys":int(price[["symbol","day"]].duplicated().sum()),
+             "daily_rows":len(daily),"missing_dprice_cells":int(daily[DPRICE].isna().sum().sum()),
+             "cross_window_dprice_disagreements":int(sum(group[DPRICE].nunique(dropna=False).max()>1 for _,group in daily.groupby(["symbol","day"]))),
+             "stage_a_source_audit":source_audit,
              "daily_raw_audit":raw_audit,"r1_feature_count":len(R1),"dprice_feature_count":len(DPRICE),
              "r1_max_feature_parity_error":parity,"goal60_key_count":int(goal.key.nunique())}
     return four, daily, audit
+
+
+def branch_parameter_mismatches(configuration: dict) -> int:
+    issued4 = pd.read_csv(OUT/"ISSUED_PARAMS_4H.csv")
+    issued1 = pd.read_csv(OUT/"ISSUED_PARAMS_1D.csv")
+    mismatches = 0
+    for branch in configuration["branches"]:
+        source = issued4 if branch["horizon_window"] == "4h" else issued1
+        rows = source[(source.stock==branch["stock"])&(source.horizon==branch["horizon_window"])&(source.method==branch["method"])&(source.is_sep_plus_frozen==True)]
+        expected = pjson(branch["final_frozen_parameter"])
+        mismatches += int(len(rows)!=6 or {pjson(x) for x in rows.issued_parameter_json}!={expected})
+    return mismatches
+
+
+def preflight(configuration: dict) -> dict:
+    existing = json.loads((OUT/"STAGE_B2_PRE_RUN_HASHES.json").read_text())
+    current = protected_hashes()
+    four, daily, input_audit = load_inputs()
+    required4 = {"symbol","start_utc","end_utc","cutoff_utc","label","stem_body","has_news","target_key",*R1}
+    required1 = {"symbol","day","start_utc","end_utc","cutoff_utc","label","stem_body","has_news","horizon_window","target_key",*DPRICE}
+    sep4 = four[four.phase.isin(["development","later"])]
+    sep1 = daily[daily.phase.isin(["development","later"])]
+    source_counts_4h = sep4.groupby(["symbol","phase"]).size().to_dict()
+    source_counts_1d = sep1.groupby(["horizon_window","symbol","phase"]).size().to_dict()
+    expected4 = int(sum(source_counts_4h.values())*3)
+    expected1 = int(sum(source_counts_1d.values())*3)
+    branch_counts = pd.Series([x["horizon_window"] for x in configuration["branches"]]).value_counts().to_dict()
+    checks = {
+        "stage_a_v2_pass":json.loads((OUT/"STAGE_A_FINAL_AUDIT_V2.json").read_text())["status"]=="PASS",
+        "stage_b1_v2_pass":json.loads((OUT/"STAGE_B1_FINAL_AUDIT_V2.json").read_text())["status"]=="PASS",
+        "frozen_configuration_status":configuration["status"]=="FROZEN_FOR_FUTURE_B2_ONLY",
+        "branch_count_18":len(configuration["branches"])==18,
+        "branch_split_6_6_6":branch_counts=={"4h":6,"1d:DNEWS_OVERNIGHT":6,"1d:DNEWS_24H":6},
+        "branch_parameter_mismatches_zero":branch_parameter_mismatches(configuration)==0,
+        "protected_pre_run_hashes_match":current==existing,
+        "four_rows_1607":len(four)==1607,
+        "daily_rows_before_merge_1072":input_audit["daily_rows_before_dprice_merge"]==1072,
+        "daily_unique_stock_day_536":input_audit["daily_unique_stock_day"]==536,
+        "daily_exact_two_windows":input_audit["daily_rows_per_stock_day_exactly_two"] and input_audit["daily_window_set_exact"],
+        "dprice_right_rows_536":input_audit["dprice_right_rows"]==536,
+        "dprice_right_unique":input_audit["dprice_duplicate_stock_day_keys"]==0,
+        "daily_rows_after_merge_1072":input_audit["daily_rows"]==1072,
+        "missing_dprice_cells_zero":input_audit["missing_dprice_cells"]==0,
+        "cross_window_dprice_disagreements_zero":input_audit["cross_window_dprice_disagreements"]==0,
+        "required_4h_fields":required4.issubset(four.columns),
+        "required_daily_fields":required1.issubset(daily.columns),
+        "expected_4h_prediction_rows_1827":expected4==1827,
+        "expected_daily_prediction_rows_1248":expected1==1248,
+        "private_joint_model_count_zero":len(list(PRIVATE.glob("*.joblib")))==0,
+    }
+    result={"status":"PASS" if all(checks.values()) else "FAIL","checks":checks,"pre_run_hash_sha256":sha(OUT/"STAGE_B2_PRE_RUN_HASHES.json"),"input_audit":input_audit,
+            "branch_counts":branch_counts,"parameter_mismatches":branch_parameter_mismatches(configuration),
+            "source_counts_4h":{"|".join(k):int(v) for k,v in source_counts_4h.items()},"source_counts_1d":{"|".join(k):int(v) for k,v in source_counts_1d.items()},
+            "expected_prediction_rows_4h":expected4,"expected_prediction_rows_1d":expected1,"private_joint_model_count":len(list(PRIVATE.glob("*.joblib")))}
+    dump(OUT/"STAGE_B2_INPUT_PREFLIGHT.json",result)
+    return result
 
 
 def vectorizer(method: str):
@@ -197,18 +272,22 @@ def comparisons(p4: pd.DataFrame,p1: pd.DataFrame) -> None:
 
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument("--approve-b2-run",action="store_true"); a=ap.parse_args()
-    if not a.approve_b2_run: raise SystemExit("requires --approve-b2-run")
+    ap=argparse.ArgumentParser(); ap.add_argument("--approve-b2-run",action="store_true");ap.add_argument("--preflight-only",action="store_true"); a=ap.parse_args()
+    if not (a.approve_b2_run or a.preflight_only): raise SystemExit("requires --preflight-only or --approve-b2-run")
     assert json.loads((OUT/"STAGE_A_FINAL_AUDIT_V2.json").read_text())["status"]=="PASS"
     assert json.loads((OUT/"STAGE_B1_FINAL_AUDIT_V2.json").read_text())["status"]=="PASS"
     cfg=json.loads((OUT/"STAGE_B2_FROZEN_CONFIGURATION.json").read_text()); assert cfg["status"]=="FROZEN_FOR_FUTURE_B2_ONLY" and len(cfg["branches"])==18
-    dump(OUT/"STAGE_B2_PRE_RUN_HASHES.json",protected_hashes())
+    if not (OUT/"STAGE_B2_PRE_RUN_HASHES.json").exists(): dump(OUT/"STAGE_B2_PRE_RUN_HASHES.json",protected_hashes())
+    pf=preflight(cfg)
+    if pf["status"]!="PASS":raise SystemExit("STAGE_B2_INPUT_PREFLIGHT_FAILED")
+    if a.preflight_only:
+        print("V10_STAGE_B2_INPUT_PREFLIGHT_PASS");return
     four,daily,input_audit=load_inputs(); dump(OUT/"JOINT_INPUT_AUDIT.json",input_audit)
     PRIVATE.mkdir(parents=True,exist_ok=True); all_pred=[]; manifest=[]; no_news=[]
     for branch in cfg["branches"]:
         horizon=branch["horizon_window"]; method=branch["method"]; stock=branch["stock"]; params=branch["final_frozen_parameter"]; source=four if horizon=="4h" else daily; price_cols=R1 if horizon=="4h" else DPRICE
         g=source[(source.symbol==stock)&(source.horizon_window==horizon)].sort_values("cutoff_utc")
-        branch_no=branch_nnz=0
+        branch_no=branch_nnz=branch_override=0
         for month in MONTHS:
             ev=g[g.start_utc.dt.strftime("%Y-%m")==month].copy(); train=g[g.end_utc<ev.cutoff_utc.min()].copy(); p,bundle,xe=fit_joint(method,params,train,ev,price_cols)
             mask=ev.has_news.to_numpy(int)==0; branch_no+=int(mask.sum()); branch_nnz+=int(xe[mask].nnz)
@@ -216,12 +295,12 @@ def main():
             logical=f"{horizon.replace(':','_')}_{stock}_{method}_{month}"; path=PRIVATE/f"{logical}.joblib"; joblib.dump(bundle,path)
             check=joblib.load(path); rp=predict_bundle(check,ev)
             manifest.append({"logical_model_id":logical,"sha256":sha(path),"stock":stock,"horizon_window":horizon,"method":method,"month":month,"frozen_parameter":params,"train_n":len(train),"train_end":str(train.end_utc.max()),"prediction_n":len(ev),"reload_max_error":float(np.max(np.abs(rp-p))),"reload_direction_mismatches":int(np.sum((rp>=.5)!=(p>=.5)))})
-            z=ev[["symbol","day","target_key","start_utc","end_utc","cutoff_utc","label","phase","has_news"]].rename(columns={"symbol":"stock"}); z["horizon_window"]=horizon; z["method"]=method; z["month"]=month; z["probability"]=p; z["predicted_direction"]=(p>=.5).astype(int); z["frozen_parameter_json"]=pjson(params); z["train_n"]=len(train); z["train_end"]=str(train.end_utc.max()); all_pred.append(z)
-        no_news.append({"stock":stock,"horizon_window":horizon,"method":method,"no_news_rows":branch_no,"text_nonzero_count_on_no_news_rows":branch_nnz,"price_feature_count":len(price_cols),"fallback_override_count":0})
+            z=ev[["symbol","day","target_key","start_utc","end_utc","cutoff_utc","label","phase","has_news"]].rename(columns={"symbol":"stock"}); z["horizon_window"]=horizon; z["method"]=method; z["month"]=month; z["probability"]=p.copy(); branch_override+=int(np.sum(np.abs(z["probability"].to_numpy(float)-p)>0)); z["predicted_direction"]=(p>=.5).astype(int); z["frozen_parameter_json"]=pjson(params); z["train_n"]=len(train); z["train_end"]=str(train.end_utc.max()); all_pred.append(z)
+        no_news.append({"stock":stock,"horizon_window":horizon,"method":method,"no_news_rows":branch_no,"text_nonzero_count_on_no_news_rows":branch_nnz,"price_feature_count":len(price_cols),"post_prediction_override_count":branch_override,"fallback_override_count":branch_override})
     pred=pd.concat(all_pred,ignore_index=True); p4=pred[pred.horizon_window=="4h"].copy(); p1=pred[pred.horizon_window!="4h"].copy()
     p4.to_csv(OUT/"JOINT_PREDICTIONS_4H.csv",index=False); p1.to_csv(OUT/"JOINT_PREDICTIONS_1D.csv",index=False)
     m4,a4=phase_metrics(p4); m1,a1=phase_metrics(p1); m4.to_csv(OUT/"JOINT_MONTHLY_4H.csv",index=False); a4.to_csv(OUT/"JOINT_METRICS_4H.csv",index=False); m1.to_csv(OUT/"JOINT_MONTHLY_1D.csv",index=False); a1.to_csv(OUT/"JOINT_METRICS_1D.csv",index=False)
-    dump(OUT/"JOINT_MODEL_MANIFEST.json",manifest); dump(OUT/"JOINT_NO_NEWS_AUDIT.json",{"branches":no_news,"fallback_override_count":0})
+    computed_overrides=int(sum(x["fallback_override_count"] for x in no_news));dump(OUT/"JOINT_MODEL_MANIFEST.json",manifest); dump(OUT/"JOINT_NO_NEWS_AUDIT.json",{"branches":no_news,"fallback_override_count":computed_overrides})
     comparisons(p4,p1); dump(OUT/"JOINT_RUN_EVIDENCE.json",{"joint_issued_model_fits":108,"joint_candidate_grid_fits":0,"prediction_rows":len(pred)})
     print("V10_STAGE_B2_RUN_COMPLETE_AWAITING_INDEPENDENT_VERIFICATION")
 if __name__=="__main__": main()
