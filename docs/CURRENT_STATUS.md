@@ -1,3 +1,7 @@
+## 2026-09-20 — Traditional randomized extension verified; full paragraphs running
+
+[Current handoff](FULL_SEMANTICS_4H_HANDOFF.md). TF-IDF LR/SVM/RF comparisons completed and independently replayed. Target-paragraph input verification passed; FinBERT encoding and 600 downstream fits are complete, awaiting full verification. Modern encoding is in progress. Original Qwen inference remains paused at 1,972 outputs; no partial-window LLM score is reported. All random outer periods are exposed.
+
 # 2026-09-20 update: owner-directed pause and FULL semantic extension
 
 Original LLM inference and continuation are suspended after 1,972 saved responses; see outputs/stock_random_protocol_4h/v1/PAUSE_AUDIT.json. Preserve process memory and output hashes; do not restart the automatic chain. Side chat has exposed ordinary and grouped random outer scores. Earlier sealed-score statements below describe historical state only and are superseded for current use. All subsequent same-split work is exploratory random backtesting. New isolated finite traditional comparisons and target-paragraph semantic extensions are authorized; old frozen protocol remains unchanged.

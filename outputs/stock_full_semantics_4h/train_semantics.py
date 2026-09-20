@@ -1,5 +1,5 @@
 """Joint finite C/weight selection, with no learned stacking coefficients."""
-import sys,json,time,warnings
+import sys,json,time,warnings,argparse,fcntl
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'stock_random_protocol_4h'))
 from common import *
@@ -9,7 +9,7 @@ import joblib
 PUBLIC=Path(__file__).resolve().parent/'v1';NEW=ROOT/'work/stock-data/full_semantics_4h/v1';SRC=NEW/'semantic'
 WEIGHTS=[0.,.25,.5,.75,1.]
 def semantic_input(d,name):
- a=[json.loads(s) for s in (SRC/'articles.jsonl').read_text().splitlines()];z=np.load(SRC/(name+'_articles.npz'));assert z['keys'].tolist()==[r['article_id'] for r in a]
+ a=[json.loads(s) for s in (SRC/'articles.jsonl').read_text().splitlines()];z=dict(np.load(SRC/(name+'_articles.npz')));assert z['keys'].tolist()==[r['article_id'] for r in a]
  lookup={(r['symbol'],r['record_key']):i for i,r in enumerate(a)};ids=[[lookup[r.symbol,k] for k in r.news_record_keys.split('|') if k and z['has_evidence'][lookup[r.symbol,k]]] for r in d.itertuples()]
  means=np.array([z['vectors'][ix].mean(0) if ix else np.zeros(z['vectors'].shape[1]) for ix in ids]);return z['vectors'],ids,means
 def fit_transform(d,tr,emb,ids,means):
@@ -18,18 +18,19 @@ def blend(base,semantic,gate,w):
  out=np.asarray(base).copy()
  if w:out[gate]=(1-w)*out[gate]+w*np.asarray(semantic)[gate]
  return out
-def main():
+def main(encoder=None):
  check_sources();d,*_=load();outer=pd.read_csv(PRIVATE/'outer_folds.csv');inner=json.loads((PRIVATE/'inner_folds.json').read_text());dest=NEW/'semantic_training';dest.mkdir(exist_ok=True)
  base_hashes={}
  for block in sorted((PRIVATE/'baseline').iterdir()):
   complete=json.loads((block/'complete.json').read_text())
   for n,h in complete['artifacts'].items():assert sha(block/n)==h
   for n in ['FULL_selection_oof_NOT_META_TRAIN.csv','outer_predictions_SEALED.csv','complete.json']:base_hashes[str((block/n).relative_to(PRIVATE))]=sha(block/n)
- stamp={'base_hashes':base_hashes,'code':sha(__file__),'protocol':sha(PUBLIC/'SEMANTIC_PROTOCOL.json'),'inputs':{name:sha(SRC/(name+'_articles.npz')) for name in ['FINBERT','MODERN']},'source_manifest':sha(PRIVATE/'manifest.json')}
+ stamp={'base_hashes':base_hashes,'code':sha(__file__),'protocol':sha(PUBLIC/'SEMANTIC_PROTOCOL.json'),'encoder_seals':{name:sha(SRC/name/'seal.json') for name in ['FINBERT','MODERN']},'input_manifest':sha(SRC/'manifest.json'),'source_manifest':sha(PRIVATE/'manifest.json')}
  seal=dest/'seal.json'
  if seal.exists():assert json.loads(seal.read_text())==stamp
  else:dump(seal,stamp)
- for name in ['FINBERT','MODERN']:
+ for name in ([encoder] if encoder else ['FINBERT','MODERN']):
+  evidence=json.loads((PUBLIC/(name+'_ENCODING.json')).read_text());assert evidence['status']=='COMPLETE' and evidence['output_sha256']==sha(SRC/(name+'_articles.npz'))
   emb,ids,means=semantic_input(d,name);gate=np.array([bool(ix) for ix in ids])
   for seed in SEEDS:
    for stock in ['AAPL','AMZN']:
@@ -53,7 +54,8 @@ def main():
      joblib.dump(dict(model=m,transform=tf,train=tr.tolist(),evaluation=ev.tolist(),C=c,weight=w),run/'selected.joblib',compress=3)
      pred=pred[['row_id','symbol','day','label']].copy();pred['seed']=seed;pred['fold']=fold;pred['encoder']=name;pred['FULL']=bp;pred['semantic_p']=p;pred['gate']=gate[ev];pred['p']=q;pred.to_csv(run/'predictions.csv',index=False,float_format='%.17g');pd.DataFrame(records).to_csv(run/'selection.csv',index=False)
      dump(run/'complete.json',dict(seal=sha(seal),fits=10,files={f.name:sha(f) for f in run.iterdir() if f.is_file()}));print(name,seed,stock,fold,'complete',flush=True)
- dump(PUBLIC/'SEMANTIC_TRAINING.json',dict(status='COMPLETE_PENDING_VERIFICATION',fits=1200,selected_models=120,learned_meta_coefficients=0))
+ completed=list(dest.glob('*/complete.json'));dump(PUBLIC/'SEMANTIC_TRAINING.json',dict(status='COMPLETE_PENDING_VERIFICATION' if len(completed)==120 else 'PARTIAL_PENDING_OTHER_ENCODER',fits=sum(json.loads(p.read_text())['fits'] for p in completed),selected_models=len(completed),learned_meta_coefficients=0))
 if __name__=='__main__':
- with threadpool_limits(2),warnings.catch_warnings():
-  warnings.simplefilter('ignore',FutureWarning);main()
+ parser=argparse.ArgumentParser();parser.add_argument('--encoder',choices=['FINBERT','MODERN']);args=parser.parse_args()
+ with (NEW/'semantic_training.lock').open('a') as lock,threadpool_limits(2),warnings.catch_warnings():
+  fcntl.flock(lock,fcntl.LOCK_EX);warnings.simplefilter('ignore',FutureWarning);main(args.encoder)

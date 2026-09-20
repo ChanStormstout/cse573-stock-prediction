@@ -1,0 +1,9 @@
+{
+  "stage": "fit-free semantic preflight",
+  "problem": "NpzFile lazy access repeatedly decompressed the entire article array inside row loops",
+  "repair": "materialize immutable array dictionary once; same stored keys and arrays",
+  "old_training_code_sha256": "e0b70eee91c1c7da0f7716fade9779b312062e60decdac5271363d8aa5062af0",
+  "semantic_classifier_fits_before_change": 0,
+  "encoder_or_scientific_parameters_changed": false,
+  "old_preflight": "terminated without predictive fit/output; no completed result discarded"
+}

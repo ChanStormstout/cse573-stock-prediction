@@ -679,3 +679,7 @@ outputs/stock_full_semantics_4h/v1/TITLE_FUSION_CONTROL_PROTOCOL.json
 outputs/stock_full_semantics_4h/v1/TITLE_FUSION_METRICS.csv
 outputs/stock_full_semantics_4h/v1/TITLE_FUSION_PREDICTIONS.csv
 outputs/stock_full_semantics_4h/v1/TITLE_FUSION_SELECTIONS.json
+outputs/stock_full_semantics_4h/v1/ARRAY_LOADING_RUNTIME_NOTE.json
+outputs/stock_full_semantics_4h/v1/FINBERT_ENCODING.json
+outputs/stock_full_semantics_4h/v1/SEMANTIC_PREFLIGHT.json
+outputs/stock_full_semantics_4h/v1/SEMANTIC_TRAINING.json

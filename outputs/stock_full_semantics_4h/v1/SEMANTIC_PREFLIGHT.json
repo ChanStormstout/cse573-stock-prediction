@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "rows": 1607,
+  "outer_blocks": 60,
+  "inner_splits": 180,
+  "minimum_training_article_pairs_for_PCA16": 263,
+  "price_feature_count": 16,
+  "finite_FinBERT_vectors": true,
+  "materialized_array_exact_parity": true,
+  "fold_and_base_oof_checks_passed": 240,
+  "fold_and_base_oof_checks_total": 240,
+  "fit_calls": 0,
+  "Modern_status": "ENCODING_IN_PROGRESS",
+  "code_sha256": "c627088e2ee3497de201706971e88ddef1d90f16eff42733d7f1282b07968293"
+}

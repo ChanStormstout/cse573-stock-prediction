@@ -3403,5 +3403,25 @@
     "path": "outputs/stock_full_semantics_4h/v1/TITLE_FUSION_SELECTIONS.json",
     "bytes": 82471,
     "sha256": "88a7a5286427b4405886ca3e7a371c3c9bd5a0462de3fd3db7bb3475e94ea54e"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/ARRAY_LOADING_RUNTIME_NOTE.json",
+    "bytes": 527,
+    "sha256": "c25ed9fcd000401cdb1f74dc12933b23ea9186d78851acf8476fdbf5764b4521"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/FINBERT_ENCODING.json",
+    "bytes": 1132,
+    "sha256": "645c9f6cd9fc5076daa500c47211d861a04d948cbcd51fe27b94d912c6ef23b1"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_PREFLIGHT.json",
+    "bytes": 470,
+    "sha256": "936b89c66301a583c52add9567d45ab6114fe767e9921b0b1fd2552bc843ebba"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_TRAINING.json",
+    "bytes": 122,
+    "sha256": "391c102acf1286ef1ce406c357e67fe884a51359bcea8421670000eea0233751"
   }
 ]
