@@ -1674,3 +1674,9 @@ pre-execution syntax error in the pilot reader was caught and repaired by tests.
 Failure evidence remains local/public as appropriate. Historical runs and
 external review-gated work are unchanged. Full pipeline evaluation is pending;
 see docs/RANDOM_PROTOCOL_4H_HANDOFF.md for exact remaining steps.
+
+## 2026-09-20 — Owner redirects randomized extension
+
+Safely suspended existing MLX process after the next complete four-response batch: 1,972 rows persisted; continuation suspended before any dependent task. Output, input manifest and model/config seal hashes recorded. No output discarded or duplicated. Side chat disclosed random and grouped outer scores; earlier unobserved-score statements are now historical, not current. New comparison protocol saved under stock_full_semantics_4h/v1 before new fits. Partial LLM output will be assessed for provenance/coverage only, not scored on a selected subset.
+
+Traditional extension completed: 1,620 top-level estimator fit calls, 180 selected models. Independent no-fit replay PASS, maximum probability error 2.22e-16. TF-IDF LR BA AAPL/AMZN 64.94/60.11%; calibrated linear SVM 69.49/60.12%; RF 59.86/58.46%, all three-seed means on exposed random splits. No outer score changed the frozen candidate budget. New full target-paragraph semantic preparation continues under its separate protocol; original analogy remains suspended with 1,972 unchanged outputs.

@@ -3308,5 +3308,50 @@
     "path": "outputs/stock_random_protocol_4h/v1/EXECUTION_CHECKPOINT.json",
     "bytes": 1484,
     "sha256": "b1ad6826f46164f832dbf32d0cee3110f5c8e634e6344a4f9f92088db4058669"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/PAUSE_AUDIT.json",
+    "bytes": 579,
+    "sha256": "f6cc2baff5327d74c661f99eac451f35c7406a708748d35a6a299060af20572e"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/protocol.json",
+    "bytes": 1849,
+    "sha256": "413548e2cae4b8d1d0d562eaf5a77d39e72f663fde14daa52d8e1f7f511f3bcf"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/SEMANTIC_PROTOCOL.json",
+    "bytes": 1588,
+    "sha256": "f839cb2e67b22c1ed6207cc5b9f30f781f2934ebfd92a8d0066529d2d413abb3"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/LLM_REUSE_AUDIT.json",
+    "bytes": 695,
+    "sha256": "228c8b2a9ae7bf12ce046e947e1f673288012c19927b6f730b40cb6c585cdfa8"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/CLASSICAL_EXECUTION.json",
+    "bytes": 276,
+    "sha256": "661a2a5eca5b0adce832daf05ea26f414f328a4c24efd630c46b0f88cca8400b"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/CLASSICAL_METRICS.csv",
+    "bytes": 6462,
+    "sha256": "0bbd164a1f90e1759d55e821506560d961ba953c54aba105b4e24ae67c9abdfa"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/CLASSICAL_PREDICTIONS.csv",
+    "bytes": 1004354,
+    "sha256": "bf4b93888f9ee9cc66e9533fbfd63dd1ef85ae1ca6cc80554b2818d472da7be5"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/CLASSICAL_VERIFICATION.json",
+    "bytes": 412,
+    "sha256": "2fe2581c21fb3add144c66eb2378c2ba2a14dbd4b42e9d17b951b88aba436652"
+  },
+  {
+    "path": "outputs/stock_full_semantics_4h/v1/TRAINING_EVIDENCE.json",
+    "bytes": 245,
+    "sha256": "771f015a01029ce48dbbf161d5f76de0328d32c8d729ff5e19188fd7a2d397a0"
   }
 ]

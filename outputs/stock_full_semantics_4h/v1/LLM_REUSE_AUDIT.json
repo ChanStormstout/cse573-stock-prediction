@@ -1,0 +1,19 @@
+{
+  "status": "PARTIAL_REUSABLE_INPUTS_NOT_COMPLETE_PREDICTIVE_COMPARISON",
+  "saved_unique_outputs": 1972,
+  "job_coverage": {
+    "CURRENT": {
+      "eligible_jobs": 35130,
+      "completed_jobs": 35040,
+      "complete": false
+    },
+    "ANALOGY": {
+      "eligible_jobs": 20675,
+      "completed_jobs": 5783,
+      "complete": false
+    }
+  },
+  "full_base_probability_available": true,
+  "reuse_conditions": "same prompt, folds, source fingerprints and prior matured training-only cases; use existing FULL inner predictions only for finite selection, never learned meta-training",
+  "decision": "Preserve all partial inference. No subset performance scored; do not resume full LLM now."
+}

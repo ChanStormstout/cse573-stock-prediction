@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_BEFORE_ENCODING_OR_FITS",
+  "input": "same canonical current article membership; TARGET + complete title + every newline-delimited paragraph explicitly naming company; complete selected paragraphs split into common contiguous chunks fitting BOTH tokenizers <=512; no paragraph discarded",
+  "unknown": "no explicit target paragraph gives zero semantic branch and exact FULL fallback",
+  "encoders": [
+    "ProsusAI/finbert pinned existing revision",
+    "clapAI/Fin-ModernBERT existing local pinned binary"
+  ],
+  "pooling": "special-token-excluded token mean per chunk; token-count-weighted chunk mean per article; equal article mean per window; same raw passages for encoders",
+  "head": "train-only article PCA16, standardized OLD16 price + PCA16 semantic + log news count + has news; L2 LR C .01/.1/1",
+  "fusion": "FULL probability linear mix semantic probability; weight 0/.25/.5/.75/1; jointly select semantic C and fusion weight on existing three inner folds; existing FULL inner-C selection is selection data, not learned meta-training; no fitted meta coefficients; tie higher BA lower Brier smaller semantic weight smaller C",
+  "fallback": "no explicit semantic evidence -> FULL exactly; no news -> saved PRICE exactly",
+  "outer": "same exposed 3-seed 10-fold partitions; all rows retained",
+  "interpretation": "exploratory random backtest; no claim of unseen-era generalization; no per-stock post-result model winner selection",
+  "budget": "two fixed frozen encoders, no LoRA or attention; original title FinBERT/Modern and FULL compared unchanged"
+}

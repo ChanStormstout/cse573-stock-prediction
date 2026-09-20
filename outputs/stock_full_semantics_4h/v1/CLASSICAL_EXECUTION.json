@@ -1,0 +1,7 @@
+{
+  "status": "COMPLETE_PENDING_INDEPENDENT_VERIFICATION",
+  "blocks": 60,
+  "top_level_estimator_fit_calls": 1620,
+  "selected_models": 180,
+  "note": "SVM calibration includes three internally fitted text pipelines per estimator call; not 1620 unique independent samples"
+}

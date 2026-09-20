@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "selected_models": 180,
+  "probabilities_replayed": 14463,
+  "max_reload_error": 2.220446049250313e-16,
+  "checks": [
+    "source seal",
+    "code seal",
+    "all artifact hashes",
+    "canonical row order and labels",
+    "outer membership",
+    "training membership disjoint",
+    "inner C/depth reconstruction",
+    "independent saved-model probability replay"
+  ],
+  "fit_calls": 0
+}

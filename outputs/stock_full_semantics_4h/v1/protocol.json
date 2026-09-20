@@ -1,0 +1,45 @@
+{
+  "status": "FROZEN_BEFORE_NEW_FITS",
+  "scope": "Exploratory random backtest; prior outer random and grouped scores exposed in side chat",
+  "parent": "42a04eb19de132507f5c732d6b1e649e17072b90",
+  "seeds": [
+    573,
+    574,
+    575
+  ],
+  "outer": "existing 10-fold stock-specific splits unchanged",
+  "inner": "existing three folds unchanged",
+  "methods": {
+    "TFIDF_LR": {
+      "C": [
+        0.01,
+        0.1,
+        1
+      ]
+    },
+    "TFIDF_SVM": {
+      "C": [
+        0.01,
+        0.1,
+        1
+      ],
+      "probabilities": "three-fold sigmoid CalibratedClassifierCV within each fit training partition"
+    },
+    "TFIDF_RF": {
+      "n_estimators": 200,
+      "max_depth": [
+        3,
+        6
+      ],
+      "min_samples_leaf": 10,
+      "max_features": "sqrt"
+    }
+  },
+  "text": "canonical stem_body; TfidfVectorizer min_df=3 max_features=5000 unigrams sublinear_tf=True; all fitted within fitting partition",
+  "inputs": "text only; existing FULL and PAPER retained as comparators; no new price/text fallback in pure-text baselines",
+  "selection": "higher mean inner BA, lower mean Brier, then listed candidate order",
+  "threshold": 0.5,
+  "results": "both stocks, all three seeds, BA/Brier/MCC and paired changes vs FULL",
+  "semantic_next": "Frozen FinBERT and FinModernBERT target-paragraph encoders with equal 512-token chunks; full paragraph membership and offsets audited before inference; separate detailed seal before encoding/fitting. No supervised adaptation yet. Honest deeper cross-fit required for learned fusion; finite weight selection may reuse inner validation predictions only as selection data.",
+  "llm": "pause original inference and continuation; preserve all outputs; reuse only matching fold/time/input provenance. No partial-window predictive scoring; do not resume full inference now."
+}

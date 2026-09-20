@@ -660,3 +660,12 @@ outputs/stock_random_protocol_4h/v1/DIAGNOSTIC_VERIFICATION.json
 outputs/stock_random_protocol_4h/v1/TESTS_INITIAL_FAILURE.json
 outputs/stock_random_protocol_4h/v1/TESTS.json
 outputs/stock_random_protocol_4h/v1/EXECUTION_CHECKPOINT.json
+outputs/stock_random_protocol_4h/v1/PAUSE_AUDIT.json
+outputs/stock_full_semantics_4h/v1/protocol.json
+outputs/stock_full_semantics_4h/v1/SEMANTIC_PROTOCOL.json
+outputs/stock_full_semantics_4h/v1/LLM_REUSE_AUDIT.json
+outputs/stock_full_semantics_4h/v1/CLASSICAL_EXECUTION.json
+outputs/stock_full_semantics_4h/v1/CLASSICAL_METRICS.csv
+outputs/stock_full_semantics_4h/v1/CLASSICAL_PREDICTIONS.csv
+outputs/stock_full_semantics_4h/v1/CLASSICAL_VERIFICATION.json
+outputs/stock_full_semantics_4h/v1/TRAINING_EVIDENCE.json

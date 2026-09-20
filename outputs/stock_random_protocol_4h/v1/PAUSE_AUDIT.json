@@ -1,0 +1,13 @@
+{
+  "status": "PAUSED_OUTPUT_PRESERVED",
+  "inference_pid": 2333,
+  "continuation_pid": 3030,
+  "mechanism": "SIGSTOP after next complete four-response batch persisted; process memory retained",
+  "completed": 1972,
+  "total": 7851,
+  "outputs_sha256": "c37cbc45187fd6cbd86a3144cd06e294963df509088471fc57664e817e8d8ae7",
+  "inference_seal_sha256": "3d13639b1e1fcde381a4078740c745afa5ae555fdf7e9503b33a48965ee6af58",
+  "manifest_sha256": "62efc27a369dcf39b31afccaef6a7f701fd004c206ec42fe7f643bf87b49b020",
+  "outer_scores_exposed": true,
+  "partial_results_not_evaluated": true
+}

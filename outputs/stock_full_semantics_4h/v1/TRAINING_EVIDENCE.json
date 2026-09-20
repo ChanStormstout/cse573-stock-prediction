@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "completed_blocks": 60,
+  "top_level_estimator_fit_calls_reconstructed_from_records": 1620,
+  "selected_models": 180,
+  "calibrated_svm_note": "each SVM top-level call fits three independent calibration-fold pipelines"
+}
