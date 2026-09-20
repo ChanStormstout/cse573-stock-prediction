@@ -1,0 +1,49 @@
+{
+  "recorded_utc": "2026-09-20T10:07:15.059170+00:00",
+  "baseline": {
+    "status": "BASELINES_COMPLETE_SEALED",
+    "completed_blocks": 60,
+    "actual_estimator_fits": 3000,
+    "outer_metrics_released": false,
+    "code": {
+      "common.py": "aa253173c4c9fccac3c71139489819266cf68c2fb1e7cf7228627bee619bd8f7",
+      "train.py": "f5bf875bd01b4bd9a570b5c9141b3c006119ec91c5970b8b4196be7ac90fbfa9",
+      "prepare.py": "81b056e006a56ec3e761cfe4ad0193672a7ae8958955e93c496f9af20f944040"
+    }
+  },
+  "diagnostics": {
+    "status": "COMPLETE_SEALED",
+    "blocks": 74,
+    "fits": 3910,
+    "grouped_blocks": 60,
+    "chronological_blocks": 14,
+    "outer_metrics_released": false
+  },
+  "llm_progress_snapshot": {
+    "status": "RUNNING",
+    "completed": 804,
+    "total": 7851,
+    "session_seconds": 845.4345857080189,
+    "model": "mlx-community/Qwen3.5-9B-4bit",
+    "encoder_training": false
+  },
+  "fact_pilot": {
+    "status": "PREPARED_NOT_READ_OR_ACCEPTED",
+    "candidate_pairs": 331,
+    "pilot_pairs": 54,
+    "candidate_counts": {
+      "('AAPL', 'rating')": 70,
+      "('AAPL', 'target_price')": 216,
+      "('AMZN', 'rating')": 6,
+      "('AMZN', 'target_price')": 39
+    },
+    "assistant_labels": 0,
+    "independent_labels": 0,
+    "accepted_pairs": null,
+    "predictive_features_produced": false,
+    "source_text_public": false
+  },
+  "complete_pipeline_status": "NOT_COMPLETE",
+  "outer_scores_released": false,
+  "continuation_running_at_checkpoint": true
+}

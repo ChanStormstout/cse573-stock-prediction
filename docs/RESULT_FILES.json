@@ -3253,5 +3253,60 @@
     "path": "outputs/stock_random_protocol_4h/v1/SOURCE_MANIFEST.json",
     "bytes": 1173,
     "sha256": "5d74f2c446053bf1a3a47f01af51833ccd240a5ba8500b18c153a8b51d580223"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/BASELINE_EXECUTION.json",
+    "bytes": 409,
+    "sha256": "eb4245f2772c94beb52189e7c35c4f214fb1f4ce9be59b7b4ac477d3ab1c00c0"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/BASELINE_VERIFICATION.json",
+    "bytes": 804,
+    "sha256": "29ff2efedff4e09273099f75f1cf9804e8d2549e6d86e91460e22cde719d9d47"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/ANALOGY_PREFLIGHT.json",
+    "bytes": 458,
+    "sha256": "ec28d8ff4edcb1bd1ba51a466da2b0f83462974cad90b4e48684e7e7e4e341da"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/ANALOGY_VERIFICATION.json",
+    "bytes": 551,
+    "sha256": "42e7910c787a2ad09c7ce86ec2636e2e752b4a8248b23798b2fa890514df69fc"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/LLM_TOKEN_AUDIT.json",
+    "bytes": 170,
+    "sha256": "7dc96a707c194894183fe1bcd11d3474730f863b19af81d1624bb4bcb17359c0"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/FACT_PILOT_PREFLIGHT.json",
+    "bytes": 405,
+    "sha256": "fb4df5df9eda00083f900da0f67379ad06337be9b294260bf7324116c654365c"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/DIAGNOSTIC_EXECUTION.json",
+    "bytes": 155,
+    "sha256": "cae517d93a1759af05062458f0d210ce8493f97ac1a335f06866111e17e53e58"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/DIAGNOSTIC_VERIFICATION.json",
+    "bytes": 589,
+    "sha256": "c219f3436b1c7cb6fa2190bbcf2c2399da5d53d5a2c049e9f80e580b03be78dd"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/TESTS_INITIAL_FAILURE.json",
+    "bytes": 2253,
+    "sha256": "daf0c976381fbefb1cf5d57b5d778775c7d3490da5ea2cd217741d57cab8dae9"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/TESTS.json",
+    "bytes": 1397,
+    "sha256": "4c588e4cff2a872843eedc76a24ec98fa67f1406dab829be7bf7331830a26b03"
+  },
+  {
+    "path": "outputs/stock_random_protocol_4h/v1/EXECUTION_CHECKPOINT.json",
+    "bytes": 1484,
+    "sha256": "b1ad6826f46164f832dbf32d0cee3110f5c8e634e6344a4f9f92088db4058669"
   }
 ]

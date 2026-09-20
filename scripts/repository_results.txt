@@ -649,3 +649,14 @@ outputs/teacher_meeting_20260921/DELIVERY_MANIFEST.json
 outputs/teacher_meeting_20260921/build_slides.mjs
 outputs/stock_random_protocol_4h/v1/INPUT_AUDIT.json
 outputs/stock_random_protocol_4h/v1/SOURCE_MANIFEST.json
+outputs/stock_random_protocol_4h/v1/BASELINE_EXECUTION.json
+outputs/stock_random_protocol_4h/v1/BASELINE_VERIFICATION.json
+outputs/stock_random_protocol_4h/v1/ANALOGY_PREFLIGHT.json
+outputs/stock_random_protocol_4h/v1/ANALOGY_VERIFICATION.json
+outputs/stock_random_protocol_4h/v1/LLM_TOKEN_AUDIT.json
+outputs/stock_random_protocol_4h/v1/FACT_PILOT_PREFLIGHT.json
+outputs/stock_random_protocol_4h/v1/DIAGNOSTIC_EXECUTION.json
+outputs/stock_random_protocol_4h/v1/DIAGNOSTIC_VERIFICATION.json
+outputs/stock_random_protocol_4h/v1/TESTS_INITIAL_FAILURE.json
+outputs/stock_random_protocol_4h/v1/TESTS.json
+outputs/stock_random_protocol_4h/v1/EXECUTION_CHECKPOINT.json

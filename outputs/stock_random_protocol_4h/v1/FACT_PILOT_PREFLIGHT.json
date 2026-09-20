@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_NOT_READ_OR_ACCEPTED",
+  "candidate_pairs": 331,
+  "pilot_pairs": 54,
+  "candidate_counts": {
+    "('AAPL', 'rating')": 70,
+    "('AAPL', 'target_price')": 216,
+    "('AMZN', 'rating')": 6,
+    "('AMZN', 'target_price')": 39
+  },
+  "assistant_labels": 0,
+  "independent_labels": 0,
+  "accepted_pairs": null,
+  "predictive_features_produced": false,
+  "source_text_public": false
+}

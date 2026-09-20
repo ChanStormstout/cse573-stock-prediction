@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "artifacts_unchanged": true,
+    "query_membership": true,
+    "case_label_membership": true,
+    "strictly_matured": true,
+    "past_available_within_30_days": true,
+    "same_stock": true,
+    "at_most_three_distinct_records": true,
+    "no_target_answer_in_current": true,
+    "source_time_matches": true,
+    "all_scopes_exhaustive": true
+  },
+  "query_evaluations": 48210,
+  "case_references": 45045,
+  "prompt_case_outcomes_checked": 45045,
+  "estimator_fits": 0,
+  "predictive_metrics_computed": false
+}

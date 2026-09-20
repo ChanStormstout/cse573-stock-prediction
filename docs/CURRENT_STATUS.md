@@ -1,5 +1,9 @@
 # Current status
 
+## 2026-09-20 — Random baselines verified; local analogy inference running
+
+[Handoff](RANDOM_PROTOCOL_4H_HANDOFF.md). Five structures completed three-seed nested random testing (3,000 fits), grouped random and chronological controls (3,910 fits). Independent verification is PASS for all 670 selected model replays, with maximum probability error 4.44e-16. Outer predictive scores remain sealed. Qwen3.5-9B is executing 7,851 deduplicated prompts; this is frozen inference, not LLM finetuning. A local continuation verifies outputs, runs finite shared analogy correction selection, then the 54-pair fact reader pilot. Full fact-change residual, semantic acceptance, mechanism sensitivity comparisons and final slides/results remain unfinished. No external ECNI/relation lane was resumed.
+
 ## 2026-09-20 — Random-protocol core comparison prepared
 
 Owner-authorized separate course-data lane: [protocol](../outputs/stock_random_protocol_4h/PROTOCOL.md). Fit-free source and split audit PASS: 1,607 rows, 60 outer stock/seed/fold blocks, 180 inner splits, 203 dependence components. No new predictive result at preregistration. External ECNI review remains pending.

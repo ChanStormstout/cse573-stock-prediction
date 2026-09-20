@@ -1,0 +1,11 @@
+{
+  "status": "BASELINES_COMPLETE_SEALED",
+  "completed_blocks": 60,
+  "actual_estimator_fits": 3000,
+  "outer_metrics_released": false,
+  "code": {
+    "common.py": "aa253173c4c9fccac3c71139489819266cf68c2fb1e7cf7228627bee619bd8f7",
+    "train.py": "f5bf875bd01b4bd9a570b5c9141b3c006119ec91c5970b8b4196be7ac90fbfa9",
+    "prepare.py": "81b056e006a56ec3e761cfe4ad0193672a7ae8958955e93c496f9af20f944040"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PREPARED_NO_LLM_INFERENCE",
+  "scopes": 240,
+  "query_evaluations": 48210,
+  "unique_prompts": 7851,
+  "current_news_windows": 1171,
+  "queries_with_cases": 20675,
+  "all_labels_from_allowed_training_partitions": true,
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "prompt_selection": "fixed before outer-score release",
+  "estimated_hours_using_previous_1_85_seconds_per_prompt": 4.034541666666667,
+  "estimate_not_runtime_guarantee": true
+}

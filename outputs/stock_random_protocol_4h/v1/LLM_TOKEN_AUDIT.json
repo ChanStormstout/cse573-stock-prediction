@@ -1,0 +1,7 @@
+{
+  "prompts": 7851,
+  "max_tokens": 3868,
+  "truncated": 0,
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "model_revision": "8b2b98c00a6b4d291155e4890773ca8f769aee53"
+}

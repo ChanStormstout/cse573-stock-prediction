@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": {
+    "source_hashes": true,
+    "runner_hash": true,
+    "all_artifact_hashes": true,
+    "partitions": true,
+    "canonical_labels": true,
+    "group_isolation": true,
+    "chronological_label_maturity": true,
+    "selected_parameters": true,
+    "selected_model_membership": true,
+    "probability_replay": true,
+    "exact_fallback": true
+  },
+  "blocks": 74,
+  "fits_recorded": 3910,
+  "selected_models_replayed": 370,
+  "probabilities_replayed": 30975,
+  "max_error": 4.440892098500626e-16,
+  "verifier_fits": 0,
+  "outer_metrics_released": false
+}

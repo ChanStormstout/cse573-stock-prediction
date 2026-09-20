@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": {
+    "source_hashes": true,
+    "prepared_artifacts": true,
+    "exhaustive_unique_splits": true,
+    "inner_disjoint_and_exhaustive": true,
+    "all_3000_fit_hashes": true,
+    "all_train_memberships": true,
+    "canonical_labels": true,
+    "all_selected_transforms_train_only": true,
+    "all_C_choices_reconstructed": true,
+    "all_models_converged": true,
+    "all_selected_probabilities_replayed": true,
+    "no_news_exact_fallback": true,
+    "sixty_completed_blocks": true,
+    "expected_counts": true
+  },
+  "actual_fits": 3000,
+  "selected_models_replayed": 300,
+  "row_probabilities_replayed": 24105,
+  "max_probability_error": 3.3306690738754696e-16,
+  "no_news_fallback_mismatches": 0,
+  "predictive_metrics_read": false,
+  "verifier_estimator_fits": 0
+}

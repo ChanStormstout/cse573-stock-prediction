@@ -1640,3 +1640,37 @@ Source audit binds 1,607 canonical rows and time cutoffs. There are 203 dependen
 components (largest 245), motivating grouped sensitivity. Six synthetic contract
 tests pass. No new predictive results yet; existing historical and external lanes
 remain unchanged. See outputs/stock_random_protocol_4h/PROTOCOL.md.
+
+## 2026-09-20 — Random/grouped/chronological baselines completed; analogy running
+
+**Why:** The owner requested actual randomized tests of classical and modern
+methods, followed by historical-case LLM and fact-change pipeline components.
+The comparator roles were frozen before fitting; FinBERT remains the primary
+modern reference and Modern is an independently reported alternative.
+
+**Actual training:** 3,000 nested random baseline fits across 60 stock/seed/fold
+blocks; 3,910 grouped/chronological fits across 74 blocks. Five structures share
+splits and finite C candidates. Independent no-fit verifiers replayed 670
+selected models and 55,080 probabilities, max difference 4.44e-16. Labels,
+source hashes, group/time contracts and exact no-news price fallback passed.
+No outer score was released or used to redesign a method.
+
+**LLM work:** 240 fold-local scopes yield 48,210 queries and 45,045 admissible
+historical case references. Held-out outcomes are excluded from prompts.
+Deduplication leaves 7,851 exact prompts; tokenizer audit found max 3,868 tokens
+and zero truncation. Frozen local Qwen3.5-9B inference is running; progress is a
+local live file, not a completed result. A bounded continuation process handles
+verification, finite inner-selected analogy correction and the fact-reader pilot.
+
+**Fact branch:** 331 candidate pairs produced 54 fixed, outcome-blind pilot
+cards. AMZN rating candidates number only six. No semantic quality acceptance
+or fact-change predictive features are claimed. This remains a limitation to
+test, not an excuse to lower quality thresholds.
+
+**Tests/repairs:** 13 contract tests pass, including held-out/future case
+rejection, source/cache corruption, bounded correction and exact fallback.
+A pre-call MLX import error was fixed without changing prompts/models; a
+pre-execution syntax error in the pilot reader was caught and repaired by tests.
+Failure evidence remains local/public as appropriate. Historical runs and
+external review-gated work are unchanged. Full pipeline evaluation is pending;
+see docs/RANDOM_PROTOCOL_4H_HANDOFF.md for exact remaining steps.
