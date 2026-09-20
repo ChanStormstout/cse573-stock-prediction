@@ -1,0 +1,26 @@
+{
+  "24H_CONSISTENTLY_STRONGER_THAN_OVERNIGHT_FOR_PAPER_2G": false,
+  "cells": [
+    {
+      "24H_MINUS_OVERNIGHT_BA": -0.0840909090909091,
+      "phase": "development",
+      "stock": "AAPL"
+    },
+    {
+      "24H_MINUS_OVERNIGHT_BA": 0.029729729729729704,
+      "phase": "later",
+      "stock": "AAPL"
+    },
+    {
+      "24H_MINUS_OVERNIGHT_BA": -0.02083333333333337,
+      "phase": "development",
+      "stock": "AMZN"
+    },
+    {
+      "24H_MINUS_OVERNIGHT_BA": -0.06374085684430508,
+      "phase": "later",
+      "stock": "AMZN"
+    }
+  ],
+  "method": "PAPER_2G_L1LR"
+}

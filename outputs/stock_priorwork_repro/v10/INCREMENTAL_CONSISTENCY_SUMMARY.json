@@ -1,0 +1,33 @@
+{
+  "4h": {
+    "PAPER_2G_L1LR": {
+      "ALL_FOUR_POSITIVE_DELTA_VS_R1": false
+    },
+    "TFIDF_LR": {
+      "ALL_FOUR_POSITIVE_DELTA_VS_R1": false
+    },
+    "TFIDF_RF": {
+      "ALL_FOUR_POSITIVE_DELTA_VS_R1": false
+    }
+  },
+  "daily": {
+    "1d:DNEWS_24H|PAPER_2G_L1LR": {
+      "ALL_FOUR_POSITIVE_DELTA_VS_DPRICE": false
+    },
+    "1d:DNEWS_24H|TFIDF_ADABOOST": {
+      "ALL_FOUR_POSITIVE_DELTA_VS_DPRICE": false
+    },
+    "1d:DNEWS_24H|TFIDF_KNN": {
+      "ALL_FOUR_POSITIVE_DELTA_VS_DPRICE": false
+    },
+    "1d:DNEWS_OVERNIGHT|PAPER_1G_L1LR": {
+      "ALL_FOUR_POSITIVE_DELTA_VS_DPRICE": false
+    },
+    "1d:DNEWS_OVERNIGHT|PAPER_2G_L1LR": {
+      "ALL_FOUR_POSITIVE_DELTA_VS_DPRICE": false
+    },
+    "1d:DNEWS_OVERNIGHT|TFIDF_LR": {
+      "ALL_FOUR_POSITIVE_DELTA_VS_DPRICE": false
+    }
+  }
+}

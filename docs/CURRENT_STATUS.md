@@ -1,12 +1,26 @@
-# 当前权威状态（2026-09-18，Phase A 已修复；Phase B 仅预注册）
+# 当前权威状态（2026-09-19，V10 classical lane 已冻结完成）
+
+> **V10 Stage B2 frozen NEWS+PRICE execution (2026-09-19):** the bounded
+> pre-result merge and static-ledger repairs were committed before fitting.
+> The fit-free V2 preflight passed with 18 frozen branches, 1,607 four-hour
+> rows, 1,072 daily news-window rows, 536 unique stock-days, and zero joint
+> models. The single authorized execution then issued 108 models and 3,075
+> predictions. Independent refitting replayed all rows with zero key or
+> direction mismatches and maximum probability error `1.11e-16`; future-text
+> and future-price perturbation tests passed. No joint method had positive BA
+> increment versus its price baseline in all four stock/phase cells, and none
+> strictly dominated historical F1 across all four four-hour cells. No branch
+> was selected or tuned after results. See the [final audit](../outputs/stock_priorwork_repro/v10/STAGE_B2_FINAL_AUDIT.json),
+> [report](../outputs/stock_priorwork_repro/v10/STAGE_B2_REPORT.md), and
+> [classical-lane summary](../outputs/stock_priorwork_repro/v10/CLASSICAL_LANE_FINAL_SUMMARY.md).
 
 > **Prior-work V10 Stage A2 (2026-09-19):** the frozen V9 NEWS-only evidence is now independently reproducible. The verifier bound all nine source artifacts to commit `b7ee2af…`; raw canonical reconstruction achieved 1,607/1,607 article-key and full-body parity, and the independently rebuilt daily task matched its private raw-source cache. It reconstructed all 576 issued parameters with zero mismatches, replayed all 1,044 authorized March--August candidate rows within `1.12e-16` maximum metric discrepancy, and refit/reloaded 576 private model bundles with zero direction mismatches. This is an integrity checkpoint only: V9 September-and-later candidate grids remain quarantined; no DPRICE, NEWS+PRICE, or method-family selection ran. See [Stage A audit](../outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT.json).
 
 > **Prior-work V10 Stage A2 final verifier-only repair (2026-09-19):** the historical Stage A audit remains intact, and V2 replaces its two residual checks with computed evidence. It verified all 576 parameter decisions against the physically isolated March--August grid partition (8,874 authorized candidate references; 0 quarantined references) and reloaded each exact final manifest-hashed private model file. All 576 hashes matched, probabilities/scores reproduced V9 within `4.44e-16`, and no model bytes or tracked V6--V9 artifacts changed. [V2 audit](../outputs/stock_priorwork_repro/v10/STAGE_A_FINAL_AUDIT_V2.json) is PASS; no Stage B work ran.
 
-> **Prior-work V10 Stage B1 (2026-09-19):** frozen daily DPRICE ran with only seven completed-prior-session features and a three-value chronological C grid. Raw sources produced 536 unique daily targets (70 warmup, 258 OOF, 84 development, 124 later); exactly 36 March--August candidate rows and 24 issued model bundles were produced. Independent reload verification passed at `8.33e-17` maximum probability error with zero direction mismatches. Text method families were frozen from V9 issued March--August NEWS-only OOF predictions only. [B1 audit](../outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT.json) is PASS. No NEWS+PRICE model has run.
+> **Prior-work V10 Stage B1 (2026-09-19):** frozen daily DPRICE ran with only seven completed-prior-session features and a three-value chronological C grid. Raw sources produced 536 unique daily targets (70 warmup, 258 OOF, 84 development, 124 later); exactly 36 March--August candidate rows and 24 issued model bundles were produced. Independent reload verification passed at `8.33e-17` maximum probability error with zero direction mismatches. Text method families were frozen from V9 issued March--August NEWS-only OOF predictions only. [B1 audit](../outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT.json) is PASS. The later Stage B2 execution is recorded above.
 
-> **Prior-work V10 Stage B1 final independent replay (2026-09-19):** a verifier-only V2 independently rebuilt all 536 daily rows from raw sources, refit all 36 authorized March--August candidate models, reconstructed all 24 issued C decisions, and independently refit all 24 issued models. Grid metrics matched within `1.11e-16`; issued probabilities matched within `8.33e-17`; directions, row keys, and C decisions had zero mismatches. Final serialized models matched the independent refits exactly and all protected public/private bytes remained unchanged. [B1 V2 audit](../outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT_V2.json) is PASS. Stage B2 remains frozen and unexecuted; NEWS+PRICE fit count remains zero.
+> **Prior-work V10 Stage B1 final independent replay (2026-09-19):** a verifier-only V2 independently rebuilt all 536 daily rows from raw sources, refit all 36 authorized March--August candidate models, reconstructed all 24 issued C decisions, and independently refit all 24 issued models. Grid metrics matched within `1.11e-16`; issued probabilities matched within `8.33e-17`; directions, row keys, and C decisions had zero mismatches. Final serialized models matched the independent refits exactly and all protected public/private bytes remained unchanged. [B1 V2 audit](../outputs/stock_priorwork_repro/v10/STAGE_B1_FINAL_AUDIT_V2.json) is PASS. This was the final prerequisite for the later Stage B2 execution recorded above.
 
 > **Prior-work reproduction / 1d study (2026-09-19):** immutable v6 completed
 > with a preregistration hash and PASS verifier. It evaluates bounded,

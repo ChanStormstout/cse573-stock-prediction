@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "4h_R1_feature_parity": true,
+    "branch_parameter_match_18": true,
+    "daily_DPRICE_feature_parity": true,
+    "frozen_branch_count_18": true,
+    "frozen_configuration_hash_match": true,
+    "future_price_perturbation_pass": true,
+    "future_text_perturbation_pass": true,
+    "incremental_comparison_recomputed": true,
+    "independent_joint_refit_pass": true,
+    "joint_candidate_grid_fits_zero": true,
+    "joint_models_actual_108": true,
+    "joint_models_expected_108": true,
+    "joint_no_news_fallback_override_zero": true,
+    "joint_prediction_rows_1d_expected_1248": true,
+    "joint_prediction_rows_4h_expected_1827": true,
+    "metric_recomputation_pass": true,
+    "price_train_only_scaler": true,
+    "protected_artifacts_unchanged": true,
+    "row_key_mismatches_zero": true,
+    "serialized_manifest_hash_mismatches_zero": true,
+    "serialized_three_way_parity": true,
+    "stage_a_pass": true,
+    "stage_b1_pass": true,
+    "text_train_only_preprocessing": true,
+    "training_boundary_violations_zero": true
+  },
+  "counts": {
+    "frozen_branches": 18,
+    "independent_refits": 108,
+    "joint_models": 108,
+    "prediction_rows_1d": 1248,
+    "prediction_rows_4h": 1827
+  },
+  "errors": {
+    "direction_mismatches": 0,
+    "independent_refit_max_probability_error": 1.1102230246251565e-16,
+    "manifest_hash_mismatches": [],
+    "r1_feature_parity": 0.0,
+    "row_key_mismatches": 0,
+    "serialized_vs_independent_max_probability_error": 0.0
+  },
+  "scope": {
+    "external_data_runs": 0,
+    "joint_candidate_grid_fits": 0,
+    "new_llm_runs": 0
+  },
+  "status": "PASS"
+}

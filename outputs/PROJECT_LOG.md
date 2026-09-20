@@ -1,5 +1,13 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-19 — V10 Stage B2 frozen NEWS+PRICE execution and classical-lane freeze
+
+- **Pre-result repair boundary:** the original B2 checkpoint `4e2428e` failed at the canonical daily merge before any fit. The guarded many-to-one repair was committed at `8cde819`; its post-commit preflight exposed only a dynamic file-set ledger problem. The final static-ledger/schema repair was committed at `5bbd7d5`. The original 160-file ledger, 576 NEWS model hashes, 24 DPRICE model hashes, and explicit inputs all matched; the V2 fit-free preflight passed with zero joint models.
+- **Execution:** the single authorized frozen run executed 18 branches and 108 monthly models with zero candidate-grid fits. It produced 1,827 four-hour and 1,248 daily predictions. No scientific parameter, feature, window, classifier, or comparison rule changed after the first fit.
+- **Independent verification:** all 108 models were independently refit and all 3,075 rows replayed. Row-key and direction mismatches were zero; maximum probability error was `1.1102230246251565e-16`; manifest mismatches and computed fallback overrides were zero. Future-text and future-price perturbation tests passed, and protected artifacts remained unchanged. `STAGE_B2_FINAL_AUDIT.json` is PASS.
+- **Scientific result:** no four-hour NEWS+PRICE method had positive BA increment versus R1 in all four stock/phase cells, and none strictly dominated historical F1 across those four cells. No daily method had positive BA increment versus DPRICE in all four cells; the frozen 24-hour KNN pattern and matched PAPER_2G 24-hour-over-overnight pattern both failed. These development/later values are exposed historical backtests and no branch was promoted after inspection.
+- **Outcome:** the classical lane is frozen complete. The durable outputs are `STAGE_B2_REPORT.md` and `CLASSICAL_LANE_FINAL_SUMMARY.md`; private model binaries remain outside Git.
+
 ## 2026-09-19 — V10 Stage A2 independent V9 NEWS-only reconstruction
 
 - **Purpose:** establish whether the frozen V9 full-grid NEWS-only evidence can be independently reproduced before any Stage B work. The audit did not rank exposed September-and-later candidates or interpret predictive winners.

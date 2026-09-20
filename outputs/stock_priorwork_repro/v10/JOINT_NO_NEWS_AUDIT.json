@@ -1,0 +1,185 @@
+{
+  "branches": [
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "4h",
+      "method": "TFIDF_LR",
+      "no_news_rows": 2,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 16,
+      "stock": "AAPL",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "4h",
+      "method": "TFIDF_LR",
+      "no_news_rows": 148,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 16,
+      "stock": "AMZN",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "4h",
+      "method": "PAPER_2G_L1LR",
+      "no_news_rows": 2,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 16,
+      "stock": "AAPL",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "4h",
+      "method": "PAPER_2G_L1LR",
+      "no_news_rows": 148,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 16,
+      "stock": "AMZN",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "4h",
+      "method": "TFIDF_RF",
+      "no_news_rows": 2,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 16,
+      "stock": "AAPL",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "4h",
+      "method": "TFIDF_RF",
+      "no_news_rows": 148,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 16,
+      "stock": "AMZN",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "PAPER_1G_L1LR",
+      "no_news_rows": 0,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AAPL",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "PAPER_1G_L1LR",
+      "no_news_rows": 14,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AMZN",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "TFIDF_LR",
+      "no_news_rows": 0,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AAPL",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "TFIDF_LR",
+      "no_news_rows": 14,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AMZN",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "PAPER_2G_L1LR",
+      "no_news_rows": 0,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AAPL",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_OVERNIGHT",
+      "method": "PAPER_2G_L1LR",
+      "no_news_rows": 14,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AMZN",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "TFIDF_ADABOOST",
+      "no_news_rows": 0,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AAPL",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "TFIDF_ADABOOST",
+      "no_news_rows": 10,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AMZN",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "PAPER_2G_L1LR",
+      "no_news_rows": 0,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AAPL",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "PAPER_2G_L1LR",
+      "no_news_rows": 10,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AMZN",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "TFIDF_KNN",
+      "no_news_rows": 0,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AAPL",
+      "text_nonzero_count_on_no_news_rows": 0
+    },
+    {
+      "fallback_override_count": 0,
+      "horizon_window": "1d:DNEWS_24H",
+      "method": "TFIDF_KNN",
+      "no_news_rows": 10,
+      "post_prediction_override_count": 0,
+      "price_feature_count": 7,
+      "stock": "AMZN",
+      "text_nonzero_count_on_no_news_rows": 0
+    }
+  ],
+  "fallback_override_count": 0
+}

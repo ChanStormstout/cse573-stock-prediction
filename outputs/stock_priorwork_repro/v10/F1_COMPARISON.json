@@ -1,0 +1,101 @@
+{
+  "PAPER_2G_L1LR": {
+    "STRICTLY_DOMINATES_F1": false,
+    "cells": [
+      {
+        "F1_BA": 0.5793610547667343,
+        "delta": -0.09939148073022314,
+        "joint_BA": 0.47996957403651114,
+        "phase": "development",
+        "stock": "AAPL"
+      },
+      {
+        "F1_BA": 0.5174308450170519,
+        "delta": -0.009283819628647216,
+        "joint_BA": 0.5081470253884047,
+        "phase": "later",
+        "stock": "AAPL"
+      },
+      {
+        "F1_BA": 0.5565862708719851,
+        "delta": -0.07792207792207784,
+        "joint_BA": 0.47866419294990725,
+        "phase": "development",
+        "stock": "AMZN"
+      },
+      {
+        "F1_BA": 0.5435544430538173,
+        "delta": -0.036170212765957444,
+        "joint_BA": 0.5073842302878598,
+        "phase": "later",
+        "stock": "AMZN"
+      }
+    ]
+  },
+  "TFIDF_LR": {
+    "STRICTLY_DOMINATES_F1": false,
+    "cells": [
+      {
+        "F1_BA": 0.5793610547667343,
+        "delta": -0.06389452332657197,
+        "joint_BA": 0.5154665314401623,
+        "phase": "development",
+        "stock": "AAPL"
+      },
+      {
+        "F1_BA": 0.5174308450170519,
+        "delta": -0.016041429834533272,
+        "joint_BA": 0.5013894151825187,
+        "phase": "later",
+        "stock": "AAPL"
+      },
+      {
+        "F1_BA": 0.5565862708719851,
+        "delta": -0.01298701298701288,
+        "joint_BA": 0.5435992578849722,
+        "phase": "development",
+        "stock": "AMZN"
+      },
+      {
+        "F1_BA": 0.5435544430538173,
+        "delta": -0.1095118898623279,
+        "joint_BA": 0.4340425531914894,
+        "phase": "later",
+        "stock": "AMZN"
+      }
+    ]
+  },
+  "TFIDF_RF": {
+    "STRICTLY_DOMINATES_F1": false,
+    "cells": [
+      {
+        "F1_BA": 0.5793610547667343,
+        "delta": -0.06769776876267752,
+        "joint_BA": 0.5116632860040567,
+        "phase": "development",
+        "stock": "AAPL"
+      },
+      {
+        "F1_BA": 0.5174308450170519,
+        "delta": -0.024820007578628345,
+        "joint_BA": 0.4926108374384236,
+        "phase": "later",
+        "stock": "AAPL"
+      },
+      {
+        "F1_BA": 0.5565862708719851,
+        "delta": -0.03525046382189234,
+        "joint_BA": 0.5213358070500927,
+        "phase": "development",
+        "stock": "AMZN"
+      },
+      {
+        "F1_BA": 0.5435544430538173,
+        "delta": -0.04624530663329163,
+        "joint_BA": 0.49730913642052565,
+        "phase": "later",
+        "stock": "AMZN"
+      }
+    ]
+  }
+}

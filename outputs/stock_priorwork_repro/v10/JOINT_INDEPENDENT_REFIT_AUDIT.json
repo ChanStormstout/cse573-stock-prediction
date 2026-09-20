@@ -1,0 +1,448 @@
+{
+  "direction_mismatches": 0,
+  "joint_models_expected": 108,
+  "joint_models_independently_refit": 108,
+  "joint_private_bytes_unchanged": true,
+  "manifest_hash_mismatches": [],
+  "max_independent_refit_probability_error": 1.1102230246251565e-16,
+  "models": [
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "4h_AAPL_TFIDF_LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_TFIDF_LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "4h_AMZN_TFIDF_LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_TFIDF_LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_TFIDF_LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_TFIDF_LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "4h_AMZN_TFIDF_LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 9.71445146547012e-17,
+      "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_RF_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_RF_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_RF_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_RF_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AAPL_TFIDF_RF_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "4h_AAPL_TFIDF_RF_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_TFIDF_RF_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_TFIDF_RF_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_TFIDF_RF_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_TFIDF_RF_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "4h_AMZN_TFIDF_RF_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "4h_AMZN_TFIDF_RF_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 8.326672684688674e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 8.326672684688674e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 6.938893903907228e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 8.326672684688674e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 6.938893903907228e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 8.326672684688674e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 8.326672684688674e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 1.1102230246251565e-16,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 5.551115123125783e-17,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2019-02"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-09"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-10"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-11"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-12"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2019-01"
+    },
+    {
+      "independent_vs_frozen_max_error": 0.0,
+      "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2019-02"
+    }
+  ],
+  "row_key_mismatches": 0,
+  "row_level_predictions_expected": 3075,
+  "row_level_predictions_replayed": 3075,
+  "serialized_vs_frozen_max_probability_error": 1.1102230246251565e-16,
+  "serialized_vs_independent_max_probability_error": 0.0,
+  "training_boundary_violations": 0
+}

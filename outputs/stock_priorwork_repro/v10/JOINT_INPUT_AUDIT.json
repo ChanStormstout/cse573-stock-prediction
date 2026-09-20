@@ -1,0 +1,51 @@
+{
+  "cross_window_dprice_disagreements": 0,
+  "daily_raw_audit": {
+    "activity_feature_count": 0,
+    "latest_prior_close_cutoff_failures": 0,
+    "overnight_target_gap_feature_count": 0,
+    "phase_counts": {
+      "OOF": 258,
+      "development": 84,
+      "later": 124,
+      "warmup": 70
+    },
+    "predictive_features": [
+      "DRET_1",
+      "DRET_2",
+      "DRET_5",
+      "RANGE_1",
+      "RV_5",
+      "MEAN_5",
+      "HISTORY_AGE_HOURS"
+    ],
+    "prior_session_chronology_failures": 0,
+    "prior_session_count_failures": 0,
+    "target_day_feature_count": 0,
+    "target_rows": 536
+  },
+  "daily_rows": 1072,
+  "daily_rows_before_dprice_merge": 1072,
+  "daily_rows_per_stock_day_exactly_two": true,
+  "daily_unique_stock_day": 536,
+  "daily_window_set_exact": true,
+  "dprice_duplicate_stock_day_keys": 0,
+  "dprice_feature_count": 7,
+  "dprice_right_rows": 536,
+  "four_day_metadata_mismatch_count": 0,
+  "four_day_metadata_source": "existing",
+  "four_rows": 1607,
+  "goal60_key_count": 1607,
+  "missing_dprice_cells": 0,
+  "r1_feature_count": 16,
+  "r1_max_feature_parity_error": 0.0,
+  "stage_a_source_audit": {
+    "article_key_parity": "1607/1607",
+    "available_by_cutoff": "1607/1607",
+    "canonical_4h_rows": 1607,
+    "daily_cache_rows": 1072,
+    "daily_raw_rows": 1072,
+    "daily_source_cache_parity": true,
+    "stem_body_parity": "1607/1607"
+  }
+}

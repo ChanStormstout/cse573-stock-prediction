@@ -1,0 +1,18 @@
+{
+  "daily_24h_knn": {
+    "chi2_selection_unchanged": true,
+    "price_scaler_unchanged": true,
+    "september_max_probability_error": 0.0,
+    "training_row_ids_unchanged": true,
+    "vocabulary_unchanged": true
+  },
+  "four_hour_lr": {
+    "chi2_selection_unchanged": true,
+    "price_scaler_unchanged": true,
+    "september_max_probability_error": 0.0,
+    "training_row_ids_unchanged": true,
+    "vocabulary_unchanged": true
+  },
+  "future_price_perturbation_pass": true,
+  "future_text_perturbation_pass": true
+}

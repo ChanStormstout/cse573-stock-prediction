@@ -1,0 +1,1766 @@
+[
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_LR_2018-09",
+    "method": "TFIDF_LR",
+    "month": "2018-09",
+    "prediction_n": 57,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "ee2d241c2fbcca4f2f2c41ddcf3784ad0a7a89ccd9d9d36e6d01bb326c11fd34",
+    "stock": "AAPL",
+    "train_end": "2018-08-31 19:30:00+00:00",
+    "train_n": 499
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_LR_2018-10",
+    "method": "TFIDF_LR",
+    "month": "2018-10",
+    "prediction_n": 69,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "002cc781f3831a17e9ce2f191fb52eb4cdeaf4d52ff4bf75c43107901af3db54",
+    "stock": "AAPL",
+    "train_end": "2018-09-28 19:30:00+00:00",
+    "train_n": 556
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_LR_2018-11",
+    "method": "TFIDF_LR",
+    "month": "2018-11",
+    "prediction_n": 60,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "f1a99534df06b6928cabf9d3de8adbf53a882d229e6426bf062a50f286b3834d",
+    "stock": "AAPL",
+    "train_end": "2018-10-31 19:30:00+00:00",
+    "train_n": 625
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_LR_2018-12",
+    "method": "TFIDF_LR",
+    "month": "2018-12",
+    "prediction_n": 53,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "e21e56dadac836de7b3fb3aa5818b5e64b867e93443c0cee81770cfa938a406f",
+    "stock": "AAPL",
+    "train_end": "2018-11-30 20:30:00+00:00",
+    "train_n": 685
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_LR_2019-01",
+    "method": "TFIDF_LR",
+    "month": "2019-01",
+    "prediction_n": 63,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "a37819ac45f68fc5425ee9bb24c66faf37738256a29b1bee53f025d930b4c321",
+    "stock": "AAPL",
+    "train_end": "2018-12-31 20:30:00+00:00",
+    "train_n": 738
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_LR_2019-02",
+    "method": "TFIDF_LR",
+    "month": "2019-02",
+    "prediction_n": 2,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "e0d61b3d2f80c06737a57872cef01d8b910d119af20bd110fb720d5415370c4e",
+    "stock": "AAPL",
+    "train_end": "2019-01-31 20:30:00+00:00",
+    "train_n": 801
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_LR_2018-09",
+    "method": "TFIDF_LR",
+    "month": "2018-09",
+    "prediction_n": 57,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "bf58142689d7f27320691eba89f338f71bcbb699fbd18dc461dcc4b087981b8b",
+    "stock": "AMZN",
+    "train_end": "2018-08-31 19:30:00+00:00",
+    "train_n": 499
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_LR_2018-10",
+    "method": "TFIDF_LR",
+    "month": "2018-10",
+    "prediction_n": 69,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "6d81698749708e9f0f422238d043daf365702c72785a9434f2ce8a1ade5ef6b4",
+    "stock": "AMZN",
+    "train_end": "2018-09-28 19:30:00+00:00",
+    "train_n": 556
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_LR_2018-11",
+    "method": "TFIDF_LR",
+    "month": "2018-11",
+    "prediction_n": 60,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "883415cf3039873687aaeda7a315bb8d7d126e7609e2b860dcd73182d4424f34",
+    "stock": "AMZN",
+    "train_end": "2018-10-31 19:30:00+00:00",
+    "train_n": 625
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_LR_2018-12",
+    "method": "TFIDF_LR",
+    "month": "2018-12",
+    "prediction_n": 54,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "3623706e069c9a7b9b8a826d2b70a249f6095bcdf3edd3fed45b0b10a4ae1d8e",
+    "stock": "AMZN",
+    "train_end": "2018-11-30 20:30:00+00:00",
+    "train_n": 685
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_LR_2019-01",
+    "method": "TFIDF_LR",
+    "month": "2019-01",
+    "prediction_n": 63,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "c67b0587ac0bce2ec6aaca2c3d4f5145d97b57f7b6e37a22184ce2589a757011",
+    "stock": "AMZN",
+    "train_end": "2018-12-31 20:30:00+00:00",
+    "train_n": 739
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_LR_2019-02",
+    "method": "TFIDF_LR",
+    "month": "2019-02",
+    "prediction_n": 2,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "ceedee17dd27d18b086d8aa437e7977756290d36193e4ae1fef72cf7dcbae23a",
+    "stock": "AMZN",
+    "train_end": "2019-01-31 20:30:00+00:00",
+    "train_n": 802
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2018-09",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-09",
+    "prediction_n": 57,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "d8028527cf59b2c52076daeac3d03423c2e4e91bbd49c82b4d79ae840a893e0b",
+    "stock": "AAPL",
+    "train_end": "2018-08-31 19:30:00+00:00",
+    "train_n": 499
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2018-10",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-10",
+    "prediction_n": 69,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "cb103e5ae284920d4d117e6062ce5b3dd7615b814459e56528b1fb65bdc33ba6",
+    "stock": "AAPL",
+    "train_end": "2018-09-28 19:30:00+00:00",
+    "train_n": 556
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2018-11",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-11",
+    "prediction_n": 60,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "5b2e0e03fe5c65eee5e944d5218842ec4858481eeb6a873dd17f60f51da42406",
+    "stock": "AAPL",
+    "train_end": "2018-10-31 19:30:00+00:00",
+    "train_n": 625
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2018-12",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-12",
+    "prediction_n": 53,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "8c0668255017d3a868781a01236ea46725a91b0caf6a0cc08144f25c6bbaec26",
+    "stock": "AAPL",
+    "train_end": "2018-11-30 20:30:00+00:00",
+    "train_n": 685
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2019-01",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-01",
+    "prediction_n": 63,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "e7de472e7ecde4d5cda25f7ddcf7d83fd0ce5391a8bc4c2daf37f2d2c2a06892",
+    "stock": "AAPL",
+    "train_end": "2018-12-31 20:30:00+00:00",
+    "train_n": 738
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_PAPER_2G_L1LR_2019-02",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-02",
+    "prediction_n": 2,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "1d1a4b115db3ee321fb0d5a25e27cbdccac2192c6d5544dd2c73e921467ffce6",
+    "stock": "AAPL",
+    "train_end": "2019-01-31 20:30:00+00:00",
+    "train_n": 801
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2018-09",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-09",
+    "prediction_n": 57,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "3312632adb159f5ba8907628ff098f6bac807567e9eeda4784633db64ae21961",
+    "stock": "AMZN",
+    "train_end": "2018-08-31 19:30:00+00:00",
+    "train_n": 499
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2018-10",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-10",
+    "prediction_n": 69,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "c96e0989e4fe14720c2ae0d484332886decc1fea8db7d4a5f5cd3e4e599fcd34",
+    "stock": "AMZN",
+    "train_end": "2018-09-28 19:30:00+00:00",
+    "train_n": 556
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2018-11",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-11",
+    "prediction_n": 60,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "c98184eab0351a8c0f4f08a314bd865690a86a74f864b15d2f47c2d6d4566b29",
+    "stock": "AMZN",
+    "train_end": "2018-10-31 19:30:00+00:00",
+    "train_n": 625
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2018-12",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-12",
+    "prediction_n": 54,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "8e2057775a1881d5ad40a6eb4ee0322036c5095682d817a00fe4c929cc444bb4",
+    "stock": "AMZN",
+    "train_end": "2018-11-30 20:30:00+00:00",
+    "train_n": 685
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2019-01",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-01",
+    "prediction_n": 63,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "509c084921f9147ca624078b12f313d7769df30a26d4db2471a763a75aa5e8f8",
+    "stock": "AMZN",
+    "train_end": "2018-12-31 20:30:00+00:00",
+    "train_n": 739
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_PAPER_2G_L1LR_2019-02",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-02",
+    "prediction_n": 2,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "f48717a032d4ce0fc77e56e5cd3ce9f3a655a4fa71761782643495ee780637ee",
+    "stock": "AMZN",
+    "train_end": "2019-01-31 20:30:00+00:00",
+    "train_n": 802
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_RF_2018-09",
+    "method": "TFIDF_RF",
+    "month": "2018-09",
+    "prediction_n": 57,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "32ae9f2fd4eac0132351dbcd9fa64c4e9d3a322ba0a67aed01c110e94603a67f",
+    "stock": "AAPL",
+    "train_end": "2018-08-31 19:30:00+00:00",
+    "train_n": 499
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_RF_2018-10",
+    "method": "TFIDF_RF",
+    "month": "2018-10",
+    "prediction_n": 69,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "0130dff8acaebe3dcdcfe26586534c71dc41d2c4e08292401a4ccac60099848a",
+    "stock": "AAPL",
+    "train_end": "2018-09-28 19:30:00+00:00",
+    "train_n": 556
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_RF_2018-11",
+    "method": "TFIDF_RF",
+    "month": "2018-11",
+    "prediction_n": 60,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "03c6ea7244052f7d4400247503a03310d56805abd9293ce4ea19cc84e4564ff1",
+    "stock": "AAPL",
+    "train_end": "2018-10-31 19:30:00+00:00",
+    "train_n": 625
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_RF_2018-12",
+    "method": "TFIDF_RF",
+    "month": "2018-12",
+    "prediction_n": 53,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "6a580b7a05da74e464c211ae7bf2c04a4364104a493f09e12105a6c950d03403",
+    "stock": "AAPL",
+    "train_end": "2018-11-30 20:30:00+00:00",
+    "train_n": 685
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_RF_2019-01",
+    "method": "TFIDF_RF",
+    "month": "2019-01",
+    "prediction_n": 63,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "bfad2ba97e4c71e818d8c75ad2286ded63005c00f060a55ad8a66463ffd51293",
+    "stock": "AAPL",
+    "train_end": "2018-12-31 20:30:00+00:00",
+    "train_n": 738
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": null,
+      "min_samples_leaf": 1
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AAPL_TFIDF_RF_2019-02",
+    "method": "TFIDF_RF",
+    "month": "2019-02",
+    "prediction_n": 2,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "eed4943359310e7378ae615cc2ba04ce29c063cf56fdea3adb8b84ec9dee7a9e",
+    "stock": "AAPL",
+    "train_end": "2019-01-31 20:30:00+00:00",
+    "train_n": 801
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_RF_2018-09",
+    "method": "TFIDF_RF",
+    "month": "2018-09",
+    "prediction_n": 57,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "aa3082e9f2428102d0adea0b99cd9b4c490a4d5389f8b4e6415c92c0159ed03f",
+    "stock": "AMZN",
+    "train_end": "2018-08-31 19:30:00+00:00",
+    "train_n": 499
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_RF_2018-10",
+    "method": "TFIDF_RF",
+    "month": "2018-10",
+    "prediction_n": 69,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "ea8c1d326bcca6548b54f79e905acac218bdaf67be2fafce53edd1e5051bbffe",
+    "stock": "AMZN",
+    "train_end": "2018-09-28 19:30:00+00:00",
+    "train_n": 556
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_RF_2018-11",
+    "method": "TFIDF_RF",
+    "month": "2018-11",
+    "prediction_n": 60,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "39b7f52225f29b4323ea83d983b60f94d1453eafe75d8c31a7a079fb80d67b28",
+    "stock": "AMZN",
+    "train_end": "2018-10-31 19:30:00+00:00",
+    "train_n": 625
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_RF_2018-12",
+    "method": "TFIDF_RF",
+    "month": "2018-12",
+    "prediction_n": 54,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "9cb59aaddf860c09751f2df2e0df7a6727486b2e749d7eedb0f660b87df4ff37",
+    "stock": "AMZN",
+    "train_end": "2018-11-30 20:30:00+00:00",
+    "train_n": 685
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_RF_2019-01",
+    "method": "TFIDF_RF",
+    "month": "2019-01",
+    "prediction_n": 63,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "f12eed39c1cd90d3459d7fbb20886b2bc2fa59965ea31d9be4a98031b2faf594",
+    "stock": "AMZN",
+    "train_end": "2018-12-31 20:30:00+00:00",
+    "train_n": 739
+  },
+  {
+    "frozen_parameter": {
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    },
+    "horizon_window": "4h",
+    "logical_model_id": "4h_AMZN_TFIDF_RF_2019-02",
+    "method": "TFIDF_RF",
+    "month": "2019-02",
+    "prediction_n": 2,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "113ca5c9c55b9a71771a773727efb8d38c26fbc6aff9c7fe39063f0ded9d201b",
+    "stock": "AMZN",
+    "train_end": "2019-01-31 20:30:00+00:00",
+    "train_n": 802
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-09",
+    "method": "PAPER_1G_L1LR",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "a309d48c1c1367782cc122cbb93f2c2cef560e7b46e8508310aedf82e472a361",
+    "stock": "AAPL",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-10",
+    "method": "PAPER_1G_L1LR",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "d3426d8113a971a7db48f006c866800f4ac5d9bde62a06fa2517630a722ab626",
+    "stock": "AAPL",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-11",
+    "method": "PAPER_1G_L1LR",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "e6e8b916ac8b0ae76f192e6243ed21e06b855a0535944cb5b25ae9ec283ec868",
+    "stock": "AAPL",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2018-12",
+    "method": "PAPER_1G_L1LR",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "e0a66df85d0e5bb9a2729691dc903298a4fa6578d2e68bc3eb85791e298945a9",
+    "stock": "AAPL",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2019-01",
+    "method": "PAPER_1G_L1LR",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "17c110bc5c36c6bf2663e246ef745cc5e1b39a5da8f08a587e91e3e935404a6a",
+    "stock": "AAPL",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_1G_L1LR_2019-02",
+    "method": "PAPER_1G_L1LR",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "952d1f4077376e2b5c88cd75afc359b60075b36458dc480162a17285afc5c0fa",
+    "stock": "AAPL",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-09",
+    "method": "PAPER_1G_L1LR",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "68f0e6aa65d067702a42184c9f81c7d0fd72d60e2ac535d2364e7be4dd570228",
+    "stock": "AMZN",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-10",
+    "method": "PAPER_1G_L1LR",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "143280bb6e2c493dfc7c63877823372a8145b4bbe90bc9b866d697fce97d1de5",
+    "stock": "AMZN",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-11",
+    "method": "PAPER_1G_L1LR",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "cf99c8b3350505d9919046ddd75a60e566add78ac5503e8052a8ce5f364e9e57",
+    "stock": "AMZN",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2018-12",
+    "method": "PAPER_1G_L1LR",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "6a94911ea21a682591653adeb963a658c82d1b8f22d99fdb9c6d4df58ff4e7cc",
+    "stock": "AMZN",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2019-01",
+    "method": "PAPER_1G_L1LR",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "53368ed91d0e8412927027181e7aaf29ccb9397e608fd1e104ad8287c887e453",
+    "stock": "AMZN",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_1G_L1LR_2019-02",
+    "method": "PAPER_1G_L1LR",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "28081108fc64013dc442b95b06bcf2006f56b2cab37352a710d7e0feefb753bd",
+    "stock": "AMZN",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-09",
+    "method": "TFIDF_LR",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "db79dfaaf526748eeb19eb0f79a5f1184415d0998726ea63b6639579e4147b4f",
+    "stock": "AAPL",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-10",
+    "method": "TFIDF_LR",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "8d69f5f00d481079f928526168e7ac0a421da1603fe191d4deb8b3e9a9fefbc2",
+    "stock": "AAPL",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-11",
+    "method": "TFIDF_LR",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "4cf872c962e566d1b34473210a9e1399f4855ee74c76ffcbde5ec1aa37fddbf9",
+    "stock": "AAPL",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2018-12",
+    "method": "TFIDF_LR",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "5f534b35d786ed3a2f60bd9005222b7ef72b1cfe0b42c7ef5a39daae484d5664",
+    "stock": "AAPL",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2019-01",
+    "method": "TFIDF_LR",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "417ff5071c25f574292e59750bdb2908a980e44b998013184d37c4b6a5b3862b",
+    "stock": "AAPL",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_TFIDF_LR_2019-02",
+    "method": "TFIDF_LR",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "483712950934b3b923476fa4b5ed5c782fa7d97d1727e3079dfceb704030e236",
+    "stock": "AAPL",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-09",
+    "method": "TFIDF_LR",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "ce9d046f980b876eccdb0cf3ce89a417dfdddde010deaf12e7b17bdef3678893",
+    "stock": "AMZN",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-10",
+    "method": "TFIDF_LR",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "2ba03540762f634452cccabf3d8aa819d555cdb50fd5b56518ee5a9298b10596",
+    "stock": "AMZN",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-11",
+    "method": "TFIDF_LR",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "b909b1553e29fba4961c9dbb26ecab534bfd6dcab0d15924d19bcf1fbc86f39a",
+    "stock": "AMZN",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2018-12",
+    "method": "TFIDF_LR",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "d6f6f332a5d1ac30a8285db46c55c5bec22d9e78eb07c84d94dfd12984668a2d",
+    "stock": "AMZN",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2019-01",
+    "method": "TFIDF_LR",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "38d813edd583933236e1604145b17a3d72917aa2a22153d1a5fbb4d883fa9ec0",
+    "stock": "AMZN",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_TFIDF_LR_2019-02",
+    "method": "TFIDF_LR",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "8db96effb0a1cc6d02ed25389adbbbf5bf936efd69d94e151afacf35687cf5c6",
+    "stock": "AMZN",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-09",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "b4c49ba91e721cef47568d302a000f5bddcefaa7a68988c75589c46efe28f826",
+    "stock": "AAPL",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-10",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "253768ad9c02186cebdf4d2f854569dd5757e0a9fe497178bfc399306b64fabe",
+    "stock": "AAPL",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-11",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "89dcf372ae5817779bee2e9752f184f6776808eccc2d4a0bad9c0ea0c706d95a",
+    "stock": "AAPL",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2018-12",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "801443efb43aee80f10aed6f12ba3f6080d6d879954c4a7e5449dd16d182fab7",
+    "stock": "AAPL",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2019-01",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "0066bfb84150ea9e4eb99dbef42af306f4139b2184cb876ce478c50a379ce954",
+    "stock": "AAPL",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.1
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AAPL_PAPER_2G_L1LR_2019-02",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "016b0386b8d3f40b8efdd8b8fb872751ffb5e637a071cba4d352123cc9ffaef3",
+    "stock": "AAPL",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-09",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "c8fe0d8320d4a99e07aa9b8bfa3a4208436fe9ddf6e264b514a2809919e689c4",
+    "stock": "AMZN",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-10",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "1bb3d77449224dbb03810cd070d9f53ed565c8b971ab3a0d547f8368ef7262d1",
+    "stock": "AMZN",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-11",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "13e0fa98dc8957e4bc674465d5acdf7547549905fb87c63864776a262ad53d0b",
+    "stock": "AMZN",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2018-12",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "5abd8ed31d1b3551cdf03cdf7ffb599b2930409c4ca69048554f49d77bc45ab3",
+    "stock": "AMZN",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2019-01",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "6893a0cf09ebc81fae099a07e0fba6ed457e5273f695041122f10ace0efbcf4b",
+    "stock": "AMZN",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_OVERNIGHT",
+    "logical_model_id": "1d_DNEWS_OVERNIGHT_AMZN_PAPER_2G_L1LR_2019-02",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "f755728648a8739b6e49dae5ca5017db441bd13f8a147113a988733d587d43bf",
+    "stock": "AMZN",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-09",
+    "method": "TFIDF_ADABOOST",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "066e1bddab4f58b003e68ffb39d5ec7e52f09fe4bbffd46ff89e0f9c5ea7fc95",
+    "stock": "AAPL",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-10",
+    "method": "TFIDF_ADABOOST",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "ba64850928b8218c4079199f00de6f073b1a65ca91472d4706366cc41e6266a5",
+    "stock": "AAPL",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-11",
+    "method": "TFIDF_ADABOOST",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "28cf5445e3e8555b4c6b6638743bf298d282610d15e27b2ca1ffe4d112f3bfd2",
+    "stock": "AAPL",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2018-12",
+    "method": "TFIDF_ADABOOST",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "3bfd9ac5b67d5d1d5f60c1f28368a1810987c5ad8afcabc953d6dede25ad726a",
+    "stock": "AAPL",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2019-01",
+    "method": "TFIDF_ADABOOST",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "e7f6c140d52b62e84338bf406ed34ac796d1e9819344022c61c8b18b0d445901",
+    "stock": "AAPL",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.05,
+      "n_estimators": 50
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_ADABOOST_2019-02",
+    "method": "TFIDF_ADABOOST",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "44328ff26381332df2f3815c5f0d5cd177de924bf719243b6294165745c5a371",
+    "stock": "AAPL",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-09",
+    "method": "TFIDF_ADABOOST",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "b786f91e756733d1541da78c9c291b63d55d81ad8228c8b046375fc72379a5ae",
+    "stock": "AMZN",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-10",
+    "method": "TFIDF_ADABOOST",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "4aff74559a14e8df18018c092b69489d4e58c5498457ca7bd9d67d30c2f612ad",
+    "stock": "AMZN",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-11",
+    "method": "TFIDF_ADABOOST",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "b4d7e30fcc175cf09657ee64cbc2906a2bd190e1f2f6a5e80cfe1abfab33300d",
+    "stock": "AMZN",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2018-12",
+    "method": "TFIDF_ADABOOST",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "8c333a420224c28c33648215153b4c6499831a6c61d9efced135d2289b42179a",
+    "stock": "AMZN",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2019-01",
+    "method": "TFIDF_ADABOOST",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "1da5a4076e6e2b1e29a85838c973e011aa52fbe4115d0868c70064a41252adbf",
+    "stock": "AMZN",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "learning_rate": 0.1,
+      "n_estimators": 100
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_ADABOOST_2019-02",
+    "method": "TFIDF_ADABOOST",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "73a20058a226c7babbae59fa1c7c5367afafb3298760d77cb7bde1453889fd00",
+    "stock": "AMZN",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-09",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "40b33f75808a70d3f45f3b3e481363231d2c80dbf4a2096f2a14c0b233f0e374",
+    "stock": "AAPL",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-10",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "4809b797995786c28011fc3809265beb4f9157f9742725eb25f60a922e32f24b",
+    "stock": "AAPL",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-11",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "9a6e83a2d0ce81d5655e441ddef1114ad97e2ab3c632d5047de14109fa809c02",
+    "stock": "AAPL",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2018-12",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "7a4dd3bab7ed07b08cb2e8c7d6eda5303bfb80107ea94d6af1ff23bde981be80",
+    "stock": "AAPL",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2019-01",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "c9bfe01c925fc0db7b3e1e2532a55a8cf3e76461975da487f46f336cc4370a49",
+    "stock": "AAPL",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "C": 0.01
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_PAPER_2G_L1LR_2019-02",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "d69d1ecc0e90a7592b07a69b05cabb28de8a0def178f6b5330f4ab0d97da75be",
+    "stock": "AAPL",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-09",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "c04556b1a5e9783c18234149aebe2053a1b089a767db15473842049f3824947b",
+    "stock": "AMZN",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-10",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "96d7d5809c998314ec99d9dab736cb061f08d5b57cf4ab10c5ac3cab75882cff",
+    "stock": "AMZN",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-11",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "ab64bf6150bee74b0c124ebe6c64b048d6d7117ffa00c2b7556f3ff2a7e071bd",
+    "stock": "AMZN",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2018-12",
+    "method": "PAPER_2G_L1LR",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "fa4c1157c9d75d195481b0c57f5a602b3b9d6e79234e4d060271f7bec208c335",
+    "stock": "AMZN",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2019-01",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "47a76f0bfcaac5705d5cbcc70fdebad6759086e3b189b6d477c0b0ce04c6d2eb",
+    "stock": "AMZN",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "C": 1.0
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_PAPER_2G_L1LR_2019-02",
+    "method": "PAPER_2G_L1LR",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "d408aa5ade71ead04cfa55098a50985f63eb07cfda75ad3a037a3a8de232b61e",
+    "stock": "AMZN",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-09",
+    "method": "TFIDF_KNN",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "edea64905f3c7e81faca1fd07b66d0f1f4045df7df84e6713489f576f9e3f206",
+    "stock": "AAPL",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-10",
+    "method": "TFIDF_KNN",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "8675c7b08f73f8f85594c5c62c079175fde07a087be165a070bc2d28d4c5001b",
+    "stock": "AAPL",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-11",
+    "method": "TFIDF_KNN",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "04463d79f5588a927a85f08f432e2675722950fc7d4905349a16abd5e17a7bc1",
+    "stock": "AAPL",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2018-12",
+    "method": "TFIDF_KNN",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "da7ae7db96f9c20cfda2ba0d8213b48714c9ec73d6fc1d58e6df0a7ac9c277b3",
+    "stock": "AAPL",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2019-01",
+    "method": "TFIDF_KNN",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "6bc7b49e1f4bae640c64a925c3dffadf2576d7ec5c3f39c22e35d43a477df079",
+    "stock": "AAPL",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AAPL_TFIDF_KNN_2019-02",
+    "method": "TFIDF_KNN",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "0f075c9d076ec2983a6827200e221dd1b9cc6f14e0c216713fc009413ac92818",
+    "stock": "AAPL",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-09",
+    "method": "TFIDF_KNN",
+    "month": "2018-09",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "6f23d2a5489294d2015fd3a30bd3e42e3b0b8fe1cc3db16d86e006d58c7191e6",
+    "stock": "AMZN",
+    "train_end": "2018-08-31 20:00:00+00:00",
+    "train_n": 164
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-10",
+    "method": "TFIDF_KNN",
+    "month": "2018-10",
+    "prediction_n": 23,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "8a7ea56e003b22d557b42e1f31bf433b2b6888c312d599a3a945c8ee0d6afec6",
+    "stock": "AMZN",
+    "train_end": "2018-09-28 20:00:00+00:00",
+    "train_n": 183
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-11",
+    "method": "TFIDF_KNN",
+    "month": "2018-11",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "a5bfb0b75a243bfb1390a22379c2cb7097df0cf6fa39f71332c96f7a59598b57",
+    "stock": "AMZN",
+    "train_end": "2018-10-31 20:00:00+00:00",
+    "train_n": 206
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2018-12",
+    "method": "TFIDF_KNN",
+    "month": "2018-12",
+    "prediction_n": 19,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "2f1c98c1d0d768ea855f6028ebff517fa1703ada5aed196199c3784074e1164c",
+    "stock": "AMZN",
+    "train_end": "2018-11-30 21:00:00+00:00",
+    "train_n": 227
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2019-01",
+    "method": "TFIDF_KNN",
+    "month": "2019-01",
+    "prediction_n": 21,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "6892de75b813a3d07e5f76e5903831c4bab4ed0a3dff1d794f37c6e526e5dc4d",
+    "stock": "AMZN",
+    "train_end": "2018-12-31 21:00:00+00:00",
+    "train_n": 246
+  },
+  {
+    "frozen_parameter": {
+      "n_neighbors": 5,
+      "weights": "uniform"
+    },
+    "horizon_window": "1d:DNEWS_24H",
+    "logical_model_id": "1d_DNEWS_24H_AMZN_TFIDF_KNN_2019-02",
+    "method": "TFIDF_KNN",
+    "month": "2019-02",
+    "prediction_n": 1,
+    "reload_direction_mismatches": 0,
+    "reload_max_error": 0.0,
+    "sha256": "99f7039c52f77be89e87d8b04dde7a2743c047da43dfa7373db1baeca0925c3e",
+    "stock": "AMZN",
+    "train_end": "2019-01-31 21:00:00+00:00",
+    "train_n": 267
+  }
+]
