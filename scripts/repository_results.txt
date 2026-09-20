@@ -642,3 +642,8 @@ outputs/stock_ecni_e1rv2_gpt_review/review_batches/BATCH_04.jsonl
 outputs/stock_ecni_e1rv2_gpt_review/review_batches/BATCH_05.jsonl
 outputs/stock_ecni_e1rv2_gpt_review/build_gpt_review_pack.py
 outputs/stock_ecni_e1rv2_gpt_review/verify_gpt_review_pack.py
+outputs/teacher_meeting_20260921/README.md
+outputs/teacher_meeting_20260921/METHOD_PROPOSAL.md
+outputs/teacher_meeting_20260921/PRESENTER_NOTES.md
+outputs/teacher_meeting_20260921/DELIVERY_MANIFEST.json
+outputs/teacher_meeting_20260921/build_slides.mjs

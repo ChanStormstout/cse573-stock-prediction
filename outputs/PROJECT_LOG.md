@@ -1,5 +1,11 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-20 — Faculty presentation and proposed news-context correction
+
+Prepared a 16-slide English faculty meeting deck using the requested Simple Light Mode template. Descriptive method names explain price + FinBERT, evidence-linked company facts and a proposed relative-news-change correction. Saved historical scores remain explicitly exploratory; the proposed correction has no new result. The target-price example is labeled illustrative. No models, data, labels or gates changed; no paused lane resumed. Independent entity review remains pending.
+
+Review entrypoint: [meeting overview](teacher_meeting_20260921/README.md), with speaker notes, sources and the bounded method proposal. The editable PPTX is local under the existing binary exclusion policy; text materials and authoring source are published.
+
 ## 2026-09-19 — ECNI Stage E1 external-data qualification
 
 - **Frozen sample:** preregistered and pushed the E1 protocol before acquisition,

@@ -1,0 +1,13 @@
+{
+  "task": "faculty meeting slides",
+  "date": "2026-09-21",
+  "source_checkpoint": "652b1999407a2e248064d61e8758cd68050dcf89",
+  "local_pptx": "CSE573_News_Context_Faculty_Meeting_v4.pptx",
+  "sha256": "1c4e1539010e0976f1f7a3f2e689d30ee7dd4d7da4ca09b3190a54aa10a711e4",
+  "slides": 16,
+  "main_slides": 13,
+  "appendix_slides": 3,
+  "status": "PROPOSED_METHOD_WITH_SAVED_HISTORICAL_EVIDENCE",
+  "new_model_runs": 0,
+  "template_sha256": "2ae8105571f68403f438458cd51e6ad14f0d989c7af64239e280437a4ac2a633"
+}

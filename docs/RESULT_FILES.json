@@ -3218,5 +3218,30 @@
     "path": "outputs/stock_ecni_e1rv2_gpt_review/verify_gpt_review_pack.py",
     "bytes": 6252,
     "sha256": "bb8b29a810fe4f79b6f97cb0fbd893d05f01c707f0689521b54628dc8981bf3e"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/README.md",
+    "bytes": 2774,
+    "sha256": "313fc3f849fac87713283a1d46d7582778dead82c73144235a39300f00f41f4d"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/METHOD_PROPOSAL.md",
+    "bytes": 3413,
+    "sha256": "6a7e2b87f9055f2629cbb82cd03b00be08c0692a0016e21af42261fe73ddb11b"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/PRESENTER_NOTES.md",
+    "bytes": 9893,
+    "sha256": "90a662d04ed96bb9f29fff6b99758336c6ed6af8e2f0c3c8173a6bec473c4a85"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/DELIVERY_MANIFEST.json",
+    "bytes": 508,
+    "sha256": "a0bf10562d643b8f436ca72be20e991a98504e95d7a82354ab0f92f114cde714"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/build_slides.mjs",
+    "bytes": 21003,
+    "sha256": "4a4bbc00ea22231966b9f15b167c7666e411ae97e02d55ee86a40b043181af02"
   }
 ]
