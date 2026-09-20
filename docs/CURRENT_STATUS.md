@@ -1,5 +1,18 @@
 # 当前权威状态（2026-09-19，V10 classical lane 已冻结完成）
 
+> **External benchmark and ECNI foundation (2026-09-19):** a new outcome-blind
+> lane audited the course data, CMIN-US, FNSPID, FinMultiTime, EDT, StockNet and
+> SEC EDGAR using primary documentation and bounded samples. FNSPID is the
+> conditional primary daily-panel candidate, CMIN-US the preserved standard
+> benchmark, and EDT reader/event auxiliary supervision. FNSPID still requires
+> a stratified full-file timestamp/text audit; FinMultiTime raw U.S. news and
+> price files were unavailable in the inspected author revision. ECNI's claim,
+> factual-innovation, dissemination, dense-text, panel, split, reader and future
+> comparison contracts are frozen as proposals. No direction model was fitted
+> and no stock-prediction score was generated. See
+> [survey](EXTERNAL_BENCHMARK_SURVEY.md), [question](NEXT_RESEARCH_QUESTION.md),
+> and [audit manifest](../outputs/stock_external_benchmark_audit/AUDIT_MANIFEST.json).
+
 > **V10 Stage B2 frozen NEWS+PRICE execution (2026-09-19):** the bounded
 > pre-result merge and static-ledger repairs were committed before fitting.
 > The fit-free V2 preflight passed with 18 frozen branches, 1,607 four-hour

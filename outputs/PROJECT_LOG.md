@@ -1,5 +1,13 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-19 — External benchmark audit and ECNI data foundation
+
+- **Scope:** opened a new outcome-blind research lane after freezing V10. No stock-direction estimator, reader model, FinBERT/Fin-ModernBERT prediction, BA, MCC, Brier or return-based selection ran.
+- **Evidence:** inspected primary repositories/papers and bounded samples for course data, CMIN-US, FNSPID, FinMultiTime, EDT, StockNet and SEC EDGAR. Recorded source revisions and sample hashes without publishing copyrighted article bodies.
+- **Decision:** FNSPID is a conditional primary daily-panel candidate, subject to a larger point-in-time/text audit; CMIN-US remains the standard official benchmark; EDT is auxiliary event-reader supervision. FinMultiTime is blocked because the inspected author dataset revision exposed images but not raw U.S. news/prices.
+- **Protocol:** froze candidate ECNI statement, factual-innovation and dissemination schemas; an outcome-blind balanced sector/coverage panel and unseen-company split; candidate time locks; reader-label controls; fixed-token encoder comparisons; low-capacity prediction and usable-information evaluation specifications.
+- **Boundary:** named panel members, final time split and predictive execution remain unauthorized until full metadata acquisition and audits satisfy the manifest blockers.
+
 ## 2026-09-19 — V10 Stage B2 frozen NEWS+PRICE execution and classical-lane freeze
 
 - **Pre-result repair boundary:** the original B2 checkpoint `4e2428e` failed at the canonical daily merge before any fit. The guarded many-to-one repair was committed at `8cde819`; its post-commit preflight exposed only a dynamic file-set ledger problem. The final static-ledger/schema repair was committed at `5bbd7d5`. The original 160-file ledger, 576 NEWS model hashes, 24 DPRICE model hashes, and explicit inputs all matched; the V2 fit-free preflight passed with zero joint models.

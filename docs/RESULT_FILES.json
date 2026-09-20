@@ -2733,5 +2733,65 @@
     "path": "outputs/stock_priorwork_repro/v10/CLASSICAL_LANE_FINAL_SUMMARY.md",
     "bytes": 1186,
     "sha256": "50a29ef68d8b11166985ecee7a70f7b1bfbdcd0e317cebb1e3c51314596c80f0"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/DATASET_SCORECARD.csv",
+    "bytes": 1263,
+    "sha256": "dd1e6fd80ef791ea9ab6d167bd45903d7090dcac9d9adb0b33774ae98bc94e93"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/SAMPLE_SCHEMA_AUDIT.md",
+    "bytes": 1346,
+    "sha256": "bd8e6982ed45db184ee5412c40cb78570f1ce2708279086d20f20df7d7890f21"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/TIMESTAMP_AUDIT.md",
+    "bytes": 1535,
+    "sha256": "2fc0628d0e8a1a2a934a1c4b2ae37a53d83609dc58baaae5498f70a6745aa0f9"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/ENTITY_ASSOCIATION_AUDIT.md",
+    "bytes": 1473,
+    "sha256": "def93a4aaf720780a3b4392ed9e6fe95ef6fa7265a3cdc2a3eaaadf1216e59f9"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/CROSS_DATASET_OVERLAP_AUDIT.md",
+    "bytes": 1003,
+    "sha256": "76066a24c63630f6897c829929a0c0f4699873bed0c25e4c482c8ba45a35484f"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/MODEL_CORPUS_OVERLAP_RISK.md",
+    "bytes": 1086,
+    "sha256": "c5ab33764ae3073935499d34a2b1acd10f95c98d7efc8c6192cae6ebaad2c9b7"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/STOCK_PANEL_SELECTION_PROTOCOL.md",
+    "bytes": 1282,
+    "sha256": "e82e363daba1fac0b7637f38ab28c4f501bdbc9f496d998f54345562cb64d067"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/TIME_SPLIT_CANDIDATES.md",
+    "bytes": 1001,
+    "sha256": "65f2a54e0083670c12ff21e4028d1739facf103b07427744f95df0ee0e1daea2"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/ECNI_METHOD_SPEC.md",
+    "bytes": 2481,
+    "sha256": "5b8f000ced4fb15aecb57cbf3953dddd8a3675c0079e19510792b0843a542291"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/READER_LABELING_PROTOCOL.md",
+    "bytes": 1348,
+    "sha256": "4c87ac9de1397897e30794844681281b840b5e6267e47e541300c35bbd2749b9"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/FUTURE_EXPERIMENT_MATRIX.md",
+    "bytes": 1386,
+    "sha256": "9b578e77efb9bc4887c5e587d620811a088812182775edaf948d8cb121e2aa5c"
+  },
+  {
+    "path": "outputs/stock_external_benchmark_audit/AUDIT_MANIFEST.json",
+    "bytes": 2642,
+    "sha256": "5c8040f27aa54b790d8ae0a2358d9455d03b11faf84213c5aedff818f92fa3df"
   }
 ]

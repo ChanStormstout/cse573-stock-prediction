@@ -1,0 +1,8 @@
+dataset,timestamp_quality,text_richness,ticker_entity_quality,price_alignment,stock_diversity,year_diversity,duplicate_auditability,fixed_window_suitability,event_task_suitability,license_access,compute_storage,pretraining_overlap_risk,recommendation
+Course,limited,high,poor,high,very_low,very_low,high,limited,limited,restricted_course,low,medium,historical_diagnostic_only
+CMIN_US,high_in_sample,medium,needs_reaudit,high,medium,medium,high,high,medium,MIT_large_repo,medium,medium,standard_benchmark
+FNSPID,mixed,low_in_first100,needs_reaudit,high,very_high,very_high,high,conditional,medium,CC_BY_NC_4_README_CONFLICT,very_high,high,conditional_primary
+FinMultiTime,claimed_high_unverified,claimed_high_unavailable,unknown,claimed_high_unavailable,very_high,very_high,unknown,blocked,blocked,license_unknown,very_high,unknown,reconsider_after_access
+EDT,high,high,known_assignment_errors,label_aligned,unknown,low,medium,low,high,drive_access_terms_unclear,medium,medium,reader_auxiliary
+StockNet,high,short_social_text,cashtag_directory,high,medium,low,high,high,medium,MIT_medium,medium,legacy_benchmark
+SEC_EDGAR,high,high,CIK_accession_strong,not_included,high,very_high,high,auxiliary_only,high,public_access_with_SEC_policy,high,medium,auxiliary_facts

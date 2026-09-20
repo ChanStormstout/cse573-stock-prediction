@@ -1,0 +1,24 @@
+{
+  "status": "OUTCOME_BLIND_DATA_FOUNDATION_COMPLETE_PENDING_FULL_ACQUISITION",
+  "audit_date": "2026-09-19",
+  "starting_sha": "ba906171dafc580b5cd242bbb72dd9c8a174cb89",
+  "predictive_models_fitted": 0,
+  "stock_prediction_scores_generated": 0,
+  "sources": [
+    {"dataset":"CMIN-US","url":"https://github.com/BigRoddy/CMIN-Dataset","revision":"3f571a53b81d8f3ea7b3afb9877bdbdbeae54c97","sample":"bounded AAPL news prefix plus complete AAPL daily prices","sample_sha256":["8f723ed742d9dcdd680d3696a75328f633450768df8e8c007f4663d7402580d4","5a591097447f0579a487aee084c4a46e3b613e458cf4dbe354af285782496c5e"]},
+    {"dataset":"FNSPID","url":"https://huggingface.co/datasets/Zihan1004/FNSPID","revision":"bf9189c41527198897d1af3e17b1a0095279fc45","sample":"dataset-server first 100 rows","sample_sha256":["f0c69023fb2e6f2e5627086623f054dd554a2e731c6cce32d3cdb10a5e495856"]},
+    {"dataset":"FinMultiTime","url":"https://huggingface.co/datasets/Wenyan0110/Multimodal-Dataset-Image_Text_Table_TimeSeries-for-Financial-Time-Series-Forecasting","revision":"72d4e97b9acb92651949b8efb22c55676ff633ff","sample":"file inventory and paper only; raw US news/price unavailable","sample_sha256":[]},
+    {"dataset":"EDT","url":"https://github.com/Zhihan1996/TradeTheEvent","revision":"51befedf01a7d5425790f45e2f2931706b2f8e1d","sample":"official data README; Drive payload not downloaded","sample_sha256":["bee53fae8915931873c1419c45cfc9be26af58301302609a5a6bc9efaa19e6d9"]},
+    {"dataset":"StockNet","url":"https://github.com/yumoxu/stocknet-dataset","revision":"330708b5ddc359961078bef469f43f48992fd6e4","sample":"AAPL 2014-01-02 tweets plus complete AAPL daily prices","sample_sha256":["7ad2eb7a6100a6f5a46a934475730eb0b357d2db14b8ac50241a732ab660ea0a","4c91141cc818b836fa7a1fabb683622c63048db450565d607418bfec3ed5bc4e"]},
+    {"dataset":"Course","url":"local restricted course archive","revision":"local source manifest","sample":"all 78055 metadata records; text not exported","sample_sha256":[]},
+    {"dataset":"SEC EDGAR","url":"https://www.sec.gov/search-filings/edgar-application-programming-interfaces","revision":"live documentation 2026-09-19","sample":"documentation only","sample_sha256":[]}
+  ],
+  "blocked": [
+    "FinMultiTime raw US news and price modalities absent from inspected public revision",
+    "FNSPID full stratified timestamp/text/entity audit not yet acquired",
+    "EDT payload access and usage terms not yet validated",
+    "CMIN-US timestamp timezone and official split evidence not yet resolved",
+    "No deterministic named stock panel until training-period metadata is acquired"
+  ],
+  "hard_stop_observed": true
+}
