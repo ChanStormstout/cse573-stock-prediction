@@ -3058,5 +3058,90 @@
     "path": "outputs/stock_ecni_e1r/verify_e1r.py",
     "bytes": 4536,
     "sha256": "ec6373ae2bbb73828ef7880b58ae98ba370078d42ab3d7af8421244052266bd1"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/PRE_REGISTRATION.md",
+    "bytes": 6181,
+    "sha256": "1686418b5baf3d32d92e8dbd029c8d87bec0af7c7c0da983f6de17e7b37cc2ba"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/ALIAS_RISK_CENSUS.csv",
+    "bytes": 608928,
+    "sha256": "3bc4f6443d5c61c442e0820de88376c734cc48c648252b946bfc8f41f321c17a"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/NDAQ_SENTINEL_AUDIT.json",
+    "bytes": 1085,
+    "sha256": "90d49c2da8f2078c13c4ab87d5082e8d70ccb1191248b777c154ce8f058707e0"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/ENTITY_SEMANTIC_REVIEW_MANIFEST.json",
+    "bytes": 37901,
+    "sha256": "7c6e7683d59b5059a8b68c0e740fa6680e127098aa965bf64a8514555700b45a"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/ENTITY_SEMANTIC_LABELING_GUIDE.md",
+    "bytes": 1326,
+    "sha256": "bc060ba8ba3513dabe37b170f6e4533fc658021434551c73414b56f7faf4c182"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/MECHANICAL_ALIAS_CONTAMINATION_REPORT.md",
+    "bytes": 3459,
+    "sha256": "db4289c66c4578bcb394b18cd61773f4a7f4d7f92ccceb81453601ae715b9a74"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/SEC_FORM_COVERAGE_BY_COMPANY.csv",
+    "bytes": 18916,
+    "sha256": "58e2e221601ca88c5b2568e34d8528f71c01a9779f3ec587623f5adaed9b549f"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/SEC_FACT_CHANNEL_COVERAGE.md",
+    "bytes": 1037,
+    "sha256": "2ce63dd2140e225884700ca7f8e7b785d9c5a6440848caabe58da944caba87fd"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/SEC_FACTUAL_EVENT_CANDIDATES.jsonl",
+    "bytes": 2611877,
+    "sha256": "6f0f5f6287293ac3e602b2304fd214f8e8ffd32e0613eff051979d83b2e63c9a"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/SEC_SUPPLEMENTAL_SOURCE_MANIFEST.json",
+    "bytes": 4563,
+    "sha256": "4408751259d39a7539f598a63a5c216723dac7cb96a5f548a048d90f5b2b4429"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/READER_PAIR_SAMPLING_MANIFEST.json",
+    "bytes": 581,
+    "sha256": "3b29605fe46e55fd5815ef15467880c8de49af00be7f58f547f9502711f9f798"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/READER_PAIR_LABELING_GUIDE.md",
+    "bytes": 607,
+    "sha256": "38b6b4ae32c907ecbea78870e5d38422ba0e85b41d1c1da0505ad44d4992acd9"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/E1RV2_FINAL_AUDIT.json",
+    "bytes": 1359,
+    "sha256": "f6e9d0303736f0e4b3b2e5afbd7f7454fcd998dd6755a755f9178d76833f04c8"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/E1RV2_VERIFICATION.json",
+    "bytes": 886,
+    "sha256": "16f1de7d506b3314fecd85fd6cc5d9f4bf1695ca056fa9872fa827d05ef4ced7"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/E1RV2_REPORT.md",
+    "bytes": 2081,
+    "sha256": "65aeade9bd395de8415b7c1cce6290bec33f8f51bed56ba0433c58cea4ba6026"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/run_e1rv2.py",
+    "bytes": 30949,
+    "sha256": "704b941d550ba5223727ab676f97a737fd4448f017d9eeb57ffe7b957a59ac59"
+  },
+  {
+    "path": "outputs/stock_ecni_e1rv2/verify_e1rv2.py",
+    "bytes": 5944,
+    "sha256": "8aa90c947983df551eeccc3716e815033f8cb8c829327e2f3039c9ac63d97516"
   }
 ]

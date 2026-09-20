@@ -1,5 +1,17 @@
 # Current status
 
+## 2026-09-19 — ECNI Stage E1R-V2 semantic audit awaiting independent review
+
+E1R-V2 is complete within its outcome-blind boundary with status **`AWAITING_INDEPENDENT_ENTITY_REVIEW`**. The semantic protocol was pushed before article-card inspection at `8f69790578820edb146565a3c6c487c9fbeac04d`. Historical E1R artifacts remain byte-identical.
+
+The complete 3,129-row alias/CIK census mechanically flags 1,606 aliases. NDAQ's dual-role `nasdaq` alias has 2,576,470 all-years matches, 1,315,640 all-years currently high-confidence edges, 255,784 training-period high-confidence edges, and 1.0 historical panel coverage. Its 100-card sentinel is frozen for independent review. Mechanical phrase checks found 3 listing/venue-pattern cards and 15 narrow corporate-context cards; these are diagnostics, not labels or precision estimates.
+
+The private blinded entity pack contains 515 unique cards: exactly five panel-base cards for each of 66 companies, 100 NDAQ sentinel cards, and 100 alias-risk-enriched cards before overlap. No independent labels were supplied, semantic precision is null, no alias rule was changed, complete relinking was not rerun, and no E1RV2 replacement panel was created. The historical 66-company panel and 44/11/11 split remain pending semantic validation.
+
+SEC coverage now includes official supplemental submission histories overlapping 2018–2021. The panel contains 54 domestic registrants and 12 foreign-private issuers. Counts are 2,903 8-K, 655 10-Q, 237 10-K, 1,343 6-K, and 55 20-F, totaling 5,193 outcome-blind filing candidates. Per-company counts range from 19 to 238, so factual-channel availability is mechanically flagged as severely unequal and must remain explicit missingness.
+
+The fit-free verifier passes all 20 checks. Returns/outcomes inspected, predictive models fitted, reader models fitted, reader pairs, and reader review cards are all zero. Reader-pair construction remains blocked until independent entity review passes or failed aliases receive a rule-level repair followed by complete relinking.
+
 ## 2026-09-19 — ECNI Stage E1R outcome-blind panel freeze
 
 Stage E1R is complete with status **`PASS_PANEL_AND_ARCHITECTURE_FROZEN`**. The preregistration was pushed before the complete coverage census at `c5443c880399426976bb07b7430f5564700469e3`. The two official FNSPID files yielded 28,606,813 parsed rows with zero parse failures. Native ticker assignment remained diagnostic only; independent issuer rules produced 7,377,941 high-confidence edges. This rule-supported relinking has not received independent human precision validation.

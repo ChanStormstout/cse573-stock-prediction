@@ -1,0 +1,12 @@
+{
+  "status": "BLOCKED_PENDING_INDEPENDENT_ENTITY_REVIEW",
+  "candidate_pair_construction_authorized": false,
+  "SEC_factual_event_candidates": 5193,
+  "news_pair_candidates": 0,
+  "reader_review_cards": 0,
+  "private_path": "work/stock-data/ecni_e1rv2/private/READER_PAIR_REVIEW_CARDS.jsonl",
+  "private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reason": "Frozen protocol requires semantic validation or rule-level repair before current/predecessor pair construction.",
+  "future_target_cards": 300,
+  "returns_or_direction_labels_used": 0
+}

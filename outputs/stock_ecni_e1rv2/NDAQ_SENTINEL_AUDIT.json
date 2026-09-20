@@ -1,0 +1,29 @@
+{
+  "status": "AWAITING_INDEPENDENT_LABELS",
+  "CIK": 1120193,
+  "ticker": "NDAQ",
+  "alias": "nasdaq",
+  "complete_edge_diagnostics": {
+    "matched_articles": 2576470,
+    "title_matches": 103387,
+    "body_matches": 2473083,
+    "exact_ticker_matches": 0,
+    "direct_high_confidence_edges": 405855,
+    "multi_company_high_confidence_edges": 909785,
+    "training_high_confidence_edges": 255784,
+    "training_distinct_recorded_dates": 1460,
+    "training_days_denominator": 1008,
+    "training_day_coverage": 1.0,
+    "publisher_count": 169,
+    "top_publisher_fraction": 0.14006944784075903,
+    "native_tag_agreement_rate": 0.0017865529193043196
+  },
+  "all_NDAQ_explicit_ticker_edges": 4,
+  "sentinel_cards": 100,
+  "private_cards_sha256": "41a906f9822b52539f76cb61636954b7c9ff4e996e7bb472984a08712e8a9654",
+  "mechanical_listing_phrase_cards": 3,
+  "mechanical_corporate_context_cards": 15,
+  "semantic_precision": null,
+  "independent_labels_available": false,
+  "interpretation": "Phrase diagnostics flag possible contamination but do not establish semantic correctness."
+}

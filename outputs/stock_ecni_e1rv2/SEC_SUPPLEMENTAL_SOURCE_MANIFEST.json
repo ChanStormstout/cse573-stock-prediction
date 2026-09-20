@@ -1,0 +1,128 @@
+{
+  "status": "COMPLETE",
+  "official_endpoint": "https://data.sec.gov/submissions/",
+  "overlapping_supplemental_files": [
+    {
+      "CIK": 51143,
+      "ticker": "IBM",
+      "file": "CIK0000051143-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0000051143-submissions-001.json",
+      "bytes": 311075,
+      "sha256": "35ff584e3cfa41b6cf58c11faf35bf71002d9c933fe065ab543fc26079e8221a",
+      "filingFrom": "2012-07-02",
+      "filingTo": "2020-01-14"
+    },
+    {
+      "CIK": 37996,
+      "ticker": "F",
+      "file": "CIK0000037996-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0000037996-submissions-001.json",
+      "bytes": 318600,
+      "sha256": "b5db78c31549b3d0d5c41b7dad9dc72eae2dbd1b34c13c8e0b080a75dee9c000",
+      "filingFrom": "2008-02-11",
+      "filingTo": "2019-05-19"
+    },
+    {
+      "CIK": 1318605,
+      "ticker": "TSLA",
+      "file": "CIK0001318605-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0001318605-submissions-001.json",
+      "bytes": 120848,
+      "sha256": "307cb34862f830dd61171e885c9778b4a471ab80b85f2f2029bbacbb04ce7885",
+      "filingFrom": "2005-02-17",
+      "filingTo": "2018-05-05"
+    },
+    {
+      "CIK": 1163165,
+      "ticker": "COP",
+      "file": "CIK0001163165-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0001163165-submissions-001.json",
+      "bytes": 320667,
+      "sha256": "92ffad71005a83e6491dfe300011b238486b19fb30666975bea56f18d9939b62",
+      "filingFrom": "2005-09-02",
+      "filingTo": "2018-09-08"
+    },
+    {
+      "CIK": 1069533,
+      "ticker": "RGCO",
+      "file": "CIK0001069533-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0001069533-submissions-001.json",
+      "bytes": 320574,
+      "sha256": "a1a018f15047e0ee761d705456cf1b392fbc9966670ed480b4726e206ccbc454",
+      "filingFrom": "2005-08-16",
+      "filingTo": "2019-06-30"
+    },
+    {
+      "CIK": 1013871,
+      "ticker": "NRG",
+      "file": "CIK0001013871-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0001013871-submissions-001.json",
+      "bytes": 315334,
+      "sha256": "7802985a0dae0e17f3f114c7029bef8f9074b2efbd325af5e3ff0a3e74841d4c",
+      "filingFrom": "2004-03-16",
+      "filingTo": "2018-11-06"
+    },
+    {
+      "CIK": 4904,
+      "ticker": "AEP",
+      "file": "CIK0000004904-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0000004904-submissions-001.json",
+      "bytes": 327760,
+      "sha256": "4a9635dc39f0758f58dc08f5f58d9fa115092b98e3d3fbe61f4c19966076691f",
+      "filingFrom": "1999-12-06",
+      "filingTo": "2019-09-29"
+    },
+    {
+      "CIK": 901491,
+      "ticker": "PZZA",
+      "file": "CIK0000901491-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0000901491-submissions-001.json",
+      "bytes": 258160,
+      "sha256": "31aab237edf6e85e08ee9a8c75fd9c02c88f73839a2e3472a480216473eb24a4",
+      "filingFrom": "1995-11-13",
+      "filingTo": "2018-01-27"
+    },
+    {
+      "CIK": 1018724,
+      "ticker": "AMZN",
+      "file": "CIK0001018724-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0001018724-submissions-001.json",
+      "bytes": 316347,
+      "sha256": "d187d879c1e5b2fa716b2aa988392085db3c0a2e3d5e43416a31c83e6d936d21",
+      "filingFrom": "2000-01-06",
+      "filingTo": "2020-09-28"
+    },
+    {
+      "CIK": 1712184,
+      "ticker": "LILAK",
+      "file": "CIK0001712184-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0001712184-submissions-001.json",
+      "bytes": 12475,
+      "sha256": "7bbe8ebf8ad36947b308857c245b20e5b2825f71fc8fd37ba96da89b8a73e44a",
+      "filingFrom": "2017-07-21",
+      "filingTo": "2018-04-01"
+    },
+    {
+      "CIK": 1283699,
+      "ticker": "TMUS",
+      "file": "CIK0001283699-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0001283699-submissions-001.json",
+      "bytes": 306856,
+      "sha256": "2106b2f3c2d63953b0f0ce407f38b0ddcfadeb5ba2deb4afd8b790ecb9884754",
+      "filingFrom": "2007-03-07",
+      "filingTo": "2020-02-25"
+    },
+    {
+      "CIK": 1428439,
+      "ticker": "ROKU",
+      "file": "CIK0001428439-submissions-001.json",
+      "url": "https://data.sec.gov/submissions/CIK0001428439-submissions-001.json",
+      "bytes": 32884,
+      "sha256": "64a329fcd119e2a40afd20560bf16ea1f857131302547e6284bce8992aec976d",
+      "filingFrom": "2008-02-26",
+      "filingTo": "2019-04-28"
+    }
+  ],
+  "file_count": 12,
+  "outcomes_accessed": 0
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": {
+    "required_public_outputs": true,
+    "historical_E1R_preserved": true,
+    "private_entity_cards_hash": true,
+    "entity_card_ids_exact": true,
+    "no_semantic_labels_assigned": true,
+    "panel_review_330_all_66": true,
+    "NDAQ_sentinel_exact_100": true,
+    "risk_enriched_exact_100": true,
+    "alias_census_complete_unique": true,
+    "NDAQ_alias_flagged": true,
+    "independent_review_pending": true,
+    "no_relink_or_panel_rebuild": true,
+    "SEC_all_66_companies": true,
+    "SEC_filer_classes": true,
+    "SEC_form_counts": true,
+    "SEC_event_fields": true,
+    "SEC_supplemental_coverage_complete": true,
+    "reader_pairs_correctly_blocked": true,
+    "zero_outcomes_and_models": true,
+    "public_manifest_has_no_card_text": true
+  },
+  "fit_calls": 0,
+  "return_or_direction_metrics": 0,
+  "independent_semantic_labels": 0
+}

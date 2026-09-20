@@ -1,0 +1,3 @@
+# Reader-pair labeling guide (deferred)
+
+Pair-card construction is blocked until independent entity review passes or failed aliases are repaired and the complete corpus is relinked. The future pack will label exactly one of `REPEAT_SAME_FACT`, `NEW_EVENT`, `NUMERIC_UPDATE`, `ACTION_CHANGE`, `PERIOD_CHANGE`, `DENIAL_OR_CORRECTION`, `DIFFERENT_ACTOR`, `DIFFERENT_COMPANY`, `HYPOTHETICAL_OR_OPINION`, or `INSUFFICIENT_EVIDENCE`. Heuristic categories are candidates, never gold. Near-duplicate families stay in one split, SEC-backed and news-only evidence remain identifiable, and no market outcome is shown.
