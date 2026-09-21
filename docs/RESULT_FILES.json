@@ -4088,5 +4088,15 @@
     "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/visual-spec.md",
     "bytes": 3135,
     "sha256": "0a5daca4dc8f9302aa800e16c7bee6f18ef1d17f32cebd4af61b624870402e61"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/fulltext_consistency_v5/README.md",
+    "bytes": 1118,
+    "sha256": "43a02f0676a6b0cc0c66297e11d0eca15482380ad022875aceffd80352a7809d"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/fulltext_consistency_v5/VALIDATION.json",
+    "bytes": 622,
+    "sha256": "8815ee488c43de1dfefb2afc4a1beefe3c2da226208eb80bdf4b8eb0252019d8"
   }
 ]

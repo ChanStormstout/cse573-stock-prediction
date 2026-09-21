@@ -819,3 +819,6 @@ outputs/teacher_meeting_20260921/reference_fulltext_v4/method.drawio
 outputs/teacher_meeting_20260921/reference_fulltext_v4/method.json
 outputs/teacher_meeting_20260921/reference_fulltext_v4/method.svg
 outputs/teacher_meeting_20260921/reference_fulltext_v4/visual-spec.md
+
+outputs/teacher_meeting_20260921/fulltext_consistency_v5/README.md
+outputs/teacher_meeting_20260921/fulltext_consistency_v5/VALIDATION.json

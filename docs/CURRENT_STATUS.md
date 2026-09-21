@@ -1,3 +1,7 @@
+# Latest presentation: live full-text consistency update
+
+[Deck edit record](../outputs/teacher_meeting_20260921/fulltext_consistency_v5/README.md): 16 slides aligned to the full-text proposal, with separate title/body representations, corrected notes and historical evidence labels. Existing result tables unchanged; no new model execution or verified full-text performance.
+
 # Latest standalone slide: reference-style full-text method
 
 [Editable branching figure](../outputs/teacher_meeting_20260921/reference_fulltext_v4/README.md) follows the owner-supplied earlier layout, adding target-passage preparation and separate title/body summaries. Local PPTX only; no Google Slides mutation, model run or score change.

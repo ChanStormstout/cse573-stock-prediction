@@ -1788,3 +1788,7 @@ Owner found the three-column icon/example version less clear. Rebuilt an explici
 ## 2026-09-21 — Reference-style full-text diagram
 
 Owner supplied the preferred prior branching diagram and explicitly requested academic-figures-drawer. Sampled its fill/text palette and retained the encoder/grouping split, summary stack and join/classifier/output layout. Added target-passage preparation, preserved separate title averages, removed inherited fixed dimensions. Three vector-preview cycles plus native slide checks repaired label overflows/wrapping. Editable draw.io/SVG and standalone native PPTX produced; no Google Slides edits or experimental changes. Method remains proposed. Validation and internal44/50 visual assessment documented under reference_fulltext_v4.
+
+## 2026-09-21 — Live full-text deck consistency edit
+
+Unified proposal explanations, grouping example, feature join and appendix with separate title/body channels and missing-text handling. Shortened labels, corrected numbering and updated notes. Complete export revealed 16 slides including two historical appendices; both are explicitly scoped to the earlier title system. All score/case tables remain exactly unchanged. Full-text proposal is not claimed to inherit those results. All slides visually reviewed; saved-to-Drive confirmed. No model or scientific result change. See teacher_meeting_20260921/fulltext_consistency_v5.
