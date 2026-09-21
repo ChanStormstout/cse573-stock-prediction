@@ -3221,8 +3221,8 @@
   },
   {
     "path": "outputs/teacher_meeting_20260921/README.md",
-    "bytes": 9366,
-    "sha256": "95d6b1ba16b80e93c7be83c1adb2ab3c27149f71139b81f945248bb09cdc5f6c"
+    "bytes": 9705,
+    "sha256": "c47461243b4f6097c73a6e5108c2e213f74ad761c1dd81734a4ea2a4238cec2c"
   },
   {
     "path": "outputs/teacher_meeting_20260921/METHOD_PROPOSAL.md",
@@ -4008,5 +4008,20 @@
     "path": "outputs/teacher_meeting_20260921/simple_fulltext_v2/build_slide.mjs",
     "bytes": 6305,
     "sha256": "8aeac1280a0c84f1949752cdca7df4fee58481874c8276867eef5d68d4283b74"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/fulltext_logic_v3/DELIVERY.json",
+    "bytes": 315,
+    "sha256": "1d5506cef5d7b79d7ad91f41b99d8739b1365cadf543e204cc0c95b75a3a50b6"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/fulltext_logic_v3/README.md",
+    "bytes": 1765,
+    "sha256": "3ce6915f70c52796ddc457c103668bdb203a7259606fb20c8568e4b283e5ddd0"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/fulltext_logic_v3/build_slide.mjs",
+    "bytes": 7473,
+    "sha256": "dd11df0385e85dbb472479cc625d77114b8d1cb3d81334d83a4519118cdd76b6"
   }
 ]

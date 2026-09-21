@@ -1,3 +1,7 @@
+# Latest standalone method slide: explicit data flow
+
+[Parallel-input architecture](../outputs/teacher_meeting_20260921/fulltext_logic_v3/README.md) replaces the rejected example-led layout. Title/body/report/price lanes join once before prediction; the new body route is highlighted. Local one-slide PPTX only, with no Google Slides changes or experiments.
+
 # Latest presentation: simplified standalone full-text slide
 
 [Standalone slide source](../outputs/teacher_meeting_20260921/simple_fulltext_v2/README.md): three numbered columns, an illustrative two-report example, and semantic Lucide icons replace the dense overview. Delivered as a local one-slide PPTX for the owner to insert; Google Slides was not modified. Proposal only, no model run or score change.

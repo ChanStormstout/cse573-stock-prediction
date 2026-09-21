@@ -1780,3 +1780,7 @@ Status is explicitly proposed full-text extension; existing title-system results
 ## 2026-09-21 — Simplified standalone method slide
 
 Owner requested fewer words, an unambiguous reading order and informative icons, with no Google Slides update. Created a one-slide editable PPTX with three numbered columns and an illustrative two-report passage example. Official ISC-licensed Lucide icons distinguish articles/groups/text encoding/prices. Scientific-figure-making design guidance informed typography/color; no matplotlib chart was needed. Native slide rendering prompted shorter labels and conclusion; final package/layout/import checks pass. Source and asset license are preserved in simple_fulltext_v2. Proposed full-text architecture remains untested; no results or research lane changed.
+
+## 2026-09-21 — Method slide logic revision
+
+Owner found the three-column icon/example version less clear. Rebuilt an explicit architecture with title, body, reporting and price lanes, a single feature join, and one classifier/output path. The body branch is highlighted; the grouping example is a subordinate inset. Short FinBERT definition and concise notes retained. Fixed rendered grouping-label wrap and vertical arrowheads. Native package/layout/import checks pass. Local PPTX only; no Google Slides modification, experiment or scientific-result change.

@@ -803,3 +803,6 @@ outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/file-text.svg
 outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/layers.svg
 outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/scan-text.svg
 outputs/teacher_meeting_20260921/simple_fulltext_v2/build_slide.mjs
+outputs/teacher_meeting_20260921/fulltext_logic_v3/DELIVERY.json
+outputs/teacher_meeting_20260921/fulltext_logic_v3/README.md
+outputs/teacher_meeting_20260921/fulltext_logic_v3/build_slide.mjs

@@ -1,3 +1,7 @@
+## Latest local replacement: explicit architecture
+
+[Parallel-input method diagram](fulltext_logic_v3/README.md) restores the title/body/report/price data dependencies and a single feature join. The previous simplified layout was rejected by the owner. This new single-slide PPTX is for manual insertion; the live deck remains unchanged.
+
 ## Latest standalone slide
 
 [Readable three-column version](simple_fulltext_v2/README.md), delivered locally for manual insertion. Uses an illustrative report pair and meaningful icons. No Google Slides mutation and no new experiment.
