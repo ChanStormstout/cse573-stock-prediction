@@ -1848,3 +1848,21 @@ improved September-October, but fell below price by 6.27/2.77 pp in the later
 period. L1 and L2 did not yield a stable gain. Independent verification passes
 all checks with maximum probability replay error `2.22e-16`. Results are in
 `outputs/stock_fnspid_llm_4h/l1_l3_stage`; L4 inference continued unchanged.
+
+## 2026-09-20 — Full L1-L5 FNSPID LLM experiment complete
+
+Frozen L4 inference completed 1,155 query jobs using three strictly earlier
+same-stock cases; 219 rows without a qualified query use exact fallback. The
+unchanged downstream matrix then ran. L4 failed its March-August screen:
+AAPL/AMZN delta BA versus recent price was -0.06/-1.79 pp, with only one of six
+macro months positive. Its final AMZN alpha is zero, so AMZN development/later
+L4 predictions equal the price reference exactly. AAPL L4 changed 14 decisions
+in development (6 repaired, 8 introduced) and 37 later (14 repaired, 23
+introduced).
+
+L3 remained the only component passing the training-period gate, so the
+registered L5 system selects it. That decision improved development but failed
+later, where BA fell to 47.59% AAPL and 48.08% AMZN. This is recorded as a
+failed stability result, not a deployable improvement. The strengthened
+verifier independently rebuilds L3 votes, L4 corrections and their past-only
+monthly parameter choices; all checks pass at `2.22e-16` maximum error.

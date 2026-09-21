@@ -800,3 +800,13 @@ outputs/stock_fnspid_llm_4h/l1_l3_stage/promotion_gate.json
 outputs/stock_fnspid_llm_4h/l1_l3_stage/selections.csv
 outputs/stock_fnspid_llm_4h/l1_l3_stage/training_evidence.json
 outputs/stock_fnspid_llm_4h/l1_l3_stage/transitions.csv
+outputs/stock_fnspid_llm_4h/v1/REPORT.md
+outputs/stock_fnspid_llm_4h/v1/VERIFICATION.json
+outputs/stock_fnspid_llm_4h/v1/cv_metrics.csv
+outputs/stock_fnspid_llm_4h/v1/metrics.csv
+outputs/stock_fnspid_llm_4h/v1/monthly_metrics.csv
+outputs/stock_fnspid_llm_4h/v1/predictions.csv
+outputs/stock_fnspid_llm_4h/v1/promotion_gate.json
+outputs/stock_fnspid_llm_4h/v1/selections.csv
+outputs/stock_fnspid_llm_4h/v1/training_evidence.json
+outputs/stock_fnspid_llm_4h/v1/transitions.csv

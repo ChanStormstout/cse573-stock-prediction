@@ -3,6 +3,7 @@
     "L2_exact_fallback": true,
     "L3_L4_independent_replay": true,
     "L5_global_choice": true,
+    "analogy_jobs_complete": true,
     "article_jobs_complete": true,
     "canonical_rows": true,
     "chronology": true,

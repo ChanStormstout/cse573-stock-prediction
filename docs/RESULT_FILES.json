@@ -3961,8 +3961,8 @@
   },
   {
     "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/VERIFICATION.json",
-    "bytes": 488,
-    "sha256": "e4da95709de890b88ba652fc30cee213a8d19963c8ba095833ee7da0ddcabdb1"
+    "bytes": 568,
+    "sha256": "99177669afd9ab73e6ad83481d3691259f937914cd590804fb6780613238b225"
   },
   {
     "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/cv_metrics.csv",
@@ -4003,5 +4003,55 @@
     "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/transitions.csv",
     "bytes": 1057,
     "sha256": "6a150e6093a7b2abc022adfeea488c49778d55879a1b4edbd8742599c851d253"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/REPORT.md",
+    "bytes": 5856,
+    "sha256": "1d985530b1864a4fc34d2ee024ee8b8f5751fba8292b426dec8f007afcbd67a8"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/VERIFICATION.json",
+    "bytes": 603,
+    "sha256": "b15de538d23eb755c93cdfd8e5b92ed73639a4204493144d6478f052bd85408d"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/cv_metrics.csv",
+    "bytes": 34046,
+    "sha256": "3b87671397ef830c3a3599bd81d243b34722c228b1f47f8b756b59c1691abedb"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/metrics.csv",
+    "bytes": 7695,
+    "sha256": "4b16414c9e13a1e9392eb06c7700d0caef652dd51cab44022ac73e4f8a65226f"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/monthly_metrics.csv",
+    "bytes": 30288,
+    "sha256": "b106915c1f886681eb0b7e4fa51734908e99b0bfc003720ffb4dc3fd79a486b7"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/predictions.csv",
+    "bytes": 349135,
+    "sha256": "8efd49b401662509c96380058fb34f31e2ec58f2fe218325fc5832cdeb1015eb"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/promotion_gate.json",
+    "bytes": 2965,
+    "sha256": "071f6b981eb90f185a796cf713415d1d923490d2af761dd6334d82ce747ec36f"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/selections.csv",
+    "bytes": 1962,
+    "sha256": "6a14be5c51f14998c395220b2686f4ff85b5ebbedb3f78427b31df43eaccb6c4"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/training_evidence.json",
+    "bytes": 28848,
+    "sha256": "b7b1140fbb0e40ef3a8620d5f56506fb7a3bdc34ac9e399e35e07313b3c5ed3d"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/transitions.csv",
+    "bytes": 1295,
+    "sha256": "4902e21b5d27b34037cd328a8e2e289bacea5a04a6d491e66f72190824ffbbfd"
   }
 ]

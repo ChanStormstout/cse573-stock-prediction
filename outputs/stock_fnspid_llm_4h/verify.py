@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Independent replay and protocol checks for L1-L5."""
 from __future__ import annotations
-import argparse,hashlib,json
+import argparse,ast,hashlib,json
 from pathlib import Path
 import joblib,numpy as np,pandas as pd
 from scipy.special import expit,logit
@@ -54,10 +54,32 @@ def main():
   err=float(np.max(np.abs(q-p.iloc[ii][r.method])));maxerr=max(maxerr,err)
   if err>1e-12:replay_errors.append((r.symbol,r.month,r.method,err))
  checks['past_only_C_selection']=not selection_errors;checks['selected_model_replay']=not replay_errors and maxerr<=1e-12
+ # Independently reconstruct the non-parametric L3 vote, L4 correction and
+ # their past-only monthly choices rather than trusting runner columns.
+ norm=means/np.maximum(np.linalg.norm(means,axis=1,keepdims=True),1e-12)
+ def vote(i,k):
+  r=d.iloc[i];mask=(d.symbol.eq(r.symbol)&(d.end_utc<r.cutoff_utc))
+  if r.month>='2018-09':mask&=d.month.lt('2018-09')
+  pool=np.flatnonzero(mask.to_numpy());sim=norm[pool]@norm[i];order=np.argsort(-sim,kind='stable')[:k];w=np.exp(5*(sim[order]-sim[order].max()));return float((np.dot(w,d.iloc[pool[order]].label)+1)/(w.sum()+2))
+ analogy={x['key']:x['p_A'] for x in analogy_scores} if include_l4 else {}
+ nonparam_selection_errors=[];nonparam_replay_errors=[]
+ for r in sel[sel.method.isin(['L3_CASE_VOTE']+(['L4_LLM_ANALOGY'] if include_l4 else []))].itertuples(index=False):
+  boundary='2018-09' if r.month=='final' else r.month;prior=cv[(cv.symbol==r.symbol)&(cv.method==r.method)&(cv.month<boundary)]
+  ii=np.flatnonzero((d.symbol==r.symbol)&((d.month>='2018-09') if r.month=='final' else (d.month==r.month)));base_prob=d.iloc[ii].PRICE_R1.to_numpy()
+  if r.method=='L3_CASE_VOTE':
+   want=(5,0.) if prior.empty else min(((k,a) for k in (3,5,10) for a in (0,.25,.5)),key=lambda ka:(-prior[(prior.k==ka[0])&np.isclose(prior.alpha,ka[1])].BA.mean(),prior[(prior.k==ka[0])&np.isclose(prior.alpha,ka[1])].Brier.mean(),ka))
+   got=ast.literal_eval(r.choice);signal=np.array([vote(i,int(got[0])) for i in ii]);q=corrected(base_prob,signal,np.ones(len(ii),bool),float(got[1]))
+  else:
+   want=0. if prior.empty else min((0,.25,.5),key=lambda a:(-prior[np.isclose(prior.alpha,a)].BA.mean(),prior[np.isclose(prior.alpha,a)].Brier.mean(),a))
+   got=float(r.choice);signal=np.array([analogy.get(d.iloc[i].key,.5) for i in ii]);active=np.array([d.iloc[i].key in analogy for i in ii]);q=corrected(base_prob,signal,active,got)
+  if want!=got:nonparam_selection_errors.append((r.symbol,r.month,r.method,got,want))
+  err=float(np.max(np.abs(q-p.iloc[ii][r.method])));maxerr=max(maxerr,err)
+  if err>1e-12:nonparam_replay_errors.append((r.symbol,r.month,r.method,err))
+ checks['past_only_nonparam_selection']=not nonparam_selection_errors;checks['L3_L4_independent_replay']=not nonparam_replay_errors
  evaluated=p.phase!='warmup';no=evaluated&(p.l2_gate==0);checks['L2_exact_fallback']=np.array_equal(p.loc[no,'L2_FACT_CHANGE'].to_numpy(),p.loc[no,'PRICE_R1'].to_numpy())
  candidates=['PRICE_R1','L1_FILTERED_FINBERT','L2_FACT_CHANGE','L3_CASE_VOTE']+(['L4_LLM_ANALOGY'] if include_l4 else [])
  checks['L5_global_choice']=gate_saved['L5_choice'] in candidates and np.array_equal(p.loc[evaluated,'L5_GUARDED_SYSTEM'].to_numpy(),p.loc[evaluated,gate_saved['L5_choice']].to_numpy())
  cols=candidates+['L5_GUARDED_SYSTEM'];checks['probability_bounds']=bool((p.loc[evaluated,cols].ge(0)&p.loc[evaluated,cols].le(1)).all().all())
- result={'status':'PASS' if all(checks.values()) else 'FAIL','checks':checks,'selection_errors':selection_errors,'replay_errors':replay_errors,'maximum_selected_model_probability_error':maxerr};(OUT/'VERIFICATION.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n');print(json.dumps(result,indent=2));
+ result={'status':'PASS' if all(checks.values()) else 'FAIL','checks':checks,'selection_errors':selection_errors+nonparam_selection_errors,'replay_errors':replay_errors+nonparam_replay_errors,'maximum_selected_model_probability_error':maxerr};(OUT/'VERIFICATION.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n');print(json.dumps(result,indent=2));
  if result['status']!='PASS':raise SystemExit(1)
 if __name__=='__main__':main()

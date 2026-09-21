@@ -1,6 +1,21 @@
-# Latest completed: L1-L3 FNSPID information-control checkpoint
+# Latest completed: full FNSPID LLM information-control experiment
 
-**COMPLETE / VERIFIED; L4 INFERENCE COMPLETE, L4 DOWNSTREAM NOT RUN.** [Stage report](../outputs/stock_fnspid_llm_4h/l1_l3_stage/REPORT.md).
+**COMPLETE / VERIFIED; NO STABLE IMPROVEMENT.** [Full report](../outputs/stock_fnspid_llm_4h/v1/REPORT.md).
+
+The frozen L1-L4 matrix is complete: 3,966 Qwen article judgments, a filtered
+FinBERT refit, a strict fact-change residual, non-LLM historical-case voting,
+and 1,155 case-conditioned Qwen direction judgments. L4 did not improve
+March-August forward OOF (AAPL -0.06 pp and AMZN -1.79 pp versus recent price)
+and failed the registered screen. L3 was the only component to pass the
+training-period gate, but its apparent development gain reversed later: AAPL
+47.59% and AMZN 48.08% BA versus 53.87% and 50.85% for recent price. The full
+L5 system therefore faithfully exposes a failed training-period selection,
+rather than a stable improvement. Independent verification, including fresh
+L3/L4 reconstruction, passes with `2.22e-16` maximum replay error.
+
+# Previous completed: L1-L3 FNSPID information-control checkpoint
+
+**COMPLETE / VERIFIED; SUPERSEDED BY FULL L1-L5 RESULT ABOVE.** [Stage report](../outputs/stock_fnspid_llm_4h/l1_l3_stage/REPORT.md).
 
 At the owner's request, L1 quality filtering, L2 fact-change residual and L3
 historical-case voting were evaluated before L4 completion. L3 passed the
