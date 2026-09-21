@@ -1792,3 +1792,34 @@ later and AMZN 49.79% / 47.03% / 52.83%; later AAPL is a constant all-up
 prediction. Therefore the random-fold SVM score does not transfer to future
 months. Development and later remain exposed exploratory backtests. Full
 results: outputs/stock_forward_replay_4h/v1/REPORT.md.
+
+## 2026-09-20 — Course news + FNSPID chronological replay
+
+**Why:** The owner required all subsequent news experiments to use the augmented
+course-news + FNSPID corpus and asked for the principal earlier-to-later methods
+to be rerun rather than stopping at a coverage audit.
+
+**What ran:** Preserved all 1,607 canonical four-hour windows. Added 1,322
+deduplicated `DIRECT_TARGET_HIGH_CONFIDENCE` FNSPID groups (AAPL 1,119, AMZN
+203), after independently recovering and hashing their raw source rows. All
+FNSPID dates are date-only, so availability was delayed until the next XNYS
+open and bounded to a three-session lookback. Frozen FinBERT and corrected
+FinModernBERT v2 vectors were generated for the added titles. Six chronological
+methods completed 228 fits: recent price, full-body LR, TF-IDF SVM, FinBERT,
+FinModernBERT and event/meta.
+
+**Observed:** AMZN news coverage rose from 198/382 to 345/382 training OOF
+windows, 73/126 to 114/126 development windows and 84/179 to 160/179 later
+windows. AMZN development FinModernBERT reached 62.06% BA, but fell to 43.96%
+later. All augmented AMZN news methods improved over their original-data
+counterparts in development, while all were worse later. No augmented method
+improved both stocks across forward OOF, development and later periods.
+
+**Verification and decision:** Independent model replay, past-only C selection,
+time cutoff, three-session membership, source hash, comparator parity and exact
+no-news fallback checks all PASS. Maximum replay error is 7.77e-16. These are
+exposed exploratory backtests; independent semantic review of the FNSPID
+relinker is incomplete. The augmented corpus is now the default input for new
+news experiments, with original-only methods retained as ablations. The next
+bounded method question is a past-only relevance/novelty gate, not adding more
+unfiltered volume. LLM, attention and analogy branches were not rerun in v1.

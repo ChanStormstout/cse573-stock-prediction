@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "canonical_rows": true,
+    "chronology": true,
+    "direct_only_article_keys": true,
+    "evaluated_rows": true,
+    "fit_count": true,
+    "fnspid_cutoff_and_three_session_membership": true,
+    "independent_model_replay": true,
+    "original_comparator_parity": true,
+    "past_only_C_selection": true,
+    "probability_bounds": true,
+    "raw_fnspid_hashes_checked": true,
+    "runner_reload_tolerance": true,
+    "source_hashes": true,
+    "svm_no_news_exact_fallback": true
+  },
+  "maximum_independent_probability_error": 7.771561172376096e-16,
+  "membership_errors": [],
+  "original_comparator_max_errors": {
+    "ORIG_EVENT_META": 0.0,
+    "ORIG_FINBERT_LR": 0.0,
+    "ORIG_FINMODERN_LR": 0.0,
+    "ORIG_FULL_LR": 0.0,
+    "ORIG_PRICE_R1": 0.0,
+    "ORIG_TFIDF_SVM": 0.0
+  },
+  "replay_errors": [],
+  "selection_errors": [],
+  "status": "PASS",
+  "svm_no_news_fallback_error": 0.0
+}

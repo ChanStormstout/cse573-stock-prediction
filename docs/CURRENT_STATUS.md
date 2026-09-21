@@ -1,4 +1,21 @@
-# Latest completed: chronological forward replay of existing methods
+# Latest completed: course news + FNSPID chronological replay
+
+**COMPLETE / VERIFIED.** [Report](../outputs/stock_fnspid_augmented_4h/v1/REPORT.md) · [handoff](FNSPID_AUGMENTED_4H_HANDOFF.md) · [future input policy](AUGMENTED_NEWS_POLICY.md).
+
+The same 1,607 four-hour windows were rerun after adding 1,322 deduplicated
+FNSPID direct-target news groups to the original course news. AMZN news coverage
+rose from 198/382 to 345/382 training OOF windows and from 84/179 to 160/179
+later windows. Six chronological methods produced 228 new fitted models;
+independent verification is PASS at `7.77e-16` maximum replay error.
+
+Coverage improved, predictive stability did not. AMZN development augmented
+FinModernBERT reached 62.06% BA, then fell to 43.96% later. No augmented method
+improves both stocks across forward OOF, development and later periods. Future
+news experiments now default to course news + time-safe direct FNSPID news;
+original-only methods remain ablations. LLM and attention branches were not
+rerun in this finite v1 experiment.
+
+# Previous completed: chronological forward replay of existing methods
 
 **COMPLETE / VERIFIED.** [Report](../outputs/stock_forward_replay_4h/v1/REPORT.md) · [handoff](FORWARD_REPLAY_4H_HANDOFF.md).
 
@@ -13,7 +30,8 @@ No method wins across both stocks and all periods. FULL development/later BA is
 56.71/54.27%; event aggregation later BA is 56.16/57.32%. The random-fold SVM
 advantage does not transfer: later AAPL collapses to all-up predictions and
 50% BA. All development/later results are exposed exploratory history. FNSPID
-is excluded pending its separate entity-quality gate.
+was excluded pending its separate entity-quality gate. The augmented replay
+above supersedes that input default while retaining the quality limitation.
 
 # Latest completed: outcome-blind FNSPID Amazon candidate coverage
 

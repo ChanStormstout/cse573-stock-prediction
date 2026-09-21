@@ -3883,5 +3883,65 @@
     "path": "outputs/stock_forward_replay_4h/v1/training_evidence.json",
     "bytes": 47836,
     "sha256": "ddb608459310d3892c5e613d28c109d35fa88e26f9a20d4adc42ae3e343dcd64"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/REPORT.md",
+    "bytes": 9415,
+    "sha256": "0414302479e044f583cfb6538d0f068738ebe2f7c3205f9e32169b57682035cb"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/VERIFICATION.json",
+    "bytes": 911,
+    "sha256": "8a2e8985db260175eed52e115e7059d56b07256f93cbc7947cc95c90498687c2"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/coverage.csv",
+    "bytes": 439,
+    "sha256": "4aee0763f967059e4773d0b18a298d448b1cf73313da98111ce8e56c4ce101b4"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/cv_metrics.csv",
+    "bytes": 39323,
+    "sha256": "0e89a1bd43ca8208aae5c3121aa8658ea178d9769478ab1648e4a9a28c545053"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/metrics.csv",
+    "bytes": 13904,
+    "sha256": "09f88a15c98a934836bb977f6c26cbb83073f9ac11c8887510b05890ebfbcdae"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/monthly_metrics.csv",
+    "bytes": 53220,
+    "sha256": "08ceefa59e2f9fbe2d08034eff2999d19451408d406031d00d51167d19366b1c"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/predictions.csv",
+    "bytes": 453150,
+    "sha256": "c01230ed848988a38bbf93c4ed00cda931d826c40bc5415d7c489267c18bc923"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/preparation_evidence.json",
+    "bytes": 1321,
+    "sha256": "8bc4881acd7e16f2d66149d62626713e9ceca209a60ac25aeb14d9790ca375f0"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/selections.csv",
+    "bytes": 5633,
+    "sha256": "fca93625e3523ea18e2fc829c11d38e60bca0ce1c148c9897e8690981799fd21"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/subgroup_metrics.csv",
+    "bytes": 47337,
+    "sha256": "79590aaecad3d95df4bc56d61761da5c2419ef12c67988158b304f625fc17896"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/training_evidence.json",
+    "bytes": 95406,
+    "sha256": "69338153bec7226da4f5bf08285e08cad02f87e4f0975b7b3ff2c5beb319f3fd"
+  },
+  {
+    "path": "outputs/stock_fnspid_augmented_4h/v1/transitions.csv",
+    "bytes": 1743,
+    "sha256": "8d0209a6126ab15d78ce167b019cd33a7c3d2900599f72792fd5fb9a83d616c4"
   }
 ]

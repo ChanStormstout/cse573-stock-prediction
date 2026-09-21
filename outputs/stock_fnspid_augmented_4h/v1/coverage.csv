@@ -1,0 +1,9 @@
+symbol,phase,windows,original_news_windows,augmented_news_windows,windows_with_fnspid,added_group_occurrences,removed_course_duplicates
+AAPL,development,126,124,126,126,1171,2
+AAPL,later,178,178,178,177,2201,3
+AAPL,train_forward_oof,383,379,383,380,3202,8
+AAPL,warmup,116,116,116,116,1977,5
+AMZN,development,126,73,114,106,243,0
+AMZN,later,179,84,160,147,419,0
+AMZN,train_forward_oof,382,198,345,299,578,0
+AMZN,warmup,117,60,110,102,332,0

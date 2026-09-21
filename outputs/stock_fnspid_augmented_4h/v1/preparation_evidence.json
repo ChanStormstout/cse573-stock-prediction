@@ -1,0 +1,25 @@
+{
+  "canonical_rows": 1607,
+  "combined_embedding_sha256": "c7d3488a9941d410fc6bf46ee53338da18a09e3957401ab537aec19f8f06642c",
+  "encoder_training": false,
+  "finbert_external_vectors": 1322,
+  "independent_entity_review_complete": false,
+  "modern_external_vectors": 1322,
+  "raw_record_hashes_verified": 1322,
+  "representative_fnspid_groups": 1322,
+  "representative_groups_by_stock": {
+    "AAPL": 1119,
+    "AMZN": 203
+  },
+  "seconds": 37.03685995796695,
+  "semantic_device": "mps",
+  "source_hashes": {
+    "outputs/stock_ecni_e1r/FNSPID_RELINKED_ENTITY_EDGES.parquet": "c86623d2f85cf5bb00ef63debe0fa93fc1c23eca85b19f0a00ec8e43ddb9f2a3",
+    "outputs/stock_fnspid_augmented_4h/PRE_REGISTRATION.md": "14ac4fab212d7ca5e0e571835ab62d7b4fe959d35f14e9c1aceeda0ee87039ea",
+    "outputs/stock_integrated_4h/prepared/articles.npz": "f0f56bda8ee8476fa79523a0855e1e2b556c54e53508123e39de9e88e537c74b",
+    "work/stock-data/ecni_e1r/private/fnspid_complete_metadata.parquet": "52778b687458b1892d63efbc6eeb46078598bdc7427ba3d63d91cbe0fe600217",
+    "work/stock-data/foundation_4h/v2/modern_embeddings.npz": "5831da669c003fd80acaa9ee3faa913ce7edf73261aff91563e83e9143d7cef3",
+    "work/stock-data/paper_methods_4h/v3/inputs.pkl": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b"
+  },
+  "status": "PREPARED"
+}

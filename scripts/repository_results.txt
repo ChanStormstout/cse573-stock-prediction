@@ -776,3 +776,15 @@ outputs/stock_forward_replay_4h/v1/monthly_metrics.csv
 outputs/stock_forward_replay_4h/v1/predictions.csv
 outputs/stock_forward_replay_4h/v1/selections.csv
 outputs/stock_forward_replay_4h/v1/training_evidence.json
+outputs/stock_fnspid_augmented_4h/v1/REPORT.md
+outputs/stock_fnspid_augmented_4h/v1/VERIFICATION.json
+outputs/stock_fnspid_augmented_4h/v1/coverage.csv
+outputs/stock_fnspid_augmented_4h/v1/cv_metrics.csv
+outputs/stock_fnspid_augmented_4h/v1/metrics.csv
+outputs/stock_fnspid_augmented_4h/v1/monthly_metrics.csv
+outputs/stock_fnspid_augmented_4h/v1/predictions.csv
+outputs/stock_fnspid_augmented_4h/v1/preparation_evidence.json
+outputs/stock_fnspid_augmented_4h/v1/selections.csv
+outputs/stock_fnspid_augmented_4h/v1/subgroup_metrics.csv
+outputs/stock_fnspid_augmented_4h/v1/training_evidence.json
+outputs/stock_fnspid_augmented_4h/v1/transitions.csv
