@@ -3793,5 +3793,95 @@
     "path": "outputs/stock_fnspid_amzn_4h/v3/XNYS_SESSION_SCHEDULE.csv",
     "bytes": 19717,
     "sha256": "e47e62a8c39c4f9bb8775671eb9f800e2f82d8bce582ce47592960f2240516d8"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v3/calibration.csv",
+    "bytes": 5935,
+    "sha256": "4eaa48795e71d4f4ddbf030e3128393a53621593c3fb6ec96bd87eced063efd6"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v3/metrics.csv",
+    "bytes": 19181,
+    "sha256": "1937b7f1d5f615ad8bb9108505474df9d015ed7f8f4af925ce58c1198a150c5f"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v3/model_manifest.json",
+    "bytes": 95419,
+    "sha256": "2da7018396e72c9a7cc7e1296ff8c34f812b0bd5b4f58f381fe845fc3d420164"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v3/monthly_metrics.csv",
+    "bytes": 73630,
+    "sha256": "5af0ca361bd74c373ab51f26303a647e39e37be3c6ee269a084625b34f7d75e1"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v3/predictions.csv",
+    "bytes": 694793,
+    "sha256": "35c3a1664bb4480fc043f26a8be58b6316e00581916573825db6ed45ba3564ac"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v3/selection.json",
+    "bytes": 23067,
+    "sha256": "34d00db85a3d6bb64388e13ae8837078814d577884ab75403447bd7c01aa6e78"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v3/subgroup_metrics.csv",
+    "bytes": 108943,
+    "sha256": "e308d9aa6629ee879c14d240320483ce7f044cc622977bc46b4117e9ced166a6"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v3/transitions.csv",
+    "bytes": 1201,
+    "sha256": "80be460e83bc69b7483f0333eb09cf3167ff2260b62c85c888cecb964fc7a1a5"
+  },
+  {
+    "path": "outputs/stock_paper_methods_4h/v3/verification.json",
+    "bytes": 321,
+    "sha256": "5134251b4b2a54327c4a5d36a0ebbc43ac64a38284a0b9ccd1468701c6c95d68"
+  },
+  {
+    "path": "outputs/stock_forward_replay_4h/protocol.json",
+    "bytes": 670,
+    "sha256": "3f85642fe0c240a4b1241c393debec0ab27b5d6a50c542e216a4ad4d8a84e146"
+  },
+  {
+    "path": "outputs/stock_forward_replay_4h/v1/REPORT.md",
+    "bytes": 8022,
+    "sha256": "88e85fc295ab1856c82f5d924b394bab680613eeccd9d45afab3f3163badde58"
+  },
+  {
+    "path": "outputs/stock_forward_replay_4h/v1/VERIFICATION.json",
+    "bytes": 702,
+    "sha256": "c9d2baac4064aeb9a10bb6093031c3b2f72d8f38755dde2b9713bae562c00116"
+  },
+  {
+    "path": "outputs/stock_forward_replay_4h/v1/cv_metrics.csv",
+    "bytes": 19075,
+    "sha256": "d6a4661675e042fa8b0eb0cf1b9921019193c5d98776202dceaa66fe1741ff49"
+  },
+  {
+    "path": "outputs/stock_forward_replay_4h/v1/metrics.csv",
+    "bytes": 6872,
+    "sha256": "0a69ef143405e1d644daca629c3d1b12f2f9d7db6d0cbfb9da960cd7076d355c"
+  },
+  {
+    "path": "outputs/stock_forward_replay_4h/v1/monthly_metrics.csv",
+    "bytes": 26232,
+    "sha256": "9eb221c2d5cb7bcdcbcaf706565ab5eb38ef21e87eae671df4673fc7a9f31b74"
+  },
+  {
+    "path": "outputs/stock_forward_replay_4h/v1/predictions.csv",
+    "bytes": 280810,
+    "sha256": "61cef594e35d51ac2fe4bb16b3512567f1fc06640469803070fb092e7e3b78fd"
+  },
+  {
+    "path": "outputs/stock_forward_replay_4h/v1/selections.csv",
+    "bytes": 2708,
+    "sha256": "c4fc966483039781fd95ae369314796c4f2f6636ecfac26bbe1920f5e51e88a0"
+  },
+  {
+    "path": "outputs/stock_forward_replay_4h/v1/training_evidence.json",
+    "bytes": 47836,
+    "sha256": "ddb608459310d3892c5e613d28c109d35fa88e26f9a20d4adc42ae3e343dcd64"
   }
 ]

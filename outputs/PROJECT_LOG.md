@@ -1767,3 +1767,28 @@ Ordinary random BA AAPL/AMZN: control SVM 69.55/61.14; frequency 70.13/60.61; ne
 Grouped SVM BA falls to 49.23/51.17, compared with grouped FULL 52.39/51.74 and price 55.84/51.45. AAPL predicts up 97.72%. This establishes sensitivity to association-group isolation, not an exact decomposition of leakage, calibration and distribution shift. Ordinary and grouped results remain separate.
 
 Matched aggregation LR: SET_BASE 64.99/59.51; linear mean 65.42/59.41; mean then nonlinear map 65.09/59.06; nonlinear map then mean 65.22/59.27. Ordering has a small positive difference, but AMZN underperforms SET_BASE and the complete method is below the strong SVM. Frozen follow-up screen FAIL; no price-interaction, TabPFN, additional encoder or larger grid. Keep FULL/reference and fixed strong SVM, preserve all methods as exploratory evidence, do not assemble per-stock outer-selected winners. Reports, monthly/coverage/flip tables and fixed cases are saved under stock_representation_4h/v1.
+
+# 2026-09-20 update: chronological forward replay complete and verified
+
+Reran the principal existing four-hour methods with a genuine earlier-to-later
+protocol: January-February initial history, March-August expanding monthly
+forward OOF, September-October development and November-February later under
+the same model frozen after August. No random fold, LLM, FNSPID text,
+post-result ensemble or per-stock winner was used.
+
+Actual computation: 266 fresh logistic-regression fits for FULL, FinBERT and
+article/event aggregation, plus 114 fresh fits for recent-price LR,
+chronologically calibrated TF-IDF SVM and FinModernBERT LR. Frozen encoder
+vectors were reused, but each fold refit PCA, scaling and the downstream
+classifier. The verifier independently reloaded every issued new model at
+`3.89e-16` maximum probability error; all source, chronology, selection,
+fallback and reused-branch parity checks pass.
+
+BA for FULL is AAPL 50.30% OOF / 57.94% development / 51.74% later and AMZN
+53.27% / 55.66% / 54.36%. FinBERT is strongest for later AAPL at 56.71%; event
+aggregation is strongest for later AMZN at 57.32%, but both lack consistent
+earlier support. TF-IDF SVM is AAPL 54.09% OOF / 48.28% development / 50.00%
+later and AMZN 49.79% / 47.03% / 52.83%; later AAPL is a constant all-up
+prediction. Therefore the random-fold SVM score does not transfer to future
+months. Development and later remain exposed exploratory backtests. Full
+results: outputs/stock_forward_replay_4h/v1/REPORT.md.

@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "canonical_rows": true,
+    "chronology": true,
+    "encoder_article_key_parity": true,
+    "evaluated_rows": true,
+    "fit_count": true,
+    "independent_model_replay": true,
+    "key_order": true,
+    "paper_branch_parity": true,
+    "past_only_C_selection": true,
+    "probability_bounds": true,
+    "reload_tolerance_runner": true,
+    "source_hashes": true,
+    "svm_no_news_exact_fallback": true
+  },
+  "maximum_independent_probability_error": 3.885780586188048e-16,
+  "paper_branch_max_errors": {
+    "EVENT_META": 0.0,
+    "FINBERT_LR": 0.0,
+    "FULL_LR": 0.0
+  },
+  "replay_errors": [],
+  "selection_errors": [],
+  "status": "PASS",
+  "svm_no_news_fallback_error": 0.0
+}

@@ -1,3 +1,20 @@
+# Latest completed: chronological forward replay of existing methods
+
+**COMPLETE / VERIFIED.** [Report](../outputs/stock_forward_replay_4h/v1/REPORT.md) · [handoff](FORWARD_REPLAY_4H_HANDOFF.md).
+
+The project reran the principal price, full-body word, TF-IDF SVM, FinBERT,
+FinModernBERT and event-aggregation methods with earlier months predicting
+later four-hour windows. Fresh execution comprises 266 paper-branch LR fits and
+114 matched price/SVM/FinModernBERT fits. Independent reload verification is
+PASS at `3.89e-16` maximum probability error.
+
+No method wins across both stocks and all periods. FULL development/later BA is
+57.94/51.74% for AAPL and 55.66/54.36% for AMZN. FinBERT later BA is
+56.71/54.27%; event aggregation later BA is 56.16/57.32%. The random-fold SVM
+advantage does not transfer: later AAPL collapses to all-up predictions and
+50% BA. All development/later results are exposed exploratory history. FNSPID
+is excluded pending its separate entity-quality gate.
+
 # Latest completed: outcome-blind FNSPID Amazon candidate coverage
 
 **COMPLETE / VERIFIED WITH QUALITY GATE PENDING.** [Report](../outputs/stock_fnspid_amzn_4h/v3/REPORT.md) · [handoff](FNSPID_AMZN_4H_HANDOFF.md).
