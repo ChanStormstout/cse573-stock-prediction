@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "presentation consistency only, not scientific verification",
+  "slides": 16,
+  "result_tables_10_11_and_15_exactly_unchanged": true,
+  "stale_headline_method_labels_removed_from_proposal_pages": true,
+  "saved_to_drive": true,
+  "visual_review": "All 16 slides inspected through PDF render; shortened grouping labels; no visible overflow in reviewed final revisions",
+  "new_experiment_or_score": false,
+  "before_pptx_sha256": "f4f677b3f3400b1d1881a70713c48174455719b3cedae1af798e7d53475eb759",
+  "after_pptx_sha256": "0afda13b8b8d5ea316b4ae95c124eddd6d2eecd813d2393bc83cff090c602e0e"
+}
