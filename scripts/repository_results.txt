@@ -795,3 +795,11 @@ outputs/teacher_meeting_20260921/fulltext_figure_v1/live_edit_check.json
 outputs/teacher_meeting_20260921/fulltext_figure_v1/make_figure.py
 outputs/teacher_meeting_20260921/fulltext_figure_v1/presentation_validation.json
 outputs/teacher_meeting_20260921/fulltext_figure_v1/visual-spec.md
+outputs/teacher_meeting_20260921/simple_fulltext_v2/DELIVERY.json
+outputs/teacher_meeting_20260921/simple_fulltext_v2/README.md
+outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/LICENSE
+outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/chart-no-axes-combined.svg
+outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/file-text.svg
+outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/layers.svg
+outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/scan-text.svg
+outputs/teacher_meeting_20260921/simple_fulltext_v2/build_slide.mjs

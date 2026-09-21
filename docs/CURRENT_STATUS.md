@@ -1,3 +1,7 @@
+# Latest presentation: simplified standalone full-text slide
+
+[Standalone slide source](../outputs/teacher_meeting_20260921/simple_fulltext_v2/README.md): three numbered columns, an illustrative two-report example, and semantic Lucide icons replace the dense overview. Delivered as a local one-slide PPTX for the owner to insert; Google Slides was not modified. Proposal only, no model run or score change.
+
 # Latest presentation edit: proposed full-text slide 6
 
 [Editable figure and scope](../outputs/teacher_meeting_20260921/fulltext_figure_v1/README.md): replaced only slide 6 in the current 16-slide Google deck. Company-focused body passages, conservative repeat grouping retaining extra details, separate titles, frozen FinBERT, metadata/coverage and historical prices are shown. This is a design proposal, not a new evaluated method; no training or scores were produced. Earlier local deck-count/version entries below remain historical.

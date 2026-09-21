@@ -3221,8 +3221,8 @@
   },
   {
     "path": "outputs/teacher_meeting_20260921/README.md",
-    "bytes": 9130,
-    "sha256": "d5ec83a5d65e0ae9d3ade76adfc720c03ca5b18ad14e2f61a50e2b82b014f379"
+    "bytes": 9366,
+    "sha256": "95d6b1ba16b80e93c7be83c1adb2ab3c27149f71139b81f945248bb09cdc5f6c"
   },
   {
     "path": "outputs/teacher_meeting_20260921/METHOD_PROPOSAL.md",
@@ -3968,5 +3968,45 @@
     "path": "outputs/teacher_meeting_20260921/fulltext_figure_v1/visual-spec.md",
     "bytes": 448,
     "sha256": "ad43e31daea83ae1d9a526ca7d99e9982a25c8e69b28a0246722db859d9fc1cc"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/simple_fulltext_v2/DELIVERY.json",
+    "bytes": 338,
+    "sha256": "a2236a9ffa9422d0088aeab10f3a319290ea0363403af1038d996f33277a5921"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/simple_fulltext_v2/README.md",
+    "bytes": 2156,
+    "sha256": "d91a5aa37f1242713c5b45d00e0574cd219892347604411541ce56b69db5aa05"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/LICENSE",
+    "bytes": 3208,
+    "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/chart-no-axes-combined.svg",
+    "bytes": 432,
+    "sha256": "2f8a708c357488cfde7428d9b055b9bb4a99c08dc71e9296da03ecc19291c4ab"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/file-text.svg",
+    "bytes": 444,
+    "sha256": "52ca55846c202335fb870c8aa23e9345630ec10489303756d62e750f7109605c"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/layers.svg",
+    "bytes": 510,
+    "sha256": "ce16d0a955e3581cda17f6b2fd5c5bc2034b405f9cecc31c8ebb8495b4afc1bb"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/simple_fulltext_v2/assets/scan-text.svg",
+    "bytes": 435,
+    "sha256": "6c05f5346bf0a9c7cdf6132f7ae3428ea932e2206ace2480f41a3d3bdc6efd80"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/simple_fulltext_v2/build_slide.mjs",
+    "bytes": 6305,
+    "sha256": "8aeac1280a0c84f1949752cdca7df4fee58481874c8276867eef5d68d4283b74"
   }
 ]

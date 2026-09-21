@@ -1,3 +1,7 @@
+## Latest standalone slide
+
+[Readable three-column version](simple_fulltext_v2/README.md), delivered locally for manual insertion. Uses an illustrative report pair and meaningful icons. No Google Slides mutation and no new experiment.
+
 ## Current live edit: full-text proposal on slide 6
 
 See [figure source and delivery notes](fulltext_figure_v1/README.md). The current author-edited Google deck has 16 slides. This task replaced only slide 6, preserving other slide text and results. This is an untested architecture extension; older deck versions/counts below are historical.
