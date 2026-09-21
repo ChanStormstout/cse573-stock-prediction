@@ -1,3 +1,20 @@
+# Current delivery: grouped-news method, v10
+
+The current local presentation is `CSE573_Grouped_News_Faculty_Meeting_v10.pptx`: 18 editable English slides (15 main, 3 appendix), using the requested Simple Light Mode template. It replaces the proposed factual-change correction as the main story with the **implemented frozen FinBERT + near-report grouping + six reporting metadata fields + historical prices + small classifier**.
+
+- [Current presenter notes and sources](PRESENTER_NOTES_v10.md)
+- [Plain-language method explanation](METHOD_EXPLANATION_v10.md)
+- [Delivery manifest](DELIVERY_MANIFEST_v10.json)
+- [Versioned authoring source](build_slides_v10.mjs)
+
+Slides 4–9 explain a six-report example, grouping guards, two-level averaging, metadata, and the final predictor. Slide 10 explains actual training. Slides 11–13 show matched historical comparisons and attribution limits. FinBERT and balanced accuracy are defined. Color distinguishes existing components from the changed representation; it does not imply unsupported hierarchy.
+
+All results are saved chronological, exposed exploratory backtests. No new training or independent predictive verification was performed. Illustrative weights are labeled as examples, not measured forecasts. Grouping is heuristic title similarity, not validated financial-event identity. Existing v9 and earlier presentations remain unchanged. Presentation binaries remain local under repository policy.
+
+---
+
+# Historical v9 documentation (superseded presentation narrative)
+
 # CSE 573 faculty meeting — 21 September 2026
 
 ## Presentation

@@ -3221,8 +3221,8 @@
   },
   {
     "path": "outputs/teacher_meeting_20260921/README.md",
-    "bytes": 4221,
-    "sha256": "e1f4a9920cdec5c326ec9c4a7e9d35446da58bc0e282958fa478b9cac75362ad"
+    "bytes": 5746,
+    "sha256": "4b77cebf18eba5ffc6be498a96b0cbef74f2172e0d348f99dedeea29e1926330"
   },
   {
     "path": "outputs/teacher_meeting_20260921/METHOD_PROPOSAL.md",
@@ -3783,5 +3783,25 @@
     "path": "outputs/stock_pro_completion_4h/v1/EARLY_CONTROL_PARITY.json",
     "bytes": 134,
     "sha256": "3a6590285d38823cf873b88ef05a2f437549576695de766c2a161daad5e5e4fa"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/PRESENTER_NOTES_v10.md",
+    "bytes": 11024,
+    "sha256": "0ad933df2c2735da2ee641fac05aea9e854630974fa3b28b8f18ea1c1ec42e21"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/METHOD_EXPLANATION_v10.md",
+    "bytes": 2895,
+    "sha256": "7084d35e5e469c63b366f3e28a7a6d71c5f95100cbe82feb918d68cdcbbff83b"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/DELIVERY_MANIFEST_v10.json",
+    "bytes": 679,
+    "sha256": "4e50530074f7428fcce6b583fca85faa3c4010eb954357b9ac37f91fbce42587"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/build_slides_v10.mjs",
+    "bytes": 22381,
+    "sha256": "f321aa6ed15342aa58d4e3eb220ce62280dea276908d2935c93ee38fb6fe9cff"
   }
 ]

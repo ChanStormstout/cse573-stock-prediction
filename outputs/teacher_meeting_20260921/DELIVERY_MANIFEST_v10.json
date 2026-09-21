@@ -1,0 +1,18 @@
+{
+  "task": "faculty meeting grouped-news slide revision",
+  "source_checkpoint": "06e98a766a566e8692ec41d2231f01cc611d3061",
+  "local_pptx": "CSE573_Grouped_News_Faculty_Meeting_v10.pptx",
+  "sha256": "7c7eac9935ea1280d4c91ff3aa71e841e8e7bec343bc1b43fec759c631389b3c",
+  "slides": 18,
+  "main_slides": 15,
+  "appendix_slides": 3,
+  "status": "IMPLEMENTED_METHOD_WITH_SAVED_HISTORICAL_EVIDENCE",
+  "new_model_runs": 0,
+  "new_independent_predictive_verification_runs": 0,
+  "package_integrity": "PASS",
+  "layout_geometry": "PASS",
+  "artifact_tool_reimport": "PASS",
+  "native_tables": 6,
+  "native_powerpoint_rendering_verified": false,
+  "previous_versions_preserved": true
+}

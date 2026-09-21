@@ -757,3 +757,8 @@ outputs/stock_pro_completion_4h/v1/PRE_EXECUTION_REPAIR.json
 outputs/stock_pro_completion_4h/v1/EXECUTION_SCHEDULING.json
 outputs/stock_pro_completion_4h/v1/KERNEL_RUNTIME_REPAIR.json
 outputs/stock_pro_completion_4h/v1/EARLY_CONTROL_PARITY.json
+
+outputs/teacher_meeting_20260921/PRESENTER_NOTES_v10.md
+outputs/teacher_meeting_20260921/METHOD_EXPLANATION_v10.md
+outputs/teacher_meeting_20260921/DELIVERY_MANIFEST_v10.json
+outputs/teacher_meeting_20260921/build_slides_v10.mjs

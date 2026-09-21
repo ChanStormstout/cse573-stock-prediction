@@ -1,5 +1,11 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-20 — Faculty deck v10: implemented grouped-news pipeline
+
+Replaced the main slide narrative with frozen FinBERT title vectors, near-duplicate report grouping, six reporting metadata features, historical prices, and a trained logistic classifier. Added editable whole-pipeline and aggregation diagrams, a six-report illustration, grouping safeguards, a plain FinBERT definition, training explanation and course-mining connection. The three appendix pages provide exact model details, one repaired and one introduced-error case, and sources.
+
+Results come from existing `stock_paper_methods_4h/v1` and the `stock_combination_4h/v1` attribution study. The deck preserves mixed stock/period outcomes and explicitly notes that selected regularization also changed. It does not claim group equality is optimal, grouping establishes true event identity, or AMZN later-period gains prove stable improvement. All illustrative values are labeled. No new training, inference, or independent predictive verification was run. Historical decks remain unchanged; current local PPTX is versioned v10. Review materials: [README](teacher_meeting_20260921/README.md), [notes](teacher_meeting_20260921/PRESENTER_NOTES_v10.md).
+
 ## 2026-09-20 — Faculty presentation and proposed news-context correction
 
 Added an explicitly aspirational evaluation-target page (both stocks BA at least 60%); measured new-pipeline results remain NOT RUN. No protocol/gate changed or new experiment executed.

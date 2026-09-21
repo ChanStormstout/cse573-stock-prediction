@@ -1,3 +1,9 @@
+# Latest presentation: grouped-news method, v10
+
+[Faculty meeting deck overview](../outputs/teacher_meeting_20260921/README.md): the slides now explain the existing FinBERT title-vector / near-report-group / metadata / price classifier, with editable diagrams, a six-report illustration, matched saved results and attribution limits. Eighteen slides; all prior deck versions preserved. This was a presentation-only task: no new model execution, inference, or independent predictive verification.
+
+The user has stopped further independent verification of the separate Pro-completion lane. The older in-progress entry below is historical; it is not an instruction to resume that work or a claim of a newly verified final score table.
+
 # Active: GPT Pro finite mechanism completion
 
 Implementation and real execution are in progress in `stock_pro_completion_4h/v1`; see [handoff](PRO_COMPLETION_4H_HANDOFF.md). Frozen scope: real-adjacency bigram/NB SVM, summed semantic/price kernels with a price-state interaction, independent compact LR/RF/TabPFN, and genuinely nested-crossfit R16 residual. Same exposed 1,607-window random protocol; these are not prospective scores. Stage verifiers replay saved models without fitting. No new encoder/LLM or external-data lane is running. No complete new score table is claimed until all stages pass.
