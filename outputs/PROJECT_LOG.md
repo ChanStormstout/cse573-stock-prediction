@@ -1,5 +1,11 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-20 — Faculty deck v12: restore omitted chronological classical baselines
+
+Added a dedicated results page using `stock_priorwork_repro/v10/STAGE_B2_REPORT.md`: four-hour full-text TF-IDF + price + LR/RF, plus paper-inspired word pairs + price + L1 LR. Includes development/later BA for AAPL and AMZN. The V10 branches retrain monthly on expanding past data, unlike the existing August-frozen semantic/grouped models; the difference is explicit on the slide and in notes. Linear SVM was not issued in the final V10 four-hour joint experiment.
+
+Corrected the prior explanation: these V10 LR/RF results are chronological, not random-split. Historical artifacts remain unchanged. No new training, inference or independent prediction verification. Twenty-slide v12 saved with native table and preserved method figures. Source/notes and results lineage are linked in the [meeting overview](teacher_meeting_20260921/README.md).
+
 ## 2026-09-20 — Faculty deck v11: baseline roles, four-hour scope and method figures
 
 Reclassified the primary baseline as title TF-IDF + prices + logistic regression; added constant-direction sanity and price-only/full-text classical controls to the results narrative. FinBERT remains an explicitly modern comparator and an ungrouped control. The revised table uses the same saved chronological four-hour report, without mixing random-split results. Constant-direction BA50% is an analytical reference, not a claimed new experiment.

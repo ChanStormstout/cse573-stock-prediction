@@ -1,0 +1,20 @@
+{
+  "task": "restore omitted chronological classical baselines",
+  "source_checkpoint": "6cdb43b3d9f0c1e971081b38991eb506e6a5da0e",
+  "local_pptx": "CSE573_Grouped_News_Faculty_Meeting_v12.pptx",
+  "sha256": "79589895a29d0edcde65d71d71125e3fe62cade83d70fa6d3966b25787925be9",
+  "slides": 20,
+  "main_slides": 17,
+  "appendix_slides": 3,
+  "added_slide": 14,
+  "result_source": "outputs/stock_priorwork_repro/v10/STAGE_B2_REPORT.md",
+  "baseline_update_policy": "monthly expanding training",
+  "existing_semantic_update_policy": "frozen after August2018",
+  "new_model_runs": 0,
+  "new_independent_predictive_verification_runs": 0,
+  "package_integrity": "pass",
+  "layout_findings": 0,
+  "reimport_passed": true,
+  "native_powerpoint_rendering_verified": false,
+  "historical_versions_preserved": true
+}

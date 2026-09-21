@@ -1,3 +1,15 @@
+# Current delivery: complete historical baseline panel, v12
+
+Current local deck: `CSE573_Grouped_News_Faculty_Meeting_v12.pptx` (20 slides: 17 main, 3 appendix). [Current notes](PRESENTER_NOTES_v12.md) and [delivery manifest](DELIVERY_MANIFEST_v12.json).
+
+Slide 14 adds the previously omitted V10 Stage B2 **four-hour chronological NEWS+PRICE** baselines: paper-inspired word pairs + logistic regression, full-text TF-IDF + logistic regression, and full-text TF-IDF + random forest. Both stocks and both development/later periods appear. These are existing verified results, not new fits. Linear SVM did not enter the frozen final four-hour joint experiment and has no fabricated score.
+
+The table explicitly distinguishes monthly expanding retraining in V10 from the August-frozen models on slide 13. These are descriptive historical comparisons rather than update-policy-matched ablations. Both are chronological. The earlier explanation that the omitted LR/RF entries were random-split results was incorrect and is superseded here. v11 and all earlier files remain unchanged.
+
+---
+
+# Historical v11 delivery
+
 # Current delivery: classical baselines and grouped-news method, v11
 
 The current local deck is `CSE573_Grouped_News_Faculty_Meeting_v11.pptx`: 19 editable English slides (16 main, 3 appendix), preserving the Simple Light Mode design.

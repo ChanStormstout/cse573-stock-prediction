@@ -778,3 +778,6 @@ outputs/teacher_meeting_20260921/figures_v11/method_overview.drawio
 outputs/teacher_meeting_20260921/figures_v11/method_overview.json
 outputs/teacher_meeting_20260921/figures_v11/method_overview.svg
 outputs/teacher_meeting_20260921/figures_v11/visual-spec.md
+outputs/teacher_meeting_20260921/PRESENTER_NOTES_v12.md
+outputs/teacher_meeting_20260921/DELIVERY_MANIFEST_v12.json
+outputs/teacher_meeting_20260921/build_slides_v12.mjs

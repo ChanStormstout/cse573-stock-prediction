@@ -1,3 +1,7 @@
+# Latest presentation: V10 chronological baselines added, v12
+
+[Meeting overview](../outputs/teacher_meeting_20260921/README.md): slide 14 now includes the saved V10 four-hour joint paper-word-pair LR, TF-IDF LR and TF-IDF RF results for both stocks and periods. These are chronological monthly retraining, explicitly distinguished from the August-frozen systems. SVM was not issued in that final joint experiment. Twenty slides; no model execution or independent predictive verification. Corrects the prior omission and mistaken random-split characterization.
+
 # Latest presentation: classical baselines and paper-style method diagrams, v11
 
 [Meeting overview](../outputs/teacher_meeting_20260921/README.md): primary baseline is title TF-IDF + price + logistic regression; price-only and full-text classical controls are included. FinBERT is labeled a modern comparator. A short four-hour scope rationale and two editable draw.io/native-slide figures explain the existing grouped-news method. All reported values remain saved chronological results; no new prediction execution or independent experimental verification. Nineteen slides; v10 and earlier preserved.
