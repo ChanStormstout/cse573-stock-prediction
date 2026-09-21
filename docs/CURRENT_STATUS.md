@@ -1,4 +1,19 @@
-# Latest completed: course news + FNSPID chronological replay
+# Latest completed: L1-L3 FNSPID information-control checkpoint
+
+**COMPLETE / VERIFIED; L4 INFERENCE COMPLETE, L4 DOWNSTREAM NOT RUN.** [Stage report](../outputs/stock_fnspid_llm_4h/l1_l3_stage/REPORT.md).
+
+At the owner's request, L1 quality filtering, L2 fact-change residual and L3
+historical-case voting were evaluated before L4 completion. L3 passed the
+March-August training-only gate and improved September-October, but reversed in
+November-February: later BA was 47.59% AAPL and 48.08% AMZN versus 53.87% and
+50.85% for recent price. L1 and L2 also failed to produce a stable two-stock
+gain. Independent stage verification passes with `2.22e-16` maximum selected-
+model replay error. These are exposed exploratory historical backtests. Frozen
+L4 inference subsequently completed all 1,155 jobs, but no L4 downstream score
+has been produced; its prompt and candidate list were not changed after seeing
+the L1-L3 results.
+
+# Previous completed: course news + FNSPID chronological replay
 
 **COMPLETE / VERIFIED.** [Report](../outputs/stock_fnspid_augmented_4h/v1/REPORT.md) · [handoff](FNSPID_AUGMENTED_4H_HANDOFF.md) · [future input policy](AUGMENTED_NEWS_POLICY.md).
 

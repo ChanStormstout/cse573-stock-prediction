@@ -19,8 +19,10 @@ def main(inp,out,batch_size,resume):
     from mlx_lm.generate import BatchGenerator
     from mlx_lm.sample_utils import make_sampler
     model,tok=load(str(MODEL));model.eval();mx.random.seed(573)
-    answer=[tok.encode(x,add_special_tokens=False) for x in ('A','B')]
-    if any(len(x)!=1 for x in answer):raise RuntimeError(f'A/B not single tokens: {answer}')
+    option_words=tuple(jobs[0].get('options',['A','B']))
+    if len(option_words)!=2 or any(tuple(j.get('options',['A','B']))!=option_words for j in jobs):raise RuntimeError('inconsistent binary options')
+    answer=[tok.encode(x,add_special_tokens=False) for x in option_words]
+    if any(len(x)!=1 for x in answer):raise RuntimeError(f'options not single tokens: {option_words} {answer}')
     answer=[x[0] for x in answer]
     prepared=[]
     for j in jobs:
@@ -48,7 +50,7 @@ def main(inp,out,batch_size,resume):
           a,b=scores[uid];mxv=max(a,b);pa=math.exp(a-mxv)/(math.exp(a-mxv)+math.exp(b-mxv));rec={'job_id':j['job_id'],'article_key':j.get('article_key'),'key':j.get('key'),'task':j['task'],'p_A':pa,'prompt_tokens':len(tokens)};stream.write(json.dumps(rec)+'\n');stream.flush();done.append(rec)
         mx.clear_cache()
         if len(done)%200<batch_size or len(done)==len(prepared):print(len(done),'/',len(prepared),'seconds',round(time.time()-began,1),flush=True)
-    summary={'status':'COMPLETE','jobs':len(done),'input_sha256':sha(inp),'output_sha256':sha(out),'max_prompt_tokens':max(x['prompt_tokens'] for x in done),'model_revision':expected['model_revision'],'training':False}
+    summary={'status':'COMPLETE','jobs':len(done),'input_sha256':sha(inp),'output_sha256':sha(out),'max_prompt_tokens':max(x['prompt_tokens'] for x in done),'model_revision':expected['model_revision'],'options':option_words,'training':False}
     Path(str(out)+'.summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--input',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--batch-size',type=int,default=8);p.add_argument('--resume',action='store_true');a=p.parse_args();main(a.input,a.output,a.batch_size,a.resume)

@@ -3948,5 +3948,60 @@
     "path": "outputs/stock_fnspid_llm_4h/v1/ARTICLE_JOB_AUDIT.json",
     "bytes": 2038,
     "sha256": "5a48724743b2cdcb32664843ad2578f53cfd43b0dcf5950ad6ccedddf743f6f9"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/ANALOGY_JOB_AUDIT.json",
+    "bytes": 462,
+    "sha256": "d6dca8816209118db62a0ce3e91654e8ef8046367af1095a93e5e50e69204311"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/REPORT.md",
+    "bytes": 4114,
+    "sha256": "00be248b2c451c6d4d00a4842d1d1acc2c22b91d03e141f5ef4aa6ef5a6bdff5"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/VERIFICATION.json",
+    "bytes": 488,
+    "sha256": "e4da95709de890b88ba652fc30cee213a8d19963c8ba095833ee7da0ddcabdb1"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/cv_metrics.csv",
+    "bytes": 28478,
+    "sha256": "c57ee4f6dd48b155254ba0cf45bd89de8e05ed8ea0ed57513c2514a23115ccf7"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/metrics.csv",
+    "bytes": 6742,
+    "sha256": "254fd1255db4e81ff395e2fc8a0873d2e2e7cb988a5fb6b2c557b1d00c2c07c1"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/monthly_metrics.csv",
+    "bytes": 26558,
+    "sha256": "6d6b39b2575c0667aea857883259eb4c30b20c1763aa543afee35cc5e307ef51"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/predictions.csv",
+    "bytes": 321569,
+    "sha256": "ca93d30a3520c24ee3b68c2f9811c9a2241c6424dac3c46134f2f2777ccb2f3c"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/promotion_gate.json",
+    "bytes": 2252,
+    "sha256": "1736271b509afa0499d59bc7a313cd40401f5d949f3cd136d38330e5d8fec925"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/selections.csv",
+    "bytes": 1515,
+    "sha256": "67518309a1da08808c9fc159c36fed15eba1fa8763dc2b52d1968909b5ec73bb"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/training_evidence.json",
+    "bytes": 28719,
+    "sha256": "a7a318d75947c012304c9b65abf784a42895eb6607cc61ed90495b3f0854f893"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/l1_l3_stage/transitions.csv",
+    "bytes": 1057,
+    "sha256": "6a150e6093a7b2abc022adfeea488c49778d55879a1b4edbd8742599c851d253"
   }
 ]

@@ -1833,3 +1833,18 @@ no labels or returns: 1,322 FNSPID articles produce 3,966 quality/novelty/
 polarity binary jobs, each using only earlier same-stock report titles. Frozen
 Qwen3.5-9B model files and all augmented source inputs are hash-bound. No new
 predictive score exists at this checkpoint.
+
+## 2026-09-20 — L1-L3 stage evaluated before L4 completion
+
+The owner requested an early L1-L3 comparison. A bounded stage mode was added
+to the already registered runner without changing data, features, candidates,
+chronology, thresholds or the frozen L4 prompts. A pre-result runtime failure
+showed that warmup rows have no OOF price probability; L2 was corrected to fit
+only rows with finite, training-period OOF base probabilities, as required by
+its own residual design. No score existed before that repair.
+
+L3 passed the March-August gate (+0.81/+2.69 pp AAPL/AMZN versus price) and
+improved September-October, but fell below price by 6.27/2.77 pp in the later
+period. L1 and L2 did not yield a stable gain. Independent verification passes
+all checks with maximum probability replay error `2.22e-16`. Results are in
+`outputs/stock_fnspid_llm_4h/l1_l3_stage`; L4 inference continued unchanged.

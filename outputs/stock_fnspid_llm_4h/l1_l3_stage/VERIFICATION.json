@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "L2_exact_fallback": true,
+    "L5_global_choice": true,
+    "article_jobs_complete": true,
+    "canonical_rows": true,
+    "chronology": true,
+    "model_count": true,
+    "past_only_C_selection": true,
+    "probability_bounds": true,
+    "runner_reload": true,
+    "selected_model_replay": true,
+    "source_hashes": true
+  },
+  "maximum_selected_model_probability_error": 2.220446049250313e-16,
+  "replay_errors": [],
+  "selection_errors": [],
+  "status": "PASS"
+}

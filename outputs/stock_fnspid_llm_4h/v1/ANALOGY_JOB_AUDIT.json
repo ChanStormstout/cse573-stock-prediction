@@ -1,0 +1,12 @@
+{
+  "article_scores_sha256": "10430daca0c741a27e1dd4b01abf3c05597502ae71a409c701ca8ad1dfeb1f84",
+  "case_rows": 3465,
+  "evaluated_rows": 1374,
+  "fallback_rows": 219,
+  "future_case_violations": 0,
+  "jobs": 1155,
+  "private_cases_sha256": "71841b97bcbb43f504a4b5d057cef7a277fb76b467aa59dc925294f4166b9b1f",
+  "private_jobs_sha256": "2c99a4eaab3418afbefaa16f4de764714e3e8af47022a2f5d9fa592d0ec989dc",
+  "query_labels_in_prompt": false,
+  "status": "PREPARED"
+}
