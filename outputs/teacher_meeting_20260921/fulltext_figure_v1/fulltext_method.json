@@ -1,0 +1,438 @@
+{
+  "w": 1800.0,
+  "h": 830.0,
+  "nodes": [
+    {
+      "id": "input",
+      "text": "News available\nTitles + bodies\nSource + time",
+      "x": 24.0,
+      "y": 145.0,
+      "w": 244.0,
+      "h": 184.0,
+      "font": 27.0,
+      "bold": false,
+      "fill": "#EDF3F9",
+      "stroke": "#B7C9DB",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "select",
+      "text": "1  Select passages\nCompany + context\nKeep negation,\nnumbers and IDs",
+      "x": 344.0,
+      "y": 145.0,
+      "w": 292.0,
+      "h": 184.0,
+      "font": 27.0,
+      "bold": false,
+      "fill": "#E7F4F1",
+      "stroke": "#88B7B1",
+      "color": "#006E73",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "group",
+      "text": "2  Group repeats\nSimilar text + cues\nKeep extra details\nSplit conflicts",
+      "x": 712.0,
+      "y": 145.0,
+      "w": 304.0,
+      "h": 184.0,
+      "font": 27.0,
+      "bold": false,
+      "fill": "#E7F4F1",
+      "stroke": "#88B7B1",
+      "color": "#006E73",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "encode",
+      "text": "3  Encode + pool\nFrozen FinBERT\nMean within groups,\nthen across groups\nTitle summary",
+      "x": 1092.0,
+      "y": 145.0,
+      "w": 308.0,
+      "h": 184.0,
+      "font": 27.0,
+      "bold": false,
+      "fill": "#EDF3F9",
+      "stroke": "#B7C9DB",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "predict",
+      "text": "4  Predict\nJoin all features\nRegularized LR",
+      "x": 1476.0,
+      "y": 145.0,
+      "w": 276.0,
+      "h": 184.0,
+      "font": 27.0,
+      "bold": false,
+      "fill": "#EDF3F9",
+      "stroke": "#B7C9DB",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "title_label",
+      "text": "Titles remain a separate input",
+      "x": 430.0,
+      "y": 8.0,
+      "w": 540.0,
+      "h": 42.0,
+      "font": 26.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": true
+    },
+    {
+      "id": "meta",
+      "text": "Reporting + coverage features\nCounts, sources, ages and body coverage",
+      "x": 344.0,
+      "y": 410.0,
+      "w": 672.0,
+      "h": 104.0,
+      "font": 28.0,
+      "bold": false,
+      "fill": "#EDF3F9",
+      "stroke": "#B7C9DB",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "prices",
+      "text": "Historical prices\nPast completed bars",
+      "x": 1092.0,
+      "y": 504.0,
+      "w": 308.0,
+      "h": 96.0,
+      "font": 27.0,
+      "bold": false,
+      "fill": "#EDF3F9",
+      "stroke": "#B7C9DB",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "out",
+      "text": "4-hour\nup probability",
+      "x": 1500.0,
+      "y": 370.0,
+      "w": 228.0,
+      "h": 92.0,
+      "font": 29.0,
+      "bold": true,
+      "fill": "#EDF3F9",
+      "stroke": "#B7C9DB",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "legend",
+      "text": "Teal = proposed text processing     Blue = standard inputs / models",
+      "x": 24.0,
+      "y": 770.0,
+      "w": 1390.0,
+      "h": 40.0,
+      "font": 25.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "sample_title",
+      "text": "ILLUSTRATION: preserve the extra detail",
+      "x": 24.0,
+      "y": 548.0,
+      "w": 1000.0,
+      "h": 58.0,
+      "font": 34.0,
+      "bold": true,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "ex_input",
+      "text": "Report A: target price cut to 180\nReport B: same cut + new guidance",
+      "x": 24.0,
+      "y": 610.0,
+      "w": 575.0,
+      "h": 115.0,
+      "font": 29.0,
+      "bold": false,
+      "fill": "#EDF3F9",
+      "stroke": "#B7C9DB",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "ex_output",
+      "text": "One target-price group\nOne additional guidance block",
+      "x": 712.0,
+      "y": 610.0,
+      "w": 605.0,
+      "h": 115.0,
+      "font": 29.0,
+      "bold": false,
+      "fill": "#E7F4F1",
+      "stroke": "#88B7B1",
+      "color": "#006E73",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "fallback",
+      "text": "No reliable body: keep title\nNo news: price-only fallback",
+      "x": 1370.0,
+      "y": 666.0,
+      "w": 405.0,
+      "h": 74.0,
+      "font": 22.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "input",
+      "target": "select",
+      "pts": [
+        [
+          268.0,
+          237.0
+        ],
+        [
+          344.0,
+          237.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "e2",
+      "source": "select",
+      "target": "group",
+      "pts": [
+        [
+          636.0,
+          237.0
+        ],
+        [
+          712.0,
+          237.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "e3",
+      "source": "group",
+      "target": "encode",
+      "pts": [
+        [
+          1016.0,
+          237.0
+        ],
+        [
+          1092.0,
+          237.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "e4",
+      "source": "encode",
+      "target": "predict",
+      "pts": [
+        [
+          1400.0,
+          237.0
+        ],
+        [
+          1476.0,
+          237.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "titlepath",
+      "source": "input",
+      "target": "encode",
+      "pts": [
+        [
+          146.0,
+          145.0
+        ],
+        [
+          146.0,
+          55.0
+        ],
+        [
+          1246.0,
+          55.0
+        ],
+        [
+          1246.0,
+          145.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "metadata",
+      "source": "input",
+      "target": "meta",
+      "pts": [
+        [
+          146.0,
+          329.0
+        ],
+        [
+          146.0,
+          462.0
+        ],
+        [
+          344.0,
+          462.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "selectedcoverage",
+      "source": "select",
+      "target": "meta",
+      "pts": [
+        [
+          490.0,
+          329.0
+        ],
+        [
+          490.0,
+          410.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "groupcounts",
+      "source": "group",
+      "target": "meta",
+      "pts": [
+        [
+          864.0,
+          329.0
+        ],
+        [
+          864.0,
+          410.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "metapred",
+      "source": "meta",
+      "target": "predict",
+      "pts": [
+        [
+          1016.0,
+          462.0
+        ],
+        [
+          1440.0,
+          462.0
+        ],
+        [
+          1440.0,
+          303.0
+        ],
+        [
+          1476.0,
+          303.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "pricepred",
+      "source": "prices",
+      "target": "predict",
+      "pts": [
+        [
+          1400.0,
+          552.0
+        ],
+        [
+          1784.0,
+          552.0
+        ],
+        [
+          1784.0,
+          277.0
+        ],
+        [
+          1752.0,
+          277.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "output",
+      "source": "predict",
+      "target": "out",
+      "pts": [
+        [
+          1614.0,
+          329.0
+        ],
+        [
+          1614.0,
+          370.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "example",
+      "source": "ex_input",
+      "target": "ex_output",
+      "pts": [
+        [
+          599.0,
+          667.0
+        ],
+        [
+          712.0,
+          667.0
+        ]
+      ],
+      "dash": false
+    }
+  ]
+}

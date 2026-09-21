@@ -1,3 +1,7 @@
+## Current live edit: full-text proposal on slide 6
+
+See [figure source and delivery notes](fulltext_figure_v1/README.md). The current author-edited Google deck has 16 slides. This task replaced only slide 6, preserving other slide text and results. This is an untested architecture extension; older deck versions/counts below are historical.
+
 # Current delivery: complete historical baseline panel, v12
 
 Current local deck: `CSE573_Grouped_News_Faculty_Meeting_v12.pptx` (20 slides: 17 main, 3 appendix). [Current notes](PRESENTER_NOTES_v12.md) and [delivery manifest](DELIVERY_MANIFEST_v12.json).

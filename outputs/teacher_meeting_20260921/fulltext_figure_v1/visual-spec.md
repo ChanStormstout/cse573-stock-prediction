@@ -1,0 +1,2 @@
+# Visual contract
+Inherited deck: white, Helvetica Neue, navy #17324D. Proposed modules use teal #006E73 with pale #E7F4F1; standard modules #EDF3F9. 1800x830 canvas. Main labels27-30px, main slide title34px at1280x720. Editable rectangles and explicit arrows. Single left-to-right dominant path; bottom teaching example. Colors denote role, not performance. Native vector translation into PPTX. PDF exports use embedded Arial for portable glyphs.

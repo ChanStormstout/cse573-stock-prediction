@@ -1,3 +1,7 @@
+# Latest presentation edit: proposed full-text slide 6
+
+[Editable figure and scope](../outputs/teacher_meeting_20260921/fulltext_figure_v1/README.md): replaced only slide 6 in the current 16-slide Google deck. Company-focused body passages, conservative repeat grouping retaining extra details, separate titles, frozen FinBERT, metadata/coverage and historical prices are shown. This is a design proposal, not a new evaluated method; no training or scores were produced. Earlier local deck-count/version entries below remain historical.
+
 # Latest presentation: V10 chronological baselines added, v12
 
 [Meeting overview](../outputs/teacher_meeting_20260921/README.md): slide 14 now includes the saved V10 four-hour joint paper-word-pair LR, TF-IDF LR and TF-IDF RF results for both stocks and periods. These are chronological monthly retraining, explicitly distinguished from the August-frozen systems. SVM was not issued in that final joint experiment. Twenty slides; no model execution or independent predictive verification. Corrects the prior omission and mistaken random-split characterization.
