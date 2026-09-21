@@ -1,0 +1,37 @@
+{
+  "coverage": {
+    "A": {
+      "AAPL": 165,
+      "AMZN": 36
+    },
+    "D": {
+      "AAPL": 797,
+      "AMZN": 415
+    },
+    "L": {
+      "AAPL": 161,
+      "AMZN": 36
+    },
+    "U": {
+      "AAPL": 480,
+      "AMZN": 30
+    }
+  },
+  "keys": 1607,
+  "phase_counts": {
+    "development": 252,
+    "later": 357,
+    "train_forward_oof": 765,
+    "warmup": 233
+  },
+  "rows": 1607,
+  "sources": {
+    "outputs/stock_combination_4h/v1/predictions.csv": "911a015833530884ad51e16debad458225f3c5d97cf21aa9cf7f7280f52f3ef7",
+    "outputs/stock_foundation_4h/v2/modern_predictions.csv": "8ef245010499d5d40ce9b19e38787568e8cdfc07461e70a70c40ca6e72f9d62f",
+    "work/stock-data/analogy_4h/v2/prepared.csv": "9c16acae71dde1ae6ad47f073f7ecfa055f0dfbe6b837054fd518d30606e3823",
+    "work/stock-data/analogy_4h/v2/retrieval.json": "f46eb3e298663980a700c7f7c03d7db48f322a71a30e83abc03e3c69fd85452e",
+    "work/stock-data/analogy_4h/v2/retrieval_arrays.npz": "05a78e6af4eabbfdc678ebf049469f785388a1cdfd81012b0e9c8739a6993492",
+    "work/stock-data/finbert_event_adapter_4h/v1/corpus_extraction/facts_A1_ensemble.jsonl": "5a5c84988ed8585fe4ee75e50be1018f318161e24134231bed06d338ff752537",
+    "work/stock-data/paper_methods_4h/v1/inputs.pkl": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b"
+  }
+}

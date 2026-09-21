@@ -1744,3 +1744,35 @@ Ordinary random BA AAPL/AMZN: control SVM 69.55/61.14; frequency 70.13/60.61; ne
 Grouped SVM BA falls to 49.23/51.17, compared with grouped FULL 52.39/51.74 and price 55.84/51.45. AAPL predicts up 97.72%. This establishes sensitivity to association-group isolation, not an exact decomposition of leakage, calibration and distribution shift. Ordinary and grouped results remain separate.
 
 Matched aggregation LR: SET_BASE 64.99/59.51; linear mean 65.42/59.41; mean then nonlinear map 65.09/59.06; nonlinear map then mean 65.22/59.27. Ordering has a small positive difference, but AMZN underperforms SET_BASE and the complete method is below the strong SVM. Frozen follow-up screen FAIL; no price-interaction, TabPFN, additional encoder or larger grid. Keep FULL/reference and fixed strong SVM, preserve all methods as exploratory evidence, do not assemble per-stock outer-selected winners. Reports, monthly/coverage/flip tables and fixed cases are saved under stock_representation_4h/v1.
+
+## ECNI-lite gated evidence combination (chronological four-hour task)
+
+**Why:** Earlier work tested event aggregation and historical-case reasoning in
+separate pipelines. This experiment asked whether their complementary evidence
+could safely correct the canonical price + full-body sparse model, while
+falling back exactly when no evidence exists.
+
+**What changed:** A frozen finite protocol compared dissemination metadata,
+provisional rating/target-price updates, past-only analogous reactions, the
+saved LLM outcome-response control, their joint versions, and a partially
+pooled stock-contrast version. Each method was an L2 residual on the canonical
+F1 logit. C was selected from `{0.01, 0.1, 1}` using prior chronological OOF
+months only. No new LLM inference was run.
+
+**Outcome:** No candidate passed the June-August two-stock advancement screen;
+the selected system therefore remained F1. Dissemination improved AAPL mean BA
+by 3.55 pp during the gate months but reduced AMZN by 2.58 pp. Past-reaction
+analogies improved AAPL by 1.91 pp but AMZN by 0.00 pp and breached the Brier
+guardrail. The LLM control did not fix the two-stock inconsistency. Joint
+blocks overcorrected and performed worse in exposed later data.
+
+**Coverage insight:** Provisional event updates covered 480 AAPL windows but
+only 30 AMZN windows; past analogies covered 165 AAPL and 36 AMZN windows. The
+combined learner therefore had too little AMZN evidence to estimate a stable
+stock-specific correction.
+
+**Verification:** Fit-free reload independently replayed 9,618 method-row
+probabilities with maximum error 0, recomputed metrics, verified source hashes,
+and observed zero exact-fallback errors. Results remain exposed exploratory
+historical backtests, and event facts remain provisional rather than human
+gold.

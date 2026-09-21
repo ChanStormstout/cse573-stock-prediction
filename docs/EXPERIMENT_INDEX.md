@@ -13,6 +13,7 @@
 - **stock_content**: Python source archive
 - **stock_dedup**: Python source archive
 - **stock_diagnostics**: [CASES_96.md](../outputs/stock_diagnostics/CASES_96.md) · [QUALITATIVE_REVIEW.md](../outputs/stock_diagnostics/QUALITATIVE_REVIEW.md)
+- **stock_ecni_lite_4h**: [README.md](../outputs/stock_ecni_lite_4h/README.md) · [REPORT.md](../outputs/stock_ecni_lite_4h/v1/REPORT.md)
 - **stock_event_facts**: Python source archive
 - **stock_event_facts_v2**: Python source archive
 - **stock_event_facts_v3**: [REPORT.md](../outputs/stock_event_facts_v3/REPORT.md)

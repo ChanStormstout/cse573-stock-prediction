@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "advancement_recomputation": true,
+    "exact_gated_fallback": false,
+    "fit_free_model_replay": true,
+    "label_contract": true,
+    "metric_recomputation": true,
+    "model_manifest": true,
+    "row_key_contract": true,
+    "source_hashes": true
+  },
+  "fallback_errors": 848,
+  "fit_calls": 0,
+  "maximum_probability_error": 0.0,
+  "metric_error": 1.1102230246251565e-16,
+  "replayed_rows": 9618,
+  "status": "FAIL"
+}

@@ -511,3 +511,15 @@ venv/
 !/outputs/stock_reaction_features_4h/v4/official_window_status.json
 !/outputs/stock_reaction_features_4h/v4/training_evidence.json
 !/outputs/stock_reaction_features_4h/v4/verification_v4.json
+!/outputs/stock_ecni_lite_4h/v1/INPUT_AUDIT.json
+!/outputs/stock_ecni_lite_4h/v1/EXECUTION.json
+!/outputs/stock_ecni_lite_4h/v1/MODEL_MANIFEST.json
+!/outputs/stock_ecni_lite_4h/v1/VERIFICATION.json
+!/outputs/stock_ecni_lite_4h/v1/VERIFICATION_pre_scope_fix.json
+!/outputs/stock_ecni_lite_4h/v1/advancement.csv
+!/outputs/stock_ecni_lite_4h/v1/case_panel.csv
+!/outputs/stock_ecni_lite_4h/v1/metrics.csv
+!/outputs/stock_ecni_lite_4h/v1/monthly_metrics.csv
+!/outputs/stock_ecni_lite_4h/v1/predictions.csv
+!/outputs/stock_ecni_lite_4h/v1/selection.csv
+!/outputs/stock_ecni_lite_4h/v1/transitions.csv

@@ -1,0 +1,10 @@
+{
+  "all_periods_exposed": true,
+  "code_sha256": "880239991a5b91cb1a51b1768056d11b7b401f5b0658d13f4357cae36ad07f24",
+  "models": 42,
+  "new_llm_calls": 0,
+  "protocol_sha256": "5e553d06c1c7436a296163d708dbb0fabd5f8de3f2b4cb398a8be7900fc185c3",
+  "seconds": 1.9338431358337402,
+  "selected": "BASE",
+  "status": "COMPLETE"
+}

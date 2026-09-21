@@ -1,4 +1,17 @@
-# Latest completed: preprocessing, grouped SVM and aggregation-order study
+# Latest completed: ECNI-lite gated evidence combination
+
+### Result
+
+The proposed combination of dissemination metadata, provisional event changes,
+past-only analogous reactions and the saved LLM outcome-response score has now
+been implemented under the canonical chronological four-hour protocol. No
+candidate passed the preregistered two-stock June-August gate, so the selected
+system remains the price + full-body sparse baseline. This closes the finite
+combination question: the components contain occasional stock/period-specific
+signal, but current coverage and stability do not justify a production
+correction. See `outputs/stock_ecni_lite_4h/v1/REPORT.md`.
+
+# Previous completed: preprocessing, grouped SVM and aggregation-order study
 
 **COMPLETE / VERIFIED.** [Plain-language findings](../outputs/stock_representation_4h/v1/FINDINGS.md) · [full report](../outputs/stock_representation_4h/v1/REPORT.md) · [handoff](REPRESENTATION_4H_HANDOFF.md).
 

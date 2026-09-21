@@ -3753,5 +3753,65 @@
     "path": "outputs/stock_representation_4h/v1/training_evidence.json",
     "bytes": 401,
     "sha256": "0b41df24999da520299896d1e804747f61d11a9c32dc81afe72404de83858f9a"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/INPUT_AUDIT.json",
+    "bytes": 1305,
+    "sha256": "8bfd273ea8faca302048f231a9651ad8af88cf235e18662ed24c07744a151899"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/EXECUTION.json",
+    "bytes": 325,
+    "sha256": "8893046903e2852dfbd1e4813ec36c41276ad2ec899458d13df017c76ba1625f"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/MODEL_MANIFEST.json",
+    "bytes": 3871,
+    "sha256": "d1102cf70e467c0f92afd4c5ea87738ee47b7e4370fa45719416598ef59c0f57"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/VERIFICATION.json",
+    "bytes": 441,
+    "sha256": "5732ddfef1c80ad114183c5fcd05d8112e7ae208fdb159528419d1669c7a8780"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/VERIFICATION_pre_scope_fix.json",
+    "bytes": 444,
+    "sha256": "b9d949baa391e875cdfb833e7788753140b71e212f5eabfd630cbc5c1398829e"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/advancement.csv",
+    "bytes": 744,
+    "sha256": "821f584fec83de34fd07d09519bd24c16a669d2309e7e0df852f244fcc49eac2"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/case_panel.csv",
+    "bytes": 808,
+    "sha256": "847f8a8ca2c4dfe1a48b2c8dfe7c74257127372892d42eb320fc43a47f852c99"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/metrics.csv",
+    "bytes": 7088,
+    "sha256": "ee8dde4fb0ee1c4b6c4760cb7b215d66ad577fbfb38d663f0a5a3dd849a78bdb"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/monthly_metrics.csv",
+    "bytes": 28291,
+    "sha256": "c51bd4bb435b4d22cc613d374ed8438b34e0e73ead6f955f500f13361e3af289"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/predictions.csv",
+    "bytes": 339567,
+    "sha256": "5b96d1edaa06c1086684ae8136ba208137a0a2936fba497455a163ac227e279d"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/selection.csv",
+    "bytes": 1034,
+    "sha256": "46c78506948e3a5438ae33f58ccbc3c2ac04662a8503b5488c321448b54d3e33"
+  },
+  {
+    "path": "outputs/stock_ecni_lite_4h/v1/transitions.csv",
+    "bytes": 1435,
+    "sha256": "f1217d3bb847458268d10e3cb25e64065f0fff54b5cfac9577eff9707d2c8b81"
   }
 ]
