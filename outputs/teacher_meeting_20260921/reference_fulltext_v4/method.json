@@ -1,0 +1,419 @@
+{
+  "w": 2040.0,
+  "h": 850.0,
+  "nodes": [
+    {
+      "id": "source",
+      "text": "Available news\nTitles + bodies\nSource / time",
+      "x": 24.0,
+      "y": 270.0,
+      "w": 240.0,
+      "h": 165.0,
+      "font": 28.0,
+      "bold": true,
+      "fill": "#EEF3F8",
+      "stroke": "#B7C9DB",
+      "color": "#1E314B",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "prepare",
+      "text": "Prepare text\nTarget passages\n+ original titles",
+      "x": 334.0,
+      "y": 270.0,
+      "w": 270.0,
+      "h": 165.0,
+      "font": 26.0,
+      "bold": true,
+      "fill": "#E9F4F1",
+      "stroke": "#88B7B1",
+      "color": "#2E6C72",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "encoder",
+      "text": "FinBERT\nFrozen encoder",
+      "x": 674.0,
+      "y": 100.0,
+      "w": 270.0,
+      "h": 140.0,
+      "font": 28.0,
+      "bold": true,
+      "fill": "#EEF3F8",
+      "stroke": "#B7C9DB",
+      "color": "#1E314B",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "groups",
+      "text": "Group passages\nText + fact cues\nKeep extra text",
+      "x": 674.0,
+      "y": 415.0,
+      "w": 270.0,
+      "h": 160.0,
+      "font": 27.0,
+      "bold": true,
+      "fill": "#E9F4F1",
+      "stroke": "#88B7B1",
+      "color": "#2E6C72",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "pool",
+      "text": "Body: two-level mean\nWithin, then across\nTitles: own average",
+      "x": 1024.0,
+      "y": 85.0,
+      "w": 340.0,
+      "h": 175.0,
+      "font": 28.0,
+      "bold": true,
+      "fill": "#E9F4F1",
+      "stroke": "#88B7B1",
+      "color": "#2E6C72",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "report",
+      "text": "Reporting features\nCounts / sources\nAges / coverage",
+      "x": 1024.0,
+      "y": 415.0,
+      "w": 340.0,
+      "h": 150.0,
+      "font": 28.0,
+      "bold": true,
+      "fill": "#E9F4F1",
+      "stroke": "#88B7B1",
+      "color": "#2E6C72",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "price",
+      "text": "Historical prices\nCompleted bars",
+      "x": 1024.0,
+      "y": 670.0,
+      "w": 340.0,
+      "h": 100.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#EEF3F8",
+      "stroke": "#B7C9DB",
+      "color": "#1E314B",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "combine",
+      "text": "Combine\nTitle + body\nReporting\nPrices",
+      "x": 1444.0,
+      "y": 275.0,
+      "w": 230.0,
+      "h": 225.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#EEF3F8",
+      "stroke": "#B7C9DB",
+      "color": "#1E314B",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "model",
+      "text": "Logistic\nregression\nTrained",
+      "x": 1744.0,
+      "y": 280.0,
+      "w": 250.0,
+      "h": 170.0,
+      "font": 34.0,
+      "bold": true,
+      "fill": "#EEF3F8",
+      "stroke": "#B7C9DB",
+      "color": "#1E314B",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "out",
+      "text": "4-hour up\nprobability",
+      "x": 1744.0,
+      "y": 620.0,
+      "w": 250.0,
+      "h": 100.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#EEF3F8",
+      "stroke": "#B7C9DB",
+      "color": "#1E314B",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "idslabel",
+      "text": "body group IDs",
+      "x": 1008.0,
+      "y": 303.0,
+      "w": 280.0,
+      "h": 40.0,
+      "font": 26.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#1E314B",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "legend",
+      "text": "Blue: standard components\nTeal: proposed text + reporting processing\nSolid: data   Dashed: body group membership",
+      "x": 24.0,
+      "y": 640.0,
+      "w": 930.0,
+      "h": 120.0,
+      "font": 26.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#1E314B",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "fallback",
+      "text": "No reliable body \u2192 keep titles.    No admitted news \u2192 use the price-only forecast.",
+      "x": 24.0,
+      "y": 804.0,
+      "w": 1970.0,
+      "h": 38.0,
+      "font": 26.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#1E314B",
+      "align": "left",
+      "textOnly": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "raw",
+      "source": "source",
+      "target": "prepare",
+      "pts": [
+        [
+          264.0,
+          352.0
+        ],
+        [
+          334.0,
+          352.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "encode",
+      "source": "prepare",
+      "target": "encoder",
+      "pts": [
+        [
+          469.0,
+          270.0
+        ],
+        [
+          469.0,
+          170.0
+        ],
+        [
+          674.0,
+          170.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "group",
+      "source": "prepare",
+      "target": "groups",
+      "pts": [
+        [
+          469.0,
+          435.0
+        ],
+        [
+          469.0,
+          495.0
+        ],
+        [
+          674.0,
+          495.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "vectors",
+      "source": "encoder",
+      "target": "pool",
+      "pts": [
+        [
+          944.0,
+          170.0
+        ],
+        [
+          1024.0,
+          170.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "ids",
+      "source": "groups",
+      "target": "pool",
+      "pts": [
+        [
+          944.0,
+          455.0
+        ],
+        [
+          985.0,
+          455.0
+        ],
+        [
+          985.0,
+          235.0
+        ],
+        [
+          1024.0,
+          235.0
+        ]
+      ],
+      "dash": true
+    },
+    {
+      "id": "reportedge",
+      "source": "groups",
+      "target": "report",
+      "pts": [
+        [
+          944.0,
+          495.0
+        ],
+        [
+          1024.0,
+          495.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "text",
+      "source": "pool",
+      "target": "combine",
+      "pts": [
+        [
+          1364.0,
+          170.0
+        ],
+        [
+          1404.0,
+          170.0
+        ],
+        [
+          1404.0,
+          320.0
+        ],
+        [
+          1444.0,
+          320.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "meta",
+      "source": "report",
+      "target": "combine",
+      "pts": [
+        [
+          1364.0,
+          490.0
+        ],
+        [
+          1404.0,
+          490.0
+        ],
+        [
+          1404.0,
+          410.0
+        ],
+        [
+          1444.0,
+          410.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "prices",
+      "source": "price",
+      "target": "combine",
+      "pts": [
+        [
+          1364.0,
+          720.0
+        ],
+        [
+          1424.0,
+          720.0
+        ],
+        [
+          1424.0,
+          460.0
+        ],
+        [
+          1444.0,
+          460.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "predict",
+      "source": "combine",
+      "target": "model",
+      "pts": [
+        [
+          1674.0,
+          385.0
+        ],
+        [
+          1744.0,
+          385.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "prob",
+      "source": "model",
+      "target": "out",
+      "pts": [
+        [
+          1869.0,
+          450.0
+        ],
+        [
+          1869.0,
+          620.0
+        ]
+      ],
+      "dash": false
+    }
+  ]
+}

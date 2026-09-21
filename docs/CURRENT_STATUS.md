@@ -1,3 +1,7 @@
+# Latest standalone slide: reference-style full-text method
+
+[Editable branching figure](../outputs/teacher_meeting_20260921/reference_fulltext_v4/README.md) follows the owner-supplied earlier layout, adding target-passage preparation and separate title/body summaries. Local PPTX only; no Google Slides mutation, model run or score change.
+
 # Latest standalone method slide: explicit data flow
 
 [Parallel-input architecture](../outputs/teacher_meeting_20260921/fulltext_logic_v3/README.md) replaces the rejected example-led layout. Title/body/report/price lanes join once before prediction; the new body route is highlighted. Local one-slide PPTX only, with no Google Slides changes or experiments.

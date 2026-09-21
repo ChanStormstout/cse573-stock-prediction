@@ -3221,8 +3221,8 @@
   },
   {
     "path": "outputs/teacher_meeting_20260921/README.md",
-    "bytes": 9705,
-    "sha256": "c47461243b4f6097c73a6e5108c2e213f74ad761c1dd81734a4ea2a4238cec2c"
+    "bytes": 9973,
+    "sha256": "a84b9482319a872cf46d82d73aba1d3919594e393ae0d9bfaf037a48b184ca3d"
   },
   {
     "path": "outputs/teacher_meeting_20260921/METHOD_PROPOSAL.md",
@@ -4023,5 +4023,70 @@
     "path": "outputs/teacher_meeting_20260921/fulltext_logic_v3/build_slide.mjs",
     "bytes": 7473,
     "sha256": "dd11df0385e85dbb472479cc625d77114b8d1cb3d81334d83a4519118cdd76b6"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/DELIVERY.json",
+    "bytes": 372,
+    "sha256": "aa1661590e9cf320a0365a149ece53c1cffdb72e87507af2af1fefb6e8d7c9d4"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/README.md",
+    "bytes": 1951,
+    "sha256": "c425331114fa3198f4da6836323a85ba69256ef8f0e2df803d9436dd8775403e"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/asset-ledger.md",
+    "bytes": 466,
+    "sha256": "3aa90d1edf528fe404876904af0ded72742dcd717546816cbe6b201bb11ab274"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/brief.md",
+    "bytes": 2089,
+    "sha256": "78b9672d95f89188fa78ff7124caf9d5977a1eace2dec3c31c6c1b28a5ee556e"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/build_slide.mjs",
+    "bytes": 4202,
+    "sha256": "fd09b8dd24c24aac4a53e0178fdf4c0e9aab98377939d20cf88ff6b24a2d1080"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/defect-log.md",
+    "bytes": 9057,
+    "sha256": "8863bc9143ecb4e98f6b784e84e68d12f93cd95419a32ee8f04af8bfc9f51b12"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/export_drawio.py",
+    "bytes": 3986,
+    "sha256": "19ae7d374df38a51438ce02a42911c09834cf8b3eb22343b6e5e8c9f02255e29"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/layout-grid.md",
+    "bytes": 889,
+    "sha256": "c0a08cbb9c0f05817abef8d9c926899143c4181118868ab6db2da852bbced54b"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/make_figure.py",
+    "bytes": 3859,
+    "sha256": "5c4f4057d248b0b6497ef2bdf2d330fd17f1cb1564d14dfdafc4a1b418f7dc7c"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/method.drawio",
+    "bytes": 10791,
+    "sha256": "57e2688bb7029de4677d07408b991f6953314a5635c4ddaf193f5e6c5a7b686c"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/method.json",
+    "bytes": 7631,
+    "sha256": "d61410edb63d51c364a8dbdc27db222996888e54970a263524865d67c7dde83d"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/method.svg",
+    "bytes": 8927,
+    "sha256": "e4e12b54af2d9c2b45712db8917513b8d5d6a3aa40ca1460b2dcb623d4d3a9f0"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/reference_fulltext_v4/visual-spec.md",
+    "bytes": 3135,
+    "sha256": "0a5daca4dc8f9302aa800e16c7bee6f18ef1d17f32cebd4af61b624870402e61"
   }
 ]

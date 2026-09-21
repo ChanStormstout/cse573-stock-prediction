@@ -1784,3 +1784,7 @@ Owner requested fewer words, an unambiguous reading order and informative icons,
 ## 2026-09-21 — Method slide logic revision
 
 Owner found the three-column icon/example version less clear. Rebuilt an explicit architecture with title, body, reporting and price lanes, a single feature join, and one classifier/output path. The body branch is highlighted; the grouping example is a subordinate inset. Short FinBERT definition and concise notes retained. Fixed rendered grouping-label wrap and vertical arrowheads. Native package/layout/import checks pass. Local PPTX only; no Google Slides modification, experiment or scientific-result change.
+
+## 2026-09-21 — Reference-style full-text diagram
+
+Owner supplied the preferred prior branching diagram and explicitly requested academic-figures-drawer. Sampled its fill/text palette and retained the encoder/grouping split, summary stack and join/classifier/output layout. Added target-passage preparation, preserved separate title averages, removed inherited fixed dimensions. Three vector-preview cycles plus native slide checks repaired label overflows/wrapping. Editable draw.io/SVG and standalone native PPTX produced; no Google Slides edits or experimental changes. Method remains proposed. Validation and internal44/50 visual assessment documented under reference_fulltext_v4.

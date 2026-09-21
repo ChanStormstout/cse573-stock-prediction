@@ -1,3 +1,7 @@
+## Latest local method slide: supplied-reference layout
+
+[Reference-style full-text figure](reference_fulltext_v4/README.md) uses the preferred earlier branching arrangement, adapted to the proposed full-text method. Local PPTX and draw.io only; live deck unchanged.
+
 ## Latest local replacement: explicit architecture
 
 [Parallel-input method diagram](fulltext_logic_v3/README.md) restores the title/body/report/price data dependencies and a single feature join. The previous simplified layout was rejected by the owner. This new single-slide PPTX is for manual insertion; the live deck remains unchanged.
