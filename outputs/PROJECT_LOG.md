@@ -1,5 +1,13 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-20 — Faculty deck v11: baseline roles, four-hour scope and method figures
+
+Reclassified the primary baseline as title TF-IDF + prices + logistic regression; added constant-direction sanity and price-only/full-text classical controls to the results narrative. FinBERT remains an explicitly modern comparator and an ungrouped control. The revised table uses the same saved chronological four-hour report, without mixing random-split results. Constant-direction BA50% is an analytical reference, not a claimed new experiment.
+
+Added a short rationale for the four-hour scope without claiming optimality: longer possible reaction interval than one hour, more targets than once-daily decisions, and explicit overlapping-window dependence. Existing horizon exploration did not establish a stable universal winner. Replaced overview and aggregation diagrams with editable draw.io geometry mirrored as native PowerPoint vectors; distinctions between frozen encoder, rule grouping, trained classifier and no-news fallback remain explicit.
+
+Used the academic-figures-drawer and Presentations skills. Figure preflight/review concerns are documented; package/layout/import checks apply only to presentation artifacts. No scientific models, raw data, labels, evaluation protocol or gates changed. No training, inference or independent predictive verification resumed. Previous decks retained. Review: [v11 materials](teacher_meeting_20260921/README.md).
+
 ## 2026-09-20 — Faculty deck v10: implemented grouped-news pipeline
 
 Replaced the main slide narrative with frozen FinBERT title vectors, near-duplicate report grouping, six reporting metadata features, historical prices, and a trained logistic classifier. Added editable whole-pipeline and aggregation diagrams, a six-report illustration, grouping safeguards, a plain FinBERT definition, training explanation and course-mining connection. The three appendix pages provide exact model details, one repaired and one introduced-error case, and sources.

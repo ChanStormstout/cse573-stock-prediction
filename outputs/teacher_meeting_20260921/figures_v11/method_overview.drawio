@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="26.0.9">
+  <diagram id="method_overview" name="method_overview">
+    <mxGraphModel page="1" pageWidth="1800" pageHeight="700" grid="1" gridSize="8">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="panel" value="(a) Grouped news + reporting patterns + prices" style="text;rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=44;fontColor=#17324D;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="32" y="16" width="1736" height="64" />
+        </mxCell>
+        <mxCell id="input" value="Available titles&#10;Source records&#10;Arrival times" style="rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#8FA7BA;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=30;fontColor=#17324D;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="32" y="235" width="280" height="125" />
+        </mxCell>
+        <mxCell id="encoder" value="FinBERT&#10;Frozen encoder" style="rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#8FA7BA;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=32;fontColor=#17324D;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="375" y="104" width="280" height="108" />
+        </mxCell>
+        <mxCell id="group" value="Group reports&#10;Word similarity&#10;+ fact checks" style="rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=#E7F4F1;strokeColor=#006E73;strokeWidth=2.5;fontFamily=Helvetica Neue;fontSize=30;fontColor=#006E73;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="375" y="322" width="280" height="130" />
+        </mxCell>
+        <mxCell id="pool" value="Two-level averaging&#10;Within groups, then across&#10;PCA: 16 news features" style="rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=#E7F4F1;strokeColor=#006E73;strokeWidth=2.5;fontFamily=Helvetica Neue;fontSize=30;fontColor=#006E73;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="732" y="94" width="410" height="146" />
+        </mxCell>
+        <mxCell id="meta" value="Reporting features&#10;Counts / sources / ages" style="rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=#E7F4F1;strokeColor=#006E73;strokeWidth=2.5;fontFamily=Helvetica Neue;fontSize=31;fontColor=#006E73;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="732" y="332" width="410" height="110" />
+        </mxCell>
+        <mxCell id="price" value="Price history&#10;16 features" style="rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#8FA7BA;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=30;fontColor=#17324D;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="732" y="504" width="410" height="92" />
+        </mxCell>
+        <mxCell id="join" value="Combine&#10;16 news&#10;6 reporting&#10;16 price" style="rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#8FA7BA;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=32;fontColor=#17324D;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1220" y="220" width="200" height="210" />
+        </mxCell>
+        <mxCell id="lr" value="Logistic&#10;regression&#10;trained" style="rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#8FA7BA;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=34;fontColor=#17324D;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1480" y="228" width="280" height="160" />
+        </mxCell>
+        <mxCell id="out" value="Up&#10;probability" style="rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=#EDF3F9;strokeColor=#8FA7BA;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=32;fontColor=#17324D;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1480" y="480" width="280" height="90" />
+        </mxCell>
+        <mxCell id="title_encoder" value="" source="input" target="encoder" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=0;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="270" y="235" />
+            <mxPoint as="targetPoint" x="375" y="158" />
+            <Array as="points">
+              <mxPoint x="270" y="158" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title_group" value="" source="input" target="group" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=0;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="280" y="360" />
+            <mxPoint as="targetPoint" x="375" y="387" />
+            <Array as="points">
+              <mxPoint x="280" y="387" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="embeddings" value="" source="encoder" target="pool" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=0;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="655" y="158" />
+            <mxPoint as="targetPoint" x="732" y="158" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="membership" value="" source="group" target="pool" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=1;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="655" y="357" />
+            <mxPoint as="targetPoint" x="732" y="210" />
+            <Array as="points">
+              <mxPoint x="696" y="357" />
+              <mxPoint x="696" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="membership_label" value="group IDs" style="text;rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=25;fontColor=#17324D;fontStyle=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="532" y="265" width="145" height="42" />
+        </mxCell>
+        <mxCell id="metadata" value="" source="group" target="meta" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=0;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="655" y="387" />
+            <mxPoint as="targetPoint" x="732" y="387" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="semantic_join" value="" source="pool" target="join" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=0;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1142" y="158" />
+            <mxPoint as="targetPoint" x="1220" y="265" />
+            <Array as="points">
+              <mxPoint x="1180" y="158" />
+              <mxPoint x="1180" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="meta_join" value="" source="meta" target="join" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=0;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1142" y="387" />
+            <mxPoint as="targetPoint" x="1220" y="326" />
+            <Array as="points">
+              <mxPoint x="1180" y="387" />
+              <mxPoint x="1180" y="326" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="price_join" value="" source="price" target="join" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=0;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1142" y="550" />
+            <mxPoint as="targetPoint" x="1220" y="392" />
+            <Array as="points">
+              <mxPoint x="1180" y="550" />
+              <mxPoint x="1180" y="392" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="classifier" value="" source="join" target="lr" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=0;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1420" y="308" />
+            <mxPoint as="targetPoint" x="1480" y="308" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="forecast" value="" source="lr" target="out" parent="1" edge="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#536676;strokeWidth=2.5;dashed=0;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1620" y="388" />
+            <mxPoint as="targetPoint" x="1620" y="480" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" value="Blue: standard components&#10;Teal: grouping + metadata under study&#10;Solid: data   Dashed: group membership" style="text;rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=27;fontColor=#17324D;fontStyle=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="32" y="500" width="650" height="120" />
+        </mxCell>
+        <mxCell id="fallback" value="No admitted news → use the existing price-only forecast.  Encoder frozen; classifier trained on past labels." style="text;rounded=1;arcSize=8;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontFamily=Helvetica Neue;fontSize=27;fontColor=#17324D;fontStyle=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="32" y="642" width="1736" height="40" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

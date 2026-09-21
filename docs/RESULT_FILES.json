@@ -3221,8 +3221,8 @@
   },
   {
     "path": "outputs/teacher_meeting_20260921/README.md",
-    "bytes": 5746,
-    "sha256": "4b77cebf18eba5ffc6be498a96b0cbef74f2172e0d348f99dedeea29e1926330"
+    "bytes": 7674,
+    "sha256": "9c470f26e3fba7727e7b381dd8ef381acd1b779984e744da8ed11daa4add8be3"
   },
   {
     "path": "outputs/teacher_meeting_20260921/METHOD_PROPOSAL.md",
@@ -3803,5 +3803,85 @@
     "path": "outputs/teacher_meeting_20260921/build_slides_v10.mjs",
     "bytes": 22381,
     "sha256": "f321aa6ed15342aa58d4e3eb220ce62280dea276908d2935c93ee38fb6fe9cff"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/PRESENTER_NOTES_v11.md",
+    "bytes": 12177,
+    "sha256": "fc210d5f094776e6d684e7119b0e443e92b951f75359e7ab629363dc564d415c"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/BASELINES_AND_HORIZON_v11.md",
+    "bytes": 3361,
+    "sha256": "ab12ec0355edcabaa83407212a0abb7c9615ab4a4b1a9c1c1fc8428f237f0491"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/DELIVERY_MANIFEST_v11.json",
+    "bytes": 966,
+    "sha256": "dcf1ba98384b4e083e0a081f8dd088b629ca3d0a6d466e19357468d96f58b43c"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/build_slides_v11.mjs",
+    "bytes": 24924,
+    "sha256": "4477dc46b328e924a05e10647d72ac91edff34cc914fa62f97866cf90434361f"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/asset-ledger.md",
+    "bytes": 276,
+    "sha256": "26f877e3e32d1d2e531f793927ecf48f8369cbe02ca86eb98e7253690928193c"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/brief.md",
+    "bytes": 2100,
+    "sha256": "6077a9e5b8496cbb4cd5245a0ea3bbe7fccf13d3626fd1d9bf5cc2114bdcb5e7"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/defect-log.md",
+    "bytes": 2745,
+    "sha256": "f29e2cd395e2a43e0f17d25982de8a74d6ee9be3f6207ad4c87c1b422bb651ee"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/export_drawio.py",
+    "bytes": 4004,
+    "sha256": "c52c9db5beca8f54ce92f0e5e9ae37bb577d7b38e48bc95aa799ae56c047ac81"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/grouping_example.drawio",
+    "bytes": 6000,
+    "sha256": "f398a302e50c67ffb871570e3c5d89eab4181d14bca27b54f5ab12e103a1939c"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/grouping_example.json",
+    "bytes": 4246,
+    "sha256": "9d5834c3a407fd41ba0cfb4b45c07a62b1f46de3954bef84a2415841cefe6828"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/grouping_example.svg",
+    "bytes": 4101,
+    "sha256": "04622b82c1088eba7538a4738a3dbd366d4dab8bdf931e2a9ff20af7f2c8cbd5"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/layout-grid.md",
+    "bytes": 998,
+    "sha256": "40c02f8ed13686c752643f041dae08c1532afd83c64873643b4bf21327d06cf7"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/method_overview.drawio",
+    "bytes": 10657,
+    "sha256": "347b4504ead131438f03415a38d9a8d1bc64cb456da3ee89535cf09d740708ec"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/method_overview.json",
+    "bytes": 7372,
+    "sha256": "7382b5e9fa10ee5ef024d14b7b47015dae73f01a9e4491bfabb25e73804de3b2"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/method_overview.svg",
+    "bytes": 8136,
+    "sha256": "0823a8ffc52e5fd7ea5d03382e7dc1291a16ea0603ddfd255f29e1570fce19df"
+  },
+  {
+    "path": "outputs/teacher_meeting_20260921/figures_v11/visual-spec.md",
+    "bytes": 1404,
+    "sha256": "58b0ad20711e751ce5db9b45cab582d5d2c0d5563d6e24d36f533d510a35dbe9"
   }
 ]

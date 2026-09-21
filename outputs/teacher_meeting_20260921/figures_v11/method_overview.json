@@ -1,0 +1,403 @@
+{
+  "w": 1800.0,
+  "h": 700.0,
+  "nodes": [
+    {
+      "id": "panel",
+      "text": "(a) Grouped news + reporting patterns + prices",
+      "x": 32.0,
+      "y": 16.0,
+      "w": 1736.0,
+      "h": 64.0,
+      "font": 44.0,
+      "bold": true,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "input",
+      "text": "Available titles\nSource records\nArrival times",
+      "x": 32.0,
+      "y": 235.0,
+      "w": 280.0,
+      "h": 125.0,
+      "font": 30.0,
+      "bold": true,
+      "fill": "#EDF3F9",
+      "stroke": "#8FA7BA",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "encoder",
+      "text": "FinBERT\nFrozen encoder",
+      "x": 375.0,
+      "y": 104.0,
+      "w": 280.0,
+      "h": 108.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#EDF3F9",
+      "stroke": "#8FA7BA",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "group",
+      "text": "Group reports\nWord similarity\n+ fact checks",
+      "x": 375.0,
+      "y": 322.0,
+      "w": 280.0,
+      "h": 130.0,
+      "font": 30.0,
+      "bold": true,
+      "fill": "#E7F4F1",
+      "stroke": "#006E73",
+      "color": "#006E73",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "pool",
+      "text": "Two-level averaging\nWithin groups, then across\nPCA: 16 news features",
+      "x": 732.0,
+      "y": 94.0,
+      "w": 410.0,
+      "h": 146.0,
+      "font": 30.0,
+      "bold": true,
+      "fill": "#E7F4F1",
+      "stroke": "#006E73",
+      "color": "#006E73",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "meta",
+      "text": "Reporting features\nCounts / sources / ages",
+      "x": 732.0,
+      "y": 332.0,
+      "w": 410.0,
+      "h": 110.0,
+      "font": 31.0,
+      "bold": true,
+      "fill": "#E7F4F1",
+      "stroke": "#006E73",
+      "color": "#006E73",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "price",
+      "text": "Price history\n16 features",
+      "x": 732.0,
+      "y": 504.0,
+      "w": 410.0,
+      "h": 92.0,
+      "font": 30.0,
+      "bold": true,
+      "fill": "#EDF3F9",
+      "stroke": "#8FA7BA",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "join",
+      "text": "Combine\n16 news\n6 reporting\n16 price",
+      "x": 1220.0,
+      "y": 220.0,
+      "w": 200.0,
+      "h": 210.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#EDF3F9",
+      "stroke": "#8FA7BA",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "lr",
+      "text": "Logistic\nregression\ntrained",
+      "x": 1480.0,
+      "y": 228.0,
+      "w": 280.0,
+      "h": 160.0,
+      "font": 34.0,
+      "bold": true,
+      "fill": "#EDF3F9",
+      "stroke": "#8FA7BA",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "out",
+      "text": "Up\nprobability",
+      "x": 1480.0,
+      "y": 480.0,
+      "w": 280.0,
+      "h": 90.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#EDF3F9",
+      "stroke": "#8FA7BA",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "membership_label",
+      "text": "group IDs",
+      "x": 532.0,
+      "y": 265.0,
+      "w": 145.0,
+      "h": 42.0,
+      "font": 25.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "legend",
+      "text": "Blue: standard components\nTeal: grouping + metadata under study\nSolid: data   Dashed: group membership",
+      "x": 32.0,
+      "y": 500.0,
+      "w": 650.0,
+      "h": 120.0,
+      "font": 27.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "fallback",
+      "text": "No admitted news \u2192 use the existing price-only forecast.  Encoder frozen; classifier trained on past labels.",
+      "x": 32.0,
+      "y": 642.0,
+      "w": 1736.0,
+      "h": 40.0,
+      "font": 27.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "title_encoder",
+      "source": "input",
+      "target": "encoder",
+      "pts": [
+        [
+          270.0,
+          235.0
+        ],
+        [
+          270.0,
+          158.0
+        ],
+        [
+          375.0,
+          158.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "title_group",
+      "source": "input",
+      "target": "group",
+      "pts": [
+        [
+          280.0,
+          360.0
+        ],
+        [
+          280.0,
+          387.0
+        ],
+        [
+          375.0,
+          387.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "embeddings",
+      "source": "encoder",
+      "target": "pool",
+      "pts": [
+        [
+          655.0,
+          158.0
+        ],
+        [
+          732.0,
+          158.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "membership",
+      "source": "group",
+      "target": "pool",
+      "pts": [
+        [
+          655.0,
+          357.0
+        ],
+        [
+          696.0,
+          357.0
+        ],
+        [
+          696.0,
+          210.0
+        ],
+        [
+          732.0,
+          210.0
+        ]
+      ],
+      "dash": true
+    },
+    {
+      "id": "metadata",
+      "source": "group",
+      "target": "meta",
+      "pts": [
+        [
+          655.0,
+          387.0
+        ],
+        [
+          732.0,
+          387.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "semantic_join",
+      "source": "pool",
+      "target": "join",
+      "pts": [
+        [
+          1142.0,
+          158.0
+        ],
+        [
+          1180.0,
+          158.0
+        ],
+        [
+          1180.0,
+          265.0
+        ],
+        [
+          1220.0,
+          265.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "meta_join",
+      "source": "meta",
+      "target": "join",
+      "pts": [
+        [
+          1142.0,
+          387.0
+        ],
+        [
+          1180.0,
+          387.0
+        ],
+        [
+          1180.0,
+          326.0
+        ],
+        [
+          1220.0,
+          326.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "price_join",
+      "source": "price",
+      "target": "join",
+      "pts": [
+        [
+          1142.0,
+          550.0
+        ],
+        [
+          1180.0,
+          550.0
+        ],
+        [
+          1180.0,
+          392.0
+        ],
+        [
+          1220.0,
+          392.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "classifier",
+      "source": "join",
+      "target": "lr",
+      "pts": [
+        [
+          1420.0,
+          308.0
+        ],
+        [
+          1480.0,
+          308.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "forecast",
+      "source": "lr",
+      "target": "out",
+      "pts": [
+        [
+          1620.0,
+          388.0
+        ],
+        [
+          1620.0,
+          480.0
+        ]
+      ],
+      "dash": false
+    }
+  ]
+}

@@ -1,3 +1,19 @@
+# Current delivery: classical baselines and grouped-news method, v11
+
+The current local deck is `CSE573_Grouped_News_Faculty_Meeting_v11.pptx`: 19 editable English slides (16 main, 3 appendix), preserving the Simple Light Mode design.
+
+**Primary classical baseline:** title TF-IDF word features + historical prices + logistic regression. The baseline panel also includes constant-direction sanity, price-only LR, and full-text word features + price LR. FinBERT is explicitly a modern comparator; ungrouped FinBERT remains necessary to attribute the grouping mechanism. SVM/RF random-split scores are not mixed into the chronological results table.
+
+Slide 2 adds a short four-hour rationale: an intraday scope between one-hour and once-daily decisions, with more time for a possible reaction and more target windows than one per day. Earlier horizon tests did not establish a universally best horizon. Overlapping windows do not create independent samples. The paragraph describes task scope, not a preregistered proof of optimality.
+
+Slides 6 and 8 now contain editable research-style architecture and aggregation diagrams. [Editable overview](figures_v11/method_overview.drawio), [SVG overview](figures_v11/method_overview.svg), [editable example](figures_v11/grouping_example.drawio). The XML defines the source layout; slide-native vectors and export formats derive from it. [Current notes](PRESENTER_NOTES_v11.md), [baseline and horizon explanation](BASELINES_AND_HORIZON_v11.md), [delivery manifest](DELIVERY_MANIFEST_v11.json).
+
+All measured values are saved results from `stock_paper_methods_4h/v1/metrics.csv`; the constant-direction 50% BA is explicitly analytical. No model or data protocol changed and no predictive execution or independent experimental verification resumed. Historical slides are preserved. PPTX/PDF/PNG remain local; public source and text materials are versioned.
+
+---
+
+# Historical v10 delivery
+
 # Current delivery: grouped-news method, v10
 
 The current local presentation is `CSE573_Grouped_News_Faculty_Meeting_v10.pptx`: 18 editable English slides (15 main, 3 appendix), using the requested Simple Light Mode template. It replaces the proposed factual-change correction as the main story with the **implemented frozen FinBERT + near-report grouping + six reporting metadata fields + historical prices + small classifier**.

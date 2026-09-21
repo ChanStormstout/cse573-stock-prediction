@@ -1,0 +1,223 @@
+{
+  "w": 1800.0,
+  "h": 640.0,
+  "nodes": [
+    {
+      "id": "panel",
+      "text": "(b) Example: balance content, preserve reporting volume",
+      "x": 32.0,
+      "y": 16.0,
+      "w": 1736.0,
+      "h": 64.0,
+      "font": 44.0,
+      "bold": true,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "titlesA",
+      "text": "5 near-duplicate titles\nApple target price cut",
+      "x": 40.0,
+      "y": 150.0,
+      "w": 400.0,
+      "h": 120.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#EDF3F9",
+      "stroke": "#8FA7BA",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "titlesB",
+      "text": "1 distinct title\nApple product launch",
+      "x": 40.0,
+      "y": 350.0,
+      "w": 400.0,
+      "h": 120.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#EDF3F9",
+      "stroke": "#8FA7BA",
+      "color": "#17324D",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "meanA",
+      "text": "Mean of group A\n5 title vectors \u2192 1 vector",
+      "x": 530.0,
+      "y": 150.0,
+      "w": 435.0,
+      "h": 120.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#E7F4F1",
+      "stroke": "#006E73",
+      "color": "#006E73",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "meanB",
+      "text": "Mean of group B\n1 title vector \u2192 1 vector",
+      "x": 530.0,
+      "y": 350.0,
+      "w": 435.0,
+      "h": 120.0,
+      "font": 32.0,
+      "bold": true,
+      "fill": "#E7F4F1",
+      "stroke": "#006E73",
+      "color": "#006E73",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "mean",
+      "text": "Mean of the two groups\nA: 50%      B: 50%",
+      "x": 1080.0,
+      "y": 236.0,
+      "w": 670.0,
+      "h": 140.0,
+      "font": 44.0,
+      "bold": true,
+      "fill": "#E7F4F1",
+      "stroke": "#006E73",
+      "color": "#006E73",
+      "align": "center",
+      "textOnly": false
+    },
+    {
+      "id": "old",
+      "text": "Article averaging: A gets 83.3%; B gets 16.7%.",
+      "x": 40.0,
+      "y": 506.0,
+      "w": 950.0,
+      "h": 48.0,
+      "font": 32.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "counts",
+      "text": "Counts retained separately: 6 articles, 2 groups.",
+      "x": 40.0,
+      "y": 560.0,
+      "w": 1150.0,
+      "h": 48.0,
+      "font": 32.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    },
+    {
+      "id": "note",
+      "text": "Illustration of aggregation weights,\nnot event importance or up probability.",
+      "x": 1140.0,
+      "y": 506.0,
+      "w": 610.0,
+      "h": 90.0,
+      "font": 30.0,
+      "bold": false,
+      "fill": "none",
+      "stroke": "none",
+      "color": "#17324D",
+      "align": "left",
+      "textOnly": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "a",
+      "source": "titlesA",
+      "target": "meanA",
+      "pts": [
+        [
+          440.0,
+          210.0
+        ],
+        [
+          530.0,
+          210.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "b",
+      "source": "titlesB",
+      "target": "meanB",
+      "pts": [
+        [
+          440.0,
+          410.0
+        ],
+        [
+          530.0,
+          410.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "ma",
+      "source": "meanA",
+      "target": "mean",
+      "pts": [
+        [
+          965.0,
+          210.0
+        ],
+        [
+          1024.0,
+          210.0
+        ],
+        [
+          1024.0,
+          276.0
+        ],
+        [
+          1080.0,
+          276.0
+        ]
+      ],
+      "dash": false
+    },
+    {
+      "id": "mb",
+      "source": "meanB",
+      "target": "mean",
+      "pts": [
+        [
+          965.0,
+          410.0
+        ],
+        [
+          1024.0,
+          410.0
+        ],
+        [
+          1024.0,
+          336.0
+        ],
+        [
+          1080.0,
+          336.0
+        ]
+      ],
+      "dash": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "task": "v11 classical baselines and method diagrams",
+  "source_checkpoint": "f752064796c48d3c0763ab2142282c3066895e4d",
+  "local_pptx": "CSE573_Grouped_News_Faculty_Meeting_v11.pptx",
+  "sha256": "42c03277360bd6532e5d0db3dccba39352ed2ec6f2182f1d1225ee08eb7f18a4",
+  "slides": 19,
+  "main_slides": 16,
+  "appendix_slides": 3,
+  "primary_baseline": "title TF-IDF + historical prices + logistic regression",
+  "modern_comparator": "frozen FinBERT + historical prices",
+  "new_predictive_runs": 0,
+  "new_independent_predictive_verification_runs": 0,
+  "presentation_package_integrity": "PASS",
+  "presentation_layout_geometry": "PASS",
+  "presentation_reimport": "PASS",
+  "native_powerpoint_rendering_verified": false,
+  "figure_sources": [
+    "figures_v11/method_overview.drawio",
+    "figures_v11/grouping_example.drawio"
+  ],
+  "pdf_font_approximation": "PDF exports use Arial; SVG and slides use Helvetica Neue. Geometry and content derive from draw.io."
+}
