@@ -3943,5 +3943,10 @@
     "path": "outputs/stock_fnspid_augmented_4h/v1/transitions.csv",
     "bytes": 1743,
     "sha256": "8d0209a6126ab15d78ce167b019cd33a7c3d2900599f72792fd5fb9a83d616c4"
+  },
+  {
+    "path": "outputs/stock_fnspid_llm_4h/v1/ARTICLE_JOB_AUDIT.json",
+    "bytes": 2038,
+    "sha256": "5a48724743b2cdcb32664843ad2578f53cfd43b0dcf5950ad6ccedddf743f6f9"
   }
 ]

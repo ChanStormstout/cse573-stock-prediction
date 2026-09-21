@@ -1823,3 +1823,13 @@ relinker is incomplete. The augmented corpus is now the default input for new
 news experiments, with original-only methods retained as ablations. The next
 bounded method question is a past-only relevance/novelty gate, not adding more
 unfiltered volume. LLM, attention and analogy branches were not rerun in v1.
+
+## 2026-09-20 — FNSPID-augmented LLM lane preregistered
+
+Registered L1 quality filtering, L2 fact-change residual, L3 non-LLM historical
+case voting, L4 case-conditioned Qwen scoring and the OOF-only L5 promotion
+rule before any new LLM score or downstream fit. Article-job preparation loaded
+no labels or returns: 1,322 FNSPID articles produce 3,966 quality/novelty/
+polarity binary jobs, each using only earlier same-stock report titles. Frozen
+Qwen3.5-9B model files and all augmented source inputs are hash-bound. No new
+predictive score exists at this checkpoint.

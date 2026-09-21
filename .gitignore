@@ -549,3 +549,4 @@ venv/
 !/outputs/stock_fnspid_augmented_4h/v1/subgroup_metrics.csv
 !/outputs/stock_fnspid_augmented_4h/v1/training_evidence.json
 !/outputs/stock_fnspid_augmented_4h/v1/transitions.csv
+!/outputs/stock_fnspid_llm_4h/v1/ARTICLE_JOB_AUDIT.json

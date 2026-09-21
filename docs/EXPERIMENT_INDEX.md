@@ -23,6 +23,7 @@
 - **stock_finetune**: [README.md](../outputs/stock_finetune/README.md) · [REPORT.md](../outputs/stock_finetune/REPORT.md)
 - **stock_fnspid_amzn_4h**: [README.md](../outputs/stock_fnspid_amzn_4h/README.md) · [REPORT.md](../outputs/stock_fnspid_amzn_4h/REPORT.md)
 - **stock_fnspid_augmented_4h**: [PRE_REGISTRATION.md](../outputs/stock_fnspid_augmented_4h/PRE_REGISTRATION.md) · [REPORT.md](../outputs/stock_fnspid_augmented_4h/v1/REPORT.md)
+- **stock_fnspid_llm_4h**: [PRE_REGISTRATION.md](../outputs/stock_fnspid_llm_4h/PRE_REGISTRATION.md)
 - **stock_foundation_4h**: [README.md](../outputs/stock_foundation_4h/README.md)
 - **stock_four_hour_v2**: [REPORT.md](../outputs/stock_four_hour_v2/REPORT.md)
 - **stock_goal60_4h**: [README.md](../outputs/stock_goal60_4h/README.md)
