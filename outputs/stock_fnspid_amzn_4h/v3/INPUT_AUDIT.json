@@ -1,0 +1,71 @@
+{
+  "code_version": "FNSPID_AMZN_4H_V1",
+  "forbidden_outcome_fields": [
+    "ba",
+    "brier",
+    "label",
+    "mcc",
+    "prediction",
+    "probability",
+    "return",
+    "target_return"
+  ],
+  "private_files": {
+    "amzn_article_groups.parquet": {
+      "bytes": 882893,
+      "sha256": "07b53821c61ee0b55e38279babf90caf883e204b1a64b8d8b8dbae6ab744e1f2"
+    },
+    "amzn_edges_with_availability.parquet": {
+      "bytes": 2630520,
+      "sha256": "7d327e8b382795ca49319bd83166a52ef8e87680bce405e40e4cba1582065ef6"
+    },
+    "window_candidate_links.parquet": {
+      "bytes": 242520,
+      "sha256": "f2da6a7fb883c74d867200e42bb2ebecd581fc79a591e46e29d09143c1a29006"
+    }
+  },
+  "public_files": {
+    "AMZN_CANDIDATE_CENSUS.csv": {
+      "bytes": 4058,
+      "sha256": "6112ba28d640ea22518cd7b8856f5132738777ab0d7582a59c2093069577d44c"
+    },
+    "COVERAGE_SUMMARY.json": {
+      "bytes": 1180,
+      "sha256": "4ec7f0fd8eabca65691debd07fd771e836036067e1e20f5c6d95ff7a2a22d76a"
+    },
+    "REVIEW_SAMPLE_MANIFEST.csv": {
+      "bytes": 26261,
+      "sha256": "d9234dada5f2dba34aeafde945fdae6b41a4fc5c4dc65e7e0b81e1cbb197b3df"
+    },
+    "WINDOW_COVERAGE.csv": {
+      "bytes": 103095,
+      "sha256": "c45ecd720d833eb1673ab56404248f49fc93b8fed747d5b7f267fad73b2eed86"
+    },
+    "XNYS_SESSION_SCHEDULE.csv": {
+      "bytes": 19717,
+      "sha256": "e47e62a8c39c4f9bb8775671eb9f800e2f82d8bce582ce47592960f2240516d8"
+    }
+  },
+  "source_files": {
+    "accepted_schedule": {
+      "bytes": 17779,
+      "path": "/Users/victor/Documents/Codex/2026-09-14/wox/work/stock-data/audit/xnys_schedule.csv",
+      "sha256": "b668d40b4a6a9324108e32b6dcfa9c6e60c7a90da93e6884a00854691298e4d0"
+    },
+    "canonical_inputs": {
+      "bytes": 8570008,
+      "path": "/Users/victor/Documents/Codex/2026-09-14/wox/work/stock-data/paper_methods_4h/v1/inputs.pkl",
+      "sha256": "7d354e2553c338cd6a64e084e7cc4550c98fbce2dd5b3004c0829eef932d1d5b"
+    },
+    "complete_metadata": {
+      "bytes": 4331855532,
+      "path": "/Users/victor/Documents/Codex/2026-09-14/wox/work/stock-data/ecni_e1r/private/fnspid_complete_metadata.parquet",
+      "sha256": "52778b687458b1892d63efbc6eeb46078598bdc7427ba3d63d91cbe0fe600217"
+    },
+    "entity_edges": {
+      "bytes": 672592665,
+      "path": "/Users/victor/Documents/Codex/2026-09-14/wox/outputs/stock_ecni_e1r/FNSPID_RELINKED_ENTITY_EDGES.parquet",
+      "sha256": "c86623d2f85cf5bb00ef63debe0fa93fc1c23eca85b19f0a00ec8e43ddb9f2a3"
+    }
+  }
+}

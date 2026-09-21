@@ -3753,5 +3753,45 @@
     "path": "outputs/stock_representation_4h/v1/training_evidence.json",
     "bytes": 401,
     "sha256": "0b41df24999da520299896d1e804747f61d11a9c32dc81afe72404de83858f9a"
+  },
+  {
+    "path": "outputs/stock_fnspid_amzn_4h/v3/AMZN_CANDIDATE_CENSUS.csv",
+    "bytes": 4058,
+    "sha256": "6112ba28d640ea22518cd7b8856f5132738777ab0d7582a59c2093069577d44c"
+  },
+  {
+    "path": "outputs/stock_fnspid_amzn_4h/v3/COVERAGE_SUMMARY.json",
+    "bytes": 1180,
+    "sha256": "4ec7f0fd8eabca65691debd07fd771e836036067e1e20f5c6d95ff7a2a22d76a"
+  },
+  {
+    "path": "outputs/stock_fnspid_amzn_4h/v3/INPUT_AUDIT.json",
+    "bytes": 2480,
+    "sha256": "4cbb6e2f512d0040e406931da4db105096f767c3ef7ec69dc68b39c2cb2af585"
+  },
+  {
+    "path": "outputs/stock_fnspid_amzn_4h/v3/REVIEW_CARD_AUDIT.json",
+    "bytes": 318,
+    "sha256": "345180b1ba5f2fb52da83c1d6a41e0a7a1c5599bb6def788a5863b4f2ee4f156"
+  },
+  {
+    "path": "outputs/stock_fnspid_amzn_4h/v3/REVIEW_SAMPLE_MANIFEST.csv",
+    "bytes": 26261,
+    "sha256": "d9234dada5f2dba34aeafde945fdae6b41a4fc5c4dc65e7e0b81e1cbb197b3df"
+  },
+  {
+    "path": "outputs/stock_fnspid_amzn_4h/v3/VERIFICATION.json",
+    "bytes": 2750,
+    "sha256": "88dde1f03da37e520513bea959e3f5951997842bf54a5accf8fe2cb498cc5007"
+  },
+  {
+    "path": "outputs/stock_fnspid_amzn_4h/v3/WINDOW_COVERAGE.csv",
+    "bytes": 103095,
+    "sha256": "c45ecd720d833eb1673ab56404248f49fc93b8fed747d5b7f267fad73b2eed86"
+  },
+  {
+    "path": "outputs/stock_fnspid_amzn_4h/v3/XNYS_SESSION_SCHEDULE.csv",
+    "bytes": 19717,
+    "sha256": "e47e62a8c39c4f9bb8775671eb9f800e2f82d8bce582ce47592960f2240516d8"
   }
 ]

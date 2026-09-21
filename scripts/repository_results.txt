@@ -750,3 +750,11 @@ outputs/stock_representation_4h/v1/preprocess_selected_C.csv
 outputs/stock_representation_4h/v1/protocol.json
 outputs/stock_representation_4h/v1/summary.csv
 outputs/stock_representation_4h/v1/training_evidence.json
+outputs/stock_fnspid_amzn_4h/v3/AMZN_CANDIDATE_CENSUS.csv
+outputs/stock_fnspid_amzn_4h/v3/COVERAGE_SUMMARY.json
+outputs/stock_fnspid_amzn_4h/v3/INPUT_AUDIT.json
+outputs/stock_fnspid_amzn_4h/v3/REVIEW_CARD_AUDIT.json
+outputs/stock_fnspid_amzn_4h/v3/REVIEW_SAMPLE_MANIFEST.csv
+outputs/stock_fnspid_amzn_4h/v3/VERIFICATION.json
+outputs/stock_fnspid_amzn_4h/v3/WINDOW_COVERAGE.csv
+outputs/stock_fnspid_amzn_4h/v3/XNYS_SESSION_SCHEDULE.csv

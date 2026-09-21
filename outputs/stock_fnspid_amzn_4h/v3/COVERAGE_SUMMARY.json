@@ -1,0 +1,29 @@
+{
+  "available_time_classes": [
+    "DATE_ONLY_CONSERVATIVE"
+  ],
+  "canonical_amzn_windows": 804,
+  "deduplicated_article_groups": 4679,
+  "human_validated": false,
+  "native_ticker_agreeing_edge_rows": 0,
+  "old_no_news_recovery_rate_direct_24h": 0.4524421593830334,
+  "old_no_news_recovery_rate_direct_3s": 0.8071979434447301,
+  "old_no_news_recovery_rate_direct_or_multi_24h": 0.8997429305912596,
+  "old_no_news_recovery_rate_direct_or_multi_3s": 1.0,
+  "old_no_news_windows_with_direct_24h": 176,
+  "old_no_news_windows_with_direct_3s": 314,
+  "old_no_news_windows_with_direct_or_multi_24h": 350,
+  "old_no_news_windows_with_direct_or_multi_3s": 389,
+  "original_news_windows": 415,
+  "original_no_news_windows": 389,
+  "outcomes_used": 0,
+  "predictive_models_fitted": 0,
+  "source_edge_rows": 7570,
+  "source_unique_records": 7570,
+  "status": "OUTCOME_BLIND_CANDIDATE_COVERAGE_COMPLETE",
+  "warning": "Coverage counts are candidates, not independently validated Amazon-event precision and not prediction improvement.",
+  "windows_with_direct_24h": 383,
+  "windows_with_direct_3s": 653,
+  "windows_with_direct_or_multi_24h": 746,
+  "windows_with_direct_or_multi_3s": 804
+}

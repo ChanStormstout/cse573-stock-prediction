@@ -1,0 +1,133 @@
+{
+  "checks": [
+    {
+      "details": {
+        "mismatches": []
+      },
+      "name": "source_hashes",
+      "passes": true
+    },
+    {
+      "details": {
+        "mismatches": []
+      },
+      "name": "public_artifact_hashes",
+      "passes": true
+    },
+    {
+      "details": {
+        "forbidden_matches": []
+      },
+      "name": "outcome_free_public_schema",
+      "passes": true
+    },
+    {
+      "details": {
+        "rows": 804,
+        "unique_keys": 804
+      },
+      "name": "canonical_amzn_windows",
+      "passes": true
+    },
+    {
+      "details": {
+        "no_original_news": 389
+      },
+      "name": "canonical_original_gap",
+      "passes": true
+    },
+    {
+      "details": {
+        "classes": [
+          "DATE_ONLY_CONSERVATIVE"
+        ]
+      },
+      "name": "date_only_source",
+      "passes": true
+    },
+    {
+      "details": {
+        "not_session_open": 0,
+        "not_strictly_next_date": 0
+      },
+      "name": "next_session_open_availability",
+      "passes": true
+    },
+    {
+      "details": {
+        "violations": 0
+      },
+      "name": "window_links_time_safe",
+      "passes": true
+    },
+    {
+      "details": {
+        "relations": [
+          "DIRECT_TARGET_HIGH_CONFIDENCE",
+          "MULTI_COMPANY_DIRECT_HIGH_CONFIDENCE"
+        ]
+      },
+      "name": "links_only_direct_or_multi",
+      "passes": true
+    },
+    {
+      "details": {
+        "groups": 4679,
+        "unique": 4679
+      },
+      "name": "deduplicated_group_contract",
+      "passes": true
+    },
+    {
+      "details": {
+        "rows": 120,
+        "unique_groups": 120
+      },
+      "name": "review_sample_frozen",
+      "passes": true
+    },
+    {
+      "details": {
+        "relations": [
+          "DIRECT_TARGET_HIGH_CONFIDENCE",
+          "MULTI_COMPANY_DIRECT_HIGH_CONFIDENCE"
+        ]
+      },
+      "name": "review_sample_high_relations",
+      "passes": true
+    },
+    {
+      "details": {
+        "actual": "14c906c707c7c8075d8cc34f27569d08f09cb9568c24a540a8dfe4310e96c66b",
+        "expected": "14c906c707c7c8075d8cc34f27569d08f09cb9568c24a540a8dfe4310e96c66b"
+      },
+      "name": "private_review_pack_hash",
+      "passes": true
+    },
+    {
+      "details": {
+        "evidence_alias_found": 117,
+        "review_cards": 120,
+        "unique_review_ids": 120
+      },
+      "name": "private_review_pack_counts",
+      "passes": true
+    },
+    {
+      "details": {
+        "outcomes_used": 0,
+        "predictive_models_fitted": 0
+      },
+      "name": "zero_prediction_activity",
+      "passes": true
+    },
+    {
+      "details": {
+        "native_ticker_agreeing_edge_rows": 0
+      },
+      "name": "native_ticker_not_used_as_truth",
+      "passes": true
+    }
+  ],
+  "status": "PASS"
+}

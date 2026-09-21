@@ -1,5 +1,28 @@
 # CSE 573 股票方向预测：实验与决策日志
 
+## 2026-09-20 — FNSPID Amazon candidate-coverage branch
+
+Implemented and ran a separate outcome-blind FNSPID-to-AMZN lane. It preserves
+the canonical 804 four-hour windows and 389 original no-news windows, separates
+direct, multi-company and indirect relation claims, deduplicates by stable
+article identity and maps every date-only row to the next XNYS open. No outcome,
+saved prediction or predictive estimator entered the run.
+
+Task-aligned source counts are 7,570 relation edges and 4,679 deduplicated
+groups. Direct-only candidates recover 176/389 original gaps within 24 hours and
+314/389 within three sessions. Direct plus multi-company candidates recover
+350/389 and 389/389, respectively; the latter remains a provisional coverage
+upper bound because multi-company density is high and entity precision is not
+independently validated.
+
+Frozen 120 deterministic review groups and extracted private title/evidence
+cards; 117/120 contain the normalized matched alias. Independent labels remain
+zero. Fit-free verification passes source/artifact hashes, canonical keys,
+next-session availability, time-safe links, deduplication, review-pack integrity
+and zero prediction activity. See
+[report](stock_fnspid_amzn_4h/v3/REPORT.md) and
+[handoff](../docs/FNSPID_AMZN_4H_HANDOFF.md).
+
 ## 2026-09-20 — Faculty presentation and proposed news-context correction
 
 Added an explicitly aspirational evaluation-target page (both stocks BA at least 60%); measured new-pipeline results remain NOT RUN. No protocol/gate changed or new experiment executed.

@@ -1,3 +1,18 @@
+# Latest completed: outcome-blind FNSPID Amazon candidate coverage
+
+**COMPLETE / VERIFIED WITH QUALITY GATE PENDING.** [Report](../outputs/stock_fnspid_amzn_4h/v3/REPORT.md) · [handoff](FNSPID_AMZN_4H_HANDOFF.md).
+
+FNSPID supplies many mechanically relinked Amazon candidates, but every relevant
+timestamp is date-only. The time-safe lane therefore makes each item available
+at the next XNYS open and uses it only as prior context. Direct-only candidates
+cover 176/389 original AMZN no-news windows in the 24-hour view and 314/389 in
+the three-session view. Adding multi-company candidates covers 350/389 and
+389/389, but this dense pool remains blocked pending semantic review.
+
+A deterministic 120-card private blind-review pack is ready. No semantic labels
+or independent reviewer are present. No return/label was used, no predictor was
+trained and no new BA/MCC/Brier result exists.
+
 # Latest completed: preprocessing, grouped SVM and aggregation-order study
 
 **COMPLETE / VERIFIED.** [Plain-language findings](../outputs/stock_representation_4h/v1/FINDINGS.md) · [full report](../outputs/stock_representation_4h/v1/REPORT.md) · [handoff](REPRESENTATION_4H_HANDOFF.md).

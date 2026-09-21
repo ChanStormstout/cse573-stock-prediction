@@ -21,6 +21,7 @@
 - **stock_finbert**: [README.md](../outputs/stock_finbert/README.md)
 - **stock_finbert_event_adapter_4h**: [README.md](../outputs/stock_finbert_event_adapter_4h/README.md)
 - **stock_finetune**: [README.md](../outputs/stock_finetune/README.md) · [REPORT.md](../outputs/stock_finetune/REPORT.md)
+- **stock_fnspid_amzn_4h**: [README.md](../outputs/stock_fnspid_amzn_4h/README.md) · [REPORT.md](../outputs/stock_fnspid_amzn_4h/REPORT.md)
 - **stock_foundation_4h**: [README.md](../outputs/stock_foundation_4h/README.md)
 - **stock_four_hour_v2**: [REPORT.md](../outputs/stock_four_hour_v2/REPORT.md)
 - **stock_goal60_4h**: [README.md](../outputs/stock_goal60_4h/README.md)

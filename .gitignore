@@ -511,3 +511,11 @@ venv/
 !/outputs/stock_reaction_features_4h/v4/official_window_status.json
 !/outputs/stock_reaction_features_4h/v4/training_evidence.json
 !/outputs/stock_reaction_features_4h/v4/verification_v4.json
+!/outputs/stock_fnspid_amzn_4h/v3/AMZN_CANDIDATE_CENSUS.csv
+!/outputs/stock_fnspid_amzn_4h/v3/COVERAGE_SUMMARY.json
+!/outputs/stock_fnspid_amzn_4h/v3/INPUT_AUDIT.json
+!/outputs/stock_fnspid_amzn_4h/v3/REVIEW_CARD_AUDIT.json
+!/outputs/stock_fnspid_amzn_4h/v3/REVIEW_SAMPLE_MANIFEST.csv
+!/outputs/stock_fnspid_amzn_4h/v3/VERIFICATION.json
+!/outputs/stock_fnspid_amzn_4h/v3/WINDOW_COVERAGE.csv
+!/outputs/stock_fnspid_amzn_4h/v3/XNYS_SESSION_SCHEDULE.csv
